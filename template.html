@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한국 핵심광물 ODA 협력국 주간 동향 · KCMO Weekly</title>
+  <meta name="description" content="한국이 핵심광물 ODA 협력을 진행 중인 7개국(탄자니아·인도네시아·베트남·몽골·카자흐스탄·우즈베키스탄·라오스)의 정책·탐사·개발·공급망·연구 동향 주간 큐레이션.">
+  <link rel="alternate" type="application/rss+xml" title="KCMO Weekly RSS" href="rss.xml">
+  <style>
+    :root {
+      --primary: #2d5016;
+      --primary-light: #4a7a2a;
+      --primary-bg: #EAF3DE;
+      --primary-fg: #173404;
+      --teal-bg: #E1F5EE;
+      --teal-fg: #04342C;
+      --amber-bg: #FAEEDA;
+      --amber-fg: #412402;
+      --text: #222;
+      --text-secondary: #666;
+      --text-tertiary: #999;
+      --bg: #fafaf7;
+      --surface: #fff;
+      --border: rgba(0,0,0,0.1);
+      --border-strong: rgba(0,0,0,0.2);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #4a7a2a;
+        --primary-bg: #1d2a10;
+        --primary-fg: #C0DD97;
+        --teal-bg: #043028;
+        --teal-fg: #9FE1CB;
+        --amber-bg: #2a1f0a;
+        --amber-fg: #FAC775;
+        --text: #e8e8e3;
+        --text-secondary: #b4b2a9;
+        --text-tertiary: #888780;
+        --bg: #1a1a18;
+        --surface: #242422;
+        --border: rgba(255,255,255,0.1);
+        --border-strong: rgba(255,255,255,0.2);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "Pretendard", "Apple SD Gothic Neo", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    header.site {
+      background: var(--primary);
+      color: var(--primary-bg);
+      padding: 1.75rem 1.75rem 1.5rem;
+    }
+    header.site .branding {
+      display: flex; justify-content: space-between;
+      align-items: baseline; flex-wrap: wrap; gap: 12px;
+    }
+    header.site .brand-mark {
+      font-size: 11px; letter-spacing: 1.5px;
+      opacity: 0.75; margin-bottom: 6px;
+    }
+    header.site h1 {
+      font-size: 22px; font-weight: 500;
+      margin: 0; color: var(--primary-bg);
+    }
+    header.site .subtitle {
+      font-size: 12px; opacity: 0.85; margin-top: 8px;
+    }
+    header.site .meta { text-align: right; font-size: 13px; opacity: 0.9; }
+    header.site .meta .next { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+
+    .filters {
+      background: var(--surface);
+      padding: 14px 1.75rem;
+      border-bottom: 0.5px solid var(--border);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .filters .row {
+      display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
+    }
+    .filter {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .filter label {
+      font-size: 11px; color: var(--text-secondary);
+      letter-spacing: 0.3px;
+    }
+    .filter select {
+      font-size: 12px; padding: 4px 8px;
+      border: 0.5px solid var(--border-strong);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit;
+    }
+    .filter.sort { margin-left: auto; }
+
+    .empty {
+      padding: 3rem 1.75rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    main {
+      padding: 16px 1.75rem 2rem;
+    }
+    .results-info {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 0.5px solid var(--border);
+      padding: 1.1rem 1.4rem 1.2rem;
+      margin-bottom: 12px;
+    }
+    .card-meta {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      align-items: center; margin-bottom: 10px;
+    }
+    .chip {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .chip-country {
+      background: var(--primary-bg);
+      color: var(--primary-fg);
+      font-weight: 500;
+    }
+    .chip-category {
+      background: var(--teal-bg);
+      color: var(--teal-fg);
+      font-weight: 500;
+    }
+    .chip-tag {
+      background: var(--bg);
+      color: var(--text-secondary);
+    }
+    .chip-lang {
+      background: var(--amber-bg);
+      color: var(--amber-fg);
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .card-score {
+      margin-left: auto;
+      color: var(--text-tertiary);
+      font-size: 11px;
+      font-family: "SF Mono", Menlo, monospace;
+    }
+
+    .card h3 {
+      font-size: 15.5px;
+      font-weight: 500;
+      margin: 0 0 6px 0;
+      line-height: 1.45;
+    }
+    .card h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card h3 a:hover {
+      color: var(--primary);
+    }
+    .card-source {
+      display: flex; gap: 8px; align-items: center;
+      margin-bottom: 12px;
+      font-size: 11px; color: var(--text-secondary);
+      flex-wrap: wrap;
+    }
+
+    .card .summary {
+      border-left: 2px solid var(--primary);
+      padding: 2px 0 2px 12px;
+      margin: 0 0 12px 0;
+    }
+    .card .summary p {
+      margin: 0 0 4px 0;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+    .card .summary p:last-child { margin-bottom: 0; }
+
+    .relevance {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+    .relevance-label {
+      font-size: 10px;
+      color: var(--text-secondary);
+      letter-spacing: 0.3px;
+      margin-bottom: 3px;
+    }
+    .relevance p {
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.55;
+    }
+
+    .phrases {
+      margin-top: 10px;
+    }
+    .phrases summary {
+      cursor: pointer;
+      color: var(--text-secondary);
+      font-size: 12px;
+      padding: 4px 0;
+      list-style: none;
+    }
+    .phrases summary::-webkit-details-marker { display: none; }
+    .phrases summary::before {
+      content: "▸ ";
+      color: var(--text-tertiary);
+      display: inline-block;
+      transition: transform 0.15s;
+    }
+    .phrases[open] summary::before {
+      content: "▾ ";
+    }
+    .phrases table {
+      width: 100%;
+      margin-top: 6px;
+      font-size: 13px;
+      border-collapse: collapse;
+    }
+    .phrases td {
+      padding: 6px 0;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .phrases td.phrase {
+      font-family: Georgia, serif;
+    }
+    .phrases td.meaning {
+      text-align: right;
+      color: var(--text-secondary);
+    }
+
+    footer.site {
+      background: var(--surface);
+      padding: 14px 1.75rem;
+      font-size: 11px;
+      color: var(--text-secondary);
+      border-top: 0.5px solid var(--border);
+      text-align: center;
+    }
+    footer.site a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header.site, .filters, main, footer.site { padding-left: 1rem; padding-right: 1rem; }
+      header.site h1 { font-size: 18px; }
+      header.site .meta { text-align: left; width: 100%; }
+      .filter.sort { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="branding">
+      <div>
+        <div class="brand-mark">KCMO WEEKLY</div>
+        <h1>한국 핵심광물 ODA 협력국 주간 동향</h1>
+        <div class="subtitle">탄자니아 · 인도네시아 · 베트남 · 몽골 · 카자흐스탄 · 우즈베키스탄 · 라오스</div>
+      </div>
+      <div class="meta">
+        <div>{{WEEK_OF}} 발행</div>
+        <div class="next">{{TOTAL}} cards · 다음 발송: {{NEXT_DISPATCH}}</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="row">
+      <div class="filter">
+        <label for="f-country">국가</label>
+        <select id="f-country">
+          {{COUNTRY_OPTIONS}}
+        </select>
+      </div>
+      <div class="filter">
+        <label for="f-category">카테고리</label>
+        <select id="f-category">
+          {{CATEGORY_OPTIONS}}
+        </select>
+      </div>
+      <div class="filter">
+        <label for="f-tag">광종/태그</label>
+        <select id="f-tag">
+          {{TAG_OPTIONS}}
+        </select>
+      </div>
+      <div class="filter sort">
+        <label for="f-sort">정렬</label>
+        <select id="f-sort">
+          <option value="score">점수순</option>
+          <option value="recent">최신순</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <main id="cards">
+    <div class="results-info" id="results-info"></div>
+    {{CARDS_HTML}}
+  </main>
+
+  <footer class="site">
+    한국지질자원연구원(KIGAM) · 한국자원공학회 · 자동 큐레이션 by Claude AI (Anthropic)
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const $country = document.getElementById('f-country');
+  const $category = document.getElementById('f-category');
+  const $tag = document.getElementById('f-tag');
+  const $sort = document.getElementById('f-sort');
+  const $info = document.getElementById('results-info');
+  const $main = document.getElementById('cards');
+
+  function applyFilters() {
+    const ct = $country.value;
+    const cg = $category.value;
+    const tg = $tag.value;
+
+    let visible = 0;
+    cards.forEach(card => {
+      const c = card.dataset.country || '';
+      const g = card.dataset.category || '';
+      const tags = (card.dataset.tags || '').split(',');
+
+      const okCountry = !ct || c === ct;
+      const okCategory = !cg || g === cg;
+      const okTag = !tg || tags.includes(tg);
+
+      const show = okCountry && okCategory && okTag;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    $info.textContent = visible === cards.length
+      ? `${visible}건 표시 중`
+      : `${visible}건 표시 중 (전체 ${cards.length}건)`;
+  }
+
+  function applySort() {
+    const mode = $sort.value;
+    const sorted = cards.slice().sort((a, b) => {
+      if (mode === 'recent') {
+        return (b.dataset.published || '').localeCompare(a.dataset.published || '');
+      }
+      return parseInt(b.dataset.score || 0) - parseInt(a.dataset.score || 0);
+    });
+    sorted.forEach(card => $main.appendChild(card));
+  }
+
+  [$country, $category, $tag].forEach(el => el.addEventListener('change', applyFilters));
+  $sort.addEventListener('change', () => { applySort(); applyFilters(); });
+
+  applyFilters();
+})();
+</script>
+
+<script type="application/json" id="cards-data">{{CARDS_DATA}}</script>
+
+</body>
+</html>

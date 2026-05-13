@@ -1,0 +1,277 @@
+# =====================================================================
+# KCMO Weekly - sources.yaml (v3, Phase A complete: Tanzania)
+# Korea Critical Minerals ODA Weekly
+# =====================================================================
+# Structure: each tier has explicit { weight, sources[] } shape.
+
+target_countries:
+  - name: Tanzania
+    name_ko: 탄자니아
+    languages: [sw, en]
+    language_priority: sw
+    priority: 1
+    primary_minerals: [graphite, rare_earth, uranium, gold, nickel, helium]
+    note: "박사님 직접 담당 ODA 프로젝트국"
+
+# Swahili keyword dictionary - Tanzania mining domain
+swahili_keywords:
+  madini: "광물 (general)"
+  dhahabu: 금
+  shaba: 구리
+  almasi: 다이아몬드
+  tanzanite: 탄자나이트
+  urani: 우라늄
+  nikel: 니켈
+  kobalti: 코발트
+  lithiamu: 리튬
+  grafiti: 흑연
+  helium: 헬륨
+  "ardhi adimu": 희토류
+  "madini ya kimkakati": 전략광물
+  uchimbaji: "채굴/광업"
+  utafiti: "탐사/연구"
+  uchenjuaji: "정련/제련"
+  usafishaji: 정제
+  uwekezaji: 투자
+  leseni: 광권
+  ushirikiano: 협력
+  makubaliano: "MOU/협정"
+  mkataba: "계약/조약"
+  ubia: "합작/파트너십"
+
+# =====================================================================
+# Tier 1: Tanzania government & primary sources
+# =====================================================================
+tier_1_tanzania:
+  weight: 5
+  sources:
+    - name: "Wizara ya Madini - Press Release"
+      name_en: "Ministry of Minerals - Press Release"
+      url: "https://www.madini.go.tz/otherpage/?p=press-release"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 3
+      note: "공식 보도자료. 스와힐리어."
+
+    - name: "Wizara ya Madini - Latest News"
+      url: "https://www.madini.go.tz/otherpage/?p=latest-news"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 2
+
+    - name: "Wizara ya Madini - Speeches"
+      url: "https://www.madini.go.tz/listspeech/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 2
+      note: "장관 연설 - 정책 방향 시그널 강함"
+
+    - name: "Wizara ya Madini - Public Notes"
+      url: "https://www.madini.go.tz/otherpage/?p=public-notes"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 1
+
+    - name: "Wizara ya Madini - PDF Documents"
+      url: "https://www.madini.go.tz/listdoc/"
+      rss: null
+      scrape_method: pdf_directory
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 3
+      note: "PDF 보도자료 자동 수집 (Phase A에서는 미구현)"
+
+    - name: "Wizara ya Madini - Upcoming Events"
+      url: "https://www.madini.go.tz/otherpage/?p=upcoming-events"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 1
+
+    - name: "Tume ya Madini"
+      name_en: "Tanzania Mining Commission"
+      url: "https://www.tumemadini.go.tz/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 2
+
+    - name: "Geological Survey of Tanzania"
+      url: "https://www.gst.go.tz/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: en
+      verified: pending
+      priority_boost: 2
+
+    - name: "STAMICO"
+      url: "https://www.stamico.co.tz/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: en
+      verified: pending
+      priority_boost: 2
+
+# =====================================================================
+# Tier 2: Korean cooperation bodies
+# =====================================================================
+tier_2_korea:
+  weight: 5
+  sources:
+    - name: "외교부 보도자료"
+      url: "https://www.mofa.go.kr/www/brd/m_4080/list.do"
+      rss: null
+      country: korea
+      language: ko
+      scrape_method: html_listing
+      verified: true
+
+    - name: "KOICA 보도자료"
+      url: "https://www.koica.go.kr/koica_kr/981/subview.do"
+      rss: null
+      country: korea
+      language: ko
+      scrape_method: html_listing
+      verified: true
+
+    - name: "대한민국 정책브리핑"
+      url: "https://www.korea.kr/briefing/pressReleaseList.do"
+      rss: null
+      country: korea
+      language: ko
+      scrape_method: html_listing
+      verified: true
+
+# =====================================================================
+# Tier 3: Tanzania local media
+# =====================================================================
+tier_3_tanzania_media:
+  weight: 3
+  sources:
+    - name: "Mwananchi (Swahili)"
+      url: "https://www.mwananchi.co.tz/mw"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+
+    - name: "SwahiliTimes"
+      url: "https://swahilitimes.co.tz/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+
+    - name: "The Citizen Tanzania"
+      url: "https://www.thecitizen.co.tz/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: en
+      verified: pending
+
+    - name: "African Mining Market - Tanzania"
+      url: "https://africanminingmarket.com/country/tanzania/"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: en
+      verified: true
+
+# =====================================================================
+# Tier 4: Google News broad search
+# =====================================================================
+tier_4_broad_search:
+  weight: 1
+  sources: []  # Phase A에서는 Tier 1~3만 운영
+  english_queries:
+    - "Tanzania graphite mining"
+    - "Tanzania rare earth"
+    - "Tanzania uranium Mantra Namtumbo"
+    - "Tanzania nickel Kabanga"
+    - "Tanzania critical minerals"
+  swahili_queries:
+    - "Tanzania madini ya kimkakati"
+    - "Tanzania uchimbaji urani"
+    - "Wizara ya Madini taarifa"
+  korea_cross_queries:
+    - "Korea Tanzania mineral cooperation"
+    - "한국 탄자니아 ODA 광물"
+    - "KIGAM Tanzania"
+    - "KOICA 탄자니아 광물"
+
+# =====================================================================
+# Scoring config
+# =====================================================================
+scoring:
+  country_required: true
+  min_score_threshold: 7
+  local_language_bonus: 3
+
+  korea_keywords:
+    weight: 5
+    terms:
+      en: ["Korea", "Korean", "Republic of Korea", "South Korea"]
+      ko: ["한국", "KIGAM", "KOICA", "KOMIR", "KOTRA", "EDCF", "MOTIE", "MOFA"]
+      sw: ["Korea", "Kikorea", "Jamhuri ya Korea"]
+
+  oda_keywords:
+    en:
+      ODA: 5
+      "development cooperation": 4
+      EDCF: 5
+      "feasibility study": 4
+      "technical assistance": 4
+      "joint venture": 3
+      MOU: 3
+      bilateral: 3
+    ko:
+      "공적개발원조": 5
+      "개발협력": 4
+      "기술협력": 4
+      "양해각서": 3
+    sw:
+      "ushirikiano wa maendeleo": 4
+      makubaliano: 3
+      mkataba: 3
+      ubia: 3
+      "msaada wa kiufundi": 4
+
+  recency_bonus:
+    within_3_days: 2
+    within_7_days: 1
+  freshness_days: 30
+
+# =====================================================================
+# Special handlers
+# =====================================================================
+special_handlers:
+  pdf_extraction:
+    enabled: false  # Phase A 테스트에서는 비활성, 별도 단계에서 구현
+    target_dirs:
+      - "https://www.madini.go.tz/media/"
+    file_pattern: "*.pdf"
+  swahili_summarization:
+    enabled: true
+    note: "summarize.py 단계에서 적용 예정"

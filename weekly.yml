@@ -1,0 +1,126 @@
+name: KCMO Weekly Digest
+
+# 실행 트리거
+on:
+  schedule:
+    # 토요일 23:00 UTC = 일요일 08:00 KST
+    # CMW(일요일 23:00 UTC)와 하루 분산
+    - cron: '0 23 * * 6'
+
+  # 박사님이 GitHub 웹에서 수동으로 즉시 실행할 수 있는 버튼 활성화
+  # 첫 발송 테스트나 임시 발송 시 사용
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '드라이런 모드 (실제 메일 발송 안 함, 미리보기만 생성)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+# 자동 commit을 위한 권한
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Collect → Summarize → Build → Send
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # ----------------------------------------------------
+      # 1. 저장소 체크아웃
+      # ----------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ----------------------------------------------------
+      # 2. Python 환경 설정
+      # ----------------------------------------------------
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ----------------------------------------------------
+      # 3. 의존성 설치
+      # ----------------------------------------------------
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests pyyaml anthropic beautifulsoup4 lxml
+
+      # ----------------------------------------------------
+      # 4. 수집 단계
+      # ----------------------------------------------------
+      - name: Collect articles (7 countries, multilingual)
+        run: python scripts/collect.py
+
+      # ----------------------------------------------------
+      # 5. 요약 단계 (Claude API)
+      # ----------------------------------------------------
+      - name: Summarize with Claude (ODA perspective)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/summarize.py
+
+      # ----------------------------------------------------
+      # 6. 사이트 빌드
+      # ----------------------------------------------------
+      - name: Build index.html
+        run: python scripts/build_index.py
+
+      # ----------------------------------------------------
+      # 7. 결과물 자동 commit (GitHub Pages 자동 갱신)
+      # ----------------------------------------------------
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ index.html
+          if ! git diff --staged --quiet; then
+            git commit -m "Weekly digest: $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      # ----------------------------------------------------
+      # 8. Mailchimp 메일 발송
+      #    이 단계가 실패해도 사이트는 이미 빌드/배포됨
+      # ----------------------------------------------------
+      - name: Send email via Mailchimp
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          MAILCHIMP_SERVER: ${{ secrets.MAILCHIMP_SERVER }}
+          MAILCHIMP_AUDIENCE_ID: ${{ secrets.MAILCHIMP_AUDIENCE_ID }}
+          MAILCHIMP_REPLY_TO: ${{ secrets.MAILCHIMP_REPLY_TO }}
+          MAILCHIMP_FROM_NAME: KCMO Weekly
+          KCMO_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: python scripts/send_email.py
+        continue-on-error: true
+
+      # ----------------------------------------------------
+      # 9. 실행 결과 요약 (GitHub Actions 페이지에 표시)
+      # ----------------------------------------------------
+      - name: Print summary
+        if: always()
+        run: |
+          echo "## KCMO Weekly Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run date:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Dry run:** ${{ github.event.inputs.dry_run || 'false (scheduled)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f "data/raw_$(date -u +'%Y-%m-%d').json" ]; then
+            echo "- ✅ Raw collection: data/raw_$(date -u +'%Y-%m-%d').json" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "data/cards_$(date -u +'%Y-%m-%d').json" ]; then
+            cards=$(python -c "import json; d=json.load(open('data/cards_$(date -u +'%Y-%m-%d').json')); print(d.get('total_cards', 0))")
+            echo "- ✅ Cards generated: $cards" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "index.html" ]; then
+            echo "- ✅ Site built: https://dolmudaddy.github.io/korea-oda-minerals/" >> $GITHUB_STEP_SUMMARY
+          fi
