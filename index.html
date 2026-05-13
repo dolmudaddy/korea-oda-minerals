@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한국 핵심광물 ODA 협력국 주간 동향 · KCMO Weekly</title>
+  <meta name="description" content="한국이 핵심광물 ODA 협력을 진행 중인 7개국(탄자니아·인도네시아·베트남·몽골·카자흐스탄·우즈베키스탄·라오스)의 정책·탐사·개발·공급망·연구 동향 주간 큐레이션.">
+  <link rel="alternate" type="application/rss+xml" title="KCMO Weekly RSS" href="rss.xml">
+  <style>
+    :root {
+      --primary: #2d5016;
+      --primary-light: #4a7a2a;
+      --primary-bg: #EAF3DE;
+      --primary-fg: #173404;
+      --teal-bg: #E1F5EE;
+      --teal-fg: #04342C;
+      --amber-bg: #FAEEDA;
+      --amber-fg: #412402;
+      --text: #222;
+      --text-secondary: #666;
+      --text-tertiary: #999;
+      --bg: #fafaf7;
+      --surface: #fff;
+      --border: rgba(0,0,0,0.1);
+      --border-strong: rgba(0,0,0,0.2);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #4a7a2a;
+        --primary-bg: #1d2a10;
+        --primary-fg: #C0DD97;
+        --teal-bg: #043028;
+        --teal-fg: #9FE1CB;
+        --amber-bg: #2a1f0a;
+        --amber-fg: #FAC775;
+        --text: #e8e8e3;
+        --text-secondary: #b4b2a9;
+        --text-tertiary: #888780;
+        --bg: #1a1a18;
+        --surface: #242422;
+        --border: rgba(255,255,255,0.1);
+        --border-strong: rgba(255,255,255,0.2);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "Pretendard", "Apple SD Gothic Neo", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    header.site {
+      background: var(--primary);
+      color: var(--primary-bg);
+      padding: 1.75rem 1.75rem 1.5rem;
+    }
+    header.site .branding {
+      display: flex; justify-content: space-between;
+      align-items: baseline; flex-wrap: wrap; gap: 12px;
+    }
+    header.site .brand-mark {
+      font-size: 11px; letter-spacing: 1.5px;
+      opacity: 0.75; margin-bottom: 6px;
+    }
+    header.site h1 {
+      font-size: 22px; font-weight: 500;
+      margin: 0; color: var(--primary-bg);
+    }
+    header.site .subtitle {
+      font-size: 12px; opacity: 0.85; margin-top: 8px;
+    }
+    header.site .meta { text-align: right; font-size: 13px; opacity: 0.9; }
+    header.site .meta .next { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+
+    .filters {
+      background: var(--surface);
+      padding: 14px 1.75rem;
+      border-bottom: 0.5px solid var(--border);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .filters .row {
+      display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
+    }
+    .filter {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .filter label {
+      font-size: 11px; color: var(--text-secondary);
+      letter-spacing: 0.3px;
+    }
+    .filter select {
+      font-size: 12px; padding: 4px 8px;
+      border: 0.5px solid var(--border-strong);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit;
+    }
+    .filter.sort { margin-left: auto; }
+
+    .empty {
+      padding: 3rem 1.75rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    main {
+      padding: 16px 1.75rem 2rem;
+    }
+    .results-info {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 0.5px solid var(--border);
+      padding: 1.1rem 1.4rem 1.2rem;
+      margin-bottom: 12px;
+    }
+    .card-meta {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      align-items: center; margin-bottom: 10px;
+    }
+    .chip {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .chip-country {
+      background: var(--primary-bg);
+      color: var(--primary-fg);
+      font-weight: 500;
+    }
+    .chip-category {
+      background: var(--teal-bg);
+      color: var(--teal-fg);
+      font-weight: 500;
+    }
+    .chip-tag {
+      background: var(--bg);
+      color: var(--text-secondary);
+    }
+    .chip-lang {
+      background: var(--amber-bg);
+      color: var(--amber-fg);
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .card-score {
+      margin-left: auto;
+      color: var(--text-tertiary);
+      font-size: 11px;
+      font-family: "SF Mono", Menlo, monospace;
+    }
+
+    .card h3 {
+      font-size: 15.5px;
+      font-weight: 500;
+      margin: 0 0 6px 0;
+      line-height: 1.45;
+    }
+    .card h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card h3 a:hover {
+      color: var(--primary);
+    }
+    .card-source {
+      display: flex; gap: 8px; align-items: center;
+      margin-bottom: 12px;
+      font-size: 11px; color: var(--text-secondary);
+      flex-wrap: wrap;
+    }
+
+    .card .summary {
+      border-left: 2px solid var(--primary);
+      padding: 2px 0 2px 12px;
+      margin: 0 0 12px 0;
+    }
+    .card .summary p {
+      margin: 0 0 4px 0;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+    .card .summary p:last-child { margin-bottom: 0; }
+
+    .relevance {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+    .relevance-label {
+      font-size: 10px;
+      color: var(--text-secondary);
+      letter-spacing: 0.3px;
+      margin-bottom: 3px;
+    }
+    .relevance p {
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.55;
+    }
+
+    .phrases {
+      margin-top: 10px;
+    }
+    .phrases summary {
+      cursor: pointer;
+      color: var(--text-secondary);
+      font-size: 12px;
+      padding: 4px 0;
+      list-style: none;
+    }
+    .phrases summary::-webkit-details-marker { display: none; }
+    .phrases summary::before {
+      content: "▸ ";
+      color: var(--text-tertiary);
+      display: inline-block;
+      transition: transform 0.15s;
+    }
+    .phrases[open] summary::before {
+      content: "▾ ";
+    }
+    .phrases table {
+      width: 100%;
+      margin-top: 6px;
+      font-size: 13px;
+      border-collapse: collapse;
+    }
+    .phrases td {
+      padding: 6px 0;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .phrases td.phrase {
+      font-family: Georgia, serif;
+    }
+    .phrases td.meaning {
+      text-align: right;
+      color: var(--text-secondary);
+    }
+
+    footer.site {
+      background: var(--surface);
+      padding: 14px 1.75rem;
+      font-size: 11px;
+      color: var(--text-secondary);
+      border-top: 0.5px solid var(--border);
+      text-align: center;
+    }
+    footer.site a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header.site, .filters, main, footer.site { padding-left: 1rem; padding-right: 1rem; }
+      header.site h1 { font-size: 18px; }
+      header.site .meta { text-align: left; width: 100%; }
+      .filter.sort { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="branding">
+      <div>
+        <div class="brand-mark">KCMO WEEKLY</div>
+        <h1>한국 핵심광물 ODA 협력국 주간 동향</h1>
+        <div class="subtitle">탄자니아 · 인도네시아 · 베트남 · 몽골 · 카자흐스탄 · 우즈베키스탄 · 라오스</div>
+      </div>
+      <div class="meta">
+        <div>2026-05-13 발행</div>
+        <div class="next">9 cards · 다음 발송: 2026-05-13 08:00</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="row">
+      <div class="filter">
+        <label for="f-country">국가</label>
+        <select id="f-country">
+          <option value="">전체 (9)</option>
+          <option value="Tanzania">탄자니아 (9)</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="f-category">카테고리</label>
+        <select id="f-category">
+          <option value="">전체 (9)</option>
+          <option value="policy_regulation">정책·법규 (7)</option>
+          <option value="oda_cooperation">ODA 협력 (1)</option>
+          <option value="supply_chain_trade">공급망·교역 (1)</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="f-tag">광종/태그</label>
+        <select id="f-tag">
+          <option value="">전체 (9)</option>
+          <option value="탄자니아">탄자니아 (9)</option>
+          <option value="광물부">광물부 (4)</option>
+          <option value="광물정책">광물정책 (2)</option>
+          <option value="글로벌 공급망">글로벌 공급망 (2)</option>
+          <option value="Wizara ya Madini">Wizara ya Madini (2)</option>
+          <option value="광물 정책">광물 정책 (2)</option>
+          <option value="광물자원부">광물자원부 (2)</option>
+          <option value="전략 지위">전략 지위 (1)</option>
+          <option value="국제 협력">국제 협력 (1)</option>
+          <option value="광물 부문">광물 부문 (1)</option>
+        </select>
+      </div>
+      <div class="filter sort">
+        <label for="f-sort">정렬</label>
+        <select id="f-sort">
+          <option value="score">점수순</option>
+          <option value="recent">최신순</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <main id="cards">
+    <div class="results-info" id="results-info"></div>
+    <article class="card"
+    data-id="4ec4fd70"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물정책,글로벌 공급망,전략 지위,Wizara ya Madini"
+    data-score="11"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물정책</span>
+      <span class="card-score">11</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1" target="_blank" rel="noopener">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Press Release · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 글로벌 광물 시장에서 전략적 지위를 강화하기 위한 계획을 추진 중임</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 주도적으로 국제 광물 공급망 내 위상 제고를 모색하고 있음</p>
+      <p>한국의 핵심광물 수급 안정화 및 공급처 다변화 차원에서 탄자니아와의 협력 강화 필요성 대두</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광물 전략 추진이 한국의 핵심광물 공급망 보안 목표와 부합하므로 KOICA·KIGAM의 채광 기술·자원 거버넌스 ODA 협력 확대 기회 제공</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GLOBAL</td><td class="meaning">탄자니아가 글로벌 무대에서 전략적 지위를 강화하다</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="635cd2a6"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물 정책,국제 협력,Wizara ya Madini,광물 부문"
+    data-score="11"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물 정책</span>
+      <span class="card-score">11</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1" target="_blank" rel="noopener">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Press Release · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 광물 부문에서의 국제적 입지를 강화하기 위한 조치를 추진 중임</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 주도적으로 정책 및 제도 개선을 진행 중임</p>
+      <p>한국의 핵심광물 공급망 다변화 전략과 부합하는 탄자니아의 전략적 위치 강화 추세로 평가됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광물 부문 역량 강화 의지는 한국의 핵심광물 조달 안정화 및 지질 인프라 ODA 협력 확대의 전략적 기회점이 될 수 있음</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 3개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI</td><td class="meaning">탄자니아가 광물 부문에서의 입지를 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부</td></tr>
+        <tr><td class="phrase">SEKTA YA MADINI</td><td class="meaning">광물 부문</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="4ec4fd70"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물자원부,글로벌 공급망,에너지 전략"
+    data-score="10"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물자원부</span>
+      <span class="card-score">10</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1" target="_blank" rel="noopener">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Latest News · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 글로벌 광물·에너지 공급망에서 전략적 위상을 강화하고 있음</p>
+      <p>탄자니아 광물자원부(Wizara ya Madini)가 국제 공급망 협력 및 정책 수립을 추진 중임</p>
+      <p>한국의 핵심광물 확보 전략에서 탄자니아의 중요성 증대 예상됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 글로벌 공급망 전략 위상 강화는 한국 KOICA·외교부의 에너지·광물 ODA 협력 우선순위 재조정 필요성을 시사함</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL</td><td class="meaning">탄자니아가 글로벌 전략적 위상을 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물자원부</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="635cd2a6"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물산업,정책강화,광물부"
+    data-score="10"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물산업</span>
+      <span class="card-score">10</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1" target="_blank" rel="noopener">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Latest News · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 광물 부문에서의 국제적 위상 강화를 추진 중임</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 주도적으로 광물산업 경쟁력 향상 계획을 수립함</p>
+      <p>한국 광물 수입처로서의 탄자니아의 전략적 중요성이 증대될 것으로 전망됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광물산업 강화 정책은 한국의 ODA 협력 수요 확대와 KIGAM의 기술 이전, KOICA의 인력 양성 협력 기회를 창출할 수 있음</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 3개 보기</summary>
+      <table>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부</td></tr>
+        <tr><td class="phrase">kuimarisha nafasi</td><td class="meaning">위상·지위를 강화하다</td></tr>
+        <tr><td class="phrase">sekta ya madini</td><td class="meaning">광물 부문</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="1d9d8e40"
+    data-country="Tanzania"
+    data-category="oda_cooperation"
+    data-language="sw"
+    data-tags="탄자니아,광업외교,남아프리카공화국,광물자원부,국제협력"
+    data-score="10"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">ODA 협력</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광업외교</span>
+      <span class="card-score">10</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/f921703e-ed9e-49e0-9cde-730242b77434/?d=1" target="_blank" rel="noopener">TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA’S MININ…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Speeches · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 남아공의 광업 행사에 처음으로 참가할 예정임</p>
+      <p>탄자니아 광물자원부가 남아프리카공화국 주최 광업 컨퍼런스 참여 계획을 발표함</p>
+      <p>아프리카 광물 협력 네트워크 확대로 탄자니아 광업 외교의 새로운 장을 열 것으로 전망됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광업 국제협력 확대 동향으로, 한국의 KIGAM·KOICA 협력 시 남아공과의 삼각협력 또는 지역 광업 허브 전략 수립 시 참고 필요</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA&#x27;S MINING</td><td class="meaning">탄자니아가 남아공의 광업 행사에 처음으로 참여</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물자원부</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="4ec4fd70"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물 정책,공급망 전략,KIGAM 협력,KOICA"
+    data-score="9"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물 정책</span>
+      <span class="card-score">9</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1" target="_blank" rel="noopener">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Public Notes · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화하기 위한 정책을 추진하고 있음</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 주도하는 이 전략은 국제 광물 시장에서의 영향력 확대를 목표로 함</p>
+      <p>한국의 핵심광물 확보 전략과 연계된 탄자니아의 광물 정책 변화가 ODA 협력의 기회가 될 것으로 예상됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 글로벌 공급망 전략 강화는 한국의 핵심광물 수급 안정화와 직결되므로, KOICA와 KIGAM의 기술협력 및 인재양성 지원이 양국 협력의 핵심 추진 과제임을 시사함</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GLOBAL</td><td class="meaning">탄자니아가 글로벌 광물 공급망에서의 전략적 위치를 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="635cd2a6"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물정책,가치사슬,광물부"
+    data-score="9"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물정책</span>
+      <span class="card-score">9</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1" target="_blank" rel="noopener">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Public Notes · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 광물 산업에서의 전략적 지위를 강화하기 위한 정책을 추진 중임</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 광종 다양화와 부가가치 창출을 위한 구체적 방안을 수립하고 있음</p>
+      <p>한국의 핵심광물 확보 전략과 ODA 협력을 통해 탄자니아와의 광물자원 파트너십 강화 기회 제시됨</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광물 산업 강화 정책은 한국의 핵심광물 공급망 안정화 목표와 부합하며, KIGAM·KOICA 협력을 통한 채굴·제련 기술 이전 및 인력양성 사업 확대의 근거가 될 수 있음</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI</td><td class="meaning">탄자니아가 광물 부문에서 자신의 지위를 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부(Ministry of Minerals)</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="4ec4fd70"
+    data-country="Tanzania"
+    data-category="supply_chain_trade"
+    data-language="sw"
+    data-tags="탄자니아,광물공급망,광물부,글로벌 전략,핵심광물"
+    data-score="9"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">공급망·교역</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물공급망</span>
+      <span class="card-score">9</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1" target="_blank" rel="noopener">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Upcoming Events · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화하고 있음</p>
+      <p>탄자니아 광물부(Wizara ya Madini)가 국제 광물 정책 및 공급망 협력 방향을 추진 중임</p>
+      <p>한국의 핵심광물 수급 안정화 및 ODA 협력 확대 기회로 작용할 가능성 있음</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 글로벌 광물 공급망 전략 강화는 한국의 핵심광물 확보 전략과 직결되며, KOICA·KIGAM 협력을 통한 지질조사·채굴 기술 이전 및 인적자원 개발 ODA 사업 확대의 정책적 근거가 될 수 있음</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…</td><td class="meaning">탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">탄자니아 광물부</td></tr>
+      </table>
+    </details>
+  </article>
+
+  <article class="card"
+    data-id="635cd2a6"
+    data-country="Tanzania"
+    data-category="policy_regulation"
+    data-language="sw"
+    data-tags="탄자니아,광물부,자원 외교,광물산업 정책"
+    data-score="9"
+    data-published="">
+    <div class="card-meta">
+      <span class="chip chip-country">탄자니아</span>
+      <span class="chip chip-category">정책·법규</span>
+      <span class="chip chip-tag">탄자니아</span>
+      <span class="chip chip-tag">광물부</span>
+      <span class="card-score">9</span>
+    </div>
+    <h3><a href="https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1" target="_blank" rel="noopener">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…</a></h3>
+    <div class="card-source">
+      <span>Wizara ya Madini - Upcoming Events · </span>
+      <span class="chip chip-lang">sw 원문</span>
+    </div>
+    <div class="summary">
+      <p>탄자니아가 광물 부문에서의 국제적 위상 강화를 추진 중임</p>
+      <p>탄자니아 광물부가 주도적으로 광물 산업의 경쟁력 강화 계획을 수립했음</p>
+      <p>한국의 광물 자원 협력 파트너로서 탄자니아의 전략적 중요성이 증대될 전망임</p>
+    </div>
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>탄자니아의 광물 부문 역량 강화 추진은 한국의 핵심광물 수급 안정 및 ODA를 통한 자원 외교 전개의 기회 창출 가능성을 시사함</p>
+    </div>
+    <details class="phrases">
+      <summary>원문 핵심 표현 2개 보기</summary>
+      <table>
+        <tr><td class="phrase">TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI</td><td class="meaning">탄자니아가 광물 부문에서 그 위상을 강화함</td></tr>
+        <tr><td class="phrase">Wizara ya Madini</td><td class="meaning">광물부(Ministry of Minerals)</td></tr>
+      </table>
+    </details>
+  </article>
+  </main>
+
+  <footer class="site">
+    한국지질자원연구원(KIGAM) · 한국자원공학회 · 자동 큐레이션 by Claude AI (Anthropic)
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const $country = document.getElementById('f-country');
+  const $category = document.getElementById('f-category');
+  const $tag = document.getElementById('f-tag');
+  const $sort = document.getElementById('f-sort');
+  const $info = document.getElementById('results-info');
+  const $main = document.getElementById('cards');
+
+  function applyFilters() {
+    const ct = $country.value;
+    const cg = $category.value;
+    const tg = $tag.value;
+
+    let visible = 0;
+    cards.forEach(card => {
+      const c = card.dataset.country || '';
+      const g = card.dataset.category || '';
+      const tags = (card.dataset.tags || '').split(',');
+
+      const okCountry = !ct || c === ct;
+      const okCategory = !cg || g === cg;
+      const okTag = !tg || tags.includes(tg);
+
+      const show = okCountry && okCategory && okTag;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    $info.textContent = visible === cards.length
+      ? `${visible}건 표시 중`
+      : `${visible}건 표시 중 (전체 ${cards.length}건)`;
+  }
+
+  function applySort() {
+    const mode = $sort.value;
+    const sorted = cards.slice().sort((a, b) => {
+      if (mode === 'recent') {
+        return (b.dataset.published || '').localeCompare(a.dataset.published || '');
+      }
+      return parseInt(b.dataset.score || 0) - parseInt(a.dataset.score || 0);
+    });
+    sorted.forEach(card => $main.appendChild(card));
+  }
+
+  [$country, $category, $tag].forEach(el => el.addEventListener('change', applyFilters));
+  $sort.addEventListener('change', () => { applySort(); applyFilters(); });
+
+  applyFilters();
+})();
+</script>
+
+<script type="application/json" id="cards-data">[{"id": "4ec4fd70", "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…", "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1", "source": "Wizara ya Madini - Press Release", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 11, "published": null, "korean_summary": ["탄자니아가 글로벌 광물 시장에서 전략적 지위를 강화하기 위한 계획을 추진 중임", "탄자니아 광물부(Wizara ya Madini)가 주도적으로 국제 광물 공급망 내 위상 제고를 모색하고 있음", "한국의 핵심광물 수급 안정화 및 공급처 다변화 차원에서 탄자니아와의 협력 강화 필요성 대두"], "oda_relevance": "탄자니아의 광물 전략 추진이 한국의 핵심광물 공급망 보안 목표와 부합하므로 KOICA·KIGAM의 채광 기술·자원 거버넌스 ODA 협력 확대 기회 제공", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물정책", "글로벌 공급망", "전략 지위", "Wizara ya Madini"], "key_phrases": [{"phrase": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GLOBAL", "meaning": "탄자니아가 글로벌 무대에서 전략적 지위를 강화하다"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부"}], "ai_processed": true, "processed_at": "2026-05-13T08:55:36.701546+00:00"}, {"id": "635cd2a6", "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…", "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1", "source": "Wizara ya Madini - Press Release", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 11, "published": null, "korean_summary": ["탄자니아가 광물 부문에서의 국제적 입지를 강화하기 위한 조치를 추진 중임", "탄자니아 광물부(Wizara ya Madini)가 주도적으로 정책 및 제도 개선을 진행 중임", "한국의 핵심광물 공급망 다변화 전략과 부합하는 탄자니아의 전략적 위치 강화 추세로 평가됨"], "oda_relevance": "탄자니아의 광물 부문 역량 강화 의지는 한국의 핵심광물 조달 안정화 및 지질 인프라 ODA 협력 확대의 전략적 기회점이 될 수 있음", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물 정책", "국제 협력", "Wizara ya Madini", "광물 부문"], "key_phrases": [{"phrase": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI", "meaning": "탄자니아가 광물 부문에서의 입지를 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부"}, {"phrase": "SEKTA YA MADINI", "meaning": "광물 부문"}], "ai_processed": true, "processed_at": "2026-05-13T08:55:40.548486+00:00"}, {"id": "4ec4fd70", "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…", "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1", "source": "Wizara ya Madini - Latest News", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 10, "published": null, "korean_summary": ["탄자니아가 글로벌 광물·에너지 공급망에서 전략적 위상을 강화하고 있음", "탄자니아 광물자원부(Wizara ya Madini)가 국제 공급망 협력 및 정책 수립을 추진 중임", "한국의 핵심광물 확보 전략에서 탄자니아의 중요성 증대 예상됨"], "oda_relevance": "탄자니아의 글로벌 공급망 전략 위상 강화는 한국 KOICA·외교부의 에너지·광물 ODA 협력 우선순위 재조정 필요성을 시사함", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물자원부", "글로벌 공급망", "에너지 전략"], "key_phrases": [{"phrase": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL", "meaning": "탄자니아가 글로벌 전략적 위상을 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물자원부"}], "ai_processed": true, "processed_at": "2026-05-13T08:55:47.812291+00:00"}, {"id": "635cd2a6", "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…", "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1", "source": "Wizara ya Madini - Latest News", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 10, "published": null, "korean_summary": ["탄자니아가 광물 부문에서의 국제적 위상 강화를 추진 중임", "탄자니아 광물부(Wizara ya Madini)가 주도적으로 광물산업 경쟁력 향상 계획을 수립함", "한국 광물 수입처로서의 탄자니아의 전략적 중요성이 증대될 것으로 전망됨"], "oda_relevance": "탄자니아의 광물산업 강화 정책은 한국의 ODA 협력 수요 확대와 KIGAM의 기술 이전, KOICA의 인력 양성 협력 기회를 창출할 수 있음", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물산업", "정책강화", "광물부"], "key_phrases": [{"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부"}, {"phrase": "kuimarisha nafasi", "meaning": "위상·지위를 강화하다"}, {"phrase": "sekta ya madini", "meaning": "광물 부문"}], "ai_processed": true, "processed_at": "2026-05-13T08:55:51.557829+00:00"}, {"id": "1d9d8e40", "title": "TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA’S MININ…", "url": "https://www.madini.go.tz/page/f921703e-ed9e-49e0-9cde-730242b77434/?d=1", "source": "Wizara ya Madini - Speeches", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 10, "published": null, "korean_summary": ["탄자니아가 남아공의 광업 행사에 처음으로 참가할 예정임", "탄자니아 광물자원부가 남아프리카공화국 주최 광업 컨퍼런스 참여 계획을 발표함", "아프리카 광물 협력 네트워크 확대로 탄자니아 광업 외교의 새로운 장을 열 것으로 전망됨"], "oda_relevance": "탄자니아의 광업 국제협력 확대 동향으로, 한국의 KIGAM·KOICA 협력 시 남아공과의 삼각협력 또는 지역 광업 허브 전략 수립 시 참고 필요", "category": "oda_cooperation", "category_ko": "ODA 협력", "tags": ["탄자니아", "광업외교", "남아프리카공화국", "광물자원부", "국제협력"], "key_phrases": [{"phrase": "TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA'S MINING", "meaning": "탄자니아가 남아공의 광업 행사에 처음으로 참여"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물자원부"}], "ai_processed": true, "processed_at": "2026-05-13T08:55:55.451619+00:00"}, {"id": "4ec4fd70", "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…", "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1", "source": "Wizara ya Madini - Public Notes", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 9, "published": null, "korean_summary": ["탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화하기 위한 정책을 추진하고 있음", "탄자니아 광물부(Wizara ya Madini)가 주도하는 이 전략은 국제 광물 시장에서의 영향력 확대를 목표로 함", "한국의 핵심광물 확보 전략과 연계된 탄자니아의 광물 정책 변화가 ODA 협력의 기회가 될 것으로 예상됨"], "oda_relevance": "탄자니아의 글로벌 공급망 전략 강화는 한국의 핵심광물 수급 안정화와 직결되므로, KOICA와 KIGAM의 기술협력 및 인재양성 지원이 양국 협력의 핵심 추진 과제임을 시사함", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물 정책", "공급망 전략", "KIGAM 협력", "KOICA"], "key_phrases": [{"phrase": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GLOBAL", "meaning": "탄자니아가 글로벌 광물 공급망에서의 전략적 위치를 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부"}], "ai_processed": true, "processed_at": "2026-05-13T08:56:03.701367+00:00"}, {"id": "635cd2a6", "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…", "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1", "source": "Wizara ya Madini - Public Notes", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 9, "published": null, "korean_summary": ["탄자니아가 광물 산업에서의 전략적 지위를 강화하기 위한 정책을 추진 중임", "탄자니아 광물부(Wizara ya Madini)가 광종 다양화와 부가가치 창출을 위한 구체적 방안을 수립하고 있음", "한국의 핵심광물 확보 전략과 ODA 협력을 통해 탄자니아와의 광물자원 파트너십 강화 기회 제시됨"], "oda_relevance": "탄자니아의 광물 산업 강화 정책은 한국의 핵심광물 공급망 안정화 목표와 부합하며, KIGAM·KOICA 협력을 통한 채굴·제련 기술 이전 및 인력양성 사업 확대의 근거가 될 수 있음", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물정책", "가치사슬", "광물부"], "key_phrases": [{"phrase": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI", "meaning": "탄자니아가 광물 부문에서 자신의 지위를 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부(Ministry of Minerals)"}], "ai_processed": true, "processed_at": "2026-05-13T08:56:07.867092+00:00"}, {"id": "4ec4fd70", "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…", "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1", "source": "Wizara ya Madini - Upcoming Events", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 9, "published": null, "korean_summary": ["탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화하고 있음", "탄자니아 광물부(Wizara ya Madini)가 국제 광물 정책 및 공급망 협력 방향을 추진 중임", "한국의 핵심광물 수급 안정화 및 ODA 협력 확대 기회로 작용할 가능성 있음"], "oda_relevance": "탄자니아의 글로벌 광물 공급망 전략 강화는 한국의 핵심광물 확보 전략과 직결되며, KOICA·KIGAM 협력을 통한 지질조사·채굴 기술 이전 및 인적자원 개발 ODA 사업 확대의 정책적 근거가 될 수 있음", "category": "supply_chain_trade", "category_ko": "공급망·교역", "tags": ["탄자니아", "광물공급망", "광물부", "글로벌 전략", "핵심광물"], "key_phrases": [{"phrase": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…", "meaning": "탄자니아가 글로벌 광물 공급망에서 전략적 위치를 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "탄자니아 광물부"}], "ai_processed": true, "processed_at": "2026-05-13T08:56:12.259429+00:00"}, {"id": "635cd2a6", "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…", "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1", "source": "Wizara ya Madini - Upcoming Events", "source_language": "sw", "country": "Tanzania", "tier_weight": 5, "score": 9, "published": null, "korean_summary": ["탄자니아가 광물 부문에서의 국제적 위상 강화를 추진 중임", "탄자니아 광물부가 주도적으로 광물 산업의 경쟁력 강화 계획을 수립했음", "한국의 광물 자원 협력 파트너로서 탄자니아의 전략적 중요성이 증대될 전망임"], "oda_relevance": "탄자니아의 광물 부문 역량 강화 추진은 한국의 핵심광물 수급 안정 및 ODA를 통한 자원 외교 전개의 기회 창출 가능성을 시사함", "category": "policy_regulation", "category_ko": "정책·법규", "tags": ["탄자니아", "광물부", "자원 외교", "광물산업 정책"], "key_phrases": [{"phrase": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA MADINI", "meaning": "탄자니아가 광물 부문에서 그 위상을 강화함"}, {"phrase": "Wizara ya Madini", "meaning": "광물부(Ministry of Minerals)"}], "ai_processed": true, "processed_at": "2026-05-13T08:56:15.753231+00:00"}]</script>
+
+</body>
+</html>
