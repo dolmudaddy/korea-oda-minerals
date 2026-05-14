@@ -284,12 +284,136 @@ def collect_from_source(source, tier_weight, scoring_cfg, results, stats):
     stats["items_qualified"] += qualified
 
 
+# -----------------------------------------------------------------
+# Google News broad search (Tier 4)
+# -----------------------------------------------------------------
+# 쿼리 키 → (언어, 국가) 매핑
+# Google News RSS는 hl(언어)·gl(국가)·ceid(국가:언어) 파라미터로 지역화함
+GOOGLE_NEWS_LOCALES = {
+    "tanzania_english_queries": ("en", "TZ", "TZ:en"),
+    "tanzania_swahili_queries": ("sw", "TZ", "TZ:sw"),
+    "indonesia_english_queries": ("en", "ID", "ID:en"),
+    "indonesia_local_queries":   ("id", "ID", "ID:id"),
+    "vietnam_english_queries":   ("en", "VN", "VN:en"),
+    "vietnam_local_queries":     ("vi", "VN", "VN:vi"),
+    "mongolia_english_queries":  ("en", "MN", "MN:en"),
+    "mongolia_local_queries":    ("mn", "MN", "MN:mn"),
+    "korea_cross_queries":       ("ko", "KR", "KR:ko"),
+}
+
+
+def fetch_google_news_feed(query, locale_tuple):
+    """Google News RSS를 한 쿼리에 대해 호출. feedparser로 결과 파싱.
+
+    feedparser에 명시적 User-Agent 전달하여 차단 회피.
+    """
+    from urllib.parse import quote_plus
+    hl, gl, ceid = locale_tuple
+    url = (
+        f"https://news.google.com/rss/search?"
+        f"q={quote_plus(query)}&hl={hl}&gl={gl}&ceid={ceid}"
+    )
+    try:
+        # feedparser는 agent 인자 지원
+        feed = feedparser.parse(url, agent=USER_AGENT)
+        # bozo는 파싱 오류 플래그. 0이면 정상
+        if feed.bozo and not feed.entries:
+            # 파싱 오류 + 빈 결과면 진짜 실패
+            return []
+        return feed.entries
+    except Exception as e:
+        print(f"    [WARN] Google News fetch failed for '{query}': {e}")
+        return []
+
+
+def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
+    """tier_4_broad_search 섹션의 모든 쿼리를 Google News RSS로 실행."""
+    min_score = scoring_cfg.get("min_score_threshold", 7)
+
+    # 모든 쿼리 키를 탐색
+    for query_key, locale in GOOGLE_NEWS_LOCALES.items():
+        queries = tier4_cfg.get(query_key, [])
+        if not queries:
+            continue
+
+        print(f"\n  [{query_key}] {len(queries)} query(ies), locale={locale[2]}")
+
+        for query in queries:
+            stats["google_news_queries"] += 1
+            entries = fetch_google_news_feed(query, locale)
+            stats["google_news_items"] += len(entries)
+            print(f"    '{query}' → {len(entries)} entries")
+
+            qualified = 0
+            for entry in entries:
+                # Google News 항목을 article 구조로 변환
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                summary = entry.get("summary", "")
+                pub_str = entry.get("published", "") or entry.get("updated", "")
+
+                # 발행일 파싱
+                pub_dt = None
+                try:
+                    if pub_str:
+                        from email.utils import parsedate_to_datetime
+                        pub_dt = parsedate_to_datetime(pub_str)
+                        if pub_dt.tzinfo is None:
+                            pub_dt = pub_dt.replace(tzinfo=timezone.utc)
+                except Exception:
+                    pass
+
+                # 가상 source_meta 생성 (Tier 4 - weight 1)
+                source_meta = {
+                    "name": f"Google News ({query_key})",
+                    "tier_weight": tier4_cfg.get("weight", 1),
+                    "priority_boost": 0,
+                    "language": locale[0],
+                }
+
+                # article 후보 빌드
+                article = {
+                    "id": hashlib.md5(link.encode("utf-8")).hexdigest()[:12],
+                    "title": title,
+                    "url": link,
+                    "source": f"Google News ({locale[2]})",
+                    "source_language": locale[0],
+                    "summary_raw": summary[:1500] if summary else "",
+                    "published_dt": pub_dt,
+                    "published": pub_dt.strftime("%Y-%m-%d") if pub_dt else "",
+                    "tier_weight": tier4_cfg.get("weight", 1),
+                    "priority_boost": 0,
+                    "source_type": "google_news",
+                    "search_query": query,
+                }
+
+                # 점수화 (Country detection 포함, freshness 30일 필터 자동)
+                score, country = score_article(article, source_meta, scoring_cfg)
+                if score is None or score < min_score:
+                    continue
+
+                article["score"] = score
+                article["country"] = country
+                # published_dt는 직렬화 안 되므로 제거
+                article.pop("published_dt", None)
+                results.append(article)
+                qualified += 1
+
+            if qualified > 0:
+                stats["items_qualified"] += qualified
+                print(f"      qualified: {qualified}")
+
+            # Rate limiting: Google News에 부담 주지 않기 위한 지연
+            time.sleep(0.5)
+
+
 def main():
     cfg = load_sources()
     scoring = cfg.get("scoring", {})
 
     results = []
-    stats = {"sources_tried": 0, "items_fetched": 0, "items_qualified": 0}
+    stats = {"sources_tried": 0, "items_fetched": 0, "items_qualified": 0,
+             "google_news_queries": 0, "google_news_items": 0}
 
     # Iterate all tier sections - each tier has { weight, sources[] }
     tier_keys = [k for k in cfg.keys() if k.startswith("tier_")]
@@ -307,6 +431,27 @@ def main():
         for source in sources_list:
             collect_from_source(source, tier_weight, scoring, results, stats)
 
+    # ----------------------------------------------------
+    # Phase B: Tier 4 Google News broad search
+    # ----------------------------------------------------
+    tier4 = cfg.get("tier_4_broad_search", {})
+    if tier4:
+        print(f"\n{'#'*60}")
+        print(f"# Tier 4: Google News (broad search across 4 countries)")
+        print(f"{'#'*60}")
+        collect_from_google_news(tier4, scoring, results, stats)
+
+    # Deduplicate by URL (same article might appear in multiple queries)
+    seen_urls = set()
+    deduped = []
+    for art in results:
+        url = art.get("url", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            deduped.append(art)
+    print(f"\nDeduplication: {len(results)} → {len(deduped)} articles")
+    results = deduped
+
     # Sort by score desc
     results.sort(key=lambda r: r["score"], reverse=True)
 
@@ -322,10 +467,13 @@ def main():
         }, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*60}")
-    print(f"Sources tried:    {stats['sources_tried']}")
-    print(f"Items fetched:    {stats['items_fetched']}")
-    print(f"Items qualified:  {stats['items_qualified']}")
-    print(f"Output:           {output_file}")
+    print(f"Sources tried:        {stats['sources_tried']}")
+    print(f"Items fetched (tier1-3): {stats['items_fetched']}")
+    print(f"Google News queries:  {stats['google_news_queries']}")
+    print(f"Google News items:    {stats['google_news_items']}")
+    print(f"Items qualified:      {stats['items_qualified']}")
+    print(f"After dedup:          {len(results)}")
+    print(f"Output:               {output_file}")
     print(f"{'='*60}\n")
 
 
