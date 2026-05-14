@@ -1,0 +1,14 @@
+# PDF cache (텍스트 추출 후 자동 삭제되지만 안전장치)
+data/pdf_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Email preview (로컬 빌드 시에만 생성, 커밋 불필요)
+email_preview.html
+
+# OS
+.DS_Store
+Thumbs.db
