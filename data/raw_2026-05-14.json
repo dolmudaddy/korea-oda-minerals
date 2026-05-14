@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-14T08:11:37.088758+00:00",
+  "generated_at": "2026-05-14T09:27:27.453941+00:00",
   "stats": {
     "sources_tried": 31,
-    "items_fetched": 347,
-    "items_qualified": 37,
+    "items_fetched": 367,
+    "items_qualified": 33,
     "google_news_queries": 50,
-    "google_news_items": 2356
+    "google_news_items": 2364
   },
-  "total": 33,
+  "total": 30,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -25,12 +25,12 @@
       "score": 35
     },
     {
-      "id": "c5a03a6bc171",
+      "id": "52257040c9f7",
       "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1fZm1yY25oeTNtVEtHZktXWmlfOUJJTlU1QXVDSGdEek9qbXpvc0NmaEVOb3NsdlVQYkIzbzk0a3I3dDBFSWc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4ZXpqSkFTaUhTWDhBNm1SdGw3UUNoVlROX3BSWnJXT1FVVDBYYm5PbzdxUThrQWJhLWJKdnY4a0hyYVBpQWZsa1lmU2k4Sm9BLWFQRw?oc=5",
       "source": "Google News (KR:ko)",
       "source_language": "ko",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE1fZm1yY25oeTNtVEtHZktXWmlfOUJJTlU1QXVDSGdEek9qbXpvc0NmaEVOb3NsdlVQYkIzbzk0a3I3dDBFSWc?oc=5\" target=\"_blank\">전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">v.daum.net</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4ZXpqSkFTaUhTWDhBNm1SdGw3UUNoVlROX3BSWnJXT1FVVDBYYm5PbzdxUThrQWJhLWJKdnY4a0hyYVBpQWZsa1lmU2k4Sm9BLWFQRw?oc=5\" target=\"_blank\">전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">v.daum.net</font>",
       "published": "2026-04-29",
       "tier_weight": 1,
       "priority_boost": 0,
@@ -154,21 +154,6 @@
       "score": 11
     },
     {
-      "id": "6a0e25385b6b",
-      "title": "Ateng Sutisna: Hilirisasi Nikel Harus Hadirkan Nilai Tambah, Bukan Sekadar Angka Pertumbuhan - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPb2N4TkZheUI1NkN4OTFna3p4NmJla2xmMkd2UHYyNHNxX0lCSFY2TVdfVGoxYlloenpyYzMyUG5ibUtMMWktRnVGM2ltczI1UXF5TE56UkVaQ0dPSUZ4QnJGUW9QOFRJZTRza19KRUJ6V0tDRDlGX3NGRXo1QVdPU0dLNjFIMDNrWnQ2ZVdXZktJcnFZNFo1OWNrYlhoNFVyVEVIYktheTZDZXprbUFwS1IzYVBzeEpuVzJheUdLOA?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPb2N4TkZheUI1NkN4OTFna3p4NmJla2xmMkd2UHYyNHNxX0lCSFY2TVdfVGoxYlloenpyYzMyUG5ibUtMMWktRnVGM2ltczI1UXF5TE56UkVaQ0dPSUZ4QnJGUW9QOFRJZTRza19KRUJ6V0tDRDlGX3NGRXo1QVdPU0dLNjFIMDNrWnQ2ZVdXZktJcnFZNFo1OWNrYlhoNFVyVEVIYktheTZDZXprbUFwS1IzYVBzeEpuVzJheUdLOA?oc=5\" target=\"_blank\">Ateng Sutisna: Hilirisasi Nikel Harus Hadirkan Nilai Tambah, Bukan Sekadar Angka Pertumbuhan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
-      "published": "2026-04-20",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 10
-    },
-    {
       "id": "0a6157fae894",
       "title": "Indonesia Gandeng Rusia Perkuat Sektor Energi dan Hilirisasi Mineral Lewat Investasi Strategis - BeritaSatu.com",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeUpLVUhOVVFFTWRJZ1lXUDBhOXBpUUlsVE5sMnRYanpJZ0x5a1NSZjhQZ0NjU01JcmNxaGZhcHlMYldoSU1tOHpJQ1JGbmJEQUgwOEdlYUptM3Rwek1PRW51QWsxdVp4Wmo2XzIyZXdQTEhVMXNBVDczc19vbG9yNmdaVjQ3eDY2UGZCbVowdXBTSXBMM3FVRERDUHBVenJPalVKS2o3NjRaQjU0VnBSREcwZkRIUkhTVWtsRnotbzk5dlp0WHdxN0xYQUJQMjI0SkZ1QXJZUnEyUThTd1RRbHluNA?oc=5",
@@ -259,6 +244,18 @@
       "score": 9
     },
     {
+      "id": "6def09a7",
+      "title": "Latest Issue of Mongolia Today Magazine Now Available",
+      "url": "https://montsame.mn/en/read/398988",
+      "source": "Montsame (state news agency, English)",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 3,
+      "summary_raw": "Latest Issue of Mongolia Today Magazine Now Available",
+      "published": null,
+      "score": 8
+    },
+    {
       "id": "ca5f6dd29b4b",
       "title": "INDEF Soroti Hilirisasi Nikel Indonesia yang Masih Didominasi Asing - Babel Insight",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13YVRTSE5GUXNDV3RqR3h1cmczZFY4MnMwczQtdlpVVEVMc3E4MW91eklfMEdrV3JIWm4yZ3RId3JTcFVBYlF0ZWJ4Vk5FRm5jYlFEdGRvSUM2aWxsdE1zcXBtbE5Wb1V2U09jRHpnb1c?oc=5",
@@ -334,21 +331,6 @@
       "score": 7
     },
     {
-      "id": "0e81f6c60417",
-      "title": "Hilirisasi Nikel RI Terancam, Pasokan Sulfur Kena Imbas Perang Timteng - CNBC Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxON3M0Skllb20zYUtIeE1KUllib3ozblRBNXhCNVJsdmlHdlhKWUhKMnRhekFiNE1GSzdxYjVtaDFYR2NaU2V0ZGxfWW9xZzQwUm8xZ1kxbWk2T1JpRnczMVFVT2RKS0g3SUhLb01GQkJjcFFpMmdURTc5a1c5QmlBSEVkdjktYklGdnN0YjdzSHNWeC1ZVUFNQzVyZnFlMmh4WFRuajhIbEEzWGdSRGNocXlaVTNMZFlkc0ZoV21UWGM0bjRJYUU00gHMAUFVX3lxTFByWTM1d0JJTkJSQWxCLWJET2JVVFpBUUxfRk5iTklXTHFNNjZHNTJzc0U2dE9hZUxoanpMdnlKYjdfUFZDanlFNFZqbzNkWjBHYmFNQVY2aHFudERmOTdkVk1FUlUycGJtR05KR2pMZzlwNkhobmVZYnBXcG13M0J3cDR0LWhqNTNMZE9pSm1GZzVEZlZZdE1vSXdraktkMXR3X3FXVTBqOXZfMW1sOERhOFdTOHJZRVdwbkd1cTB0NlFfTmZ6ZXZkclhFRw?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxON3M0Skllb20zYUtIeE1KUllib3ozblRBNXhCNVJsdmlHdlhKWUhKMnRhekFiNE1GSzdxYjVtaDFYR2NaU2V0ZGxfWW9xZzQwUm8xZ1kxbWk2T1JpRnczMVFVT2RKS0g3SUhLb01GQkJjcFFpMmdURTc5a1c5QmlBSEVkdjktYklGdnN0YjdzSHNWeC1ZVUFNQzVyZnFlMmh4WFRuajhIbEEzWGdSRGNocXlaVTNMZFlkc0ZoV21UWGM0bjRJYUU00gHMAUFVX3lxTFByWTM1d0JJTkJSQWxCLWJET2JVVFpBUUxfRk5iTklXTHFNNjZHNTJzc0U2dE9hZUxoanpMdnlKYjdfUFZDanlFNFZqbzNkWjBHYmFNQVY2aHFudERmOTdkVk1FUlUycGJtR05KR2pMZzlwNkhobmVZYnBXcG13M0J3cDR0LWhqNTNMZE9pSm1GZzVEZlZZdE1vSXdraktkMXR3X3FXVTBqOXZfMW1sOERhOFdTOHJZRVdwbkd1cTB0NlFfTmZ6ZXZkclhFRw?oc=5\" target=\"_blank\">Hilirisasi Nikel RI Terancam, Pasokan Sulfur Kena Imbas Perang Timteng</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Indonesia</font>",
-      "published": "2026-04-24",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
       "id": "aa2fb98a2b26",
       "title": "Waspada Krisis Sulfur Mengintai RI, Hilirisasi Nikel Bisa Terganggu! - CNBC Indonesia",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZXpvR3FXRWxKcHRhM013M1pxS1RaWDVDUVNqZU9YeVdDNk5hWnhZWkNYT3lka2pObkRjZzFILTdublRsSTNEQ1VVaTBmWkhibkJNTFBCc0RjT0cwUkl0Q2tvNnQ5aU9DQjhmQUxPcTNfOTd2c1FIZG50a3ptMXJydXJrZUFHZks0a1lYeEM5Y0lsRG1TampGX3p4b3ZXZnNjd3BuZzRKbVA3bWEzUGRCM1dVUHlmTU82SS1na216UFNtZlHSAcgBQVVfeXFMTlc5LVJSVW9vUWtFZEw4VU9mVmNXNjdZZkVBSFJyRDZxendNWnFJTlFoc214UWFfX0xXR3ZhYzJfc3ZwQXdLV3FoczR5bm54cEdNSE56cjIxb0hkbVFEMjBfSkgxWGxtN1I4VHBWblRSMEJsY3RySmJCWGZDc0V5cU53RmRNNTk2S2VZUE5FQmllZTFYZlZ6N09md2xpMlVzRC1tMW5RZERaaTNJLVhZWGsyYmpfeGwzRjdqU3RQNC1DTHhkM1h0Vk8?oc=5",
@@ -356,21 +338,6 @@
       "source_language": "id",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZXpvR3FXRWxKcHRhM013M1pxS1RaWDVDUVNqZU9YeVdDNk5hWnhZWkNYT3lka2pObkRjZzFILTdublRsSTNEQ1VVaTBmWkhibkJNTFBCc0RjT0cwUkl0Q2tvNnQ5aU9DQjhmQUxPcTNfOTd2c1FIZG50a3ptMXJydXJrZUFHZks0a1lYeEM5Y0lsRG1TampGX3p4b3ZXZnNjd3BuZzRKbVA3bWEzUGRCM1dVUHlmTU82SS1na216UFNtZlHSAcgBQVVfeXFMTlc5LVJSVW9vUWtFZEw4VU9mVmNXNjdZZkVBSFJyRDZxendNWnFJTlFoc214UWFfX0xXR3ZhYzJfc3ZwQXdLV3FoczR5bm54cEdNSE56cjIxb0hkbVFEMjBfSkgxWGxtN1I4VHBWblRSMEJsY3RySmJCWGZDc0V5cU53RmRNNTk2S2VZUE5FQmllZTFYZlZ6N09md2xpMlVzRC1tMW5RZERaaTNJLVhZWGsyYmpfeGwzRjdqU3RQNC1DTHhkM1h0Vk8?oc=5\" target=\"_blank\">Waspada Krisis Sulfur Mengintai RI, Hilirisasi Nikel Bisa Terganggu!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Indonesia</font>",
       "published": "2026-04-23",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
-      "id": "595f000f510f",
-      "title": "Presiden: Hilirisasi adalah Jalan Satu-satunya untuk Kita bisa Lebih Makmur - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeTVwTzFyZERvam05T2t0THdhRHFRbDVpUlo0WmhFQm1zUUlidnlhZnNlSXlkb1ZMMGFSdGlqS1lvc2tadVlNOXhTeWtrei1ldm1tQ0RQSUN4bkpCRmhuRFd4b0lxSDlNUFZaeENPWnpiUl9rS19vUnpDY3F4QVo0cG1US2hxb0UtV0hnMEQ4MldIUWs3SUJqUkxxZ09VZHFKa0JaLXl1c3RHQQ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeTVwTzFyZERvam05T2t0THdhRHFRbDVpUlo0WmhFQm1zUUlidnlhZnNlSXlkb1ZMMGFSdGlqS1lvc2tadVlNOXhTeWtrei1ldm1tQ0RQSUN4bkpCRmhuRFd4b0lxSDlNUFZaeENPWnpiUl9rS19vUnpDY3F4QVo0cG1US2hxb0UtV0hnMEQ4MldIUWs3SUJqUkxxZ09VZHFKa0JaLXl1c3RHQQ?oc=5\" target=\"_blank\">Presiden: Hilirisasi adalah Jalan Satu-satunya untuk Kita bisa Lebih Makmur</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
-      "published": "2026-04-30",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
@@ -454,28 +421,13 @@
       "score": 7
     },
     {
-      "id": "6b78b4e853e6",
-      "title": "Tantangan Nikel Indonesia Untuk Mencapai Hilirisasi - KatadataOTO",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNmFMSU9YRDNyN1phbHlROC11MnBVN0t3N3VtSE1HS2hGSEVNVVdjYmJxbGFHS1c0b0NVMHUwazlxbHBweXdKczNTVFprSkxBRGxwcjJqaXhuRDZ5RFlSci0wN0h3eVUwTk1jV2tpRkdfUjBudG5EN3J6RWF3ZGFyZ25COGkzREpmc2R3STk2T1U4Ny1hcUhJdl9R?oc=5",
+      "id": "6422b988b3e3",
+      "title": "Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas - Kompas.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQNmFMSU9YRDNyN1phbHlROC11MnBVN0t3N3VtSE1HS2hGSEVNVVdjYmJxbGFHS1c0b0NVMHUwazlxbHBweXdKczNTVFprSkxBRGxwcjJqaXhuRDZ5RFlSci0wN0h3eVUwTk1jV2tpRkdfUjBudG5EN3J6RWF3ZGFyZ25COGkzREpmc2R3STk2T1U4Ny1hcUhJdl9R?oc=5\" target=\"_blank\">Tantangan Nikel Indonesia Untuk Mencapai Hilirisasi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">KatadataOTO</font>",
-      "published": "2026-04-16",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
-      "id": "c260ba3af7f3",
-      "title": "Indonesia Buka Peluang Kerja Sama Hilirisasi Nikel dengan Filipina - www.haloindonesia.co.id",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbEVJUU12M084OE9SaTluZmxvMTR1TDZqMDVyaUZaRmoxZ3hWSGpleXFJdE9wOEM3dGFPcS1rTXN4LUtKeHpsdEd2OV9sN1dGVHNYejZ2b3ZnZ2JYZ1VpSlpJZUgtZUhpNllxcFVsVEhfUklfMVdfUm5zb1o2b3lxYnI3NA?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxQbEVJUU12M084OE9SaTluZmxvMTR1TDZqMDVyaUZaRmoxZ3hWSGpleXFJdE9wOEM3dGFPcS1rTXN4LUtKeHpsdEd2OV9sN1dGVHNYejZ2b3ZnZ2JYZ1VpSlpJZUgtZUhpNllxcFVsVEhfUklfMVdfUm5zb1o2b3lxYnI3NA?oc=5\" target=\"_blank\">Indonesia Buka Peluang Kerja Sama Hilirisasi Nikel dengan Filipina</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.haloindonesia.co.id</font>",
-      "published": "2026-05-06",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5\" target=\"_blank\">Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kompas.com</font>",
+      "published": "2026-04-18",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
