@@ -51,13 +51,21 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests pyyaml anthropic beautifulsoup4 lxml
+          pip install feedparser requests pyyaml anthropic beautifulsoup4 lxml pdfplumber
 
       # ----------------------------------------------------
       # 4. 수집 단계
       # ----------------------------------------------------
       - name: Collect articles (7 countries, multilingual)
         run: python scripts/collect.py
+
+      # ----------------------------------------------------
+      # 4b. PDF 1차 자료 수집 (madini.go.tz 광물부 PDF)
+      #     실패해도 다음 단계는 계속 진행
+      # ----------------------------------------------------
+      - name: Collect Tanzania ministry PDFs
+        run: python scripts/pdf_collector.py
+        continue-on-error: true
 
       # ----------------------------------------------------
       # 5. 요약 단계 (Claude API)
