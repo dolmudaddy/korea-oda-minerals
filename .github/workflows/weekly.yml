@@ -28,6 +28,9 @@ jobs:
   generate:
     name: Collect → Summarize → Build → Send
     runs-on: ubuntu-latest
+    # 박사님 응급조치 (2026-05): 무한 대기 방지를 위한 전체 작업 타임아웃
+    # 정상 실행은 3-5분 안에 끝남. 8분 넘으면 강제 중단.
+    timeout-minutes: 8
     timeout-minutes: 30
 
     steps:
@@ -59,7 +62,15 @@ jobs:
       - name: Collect articles (7 countries, multilingual)
         run: python scripts/collect.py
 
-     
+      # ----------------------------------------------------
+      # 4b. 탄자니아 광물부 본문 페이지 수집 (1차 자료)
+      #     madini.go.tz의 /page/{uuid}/ 본문 HTML을 직접 수집
+      #     실패해도 다음 단계는 계속 진행
+      # ----------------------------------------------------
+      - name: Collect Tanzania ministry pages
+        run: python scripts/madini_html_collector.py
+        continue-on-error: true
+
       # ----------------------------------------------------
       # 5. 요약 단계 (Claude API)
       # ----------------------------------------------------
