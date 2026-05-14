@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-14T09:27:27.453941+00:00",
+  "generated_at": "2026-05-14T10:40:00.905444+00:00",
   "stats": {
-    "sources_tried": 31,
-    "items_fetched": 367,
-    "items_qualified": 33,
-    "google_news_queries": 50,
-    "google_news_items": 2364
+    "sources_tried": 3,
+    "items_fetched": 32,
+    "items_qualified": 37,
+    "google_news_queries": 86,
+    "google_news_items": 4388
   },
-  "total": 30,
+  "total": 34,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -22,7 +22,7 @@
       "source_type": "google_news",
       "search_query": "KIAT 베트남",
       "country": "Vietnam",
-      "score": 35
+      "score": 45
     },
     {
       "id": "52257040c9f7",
@@ -37,7 +37,7 @@
       "source_type": "google_news",
       "search_query": "한국산업기술진흥원 핵심광물",
       "country": "Vietnam",
-      "score": 35
+      "score": 45
     },
     {
       "id": "abc6ccf0442b",
@@ -52,7 +52,7 @@
       "source_type": "google_news",
       "search_query": "Vietnam critical mineral strategy",
       "country": "Vietnam",
-      "score": 31
+      "score": 41
     },
     {
       "id": "d1fdd89f83d8",
@@ -67,7 +67,7 @@
       "source_type": "google_news",
       "search_query": "한국 베트남 희토류",
       "country": "Vietnam",
-      "score": 31
+      "score": 41
     },
     {
       "id": "137f5ea5f0eb",
@@ -82,7 +82,7 @@
       "source_type": "google_news",
       "search_query": "한국 베트남 희토류",
       "country": "Vietnam",
-      "score": 31
+      "score": 41
     },
     {
       "id": "24196c7440a9",
@@ -97,7 +97,7 @@
       "source_type": "google_news",
       "search_query": "KIAT 핵심광물 ODA",
       "country": "Vietnam",
-      "score": 31
+      "score": 41
     },
     {
       "id": "d10b23c0a841",
@@ -112,7 +112,7 @@
       "source_type": "google_news",
       "search_query": "Vietnam critical mineral strategy",
       "country": "Vietnam",
-      "score": 16
+      "score": 21
     },
     {
       "id": "4ec4fd70",
@@ -152,6 +152,18 @@
       "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
       "score": 11
+    },
+    {
+      "id": "59461f54",
+      "title": "Lao, Vietnamese Prime Ministers Discuss Expanding Bilateral Cooperation",
+      "url": "https://kpl.gov.la/detail.aspx?id=100085",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "summary_raw": "Lao, Vietnamese Prime Ministers Discuss Expanding Bilateral Cooperation",
+      "published": null,
+      "score": 10
     },
     {
       "id": "0a6157fae894",
@@ -244,18 +256,6 @@
       "score": 9
     },
     {
-      "id": "6def09a7",
-      "title": "Latest Issue of Mongolia Today Magazine Now Available",
-      "url": "https://montsame.mn/en/read/398988",
-      "source": "Montsame (state news agency, English)",
-      "source_language": "en",
-      "country": "Mongolia",
-      "tier_weight": 3,
-      "summary_raw": "Latest Issue of Mongolia Today Magazine Now Available",
-      "published": null,
-      "score": 8
-    },
-    {
       "id": "ca5f6dd29b4b",
       "title": "INDEF Soroti Hilirisasi Nikel Indonesia yang Masih Didominasi Asing - Babel Insight",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13YVRTSE5GUXNDV3RqR3h1cmczZFY4MnMwczQtdlpVVEVMc3E4MW91eklfMEdrV3JIWm4yZ3RId3JTcFVBYlF0ZWJ4Vk5FRm5jYlFEdGRvSUM2aWxsdE1zcXBtbE5Wb1V2U09jRHpnb1c?oc=5",
@@ -263,21 +263,6 @@
       "source_language": "id",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE13YVRTSE5GUXNDV3RqR3h1cmczZFY4MnMwczQtdlpVVEVMc3E4MW91eklfMEdrV3JIWm4yZ3RId3JTcFVBYlF0ZWJ4Vk5FRm5jYlFEdGRvSUM2aWxsdE1zcXBtbE5Wb1V2U09jRHpnb1c?oc=5\" target=\"_blank\">INDEF Soroti Hilirisasi Nikel Indonesia yang Masih Didominasi Asing</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
       "published": "2026-05-07",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 8
-    },
-    {
-      "id": "83c05dc8735b",
-      "title": "Indonesia dan Filipina Perkuat Rantai Pasok Nikel Melalui Kerja Sama Hilirisasi - AsatuNews.co.id",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YZXJJbnNNVGJENE92dWNjaWJ1TDdQb2lxYVpfdnJKM3V0UWJETWtUQTVKaEU5QVUtZENVNlZxQjV2M2EtdnVPZFdNcXNLV3FwVUU2LTZySnRCZE9HalFZVTA5MFhLLUxWQ201WklibVVfM0pWOWNJWV9WdW9odw?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5YZXJJbnNNVGJENE92dWNjaWJ1TDdQb2lxYVpfdnJKM3V0UWJETWtUQTVKaEU5QVUtZENVNlZxQjV2M2EtdnVPZFdNcXNLV3FwVUU2LTZySnRCZE9HalFZVTA5MFhLLUxWQ201WklibVVfM0pWOWNJWV9WdW9odw?oc=5\" target=\"_blank\">Indonesia dan Filipina Perkuat Rantai Pasok Nikel Melalui Kerja Sama Hilirisasi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AsatuNews.co.id</font>",
-      "published": "2026-05-08",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
@@ -299,6 +284,93 @@
       "search_query": "Indonesia tambang tanah jarang",
       "country": "Indonesia",
       "score": 8
+    },
+    {
+      "id": "09e2b612",
+      "title": "Laos, Vietnam Strengthen Media Cooperation",
+      "url": "https://kpl.gov.la/detail.aspx?id=100149",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "summary_raw": "Laos, Vietnam Strengthen Media Cooperation",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "d664d0ad",
+      "title": "Laos, Australia reaffirm strong partnership in education, human resource development, and socio-cultural sectors",
+      "url": "https://kpl.gov.la/detail.aspx?id=100148",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Laos",
+      "tier_weight": 5,
+      "summary_raw": "Laos, Australia reaffirm strong partnership in education, human resource development, and socio-cultural sectors",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "6ef198a3",
+      "title": "Laos, Vietnam Culture Ministries Deepen Cooperation",
+      "url": "https://kpl.gov.la/detail.aspx?id=100140",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "summary_raw": "Laos, Vietnam Culture Ministries Deepen Cooperation",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "a5923f33",
+      "title": "Laos, Vietnam, Cambodia PMs Discuss Stronger Trilateral Cooperation",
+      "url": "https://kpl.gov.la/detail.aspx?id=100079",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "summary_raw": "Laos, Vietnam, Cambodia PMs Discuss Stronger Trilateral Cooperation",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "95cc0f71",
+      "title": "Chinese Investors Explore Opportunities in Laos",
+      "url": "https://kpl.gov.la/detail.aspx?id=97875",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Laos",
+      "tier_weight": 5,
+      "summary_raw": "Chinese Investors Explore Opportunities in Laos",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "8865e2d4",
+      "title": "Laos-China Railway trade jumps 62.7% in early 2026, reaching record level",
+      "url": "https://kpl.gov.la/detail.aspx?id=97758",
+      "source": "Lao News Agency (KPL) - English",
+      "source_language": "en",
+      "country": "Laos",
+      "tier_weight": 5,
+      "summary_raw": "Laos-China Railway trade jumps 62.7% in early 2026, reaching record level",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "7ab1d820bdaa",
+      "title": "Indonesia dan Arab Saudi Jalin Kemitraan Strategis di Sektor Sumber Daya Mineral - Radar Jogja",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZGFENXBWWF9OSUIzN2ZSeGxyVnBvSTlNZ2ZDdHFlcmJzTi0yVEpoUGZfbll5ZWl1WUx0Tk51RjVfYVpoM2ZrSzM5eVU3UW5hN0ZEdE80WkNxTi13M3htNTNud2VDcmJKY0FuemdEX3hzU1h0NGpKZldoSlRFWmtzYmJQQ2lETGtmS3BaZkJBa0F1RFFFaHN2bnpheE9RV2ZmRjFhRFZzR1dXVHVOWjhBN21KR3lIRlhLTGFwdUhUU29kU3NwcjNRX3dR0gHPAUFVX3lxTFBaWGhtZkU0bF83MlVjVXlvc0JmN3ljUWFheU9HVEo1ZXFKZW9qUmJxTnVEbTVIVHFtVkliOU42T21Gd2hqb19BZm0wS0RxT1pFbDM2OC02VVk5OHR5YkhMMC1rYllfVWx6dTFFSU9yaGNhQl9PbjMyTDl1ZlNLb1VacmJkbE55emdYdE4zVFg0dUxKbkoxWEtpX1R6bWE0NW9jNDF1ZFJjZXhXN0ZLd3FNRGc1OHdoUFdmMHVpa1V2SUpPU2JKRWl0WVo2SGVDZw?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxPZGFENXBWWF9OSUIzN2ZSeGxyVnBvSTlNZ2ZDdHFlcmJzTi0yVEpoUGZfbll5ZWl1WUx0Tk51RjVfYVpoM2ZrSzM5eVU3UW5hN0ZEdE80WkNxTi13M3htNTNud2VDcmJKY0FuemdEX3hzU1h0NGpKZldoSlRFWmtzYmJQQ2lETGtmS3BaZkJBa0F1RFFFaHN2bnpheE9RV2ZmRjFhRFZzR1dXVHVOWjhBN21KR3lIRlhLTGFwdUhUU29kU3NwcjNRX3dR0gHPAUFVX3lxTFBaWGhtZkU0bF83MlVjVXlvc0JmN3ljUWFheU9HVEo1ZXFKZW9qUmJxTnVEbTVIVHFtVkliOU42T21Gd2hqb19BZm0wS0RxT1pFbDM2OC02VVk5OHR5YkhMMC1rYllfVWx6dTFFSU9yaGNhQl9PbjMyTDl1ZlNLb1VacmJkbE55emdYdE4zVFg0dUxKbkoxWEtpX1R6bWE0NW9jNDF1ZFJjZXhXN0ZLd3FNRGc1OHdoUFdmMHVpa1V2SUpPU2JKRWl0WVo2SGVDZw?oc=5\" target=\"_blank\">Indonesia dan Arab Saudi Jalin Kemitraan Strategis di Sektor Sumber Daya Mineral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Radar Jogja</font>",
+      "published": "2026-04-15",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia mineral strategis",
+      "country": "Indonesia",
+      "score": 7
     },
     {
       "id": "b8c96cfddcdd",
@@ -391,21 +463,6 @@
       "score": 7
     },
     {
-      "id": "05bddbd31ac4",
-      "title": "Gejolak BBM Global Jadi Momentum, Hilirisasi Nikel RI Kian Strategis untuk EV - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWFB0b1ZwYXJkZ0pQcnltVHoxejJidk05WU5nM1dxWjBlVlNNdHNvX3hYcTk4V09heFU4d1NQdUpFUWgwSDNRSlRnWWJ1S01qWk8xSF9EVDZVR3IydzN3cVo5OVZhZFFHRzRsSTV6MkNMaHVCQWxlWjRJMG0zUlpMYVl5dUNQRzBtRHg2RnFmeTc1Uy03ZzlMNzEzNExqbk1aTUY4MEE3U2RxX3Bw?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOWFB0b1ZwYXJkZ0pQcnltVHoxejJidk05WU5nM1dxWjBlVlNNdHNvX3hYcTk4V09heFU4d1NQdUpFUWgwSDNRSlRnWWJ1S01qWk8xSF9EVDZVR3IydzN3cVo5OVZhZFFHRzRsSTV6MkNMaHVCQWxlWjRJMG0zUlpMYVl5dUNQRzBtRHg2RnFmeTc1Uy03ZzlMNzEzNExqbk1aTUY4MEE3U2RxX3Bw?oc=5\" target=\"_blank\">Gejolak BBM Global Jadi Momentum, Hilirisasi Nikel RI Kian Strategis untuk EV</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
-      "published": "2026-04-17",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
       "id": "fc8d9df4bfc8",
       "title": "Kuasai 42% Nikel Global, Pemerintah Indonesia Dorong Hilirisasi Jadi Senjata Geopolitik - Media Nikel Indonesia",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQWF2a1JjWThoVFhHbF85eF9vYzl5S3g0UGlkVDRmeE5ZSzJsMnphQXI0Q3lodWN1NnNVRnJGWWVPbXgwV2NHS2puZjdNUDNWOGR1bHZad3BKVEV5WlVBenRUNUZzbkN6WmFfQ1Juc2VvZ3lkaUVvV1VoT3RQdkN5Nm9tS2FyNmJ2YVM5ZWo0VWhZVEh1c2ZuNGEwX3dudUJBOFUySFlCanZaWGUxcVNYR1hHT244TEg3?oc=5",
@@ -421,33 +478,18 @@
       "score": 7
     },
     {
-      "id": "6422b988b3e3",
-      "title": "Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas - Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5\" target=\"_blank\">Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kompas.com</font>",
-      "published": "2026-04-18",
+      "id": "bacd5dbe1db6",
+      "title": "한국수입협회 \"카자흐스탄과의 안정적 공급망 협력 중요\" - 한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa1ZmZXhlWExCSkJDeElMOC1oMDdFUDh5RDc0WFdONkUtUHo5OHVHNlFoSDA0Tm1ObTIxdjhUMUp5T1p4bjFOSWNhZWl4dGdSeEhIa0REYnBNUdIBVEFVX3lxTE9VWWIyX045VldaV21wSnF3QUpYSGFHUlEtcnZXdTlpTmVMR3Fqd1FiVUdLaVVvNUxtZUVoT01vUEx4bFMtWkw4SWZXTkpNZExySUlEXw?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa1ZmZXhlWExCSkJDeElMOC1oMDdFUDh5RDc0WFdONkUtUHo5OHVHNlFoSDA0Tm1ObTIxdjhUMUp5T1p4bjFOSWNhZWl4dGdSeEhIa0REYnBNUdIBVEFVX3lxTE9VWWIyX045VldaV21wSnF3QUpYSGFHUlEtcnZXdTlpTmVMR3Fqd1FiVUdLaVVvNUxtZUVoT01vUEx4bFMtWkw4SWZXTkpNZExySUlEXw?oc=5\" target=\"_blank\">한국수입협회 \"카자흐스탄과의 안정적 공급망 협력 중요\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">한국경제</font>",
+      "published": "2026-05-07",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
-      "id": "7d787eaf7d2d",
-      "title": "Indonesia Percepat Hilirisasi Nikel Guna Perkuat Ekosistem Baterai EV - AsatuNews.co.id",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3MEpmaWZpTmxsODIwOHFqUEE2dlp4VkxjdlZVM003SndIMFp3dU54eTBoQlZ0Z2huZlNCS0YzREY2VFh2Y2xfZmpGbzZaWWZ2aHdReVBvUFZxZHFtaUJZck5ELVVndHFvNk53dGFrY0kxMEJibWtURDhRcw?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFA3MEpmaWZpTmxsODIwOHFqUEE2dlp4VkxjdlZVM003SndIMFp3dU54eTBoQlZ0Z2huZlNCS0YzREY2VFh2Y2xfZmpGbzZaWWZ2aHdReVBvUFZxZHFtaUJZck5ELVVndHFvNk53dGFrY0kxMEJibWtURDhRcw?oc=5\" target=\"_blank\">Indonesia Percepat Hilirisasi Nikel Guna Perkuat Ekosistem Baterai EV</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AsatuNews.co.id</font>",
-      "published": "2026-04-15",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
+      "search_query": "한국 카자흐스탄 자원협력",
+      "country": "Kazakhstan",
       "score": 7
     }
   ]
