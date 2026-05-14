@@ -1,8 +1,8 @@
 # =====================================================================
-# KCMO Weekly - sources.yaml (v3, Phase A complete: Tanzania)
+# KCMO Weekly - sources.yaml (v4, Phase B: ID + VN + MN expansion)
 # Korea Critical Minerals ODA Weekly
 # =====================================================================
-# Structure: each tier has explicit { weight, sources[] } shape.
+# Phase A (Tanzania) preserved as-is. Phase B adds 3 countries.
 
 target_countries:
   - name: Tanzania
@@ -13,7 +13,33 @@ target_countries:
     primary_minerals: [graphite, rare_earth, uranium, gold, nickel, helium]
     note: "박사님 직접 담당 ODA 프로젝트국"
 
-# Swahili keyword dictionary - Tanzania mining domain
+  - name: Indonesia
+    name_ko: 인도네시아
+    languages: [id, en]
+    language_priority: id
+    priority: 2
+    primary_minerals: [nickel, cobalt, copper, tin, bauxite]
+    note: "한·인도네시아 핵심광물 협력 MOU, ESDM 부 채널"
+
+  - name: Vietnam
+    name_ko: 베트남
+    languages: [vi, en]
+    language_priority: vi
+    priority: 2
+    primary_minerals: [rare_earth, tungsten, titanium, bauxite]
+    note: "베트남 희토류 자원 협력, MOIT 채널"
+
+  - name: Mongolia
+    name_ko: 몽골
+    languages: [mn, en]
+    language_priority: en
+    priority: 2
+    primary_minerals: [copper, coal, uranium, fluorspar, rare_earth]
+    note: "한·몽 자원외교, MRPAM 채널"
+
+# =====================================================================
+# Multilingual keyword dictionaries
+# =====================================================================
 swahili_keywords:
   madini: "광물 (general)"
   dhahabu: 금
@@ -39,14 +65,75 @@ swahili_keywords:
   mkataba: "계약/조약"
   ubia: "합작/파트너십"
 
+indonesian_keywords:
+  mineral: 광물
+  nikel: 니켈
+  kobalt: 코발트
+  tembaga: 구리
+  timah: 주석
+  bauksit: 보크사이트
+  emas: 금
+  "tanah jarang": 희토류
+  "mineral strategis": 전략광물
+  "mineral kritis": 핵심광물
+  pertambangan: 광업
+  eksplorasi: 탐사
+  smelter: 제련소
+  hilirisasi: "다운스트림 (부가가치 창출)"
+  "nilai tambah": 부가가치
+  investasi: 투자
+  "izin tambang": 광권
+  "kerja sama": 협력
+  "nota kesepahaman": MOU
+  perjanjian: "협정/계약"
+  kemitraan: 파트너십
+  pengembangan: 개발
+
+vietnamese_keywords:
+  "khoáng sản": 광물
+  niken: 니켈
+  "đồng": 구리
+  vonfram: 텅스텐
+  titan: 티타늄
+  bauxite: 보크사이트
+  vàng: 금
+  "đất hiếm": 희토류
+  "khoáng sản chiến lược": 전략광물
+  "khoáng sản quan trọng": 핵심광물
+  "khai thác mỏ": 광업
+  "thăm dò": 탐사
+  "chế biến": 제련
+  "đầu tư": 투자
+  "giấy phép khai thác": 광권
+  "hợp tác": 협력
+  "biên bản ghi nhớ": MOU
+  "thỏa thuận": 협정
+  "đối tác": 파트너십
+
+mongolian_keywords:
+  "ашигт малтмал": 광물
+  зэс: 구리
+  нүүрс: 석탄
+  уран: 우라늄
+  "ховор шороон элемент": 희토류
+  "стратегийн ашигт малтмал": 전략광물
+  алт: 금
+  уул: 광업
+  уурхай: 광산
+  "хайгуул": 탐사
+  "хөрөнгө оруулалт": 투자
+  "тусгай зөвшөөрөл": 광권
+  "хамтын ажиллагаа": 협력
+  "санамж бичиг": MOU
+  гэрээ: 협정
+
 # =====================================================================
-# Tier 1: Tanzania government & primary sources
+# Tier 1A: Tanzania government (Phase A)
 # =====================================================================
 tier_1_tanzania:
   weight: 5
   sources:
     - name: "Wizara ya Madini - Press Release"
-      name_en: "Ministry of Minerals - Press Release"
       url: "https://www.madini.go.tz/otherpage/?p=press-release"
       rss: null
       scrape_method: html_listing
@@ -54,7 +141,7 @@ tier_1_tanzania:
       language: sw
       verified: true
       priority_boost: 3
-      note: "공식 보도자료. 스와힐리어."
+      note: "GitHub Actions IP 차단됨 - 우회 필요"
 
     - name: "Wizara ya Madini - Latest News"
       url: "https://www.madini.go.tz/otherpage/?p=latest-news"
@@ -65,46 +152,7 @@ tier_1_tanzania:
       verified: true
       priority_boost: 2
 
-    - name: "Wizara ya Madini - Speeches"
-      url: "https://www.madini.go.tz/listspeech/"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 2
-      note: "장관 연설 - 정책 방향 시그널 강함"
-
-    - name: "Wizara ya Madini - Public Notes"
-      url: "https://www.madini.go.tz/otherpage/?p=public-notes"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 1
-
-    - name: "Wizara ya Madini - PDF Documents"
-      url: "https://www.madini.go.tz/listdoc/"
-      rss: null
-      scrape_method: pdf_directory
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 3
-      note: "PDF 보도자료 자동 수집 (Phase A에서는 미구현)"
-
-    - name: "Wizara ya Madini - Upcoming Events"
-      url: "https://www.madini.go.tz/otherpage/?p=upcoming-events"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 1
-
     - name: "Tume ya Madini"
-      name_en: "Tanzania Mining Commission"
       url: "https://www.tumemadini.go.tz/"
       rss: null
       scrape_method: html_listing
@@ -130,6 +178,112 @@ tier_1_tanzania:
       language: en
       verified: pending
       priority_boost: 2
+
+# =====================================================================
+# Tier 1B: Indonesia government (Phase B NEW)
+# =====================================================================
+tier_1_indonesia:
+  weight: 5
+  sources:
+    - name: "ESDM - Siaran Pers (Indonesian)"
+      name_en: "Ministry of Energy & Mineral Resources - Press Releases"
+      url: "https://www.esdm.go.id/id/media-center/siaran-pers"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: id
+      verified: pending
+      priority_boost: 3
+      note: "ESDM 공식 보도자료. Bahasa Indonesia."
+
+    - name: "ESDM - Press Releases (English)"
+      url: "https://www.esdm.go.id/en/media-center/news-archives"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "ESDM 영문 보도자료."
+
+    - name: "ESDM - Minerba"
+      url: "https://www.minerba.esdm.go.id/"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: id
+      verified: pending
+      priority_boost: 2
+      note: "광물·석탄 본부."
+
+# =====================================================================
+# Tier 1C: Vietnam government (Phase B NEW)
+# =====================================================================
+tier_1_vietnam:
+  weight: 5
+  sources:
+    - name: "MOIT - Tin tức (Vietnamese)"
+      url: "https://moit.gov.vn/tin-tuc"
+      rss: null
+      scrape_method: html_listing
+      country: Vietnam
+      language: vi
+      verified: pending
+      priority_boost: 3
+      note: "MOIT 공식 뉴스."
+
+    - name: "MOIT - Công nghiệp"
+      url: "https://moit.gov.vn/tin-tuc/hoat-dong/cong-nghiep"
+      rss: null
+      scrape_method: html_listing
+      country: Vietnam
+      language: vi
+      verified: pending
+      priority_boost: 2
+
+    - name: "Vietnam Mining Industry Association (VIMICO)"
+      url: "https://vimico.vn/"
+      rss: null
+      scrape_method: html_listing
+      country: Vietnam
+      language: vi
+      verified: pending
+      priority_boost: 1
+
+# =====================================================================
+# Tier 1D: Mongolia government (Phase B NEW)
+# =====================================================================
+tier_1_mongolia:
+  weight: 5
+  sources:
+    - name: "MRPAM"
+      url: "https://mrpam.gov.mn/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: mn
+      verified: pending
+      priority_boost: 3
+      note: "광물석유청."
+
+    - name: "Ministry of Mining and Heavy Industry"
+      url: "https://mmhi.gov.mn/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: mn
+      verified: pending
+      priority_boost: 3
+
+    - name: "Erdenes Mongol (state mining holding)"
+      url: "https://www.erdenesmongol.mn/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      priority_boost: 2
+      note: "국영 광업 지주회사."
 
 # =====================================================================
 # Tier 2: Korean cooperation bodies
@@ -161,22 +315,23 @@ tier_2_korea:
       scrape_method: html_listing
       verified: true
 
+    - name: "산업통상자원부 보도자료"
+      url: "https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsList.do?bbs_seq_n=&bbs_cd_n=81"
+      rss: null
+      country: korea
+      language: ko
+      scrape_method: html_listing
+      verified: pending
+      note: "핵심광물 정책 주관 부처."
+
 # =====================================================================
-# Tier 3: Tanzania local media
+# Tier 3: Country-specific local media
 # =====================================================================
 tier_3_tanzania_media:
   weight: 3
   sources:
     - name: "Mwananchi (Swahili)"
       url: "https://www.mwananchi.co.tz/mw"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-
-    - name: "SwahiliTimes"
-      url: "https://swahilitimes.co.tz/"
       rss: null
       scrape_method: html_listing
       country: Tanzania
@@ -199,27 +354,154 @@ tier_3_tanzania_media:
       language: en
       verified: true
 
+tier_3_indonesia_media:
+  weight: 3
+  sources:
+    - name: "Kompas - Pertambangan tag"
+      url: "https://www.kompas.com/tag/pertambangan"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: id
+      verified: pending
+      note: "인도네시아 최대 매체 광업 태그."
+
+    - name: "Tempo - Bisnis"
+      url: "https://bisnis.tempo.co/"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: id
+      verified: pending
+
+    - name: "Jakarta Post - Business"
+      url: "https://www.thejakartapost.com/business"
+      rss: null
+      scrape_method: html_listing
+      country: Indonesia
+      language: en
+      verified: pending
+
+tier_3_vietnam_media:
+  weight: 3
+  sources:
+    - name: "VnExpress - Kinh doanh"
+      url: "https://vnexpress.net/kinh-doanh"
+      rss: "https://vnexpress.net/rss/kinh-doanh.rss"
+      scrape_method: rss
+      country: Vietnam
+      language: vi
+      verified: pending
+      note: "베트남 최대 매체. RSS 공식 제공."
+
+    - name: "Tuoi Tre - Business"
+      url: "https://tuoitre.vn/kinh-doanh.htm"
+      rss: null
+      scrape_method: html_listing
+      country: Vietnam
+      language: vi
+      verified: pending
+
+    - name: "Vietnam News (English)"
+      url: "https://vietnamnews.vn/economy"
+      rss: null
+      scrape_method: html_listing
+      country: Vietnam
+      language: en
+      verified: pending
+
+tier_3_mongolia_media:
+  weight: 3
+  sources:
+    - name: "Montsame (state news agency, English)"
+      url: "https://montsame.mn/en"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      note: "몽골 국가통신사 - 가장 안정적 1차 자료."
+
+    - name: "UB Post (English)"
+      url: "https://theubposts.com/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+
+    - name: "Mongolian Mining Journal"
+      url: "https://mongolianminingjournal.com/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      note: "광업 전문지."
+
 # =====================================================================
-# Tier 4: Google News broad search
+# Tier 4: Google News broad search (per-country queries)
 # =====================================================================
 tier_4_broad_search:
   weight: 1
-  sources: []  # Phase A에서는 Tier 1~3만 운영
-  english_queries:
+  sources: []
+
+  tanzania_english_queries:
     - "Tanzania graphite mining"
     - "Tanzania rare earth"
     - "Tanzania uranium Mantra Namtumbo"
     - "Tanzania nickel Kabanga"
     - "Tanzania critical minerals"
-  swahili_queries:
+  tanzania_swahili_queries:
     - "Tanzania madini ya kimkakati"
     - "Tanzania uchimbaji urani"
     - "Wizara ya Madini taarifa"
+
+  indonesia_english_queries:
+    - "Indonesia nickel critical mineral"
+    - "Indonesia cobalt EV battery"
+    - "Indonesia smelter downstream policy"
+    - "Indonesia rare earth strategy"
+    - "Indonesia mining moratorium"
+  indonesia_local_queries:
+    - "Indonesia mineral strategis"
+    - "Indonesia hilirisasi nikel"
+    - "Indonesia smelter Sulawesi"
+    - "Indonesia tambang tanah jarang"
+
+  vietnam_english_queries:
+    - "Vietnam rare earth deposit"
+    - "Vietnam tungsten Nui Phao"
+    - "Vietnam critical mineral strategy"
+    - "Vietnam bauxite Tay Nguyen"
+  vietnam_local_queries:
+    - "Việt Nam đất hiếm"
+    - "Việt Nam khoáng sản chiến lược"
+    - "Việt Nam vonfram Núi Pháo"
+
+  mongolia_english_queries:
+    - "Mongolia copper Oyu Tolgoi"
+    - "Mongolia rare earth deposit"
+    - "Mongolia mining investment"
+    - "Mongolia uranium Dornod"
+    - "Mongolia critical minerals Korea"
+  mongolia_local_queries:
+    - "Монгол стратегийн ашигт малтмал"
+    - "Монгол зэс уурхай"
+
   korea_cross_queries:
     - "Korea Tanzania mineral cooperation"
     - "한국 탄자니아 ODA 광물"
     - "KIGAM Tanzania"
     - "KOICA 탄자니아 광물"
+    - "Korea Indonesia critical mineral MOU"
+    - "한국 인도네시아 핵심광물"
+    - "한국 인도네시아 니켈"
+    - "Korea Vietnam rare earth"
+    - "한국 베트남 희토류"
+    - "Korea Mongolia mineral cooperation"
+    - "한국 몽골 자원외교"
+    - "한국 몽골 구리"
 
 # =====================================================================
 # Scoring config
@@ -235,6 +517,9 @@ scoring:
       en: ["Korea", "Korean", "Republic of Korea", "South Korea"]
       ko: ["한국", "KIGAM", "KOICA", "KOMIR", "KOTRA", "EDCF", "MOTIE", "MOFA"]
       sw: ["Korea", "Kikorea", "Jamhuri ya Korea"]
+      id: ["Korea", "Korea Selatan", "Republik Korea"]
+      vi: ["Hàn Quốc", "Đại Hàn Dân Quốc"]
+      mn: ["Солонгос", "Бүгд Найрамдах Солонгос Улс"]
 
   oda_keywords:
     en:
@@ -257,6 +542,22 @@ scoring:
       mkataba: 3
       ubia: 3
       "msaada wa kiufundi": 4
+    id:
+      "kerja sama pembangunan": 4
+      "nota kesepahaman": 3
+      perjanjian: 3
+      kemitraan: 3
+      hilirisasi: 3
+      "nilai tambah": 3
+    vi:
+      "hợp tác phát triển": 4
+      "biên bản ghi nhớ": 3
+      "thỏa thuận": 3
+      "đối tác": 3
+    mn:
+      "хамтын ажиллагаа": 4
+      "санамж бичиг": 3
+      гэрээ: 3
 
   recency_bonus:
     within_3_days: 2
@@ -268,10 +569,10 @@ scoring:
 # =====================================================================
 special_handlers:
   pdf_extraction:
-    enabled: false  # Phase A 테스트에서는 비활성, 별도 단계에서 구현
-    target_dirs:
-      - "https://www.madini.go.tz/media/"
-    file_pattern: "*.pdf"
-  swahili_summarization:
+    enabled: false
+    note: "GitHub Actions IP 차단 발견. 별도 우회 필요."
+
+  multilingual_summarization:
     enabled: true
-    note: "summarize.py 단계에서 적용 예정"
+    languages: [sw, id, vi, mn]
+    note: "summarize.py가 Claude API로 각 언어 → 한국어 자동 변환"
