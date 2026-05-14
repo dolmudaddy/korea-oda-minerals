@@ -37,6 +37,30 @@ target_countries:
     primary_minerals: [copper, coal, uranium, fluorspar, rare_earth]
     note: "한·몽 자원외교, MRPAM 채널"
 
+  - name: Kazakhstan
+    name_ko: 카자흐스탄
+    languages: [ru, kk, en]
+    language_priority: ru
+    priority: 2
+    primary_minerals: [uranium, tungsten, chromium, copper, rare_earth]
+    note: "세계 최대 우라늄 생산국. 러시아어가 실무 공식어."
+
+  - name: Uzbekistan
+    name_ko: 우즈베키스탄
+    languages: [ru, uz, en]
+    language_priority: ru
+    priority: 3
+    primary_minerals: [uranium, gold, tungsten, rare_earth, copper]
+    note: "중앙아 우라늄·금 주요 생산국. KOMIR·KIGAM 협력 진행."
+
+  - name: Laos
+    name_ko: 라오스
+    languages: [en, lo]
+    language_priority: en
+    priority: 3
+    primary_minerals: [bauxite, copper, gold, potash, rare_earth]
+    note: "동남아 광물 후발국. 영문 채널이 더 안정적."
+
 # =====================================================================
 # Multilingual keyword dictionaries
 # =====================================================================
@@ -126,6 +150,77 @@ mongolian_keywords:
   "хамтын ажиллагаа": 협력
   "санамж бичиг": MOU
   гэрээ: 협정
+
+# Russian keyword dictionary (used for Kazakhstan + Uzbekistan)
+russian_keywords:
+  "полезные ископаемые": 광물
+  "уран": 우라늄
+  "вольфрам": 텅스텐
+  "медь": 구리
+  "золото": 금
+  "молибден": 몰리브덴
+  "хром": 크롬
+  "редкоземельные элементы": 희토류
+  "редкоземельные металлы": 희토류
+  "стратегические минералы": 전략광물
+  "критические минералы": 핵심광물
+  "горнодобывающая промышленность": 광업
+  "добыча": "채굴"
+  "разведка": 탐사
+  "переработка": 제련
+  "инвестиции": 투자
+  "лицензия": 광권
+  "сотрудничество": 협력
+  "меморандум": MOU
+  "соглашение": 협정
+  "партнерство": 파트너십
+  "Казатомпром": "카자토믹스 (카자흐 국영 우라늄 기업)"
+  "Алмалык": "알말리크 (우즈베키스탄 구리 단지)"
+
+# Kazakh keyword dictionary
+kazakh_keywords:
+  "пайдалы қазбалар": 광물
+  "уран": 우라늄
+  "мыс": 구리
+  "вольфрам": 텅스텐
+  "сирек жер элементтері": 희토류
+  "стратегиялық минералдар": 전략광물
+  "тау-кен өндіру": 광업
+  "барлау": 탐사
+  "инвестиция": 투자
+  "ынтымақтастық": 협력
+  "келісім": 협정
+
+# Uzbek keyword dictionary
+uzbek_keywords:
+  "foydali qazilmalar": 광물
+  "uran": 우라늄
+  "mis": 구리
+  "oltin": 금
+  "volfram": 텅스텐
+  "molibden": 몰리브덴
+  "noyob er elementlari": 희토류
+  "strategik minerallar": 전략광물
+  "kon": 광산
+  "qazib olish": 채굴
+  "qidiruv": 탐사
+  "investitsiya": 투자
+  "hamkorlik": 협력
+  "shartnoma": 협정
+  "memorandum": MOU
+
+# Lao keyword dictionary
+lao_keywords:
+  "ແຮ່ທາດ": 광물
+  "ທອງແດງ": 구리
+  "ບອກໄຊ": 보크사이트
+  "ຄຳ": 금
+  "ການຂຸດຄົ້ນ": 광업
+  "ການສຳຫຼວດ": 탐사
+  "ການລົງທຶນ": 투자
+  "ການຮ່ວມມື": 협력
+  "ບົດບັນທຶກຄວາມເຂົ້າໃຈ": MOU
+  "ສັນຍາ": 협정
 
 # =====================================================================
 # Tier 1A: Tanzania government (Phase A)
@@ -284,6 +379,112 @@ tier_1_mongolia:
       verified: pending
       priority_boost: 2
       note: "국영 광업 지주회사."
+
+# =====================================================================
+# Tier 1E: Kazakhstan government (Phase C NEW)
+# =====================================================================
+tier_1_kazakhstan:
+  weight: 5
+  sources:
+    - name: "Министерство промышленности и строительства РК"
+      name_en: "Ministry of Industry and Construction of Kazakhstan"
+      url: "https://www.gov.kz/memleket/entities/industry"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: ru
+      verified: pending
+      priority_boost: 3
+      note: "광업 정책 주관 부처. 러시아어 보도자료."
+
+    - name: "Министерство энергетики РК"
+      url: "https://www.gov.kz/memleket/entities/energo"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: ru
+      verified: pending
+      priority_boost: 2
+      note: "에너지부 (우라늄·원자력 관련)"
+
+    - name: "Казгеология"
+      name_en: "Kazgeology (National Geological Survey)"
+      url: "https://www.kazgeology.kz/"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: ru
+      verified: pending
+      priority_boost: 2
+      note: "국영 지질조사. KIGAM 협력 파트너."
+
+# =====================================================================
+# Tier 1F: Uzbekistan government (Phase C NEW)
+# =====================================================================
+tier_1_uzbekistan:
+  weight: 5
+  sources:
+    - name: "Министерство горнодобывающей промышленности и геологии"
+      name_en: "Ministry of Mining Industry and Geology of Uzbekistan"
+      url: "https://mingeo.uz/ru"
+      rss: null
+      scrape_method: html_listing
+      country: Uzbekistan
+      language: ru
+      verified: pending
+      priority_boost: 3
+      note: "광업지질부. KIGAM·KOMIR 협력 진행 중."
+
+    - name: "Узбекгеология"
+      name_en: "Uzbekgeology (State Geological Service)"
+      url: "https://geology.uz/ru/"
+      rss: null
+      scrape_method: html_listing
+      country: Uzbekistan
+      language: ru
+      verified: pending
+      priority_boost: 2
+
+# =====================================================================
+# Tier 1G: Laos government (Phase C - updated 2025-06 reorganization)
+# =====================================================================
+# IMPORTANT (2025-06-16): Ministry of Energy and Mines (MEM) merged into
+# Ministry of Industry and Commerce (MOIC). Department of Geology and
+# Minerals (DGM) and Department of Mines (DOM) now under MOIC.
+# Source: KPL (Khaosan Pathet Lao), 18/06/2025
+tier_1_laos:
+  weight: 5
+  sources:
+    - name: "Ministry of Industry and Commerce (Laos)"
+      name_en: "MOIC - 2025-06 통합 이후 광물 행정 주관 부처"
+      url: "https://www.moic.gov.la/?lang=en"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "2025-06-16 정부 조직개편으로 MEM이 MOIC에 통합됨. 광물 행정도 MOIC 산하로 이관."
+
+    - name: "Department of Geology and Minerals (DGM, Laos)"
+      url: "https://www.moic.gov.la/?lang=en"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: pending
+      priority_boost: 2
+      note: "지질광업국. 2025-06 이후 MOIC 산하. 광물 조사·탐사·라이선스 관리."
+
+    - name: "Lao News Agency (KPL) - English"
+      url: "https://kpl.gov.la/En"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: true
+      priority_boost: 1
+      note: "라오스 국가통신사. 부처 개편 등 정부 공식 발표 채널."
 
 # =====================================================================
 # Tier 2: Korean cooperation bodies
@@ -449,6 +650,78 @@ tier_3_mongolia_media:
       verified: pending
       note: "광업 전문지."
 
+# Phase C NEW: Kazakhstan media
+tier_3_kazakhstan_media:
+  weight: 3
+  sources:
+    - name: "Kapital.kz (Russian, business news)"
+      url: "https://kapital.kz/"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: ru
+      verified: pending
+      note: "카자흐스탄 비즈니스 매체."
+
+    - name: "Kazinform (state news agency, English)"
+      url: "https://www.inform.kz/en"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: en
+      verified: pending
+      note: "국영 통신사 영문판."
+
+    - name: "Astana Times"
+      url: "https://astanatimes.com/"
+      rss: null
+      scrape_method: html_listing
+      country: Kazakhstan
+      language: en
+      verified: pending
+
+# Phase C NEW: Uzbekistan media
+tier_3_uzbekistan_media:
+  weight: 3
+  sources:
+    - name: "Gazeta.uz (Russian)"
+      url: "https://www.gazeta.uz/ru/"
+      rss: null
+      scrape_method: html_listing
+      country: Uzbekistan
+      language: ru
+      verified: pending
+      note: "우즈베키스탄 주요 매체."
+
+    - name: "Uzbekistan Daily (English)"
+      url: "https://www.uzdaily.uz/en/"
+      rss: null
+      scrape_method: html_listing
+      country: Uzbekistan
+      language: en
+      verified: pending
+
+# Phase C NEW: Laos media
+tier_3_laos_media:
+  weight: 3
+  sources:
+    - name: "Vientiane Times (English)"
+      url: "https://www.vientianetimes.org.la/"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: pending
+      note: "라오스 주요 영문 매체."
+
+    - name: "Laotian Times"
+      url: "https://laotiantimes.com/"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: pending
+
 # =====================================================================
 # Tier 4: Google News broad search (per-country queries)
 # =====================================================================
@@ -499,6 +772,41 @@ tier_4_broad_search:
     - "Монгол стратегийн ашигт малтмал"
     - "Монгол зэс уурхай"
 
+  # Phase C NEW: Kazakhstan
+  kazakhstan_english_queries:
+    - "Kazakhstan uranium Kazatomprom"
+    - "Kazakhstan tungsten deposit"
+    - "Kazakhstan rare earth strategy"
+    - "Kazakhstan critical minerals Korea"
+    - "Kazakhstan copper mining"
+  kazakhstan_russian_queries:
+    - "Казахстан уран Казатомпром"
+    - "Казахстан редкоземельные металлы"
+    - "Казахстан стратегические минералы"
+    - "Казахстан горнодобывающая промышленность"
+
+  # Phase C NEW: Uzbekistan
+  uzbekistan_english_queries:
+    - "Uzbekistan uranium mining"
+    - "Uzbekistan rare earth"
+    - "Uzbekistan critical minerals"
+    - "Uzbekistan gold mining Navoi"
+  uzbekistan_russian_queries:
+    - "Узбекистан уран"
+    - "Узбекистан редкоземельные металлы"
+    - "Узбекистан горнодобывающая"
+    - "Навоийский ГМК"
+
+  # Phase C: Laos (2025-06 reorganization: mining under MOIC, not MEM)
+  laos_english_queries:
+    - "Laos bauxite mining"
+    - "Laos copper deposit"
+    - "Laos potash mining"
+    - "Laos critical minerals"
+    - "Laos mining investment"
+    - "Laos MOIC mineral"
+    - "Laos Ministry of Industry and Commerce mining"
+
   korea_cross_queries:
     - "Korea Tanzania mineral cooperation"
     - "한국 탄자니아 ODA 광물"
@@ -516,6 +824,18 @@ tier_4_broad_search:
     - "한국 몽골 자원외교"
     - "한국 몽골 구리"
     - "KIAT 몽골"
+    - "Korea Kazakhstan uranium"
+    - "한국 카자흐스탄 자원협력"
+    - "한국 카자흐스탄 우라늄"
+    - "KIAT 카자흐스탄"
+    - "Корея Казахстан минералы"
+    - "Korea Uzbekistan critical mineral"
+    - "한국 우즈베키스탄 자원"
+    - "KIAT 우즈베키스탄"
+    - "Корея Узбекистан"
+    - "Korea Laos mining cooperation"
+    - "한국 라오스 광물"
+    - "KIAT 라오스"
     - "한국산업기술진흥원 핵심광물"
     - "KIAT 핵심광물 ODA"
     - "MOTIE 핵심광물 협력"
@@ -537,6 +857,8 @@ scoring:
       id: ["Korea", "Korea Selatan", "Republik Korea", "KIAT", "KIGAM"]
       vi: ["Hàn Quốc", "Đại Hàn Dân Quốc", "KIAT", "KIGAM"]
       mn: ["Солонгос", "Бүгд Найрамдах Солонгос Улс", "KIAT", "KIGAM"]
+      ru: ["Корея", "Республика Корея", "Южная Корея", "KIAT", "KIGAM"]
+      lo: ["Korea", "ເກົາຫຼີ", "KIAT", "KIGAM"]
 
   oda_keywords:
     en:
@@ -575,6 +897,16 @@ scoring:
       "хамтын ажиллагаа": 4
       "санамж бичиг": 3
       гэрээ: 3
+    ru:
+      "сотрудничество в развитии": 4
+      "меморандум": 3
+      "соглашение": 3
+      "партнерство": 3
+      "инвестиции": 2
+      "техническая помощь": 4
+    lo:
+      "ການຮ່ວມມື": 4
+      "ການລົງທຶນ": 2
 
   recency_bonus:
     within_3_days: 2
