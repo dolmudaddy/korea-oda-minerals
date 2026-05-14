@@ -161,6 +161,16 @@
       font-size: 10px;
       font-weight: 500;
     }
+    /* 클릭 가능한 원문 링크 chip - 박사님 UX 개선 */
+    .chip-lang-link {
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+      cursor: pointer;
+    }
+    .chip-lang-link:hover {
+      background: var(--amber-fg);
+      color: white;
+    }
     .card-score {
       margin-left: auto;
       color: var(--text-tertiary);
