@@ -298,6 +298,11 @@ GOOGLE_NEWS_LOCALES = {
     "vietnam_local_queries":     ("vi", "VN", "VN:vi"),
     "mongolia_english_queries":  ("en", "MN", "MN:en"),
     "mongolia_local_queries":    ("mn", "MN", "MN:mn"),
+    "kazakhstan_english_queries": ("en", "KZ", "KZ:en"),
+    "kazakhstan_russian_queries": ("ru", "KZ", "KZ:ru"),
+    "uzbekistan_english_queries": ("en", "UZ", "UZ:en"),
+    "uzbekistan_russian_queries": ("ru", "UZ", "UZ:ru"),
+    "laos_english_queries":      ("en", "LA", "LA:en"),
     "korea_cross_queries":       ("ko", "KR", "KR:ko"),
 }
 
@@ -326,9 +331,50 @@ def fetch_google_news_feed(query, locale_tuple):
         return []
 
 
+def resolve_google_news_url(google_url, session=None):
+    """Google News RSS URL을 진짜 매체 URL로 변환.
+
+    Google News의 /rss/articles/CBMi... 형식 URL은 클릭 가능하지 않으므로
+    HEAD 요청을 보내 redirect Location 헤더에서 실제 매체 URL을 추출함.
+
+    실패 시 원래 URL 반환 (안전한 fallback).
+    """
+    if "news.google.com" not in google_url:
+        return google_url  # 이미 매체 직접 URL
+
+    if session is None:
+        session = requests.Session()
+        session.headers.update({"User-Agent": USER_AGENT})
+
+    try:
+        # allow_redirects=False로 첫 redirect만 추출
+        r = session.head(google_url, allow_redirects=False, timeout=10)
+
+        # Google News는 302 또는 301로 redirect함
+        if r.status_code in (301, 302, 303, 307, 308):
+            real_url = r.headers.get("Location", "")
+            if real_url and "google.com" not in real_url:
+                return real_url
+
+        # HEAD가 실패하면 GET으로 시도 (full redirect chain)
+        r = session.get(google_url, allow_redirects=True, timeout=10)
+        if r.url and "google.com" not in r.url:
+            return r.url
+
+    except Exception as e:
+        # 어떤 오류든 원래 URL fallback
+        pass
+
+    return google_url
+
+
 def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
     """tier_4_broad_search 섹션의 모든 쿼리를 Google News RSS로 실행."""
     min_score = scoring_cfg.get("min_score_threshold", 7)
+
+    # URL 변환용 세션 (재사용으로 성능 향상)
+    url_session = requests.Session()
+    url_session.headers.update({"User-Agent": USER_AGENT})
 
     # 모든 쿼리 키를 탐색
     for query_key, locale in GOOGLE_NEWS_LOCALES.items():
@@ -348,9 +394,13 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
             for entry in entries:
                 # Google News 항목을 article 구조로 변환
                 title = entry.get("title", "")
-                link = entry.get("link", "")
+                google_link = entry.get("link", "")
                 summary = entry.get("summary", "")
                 pub_str = entry.get("published", "") or entry.get("updated", "")
+
+                # Google News URL → 진짜 매체 URL 변환
+                # 점수화·중복 체크 전에 변환해서 deduplication 정확도도 높임
+                real_link = resolve_google_news_url(google_link, url_session)
 
                 # 발행일 파싱
                 pub_dt = None
@@ -371,11 +421,11 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
                     "language": locale[0],
                 }
 
-                # article 후보 빌드
+                # article 후보 빌드 - URL은 변환된 매체 URL 사용
                 article = {
-                    "id": hashlib.md5(link.encode("utf-8")).hexdigest()[:12],
+                    "id": hashlib.md5(real_link.encode("utf-8")).hexdigest()[:12],
                     "title": title,
-                    "url": link,
+                    "url": real_link,  # ← 변환된 진짜 매체 URL
                     "source": f"Google News ({locale[2]})",
                     "source_language": locale[0],
                     "summary_raw": summary[:1500] if summary else "",
