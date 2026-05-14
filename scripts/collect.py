@@ -338,6 +338,7 @@ def resolve_google_news_url(google_url, session=None):
     HEAD 요청을 보내 redirect Location 헤더에서 실제 매체 URL을 추출함.
 
     실패 시 원래 URL 반환 (안전한 fallback).
+    성능 최적화: 짧은 타임아웃 (5초), HEAD만 시도 (GET retry 없음).
     """
     if "news.google.com" not in google_url:
         return google_url  # 이미 매체 직접 URL
@@ -347,23 +348,16 @@ def resolve_google_news_url(google_url, session=None):
         session.headers.update({"User-Agent": USER_AGENT})
 
     try:
-        # allow_redirects=False로 첫 redirect만 추출
-        r = session.head(google_url, allow_redirects=False, timeout=10)
+        # HEAD 요청만, 짧은 타임아웃 5초
+        r = session.head(google_url, allow_redirects=False, timeout=5)
 
         # Google News는 302 또는 301로 redirect함
         if r.status_code in (301, 302, 303, 307, 308):
             real_url = r.headers.get("Location", "")
             if real_url and "google.com" not in real_url:
                 return real_url
-
-        # HEAD가 실패하면 GET으로 시도 (full redirect chain)
-        r = session.get(google_url, allow_redirects=True, timeout=10)
-        if r.url and "google.com" not in r.url:
-            return r.url
-
-    except Exception as e:
-        # 어떤 오류든 원래 URL fallback
-        pass
+    except Exception:
+        pass  # 어떤 오류든 원래 URL fallback
 
     return google_url
 
@@ -398,10 +392,6 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
                 summary = entry.get("summary", "")
                 pub_str = entry.get("published", "") or entry.get("updated", "")
 
-                # Google News URL → 진짜 매체 URL 변환
-                # 점수화·중복 체크 전에 변환해서 deduplication 정확도도 높임
-                real_link = resolve_google_news_url(google_link, url_session)
-
                 # 발행일 파싱
                 pub_dt = None
                 try:
@@ -421,11 +411,12 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
                     "language": locale[0],
                 }
 
-                # article 후보 빌드 - URL은 변환된 매체 URL 사용
+                # article 후보 빌드 - 일단 Google News URL로 점수화
+                # URL 변환은 점수 통과 후에만 수행 (성능 최적화)
                 article = {
-                    "id": hashlib.md5(real_link.encode("utf-8")).hexdigest()[:12],
+                    "id": hashlib.md5(google_link.encode("utf-8")).hexdigest()[:12],
                     "title": title,
-                    "url": real_link,  # ← 변환된 진짜 매체 URL
+                    "url": google_link,  # 임시 - 점수 통과 후 매체 URL로 변환
                     "source": f"Google News ({locale[2]})",
                     "source_language": locale[0],
                     "summary_raw": summary[:1500] if summary else "",
@@ -441,6 +432,13 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
                 score, country = score_article(article, source_meta, scoring_cfg)
                 if score is None or score < min_score:
                     continue
+
+                # 점수 통과 → 이제 URL 변환 (HEAD 요청 비용 발생)
+                # 변환 실패 시 google_link fallback
+                real_link = resolve_google_news_url(google_link, url_session)
+                article["url"] = real_link
+                # id도 진짜 URL 기반으로 재생성 (전체 dedup 정확도)
+                article["id"] = hashlib.md5(real_link.encode("utf-8")).hexdigest()[:12]
 
                 article["score"] = score
                 article["country"] = country
