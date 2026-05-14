@@ -124,7 +124,7 @@ def render_card(card):
     <h3><a href="{esc(card.get("url", "#"))}" target="_blank" rel="noopener">{esc(card.get("title", ""))}</a></h3>
     <div class="card-source">
       <span>{esc(card.get("source", ""))} · {esc(card.get("published", ""))}</span>
-      <span class="chip chip-lang">{esc(lang_badge)}</span>
+      <a class="chip chip-lang chip-lang-link" href="{esc(card.get("url", "#"))}" target="_blank" rel="noopener" title="원문 보기">{esc(lang_badge)} ↗</a>
     </div>
     <div class="summary">
 {summary_html}
