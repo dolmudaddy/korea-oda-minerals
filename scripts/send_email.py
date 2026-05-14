@@ -177,6 +177,7 @@ def build_email_html(data, site_url):
         <a href="{esc(site_url)}" style="color: #2d5016; text-decoration: none; font-weight: 500;">웹사이트에서 전체 동향 보기 →</a>
         <div style="margin-top: 8px; color: #999;">한국지질자원연구원(KIGAM) · 한국자원공학회 · 자동 큐레이션 by Claude AI (Anthropic)</div>
         <div style="margin-top: 6px; color: #999; font-size: 9px;">구독 해지: *|UNSUB|*</div>
+        <div style="margin-top: 4px; color: #aaa; font-size: 9px;">*|LIST:ADDRESSLINE|*</div>
       </td></tr>
 
     </table>
@@ -223,16 +224,18 @@ class MailchimpClient:
         self.base = f"https://{server}.api.mailchimp.com/3.0"
         self.auth = ("anystring", api_key)
 
-    def create_campaign(self, audience_id, subject, from_name, reply_to):
+    def create_campaign(self, audience_id, subject, preview_text, from_name, reply_to):
         url = f"{self.base}/campaigns"
         payload = {
             "type": "regular",
             "recipients": {"list_id": audience_id},
             "settings": {
                 "subject_line": subject,
+                "preview_text": preview_text,
                 "title": subject,
                 "from_name": from_name,
                 "reply_to": reply_to,
+                "to_name": "*|FNAME|*",
                 "auto_footer": False,
                 "inline_css": True,
             },
@@ -336,8 +339,17 @@ def main():
 
     client = MailchimpClient(api_key, server)
 
+    # Build preview text for inbox (shown next to subject)
+    cards_count = len(cards)
+    countries = list(set(c.get("country", "") for c in cards if c.get("country")))
+    if len(countries) <= 2:
+        country_str = "·".join(COUNTRY_KO.get(c, c) for c in countries)
+    else:
+        country_str = f"{COUNTRY_KO.get(countries[0], countries[0])} 외 {len(countries)-1}개국"
+    preview_text = f"{data.get('week_of', '')} 주의 한국 ODA 협력 동향 {cards_count}건 — {country_str}"
+
     print(f"\nCreating campaign on {server}.api.mailchimp.com...")
-    campaign_id = client.create_campaign(audience_id, subject, from_name, reply_to)
+    campaign_id = client.create_campaign(audience_id, subject, preview_text, from_name, reply_to)
     print(f"Campaign created: {campaign_id}")
 
     print("Uploading HTML content...")
