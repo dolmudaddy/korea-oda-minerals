@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-14T05:50:52.838899+00:00",
+  "source": "madini.go.tz (pdf_collector)",
+  "stats": {
+    "pages_scanned": 3,
+    "pdfs_found": 0,
+    "pdfs_processed": 0,
+    "pdfs_skipped_stale": 0,
+    "pdfs_skipped_known": 0,
+    "size_tiers": {
+      "small": 0,
+      "medium": 0,
+      "large": 0
+    }
+  },
+  "total": 0,
+  "articles": []
+}
