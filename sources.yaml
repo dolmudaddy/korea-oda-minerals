@@ -324,6 +324,16 @@ tier_2_korea:
       verified: pending
       note: "핵심광물 정책 주관 부처."
 
+    - name: "KIAT (한국산업기술진흥원) 보도자료"
+      url: "https://www.kiat.or.kr/front/board/boardContentsListPage.do?board_id=98&MenuId=db1d57a73e1b1d1ff58cae73d4eba226"
+      rss: null
+      country: korea
+      language: ko
+      scrape_method: html_listing
+      verified: pending
+      priority_boost: 3
+      note: "핵심광물 ODA 실무 주관기관 (MOTIE 산하). KOICA 아님."
+
 # =====================================================================
 # Tier 3: Country-specific local media
 # =====================================================================
@@ -493,15 +503,22 @@ tier_4_broad_search:
     - "Korea Tanzania mineral cooperation"
     - "한국 탄자니아 ODA 광물"
     - "KIGAM Tanzania"
+    - "KIAT 탄자니아 광물"
     - "KOICA 탄자니아 광물"
     - "Korea Indonesia critical mineral MOU"
     - "한국 인도네시아 핵심광물"
     - "한국 인도네시아 니켈"
+    - "KIAT 인도네시아"
     - "Korea Vietnam rare earth"
     - "한국 베트남 희토류"
+    - "KIAT 베트남"
     - "Korea Mongolia mineral cooperation"
     - "한국 몽골 자원외교"
     - "한국 몽골 구리"
+    - "KIAT 몽골"
+    - "한국산업기술진흥원 핵심광물"
+    - "KIAT 핵심광물 ODA"
+    - "MOTIE 핵심광물 협력"
 
 # =====================================================================
 # Scoring config
@@ -514,12 +531,12 @@ scoring:
   korea_keywords:
     weight: 5
     terms:
-      en: ["Korea", "Korean", "Republic of Korea", "South Korea"]
-      ko: ["한국", "KIGAM", "KOICA", "KOMIR", "KOTRA", "EDCF", "MOTIE", "MOFA"]
-      sw: ["Korea", "Kikorea", "Jamhuri ya Korea"]
-      id: ["Korea", "Korea Selatan", "Republik Korea"]
-      vi: ["Hàn Quốc", "Đại Hàn Dân Quốc"]
-      mn: ["Солонгос", "Бүгд Найрамдах Солонгос Улс"]
+      en: ["Korea", "Korean", "Republic of Korea", "South Korea", "KIAT", "KIGAM", "KOICA", "EDCF"]
+      ko: ["한국", "KIAT", "한국산업기술진흥원", "KIGAM", "한국지질자원연구원", "KOICA", "한국국제협력단", "KOMIR", "KOTRA", "EDCF", "MOTIE", "산업통상자원부", "MOFA", "외교부"]
+      sw: ["Korea", "Kikorea", "Jamhuri ya Korea", "KIAT", "KIGAM"]
+      id: ["Korea", "Korea Selatan", "Republik Korea", "KIAT", "KIGAM"]
+      vi: ["Hàn Quốc", "Đại Hàn Dân Quốc", "KIAT", "KIGAM"]
+      mn: ["Солонгос", "Бүгд Найрамдах Солонгос Улс", "KIAT", "KIGAM"]
 
   oda_keywords:
     en:
