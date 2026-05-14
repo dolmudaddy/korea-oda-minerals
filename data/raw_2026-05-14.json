@@ -1,0 +1,119 @@
+{
+  "generated_at": "2026-05-14T04:24:18.870663+00:00",
+  "stats": {
+    "sources_tried": 16,
+    "items_fetched": 130,
+    "items_qualified": 9
+  },
+  "total": 9,
+  "articles": [
+    {
+      "id": "4ec4fd70",
+      "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1",
+      "source": "Wizara ya Madini - Press Release",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "published": null,
+      "score": 11
+    },
+    {
+      "id": "635cd2a6",
+      "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1",
+      "source": "Wizara ya Madini - Press Release",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "published": null,
+      "score": 11
+    },
+    {
+      "id": "4ec4fd70",
+      "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1",
+      "source": "Wizara ya Madini - Latest News",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "published": null,
+      "score": 10
+    },
+    {
+      "id": "635cd2a6",
+      "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1",
+      "source": "Wizara ya Madini - Latest News",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "published": null,
+      "score": 10
+    },
+    {
+      "id": "1d9d8e40",
+      "title": "TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA’S MININ…",
+      "url": "https://www.madini.go.tz/page/f921703e-ed9e-49e0-9cde-730242b77434/?d=1",
+      "source": "Wizara ya Madini - Speeches",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA TO PARTAKE FOR MAIDEN TIME IN SA’S MININ…",
+      "published": null,
+      "score": 10
+    },
+    {
+      "id": "4ec4fd70",
+      "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1",
+      "source": "Wizara ya Madini - Public Notes",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "published": null,
+      "score": 9
+    },
+    {
+      "id": "635cd2a6",
+      "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1",
+      "source": "Wizara ya Madini - Public Notes",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "published": null,
+      "score": 9
+    },
+    {
+      "id": "4ec4fd70",
+      "title": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "url": "https://www.madini.go.tz/page/3d8260da-3422-412e-82fa-52cb5a5481f3/?d=1",
+      "source": "Wizara ya Madini - Upcoming Events",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA ADVANCES ITS STRATEGY POSITION IN THE GL…",
+      "published": null,
+      "score": 9
+    },
+    {
+      "id": "635cd2a6",
+      "title": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "url": "https://www.madini.go.tz/page/041f0619-28ca-42f0-aeae-4db4c0ac82fc/?d=1",
+      "source": "Wizara ya Madini - Upcoming Events",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "TANZANIA KUIMARISHA NAFASI YAKE KATIKA SEKTA YA M…",
+      "published": null,
+      "score": 9
+    }
+  ]
+}
