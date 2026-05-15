@@ -82,6 +82,8 @@ jobs:
       # 6. 사이트 빌드
       # ----------------------------------------------------
       - name: Build index.html
+        env:
+          MAILCHIMP_FORM_URL: ${{ secrets.MAILCHIMP_FORM_URL }}
         run: python scripts/build_index.py
 
       # ----------------------------------------------------
