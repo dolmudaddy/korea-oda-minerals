@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T05:05:37.995260+00:00",
+  "generated_at": "2026-05-15T13:38:14.591612+00:00",
   "stats": {
     "sources_tried": 20,
     "items_fetched": 185,
-    "items_qualified": 23,
+    "items_qualified": 24,
     "google_news_queries": 93,
-    "google_news_items": 4662
+    "google_news_items": 4639
   },
-  "total": 21,
+  "total": 23,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -127,18 +127,27 @@
       "score": 13
     },
     {
-      "id": "2e0678ec6ebf",
-      "title": "Vale Raih Pendanaan Rp12,9 T Dorong Hilirisasi Nikel Berkelanjutan - CNN Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPb3AtVnFWT0tOYXh2RVlYb3ZKcy05R082T3AxM0phaFpkd19WdmJydTJYWkU4eldwVVgxSnVoa3d3RUdIMFdMRC1yVnluVmxSV1FUNFJ4bGVpTFhjR1NVeFdqSDlUbmI5akFpLWFEemR0SG1NRjlUcVQ2d0pPZDhnSWFQZHdTb0o1VTJMc016eGFNS3BhUkxHWDkwNmZsZUJfanJuRmwxb3YtVkJId0xvZE9VbzV0LWNudEdaLWVHSUc0MlptMEtr0gHMAUFVX3lxTE10NUptWW5FNmpyeTI5OFVtWUpaaHdMTUxoYXJGTnNwQnZZZ1UxWV9RTWp5c1BKQzdMOU9wdlJmZV9vMURUZk84UWxIc1ZsZDg4ZkNaSlNxRTNtSmdDUzcyWTBob3Rrc09EdVZDczl3MXVydG92M2NpdXA3SF9CYkxtQTktbDlqa0pJbGU2Q3VGYzhaRVFNZF9Ca2ZwbHBTYzZ1eUlRZXdPY1F0TWVBLU82Smx0UmRWUkppUk4zYS1uaXVCREVuVGtpUkJ6WQ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxPb3AtVnFWT0tOYXh2RVlYb3ZKcy05R082T3AxM0phaFpkd19WdmJydTJYWkU4eldwVVgxSnVoa3d3RUdIMFdMRC1yVnluVmxSV1FUNFJ4bGVpTFhjR1NVeFdqSDlUbmI5akFpLWFEemR0SG1NRjlUcVQ2d0pPZDhnSWFQZHdTb0o1VTJMc016eGFNS3BhUkxHWDkwNmZsZUJfanJuRmwxb3YtVkJId0xvZE9VbzV0LWNudEdaLWVHSUc0MlptMEtr0gHMAUFVX3lxTE10NUptWW5FNmpyeTI5OFVtWUpaaHdMTUxoYXJGTnNwQnZZZ1UxWV9RTWp5c1BKQzdMOU9wdlJmZV9vMURUZk84UWxIc1ZsZDg4ZkNaSlNxRTNtSmdDUzcyWTBob3Rrc09EdVZDczl3MXVydG92M2NpdXA3SF9CYkxtQTktbDlqa0pJbGU2Q3VGYzhaRVFNZF9Ca2ZwbHBTYzZ1eUlRZXdPY1F0TWVBLU82Smx0UmRWUkppUk4zYS1uaXVCREVuVGtpUkJ6WQ?oc=5\" target=\"_blank\">Vale Raih Pendanaan Rp12,9 T Dorong Hilirisasi Nikel Berkelanjutan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN Indonesia</font>",
-      "published": "2026-04-24",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
+      "id": "606a1424",
+      "title": "Uzbekistan Youth Boxers Win Asian Championship",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-youth-boxers-win-asian-championship/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan’s under-15 boxing team topped the medal table at the Asian Championships in Tashkent, winning 27 medals including 13 gold.",
+      "published": "Fri, 15 May 2026 11:03:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "f9a3f96a",
+      "title": "Uzbekistan discusses financial cooperation with Société Générale",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-discusses-financial-cooperation-with-societe-generale/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan and Soci&eacute;t&eacute; G&eacute;n&eacute;rale discussed expanding investment banking cooperation, including bonds, syndicated loans, and financing for mining and energy projects.",
+      "published": "Fri, 15 May 2026 09:30:00 +0500",
       "score": 10
     },
     {
@@ -157,13 +166,43 @@
       "score": 9
     },
     {
-      "id": "c1ce1dbdad63",
-      "title": "Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun - Babel Insight",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5",
+      "id": "d1f0a19a427c",
+      "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5\" target=\"_blank\">Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
-      "published": "2026-05-12",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5\" target=\"_blank\">Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
+      "published": "2026-05-15",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9
+    },
+    {
+      "id": "5b04147ebbea",
+      "title": "Beri Materi di KKL Pemuda Katolik, Bambang Patijaya Yakin Hilirisasi Nikel dan Industri EV Jadi Peluang Besar Indonesia - negeri laskar pelangi",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMkM0enRpZkRIQ0l0TXVVWUhVNGJBcVZlS1pBOUdhY21VMVlfbjFYZThFNVJpejgzMWJ0Z2xwblJ4QmNsak52Ym5nN3A1d1pldlVaalhEb2NwWHhmQlpWSl9fR1hxQUZyR1BHTGVZYWc2LUtGTFpMU252ZzVHY2ZPTkdCMUF3SGVJS0xhV0lMTmhfR2J2c0I5T1pTeUE2QjdlTHM3RGhCcWwyUFh5WS0zUGtYWkV5QkNqeDdjRlZnVEh0cnRGbmhMbHRSVGF2dGhaUWl3QkpxZDY3QURtd3lpS2xBcXNybTlnS2dwUVR1SU9PSS1r?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMkM0enRpZkRIQ0l0TXVVWUhVNGJBcVZlS1pBOUdhY21VMVlfbjFYZThFNVJpejgzMWJ0Z2xwblJ4QmNsak52Ym5nN3A1d1pldlVaalhEb2NwWHhmQlpWSl9fR1hxQUZyR1BHTGVZYWc2LUtGTFpMU252ZzVHY2ZPTkdCMUF3SGVJS0xhV0lMTmhfR2J2c0I5T1pTeUE2QjdlTHM3RGhCcWwyUFh5WS0zUGtYWkV5QkNqeDdjRlZnVEh0cnRGbmhMbHRSVGF2dGhaUWl3QkpxZDY3QURtd3lpS2xBcXNybTlnS2dwUVR1SU9PSS1r?oc=5\" target=\"_blank\">Beri Materi di KKL Pemuda Katolik, Bambang Patijaya Yakin Hilirisasi Nikel dan Industri EV Jadi Peluang Besar Indonesia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">negeri laskar pelangi</font>",
+      "published": "2026-05-15",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9
+    },
+    {
+      "id": "848016659e4f",
+      "title": "Presdir PT Dahana: Hilirisasi Mineral Perlu Ekosistem Industri yang Kuat - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFhXTXZIRE03SnE0dGNmVWdxVUdfejNRZmo3VDBfLXpHb0JRTWtNM1cwSWNkQlBrWG83c3NKYm8zVnBtMENIMEhsa3dhSVJJRWZGSEttWVNPZVhTWHZFMTl4N2NhdXc0QzRhZWhDYVBEZFhvVUhyQ1BmUzhhVHBHMnA4dHZUNTN1TWFNMkhxQnN4SFl5MUhuTUswMHYyQWwxeHlsNU5R?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFhXTXZIRE03SnE0dGNmVWdxVUdfejNRZmo3VDBfLXpHb0JRTWtNM1cwSWNkQlBrWG83c3NKYm8zVnBtMENIMEhsa3dhSVJJRWZGSEttWVNPZVhTWHZFMTl4N2NhdXc0QzRhZWhDYVBEZFhvVUhyQ1BmUzhhVHBHMnA4dHZUNTN1TWFNMkhxQnN4SFl5MUhuTUswMHYyQWwxeHlsNU5R?oc=5\" target=\"_blank\">Presdir PT Dahana: Hilirisasi Mineral Perlu Ekosistem Industri yang Kuat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
+      "published": "2026-05-15",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
@@ -187,28 +226,13 @@
       "score": 9
     },
     {
-      "id": "664560ce316a",
-      "title": "Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis - Pojok Papua",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5",
+      "id": "c1ce1dbdad63",
+      "title": "Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun - Babel Insight",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5\" target=\"_blank\">Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pojok Papua</font>",
-      "published": "2026-05-11",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 9
-    },
-    {
-      "id": "ef2d8bd2ba1b",
-      "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5\" target=\"_blank\">Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DataIndonesia</font>",
-      "published": "2026-05-13",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5\" target=\"_blank\">Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
+      "published": "2026-05-12",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
@@ -232,18 +256,6 @@
       "score": 9
     },
     {
-      "id": "1497ec5b",
-      "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
-      "url": "https://www.mongolianminingjournal.com/a/75059",
-      "source": "Mongolian Mining Journal - English",
-      "source_language": "en",
-      "country": "Mongolia",
-      "tier_weight": 5,
-      "summary_raw": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
-      "published": null,
-      "score": 8
-    },
-    {
       "id": "0f934580",
       "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
       "url": "https://www.mongolianminingjournal.com/a/75056",
@@ -252,6 +264,18 @@
       "country": "Mongolia",
       "tier_weight": 5,
       "summary_raw": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "published": null,
+      "score": 8
+    },
+    {
+      "id": "1497ec5b",
+      "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+      "url": "https://www.mongolianminingjournal.com/a/75059",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
       "published": null,
       "score": 8
     },
@@ -280,6 +304,21 @@
       "score": 8
     },
     {
+      "id": "664560ce316a",
+      "title": "Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis - Pojok Papua",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5\" target=\"_blank\">Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pojok Papua</font>",
+      "published": "2026-05-11",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 8
+    },
+    {
       "id": "83c05dc8735b",
       "title": "Indonesia dan Filipina Perkuat Rantai Pasok Nikel Melalui Kerja Sama Hilirisasi - AsatuNews.co.id",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YZXJJbnNNVGJENE92dWNjaWJ1TDdQb2lxYVpfdnJKM3V0UWJETWtUQTVKaEU5QVUtZENVNlZxQjV2M2EtdnVPZFdNcXNLV3FwVUU2LTZySnRCZE9HalFZVTA5MFhLLUxWQ201WklibVVfM0pWOWNJWV9WdW9odw?oc=5",
@@ -291,21 +330,6 @@
       "priority_boost": 0,
       "source_type": "google_news",
       "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 8
-    },
-    {
-      "id": "0b2f80e374d1",
-      "title": "MetConnex 2026 Angkat Potensi Rare Earth Indonesia, Ahli Tambang Siap Dukung Hilirisasi Prabowo - InvestorTrust",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT1Fqb3JQV19Fd3prNWRySGEwc1RXV3pjcVc4SnJNelFyb3Y4a1M5OVdoV3YzdHN3TldRRHZxeEY5ME03Sm1RdjNTSXVkclFId1hoSHF0SnJxR3hfQU5wOHI1Y0RZbmMtaGFyLV9tM29tdHFxTm1XbmFIN1ZFczFJMm5STWlhNDBYemZLYjJQUmowSHlKY1V6a0hvV3g2M0hvMW9nUzYzcnBHUHoxcEI4ekJUR1pMa0d3MmdOOUN3WWhuYzhudTh6bHlLanAtMTJk?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT1Fqb3JQV19Fd3prNWRySGEwc1RXV3pjcVc4SnJNelFyb3Y4a1M5OVdoV3YzdHN3TldRRHZxeEY5ME03Sm1RdjNTSXVkclFId1hoSHF0SnJxR3hfQU5wOHI1Y0RZbmMtaGFyLV9tM29tdHFxTm1XbmFIN1ZFczFJMm5STWlhNDBYemZLYjJQUmowSHlKY1V6a0hvV3g2M0hvMW9nUzYzcnBHUHoxcEI4ekJUR1pMa0d3MmdOOUN3WWhuYzhudTh6bHlLanAtMTJk?oc=5\" target=\"_blank\">MetConnex 2026 Angkat Potensi Rare Earth Indonesia, Ahli Tambang Siap Dukung Hilirisasi Prabowo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">InvestorTrust</font>",
-      "published": "2026-05-07",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia tambang tanah jarang",
       "country": "Indonesia",
       "score": 8
     }
