@@ -368,6 +368,130 @@ tier_3_laos_media:
   sources: []
 
 # =====================================================================
+# Tier 3X: International mining media RSS (NEW 2026-05)
+# =====================================================================
+# 박사님 진단 (2026-05): 몽골 등 카드 부족 보완. Google News 외 데이터 소스.
+# Mining.com은 광종별 RSS 피드를 공식 제공함. 7개국 핵심광물 매칭:
+#   - 우라늄: 탄자니아·몽골·카자흐스탄(세계 1위)·우즈베크
+#   - 구리: 인도네시아·몽골·우즈베크·라오스
+#   - 희토류: 탄자니아·베트남·몽골·카자흐스탄
+#   - 니켈: 인도네시아·탄자니아
+#   - 코발트: 인도네시아
+# 한 RSS 피드에서 7개국 관련 기사가 모두 잡혀와 매우 효율적.
+tier_3X_intl_mining_media:
+  weight: 4  # 일반 매체보다 약간 높게 (광업 전문성)
+  sources:
+    - name: "Mining.com - All news"
+      url: "https://www.mining.com/feed/"
+      rss: "https://www.mining.com/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "글로벌 광업 전문 매체. 7개국 모두 다룸. RSS 공식."
+
+    - name: "Mining.com - Uranium"
+      url: "https://www.mining.com/tag/uranium/feed/"
+      rss: "https://www.mining.com/tag/uranium/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "우라늄 - 탄자니아·몽골·카자흐스탄·우즈베키스탄 핵심광물."
+
+    - name: "Mining.com - Copper"
+      url: "https://www.mining.com/tag/copper/feed/"
+      rss: "https://www.mining.com/tag/copper/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "구리 - 인도네시아·몽골·우즈베크·라오스 핵심광물."
+
+    - name: "Mining.com - Rare Earth"
+      url: "https://www.mining.com/tag/rare-earth/feed/"
+      rss: "https://www.mining.com/tag/rare-earth/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "희토류 - 탄자니아·베트남·몽골·카자흐스탄 핵심광물."
+
+    - name: "Mining.com - Nickel"
+      url: "https://www.mining.com/tag/nickel/feed/"
+      rss: "https://www.mining.com/tag/nickel/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "니켈 - 인도네시아·탄자니아 핵심광물."
+
+    - name: "Mining.com - Cobalt"
+      url: "https://www.mining.com/tag/cobalt/feed/"
+      rss: "https://www.mining.com/tag/cobalt/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "코발트 - 인도네시아 다운스트림 정책 핵심."
+
+    - name: "Mining.com - Tungsten"
+      url: "https://www.mining.com/tag/tungsten/feed/"
+      rss: "https://www.mining.com/tag/tungsten/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "텅스텐 - 베트남·카자흐스탄·우즈베크 핵심광물."
+
+    - name: "Mining.com - Critical Minerals (category)"
+      url: "https://www.mining.com/category/critical-minerals/feed/"
+      rss: "https://www.mining.com/category/critical-minerals/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "Mining.com 핵심광물 카테고리 전용 피드."
+
+    - name: "news.mn - Mongolia news (RSS)"
+      url: "https://news.mn/"
+      rss: "https://news.mn/feed"
+      scrape_method: rss
+      country: Mongolia
+      language: mn
+      verified: true
+      priority_boost: 3
+      note: "박사님 직접 검증 (2026-05): RSS 작동. 몽골 최대 매체 중 하나."
+
+    - name: "Mongolian Mining Journal - English"
+      url: "https://www.mongolianminingjournal.com/?locale=en"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "몽골 광업 전문지. MRPAM·광물부 동향 직접 다룸. 영문 운영."
+
+    - name: "Mongolia Weekly (English newsletter)"
+      url: "https://www.mongoliaweekly.org/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      priority_boost: 2
+      note: "영문 주간 분석 매체. 광업·정치·경제 통합 분석."
+
+# =====================================================================
 # Tier 4: Google News broad search (per-country queries)
 # =====================================================================
 tier_4_broad_search:
@@ -413,9 +537,16 @@ tier_4_broad_search:
     - "Mongolia mining investment"
     - "Mongolia uranium Dornod"
     - "Mongolia critical minerals Korea"
+    - "Mongolia mining policy"
+    - "Mongolia Erdenes Tavantolgoi"
+    - "Mongolia coal export China"
+    - "Mongolia MRPAM mineral"
+    - "Mongolia fluorspar tungsten"
   mongolia_local_queries:
     - "Монгол стратегийн ашигт малтмал"
     - "Монгол зэс уурхай"
+    - "Монгол ховор шороон"
+    - "Монгол уул уурхай"
 
   # Phase C NEW: Kazakhstan
   kazakhstan_english_queries:
