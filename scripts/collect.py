@@ -6,6 +6,17 @@ Collects articles from 7 target ODA countries with Korea-cooperation focus.
 Supports both RSS feeds and HTML listing pages (multi-language).
 
 Phase A: Tanzania only - establishes the pattern.
+
+──────────────────────────────────────────────────────────────────────
+변경 이력
+──────────────────────────────────────────────────────────────────────
+2026-05-15 (v5, A+B integrated):
+  [A] 핵심광물 필수 통과 필터 추가 — score_article 초입에서 critical
+      mineral keyword 매칭 0개면 즉시 폐기. 우즈벡 인터폴 등 광물
+      무관 기사가 country detection만 통과해서 점수 시스템 통과하는
+      문제 해결.
+  [B] 정부 인용 보너스 추가 — 한국 +3, 7개국 협력국 +5, 카드당 +8 상한.
+──────────────────────────────────────────────────────────────────────
 """
 import feedparser
 import requests
@@ -71,6 +82,91 @@ def detect_country(text):
 
 
 # -----------------------------------------------------------------
+# [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
+# -----------------------------------------------------------------
+def has_critical_mineral(text_lower, scoring_cfg):
+    """카드 텍스트에 핵심광물 키워드가 1개 이상 매칭되는지 검사.
+
+    Returns:
+        (True, matched_keyword) — 매칭됨, 통과
+        (False, None) — 매칭 안 됨, 카드 폐기 대상
+
+    sources.yaml의 scoring.critical_mineral_required.keywords 사용.
+    9개 언어 키워드를 한 리스트에서 평가. text_lower 기반 부분일치
+    (기존 keyword 매칭 방식과 동일).
+    """
+    cfg = scoring_cfg.get("critical_mineral_required", {})
+    if not cfg.get("enabled", False):
+        return True, None  # 비활성화 시 통과 (이전 호환)
+
+    keywords = cfg.get("keywords", []) or []
+    for kw in keywords:
+        if not kw:
+            continue
+        if kw.lower() in text_lower:
+            return True, kw
+    return False, None
+
+
+# -----------------------------------------------------------------
+# [B] 정부 인용 보너스 (2026-05-15 추가)
+# -----------------------------------------------------------------
+def compute_gov_citation_bonus(text_lower, scoring_cfg):
+    """정부 1차 자료 인용 보너스 계산.
+
+    Returns:
+        (bonus_score, korea_matches, partner_matches)
+
+    - 한국 정부 인용: korea_score / 매칭
+    - 7개국 협력국 정부 인용: partner_score / 매칭
+    - max_hits_per_category로 같은 카테고리 중복 가산 제한
+    - max_total_bonus로 카드당 보너스 상한 적용
+    """
+    cfg = scoring_cfg.get("government_citation_bonus", {})
+    if not cfg.get("enabled", False):
+        return 0, [], []
+
+    korea_score = int(cfg.get("korea_score", 3))
+    partner_score = int(cfg.get("partner_score", 5))
+    max_hits = int(cfg.get("max_hits_per_category", 1))
+    max_total = int(cfg.get("max_total_bonus", 8))
+
+    bonus = 0
+    kr_matched = []
+    pt_matched = []
+
+    # 한국 정부 인용
+    hits = 0
+    for kw in cfg.get("korea_keywords", []) or []:
+        if not kw:
+            continue
+        if kw.lower() in text_lower:
+            hits += 1
+            kr_matched.append(kw)
+            if hits >= max_hits:
+                break
+    if hits > 0:
+        bonus += korea_score * hits
+
+    # 협력국 정부 인용
+    hits = 0
+    for kw in cfg.get("partner_keywords", []) or []:
+        if not kw:
+            continue
+        if kw.lower() in text_lower:
+            hits += 1
+            pt_matched.append(kw)
+            if hits >= max_hits:
+                break
+    if hits > 0:
+        bonus += partner_score * hits
+
+    # 카드당 보너스 상한
+    bonus = min(bonus, max_total)
+    return bonus, kr_matched, pt_matched
+
+
+# -----------------------------------------------------------------
 # Scoring
 # -----------------------------------------------------------------
 def score_article(article, source_meta, scoring_cfg):
@@ -83,6 +179,20 @@ def score_article(article, source_meta, scoring_cfg):
     if not country:
         return None, None
     article["country"] = country
+
+    # ─────────────────────────────────────────────────────────────
+    # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
+    # ─────────────────────────────────────────────────────────────
+    # country detection 통과한 후에도 광물 무관 기사 (정치/범죄 등)는
+    # 여기서 폐기. 예: "Uzbekistan puts former migration official on
+    # Interpol Red Notice"는 country=Uzbekistan으로 통과되지만 광물
+    # 키워드 0개라서 None 반환.
+    cm_passed, cm_match = has_critical_mineral(text_lower, scoring_cfg)
+    if not cm_passed:
+        # 폐기 로그 (제목 일부만 — 너무 시끄럽지 않게)
+        print(f"    [PURGED] no critical mineral: {article['title'][:55]}")
+        return None, None
+    # ─────────────────────────────────────────────────────────────
 
     score = 0
 
@@ -126,6 +236,24 @@ def score_article(article, source_meta, scoring_cfg):
         freshness = scoring_cfg.get("freshness_days", 30)
         if delta_days > freshness:
             return None, None
+
+    # ─────────────────────────────────────────────────────────────
+    # [B] 정부 인용 보너스 (2026-05-15 추가)
+    # ─────────────────────────────────────────────────────────────
+    # 기존 점수 계산이 모두 끝난 시점에 가산. 광물 1차 필터 통과한
+    # 카드 중 정부 1차 자료 인용 흔적이 있으면 상위로 끌어올림.
+    gov_bonus, kr_match, pt_match = compute_gov_citation_bonus(
+        text_lower, scoring_cfg
+    )
+    if gov_bonus > 0:
+        score += gov_bonus
+        tag = []
+        if kr_match:
+            tag.append(f"KR:{kr_match}")
+        if pt_match:
+            tag.append(f"PT:{pt_match}")
+        print(f"    [gov-bonus] +{gov_bonus}  {' '.join(tag)}")
+    # ─────────────────────────────────────────────────────────────
 
     return score, country
 
