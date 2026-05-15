@@ -1,657 +1,1043 @@
-"""
-KCMO Weekly - collect.py
-Korea Critical Minerals ODA Weekly
-
-Collects articles from 7 target ODA countries with Korea-cooperation focus.
-Supports both RSS feeds and HTML listing pages (multi-language).
-
-Phase A: Tanzania only - establishes the pattern.
-
-──────────────────────────────────────────────────────────────────────
-변경 이력
-──────────────────────────────────────────────────────────────────────
-2026-05-15 (v5, A+B integrated):
-  [A] 핵심광물 필수 통과 필터 추가 — score_article 초입에서 critical
-      mineral keyword 매칭 0개면 즉시 폐기. 우즈벡 인터폴 등 광물
-      무관 기사가 country detection만 통과해서 점수 시스템 통과하는
-      문제 해결.
-  [B] 정부 인용 보너스 추가 — 한국 +3, 7개국 협력국 +5, 카드당 +8 상한.
-──────────────────────────────────────────────────────────────────────
-"""
-import feedparser
-import requests
-import yaml
-import hashlib
-import json
-import re
-from bs4 import BeautifulSoup
-from datetime import datetime, timezone, timedelta
-from pathlib import Path
-from urllib.parse import urljoin, urlparse
-import time
-
-# -----------------------------------------------------------------
-# Config
-# -----------------------------------------------------------------
-SCRIPT_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPT_DIR.parent if SCRIPT_DIR.name == "scripts" else SCRIPT_DIR
-SOURCES_FILE = ROOT_DIR / "sources.yaml"
-OUTPUT_DIR = ROOT_DIR / "data"
-OUTPUT_DIR.mkdir(exist_ok=True)
-
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; KCMO-Weekly/0.1; "
-    "+https://dolmudaddy.github.io/korea-oda-minerals/)"
-)
-REQUEST_TIMEOUT = 20
-
-# -----------------------------------------------------------------
-# Load sources
-# -----------------------------------------------------------------
-def load_sources():
-    with open(SOURCES_FILE, encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-
-# -----------------------------------------------------------------
-# Country detection (mandatory filter)
-# -----------------------------------------------------------------
-TARGET_COUNTRIES = [
-    "Tanzania", "Indonesia", "Vietnam", "Mongolia",
-    "Kazakhstan", "Uzbekistan", "Laos",
-    # Korean names
-    "탄자니아", "인도네시아", "베트남", "몽골",
-    "카자흐스탄", "우즈베키스탄", "라오스",
-]
-
-
-def detect_country(text):
-    """Return the matched country name or None."""
-    text_lower = text.lower()
-    for country in TARGET_COUNTRIES:
-        if country.lower() in text_lower:
-            # Normalize to English
-            mapping = {
-                "탄자니아": "Tanzania", "인도네시아": "Indonesia",
-                "베트남": "Vietnam", "몽골": "Mongolia",
-                "카자흐스탄": "Kazakhstan", "우즈베키스탄": "Uzbekistan",
-                "라오스": "Laos",
-            }
-            return mapping.get(country, country)
-    return None
-
-
-# -----------------------------------------------------------------
-# [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
-# -----------------------------------------------------------------
-def has_critical_mineral(text_lower, scoring_cfg):
-    """카드 텍스트에 핵심광물 키워드가 1개 이상 매칭되는지 검사.
-
-    Returns:
-        (True, matched_keyword) — 매칭됨, 통과
-        (False, None) — 매칭 안 됨, 카드 폐기 대상
-
-    sources.yaml의 scoring.critical_mineral_required.keywords 사용.
-    9개 언어 키워드를 한 리스트에서 평가. text_lower 기반 부분일치
-    (기존 keyword 매칭 방식과 동일).
-    """
-    cfg = scoring_cfg.get("critical_mineral_required", {})
-    if not cfg.get("enabled", False):
-        return True, None  # 비활성화 시 통과 (이전 호환)
-
-    keywords = cfg.get("keywords", []) or []
-    for kw in keywords:
-        if not kw:
-            continue
-        if kw.lower() in text_lower:
-            return True, kw
-    return False, None
-
-
-# -----------------------------------------------------------------
-# [B] 정부 인용 보너스 (2026-05-15 추가)
-# -----------------------------------------------------------------
-def compute_gov_citation_bonus(text_lower, scoring_cfg):
-    """정부 1차 자료 인용 보너스 계산.
-
-    Returns:
-        (bonus_score, korea_matches, partner_matches)
-
-    - 한국 정부 인용: korea_score / 매칭
-    - 7개국 협력국 정부 인용: partner_score / 매칭
-    - max_hits_per_category로 같은 카테고리 중복 가산 제한
-    - max_total_bonus로 카드당 보너스 상한 적용
-    """
-    cfg = scoring_cfg.get("government_citation_bonus", {})
-    if not cfg.get("enabled", False):
-        return 0, [], []
-
-    korea_score = int(cfg.get("korea_score", 3))
-    partner_score = int(cfg.get("partner_score", 5))
-    max_hits = int(cfg.get("max_hits_per_category", 1))
-    max_total = int(cfg.get("max_total_bonus", 8))
-
-    bonus = 0
-    kr_matched = []
-    pt_matched = []
-
-    # 한국 정부 인용
-    hits = 0
-    for kw in cfg.get("korea_keywords", []) or []:
-        if not kw:
-            continue
-        if kw.lower() in text_lower:
-            hits += 1
-            kr_matched.append(kw)
-            if hits >= max_hits:
-                break
-    if hits > 0:
-        bonus += korea_score * hits
-
-    # 협력국 정부 인용
-    hits = 0
-    for kw in cfg.get("partner_keywords", []) or []:
-        if not kw:
-            continue
-        if kw.lower() in text_lower:
-            hits += 1
-            pt_matched.append(kw)
-            if hits >= max_hits:
-                break
-    if hits > 0:
-        bonus += partner_score * hits
-
-    # 카드당 보너스 상한
-    bonus = min(bonus, max_total)
-    return bonus, kr_matched, pt_matched
-
-
-# -----------------------------------------------------------------
-# Scoring
-# -----------------------------------------------------------------
-def score_article(article, source_meta, scoring_cfg):
-    """Compute relevance score. Returns score (int) or None if dropped."""
-    text = f"{article['title']} {article.get('summary_raw', '')}"
-    text_lower = text.lower()
-
-    # 1. Country match - mandatory
-    country = detect_country(text)
-    if not country:
-        return None, None
-    article["country"] = country
-
-    # ─────────────────────────────────────────────────────────────
-    # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
-    # ─────────────────────────────────────────────────────────────
-    # country detection 통과한 후에도 광물 무관 기사 (정치/범죄 등)는
-    # 여기서 폐기. 예: "Uzbekistan puts former migration official on
-    # Interpol Red Notice"는 country=Uzbekistan으로 통과되지만 광물
-    # 키워드 0개라서 None 반환.
-    cm_passed, cm_match = has_critical_mineral(text_lower, scoring_cfg)
-    if not cm_passed:
-        # 폐기 로그 (제목 일부만 — 너무 시끄럽지 않게)
-        print(f"    [PURGED] no critical mineral: {article['title'][:55]}")
-        return None, None
-    # ─────────────────────────────────────────────────────────────
-
-    score = 0
-
-    # 2. Tier weight (base score from source)
-    score += source_meta.get("tier_weight", 1)
-
-    # 3. Source priority boost
-    score += source_meta.get("priority_boost", 0)
-
-    # 4. Local language bonus (Swahili/Indonesian/etc original source)
-    if source_meta.get("language") in ["sw", "id", "vi", "mn", "kk", "uz", "lo"]:
-        score += scoring_cfg.get("local_language_bonus", 3)
-
-    # 5. Korea keywords
-    korea_terms = scoring_cfg.get("korea_keywords", {}).get("terms", {})
-    korea_weight = scoring_cfg.get("korea_keywords", {}).get("weight", 5)
-    for lang, terms in korea_terms.items():
-        for term in terms:
-            if term.lower() in text_lower:
-                score += korea_weight
-                break  # one match per language is enough
-
-    # 6. ODA keywords
-    oda_keywords = scoring_cfg.get("oda_keywords", {})
-    for lang, kw_dict in oda_keywords.items():
-        for kw, weight in kw_dict.items():
-            if kw.lower() in text_lower:
-                score += weight
-
-    # 7. Recency bonus
-    pub_date = article.get("published_dt")
-    if pub_date:
-        delta_days = (datetime.now(timezone.utc) - pub_date).days
-        recency = scoring_cfg.get("recency_bonus", {})
-        if delta_days <= 3:
-            score += recency.get("within_3_days", 0)
-        elif delta_days <= 7:
-            score += recency.get("within_7_days", 0)
-
-        # Drop if too old
-        freshness = scoring_cfg.get("freshness_days", 30)
-        if delta_days > freshness:
-            return None, None
-
-    # ─────────────────────────────────────────────────────────────
-    # [B] 정부 인용 보너스 (2026-05-15 추가)
-    # ─────────────────────────────────────────────────────────────
-    # 기존 점수 계산이 모두 끝난 시점에 가산. 광물 1차 필터 통과한
-    # 카드 중 정부 1차 자료 인용 흔적이 있으면 상위로 끌어올림.
-    gov_bonus, kr_match, pt_match = compute_gov_citation_bonus(
-        text_lower, scoring_cfg
-    )
-    if gov_bonus > 0:
-        score += gov_bonus
-        tag = []
-        if kr_match:
-            tag.append(f"KR:{kr_match}")
-        if pt_match:
-            tag.append(f"PT:{pt_match}")
-        print(f"    [gov-bonus] +{gov_bonus}  {' '.join(tag)}")
-    # ─────────────────────────────────────────────────────────────
-
-    return score, country
-
-
-# -----------------------------------------------------------------
-# HTML scraping (for sites without RSS)
-# -----------------------------------------------------------------
-def scrape_html_listing(url, language="en", limit=20):
-    """Fetch an HTML page and extract article-like items.
-
-    Generic heuristic: find anchors with non-trivial text inside
-    typical news-listing containers. Filters out obvious nav links.
-    """
-    try:
-        r = requests.get(url, timeout=REQUEST_TIMEOUT,
-                         headers={"User-Agent": USER_AGENT})
-        r.raise_for_status()
-    except Exception as e:
-        print(f"  [WARN] fetch failed: {url} ({e})")
-        return []
-
-    soup = BeautifulSoup(r.content, "lxml")
-    items = []
-
-    # Strategy: collect all links with meaningful anchor text,
-    # de-duplicate, and keep ones that look like article links
-    # (path contains digits, slugs, or known article-marker patterns).
-    seen_urls = set()
-    for a in soup.find_all("a", href=True):
-        href = a.get("href", "")
-        text = a.get_text(strip=True)
-
-        # Skip empty or nav-like links
-        if not text or len(text) < 15:
-            continue
-        if text.lower() in ["read more", "more", "next", "previous",
-                            "home", "about", "contact"]:
-            continue
-
-        # Resolve to absolute URL
-        full_url = urljoin(url, href)
-        if full_url in seen_urls:
-            continue
-        seen_urls.add(full_url)
-
-        # Filter: must be same domain or PDF
-        parsed = urlparse(full_url)
-        source_domain = urlparse(url).netloc
-        if parsed.netloc and parsed.netloc != source_domain:
-            continue
-
-        items.append({
-            "title": text,
-            "url": full_url,
-            "summary_raw": text,  # HTML scrape rarely gives summary
-            "published": None,
-            "published_dt": None,
-        })
-
-        if len(items) >= limit:
-            break
-
-    return items
-
-
-# -----------------------------------------------------------------
-# RSS feed parser
-# -----------------------------------------------------------------
-def fetch_rss(url):
-    try:
-        feed = feedparser.parse(url, agent=USER_AGENT)
-        items = []
-        for entry in feed.entries[:30]:
-            pub_dt = None
-            if hasattr(entry, "published_parsed") and entry.published_parsed:
-                pub_dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-            items.append({
-                "title": entry.get("title", ""),
-                "url": entry.get("link", ""),
-                "summary_raw": entry.get("summary", "")[:1000],
-                "published": entry.get("published", ""),
-                "published_dt": pub_dt,
-            })
-        return items
-    except Exception as e:
-        print(f"  [WARN] RSS parse failed: {url} ({e})")
-        return []
-
-
-# -----------------------------------------------------------------
-# Main collection loop
-# -----------------------------------------------------------------
-def make_article_id(url):
-    return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]
-
-
-def collect_from_source(source, tier_weight, scoring_cfg, results, stats):
-    """Process one source and append qualifying articles to results."""
-    url = source["url"]
-    rss = source.get("rss")
-    method = source.get("scrape_method", "rss" if rss else "html_listing")
-    language = source.get("language", "en")
-    source_name = source["name"]
-
-    print(f"\n[{source_name}] {url}")
-    stats["sources_tried"] += 1
-
-    # Fetch
-    if method == "rss" and rss:
-        items = fetch_rss(rss)
-    elif method == "html_listing":
-        items = scrape_html_listing(url, language=language)
-    elif method == "pdf_directory":
-        # Phase A scope: skip PDF dir crawl for now (handled separately)
-        print("  [SKIP] pdf_directory handler not yet implemented")
-        return
-    else:
-        print(f"  [SKIP] unknown method: {method}")
-        return
-
-    print(f"  fetched {len(items)} items")
-    stats["items_fetched"] += len(items)
-
-    # Build source meta for scoring
-    source_meta = {
-        "tier_weight": tier_weight,
-        "priority_boost": source.get("priority_boost", 0),
-        "language": language,
-    }
-
-    qualified = 0
-    for item in items:
-        score, country = score_article(item, source_meta, scoring_cfg)
-        if score is None:
-            continue
-        if score < scoring_cfg.get("min_score_threshold", 7):
-            continue
-
-        # Compose article record
-        article = {
-            "id": make_article_id(item["url"]),
-            "title": item["title"],
-            "url": item["url"],
-            "source": source_name,
-            "source_language": language,
-            "country": country,
-            "tier_weight": tier_weight,
-            "summary_raw": item.get("summary_raw", ""),
-            "published": item.get("published", ""),
-            "score": score,
-        }
-        results.append(article)
-        qualified += 1
-
-    print(f"  qualified: {qualified} (threshold={scoring_cfg.get('min_score_threshold')})")
-    stats["items_qualified"] += qualified
-
-
-# -----------------------------------------------------------------
-# Google News broad search (Tier 4)
-# -----------------------------------------------------------------
-# 쿼리 키 → (언어, 국가) 매핑
-# Google News RSS는 hl(언어)·gl(국가)·ceid(국가:언어) 파라미터로 지역화함
-GOOGLE_NEWS_LOCALES = {
-    "tanzania_english_queries": ("en", "TZ", "TZ:en"),
-    "tanzania_swahili_queries": ("sw", "TZ", "TZ:sw"),
-    "indonesia_english_queries": ("en", "ID", "ID:en"),
-    "indonesia_local_queries":   ("id", "ID", "ID:id"),
-    "vietnam_english_queries":   ("en", "VN", "VN:en"),
-    "vietnam_local_queries":     ("vi", "VN", "VN:vi"),
-    "mongolia_english_queries":  ("en", "MN", "MN:en"),
-    "mongolia_local_queries":    ("mn", "MN", "MN:mn"),
-    "kazakhstan_english_queries": ("en", "KZ", "KZ:en"),
-    "kazakhstan_russian_queries": ("ru", "KZ", "KZ:ru"),
-    "uzbekistan_english_queries": ("en", "UZ", "UZ:en"),
-    "uzbekistan_russian_queries": ("ru", "UZ", "UZ:ru"),
-    "laos_english_queries":      ("en", "LA", "LA:en"),
-    "korea_cross_queries":       ("ko", "KR", "KR:ko"),
-}
-
-
-def fetch_google_news_feed(query, locale_tuple):
-    """Google News RSS를 한 쿼리에 대해 호출. feedparser로 결과 파싱.
-
-    feedparser에 명시적 User-Agent 전달하여 차단 회피.
-    """
-    from urllib.parse import quote_plus
-    hl, gl, ceid = locale_tuple
-    url = (
-        f"https://news.google.com/rss/search?"
-        f"q={quote_plus(query)}&hl={hl}&gl={gl}&ceid={ceid}"
-    )
-    try:
-        # feedparser는 agent 인자 지원
-        feed = feedparser.parse(url, agent=USER_AGENT)
-        # bozo는 파싱 오류 플래그. 0이면 정상
-        if feed.bozo and not feed.entries:
-            # 파싱 오류 + 빈 결과면 진짜 실패
-            return []
-        return feed.entries
-    except Exception as e:
-        print(f"    [WARN] Google News fetch failed for '{query}': {e}")
-        return []
-
-
-def resolve_google_news_url(google_url, session=None):
-    """Google News RSS URL을 진짜 매체 URL로 변환.
-
-    Google News의 /rss/articles/CBMi... 형식 URL은 클릭 가능하지 않으므로
-    HEAD 요청을 보내 redirect Location 헤더에서 실제 매체 URL을 추출함.
-
-    실패 시 원래 URL 반환 (안전한 fallback).
-    성능 최적화: 짧은 타임아웃 (5초), HEAD만 시도 (GET retry 없음).
-    """
-    if "news.google.com" not in google_url:
-        return google_url  # 이미 매체 직접 URL
-
-    if session is None:
-        session = requests.Session()
-        session.headers.update({"User-Agent": USER_AGENT})
-
-    try:
-        # HEAD 요청만, 짧은 타임아웃 5초
-        r = session.head(google_url, allow_redirects=False, timeout=5)
-
-        # Google News는 302 또는 301로 redirect함
-        if r.status_code in (301, 302, 303, 307, 308):
-            real_url = r.headers.get("Location", "")
-            if real_url and "google.com" not in real_url:
-                return real_url
-    except Exception:
-        pass  # 어떤 오류든 원래 URL fallback
-
-    return google_url
-
-
-def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
-    """tier_4_broad_search 섹션의 모든 쿼리를 Google News RSS로 실행."""
-    min_score = scoring_cfg.get("min_score_threshold", 7)
-
-    # URL 변환용 세션 (재사용으로 성능 향상)
-    url_session = requests.Session()
-    url_session.headers.update({"User-Agent": USER_AGENT})
-
-    # 모든 쿼리 키를 탐색
-    for query_key, locale in GOOGLE_NEWS_LOCALES.items():
-        queries = tier4_cfg.get(query_key, [])
-        if not queries:
-            continue
-
-        print(f"\n  [{query_key}] {len(queries)} query(ies), locale={locale[2]}")
-
-        for query in queries:
-            stats["google_news_queries"] += 1
-            entries = fetch_google_news_feed(query, locale)
-            stats["google_news_items"] += len(entries)
-            print(f"    '{query}' → {len(entries)} entries")
-
-            qualified = 0
-            for entry in entries:
-                # Google News 항목을 article 구조로 변환
-                title = entry.get("title", "")
-                google_link = entry.get("link", "")
-                summary = entry.get("summary", "")
-                pub_str = entry.get("published", "") or entry.get("updated", "")
-
-                # 발행일 파싱
-                pub_dt = None
-                try:
-                    if pub_str:
-                        from email.utils import parsedate_to_datetime
-                        pub_dt = parsedate_to_datetime(pub_str)
-                        if pub_dt.tzinfo is None:
-                            pub_dt = pub_dt.replace(tzinfo=timezone.utc)
-                except Exception:
-                    pass
-
-                # 가상 source_meta 생성 (Tier 4 - weight 1)
-                source_meta = {
-                    "name": f"Google News ({query_key})",
-                    "tier_weight": tier4_cfg.get("weight", 1),
-                    "priority_boost": 0,
-                    "language": locale[0],
-                }
-
-                # article 후보 빌드 - 일단 Google News URL로 점수화
-                # URL 변환은 점수 통과 후에만 수행 (성능 최적화)
-                article = {
-                    "id": hashlib.md5(google_link.encode("utf-8")).hexdigest()[:12],
-                    "title": title,
-                    "url": google_link,  # 임시 - 점수 통과 후 매체 URL로 변환
-                    "source": f"Google News ({locale[2]})",
-                    "source_language": locale[0],
-                    "summary_raw": summary[:1500] if summary else "",
-                    "published_dt": pub_dt,
-                    "published": pub_dt.strftime("%Y-%m-%d") if pub_dt else "",
-                    "tier_weight": tier4_cfg.get("weight", 1),
-                    "priority_boost": 0,
-                    "source_type": "google_news",
-                    "search_query": query,
-                }
-
-                # 점수화 (Country detection 포함, freshness 30일 필터 자동)
-                score, country = score_article(article, source_meta, scoring_cfg)
-                if score is None or score < min_score:
-                    continue
-
-                # 점수 통과 → 이제 URL 변환 (HEAD 요청 비용 발생)
-                # 변환 실패 시 google_link fallback
-                real_link = resolve_google_news_url(google_link, url_session)
-                article["url"] = real_link
-                # id도 진짜 URL 기반으로 재생성 (전체 dedup 정확도)
-                article["id"] = hashlib.md5(real_link.encode("utf-8")).hexdigest()[:12]
-
-                article["score"] = score
-                article["country"] = country
-                # published_dt는 직렬화 안 되므로 제거
-                article.pop("published_dt", None)
-                results.append(article)
-                qualified += 1
-
-            if qualified > 0:
-                stats["items_qualified"] += qualified
-                print(f"      qualified: {qualified}")
-
-            # Rate limiting: Google News에 부담 주지 않기 위한 지연
-            time.sleep(0.5)
-
-
-def main():
-    cfg = load_sources()
-    scoring = cfg.get("scoring", {})
-
-    results = []
-    stats = {"sources_tried": 0, "items_fetched": 0, "items_qualified": 0,
-             "google_news_queries": 0, "google_news_items": 0}
-
-    # Iterate all tier sections - each tier has { weight, sources[] }
-    tier_keys = [k for k in cfg.keys() if k.startswith("tier_")]
-    for tier_key in tier_keys:
-        tier_block = cfg[tier_key]
-        if not isinstance(tier_block, dict):
-            continue
-        tier_weight = tier_block.get("weight", 1)
-        sources_list = tier_block.get("sources", [])
-
-        print(f"\n{'#'*60}")
-        print(f"# {tier_key} (weight={tier_weight}, sources={len(sources_list)})")
-        print(f"{'#'*60}")
-
-        for source in sources_list:
-            collect_from_source(source, tier_weight, scoring, results, stats)
-
-    # ----------------------------------------------------
-    # Phase B: Tier 4 Google News broad search
-    # ----------------------------------------------------
-    tier4 = cfg.get("tier_4_broad_search", {})
-    if tier4:
-        print(f"\n{'#'*60}")
-        print(f"# Tier 4: Google News (broad search across 4 countries)")
-        print(f"{'#'*60}")
-        collect_from_google_news(tier4, scoring, results, stats)
-
-    # Deduplicate by URL (same article might appear in multiple queries)
-    seen_urls = set()
-    deduped = []
-    for art in results:
-        url = art.get("url", "")
-        if url and url not in seen_urls:
-            seen_urls.add(url)
-            deduped.append(art)
-    print(f"\nDeduplication: {len(results)} → {len(deduped)} articles")
-    results = deduped
-
-    # Sort by score desc
-    results.sort(key=lambda r: r["score"], reverse=True)
-
-    # Save
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    output_file = OUTPUT_DIR / f"raw_{today}.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump({
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "stats": stats,
-            "total": len(results),
-            "articles": results,
-        }, f, ensure_ascii=False, indent=2)
-
-    print(f"\n{'='*60}")
-    print(f"Sources tried:        {stats['sources_tried']}")
-    print(f"Items fetched (tier1-3): {stats['items_fetched']}")
-    print(f"Google News queries:  {stats['google_news_queries']}")
-    print(f"Google News items:    {stats['google_news_items']}")
-    print(f"Items qualified:      {stats['items_qualified']}")
-    print(f"After dedup:          {len(results)}")
-    print(f"Output:               {output_file}")
-    print(f"{'='*60}\n")
-
-
-if __name__ == "__main__":
-    main()
+# =====================================================================
+# KCMO Weekly - sources.yaml (v5, A+B integrated)
+# Korea Critical Minerals ODA Weekly
+# =====================================================================
+# v4 → v5 변경 사항 (2026-05-15):
+#   [A] scoring.critical_mineral_required 추가 — 핵심광물 키워드 0개
+#       매칭 카드 즉시 폐기 (mandatory filter). 우즈벡 인터폴 등 광물
+#       무관 정치/범죄 기사 차단.
+#   [B] scoring.government_citation_bonus 추가 — 정부 1차 자료 인용
+#       카드에 보너스. 한국 +3, 7개국 협력국 +5, 카드당 상한 +8.
+# v4 이전 내용은 100% 보존.
+
+target_countries:
+  - name: Tanzania
+    name_ko: 탄자니아
+    languages: [sw, en]
+    language_priority: sw
+    priority: 1
+    primary_minerals: [graphite, rare_earth, uranium, gold, nickel, helium]
+    note: "박사님 직접 담당 ODA 프로젝트국"
+
+  - name: Indonesia
+    name_ko: 인도네시아
+    languages: [id, en]
+    language_priority: id
+    priority: 2
+    primary_minerals: [nickel, cobalt, copper, tin, bauxite]
+    note: "한·인도네시아 핵심광물 협력 MOU, ESDM 부 채널"
+
+  - name: Vietnam
+    name_ko: 베트남
+    languages: [vi, en]
+    language_priority: vi
+    priority: 2
+    primary_minerals: [rare_earth, tungsten, titanium, bauxite]
+    note: "베트남 희토류 자원 협력, MOIT 채널"
+
+  - name: Mongolia
+    name_ko: 몽골
+    languages: [mn, en]
+    language_priority: en
+    priority: 2
+    primary_minerals: [copper, coal, uranium, fluorspar, rare_earth]
+    note: "한·몽 자원외교, MRPAM 채널"
+
+  - name: Kazakhstan
+    name_ko: 카자흐스탄
+    languages: [ru, kk, en]
+    language_priority: ru
+    priority: 2
+    primary_minerals: [uranium, tungsten, chromium, copper, rare_earth]
+    note: "세계 최대 우라늄 생산국. 러시아어가 실무 공식어."
+
+  - name: Uzbekistan
+    name_ko: 우즈베키스탄
+    languages: [ru, uz, en]
+    language_priority: ru
+    priority: 3
+    primary_minerals: [uranium, gold, tungsten, rare_earth, copper]
+    note: "중앙아 우라늄·금 주요 생산국. KOMIR·KIGAM 협력 진행."
+
+  - name: Laos
+    name_ko: 라오스
+    languages: [en, lo]
+    language_priority: en
+    priority: 3
+    primary_minerals: [bauxite, copper, gold, potash, rare_earth]
+    note: "동남아 광물 후발국. 영문 채널이 더 안정적."
+
+# =====================================================================
+# Multilingual keyword dictionaries
+# =====================================================================
+swahili_keywords:
+  madini: "광물 (general)"
+  dhahabu: 금
+  shaba: 구리
+  almasi: 다이아몬드
+  tanzanite: 탄자나이트
+  urani: 우라늄
+  nikel: 니켈
+  kobalti: 코발트
+  lithiamu: 리튬
+  grafiti: 흑연
+  helium: 헬륨
+  "ardhi adimu": 희토류
+  "madini ya kimkakati": 전략광물
+  uchimbaji: "채굴/광업"
+  utafiti: "탐사/연구"
+  uchenjuaji: "정련/제련"
+  usafishaji: 정제
+  uwekezaji: 투자
+  leseni: 광권
+  ushirikiano: 협력
+  makubaliano: "MOU/협정"
+  mkataba: "계약/조약"
+  ubia: "합작/파트너십"
+
+indonesian_keywords:
+  mineral: 광물
+  nikel: 니켈
+  kobalt: 코발트
+  tembaga: 구리
+  timah: 주석
+  bauksit: 보크사이트
+  emas: 금
+  "tanah jarang": 희토류
+  "mineral strategis": 전략광물
+  "mineral kritis": 핵심광물
+  pertambangan: 광업
+  eksplorasi: 탐사
+  smelter: 제련소
+  hilirisasi: "다운스트림 (부가가치 창출)"
+  "nilai tambah": 부가가치
+  investasi: 투자
+  "izin tambang": 광권
+  "kerja sama": 협력
+  "nota kesepahaman": MOU
+  perjanjian: "협정/계약"
+  kemitraan: 파트너십
+  pengembangan: 개발
+
+vietnamese_keywords:
+  "khoáng sản": 광물
+  niken: 니켈
+  "đồng": 구리
+  vonfram: 텅스텐
+  titan: 티타늄
+  bauxite: 보크사이트
+  vàng: 금
+  "đất hiếm": 희토류
+  "khoáng sản chiến lược": 전략광물
+  "khoáng sản quan trọng": 핵심광물
+  "khai thác mỏ": 광업
+  "thăm dò": 탐사
+  "chế biến": 제련
+  "đầu tư": 투자
+  "giấy phép khai thác": 광권
+  "hợp tác": 협력
+  "biên bản ghi nhớ": MOU
+  "thỏa thuận": 협정
+  "đối tác": 파트너십
+
+mongolian_keywords:
+  "ашигт малтмал": 광물
+  зэс: 구리
+  нүүрс: 석탄
+  уран: 우라늄
+  "ховор шороон элемент": 희토류
+  "стратегийн ашигт малтмал": 전략광물
+  алт: 금
+  уул: 광업
+  уурхай: 광산
+  "хайгуул": 탐사
+  "хөрөнгө оруулалт": 투자
+  "тусгай зөвшөөрөл": 광권
+  "хамтын ажиллагаа": 협력
+  "санамж бичиг": MOU
+  гэрээ: 협정
+
+# Russian keyword dictionary (used for Kazakhstan + Uzbekistan)
+russian_keywords:
+  "полезные ископаемые": 광물
+  "уран": 우라늄
+  "вольфрам": 텅스텐
+  "медь": 구리
+  "золото": 금
+  "молибден": 몰리브덴
+  "хром": 크롬
+  "редкоземельные элементы": 희토류
+  "редкоземельные металлы": 희토류
+  "стратегические минералы": 전략광물
+  "критические минералы": 핵심광물
+  "горнодобывающая промышленность": 광업
+  "добыча": "채굴"
+  "разведка": 탐사
+  "переработка": 제련
+  "инвестиции": 투자
+  "лицензия": 광권
+  "сотрудничество": 협력
+  "меморандум": MOU
+  "соглашение": 협정
+  "партнерство": 파트너십
+  "Казатомпром": "카자토믹스 (카자흐 국영 우라늄 기업)"
+  "Алмалык": "알말리크 (우즈베키스탄 구리 단지)"
+
+# Kazakh keyword dictionary
+kazakh_keywords:
+  "пайдалы қазбалар": 광물
+  "уран": 우라늄
+  "мыс": 구리
+  "вольфрам": 텅스텐
+  "сирек жер элементтері": 희토류
+  "стратегиялық минералдар": 전략광물
+  "тау-кен өндіру": 광업
+  "барлау": 탐사
+  "инвестиция": 투자
+  "ынтымақтастық": 협력
+  "келісім": 협정
+
+# Uzbek keyword dictionary
+uzbek_keywords:
+  "foydali qazilmalar": 광물
+  "uran": 우라늄
+  "mis": 구리
+  "oltin": 금
+  "volfram": 텅스텐
+  "molibden": 몰리브덴
+  "noyob er elementlari": 희토류
+  "strategik minerallar": 전략광물
+  "kon": 광산
+  "qazib olish": 채굴
+  "qidiruv": 탐사
+  "investitsiya": 투자
+  "hamkorlik": 협력
+  "shartnoma": 협정
+  "memorandum": MOU
+
+# Lao keyword dictionary
+lao_keywords:
+  "ແຮ່ທາດ": 광물
+  "ທອງແດງ": 구리
+  "ບອກໄຊ": 보크사이트
+  "ຄຳ": 금
+  "ການຂຸດຄົ້ນ": 광업
+  "ການສຳຫຼວດ": 탐사
+  "ການລົງທຶນ": 투자
+  "ການຮ່ວມມື": 협력
+  "ບົດບັນທຶກຄວາມເຂົ້າໃຈ": MOU
+  "ສັນຍາ": 협정
+
+# =====================================================================
+# Tier 1A: Tanzania government (Phase A - madini.go.tz만 작동 확인)
+# =====================================================================
+# 박사님 2026-05-14 진단 결과:
+#   - madini.go.tz 2개 채널: 정상 작동 (각 2건 qualified)
+#   - tumemadini.go.tz: SSL 인증서 오류로 GitHub Actions에서 차단
+#   - gst.go.tz, stamico.co.tz: 응답 있지만 30일간 0건 qualified
+# 응급조치 (2026-05): 작동하지 않는 소스 비활성화. 매주 12분 → 2분
+tier_1_tanzania:
+  weight: 5
+  sources:
+    - name: "Wizara ya Madini - Press Release"
+      url: "https://www.madini.go.tz/otherpage/?p=press-release"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 3
+      note: "박사님 진단으로 GitHub Actions에서도 작동 확인됨 (2026-05)"
+
+    - name: "Wizara ya Madini - Latest News"
+      url: "https://www.madini.go.tz/otherpage/?p=latest-news"
+      rss: null
+      scrape_method: html_listing
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 2
+
+# =====================================================================
+# Tier 1B-G: Other countries government (응급조치 2026-05)
+# =====================================================================
+# 박사님 진단 결과 (2026-05-14):
+#   - 인도네시아 ESDM 3개: 응답 있지만 30일간 0건 qualified
+#   - 베트남 MOIT 2개: 403 Forbidden (GitHub Actions IP 차단)
+#   - 베트남 VIMICO: 응답 있지만 0건 qualified
+#   - 몽골 MRPAM/MMHI: 응답 있지만 0건 qualified
+#   - 카자흐 gov.kz: 응답 없음 (0 items fetched)
+#   - 우즈베크 mingeo.uz/geology.uz: SSL 오류 / 404
+#   - 라오스 moic.gov.la: 응답 없음 (통합 후 새 사이트)
+#
+# 응급 조치: 작동 안 하는 정부 사이트 모두 비활성화.
+#           이 국가들은 Tier 4 Google News로만 운영.
+#           각 국가별 sources 빈 배열로 두면 collect.py가 자동으로 건너뜀.
+# 추후 검토: 박사님 KIGAM 환경 또는 외부 클라우드(아시아 리전)에서
+#           작동 가능성 별도 검증 필요.
+
+tier_1_indonesia:
+  weight: 5
+  sources: []  # 모든 ESDM 사이트가 30일간 0건 qualified
+
+tier_1_vietnam:
+  weight: 5
+  sources: []  # MOIT 403 Forbidden, VIMICO 0건
+
+tier_1_mongolia:
+  weight: 5
+  sources: []  # MRPAM/MMHI 응답 있지만 0건
+
+tier_1_kazakhstan:
+  weight: 5
+  sources: []  # gov.kz 응답 없음, kazgeology 0건
+
+tier_1_uzbekistan:
+  weight: 5
+  sources: []  # mingeo.uz SSL 오류, geology.uz 404
+
+# =====================================================================
+# Tier 1G: Laos government (KPL만 작동 확인)
+# =====================================================================
+# 2025-06-16 라오스 정부 조직개편: MEM(에너지광산부) → MOIC(산업통상부) 통합
+# Source: KPL (Khaosan Pathet Lao), 18/06/2025
+# moic.gov.la는 GitHub Actions에서 응답 없음. KPL은 정상 작동 (1건 qualified).
+tier_1_laos:
+  weight: 5
+  sources:
+    - name: "Lao News Agency (KPL) - English"
+      url: "https://kpl.gov.la/En"
+      rss: null
+      scrape_method: html_listing
+      country: Laos
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "라오스 국가통신사. 부처 개편 등 정부 공식 발표 채널. 박사님 진단으로 GitHub Actions에서도 작동 확인."
+
+
+# =====================================================================
+# Tier 2: Korean cooperation bodies (응급조치 2026-05)
+# =====================================================================
+# 박사님 진단 (2026-05-14): 한국 정부 사이트 5개 모두 GitHub Actions IP 차단
+#   - 외교부:    Connection reset by peer
+#   - KOICA:     Connection reset by peer
+#   - 정책브리핑: Connection reset by peer
+#   - MOTIE:     Connection reset by peer
+#   - KIAT:      500 Server Error
+#
+# 한국 정부 발표 자료는 Tier 4 Google News의 korea_cross_queries로 잡힘.
+# (KIAT 베트남 기술협력센터 카드가 이미 정상 수집된 사례 확인)
+# 추후 박사님 KIGAM 환경에서 별도 수집 검토.
+tier_2_korea:
+  weight: 5
+  sources: []  # 모든 사이트가 Connection reset, Tier 4로만 운영
+
+# =====================================================================
+# Tier 3: Country-specific local media (응급조치 2026-05)
+# =====================================================================
+# 박사님 진단 결과 (2026-05-14): Tier 3 매체 사이트들 30일간 0건 qualified
+#   - Mwananchi: 403 Forbidden (GitHub Actions IP 차단)
+#   - The Citizen, AMM, Kompas, Tempo, JP, VnExpress, Tuoi Tre, VN News:
+#     응답은 받지만 30일간 0건 qualified
+#
+# 응급 조치: 모든 매체 sources 빈 배열로 비활성화.
+#           협력국별 매체 자료는 Tier 4 Google News로 cover.
+#           추후 RSS 피드 가진 사이트 발견 시 재추가 검토.
+
+tier_3_tanzania_media:
+  weight: 3
+  sources: []
+
+tier_3_indonesia_media:
+  weight: 3
+  sources: []
+
+tier_3_vietnam_media:
+  weight: 3
+  sources: []
+
+tier_3_mongolia_media:
+  weight: 3
+  sources: []
+
+tier_3_kazakhstan_media:
+  weight: 3
+  sources: []
+
+tier_3_uzbekistan_media:
+  weight: 3
+  sources: []
+
+tier_3_laos_media:
+  weight: 3
+  sources: []
+
+# =====================================================================
+# Tier 3X: International mining media RSS (NEW 2026-05)
+# =====================================================================
+# 박사님 진단 (2026-05): 몽골 등 카드 부족 보완. Google News 외 데이터 소스.
+# Mining.com은 광종별 RSS 피드를 공식 제공함. 7개국 핵심광물 매칭:
+#   - 우라늄: 탄자니아·몽골·카자흐스탄(세계 1위)·우즈베크
+#   - 구리: 인도네시아·몽골·우즈베크·라오스
+#   - 희토류: 탄자니아·베트남·몽골·카자흐스탄
+#   - 니켈: 인도네시아·탄자니아
+#   - 코발트: 인도네시아
+# 한 RSS 피드에서 7개국 관련 기사가 모두 잡혀와 매우 효율적.
+tier_3X_intl_mining_media:
+  weight: 5  # 박사님 응급조치 (2026-05): 4 → 5. 광업 전문 매체 가중치를 Tier 1 정부와 동급으로
+  sources:
+    - name: "Mining.com - All news"
+      url: "https://www.mining.com/feed/"
+      rss: "https://www.mining.com/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "글로벌 광업 전문 매체. 7개국 모두 다룸. RSS 공식."
+
+    - name: "Mining.com - Uranium"
+      url: "https://www.mining.com/tag/uranium/feed/"
+      rss: "https://www.mining.com/tag/uranium/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "우라늄 - 탄자니아·몽골·카자흐스탄·우즈베키스탄 핵심광물."
+
+    - name: "Mining.com - Copper"
+      url: "https://www.mining.com/tag/copper/feed/"
+      rss: "https://www.mining.com/tag/copper/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "구리 - 인도네시아·몽골·우즈베크·라오스 핵심광물."
+
+    - name: "Mining.com - Rare Earth"
+      url: "https://www.mining.com/tag/rare-earth/feed/"
+      rss: "https://www.mining.com/tag/rare-earth/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "희토류 - 탄자니아·베트남·몽골·카자흐스탄 핵심광물."
+
+    - name: "Mining.com - Nickel"
+      url: "https://www.mining.com/tag/nickel/feed/"
+      rss: "https://www.mining.com/tag/nickel/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "니켈 - 인도네시아·탄자니아 핵심광물."
+
+    - name: "Mining.com - Cobalt"
+      url: "https://www.mining.com/tag/cobalt/feed/"
+      rss: "https://www.mining.com/tag/cobalt/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "코발트 - 인도네시아 다운스트림 정책 핵심."
+
+    - name: "Mining.com - Tungsten"
+      url: "https://www.mining.com/tag/tungsten/feed/"
+      rss: "https://www.mining.com/tag/tungsten/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "텅스텐 - 베트남·카자흐스탄·우즈베크 핵심광물."
+
+    - name: "Mining.com - Critical Minerals (category)"
+      url: "https://www.mining.com/category/critical-minerals/feed/"
+      rss: "https://www.mining.com/category/critical-minerals/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "Mining.com 핵심광물 카테고리 전용 피드."
+
+    - name: "news.mn - Mongolia news (RSS)"
+      url: "https://news.mn/"
+      rss: "https://news.mn/feed"
+      scrape_method: rss
+      country: Mongolia
+      language: mn
+      verified: true
+      priority_boost: 3
+      note: "박사님 직접 검증 (2026-05): RSS 작동. 몽골 최대 매체 중 하나."
+
+    - name: "Mongolian Mining Journal - English"
+      url: "https://www.mongolianminingjournal.com/?locale=en"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      priority_boost: 3
+      note: "몽골 광업 전문지. MRPAM·광물부 동향 직접 다룸. 영문 운영."
+
+    - name: "Mongolia Weekly (English newsletter)"
+      url: "https://www.mongoliaweekly.org/"
+      rss: null
+      scrape_method: html_listing
+      country: Mongolia
+      language: en
+      verified: pending
+      priority_boost: 2
+      note: "영문 주간 분석 매체. 광업·정치·경제 통합 분석."
+
+    # ----- 박사님 직접 검증된 카자흐스탄·우즈베키스탄·우라늄 RSS (2026-05) -----
+    - name: "AKIPress (Central Asia 5 countries)"
+      url: "https://akipress.com/"
+      rss: "https://akipress.com/rss/news.xml"
+      scrape_method: rss
+      country: central_asia
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐·우즈베크·키르기스·타지크·투르크멘 통합 통신사. 한 RSS로 카자흐+우즈베크+몽골 카드 동시 보강."
+
+    - name: "Kursiv Media - English (Kazakhstan)"
+      url: "https://kz.kursiv.media/en"
+      rss: "https://kz.kursiv.media/en/feed"
+      scrape_method: rss
+      country: Kazakhstan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐 경제·비즈니스 전문 영문. 카자흐 광업 산업 동향."
+
+    - name: "The Astana Times (Kazakhstan)"
+      url: "https://astanatimes.com/"
+      rss: "https://astanatimes.com/feed/"
+      scrape_method: rss
+      country: Kazakhstan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐 영문 신문. 정책·외교·자원 동향."
+
+    - name: "Gazeta.uz - English (Uzbekistan)"
+      url: "https://www.gazeta.uz/en/"
+      rss: "https://www.gazeta.uz/en/rss/"
+      scrape_method: rss
+      country: Uzbekistan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우즈베크 경제·정치 영문 1차 자료."
+
+    - name: "UZ Daily - English (Uzbekistan)"
+      url: "https://www.uzdaily.com/en/"
+      rss: "https://www.uzdaily.com/en/rss/"
+      scrape_method: rss
+      country: Uzbekistan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우즈베크 비즈니스·광업 영문. Almalyk MMC 등 자주 다룸."
+
+    - name: "World Nuclear News (uranium/nuclear)"
+      url: "https://world-nuclear-news.org/"
+      rss: "https://world-nuclear-news.org/RSS"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우라늄·원자력 전문. 카자흐 Kazatomprom 세계 1위 + 몽골 우라늄 매주 카버."
+
+# =====================================================================
+# Tier 4: Google News broad search (per-country queries)
+# =====================================================================
+tier_4_broad_search:
+  weight: 1
+  sources: []
+
+  tanzania_english_queries:
+    - "Tanzania graphite mining"
+    - "Tanzania rare earth"
+    - "Tanzania uranium Mantra Namtumbo"
+    - "Tanzania nickel Kabanga"
+    - "Tanzania critical minerals"
+  tanzania_swahili_queries:
+    - "Tanzania madini ya kimkakati"
+    - "Tanzania uchimbaji urani"
+    - "Wizara ya Madini taarifa"
+
+  indonesia_english_queries:
+    - "Indonesia nickel critical mineral"
+    - "Indonesia cobalt EV battery"
+    - "Indonesia smelter downstream policy"
+    - "Indonesia rare earth strategy"
+    - "Indonesia mining moratorium"
+  indonesia_local_queries:
+    - "Indonesia mineral strategis"
+    - "Indonesia hilirisasi nikel"
+    - "Indonesia smelter Sulawesi"
+    - "Indonesia tambang tanah jarang"
+
+  vietnam_english_queries:
+    - "Vietnam rare earth deposit"
+    - "Vietnam tungsten Nui Phao"
+    - "Vietnam critical mineral strategy"
+    - "Vietnam bauxite Tay Nguyen"
+  vietnam_local_queries:
+    - "Việt Nam đất hiếm"
+    - "Việt Nam khoáng sản chiến lược"
+    - "Việt Nam vonfram Núi Pháo"
+
+  mongolia_english_queries:
+    - "Mongolia copper Oyu Tolgoi"
+    - "Mongolia rare earth deposit"
+    - "Mongolia mining investment"
+    - "Mongolia uranium Dornod"
+    - "Mongolia critical minerals Korea"
+    - "Mongolia mining policy"
+    - "Mongolia Erdenes Tavantolgoi"
+    - "Mongolia coal export China"
+    - "Mongolia MRPAM mineral"
+    - "Mongolia fluorspar tungsten"
+  mongolia_local_queries:
+    - "Монгол стратегийн ашигт малтмал"
+    - "Монгол зэс уурхай"
+    - "Монгол ховор шороон"
+    - "Монгол уул уурхай"
+
+  # Phase C NEW: Kazakhstan
+  kazakhstan_english_queries:
+    - "Kazakhstan uranium Kazatomprom"
+    - "Kazakhstan tungsten deposit"
+    - "Kazakhstan rare earth strategy"
+    - "Kazakhstan critical minerals Korea"
+    - "Kazakhstan copper mining"
+  kazakhstan_russian_queries:
+    - "Казахстан уран Казатомпром"
+    - "Казахстан редкоземельные металлы"
+    - "Казахстан стратегические минералы"
+    - "Казахстан горнодобывающая промышленность"
+
+  # Phase C NEW: Uzbekistan
+  uzbekistan_english_queries:
+    - "Uzbekistan uranium mining"
+    - "Uzbekistan rare earth"
+    - "Uzbekistan critical minerals"
+    - "Uzbekistan gold mining Navoi"
+  uzbekistan_russian_queries:
+    - "Узбекистан уран"
+    - "Узбекистан редкоземельные металлы"
+    - "Узбекистан горнодобывающая"
+    - "Навоийский ГМК"
+
+  # Phase C: Laos (2025-06 reorganization: mining under MOIC, not MEM)
+  laos_english_queries:
+    - "Laos bauxite mining"
+    - "Laos copper deposit"
+    - "Laos potash mining"
+    - "Laos critical minerals"
+    - "Laos mining investment"
+    - "Laos MOIC mineral"
+    - "Laos Ministry of Industry and Commerce mining"
+
+  korea_cross_queries:
+    - "Korea Tanzania mineral cooperation"
+    - "한국 탄자니아 ODA 광물"
+    - "KIGAM Tanzania"
+    - "KIAT 탄자니아 광물"
+    - "KOICA 탄자니아 광물"
+    - "Korea Indonesia critical mineral MOU"
+    - "한국 인도네시아 핵심광물"
+    - "한국 인도네시아 니켈"
+    - "KIAT 인도네시아"
+    - "Korea Vietnam rare earth"
+    - "한국 베트남 희토류"
+    - "KIAT 베트남"
+    - "Korea Mongolia mineral cooperation"
+    - "한국 몽골 자원외교"
+    - "한국 몽골 구리"
+    - "KIAT 몽골"
+    - "Korea Kazakhstan uranium"
+    - "한국 카자흐스탄 자원협력"
+    - "한국 카자흐스탄 우라늄"
+    - "KIAT 카자흐스탄"
+    - "Корея Казахстан минералы"
+    - "Korea Uzbekistan critical mineral"
+    - "한국 우즈베키스탄 자원"
+    - "KIAT 우즈베키스탄"
+    - "Корея Узбекистан"
+    - "Korea Laos mining cooperation"
+    - "한국 라오스 광물"
+    - "KIAT 라오스"
+    - "한국산업기술진흥원 핵심광물"
+    - "KIAT 핵심광물 ODA"
+    - "MOTIE 핵심광물 협력"
+
+# =====================================================================
+# Scoring config
+# =====================================================================
+scoring:
+  country_required: true
+  min_score_threshold: 10  # 박사님 응급조치 (2026-05): 7 → 10. 95개 → 약 50개로 감소, 품질 ↑
+  local_language_bonus: 3
+
+  # ===================================================================
+  # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
+  # ===================================================================
+  # 카드 제목 + 요약에서 핵심광물 관련 키워드가 단 1개도 매칭되지
+  # 않으면 즉시 폐기. country detection 통과한 후에도 광물 무관 기사
+  # (예: "Uzbekistan puts former migration official on Interpol Red
+  # Notice")가 Tier 3X 가중치만으로 통과하는 문제 해결.
+  #
+  # 매칭 방식: text_lower 기반 부분일치 (collect.py의 기존 keyword
+  # 매칭과 동일 방식). 9개 언어 모든 키워드를 한 리스트에서 평가.
+  # ===================================================================
+  critical_mineral_required:
+    enabled: true
+    keywords:
+      # ── 영어 ──
+      - "critical mineral"
+      - "critical minerals"
+      - "rare earth"
+      - "uranium"
+      - "copper"
+      - "nickel"
+      - "cobalt"
+      - "tungsten"
+      - "lithium"
+      - "graphite"
+      - "bauxite"
+      - "molybdenum"
+      - "tin"
+      - "potash"
+      - "fluorspar"
+      - "chromium"
+      - "titanium"
+      - "mining"
+      - "mineral"
+      - "minerals"
+      - "ore"
+      - "smelter"
+      - "refinery"
+      # ── 한국어 ──
+      - "핵심광물"
+      - "전략광물"
+      - "희토류"
+      - "우라늄"
+      - "구리"
+      - "니켈"
+      - "코발트"
+      - "리튬"
+      - "텅스텐"
+      - "흑연"
+      - "보크사이트"
+      - "광물"
+      - "광업"
+      - "채굴"
+      - "광산"
+      - "제련"
+      # ── 러시아어 ──
+      - "критические минералы"
+      - "стратегические минералы"
+      - "уран"
+      - "медь"
+      - "никель"
+      - "кобальт"
+      - "редкоземельные"
+      - "литий"
+      - "вольфрам"
+      - "молибден"
+      - "хром"
+      - "добыча"
+      - "рудник"
+      - "руда"
+      - "горнодобывающ"
+      - "полезные ископаемые"
+      # ── 카자흐어 ──
+      - "критикалық минералдар"
+      - "стратегиялық минералдар"
+      - "мыс"
+      - "кен"
+      - "тау-кен"
+      - "пайдалы қазбалар"
+      - "сирек жер"
+      # ── 우즈베크어 ──
+      - "kritik minerallar"
+      - "strategik minerallar"
+      - "foydali qazilmalar"
+      - "uran"
+      - "mis"
+      - "volfram"
+      - "kon"
+      - "qazib olish"
+      - "konchilik"
+      - "noyob er"
+      # ── 인도네시아어 ──
+      - "mineral kritis"
+      - "mineral strategis"
+      - "nikel"
+      - "kobalt"
+      - "tembaga"
+      - "litium"
+      - "tanah jarang"
+      - "pertambangan"
+      - "tambang"
+      - "bijih"
+      - "bauksit"
+      - "hilirisasi"
+      # ── 베트남어 ──
+      - "khoáng sản"
+      - "khoáng sản chiến lược"
+      - "khoáng sản quan trọng"
+      - "đất hiếm"
+      - "đồng"
+      - "niken"
+      - "coban"
+      - "vonfram"
+      - "khai thác mỏ"
+      - "quặng"
+      # ── 몽골어 ──
+      - "ашигт малтмал"
+      - "стратегийн ашигт малтмал"
+      - "зэс"
+      - "ховор шороон"
+      - "уурхай"
+      - "олборлолт"
+      - "хайгуул"
+      # ── 스와힐리 ──
+      - "madini"
+      - "urani"
+      - "shaba"
+      - "nikeli"
+      - "kobalti"
+      - "kuchimba"
+      - "uchimbaji"
+      - "machimbo"
+      - "grafiti"
+      - "ardhi adimu"
+      # ── 라오어 ──
+      - "ແຮ່ທາດ"
+      - "ທອງແດງ"
+      - "ນິກເກນ"
+      - "ການຂຸດຄົ້ນ"
+      - "ບໍ່ແຮ່"
+      - "ບອກໄຊ"
+
+  # ===================================================================
+  # [B] 정부 인용 보너스 (2026-05-15 추가)
+  # ===================================================================
+  # A 필터를 통과한 카드에만 적용. 박사님 KOICA·MOTIE·KIAT 회의에
+  # 인용 가능한 정부 1차 자료를 상위로 끌어올림.
+  #
+  # - korea_score: +3 (한국 정부 인용. korea_keywords와는 별도 가산)
+  # - partner_score: +5 (7개국 협력국 정부/국가통신사 인용)
+  # - max_total_bonus: 8 (한 카드 보너스 상한)
+  # - max_hits_per_category: 1 (같은 카테고리 중복 매칭 1회만 가산)
+  # ===================================================================
+  government_citation_bonus:
+    enabled: true
+    korea_score: 3
+    partner_score: 5
+    max_total_bonus: 8
+    max_hits_per_category: 1
+
+    korea_keywords:
+      # 한국어 1차 인용 패턴
+      - "외교부에 따르면"
+      - "외교부 발표"
+      - "산업통상자원부에 따르면"
+      - "산업통상자원부 발표"
+      - "산자부 발표"
+      - "KIAT 보도자료"
+      - "KIAT 발표"
+      - "한국산업기술진흥원"
+      - "KIGAM 보도자료"
+      - "지질자원연구원"
+      - "KOICA 발표"
+      - "한국국제협력단"
+      - "정부 관계자"
+      - "공식 발표"
+      - "보도자료"
+      # 영문 한국 정부
+      - "MOTIE announcement"
+      - "MOTIE statement"
+      - "KIAT press release"
+      - "KIGAM press"
+
+    partner_keywords:
+      # ── 영어 공통 (모든 협력국 영문 기사에서 사용) ──
+      - "Ministry of"
+      - "Government of"
+      - "official statement"
+      - "press release"
+      - "state-owned"
+      - "according to the ministry"
+      - "ministry announced"
+      - "government announced"
+
+      # ── 인도네시아 (ESDM) ──
+      - "ESDM"
+      - "Kementerian ESDM"
+      - "Kementerian Energi dan Sumber Daya Mineral"
+      - "Pemerintah Indonesia"
+      - "Kementerian Investasi"
+      - "BKPM"
+      - "Antara"
+      - "Antaranews"
+
+      # ── 베트남 (MOIT) ──
+      - "MOIT"
+      - "Bộ Công Thương"
+      - "Bộ Tài nguyên và Môi trường"
+      - "Chính phủ Việt Nam"
+      - "Vinacomin"
+      - "VNA"
+      - "Vietnam News Agency"
+      - "TTXVN"
+
+      # ── 몽골 (MRPAM) ──
+      - "MRPAM"
+      - "Mineral Resources and Petroleum Authority"
+      - "Уул уурхайн яам"
+      - "Уул уурхайн сайд"
+      - "Засгийн газар"
+      - "MONTSAME"
+      - "Erdenes Mongol"
+      - "Erdenet Mining"
+
+      # ── 카자흐스탄 (Kazatomprom 등) ──
+      - "Kazatomprom"
+      - "Казатомпром"
+      - "Министерство промышленности"
+      - "Министерство энергетики"
+      - "Министерство индустрии"
+      - "Правительство Казахстана"
+      - "Kazinform"
+      - "Казинформ"
+      - "KazMunayGas"
+
+      # ── 우즈베키스탄 (Almalyk, NMMC) ──
+      - "Алмалык ГМК"
+      - "Almalyk MMC"
+      - "Almalyk Mining"
+      - "Навоийский ГМК"
+      - "NMMC"
+      - "Navoi Mining"
+      - "Правительство Узбекистана"
+      - "Министерство горной"
+
+      # ── 라오스 (MOIC, 2025-06 MEM 통합 후) ──
+      - "MOIC"
+      - "Ministry of Industry and Commerce"
+      - "ກະຊວງອຸດສາຫະກໍາ"
+      - "ກະຊວງ"
+      - "DGM"
+      - "Department of Geology and Mines"
+      - "DOM"
+      - "KPL"
+      - "Lao News Agency"
+      - "ລັດຖະບານ"
+
+      # ── 탄자니아 (Wizara ya Madini) ──
+      - "Wizara ya Madini"
+      - "Ministry of Minerals"
+      - "Serikali ya Tanzania"
+      - "Tume ya Madini"
+      - "Mining Commission"
+      - "STAMICO"
+      - "GST Tanzania"
+      - "Geological Survey of Tanzania"
+
+      # ── 러시아어/CIS 공통 (위 국가별 키워드 외 일반 표현) ──
+      - "Министерство"
+      - "Правительство"
+      - "официальное заявление"
+      - "пресс-релиз"
+
+  korea_keywords:
+    weight: 3  # 박사님 응급조치 (2026-05): 5 → 3. KIAT/KIGAM 편향 감소, 7개국 정책 동향 부상
+    terms:
+      en: ["Korea", "Korean", "Republic of Korea", "South Korea", "KIAT", "KIGAM", "KOICA", "EDCF"]
+      ko: ["한국", "KIAT", "한국산업기술진흥원", "KIGAM", "한국지질자원연구원", "KOICA", "한국국제협력단", "KOMIR", "KOTRA", "EDCF", "MOTIE", "산업통상자원부", "MOFA", "외교부"]
+      sw: ["Korea", "Kikorea", "Jamhuri ya Korea", "KIAT", "KIGAM"]
+      id: ["Korea", "Korea Selatan", "Republik Korea", "KIAT", "KIGAM"]
+      vi: ["Hàn Quốc", "Đại Hàn Dân Quốc", "KIAT", "KIGAM"]
+      mn: ["Солонгос", "Бүгд Найрамдах Солонгос Улс", "KIAT", "KIGAM"]
+      ru: ["Корея", "Республика Корея", "Южная Корея", "KIAT", "KIGAM"]
+      lo: ["Korea", "ເກົາຫຼີ", "KIAT", "KIGAM"]
+
+  oda_keywords:
+    en:
+      ODA: 5
+      "development cooperation": 4
+      EDCF: 5
+      "feasibility study": 4
+      "technical assistance": 4
+      "joint venture": 3
+      MOU: 3
+      bilateral: 3
+    ko:
+      "공적개발원조": 5
+      "개발협력": 4
+      "기술협력": 4
+      "양해각서": 3
+    sw:
+      "ushirikiano wa maendeleo": 4
+      makubaliano: 3
+      mkataba: 3
+      ubia: 3
+      "msaada wa kiufundi": 4
+    id:
+      "kerja sama pembangunan": 4
+      "nota kesepahaman": 3
+      perjanjian: 3
+      kemitraan: 3
+      hilirisasi: 3
+      "nilai tambah": 3
+    vi:
+      "hợp tác phát triển": 4
+      "biên bản ghi nhớ": 3
+      "thỏa thuận": 3
+      "đối tác": 3
+    mn:
+      "хамтын ажиллагаа": 4
+      "санамж бичиг": 3
+      гэрээ: 3
+    ru:
+      "сотрудничество в развитии": 4
+      "меморандум": 3
+      "соглашение": 3
+      "партнерство": 3
+      "инвестиции": 2
+      "техническая помощь": 4
+    lo:
+      "ການຮ່ວມມື": 4
+      "ການລົງທຶນ": 2
+
+  recency_bonus:
+    within_3_days: 2
+    within_7_days: 1
+  freshness_days: 21  # 박사님 응급조치 (2026-05): 30 → 21 (다음 주부터 더 안정적인 카드 풀 유지)
+
+# =====================================================================
+# Special handlers
+# =====================================================================
+special_handlers:
+  pdf_extraction:
+    enabled: false
+    note: "GitHub Actions IP 차단 발견. 별도 우회 필요."
+
+  multilingual_summarization:
+    enabled: true
+    languages: [sw, id, vi, mn]
+    note: "summarize.py가 Claude API로 각 언어 → 한국어 자동 변환"
