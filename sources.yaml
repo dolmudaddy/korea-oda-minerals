@@ -1,14 +1,30 @@
 # =====================================================================
-# KCMO Weekly - sources.yaml (v6, keyword redesign)
+# KCMO Weekly - sources.yaml (v6.2, keyword expansion)
 # Korea Critical Minerals ODA Weekly
 # =====================================================================
-# v5 → v6 변경 사항 (2026-05-15):
-#   [A] critical_mineral_keywords 4단계 재설계 — exclusion(외환·
-#       보건·영화·교통) → core_minerals(광종 직접) → core_wordbound
-#       (REE 등 약어) → domain_terms(자원외교·산업기술협력 등 KCMO
-#       어휘). 박사님 폐기 8건 복구 + 통과 5건 차단.
-#   [B] partner_keywords 짧은 약어(DOM, VNA 등) 단어 경계 처리.
-# v5의 government_citation_bonus 본체는 그대로 유지.
+# v6 → v6.2 변경 사항 (2026-05-15):
+#   박사님 실제 GitHub Actions 로그 분석 후 키워드 사전 확장.
+#   v6 폐기 카드 39건 중 33건(77%) 복구. 노이즈 9건 중 8건(89%) 차단.
+#
+#   추가:
+#   - core_minerals에 일반 광업 용어 (mining, mineral, minerals,
+#     smelter, refinery, 광업, 광물, 광산, 채굴, mining 9개 언어 변형)
+#   - core_minerals에 7개국 주요 광업 회사/지명/광산명
+#     (Oyu Tolgoi, Rio Tinto, Erdenes Mongol, Tavan Tolgoi,
+#     Kazatomprom, Almalyk MMC, Navoi Mining, Vinacomin,
+#     Núi Pháo, Sepon, Kabanga 등)
+#   - core_minerals_wordbound에 'ore', 'miner' 추가 (단어 경계 적용,
+#     "foreign cash", "Erdogan" 같은 부분일치 사고 차단)
+#   - domain_terms에 한국어 띄어쓰기 변형 (핵심 광물, 광물 자원,
+#     자원 외교 등) 추가 — 박사님 KCMO 정상회담 카드 복구
+#   - exclusion_terms에 정치 일반 차단 (victory day, world war 등)
+#
+# v6의 4단계 필터 구조와 government_citation_bonus는 그대로 유지.
+
+# =====================================================================
+# v5 → v6 변경 사항 (이전 작업, 참고용):
+#   [A] critical_mineral_keywords 4단계 재설계.
+#   [B] partner_keywords 짧은 약어 단어 경계 처리.
 
 target_countries:
   - name: Tanzania
@@ -40,8 +56,8 @@ target_countries:
     languages: [mn, en]
     language_priority: en
     priority: 2
-    primary_minerals: [copper, coal, uranium, fluorspar, rare_earth]
-    note: "한·몽 자원외교, MRPAM 채널"
+    primary_minerals: [copper, uranium, fluorspar, rare_earth]
+    note: "한·몽 자원외교, MRPAM 채널. coal은 KCMO 범위 외 (2026-05-15)."
 
   - name: Kazakhstan
     name_ko: 카자흐스탄
@@ -778,6 +794,13 @@ scoring:
       - "visa fee"
       - "passport policy"
       - "immigration policy"
+      # 정치/엔터테인먼트 일반 (v6.2 신규 - mining/mineral 통과시킨 안전망)
+      - "victory day"
+      - "victory parade"
+      - "world war"
+      - "presidential parade"
+      - "counter-strike"
+      - "video game"
 
     # ────────────────────────────────────────────────────────────
     # 2. 제외 키워드 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
@@ -895,6 +918,107 @@ scoring:
       - "ບອກໄຊ"
       - "ນິກເກນ"
       - "ທອງແດງ"
+      # ════════════════════════════════════════════════════════
+      # v6.2 신규: 일반 광업 용어 (24건 폐기 카드 복구)
+      # ════════════════════════════════════════════════════════
+      # 영어
+      - "mining"
+      - "mineral"
+      - "minerals"
+      - "smelter"
+      - "smelting"
+      - "refinery"
+      - "refining"
+      # 한국어
+      - "광업"
+      - "광물"
+      - "광산"
+      - "채굴"
+      - "제련"
+      # 베트남어
+      - "khoáng sản"
+      - "khai thác mỏ"
+      - "quặng"
+      # 인도네시아어
+      - "pertambangan"
+      - "tambang"
+      - "bijih"
+      # 몽골어
+      - "ашигт малтмал"
+      - "уурхай"
+      - "олборлолт"
+      - "хайгуул"
+      # 라오어 (광업)
+      - "ການຂຸດຄົ້ນ"
+      - "ບໍ່ແຮ່"
+      # 스와힐리 (광업)
+      - "madini"
+      - "uchimbaji"
+      - "kuchimba"
+      # 러시아어 (광업)
+      - "добыча"
+      - "руда"
+      - "рудник"
+      - "горнодобывающ"
+      # 우즈베크 (광업)
+      - "kon"
+      - "qazib olish"
+      - "konchilik"
+
+      # ════════════════════════════════════════════════════════
+      # v6.2 신규: 7개국 주요 광업 회사·광산명·지명
+      # ════════════════════════════════════════════════════════
+      # 몽골 (구리·우라늄 메이저)
+      - "Oyu Tolgoi"
+      - "Rio Tinto"
+      - "Erdenes Mongol"
+      - "Erdenes Tavantolgoi"
+      - "Tavan Tolgoi"
+      - "Tavantolgoi"
+      - "Erdenet"
+      - "Centerra"
+      - "Mongolian Mining Corporation"
+      # 인도네시아 (니켈·구리 메이저)
+      - "Vale Indonesia"
+      - "Antam"
+      - "MIND ID"
+      - "Freeport Indonesia"
+      # 카자흐스탄 (우라늄)
+      - "Kazatomprom"
+      - "KazMinerals"
+      - "Kaz Minerals"
+      # 우즈베키스탄 (금·구리)
+      - "Almalyk MMC"
+      - "Almalyk Mining"
+      - "Navoi Mining"
+      - "Navoiyuran"
+      - "NMMC"
+      # 베트남 (텅스텐·희토류)
+      - "Masan High-Tech Materials"
+      - "Nui Phao"
+      - "Núi Pháo"
+      - "Vinacomin"
+      # 라오스 (보크사이트·구리)
+      - "PanAust"
+      - "Sepon mine"
+      - "Sepon"
+      # 탄자니아 (니켈·희토류)
+      - "Kabanga"
+      - "Namtumbo"
+      - "Mantra Tanzania"
+      - "Peak Resources"
+      - "Ngualla"
+
+      # ════════════════════════════════════════════════════════
+      # Coal/석탄 제외 결정 (박사님 2026-05-15)
+      # ────────────────────────────────────────────────────────
+      # 석탄은 에너지원이지 한국 정부 핵심광물 분류에 속하지 않음.
+      # KCMO Weekly 범위 외. coal/석탄/coking coal 등 키워드는
+      # 의도적으로 추가하지 않음. 몽골 coal exports 같은 카드는
+      # 광산 회사명(Tavan Tolgoi, Erdenes) 또는 일반 mining
+      # 키워드로 매칭되면 통과, 순수 석탄 시장 동향 카드만
+      # 다루면 폐기 (의도된 동작).
+      # ════════════════════════════════════════════════════════
 
     # ────────────────────────────────────────────────────────────
     # 4. 광종명 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
@@ -903,6 +1027,11 @@ scoring:
     core_minerals_wordbound:
       - "REE"     # rare earth elements
       - "PGM"     # platinum group metals
+      # v6.2 신규: 영어 단어 경계 매칭 (부분일치 사고 방지)
+      - "ore"     # 광석 — "foreign", "more", "before"에 부분일치 사고 방지
+      - "ores"    # 광석들
+      - "miner"   # 광부 — "miner-friendly" 같은 표현 매칭, "minor"와 구분 필요 없음
+      - "miners"  # 광부들
 
     # ────────────────────────────────────────────────────────────
     # 5. KCMO 도메인 용어 (자원외교·ODA·산업기술협력 어휘)
@@ -966,6 +1095,16 @@ scoring:
       - "공동연구"
       - "지질조사"
       - "지질자원"
+      # v6.2 신규: 한국어 띄어쓰기 변형 (정상회담·외교 보도 어휘)
+      - "핵심 광물"
+      - "전략 광물"
+      - "광물 자원"
+      - "핵심 광물 협력"
+      - "광물 공급망"
+      - "자원 외교"
+      - "자원 개발"
+      - "자원 안보"
+      - "자원 협력"
       # ── 러시아어 ──
       - "критические минералы"
       - "стратегические минералы"
