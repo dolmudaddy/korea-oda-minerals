@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T04:44:21.977243+00:00",
+  "generated_at": "2026-05-15T05:05:37.995260+00:00",
   "stats": {
     "sources_tried": 20,
     "items_fetched": 185,
-    "items_qualified": 20,
+    "items_qualified": 23,
     "google_news_queries": 93,
-    "google_news_items": 4673
+    "google_news_items": 4662
   },
-  "total": 18,
+  "total": 21,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -202,6 +202,21 @@
       "score": 9
     },
     {
+      "id": "ef2d8bd2ba1b",
+      "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5\" target=\"_blank\">Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DataIndonesia</font>",
+      "published": "2026-05-13",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9
+    },
+    {
       "id": "dde744c22d75",
       "title": "Hilirisasi Nikel Dorong Pertumbuhan Ekonomi Indonesia Jangka Panjang - haloindonesia.co.id",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rUzZ6SkM1Q1NHelhjeWl5cUJVWk1mNVNZUWRfUmN3c0VLSmRERHNKcWZjb0NKVElXUVRMSVhmNG5WNzlLUHF1ZVMtTzVUWWNuMzQ4NWhGTmxTNkxhd0R3dm9MM3BjSHQ1cWhRb2p2ZzctZG5hTHpCSVBQTQ?oc=5",
@@ -217,19 +232,40 @@
       "score": 9
     },
     {
-      "id": "ef2d8bd2ba1b",
-      "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5\" target=\"_blank\">Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DataIndonesia</font>",
-      "published": "2026-05-13",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 9
+      "id": "1497ec5b",
+      "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+      "url": "https://www.mongolianminingjournal.com/a/75059",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+      "published": null,
+      "score": 8
+    },
+    {
+      "id": "0f934580",
+      "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "published": null,
+      "score": 8
+    },
+    {
+      "id": "da3f9efb",
+      "title": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+      "url": "https://www.mongolianminingjournal.com/a/74967",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+      "published": null,
+      "score": 8
     },
     {
       "id": "e7f006a2",
