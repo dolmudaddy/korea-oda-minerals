@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T02:26:33.292773+00:00",
+  "generated_at": "2026-05-15T02:45:15.687279+00:00",
   "stats": {
-    "sources_tried": 3,
-    "items_fetched": 32,
-    "items_qualified": 46,
-    "google_news_queries": 86,
-    "google_news_items": 4433
+    "sources_tried": 14,
+    "items_fetched": 65,
+    "items_qualified": 48,
+    "google_news_queries": 93,
+    "google_news_items": 4655
   },
-  "total": 42,
+  "total": 44,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -403,6 +403,42 @@
       "score": 7
     },
     {
+      "id": "0f934580",
+      "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 4,
+      "summary_raw": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "da3f9efb",
+      "title": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+      "url": "https://www.mongolianminingjournal.com/a/74967",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 4,
+      "summary_raw": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+      "published": null,
+      "score": 7
+    },
+    {
+      "id": "07e63e30",
+      "title": "FLS Mongolia Service Centre Expansion Officially Opens",
+      "url": "https://www.mongolianminingjournal.com/a/74591",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 4,
+      "summary_raw": "FLS Mongolia Service Centre Expansion Officially Opens",
+      "published": null,
+      "score": 7
+    },
+    {
       "id": "7ab1d820bdaa",
       "title": "Indonesia dan Arab Saudi Jalin Kemitraan Strategis di Sektor Sumber Daya Mineral - Radar Jogja",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZGFENXBWWF9OSUIzN2ZSeGxyVnBvSTlNZ2ZDdHFlcmJzTi0yVEpoUGZfbll5ZWl1WUx0Tk51RjVfYVpoM2ZrSzM5eVU3UW5hN0ZEdE80WkNxTi13M3htNTNud2VDcmJKY0FuemdEX3hzU1h0NGpKZldoSlRFWmtzYmJQQ2lETGtmS3BaZkJBa0F1RFFFaHN2bnpheE9RV2ZmRjFhRFZzR1dXVHVOWjhBN21KR3lIRlhLTGFwdUhUU29kU3NwcjNRX3dR0gHPAUFVX3lxTFBaWGhtZkU0bF83MlVjVXlvc0JmN3ljUWFheU9HVEo1ZXFKZW9qUmJxTnVEbTVIVHFtVkliOU42T21Gd2hqb19BZm0wS0RxT1pFbDM2OC02VVk5OHR5YkhMMC1rYllfVWx6dTFFSU9yaGNhQl9PbjMyTDl1ZlNLb1VacmJkbE55emdYdE4zVFg0dUxKbkoxWEtpX1R6bWE0NW9jNDF1ZFJjZXhXN0ZLd3FNRGc1OHdoUFdmMHVpa1V2SUpPU2JKRWl0WVo2SGVDZw?oc=5",
@@ -589,21 +625,6 @@
       "source": "Google News (KR:ko)",
       "source_language": "ko",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa1ZmZXhlWExCSkJDeElMOC1oMDdFUDh5RDc0WFdONkUtUHo5OHVHNlFoSDA0Tm1ObTIxdjhUMUp5T1p4bjFOSWNhZWl4dGdSeEhIa0REYnBNUdIBVEFVX3lxTE9VWWIyX045VldaV21wSnF3QUpYSGFHUlEtcnZXdTlpTmVMR3Fqd1FiVUdLaVVvNUxtZUVoT01vUEx4bFMtWkw4SWZXTkpNZExySUlEXw?oc=5\" target=\"_blank\">한국수입협회 \"카자흐스탄과의 안정적 공급망 협력 중요\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">한국경제</font>",
-      "published": "2026-05-07",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "한국 카자흐스탄 자원협력",
-      "country": "Kazakhstan",
-      "score": 7
-    },
-    {
-      "id": "498e240762d9",
-      "title": "한국수입협회, 카자흐스탄 외교부 투자위원회 위원장과 두 나라 교역 확대 방안 논의 - 중앙이코노미뉴스",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fUjFDdXBKTzkwZGdlRkJ2WmtlajdKeVJjNXZBZ2NlZ1JVTm5fbXRST1h4N05VTHRJT2NjZWZZVVNlTmJfZFpmRVBhLU9qZmRuR296c0Z2UDJ0Rlg1eXFxTi1KaWNrckUyUjN1N0xMQXNhQQ?oc=5",
-      "source": "Google News (KR:ko)",
-      "source_language": "ko",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5fUjFDdXBKTzkwZGdlRkJ2WmtlajdKeVJjNXZBZ2NlZ1JVTm5fbXRST1h4N05VTHRJT2NjZWZZVVNlTmJfZFpmRVBhLU9qZmRuR296c0Z2UDJ0Rlg1eXFxTi1KaWNrckUyUjN1N0xMQXNhQQ?oc=5\" target=\"_blank\">한국수입협회, 카자흐스탄 외교부 투자위원회 위원장과 두 나라 교역 확대 방안 논의</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">중앙이코노미뉴스</font>",
       "published": "2026-05-07",
       "tier_weight": 1,
       "priority_boost": 0,
