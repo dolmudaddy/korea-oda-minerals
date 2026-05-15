@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T03:28:58.547831+00:00",
+  "generated_at": "2026-05-15T03:46:12.896956+00:00",
   "stats": {
     "sources_tried": 20,
-    "items_fetched": 247,
-    "items_qualified": 20,
+    "items_fetched": 165,
+    "items_qualified": 56,
     "google_news_queries": 93,
-    "google_news_items": 4672
+    "google_news_items": 4623
   },
-  "total": 16,
+  "total": 52,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -22,7 +22,7 @@
       "source_type": "google_news",
       "search_query": "KIAT 베트남",
       "country": "Vietnam",
-      "score": 45
+      "score": 29
     },
     {
       "id": "52257040c9f7",
@@ -37,7 +37,7 @@
       "source_type": "google_news",
       "search_query": "한국산업기술진흥원 핵심광물",
       "country": "Vietnam",
-      "score": 45
+      "score": 29
     },
     {
       "id": "abc6ccf0442b",
@@ -52,7 +52,7 @@
       "source_type": "google_news",
       "search_query": "Vietnam critical mineral strategy",
       "country": "Vietnam",
-      "score": 41
+      "score": 25
     },
     {
       "id": "d1fdd89f83d8",
@@ -67,7 +67,7 @@
       "source_type": "google_news",
       "search_query": "한국 베트남 희토류",
       "country": "Vietnam",
-      "score": 41
+      "score": 25
     },
     {
       "id": "137f5ea5f0eb",
@@ -82,7 +82,7 @@
       "source_type": "google_news",
       "search_query": "한국 베트남 희토류",
       "country": "Vietnam",
-      "score": 41
+      "score": 25
     },
     {
       "id": "24196c7440a9",
@@ -97,7 +97,7 @@
       "source_type": "google_news",
       "search_query": "KIAT 핵심광물 ODA",
       "country": "Vietnam",
-      "score": 41
+      "score": 25
     },
     {
       "id": "73070a5b",
@@ -106,10 +106,10 @@
       "source": "UZ Daily - English (Uzbekistan)",
       "source_language": "en",
       "country": "Uzbekistan",
-      "tier_weight": 4,
+      "tier_weight": 5,
       "summary_raw": "Uzbekistan has placed a former migration agency official on Interpol’s Red Notice list over fraud allegations linked to a labor migration corruption case involving South Korea.",
       "published": "Thu, 14 May 2026 17:17:00 +0500",
-      "score": 29
+      "score": 22
     },
     {
       "id": "8f68f960",
@@ -118,10 +118,22 @@
       "source": "Gazeta.uz - English (Uzbekistan)",
       "source_language": "en",
       "country": "Uzbekistan",
-      "tier_weight": 4,
+      "tier_weight": 5,
       "summary_raw": "The new high-speed Hyundai Rotem train, named Jaloliddin Manguberdi, made its inaugural Tashkent-Khiva journey. The 1,022&nbsp;km trip takes 7.5 hours&nbsp;&mdash; nearly twice as&nbsp;fast as&nbsp;a&nbsp;conventional train. Uzbekistan became the first country in&nbsp;the region and the CIS to&nbsp;buy the South Korea-made trains.",
       "published": "Wed, 6 May 2026 12:06:00 GMT",
-      "score": 27
+      "score": 20
+    },
+    {
+      "id": "a2d09fbf",
+      "title": "Jackie Chan film in Kazakhstan eyes $50M budget",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-nknk-jackie-chan-film-in-kazakhstan-eyes-50m-budget/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-jackie-chan-film-in-kazakhstan-eyes-50m-budget",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "The chairman of the Respublica political party, Aidarbek Khojanazarov, on the sidelines of the Mazhilis, shared details about the upcoming filming of Jackie Chan’s «Armour of God,» which will take place in Kazakhstan. He said the film will cost $50 million. Part of the budget, Khojanazarov said, will go toward salaries for the Kazakhstani film ...",
+      "published": "Thu, 14 May 2026 09:35:46 +0000",
+      "score": 13
     },
     {
       "id": "d10b23c0a841",
@@ -136,19 +148,7 @@
       "source_type": "google_news",
       "search_query": "Vietnam critical mineral strategy",
       "country": "Vietnam",
-      "score": 21
-    },
-    {
-      "id": "a2d09fbf",
-      "title": "Jackie Chan film in Kazakhstan eyes $50M budget",
-      "url": "https://kz.kursiv.media/en/2026-05-14/engk-nknk-jackie-chan-film-in-kazakhstan-eyes-50m-budget/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-jackie-chan-film-in-kazakhstan-eyes-50m-budget",
-      "source": "Kursiv Media - English (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 4,
-      "summary_raw": "The chairman of the Respublica political party, Aidarbek Khojanazarov, on the sidelines of the Mazhilis, shared details about the upcoming filming of Jackie Chan’s «Armour of God,» which will take place in Kazakhstan. He said the film will cost $50 million. Part of the budget, Khojanazarov said, will go toward salaries for the Kazakhstani film ...",
-      "published": "Thu, 14 May 2026 09:35:46 +0000",
-      "score": 12
+      "score": 13
     },
     {
       "id": "4ec4fd70",
@@ -175,42 +175,471 @@
       "score": 11
     },
     {
-      "id": "59461f54",
-      "title": "Lao, Vietnamese Prime Ministers Discuss Expanding Bilateral Cooperation",
-      "url": "https://kpl.gov.la/detail.aspx?id=100085",
-      "source": "Lao News Agency (KPL) - English",
-      "source_language": "en",
-      "country": "Vietnam",
-      "tier_weight": 5,
-      "summary_raw": "Lao, Vietnamese Prime Ministers Discuss Expanding Bilateral Cooperation",
-      "published": null,
-      "score": 10
-    },
-    {
       "id": "d42568ce",
       "title": "President of Uzbekistan posthumously awards British couple for saving Uzbek soldier during World War II",
       "url": "https://www.gazeta.uz/en/2026/05/01/award/",
       "source": "Gazeta.uz - English (Uzbekistan)",
       "source_language": "en",
       "country": "Uzbekistan",
-      "tier_weight": 4,
+      "tier_weight": 5,
       "summary_raw": "President of&nbsp;Uzbekistan posthumously awarded the Dostlik (Friendship) Order to&nbsp;the British couple John and Phyliss Emily Le&nbsp;Breton for saving the life of&nbsp;Uzbek soldier Bokijon Akramov during World War&nbsp;II.",
       "published": "Fri, 1 May 2026 18:32:00 GMT",
+      "score": 11
+    },
+    {
+      "id": "33ee1cc5",
+      "title": "Kazakhstan to vaccinate girls aged 14-17 against HPV",
+      "url": "https://akipress.com/news:895900",
+      "source": "AKIPress (Central Asia 5 countries)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "",
+      "published": "Fri, 15 May 2026 09:41:43 +0600",
       "score": 10
     },
     {
-      "id": "6a0e25385b6b",
-      "title": "Ateng Sutisna: Hilirisasi Nikel Harus Hadirkan Nilai Tambah, Bukan Sekadar Angka Pertumbuhan - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPb2N4TkZheUI1NkN4OTFna3p4NmJla2xmMkd2UHYyNHNxX0lCSFY2TVdfVGoxYlloenpyYzMyUG5ibUtMMWktRnVGM2ltczI1UXF5TE56UkVaQ0dPSUZ4QnJGUW9QOFRJZTRza19KRUJ6V0tDRDlGX3NGRXo1QVdPU0dLNjFIMDNrWnQ2ZVdXZktJcnFZNFo1OWNrYlhoNFVyVEVIYktheTZDZXprbUFwS1IzYVBzeEpuVzJheUdLOA?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxPb2N4TkZheUI1NkN4OTFna3p4NmJla2xmMkd2UHYyNHNxX0lCSFY2TVdfVGoxYlloenpyYzMyUG5ibUtMMWktRnVGM2ltczI1UXF5TE56UkVaQ0dPSUZ4QnJGUW9QOFRJZTRza19KRUJ6V0tDRDlGX3NGRXo1QVdPU0dLNjFIMDNrWnQ2ZVdXZktJcnFZNFo1OWNrYlhoNFVyVEVIYktheTZDZXprbUFwS1IzYVBzeEpuVzJheUdLOA?oc=5\" target=\"_blank\">Ateng Sutisna: Hilirisasi Nikel Harus Hadirkan Nilai Tambah, Bukan Sekadar Angka Pertumbuhan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
-      "published": "2026-04-20",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
+      "id": "40aa22d6",
+      "title": "First political consultative meeting between Mongolia and Montenegro takes place",
+      "url": "https://akipress.com/news:895840",
+      "source": "AKIPress (Central Asia 5 countries)",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "",
+      "published": "Thu, 14 May 2026 16:53:12 +0600",
+      "score": 10
+    },
+    {
+      "id": "e6c733c1",
+      "title": "Speaker of Mongolian Parliament meets with Ambassador of Japan",
+      "url": "https://akipress.com/news:895833",
+      "source": "AKIPress (Central Asia 5 countries)",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "",
+      "published": "Thu, 14 May 2026 16:44:03 +0600",
+      "score": 10
+    },
+    {
+      "id": "629cbed9",
+      "title": "Mongolia and Red Cross Society to cooperate on climate change awareness",
+      "url": "https://akipress.com/news:895828",
+      "source": "AKIPress (Central Asia 5 countries)",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "",
+      "published": "Thu, 14 May 2026 16:32:56 +0600",
+      "score": 10
+    },
+    {
+      "id": "3114b378",
+      "title": "Kazakhstan reports sharp rise in gold reserves",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-nknk-kazakhstan-reports-sharp-rise-in-gold-reserves/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-kazakhstan-reports-sharp-rise-in-gold-reserves",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan’s gross international reserves reached $67.78 billion, up 3.62% since the beginning of 2026, according to preliminary data from the National Bank as of May 1. Monetary gold emerged as the main driver again. Its volume over the first months of 2026 increased by 11.55% to $52.69 billion. At the same time, assets in convertible ...",
+      "published": "Thu, 14 May 2026 13:18:52 +0000",
+      "score": 10
+    },
+    {
+      "id": "46971f49",
+      "title": "Kazakhstan prepares to test its first air taxi",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-tank-kazakhstan-prepares-to-test-its-first-air-taxi/?utm_source=rss&utm_medium=rss&utm_campaign=engk-tank-kazakhstan-prepares-to-test-its-first-air-taxi",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstani company Alatau Advance Air Group is going to test its first air taxi, based on electric vertical take-off and landing (eVTOL)&nbsp;technology, at the end of May. Alatau: A special environment for the development of Urban Air Mobility On May 8, President Kassym-Jomart Tokayev signed a law granting special status to the city of Alatau. ...",
+      "published": "Thu, 14 May 2026 12:12:34 +0000",
+      "score": 10
+    },
+    {
+      "id": "0f789e52",
+      "title": "President Erdogan visits Kazakhstan, hails country’s warm welcome",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-tank-president-erdogan-visits-kazakhstan-hails-countrys-warm-welcome/?utm_source=rss&utm_medium=rss&utm_campaign=engk-tank-president-erdogan-visits-kazakhstan-hails-countrys-warm-welcome",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "During Turkish President Recep Tayyip Erdoğan&#8216;s state visit to Astana, Kazakhstan’s President Kassym-Jomart Tokayev warmly welcomed the Turkish leader and thanked him for accepting the invitation. He emphasized that Erdogan’s visit is of exceptional significance for Kazakhstan and described it as a historic event. Erdogan said the Turkish delegation was impressed by Kazakh Air Force ...",
+      "published": "Thu, 14 May 2026 11:16:06 +0000",
+      "score": 10
+    },
+    {
+      "id": "a27aa1b6",
+      "title": "Astana hosts $1.6 million Counter-Strike 2 tournament",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-nknk-astana-hosts-1-6-million-counter-strike-2-tournament/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-astana-hosts-1-6-million-counter-strike-2-tournament",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan’s capital, Astana, will host a top-tier international Counter-Strike 2 tournament, PGL Astana 2026, from May 15 to 17. This will mark the second time Kazakhstan has hosted one of the world’s largest esports events, the Ministry of Tourism and Sports reported. PGL Esports SRL is a tournament organizer; the total prize pool is $1.6 ...",
+      "published": "Thu, 14 May 2026 06:03:04 +0000",
+      "score": 10
+    },
+    {
+      "id": "c8611359",
+      "title": "Sovereignty in the stars: Kazakhstan’s security rules for Starlink",
+      "url": "https://kz.kursiv.media/en/2026-05-14/engk-yeri-sovereignty-in-the-stars-kazakhstans-security-rules-for-starlink/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-sovereignty-in-the-stars-kazakhstans-security-rules-for-starlink",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "SpaceX subsidiary Starlink, which already provides internet access in Kazakhstan through low-Earth-orbit satellites, will be required to register in the country and purchase internet traffic from local operators, according to Zhaslan Madiyev, Kazakhstan’s deputy prime minister and minister of AI and digital development. «Satellite internet service is supplementary to internet provided via fiber-optic networks. The ...",
+      "published": "Thu, 14 May 2026 05:30:11 +0000",
+      "score": 10
+    },
+    {
+      "id": "59dae8eb",
+      "title": "Chinese firm weighs $12 billion aluminum investment in Kazakhstan",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-nknk-chinese-firm-weighs-12-billion-aluminum-investment-in-kazakhstan/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-chinese-firm-weighs-12-billion-aluminum-investment-in-kazakhstan",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Chinese East Hope Group — one of the world’s largest aluminum producers — could invest $12.6 billion in bauxite mining and aluminum production in Kazakhstan, according to Kazakhstan’s Ministry of Industry and Construction. «Minister of Industry and Construction Yersayin Nagaspayev held talks with East Hope Group Director for Strategic Investments Chen Lei…The company is conducting ...",
+      "published": "Wed, 13 May 2026 12:50:22 +0000",
+      "score": 10
+    },
+    {
+      "id": "ebed29a3",
+      "title": "Kazakhstan develops homegrown drug for mugwort pollen allergy",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-nknk-kazakhstan-develops-home-grown-drug-for-mugwort-pollen-allergy/?utm_source=rss&utm_medium=rss&utm_campaign=engk-nknk-kazakhstan-develops-home-grown-drug-for-mugwort-pollen-allergy",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Scientists at the Kazakh National Agrarian Research University have begun the second phase of clinical trials for a drug to treat mugwort pollen allergy, the Ministry of Agriculture of Kazakhstan reported. According to the ministry, the PollenVax immunotherapy drug, developed under the Ministry of Healthcare program, has successfully completed the first phase of trials assessing ...",
+      "published": "Wed, 13 May 2026 08:55:46 +0000",
+      "score": 10
+    },
+    {
+      "id": "f77ece5c",
+      "title": "Survival of the fittest? Kazakhstan blames natural selection for mass deaths",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-yeri-survival-of-the-fittest-kazakhstan-blames-natural-selection-for-mass-deaths/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-survival-of-the-fittest-kazakhstan-blames-natural-selection-for-mass-deaths",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan’s government has responded to growing concerns over the condition of the country’s wildlife, addressing not only the recent saiga die-off in the steppes but also the deaths of swans and Caspian seals in western Kazakhstan. Nurken Sharbiyev, Kazakhstan’s deputy minister of ecology, said the recorded deaths of 26,000 saigas — including 11,000 in the ...",
+      "published": "Wed, 13 May 2026 07:00:00 +0000",
+      "score": 10
+    },
+    {
+      "id": "ab5eef7a",
+      "title": "Water security: Why Kyrgyzstan’s new mega-dam matters to Kazakhstan",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-yeri-water-security-why-kyrgyzstans-new-mega-dam-matters-to-kazakhstan/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-water-security-why-kyrgyzstans-new-mega-dam-matters-to-kazakhstan",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan, together with Uzbekistan and Kyrgyzstan, plans to move into the practical construction phase of the Kambarata-1 Hydropower Plant project, according to Jamshid Khodjaev, Uzbekistan’s deputy prime minister. Read also: Kazakhstan to fund massive Kyrgyz dam for energy security. Khodjaev said the 1,860-megawatt Kambarata-1 HPP is expected to become the largest power plant in Central ...",
+      "published": "Wed, 13 May 2026 06:00:00 +0000",
+      "score": 10
+    },
+    {
+      "id": "bffe1442",
+      "title": "Eye in the sky: Kazakhstan rolls out China-style behavior tracking",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-yeri-eye-in-the-sky-kazakhstan-rolls-out-china-style-behavior-tracking/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-eye-in-the-sky-kazakhstan-rolls-out-china-style-behavior-tracking",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan is rolling out a nationwide video surveillance system powered by artificial intelligence that will be used to detect aggressive behavior, fights and disorderly conduct. The initiative was announced by Aida Balayeva, Kazakhstan’s minister of culture and information, in response to a request from Kudaibergen Beksultanov, a member of Parliament. According to Balayeva, more than ...",
+      "published": "Wed, 13 May 2026 05:00:00 +0000",
+      "score": 10
+    },
+    {
+      "id": "ca876fd4",
+      "title": "Loan boom: Kazakh banks expand as authorities seek a cooldown",
+      "url": "https://kz.kursiv.media/en/2026-05-13/engk-yeri-loan-boom-kazakh-banks-expand-as-authorities-seek-a-cooldown/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-loan-boom-kazakh-banks-expand-as-authorities-seek-a-cooldown",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Kazakhstan’s banking statistics for March reflected a 3.8% strengthening of the tenge. The sector also benefited from increased liquidity driven by an inflow of corporate deposits, allowing banks to partially restore assets to levels seen at the beginning of 2026. The loan portfolio fully recovered, although growth continued to be driven primarily by retail lending. ...",
+      "published": "Wed, 13 May 2026 00:32:40 +0000",
+      "score": 10
+    },
+    {
+      "id": "c8c6dcbb",
+      "title": "A new wave: Why Russian-speakers in Kazakhstan are embracing the native tongue",
+      "url": "https://kz.kursiv.media/en/2026-05-12/engk-yeri-a-new-wave-why-russian-speakers-in-kazakhstan-are-embracing-the-native-tongue/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-a-new-wave-why-russian-speakers-in-kazakhstan-are-embracing-the-native-tongue",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "While Russian politicians and commentators speak of the alleged «oppression of Russians» in Kazakhstan, some Russian speakers in the country are helping popularize the Kazakh language. Through music, Instagram and language clubs, Kazakh is becoming the new norm for many of them, Deutsche Welle reported in a recent article. A shifting linguistic landscape For many ...",
+      "published": "Tue, 12 May 2026 14:00:00 +0000",
+      "score": 10
+    },
+    {
+      "id": "09685c4c",
+      "title": "Uzbekistan to raise limit for foreign cash currency purchases without ID to $500",
+      "url": "https://www.gazeta.uz/en/2026/05/14/exchange/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan will raise the limit for foreign cash currency purchases without an&nbsp;ID from $100 to $500. The new regulations will come into effect on&nbsp;9 August.",
+      "published": "Thu, 14 May 2026 07:07:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "26897fe6",
+      "title": "No hantavirus cases recorded in Uzbekistan — Sanitary-Epidemiological Committee",
+      "url": "https://www.gazeta.uz/en/2026/05/14/nurmat-atabekov/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "No&nbsp;cases of&nbsp;hantavirus were recorded in&nbsp;Uzbekistan, and the epidemiological situation remains stable, first deputy chairman of&nbsp;the Sanitary-Epidemiological Committee Nurmat Atabekov said. He&nbsp;added that the WHO does not consider the virus capable of&nbsp;causing a&nbsp;pandemic.",
+      "published": "Thu, 14 May 2026 07:04:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "a67b1bbd",
+      "title": "Sweden deports 20 citizens of Uzbekistan",
+      "url": "https://www.gazeta.uz/en/2026/05/14/sweden/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Sweden deported 20 citizens of&nbsp;Uzbekistan for violating migration laws. The group arrived in&nbsp;Tashkent on&nbsp;a&nbsp;charter flight.",
+      "published": "Thu, 14 May 2026 06:57:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "00cc8d68",
+      "title": "Exchange of blows: how Sindarov and Gukesh’s first encounter unfolded ahead of title match",
+      "url": "https://www.gazeta.uz/en/2026/05/12/javokhir-sindarov/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan&rsquo;s chess player Javokhir Sindarov tied for 7th-9th at&nbsp;the Super Rapid & Blitz Poland in&nbsp;Warsaw, with attention focused on&nbsp;his games against reigning World Champion Dommaraju Gukesh. Indian grossmeister won the rapid, while Sindarov responded with two blitz wins ahead of&nbsp;their title match.",
+      "published": "Tue, 12 May 2026 15:07:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "6f154b24",
+      "title": "Uzbekistan to restructure Health Ministry with new bodies and expanded powers",
+      "url": "https://www.gazeta.uz/en/2026/05/12/healthcare/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "By&nbsp;presidential decree, Uzbekistan&rsquo;s Health Ministry will establish three new bodies, including a&nbsp;research center, a&nbsp;clinical audit inspectorate and a&nbsp;media center, while advancing digitalization. The reforms were announced following a&nbsp;major reshuffle in&nbsp;the ministry&rsquo;s leadership.",
+      "published": "Tue, 12 May 2026 08:57:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "b98e904b",
+      "title": "Current times require greater appreciation of peace — president of Uzbekistan",
+      "url": "https://www.gazeta.uz/en/2026/05/11/9may/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "President of&nbsp;Uzbekistan said that current times require greater appreciation of&nbsp;peace and stability in&nbsp;society, as&nbsp;well as&nbsp;friendship and harmony among different nations and faiths. On&nbsp;the Day of&nbsp;Memory and Honor, he&nbsp;congratulated &ldquo;fraternal peoples and all people of&nbsp;goodwill&rdquo;.",
+      "published": "Mon, 11 May 2026 09:07:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "15ce720d",
+      "title": "In pictures: President of Uzbekistan at Victory Day Parade in Moscow",
+      "url": "https://www.gazeta.uz/en/2026/05/11/parade/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "President of&nbsp;Uzbekistan took part in&nbsp;events in&nbsp;Moscow marking the 81st anniversary of&nbsp;Victory in&nbsp;World War&nbsp;II. Alongside the president of&nbsp;Russia, leaders of&nbsp;Belarus, Kazakhstan, Laos, Malaysia and other countries attended the Victory Day Parade.",
+      "published": "Mon, 11 May 2026 08:36:00 GMT",
+      "score": 10
+    },
+    {
+      "id": "49f365b9",
+      "title": "Abdulla Abdukadirov appointed acting head of reforms agency",
+      "url": "https://www.uzdaily.uz/en/abdulla-abdukadirov-appointed-acting-head-of-reforms-agency/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Abdulla Abdukadirov has been appointed acting director of Uzbekistan’s Agency for Strategic Development and Reforms under a presidential decree issued on 12 May.",
+      "published": "Thu, 14 May 2026 21:45:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "fadea96d",
+      "title": "Uzbekistan sends 100 citizens on free Hajj pilgrimage",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-sends-100-citizens-on-free-hajj-pilgrimage/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan will send 100 citizens on a free Hajj pilgrimage under the Presidential Hajj program, the Muslim Board of Uzbekistan said.",
+      "published": "Thu, 14 May 2026 21:30:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "efd797e6",
+      "title": "Uzbekistan sells over 121,000 vehicles in Jan–Apr 2026",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-sells-over-121000-vehicles-in-jan-apr-2026/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan’s car market recorded 121,601 vehicle sales in January&ndash;April 2026, with UzAuto Motors maintaining a dominant market share.",
+      "published": "Thu, 14 May 2026 21:15:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "018f000a",
+      "title": "Rosatom presents integrated nuclear plant concept in Tashkent",
+      "url": "https://www.uzdaily.uz/en/rosatom-presents-integrated-nuclear-plant-concept-in-tashkent/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Rosatom showcased integrated nuclear power plant technology and e-mobility solutions at Power Uzbekistan 2026, highlighting its role in Uzbekistan’s energy development.",
+      "published": "Thu, 14 May 2026 20:24:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "1867bcb7",
+      "title": "OSCE and international partners discuss the future development of Central Asia at a conference in Tashkent",
+      "url": "https://www.uzdaily.uz/en/osce-and-international-partners-discuss-the-future-development-of-central-asia-at-a-conference-in-tashkent/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "An international conference titled &ldquo;Central Asia: A New Paradigm for Regional Development&rdquo; was held in Tashkent, organized by the Diplomatic Academy at the University of World Economy and Diplomacy (UWED) in partnership with the OSCE Project Co-ordinator in Uzbekistan.",
+      "published": "Thu, 14 May 2026 20:08:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "a5450cc2",
+      "title": "Tashkent Initiative Adopted at China–Central Asia Forum",
+      "url": "https://www.uzdaily.uz/en/tashkent-initiative-adopted-at-china-central-asia-forum/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan hosted the China&ndash;Central Asia Human Rights Forum in Tashkent, where participants adopted the &ldquo;Tashkent Initiative&rdquo; on development and cooperation.",
+      "published": "Thu, 14 May 2026 19:58:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "d28a7715",
+      "title": "Uzbekistan sets record in solar and wind power output",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-sets-record-in-solar-and-wind-power-output/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan reached a new record in daily solar and wind electricity generation, producing 62.4 million kWh and increasing the share of green energy.",
+      "published": "Thu, 14 May 2026 19:48:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "737e9f98",
+      "title": "Uzbekistan, Condor Energies discuss gas output growth",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-condor-energies-discuss-gas-output-growth/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekneftegaz and Canada’s Condor Energies reviewed progress on gas field development in the Gazli region and plans to increase production efficiency.",
+      "published": "Thu, 14 May 2026 19:23:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "20db3701",
+      "title": "Uzbekistan launches major energy projects with AMEA Power",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-launches-major-energy-projects-with-amea-power/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan has started large-scale energy projects with UAE-based AMEA Power, including wind power and battery storage systems worth over US$1.3 billion.",
+      "published": "Thu, 14 May 2026 19:08:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "b26bbfbd",
+      "title": "Personal debt in Uzbekistan rises as experts advise budgeting",
+      "url": "https://www.uzdaily.uz/en/personal-debt-in-uzbekistan-rises-as-experts-advise-budgeting/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Experts from Alpari analyze rising household debt in Uzbekistan and offer budgeting, saving, and investment strategies to improve financial stability.",
+      "published": "Thu, 14 May 2026 18:53:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "17a457cc",
+      "title": "Uzbek President to visit Kazakhstan on working trip",
+      "url": "https://www.uzdaily.uz/en/uzbek-president-to-visit-kazakhstan-on-working-trip/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan’s president will visit Kazakhstan for a Turkic States informal summit focused on AI, digital development and regional cooperation.",
+      "published": "Thu, 14 May 2026 18:28:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "4e264cc4",
+      "title": "Shavkat Mirziyoyev appoints new presidential energy advisor",
+      "url": "https://www.uzdaily.uz/en/shavkat-mirziyoyev-appoints-new-presidential-energy-advisor/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan President Shavkat Mirziyoyev appointed Behzod Normatov as advisor on energy and fuel issues, replacing previous energy security representative.",
+      "published": "Thu, 14 May 2026 17:40:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "660f0165",
+      "title": "Uzbekistan and Kazakhstan expand oil and gas cooperation",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-and-kazakhstan-expand-oil-and-gas-cooperation/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Uzbekistan and Kazakhstan discussed expanding cooperation in oil, gas, and petrochemicals during the OGU 2026 energy conference in Tashkent.",
+      "published": "Thu, 14 May 2026 17:12:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "f3cf1289",
+      "title": "Uzbekistan court awards compensation in copyright case",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-court-awards-compensation-in-copyright-case/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "summary_raw": "A court in Uzbekistan ordered a university to pay compensation to translator Mark Reese after confirming illegal distribution of his English translation of &ldquo;Days Gone By.&rdquo;",
+      "published": "Thu, 14 May 2026 17:04:00 +0500",
+      "score": 10
+    },
+    {
+      "id": "8562d9fb",
+      "title": "Indonesia and Russia discuss nuclear energy cooperation",
+      "url": "https://www.world-nuclear-news.org//articles/indonesia-and-russia-discuss-nuclear-energy-cooperation",
+      "source": "World Nuclear News (uranium/nuclear)",
+      "source_language": "en",
       "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "Rosatom&rsquo;s Director General Alexei Likhachev has said Russia is ready to offer Indonesia a comprehensive approach to developing its national nuclear programme, ranging from gigawatt-scale units to small modular reactors and floating power plants.<br />\n&nbsp;",
+      "published": "Wed, 13 May 2026 11:51:10 GMT",
       "score": 10
     },
     {
