@@ -682,7 +682,7 @@ tier_4_broad_search:
 # =====================================================================
 scoring:
   country_required: true
-  min_score_threshold: 7
+  min_score_threshold: 10  # 박사님 응급조치 (2026-05): 7 → 10. 95개 → 약 50개로 감소, 품질 ↑
   local_language_bonus: 3
 
   korea_keywords:
