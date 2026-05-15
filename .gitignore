@@ -9,6 +9,13 @@ __pycache__/
 # Email preview (로컬 빌드 시에만 생성, 커밋 불필요)
 email_preview.html
 
+# 작업 진행 중 임시 핸드오프 메모 (commit하지 않음, 작업 완료 후 삭제)
+PROGRESS.md
+
+# 박사님 로컬 옵시디언 vault 클론 (별도 repo: dolmudaddy/kcmo-vault)
+# 워크플로우가 별도 repo로 push하므로 KCMO repo에는 포함하지 않음
+kcmo-vault/
+
 # OS
 .DS_Store
 Thumbs.db

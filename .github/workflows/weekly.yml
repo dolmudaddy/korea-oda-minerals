@@ -104,6 +104,42 @@ jobs:
           fi
 
       # ----------------------------------------------------
+      # 7b. 옵시디언 vault repo checkout (별도 저장소)
+      #     실패해도 메일 발송은 계속 진행됨
+      # ----------------------------------------------------
+      - name: Checkout Obsidian vault
+        uses: actions/checkout@v4
+        with:
+          repository: dolmudaddy/kcmo-vault
+          token: ${{ secrets.OBSIDIAN_VAULT_PAT }}
+          path: vault-checkout
+        continue-on-error: true
+
+      # ----------------------------------------------------
+      # 7c. 카드 → 옵시디언 마크다운 생성
+      # ----------------------------------------------------
+      - name: Generate Obsidian markdown
+        run: python scripts/generate_obsidian.py --vault ./vault-checkout
+        continue-on-error: true
+
+      # ----------------------------------------------------
+      # 7d. Vault repo에 commit & push
+      # ----------------------------------------------------
+      - name: Commit and push to vault repo
+        working-directory: vault-checkout
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add KCMO/
+          if ! git diff --staged --quiet; then
+            git commit -m "KCMO Weekly: $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No vault changes to commit."
+          fi
+        continue-on-error: true
+
+      # ----------------------------------------------------
       # 8. Mailchimp 메일 발송
       #    이 단계가 실패해도 사이트는 이미 빌드/배포됨
       # ----------------------------------------------------
