@@ -1,14 +1,14 @@
 # =====================================================================
-# KCMO Weekly - sources.yaml (v5, A+B integrated)
+# KCMO Weekly - sources.yaml (v6, keyword redesign)
 # Korea Critical Minerals ODA Weekly
 # =====================================================================
-# v4 → v5 변경 사항 (2026-05-15):
-#   [A] scoring.critical_mineral_required 추가 — 핵심광물 키워드 0개
-#       매칭 카드 즉시 폐기 (mandatory filter). 우즈벡 인터폴 등 광물
-#       무관 정치/범죄 기사 차단.
-#   [B] scoring.government_citation_bonus 추가 — 정부 1차 자료 인용
-#       카드에 보너스. 한국 +3, 7개국 협력국 +5, 카드당 상한 +8.
-# v4 이전 내용은 100% 보존.
+# v5 → v6 변경 사항 (2026-05-15):
+#   [A] critical_mineral_keywords 4단계 재설계 — exclusion(외환·
+#       보건·영화·교통) → core_minerals(광종 직접) → core_wordbound
+#       (REE 등 약어) → domain_terms(자원외교·산업기술협력 등 KCMO
+#       어휘). 박사님 폐기 8건 복구 + 통과 5건 차단.
+#   [B] partner_keywords 짧은 약어(DOM, VNA 등) 단어 경계 처리.
+# v5의 government_citation_bonus 본체는 그대로 유지.
 
 target_countries:
   - name: Tanzania
@@ -688,150 +688,324 @@ tier_4_broad_search:
 # =====================================================================
 scoring:
   country_required: true
-  min_score_threshold: 10  # 박사님 응급조치 (2026-05): 7 → 10. 95개 → 약 50개로 감소, 품질 ↑
+  min_score_threshold: 8   # 2026-05-15: 10 → 8. v6 필터로 노이즈 카드 사전 제거되어 threshold 완화. 한국어 단속 카드(정상회담·자원외교) 발송 가능
   local_language_bonus: 3
 
   # ===================================================================
-  # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
+  # [A] 핵심광물 키워드 사전 (v6 재설계, 2026-05-15)
   # ===================================================================
-  # 카드 제목 + 요약에서 핵심광물 관련 키워드가 단 1개도 매칭되지
-  # 않으면 즉시 폐기. country detection 통과한 후에도 광물 무관 기사
-  # (예: "Uzbekistan puts former migration official on Interpol Red
-  # Notice")가 Tier 3X 가중치만으로 통과하는 문제 해결.
+  # 박사님 실제 카드 분석 후 재설계. 단순 키워드 매칭 한계 극복.
   #
-  # 매칭 방식: text_lower 기반 부분일치 (collect.py의 기존 keyword
-  # 매칭과 동일 방식). 9개 언어 모든 키워드를 한 리스트에서 평가.
+  # 구조:
+  #   1. exclusion_terms: 매칭 시 즉시 폐기 (광업 무관 영역 차단)
+  #      - gold reserves (외환), HPV (보건), film/movie (영화),
+  #        railway tariff (교통) 등
+  #   2. core_minerals: 광종 직접 언급 (강한 신호 - 통과)
+  #      - lithium, cobalt, 희소금속, 우라늄 등
+  #      - "gold mining"은 통과, "gold reserves"는 #1에서 차단
+  #   3. domain_terms: KCMO 도메인 어휘 (통과)
+  #      - 핵심광물, 자원외교, 산업기술협력, critical mineral 등
+  #   4. core_minerals_wordbound, exclusion_wordbound:
+  #      - REE, PGM, HPV 같은 짧은 약어 (단어 경계 필요)
+  #      - "agREE", "domestic"에 부정확 매칭 방지
+  #
+  # 필터 순서 (collect.py에서 처리):
+  #   exclusion → core(부분일치) → core(단어경계) → domain → 폐기
   # ===================================================================
-  critical_mineral_required:
+  critical_mineral_keywords:
     enabled: true
-    keywords:
+
+    # ────────────────────────────────────────────────────────────
+    # 1. 제외 키워드 - 부분일치 (매칭 시 무조건 폐기)
+    # ────────────────────────────────────────────────────────────
+    exclusion_terms:
+      # 금융/외환 (gold reserves ≠ gold mining)
+      - "gold reserves"
+      - "gold reserve"
+      - "gold price"
+      - "gold rally"
+      - "copper price"
+      - "copper rally"
+      - "foreign reserves"
+      - "currency reserves"
+      - "central bank reserves"
+      - "금 보유고"
+      - "외환보유고"
+      - "환율"
+      - "외환 보유"
+      - "exchange rate"
+      - "currency exchange"
+      # 보건
+      - "vaccine"
+      - "vaccination"
+      - "vaccinate"
+      - "covid"
+      - "pandemic"
+      - "백신"
+      - "예방접종"
+      - "감염병"
+      # 영화/문화/스포츠
+      - "film festival"
+      - "film budget"
+      - "movie"
+      - "cinema"
+      - "blockbuster"
+      - "actor"
+      - "actress"
+      - "tournament"
+      - "football"
+      - "soccer"
+      - "olympic"
+      - "concert"
+      - "drama series"
+      - "영화"
+      - "드라마"
+      - "콘서트"
+      - "예능"
+      - "esports"
+      # 운송 운임 (광물 운송 제외)
+      - "railway tariff"
+      - "passenger transport"
+      - "passenger fare"
+      - "train ticket"
+      - "bus fare"
+      - "airline ticket"
+      - "철도 운임"
+      - "여객 운임"
+      - "항공권"
+      # 비자/이민
+      - "visa policy"
+      - "visa fee"
+      - "passport policy"
+      - "immigration policy"
+
+    # ────────────────────────────────────────────────────────────
+    # 2. 제외 키워드 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
+    # ────────────────────────────────────────────────────────────
+    exclusion_wordbound:
+      - "HPV"     # human papillomavirus
+      - "MERS"    # 메르스
+      - "SARS"
+
+    # ────────────────────────────────────────────────────────────
+    # 3. 광종명 - 부분일치 (직접 언급 시 통과)
+    # ────────────────────────────────────────────────────────────
+    # Gold는 조건부: "gold mining/mine/ore/deposit" 등 광업 맥락만
+    # 포함. "gold reserves/price"는 exclusion_terms에서 차단됨.
+    core_minerals:
+      # ── 영어 광종명 ──
+      - "lithium"
+      - "cobalt"
+      - "nickel"
+      - "manganese"
+      - "graphite"
+      - "tungsten"
+      - "molybdenum"
+      - "vanadium"
+      - "titanium"
+      - "niobium"
+      - "tantalum"
+      - "uranium"
+      - "fluorspar"
+      - "antimony"
+      - "rare earth"
+      - "rare earths"
+      - "rare metal"
+      - "rare metals"
+      - "bauxite"
+      - "potash"
+      - "chromium"
+      - "platinum"
+      # Copper (몽골 Oyu Tolgoi, 라오스, 우즈벡 Almalyk 등 국가
+      # 주요 광종으로 포함. 시세 맥락은 exclusion에서 차단)
+      - "copper"
+      - "구리"
+      # Gold (박사님 결정 2026-05-15: 탄자니아·우즈벡 등 국가 주요
+      # 광종으로 무조건 포함. "gold reserves/price"는 exclusion에서
+      # 외환·시세 맥락 차단됨)
+      - "gold"
+      # ── 한국어 광종명 ──
+      - "리튬"
+      - "코발트"
+      - "니켈"
+      - "망간"
+      - "흑연"
+      - "텅스텐"
+      - "몰리브덴"
+      - "바나듐"
+      - "티타늄"
+      - "니오븀"
+      - "탄탈럼"
+      - "희토류"
+      - "희유금속"
+      - "희소금속"
+      - "희귀금속"
+      - "우라늄"
+      - "형석"
+      - "안티몬"
+      - "보크사이트"
+      - "백금"
+      # 금 (광업 맥락)
+      - "금광"
+      - "금 채굴"
+      - "금광산"
+      # ── 러시아어 광종명 ──
+      - "литий"
+      - "кобальт"
+      - "никель"
+      - "марганец"
+      - "графит"
+      - "вольфрам"
+      - "молибден"
+      - "ванадий"
+      - "титан"
+      - "ниобий"
+      - "тантал"
+      - "редкоземельные"
+      - "редкие металлы"
+      - "уран"
+      - "флюорит"
+      - "сурьма"
+      # ── 베트남어 ──
+      - "coban"
+      - "niken"
+      - "mangan"
+      - "than chì"
+      - "vonfram"
+      - "molypden"
+      - "đất hiếm"
+      # ── 인도네시아어 ──
+      - "litium"
+      - "kobalt"
+      - "grafit"
+      - "wolfram"
+      - "tanah jarang"
+      # ── 몽골어 ──
+      - "хүдэр"
+      - "ховор шороон"
+      - "ховор металл"
+      # ── 스와힐리 ──
+      - "lithiamu"
+      - "kobalti"
+      - "nikeli"
+      - "grafiti"
+      - "urani"
+      - "ardhi adimu"
+      # ── 라오어 ──
+      - "ບອກໄຊ"
+      - "ນິກເກນ"
+      - "ທອງແດງ"
+
+    # ────────────────────────────────────────────────────────────
+    # 4. 광종명 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
+    # ────────────────────────────────────────────────────────────
+    # 예: "REE"는 "agREE", "tREE" 같은 단어에 부정확 매칭 방지
+    core_minerals_wordbound:
+      - "REE"     # rare earth elements
+      - "PGM"     # platinum group metals
+
+    # ────────────────────────────────────────────────────────────
+    # 5. KCMO 도메인 용어 (자원외교·ODA·산업기술협력 어휘)
+    # ────────────────────────────────────────────────────────────
+    # 박사님 실제 회의·보고서 어휘. 광종 직접 언급 없어도 도메인
+    # 키워드 매칭되면 KCMO 관련 카드로 인정.
+    domain_terms:
       # ── 영어 ──
       - "critical mineral"
       - "critical minerals"
-      - "rare earth"
-      - "uranium"
-      - "copper"
-      - "nickel"
-      - "cobalt"
-      - "tungsten"
-      - "lithium"
-      - "graphite"
-      - "bauxite"
-      - "molybdenum"
-      - "tin"
-      - "potash"
-      - "fluorspar"
-      - "chromium"
-      - "titanium"
-      - "mining"
-      - "mineral"
-      - "minerals"
-      - "ore"
+      - "critical raw material"
+      - "critical raw materials"
+      - "strategic mineral"
+      - "strategic minerals"
+      - "strategic raw material"
+      - "mineral resource"
+      - "mineral resources"
+      - "mineral cooperation"
+      - "mining cooperation"
+      - "minerals cooperation"
+      - "mineral supply chain"
+      - "mineral exploration"
+      - "mineral development"
+      - "minerals development"
+      - "resource cooperation"
+      - "resource diplomacy"
+      - "resource security"
+      - "upstream development"
+      - "downstream policy"
+      - "downstream processing"
       - "smelter"
+      - "smelting"
       - "refinery"
-      # ── 한국어 ──
+      - "refining"
+      - "geological survey"
+      - "geoscience"
+      # ── 한국어 도메인 (박사님 핵심 어휘) ──
       - "핵심광물"
       - "전략광물"
-      - "희토류"
-      - "우라늄"
-      - "구리"
-      - "니켈"
-      - "코발트"
-      - "리튬"
-      - "텅스텐"
-      - "흑연"
-      - "보크사이트"
-      - "광물"
-      - "광업"
-      - "채굴"
-      - "광산"
-      - "제련"
+      - "광물자원"
+      - "자원외교"
+      - "자원개발"
+      - "자원안보"
+      - "자원협력"
+      - "광물협력"
+      - "광물 협력"
+      - "광물자원 협력"
+      - "광물자원협력"
+      - "공급망"
+      - "공급망 협력"
+      - "산업기술협력"
+      - "산업 기술 협력"
+      - "희소금속협력"
+      - "희소금속 협력"
+      - "광물전략"
+      - "광물 전략"
+      - "핵심소재"
+      - "원자재"
+      - "원자재 공급"
+      - "협력센터"
+      - "공동연구"
+      - "지질조사"
+      - "지질자원"
       # ── 러시아어 ──
       - "критические минералы"
       - "стратегические минералы"
-      - "уран"
-      - "медь"
-      - "никель"
-      - "кобальт"
-      - "редкоземельные"
-      - "литий"
-      - "вольфрам"
-      - "молибден"
-      - "хром"
-      - "добыча"
-      - "рудник"
-      - "руда"
-      - "горнодобывающ"
-      - "полезные ископаемые"
-      # ── 카자흐어 ──
-      - "критикалық минералдар"
-      - "стратегиялық минералдар"
-      - "мыс"
-      - "кен"
-      - "тау-кен"
-      - "пайдалы қазбалар"
-      - "сирек жер"
-      # ── 우즈베크어 ──
-      - "kritik minerallar"
-      - "strategik minerallar"
-      - "foydali qazilmalar"
-      - "uran"
-      - "mis"
-      - "volfram"
-      - "kon"
-      - "qazib olish"
-      - "konchilik"
-      - "noyob er"
+      - "стратегическое сырье"
+      - "минеральные ресурсы"
+      - "промышленное сотрудничество"
+      - "сотрудничество в области минералов"
+      - "цепочка поставок"
+      - "ресурсная дипломатия"
+      # ── 베트남어 ──
+      - "khoáng sản chiến lược"
+      - "khoáng sản quan trọng"
+      - "tài nguyên khoáng sản"
+      - "hợp tác khoáng sản"
+      - "chuỗi cung ứng"
       # ── 인도네시아어 ──
       - "mineral kritis"
       - "mineral strategis"
-      - "nikel"
-      - "kobalt"
-      - "tembaga"
-      - "litium"
-      - "tanah jarang"
-      - "pertambangan"
-      - "tambang"
-      - "bijih"
-      - "bauksit"
+      - "sumber daya mineral"
+      - "kerja sama mineral"
+      - "rantai pasok"
       - "hilirisasi"
-      # ── 베트남어 ──
-      - "khoáng sản"
-      - "khoáng sản chiến lược"
-      - "khoáng sản quan trọng"
-      - "đất hiếm"
-      - "đồng"
-      - "niken"
-      - "coban"
-      - "vonfram"
-      - "khai thác mỏ"
-      - "quặng"
       # ── 몽골어 ──
-      - "ашигт малтмал"
       - "стратегийн ашигт малтмал"
-      - "зэс"
-      - "ховор шороон"
-      - "уурхай"
-      - "олборлолт"
-      - "хайгуул"
+      - "ашигт малтмалын хамтын ажиллагаа"
       # ── 스와힐리 ──
-      - "madini"
-      - "urani"
-      - "shaba"
-      - "nikeli"
-      - "kobalti"
-      - "kuchimba"
-      - "uchimbaji"
-      - "machimbo"
-      - "grafiti"
-      - "ardhi adimu"
-      # ── 라오어 ──
-      - "ແຮ່ທາດ"
-      - "ທອງແດງ"
-      - "ນິກເກນ"
-      - "ການຂຸດຄົ້ນ"
-      - "ບໍ່ແຮ່"
-      - "ບອກໄຊ"
+      - "madini ya kimkakati"
+      - "madini muhimu"
+      - "ushirikiano wa madini"
+      # ── 우즈베크 ──
+      - "kritik minerallar"
+      - "strategik minerallar"
+      - "strategik xom ashyo"
+      - "noyob metallar"
+      - "noyob er metallari"
+      # ── 카자흐 ──
+      - "критикалық минералдар"
+      - "стратегиялық минералдар"
+      - "сирек жер металдары"
+
 
   # ===================================================================
   # [B] 정부 인용 보너스 (2026-05-15 추가)
