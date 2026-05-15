@@ -491,6 +491,67 @@ tier_3X_intl_mining_media:
       priority_boost: 2
       note: "영문 주간 분석 매체. 광업·정치·경제 통합 분석."
 
+    # ----- 박사님 직접 검증된 카자흐스탄·우즈베키스탄·우라늄 RSS (2026-05) -----
+    - name: "AKIPress (Central Asia 5 countries)"
+      url: "https://akipress.com/"
+      rss: "https://akipress.com/rss/news.xml"
+      scrape_method: rss
+      country: central_asia
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐·우즈베크·키르기스·타지크·투르크멘 통합 통신사. 한 RSS로 카자흐+우즈베크+몽골 카드 동시 보강."
+
+    - name: "Kursiv Media - English (Kazakhstan)"
+      url: "https://kz.kursiv.media/en"
+      rss: "https://kz.kursiv.media/en/feed"
+      scrape_method: rss
+      country: Kazakhstan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐 경제·비즈니스 전문 영문. 카자흐 광업 산업 동향."
+
+    - name: "The Astana Times (Kazakhstan)"
+      url: "https://astanatimes.com/"
+      rss: "https://astanatimes.com/feed/"
+      scrape_method: rss
+      country: Kazakhstan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 카자흐 영문 신문. 정책·외교·자원 동향."
+
+    - name: "Gazeta.uz - English (Uzbekistan)"
+      url: "https://www.gazeta.uz/en/"
+      rss: "https://www.gazeta.uz/en/rss/"
+      scrape_method: rss
+      country: Uzbekistan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우즈베크 경제·정치 영문 1차 자료."
+
+    - name: "UZ Daily - English (Uzbekistan)"
+      url: "https://www.uzdaily.com/en/"
+      rss: "https://www.uzdaily.com/en/rss/"
+      scrape_method: rss
+      country: Uzbekistan
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우즈베크 비즈니스·광업 영문. Almalyk MMC 등 자주 다룸."
+
+    - name: "World Nuclear News (uranium/nuclear)"
+      url: "https://world-nuclear-news.org/"
+      rss: "https://world-nuclear-news.org/RSS"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 3
+      note: "박사님 검증: 우라늄·원자력 전문. 카자흐 Kazatomprom 세계 1위 + 몽골 우라늄 매주 카버."
+
 # =====================================================================
 # Tier 4: Google News broad search (per-country queries)
 # =====================================================================
