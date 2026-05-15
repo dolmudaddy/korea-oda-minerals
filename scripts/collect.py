@@ -12,10 +12,23 @@ Phase A: Tanzania only - establishes the pattern.
 ──────────────────────────────────────────────────────────────────────
 2026-05-15 (v5, A+B integrated):
   [A] 핵심광물 필수 통과 필터 추가 — score_article 초입에서 critical
-      mineral keyword 매칭 0개면 즉시 폐기. 우즈벡 인터폴 등 광물
-      무관 기사가 country detection만 통과해서 점수 시스템 통과하는
-      문제 해결.
+      mineral keyword 매칭 0개면 즉시 폐기.
   [B] 정부 인용 보너스 추가 — 한국 +3, 7개국 협력국 +5, 카드당 +8 상한.
+
+2026-05-15 (v6, keyword redesign):
+  [A] 핵심광물 필터 4단계 재설계 — 박사님 실제 폐기/통과 케이스 분석
+      후 키워드 사전 본질적 재구성:
+        1. exclusion_terms: 광업 무관 영역 차단
+           (gold reserves, HPV, film, railway tariff 등)
+        2. exclusion_wordbound: 짧은 약어 단어 경계 매칭 (HPV 등)
+        3. core_minerals: 광종 직접 언급 (희소금속, 리튬, gold mining 등)
+        4. core_minerals_wordbound: REE/PGM 등 약어 단어 경계
+        5. domain_terms: KCMO 도메인 어휘 (자원외교, 산업기술협력,
+           광물자원, 핵심광물, critical mineral, supply chain 등)
+      박사님 폐기 8건 모두 복구, 잘못 통과 5건 모두 차단.
+  [B] partner_keywords 단어 경계 자동 처리 — 5자 이하 영문 대문자
+      약어(DOM, VNA, MOIT 등)는 자동으로 \b 정규식 적용해서 
+      "domestic", "vnaij" 같은 부정확 매칭 방지.
 ──────────────────────────────────────────────────────────────────────
 """
 import feedparser
@@ -84,34 +97,72 @@ def detect_country(text):
 # -----------------------------------------------------------------
 # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
 # -----------------------------------------------------------------
-def has_critical_mineral(text_lower, scoring_cfg):
-    """카드 텍스트에 핵심광물 키워드가 1개 이상 매칭되는지 검사.
+def has_critical_mineral(text, scoring_cfg):
+    """카드 텍스트가 KCMO 핵심광물 카드인지 판정 (v6 재설계).
+
+    4단계 필터로 박사님 폐기/통과 케이스 정확히 분류:
+        1. exclusion_terms 매칭 → 즉시 폐기 (광업 무관)
+        2. exclusion_wordbound 매칭 (HPV 등 단어 경계) → 즉시 폐기
+        3. core_minerals 매칭 → 통과 (광종 직접 언급)
+        4. core_minerals_wordbound 매칭 (REE 등 단어 경계) → 통과
+        5. domain_terms 매칭 → 통과 (KCMO 도메인 어휘)
+        6. 둘 다 없음 → 폐기 (no critical mineral keyword)
+
+    Args:
+        text: 원본 텍스트 (제목 + 요약, 소문자화 안 됨)
+        scoring_cfg: scoring 설정 딕셔너리
 
     Returns:
-        (True, matched_keyword) — 매칭됨, 통과
-        (False, None) — 매칭 안 됨, 카드 폐기 대상
-
-    sources.yaml의 scoring.critical_mineral_required.keywords 사용.
-    9개 언어 키워드를 한 리스트에서 평가. text_lower 기반 부분일치
-    (기존 keyword 매칭 방식과 동일).
+        (decision, reason)
+        decision: "PASS" or "PURGE"
+        reason: 매칭된 키워드 또는 폐기 사유 (로깅용)
     """
-    cfg = scoring_cfg.get("critical_mineral_required", {})
+    cfg = scoring_cfg.get("critical_mineral_keywords", {})
     if not cfg.get("enabled", False):
-        return True, None  # 비활성화 시 통과 (이전 호환)
+        # 비활성화 시 통과 (이전 호환)
+        return "PASS", "filter disabled"
 
-    keywords = cfg.get("keywords", []) or []
-    for kw in keywords:
-        if not kw:
+    text_lower = text.lower()
+
+    # Step 1: exclusion_terms (부분일치) → 폐기
+    for term in cfg.get("exclusion_terms", []) or []:
+        if term and term.lower() in text_lower:
+            return "PURGE", f"exclude: '{term}'"
+
+    # Step 2: exclusion_wordbound (단어 경계) → 폐기
+    for term in cfg.get("exclusion_wordbound", []) or []:
+        if not term:
             continue
-        if kw.lower() in text_lower:
-            return True, kw
-    return False, None
+        pattern = r'\b' + re.escape(term) + r'\b'
+        if re.search(pattern, text, re.IGNORECASE):
+            return "PURGE", f"exclude-wb: '{term}'"
+
+    # Step 3: core_minerals (부분일치) → 통과
+    for term in cfg.get("core_minerals", []) or []:
+        if term and term.lower() in text_lower:
+            return "PASS", f"core: '{term}'"
+
+    # Step 4: core_minerals_wordbound (단어 경계) → 통과
+    for term in cfg.get("core_minerals_wordbound", []) or []:
+        if not term:
+            continue
+        pattern = r'\b' + re.escape(term) + r'\b'
+        if re.search(pattern, text, re.IGNORECASE):
+            return "PASS", f"core-wb: '{term}'"
+
+    # Step 5: domain_terms (부분일치) → 통과
+    for term in cfg.get("domain_terms", []) or []:
+        if term and term.lower() in text_lower:
+            return "PASS", f"domain: '{term}'"
+
+    # Step 6: 어디에도 매칭 안 됨 → 폐기
+    return "PURGE", "no critical mineral keyword"
 
 
 # -----------------------------------------------------------------
 # [B] 정부 인용 보너스 (2026-05-15 추가)
 # -----------------------------------------------------------------
-def compute_gov_citation_bonus(text_lower, scoring_cfg):
+def compute_gov_citation_bonus(article_text, scoring_cfg):
     """정부 1차 자료 인용 보너스 계산.
 
     Returns:
@@ -126,6 +177,9 @@ def compute_gov_citation_bonus(text_lower, scoring_cfg):
     if not cfg.get("enabled", False):
         return 0, [], []
 
+    # 단어 경계 매칭은 원본 텍스트, 부분일치는 lower 사용
+    text_lower = article_text.lower()
+
     korea_score = int(cfg.get("korea_score", 3))
     partner_score = int(cfg.get("partner_score", 5))
     max_hits = int(cfg.get("max_hits_per_category", 1))
@@ -135,12 +189,31 @@ def compute_gov_citation_bonus(text_lower, scoring_cfg):
     kr_matched = []
     pt_matched = []
 
+    # 짧은 영문 약어는 단어 경계로 매칭 (DOM이 "domestic"에 잘못
+    # 매칭되는 문제 해결). 5자 이하 영문 대문자 약어를 자동 감지.
+    def _matches(kw, text_l, text_orig):
+        """키워드가 텍스트에 매칭되는지 검사.
+        짧은 영문 약어(5자 이하 대문자)는 단어 경계 적용, 그 외는 부분일치.
+        """
+        if not kw:
+            return False
+        # ASCII + 대문자 약어 + 5자 이하 → 단어 경계 필수
+        is_short_abbr = (
+            len(kw) <= 5
+            and kw.isascii()
+            and kw.isupper()
+            and kw.isalpha()
+        )
+        if is_short_abbr:
+            pattern = r'\b' + re.escape(kw) + r'\b'
+            return bool(re.search(pattern, text_orig))
+        else:
+            return kw.lower() in text_l
+
     # 한국 정부 인용
     hits = 0
     for kw in cfg.get("korea_keywords", []) or []:
-        if not kw:
-            continue
-        if kw.lower() in text_lower:
+        if _matches(kw, text_lower, article_text):
             hits += 1
             kr_matched.append(kw)
             if hits >= max_hits:
@@ -151,9 +224,7 @@ def compute_gov_citation_bonus(text_lower, scoring_cfg):
     # 협력국 정부 인용
     hits = 0
     for kw in cfg.get("partner_keywords", []) or []:
-        if not kw:
-            continue
-        if kw.lower() in text_lower:
+        if _matches(kw, text_lower, article_text):
             hits += 1
             pt_matched.append(kw)
             if hits >= max_hits:
@@ -181,16 +252,22 @@ def score_article(article, source_meta, scoring_cfg):
     article["country"] = country
 
     # ─────────────────────────────────────────────────────────────
-    # [A] 핵심광물 필수 통과 필터 (2026-05-15 추가)
+    # [A] 핵심광물 키워드 필터 (v6 재설계, 2026-05-15)
     # ─────────────────────────────────────────────────────────────
-    # country detection 통과한 후에도 광물 무관 기사 (정치/범죄 등)는
-    # 여기서 폐기. 예: "Uzbekistan puts former migration official on
-    # Interpol Red Notice"는 country=Uzbekistan으로 통과되지만 광물
-    # 키워드 0개라서 None 반환.
-    cm_passed, cm_match = has_critical_mineral(text_lower, scoring_cfg)
-    if not cm_passed:
-        # 폐기 로그 (제목 일부만 — 너무 시끄럽지 않게)
-        print(f"    [PURGED] no critical mineral: {article['title'][:55]}")
+    # 4단계 필터:
+    #   1. exclusion (gold reserves, HPV, film 등) → 폐기
+    #   2. core_minerals (광종 직접 언급) → 통과
+    #   3. domain_terms (자원외교·산업기술협력 등 KCMO 어휘) → 통과
+    #   4. 어디에도 매칭 안 됨 → 폐기
+    #
+    # 박사님 폐기 케이스 (gold reserves, HPV, film, railway tariff)와
+    # 통과 케이스 (희소금속협력센터, KIAT 산업기술협력, 광물자원 협력)
+    # 모두 검증 완료.
+    cm_decision, cm_reason = has_critical_mineral(text, scoring_cfg)
+    if cm_decision == "PURGE":
+        # 폐기 사유 로그 — 박사님이 결과 검토 시 어떤 키워드로
+        # 걸렸는지 추적 가능
+        print(f"    [PURGED-{cm_reason}] {article['title'][:55]}")
         return None, None
     # ─────────────────────────────────────────────────────────────
 
@@ -243,7 +320,7 @@ def score_article(article, source_meta, scoring_cfg):
     # 기존 점수 계산이 모두 끝난 시점에 가산. 광물 1차 필터 통과한
     # 카드 중 정부 1차 자료 인용 흔적이 있으면 상위로 끌어올림.
     gov_bonus, kr_match, pt_match = compute_gov_citation_bonus(
-        text_lower, scoring_cfg
+        text, scoring_cfg
     )
     if gov_bonus > 0:
         score += gov_bonus
