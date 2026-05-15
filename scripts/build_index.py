@@ -9,10 +9,11 @@ Hybrid approach:
 - Server-side: cards pre-rendered as <article> blocks (SEO, no-JS fallback)
 - Client-side: cards data embedded as JSON for interactive filtering
 """
+import os
 import json
 import html
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 SCRIPT_DIR = Path(__file__).parent
@@ -207,12 +208,24 @@ def main():
         days_to_sun = (6 - wd.weekday()) % 7
         if days_to_sun == 0:
             days_to_sun = 7
-        next_dispatch = wd.replace(hour=8, minute=0).strftime("%Y-%m-%d") + " 08:00"
+        # 다음 일요일 = 발행일 + days_to_sun
+        next_sun = wd + timedelta(days=days_to_sun)
+        next_dispatch = next_sun.strftime("%Y-%m-%d") + " 08:00"
     except Exception:
         next_dispatch = "일요일 08:00 KST"
 
     # Embedded JSON for client-side filtering
     cards_data_json = json.dumps(cards, ensure_ascii=False)
+
+    # Mailchimp 구독 폼 URL - 환경변수 또는 기본값
+    # 박사님이 Mailchimp 대시보드 → Audience → Signup forms → Embedded forms에서
+    # 가져올 수 있음. CMW의 us13 서버 사용 (박사님 메모리에 기록됨).
+    mailchimp_form_url = os.environ.get(
+        "MAILCHIMP_FORM_URL",
+        # KCMO 기본값 - 박사님이 Mailchimp 구독 폼 URL을 얻으시면
+        # GitHub Secrets에 MAILCHIMP_FORM_URL로 등록하시면 됨
+        "#mailchimp-not-configured"
+    )
 
     # Load template, substitute placeholders
     template = TEMPLATE_FILE.read_text(encoding="utf-8")
@@ -220,6 +233,7 @@ def main():
               .replace("{{WEEK_OF}}", esc(week_of))
               .replace("{{TOTAL}}", str(total))
               .replace("{{NEXT_DISPATCH}}", esc(next_dispatch))
+              .replace("{{MAILCHIMP_FORM_URL}}", esc(mailchimp_form_url))
               .replace("{{COUNTRY_OPTIONS}}", country_opts)
               .replace("{{CATEGORY_OPTIONS}}", category_opts)
               .replace("{{TAG_OPTIONS}}", tag_opts)
