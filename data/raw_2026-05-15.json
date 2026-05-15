@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T02:13:43.893400+00:00",
+  "generated_at": "2026-05-15T02:26:33.292773+00:00",
   "stats": {
     "sources_tried": 3,
     "items_fetched": 32,
-    "items_qualified": 50,
+    "items_qualified": 46,
     "google_news_queries": 86,
-    "google_news_items": 4399
+    "google_news_items": 4433
   },
-  "total": 46,
+  "total": 42,
   "articles": [
     {
       "id": "02f9593ff2df",
@@ -286,42 +286,12 @@
       "score": 8
     },
     {
-      "id": "4ef06267c525",
-      "title": "Tokoh Baru Hilirisasi! Indonesia dan Filipina Resmi Kerja Sama Nikel - Inikata.co.id",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU3RZQmktNVhKcE9QQUpTbk91ZUN1S3lMTGdPVEZYR0x4cXV5WlhGY3dYcUR1ODdiZjlzbUlTc1YzendYVl80WXh5WWZrTHZGT08waTRDcW1GWmdxMXUyc1p3NzNtbFNYRlUwSXZRX0JCVEtLNWE4ZkVPZWJ3NHJ1S2RSaGtKNmZkVjN2am81ZjJVcUU?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxPU3RZQmktNVhKcE9QQUpTbk91ZUN1S3lMTGdPVEZYR0x4cXV5WlhGY3dYcUR1ODdiZjlzbUlTc1YzendYVl80WXh5WWZrTHZGT08waTRDcW1GWmdxMXUyc1p3NzNtbFNYRlUwSXZRX0JCVEtLNWE4ZkVPZWJ3NHJ1S2RSaGtKNmZkVjN2am81ZjJVcUU?oc=5\" target=\"_blank\">Tokoh Baru Hilirisasi! Indonesia dan Filipina Resmi Kerja Sama Nikel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Inikata.co.id</font>",
-      "published": "2026-05-08",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 8
-    },
-    {
       "id": "83c05dc8735b",
       "title": "Indonesia dan Filipina Perkuat Rantai Pasok Nikel Melalui Kerja Sama Hilirisasi - AsatuNews.co.id",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YZXJJbnNNVGJENE92dWNjaWJ1TDdQb2lxYVpfdnJKM3V0UWJETWtUQTVKaEU5QVUtZENVNlZxQjV2M2EtdnVPZFdNcXNLV3FwVUU2LTZySnRCZE9HalFZVTA5MFhLLUxWQ201WklibVVfM0pWOWNJWV9WdW9odw?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5YZXJJbnNNVGJENE92dWNjaWJ1TDdQb2lxYVpfdnJKM3V0UWJETWtUQTVKaEU5QVUtZENVNlZxQjV2M2EtdnVPZFdNcXNLV3FwVUU2LTZySnRCZE9HalFZVTA5MFhLLUxWQ201WklibVVfM0pWOWNJWV9WdW9odw?oc=5\" target=\"_blank\">Indonesia dan Filipina Perkuat Rantai Pasok Nikel Melalui Kerja Sama Hilirisasi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AsatuNews.co.id</font>",
-      "published": "2026-05-08",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 8
-    },
-    {
-      "id": "be68e280070d",
-      "title": "Indonesia dan Filipina Bentuk Koridor Nikel ASEAN, Proyeksi Investasi Hilirisasi Capai USD47,36 M - IDX Channel",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVkRZbTRJdkhZdFVpVUpETG9GQk5ycGVha2MzU2k0OFRPUE05aE4zSkJCWjR1U0drYTc4SncySmliSEJHMUh0TnNyMGx0YU1RejJtcy1jMExQYlBaTS1KVmdEOVRIZUw2d2FsMG5DQ2p1YVVIaVhqakJSeDgyQWlYNnZaZy10Mm84LXJSdFhTUW95YkRXWnRpMHVSUmYxcUJaVC1DYUE5Z0F1VUxqQ29GTndHWTFhWFlsbWtNelAwNk5nYU83d0Y4Vm5vNzExQ0RfR0HSAdIBQVVfeXFMT0lGM1JVZ0tPNGpqSlJqbThHNVZlQ3BIU2lSRmlSYUE2TEQ5MUJaOU9ZZkhoeUZocHJoTFRselhLU21iUkdKb1NSWFNRdmVVQzBMeTcyM3RkMWpRUEs1aW56TW8yc3c4aEV6VjNiU3JnOWR3YlJUOENXVHNVU21mQ0kzcm1PSnJjbzdzQVhkTjlHYUdIeHg5R2FkOFAzSmZxMF9mSHZSM0lkalZ5UFhJY0MwQm93NlFNZ3F3NVR1RzZ6dGFFdlJOdjFMVnJQaWQzOTJn?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVkRZbTRJdkhZdFVpVUpETG9GQk5ycGVha2MzU2k0OFRPUE05aE4zSkJCWjR1U0drYTc4SncySmliSEJHMUh0TnNyMGx0YU1RejJtcy1jMExQYlBaTS1KVmdEOVRIZUw2d2FsMG5DQ2p1YVVIaVhqakJSeDgyQWlYNnZaZy10Mm84LXJSdFhTUW95YkRXWnRpMHVSUmYxcUJaVC1DYUE5Z0F1VUxqQ29GTndHWTFhWFlsbWtNelAwNk5nYU83d0Y4Vm5vNzExQ0RfR0HSAdIBQVVfeXFMT0lGM1JVZ0tPNGpqSlJqbThHNVZlQ3BIU2lSRmlSYUE2TEQ5MUJaOU9ZZkhoeUZocHJoTFRselhLU21iUkdKb1NSWFNRdmVVQzBMeTcyM3RkMWpRUEs1aW56TW8yc3c4aEV6VjNiU3JnOWR3YlJUOENXVHNVU21mQ0kzcm1PSnJjbzdzQVhkTjlHYUdIeHg5R2FkOFAzSmZxMF9mSHZSM0lkalZ5UFhJY0MwQm93NlFNZ3F3NVR1RzZ6dGFFdlJOdjFMVnJQaWQzOTJn?oc=5\" target=\"_blank\">Indonesia dan Filipina Bentuk Koridor Nikel ASEAN, Proyeksi Investasi Hilirisasi Capai USD47,36 M</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IDX Channel</font>",
       "published": "2026-05-08",
       "tier_weight": 1,
       "priority_boost": 0,
@@ -523,21 +493,6 @@
       "score": 7
     },
     {
-      "id": "a5f4752d4dc3",
-      "title": "Hilirisasi dari Bumi Indonesia Menuju Panggung Global - InvestorTrust",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONm0wcG9fUGtxMHJiZERfdU9SbEY3Rmt3OXBGaFVCbmRDRkZqM3ZWNHVrWTk3ZDdqcnZUZE5nMFhtb1pmZGFmbUo0YTZKNWlYR1l5YmJYVDVSa0Q1NkJmY2J1VHdrSkRTbS1Fb0xhc0Q1NE5mY2pkVnZxZ2g4SlhZS3Bmc3FmOFdBakk4QzhUM29zOTh6Y3BGVnFn?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxONm0wcG9fUGtxMHJiZERfdU9SbEY3Rmt3OXBGaFVCbmRDRkZqM3ZWNHVrWTk3ZDdqcnZUZE5nMFhtb1pmZGFmbUo0YTZKNWlYR1l5YmJYVDVSa0Q1NkJmY2J1VHdrSkRTbS1Fb0xhc0Q1NE5mY2pkVnZxZ2g4SlhZS3Bmc3FmOFdBakk4QzhUM29zOTh6Y3BGVnFn?oc=5\" target=\"_blank\">Hilirisasi dari Bumi Indonesia Menuju Panggung Global</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">InvestorTrust</font>",
-      "published": "2026-04-27",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
       "id": "35da60c64225",
       "title": "Hilirisasi Nikel Buka Jalan Elektrifikasi di Sektor Tambang - CNBC Indonesia",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZXJaMV9tMTFYQnhHS3hEaHQ0Qk55RFI0Vlgtak5VbnlLR0pVQzNHUFNjQjFrSDhoU2diajJrWXZ1RW9wNmVmMl9RczBFMnhSZVowMHhpRWhoWHVNeENXWmR5cmJqRDlsMFdVWUJDQ25aTjRNRi1sSU4wNlJjOVhIREg3S29wbUtiRWFWZ29tNkxScDlnOGxqRl96MHg2YjVIZnNxQ0hWVmFkUWtTaTJMYjhlTTlEdHotOFHSAb8BQVVfeXFMT3ExRkYwRTIzWmloZldhS3dqdl93V19veTBGd3hteml5aTY4VEJRLXpReXVndGZJSmhHQktGMk5hcHhsNmhkMHU3aWZ4cVN3QmZlUVptR1ZZQ0x2M2hqeG8zXy1PekRVVnc0ZHE1T3UtSWtqRVRGZnZPa0ZBTW9oM19vM1RWU0c0WmdUaldZbUd0aGJ2OGg3d3dKNE0zRHpzZ3NaOUFTczJHam9lcWZXYTBja19zU2ZzR0o0SWs2Njg?oc=5",
@@ -598,21 +553,6 @@
       "score": 7
     },
     {
-      "id": "6422b988b3e3",
-      "title": "Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas - Kompas.com",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS2RlVF9id19UekhGRUhjZ3VxSUxTSjhuX3JwM3VwSndBTUhvLTl6c3R6SXhFdDFSUFk0dGMwX2JKUjlaQ1ItT0V1OEdRUU1rR3RERkgySVFtTksyN3FQOU1wbHFsOTdJdEFraEhZNXFrTmtXSFM3SlRPRnNxa1pPeVVIWTJ6TVBxM2VBWUpqQzNISXNMUjV4Ymd3N19VZk1VTXBfTE9iQU9ubWdoTGo2VGtmdGxHNEZDbHBIWU5oanIzQQ?oc=5\" target=\"_blank\">Paradoks Nikel Indonesia: Antara Potensi Besar dan Hilirisasi Terbatas</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kompas.com</font>",
-      "published": "2026-04-18",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
       "id": "6b78b4e853e6",
       "title": "Tantangan Nikel Indonesia Untuk Mencapai Hilirisasi - KatadataOTO",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNmFMSU9YRDNyN1phbHlROC11MnBVN0t3N3VtSE1HS2hGSEVNVVdjYmJxbGFHS1c0b0NVMHUwazlxbHBweXdKczNTVFprSkxBRGxwcjJqaXhuRDZ5RFlSci0wN0h3eVUwTk1jV2tpRkdfUjBudG5EN3J6RWF3ZGFyZ25COGkzREpmc2R3STk2T1U4Ny1hcUhJdl9R?oc=5",
@@ -643,27 +583,27 @@
       "score": 7
     },
     {
-      "id": "e96582b317cb",
-      "title": "Dari Bumi Anoa untuk Indonesia: PT Vale Perkuat Hilirisasi Hijau dan Ekonomi Rakyat di HUT ke-62 Sulawesi Tenggara - Lutimterkini",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdWR0VS03bWxkTENyb2VmQ0JtRlREYk9IYTN4enZQb1JXVS0wSHlyX1R6Vll2STMwOGhNUE54aUhxWWctUGc2aWNmMFQxS1NrYTJvUkNlYkZwMlFQa25uVTVzdWpxR3VmUmlTbnZIZWZGNXRLWTNzeVpmTzZvbEhZcGx2cEJwOWFQaU1qN3ZidE5USVM3aEZlVGdTY1VjSVo2S1hONWFXTVNmOWFNUUtpUkcyZXU4LTctakkzMVJMb2hXRkktSWhTLUpjQWNvYmZYV3ZNdFpn?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdWR0VS03bWxkTENyb2VmQ0JtRlREYk9IYTN4enZQb1JXVS0wSHlyX1R6Vll2STMwOGhNUE54aUhxWWctUGc2aWNmMFQxS1NrYTJvUkNlYkZwMlFQa25uVTVzdWpxR3VmUmlTbnZIZWZGNXRLWTNzeVpmTzZvbEhZcGx2cEJwOWFQaU1qN3ZidE5USVM3aEZlVGdTY1VjSVo2S1hONWFXTVNmOWFNUUtpUkcyZXU4LTctakkzMVJMb2hXRkktSWhTLUpjQWNvYmZYV3ZNdFpn?oc=5\" target=\"_blank\">Dari Bumi Anoa untuk Indonesia: PT Vale Perkuat Hilirisasi Hijau dan Ekonomi Rakyat di HUT ke-62 Sulawesi Tenggara</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Lutimterkini</font>",
-      "published": "2026-04-26",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 7
-    },
-    {
       "id": "bacd5dbe1db6",
       "title": "한국수입협회 \"카자흐스탄과의 안정적 공급망 협력 중요\" - 한국경제",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa1ZmZXhlWExCSkJDeElMOC1oMDdFUDh5RDc0WFdONkUtUHo5OHVHNlFoSDA0Tm1ObTIxdjhUMUp5T1p4bjFOSWNhZWl4dGdSeEhIa0REYnBNUdIBVEFVX3lxTE9VWWIyX045VldaV21wSnF3QUpYSGFHUlEtcnZXdTlpTmVMR3Fqd1FiVUdLaVVvNUxtZUVoT01vUEx4bFMtWkw4SWZXTkpNZExySUlEXw?oc=5",
       "source": "Google News (KR:ko)",
       "source_language": "ko",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLa1ZmZXhlWExCSkJDeElMOC1oMDdFUDh5RDc0WFdONkUtUHo5OHVHNlFoSDA0Tm1ObTIxdjhUMUp5T1p4bjFOSWNhZWl4dGdSeEhIa0REYnBNUdIBVEFVX3lxTE9VWWIyX045VldaV21wSnF3QUpYSGFHUlEtcnZXdTlpTmVMR3Fqd1FiVUdLaVVvNUxtZUVoT01vUEx4bFMtWkw4SWZXTkpNZExySUlEXw?oc=5\" target=\"_blank\">한국수입협회 \"카자흐스탄과의 안정적 공급망 협력 중요\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">한국경제</font>",
+      "published": "2026-05-07",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "한국 카자흐스탄 자원협력",
+      "country": "Kazakhstan",
+      "score": 7
+    },
+    {
+      "id": "498e240762d9",
+      "title": "한국수입협회, 카자흐스탄 외교부 투자위원회 위원장과 두 나라 교역 확대 방안 논의 - 중앙이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fUjFDdXBKTzkwZGdlRkJ2WmtlajdKeVJjNXZBZ2NlZ1JVTm5fbXRST1h4N05VTHRJT2NjZWZZVVNlTmJfZFpmRVBhLU9qZmRuR296c0Z2UDJ0Rlg1eXFxTi1KaWNrckUyUjN1N0xMQXNhQQ?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5fUjFDdXBKTzkwZGdlRkJ2WmtlajdKeVJjNXZBZ2NlZ1JVTm5fbXRST1h4N05VTHRJT2NjZWZZVVNlTmJfZFpmRVBhLU9qZmRuR296c0Z2UDJ0Rlg1eXFxTi1KaWNrckUyUjN1N0xMQXNhQQ?oc=5\" target=\"_blank\">한국수입협회, 카자흐스탄 외교부 투자위원회 위원장과 두 나라 교역 확대 방안 논의</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">중앙이코노미뉴스</font>",
       "published": "2026-05-07",
       "tier_weight": 1,
       "priority_boost": 0,
