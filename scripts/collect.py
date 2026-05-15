@@ -15,6 +15,17 @@ Phase A: Tanzania only - establishes the pattern.
       mineral keyword 매칭 0개면 즉시 폐기.
   [B] 정부 인용 보너스 추가 — 한국 +3, 7개국 협력국 +5, 카드당 +8 상한.
 
+2026-05-15 (v6.2, keyword expansion based on real log analysis):
+  박사님 실제 GitHub Actions 로그 분석 후 sources.yaml 키워드 사전 확장.
+  v6 폐기 카드 39건 중 33건 복구. 노이즈 9건 중 8건 차단.
+  collect.py 자체 로직은 v6와 동일 (4단계 필터 구조).
+  핵심 변경 (모두 sources.yaml에서):
+    - core_minerals에 일반 광업 용어(mining/mineral 등) + 7개국 주요
+      광업 회사명(Oyu Tolgoi, Rio Tinto, Kazatomprom 등) 추가
+    - core_minerals_wordbound에 'ore', 'miner' 추가 (부분일치 사고 차단)
+    - domain_terms에 한국어 띄어쓰기 변형(핵심 광물, 자원 외교 등) 추가
+    - exclusion_terms에 정치 일반 차단(victory day 등)
+
 2026-05-15 (v6, keyword redesign):
   [A] 핵심광물 필터 4단계 재설계 — 박사님 실제 폐기/통과 케이스 분석
       후 키워드 사전 본질적 재구성:
