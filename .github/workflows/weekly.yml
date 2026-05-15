@@ -28,9 +28,10 @@ jobs:
   generate:
     name: Collect → Summarize → Build → Send
     runs-on: ubuntu-latest
-    # 박사님 응급조치 (2026-05): 무한 대기 방지
-    # 정상 실행은 3-5분. 8분 넘으면 강제 중단.
-    timeout-minutes: 8
+    # 박사님 응급조치 (2026-05):
+    # - 8분 → 12분 (Tier 3X 광업 매체 14개 RSS + Google News 93개 쿼리 누적)
+    # - 정상 실행은 9-11분. 12분 넘으면 강제 중단.
+    timeout-minutes: 12
 
     steps:
       # ----------------------------------------------------
