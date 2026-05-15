@@ -29,9 +29,10 @@ jobs:
     name: Collect → Summarize → Build → Send
     runs-on: ubuntu-latest
     # 박사님 응급조치 (2026-05):
-    # - 8분 → 12분 (Tier 3X 광업 매체 14개 RSS + Google News 93개 쿼리 누적)
-    # - 정상 실행은 9-11분. 12분 넘으면 강제 중단.
-    timeout-minutes: 12
+    # - 12 → 15분 (Tier 3X 광업 매체 + Google News 누적, summarize 처리시간 포함)
+    # - threshold 10점 적용으로 카드 수 95 → 약 50개 감소
+    # - 정상 실행은 11-13분. 15분 넘으면 강제 중단.
+    timeout-minutes: 15
 
     steps:
       # ----------------------------------------------------
