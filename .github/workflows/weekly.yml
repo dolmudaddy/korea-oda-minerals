@@ -104,36 +104,49 @@ jobs:
           fi
 
       # ----------------------------------------------------
-      # 7b. 옵시디언 vault repo checkout (별도 저장소)
-      #     실패해도 메일 발송은 계속 진행됨
+      # 7b. CMW repo(critical-minerals) checkout — 박사님 옵시디언 vault
+      #     vault/ 폴더가 박사님 평소 옵시디언 vault. KCMO는 vault/KCMO/ 서브폴더로 통합.
+      #     실패해도 메일 발송은 계속 진행됨.
       # ----------------------------------------------------
-      - name: Checkout Obsidian vault
+      - name: Checkout Obsidian vault (CMW repo)
         uses: actions/checkout@v4
         with:
-          repository: dolmudaddy/kcmo-vault
+          repository: dolmudaddy/critical-minerals
+          ref: main
           token: ${{ secrets.OBSIDIAN_VAULT_PAT }}
           path: vault-checkout
+          fetch-depth: 0
         continue-on-error: true
 
       # ----------------------------------------------------
       # 7c. 카드 → 옵시디언 마크다운 생성
+      #     박사님 vault 루트는 vault-checkout/vault/ (CMW repo 안의 vault 폴더)
       # ----------------------------------------------------
       - name: Generate Obsidian markdown
-        run: python scripts/generate_obsidian.py --vault ./vault-checkout
+        run: python scripts/generate_obsidian.py --vault ./vault-checkout/vault
         continue-on-error: true
 
       # ----------------------------------------------------
-      # 7d. Vault repo에 commit & push
+      # 7d. CMW vault에 commit & push
+      #     - vault/KCMO/ 폴더만 stage (박사님 KIGAM 노트와 분리)
+      #     - 박사님 수동 commit과 충돌 방지: pull --rebase + 3회 재시도
       # ----------------------------------------------------
-      - name: Commit and push to vault repo
+      - name: Commit and push to CMW vault
         working-directory: vault-checkout
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add KCMO/
+          git add vault/KCMO/
           if ! git diff --staged --quiet; then
             git commit -m "KCMO Weekly: $(date -u +'%Y-%m-%d')"
-            git push
+            for i in 1 2 3; do
+              if git pull --rebase origin main && git push; then
+                echo "Push succeeded on attempt $i."
+                break
+              fi
+              echo "Push attempt $i failed. Retrying in 5s..."
+              sleep 5
+            done
           else
             echo "No vault changes to commit."
           fi
