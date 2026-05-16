@@ -53,7 +53,7 @@ When tuning, **add to `sources.yaml`, not `collect.py`**. The filter logic itsel
 
 ## Obsidian 통합
 
-매주 생성된 카드를 박사님 옵시디언 vault에 마크다운 노트로 동기화한다. 카드 한 건당 노트 한 개(`KCMO/articles/{YYYY}/{date}-{country}-{slug}.md`) + 주간 인덱스(`KCMO/weekly/{YYYY}/KCMO Weekly {YYYY-Wnn}.md`).
+매주 생성된 카드를 박사님 옵시디언 vault에 마크다운 노트로 동기화한다. 박사님 vault는 자매 프로젝트 CMW repo(`dolmudaddy/critical-minerals`)의 `vault/` 폴더 자체이므로, KCMO는 그 안의 `vault/KCMO/` 서브폴더에 통합된다. 카드 한 건당 노트 한 개(`vault/KCMO/articles/{YYYY}/{date}-{country}-{slug}.md`) + 주간 인덱스(`vault/KCMO/weekly/{YYYY}/KCMO Weekly {YYYY-Wnn}.md`). CMW 카드와 같은 vault라 `[[리튬]]`, `[[탄자니아]]` 등 공통 wikilink가 동일 노드로 모인다.
 
 **튜닝 원칙**: wikilink 어휘는 **`obsidian_vocab.yaml`에서만 수정**한다. `generate_obsidian.py` linkify 로직은 손대지 않는다 — `collect.py` 필터 로직을 손대지 않고 `sources.yaml`로만 튜닝하는 것과 동일한 분리 원칙이다.
 
@@ -66,11 +66,16 @@ When tuning, **add to `sources.yaml`, not `collect.py`**. The filter logic itsel
 - 이미 만든 `[[wikilink]]`는 placeholder로 치환해 보호한 뒤 본문 스캔을 돌리고 마지막에 복원한다. 이중 링크 방지.
 - 긴 패턴 우선이라 "광물 ODA"(6자)가 "핵심광물"(4자)보다 먼저 매칭되는 문제는 `광물 ODA` 노드의 patterns에 `핵심광물 ODA`를 추가해 더 긴 표기로 흡수했다. 동일 유형 단편화가 또 생기면 같은 방식으로 패턴 추가.
 
-**워크플로우 연동**: 매주 GitHub Actions에서 KCMO repo가 옵시디언 vault repo를 별도로 checkout → `generate_obsidian.py --vault ./vault-checkout` 실행 → vault repo에 commit/push. 모든 단계 `continue-on-error: true`로 vault 실패가 메일 발송을 막지 않게 한다. Vault repo URL과 `OBSIDIAN_VAULT_PAT` secret은 박사님이 KCMO repo Settings → Secrets에 등록. (워크플로우 미연동 상태 — 박사님 vault 준비 후 적용 예정.)
+**워크플로우 연동**: 매주 GitHub Actions에서 CMW repo(`dolmudaddy/critical-minerals`)를 checkout → `generate_obsidian.py --vault ./vault-checkout/vault` 실행 → `vault/KCMO/` 폴더만 stage 후 `pull --rebase` + 재시도(최대 3회) → push. 모든 단계 `continue-on-error: true`로 vault 실패가 메일 발송을 막지 않는다. `OBSIDIAN_VAULT_PAT`는 `dolmudaddy/critical-minerals` repo의 Contents:Write 권한을 가진 Fine-grained PAT여야 한다.
 
-로컬 테스트:
+**충돌 방지 설계**:
+- 폴더 분리: KCMO Actions는 `vault/KCMO/`만 stage하므로 박사님이 vault 다른 폴더에 수동 commit해도 같은 commit에 묶이지 않음.
+- 시각 분산: KCMO는 토요일 23:00 UTC, CMW는 일요일 23:00 UTC로 24시간 차이 — 두 워크플로우 동시 push 불가.
+- Rebase 재시도: 박사님이 마침 그 순간 push 중이어도 `git pull --rebase` 후 재시도(최대 3회, 5초 간격).
+
+로컬 테스트 (박사님 평소 vault 경로):
 ```powershell
-python scripts/generate_obsidian.py --vault C:/path/to/vault --cards data/cards_YYYY-MM-DD.json
+python scripts/generate_obsidian.py --vault "C:/Users/Seong-Jun Cho/Documents/GitHub/critical-minerals/vault" --cards data/cards_YYYY-MM-DD.json
 # --dry-run 으로 파일 출력 없이 카운트만 확인 가능
 ```
 
@@ -108,7 +113,7 @@ There are no tests, linters, or build steps beyond the pipeline scripts themselv
 - `data/processed_pages.json` and `data/processed_pdfs.json` are dedup registries written by the Tanzania collectors; do not delete unless intentionally re-processing.
 - All dates in code/logs are UTC; KST is only used for display in `build_index.py` and `send_email.py`.
 
-## Current status (2026-05-15)
+## Current status (2026-05-16)
 
 - **점수 시스템 v6.2**: 키워드 사전 확장 적용 완료 (`sources.yaml` 및 `collect.py` 반영). 추가 튜닝은 `sources.yaml`의 키워드 사전에서 진행하고 `collect.py` 필터 로직은 손대지 않는다.
-- **옵시디언 통합 (스크립트 단계 완료, 워크플로우 연동 대기)**: `generate_obsidian.py` + `obsidian_vocab.yaml` 로컬 검증 완료(21 카드 → 21 노트 + 주간 인덱스 정상). 다음은 `.github/workflows/weekly.yml`에 vault checkout → generate → commit/push 3단계 추가. 박사님이 vault repo URL과 `OBSIDIAN_VAULT_PAT` secret을 등록한 후 적용 예정.
+- **옵시디언 통합 (CMW vault 재설정 중)**: 2026-05-15 1차 작업은 별도 repo `dolmudaddy/kcmo-vault`에 push하는 구조로 머지됐으나, 박사님 실제 의도는 평소 사용 중인 CMW vault(`dolmudaddy/critical-minerals`의 `vault/` 폴더)에 `vault/KCMO/` 서브폴더로 통합되어 CMW 카드와 wikilink 교차 연결되는 것. 워크플로우의 vault push 대상을 CMW repo로 교체하고 `pull --rebase` 충돌 방지 안전망 추가. 박사님이 PAT를 `dolmudaddy/critical-minerals` Contents:Write 권한으로 재발급하여 `OBSIDIAN_VAULT_PAT` secret 갱신 후 종단 테스트 예정.
