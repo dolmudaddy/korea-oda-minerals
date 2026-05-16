@@ -1,0 +1,222 @@
+# =====================================================================
+# KCMO Obsidian wikilink 사전 (v1, 2026-05-15)
+# =====================================================================
+# 박사님 옵시디언 볼트의 wikilink 명명 체계.
+# generate_obsidian.py가 이 파일을 읽어서:
+#   1. 카드 본문(요약·시사점)의 키워드를 [[node]]로 자동 변환
+#   2. frontmatter의 related: [...]에 매칭된 노드 나열
+#   3. country × mineral 조합으로 협력 노드 ([[탄자니아 흑연]]) 생성
+#
+# 튜닝 원칙:
+#   - 박사님이 직접 편집. generate_obsidian.py 코드는 손대지 않는다.
+#   - 새 기관·광종·정책어가 등장하면 patterns에 추가만 하면 됨.
+#   - node 이름은 옵시디언 wikilink 그대로 표시되는 한국어/영문.
+#
+# 매칭 규칙:
+#   - 영문 패턴 (ASCII): 단어 경계 (\b) 적용. KIAT가 "KIATest"에 안 잡힘.
+#   - 한글·혼합 패턴: literal 부분일치 (한국어는 단어 경계 개념 없음).
+#   - 긴 패턴 우선 매칭 ("rare earth elements" > "rare earth" > "REE").
+#   - 이미 [[wrap]]된 부분은 placeholder로 보호 (중첩 변환 차단).
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 국가 노드 (8개 고정). en 필드는 협력 노드 자동 생성용.
+# ---------------------------------------------------------------------
+countries:
+  - node: 탄자니아
+    en: Tanzania
+    patterns: [Tanzania, Tanzanian, 탄자니아]
+  - node: 인도네시아
+    en: Indonesia
+    patterns: [Indonesia, Indonesian, 인도네시아]
+  - node: 베트남
+    en: Vietnam
+    patterns: [Vietnam, Vietnamese, 베트남]
+  - node: 몽골
+    en: Mongolia
+    patterns: [Mongolia, Mongolian, 몽골]
+  - node: 카자흐스탄
+    en: Kazakhstan
+    patterns: [Kazakhstan, Kazakh, 카자흐스탄]
+  - node: 우즈베키스탄
+    en: Uzbekistan
+    patterns: [Uzbekistan, Uzbek, 우즈베키스탄]
+  - node: 라오스
+    en: Laos
+    patterns: [Laos, Lao, 라오스]
+  - node: 한국
+    en: Korea
+    patterns: [South Korea, Korean, "Republic of Korea", 한국, 대한민국]
+
+# ---------------------------------------------------------------------
+# 광종 노드. KCMO 7개국 primary_minerals 합집합 + 자주 등장하는 부가 광종.
+# ---------------------------------------------------------------------
+minerals:
+  - node: 흑연
+    patterns: [graphite, 흑연]
+  - node: 리튬
+    patterns: [lithium, 리튬]
+  - node: 코발트
+    patterns: [cobalt, 코발트]
+  - node: 니켈
+    patterns: [nickel, 니켈]
+  - node: 구리
+    patterns: [copper, 구리]
+  - node: 희토류
+    patterns: [rare earth elements, rare earth element, rare earths, rare earth, REE, REEs, 희토류, 희유금속, 희소금속]
+  - node: 우라늄
+    patterns: [uranium, 우라늄]
+  - node: 텅스텐
+    patterns: [tungsten, 텅스텐]
+  - node: 보크사이트
+    patterns: [bauxite, 보크사이트]
+  - node: 알루미늄
+    patterns: [aluminum, aluminium, 알루미늄]
+  - node: 주석
+    patterns: [tin ore, 주석]   # "tin"만 단독 사용은 위험 ("tin can" 등) → "tin ore"로 한정
+  - node: 형석
+    patterns: [fluorspar, fluorite, 형석]
+  - node: 헬륨
+    patterns: [helium, 헬륨]
+  - node: 칼륨염
+    patterns: [potash, 칼륨염, 칼륨광]
+  - node: 크롬
+    patterns: [chromium, chrome ore, 크롬]
+  - node: 티타늄
+    patterns: [titanium, 티타늄]
+  - node: 망간
+    patterns: [manganese, 망간]
+  - node: 금
+    patterns: [gold mining, gold ore, gold deposit, 금광, 금]   # "gold reserves"는 collect.py에서 차단되지만 안전장치
+  - node: 백금족
+    patterns: [platinum group, PGM, PGMs, 백금족]
+
+# ---------------------------------------------------------------------
+# 한국 기관 노드. 풀네임 → 약어 노드로 통합.
+# ---------------------------------------------------------------------
+korea_institutions:
+  - node: KIAT
+    patterns: [KIAT, 한국산업기술진흥원, "Korea Institute for Advancement of Technology"]
+  - node: KIGAM
+    patterns: [KIGAM, 한국지질자원연구원, "Korea Institute of Geoscience and Mineral Resources"]
+  - node: KOICA
+    patterns: [KOICA, 한국국제협력단]
+  - node: EDCF
+    patterns: [EDCF, 대외경제협력기금]
+  - node: KOMIR
+    patterns: [KOMIR, 한국광해광업공단]
+  - node: MOTIE
+    patterns: [MOTIE, 산업통상자원부]
+  - node: MOFA
+    patterns: [MOFA, 외교부]
+  - node: KOTRA
+    patterns: [KOTRA, 대한무역투자진흥공사]
+
+# ---------------------------------------------------------------------
+# 협력국 기관·국영광업·주요 광산 노드.
+# ---------------------------------------------------------------------
+partner_institutions:
+  # 탄자니아
+  - node: STAMICO
+    patterns: [STAMICO]
+  - node: Wizara ya Madini
+    patterns: ["Wizara ya Madini", "Ministry of Minerals", 탄자니아 광물부]
+  # 인도네시아
+  - node: ESDM
+    patterns: [ESDM, "Kementerian ESDM", "Ministry of Energy and Mineral Resources"]
+  - node: MIND ID
+    patterns: ["MIND ID", "MIND Indonesia"]
+  - node: Antam
+    patterns: [Antam, ANTAM]
+  # 베트남
+  - node: MOIT
+    patterns: [MOIT, "Bộ Công Thương"]
+  - node: Vinacomin
+    patterns: [Vinacomin, VINACOMIN]
+  - node: Núi Pháo
+    patterns: ["Núi Pháo", "Nui Phao"]
+  # 몽골
+  - node: MRPAM
+    patterns: [MRPAM]
+  - node: Erdenes Mongol
+    patterns: ["Erdenes Mongol"]
+  - node: Oyu Tolgoi
+    patterns: ["Oyu Tolgoi"]
+  - node: Tavan Tolgoi
+    patterns: ["Tavan Tolgoi"]
+  # 카자흐스탄
+  - node: Kazatomprom
+    patterns: [Kazatomprom, KAZATOMPROM]
+  # 우즈베키스탄
+  - node: Almalyk MMC
+    patterns: ["Almalyk MMC", "Olmaliq MMC"]
+  - node: Navoi MMC
+    patterns: ["Navoi MMC", "Navoiy MMC"]
+  # 라오스
+  - node: MOIC
+    patterns: [MOIC, "Ministry of Industry and Commerce"]
+  - node: Sepon
+    patterns: [Sepon, 세폰]
+  # 글로벌 광업기업 (자주 등장)
+  - node: Rio Tinto
+    patterns: ["Rio Tinto"]
+  - node: Vale
+    patterns: [Vale]
+  - node: BHP
+    patterns: [BHP]
+
+# ---------------------------------------------------------------------
+# 정책·사업·도메인 어휘 노드.
+# ---------------------------------------------------------------------
+policy_terms:
+  - node: 자원외교
+    patterns: [자원외교, "resource diplomacy"]
+  - node: 핵심광물
+    patterns: [핵심광물, 핵심 광물, "critical minerals", "critical mineral"]
+  - node: 핵심광물 안보
+    patterns: [핵심광물 안보, 광물 안보, "mineral security"]
+  - node: 공급망
+    patterns: [공급망, "supply chain"]
+  - node: 공급망 다변화
+    patterns: [공급망 다변화, "supply chain diversification"]
+  - node: 광물 ODA
+    patterns: [핵심광물 ODA, 광물 ODA, "mineral ODA"]    # 핵심광물 ODA를 먼저 (긴 매치 우선)
+  - node: 기술협력
+    patterns: [기술협력, 기술 협력, "technical cooperation"]
+  - node: 기술이전
+    patterns: [기술이전, "technology transfer"]
+  - node: 역량강화
+    patterns: [역량강화, "capacity building"]
+  - node: MOU
+    patterns: [MOU, "Memorandum of Understanding", 양해각서]
+  - node: 광물기술협력센터
+    patterns: [광물기술협력센터, 광물 기술협력센터]   # 띄어쓰기 변형 통합
+  - node: 하류산업화
+    patterns: [하류산업화, 하류화, hilirisasi, downstreaming]
+  - node: 배터리소재
+    patterns: [배터리소재, 배터리 소재, "battery materials"]
+  - node: 광물정련
+    patterns: [광물정련, 정련, refining, smelter, smelting]
+
+# ---------------------------------------------------------------------
+# 협력 노드 (복합) — 자동 생성 정책.
+#
+# 작동: 카드의 country + 본문/태그에 매칭된 mineral이 있으면
+#       [[국가 광종]] 복합 노드를 frontmatter related에 자동 추가.
+#       예: country=Tanzania + 흑연 매칭 → [[탄자니아 흑연]]
+#
+# 디폴트(빈 whitelist): sources.yaml의 target_countries[i].primary_minerals
+# 합집합으로 자동 결정. Tanzania×graphite는 sources.yaml에 등재되어 있어
+# 자동 생성, Tanzania×lithium은 등재 안 되어 자동 생성 안 됨.
+#
+# whitelist를 명시하면 그것만 사용 (sources.yaml 무시). 박사님이 노드를
+# 좁히고 싶을 때 사용.
+# ---------------------------------------------------------------------
+cooperation_nodes:
+  use_sources_yaml: true   # true면 sources.yaml primary_minerals 자동 사용
+  whitelist: []
+  # 예시:
+  # whitelist:
+  #   - 탄자니아 흑연
+  #   - 베트남 희토류
+  #   - 몽골 우라늄
