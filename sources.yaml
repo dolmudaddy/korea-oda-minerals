@@ -847,6 +847,20 @@ scoring:
       - "presidential parade"
       - "counter-strike"
       - "video game"
+      # v6.4 추가: gold/golden이 화폐·역사·시상 의미로 쓰이는 케이스 차단.
+      # 박사님 2026-05-17 발견: "Kazakhstan to Issue Limited-Edition Coin
+      # Celebrating Golden Horde Legacy"가 score 10으로 통과됨 — "Golden"의
+      # "gold" 부분일치 때문. 광물 분야 무관한 명백한 노이즈 패턴 차단.
+      - "golden horde"
+      - "limited-edition coin"
+      - "limited edition coin"
+      - "commemorative coin"
+      - "memorial coin"
+      - "gold medal"
+      - "gold medals"
+      - "golden age"
+      - "golden anniversary"
+      - "golden jubilee"
 
     # ────────────────────────────────────────────────────────────
     # 2. 제외 키워드 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
