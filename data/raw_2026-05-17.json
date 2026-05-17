@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-05-17T01:35:00.425940+00:00",
+  "generated_at": "2026-05-17T02:12:10.644951+00:00",
   "stats": {
-    "sources_tried": 20,
-    "items_fetched": 257,
-    "items_qualified": 22,
-    "google_news_queries": 93,
-    "google_news_items": 4680
+    "sources_tried": 23,
+    "items_fetched": 245,
+    "items_qualified": 19,
+    "google_news_queries": 104,
+    "google_news_items": 4849
   },
-  "total": 22,
+  "total": 19,
   "articles": [
     {
-      "id": "02f9593ff2df",
+      "id": "c5a03a6bc171",
       "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HNEtZWHcxN1ZRTjEyRzgzZ3BYdFFEMGt5VHVUdVpsR0VQZzNGVE03RGVQTnpEc0l3UTM0LURNSUpWVEpzTzFIUUV4dlo4U2c?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1fZm1yY25oeTNtVEtHZktXWmlfOUJJTlU1QXVDSGdEek9qbXpvc0NmaEVOb3NsdlVQYkIzbzk0a3I3dDBFSWc?oc=5",
       "source": "Google News (KR:ko)",
       "source_language": "ko",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HNEtZWHcxN1ZRTjEyRzgzZ3BYdFFEMGt5VHVUdVpsR0VQZzNGVE03RGVQTnpEc0l3UTM0LURNSUpWVEpzTzFIUUV4dlo4U2c?oc=5\" target=\"_blank\">전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">v.daum.net</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE1fZm1yY25oeTNtVEtHZktXWmlfOUJJTlU1QXVDSGdEek9qbXpvc0NmaEVOb3NsdlVQYkIzbzk0a3I3dDBFSWc?oc=5\" target=\"_blank\">전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">v.daum.net</font>",
       "published": "2026-04-29",
       "tier_weight": 1,
       "priority_boost": 0,
@@ -40,16 +40,19 @@
       "score": 29
     },
     {
-      "id": "b6d31922",
-      "title": "Column: Sulfur squeeze piles more pressure on Indonesian nickel sector",
-      "url": "https://www.mining.com/web/sulfur-squeeze-piles-more-pressure-on-indonesian-nickel-sector/",
-      "source": "Mining.com - Critical Minerals (category)",
-      "source_language": "en",
+      "id": "889e26b85658",
+      "title": "Pemerintah Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Industri Nikel - Suara.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzVJNGlfZlJaSGV6TDdnWmVGQWoyVmNsa3VmU0VhWHJYVDRrRldnN0REakxXZFFycHctQXg1TE1QSk9OWDlWZERXRGx1THBZWW5PekZ6NUp2c2JEUnd3NTI3T3JXUFlSRjBNaVFFNXpCNUdDZ1piTlJhQ2UxNFlRWWtvd09rTGJXbDhyM0FyaENoaGx1a21VSXlvLVA0VUhva1lqNVB3WUJ0S2NJN29VYkxwNVktbnlDb3JzbmYyMkNueDDSAcMBQVVfeXFMTjlvcDhiYnhicExGWUE4Q0hVNkZSb2tES3ZOcEVhZzVWcHRCaEFyZ3ZPREpwUkFmbkprOUJLVXNwOVpMY28wWmJQSTZTc1lkMEo4a0N0MF9iRS1BeWdqbWFGQW1iMkUyMm5kbE9LZWtGR0NvcmR3bE84T2MxdUFPdF8tOXRWZU9QTU1ERUV0b05yaFJOR01uOFdJSmNoRVNvRmpHOFNuOU9keFNpTF9kenVseURCOV82elFMWGJrMUtFMW5v?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzVJNGlfZlJaSGV6TDdnWmVGQWoyVmNsa3VmU0VhWHJYVDRrRldnN0REakxXZFFycHctQXg1TE1QSk9OWDlWZERXRGx1THBZWW5PekZ6NUp2c2JEUnd3NTI3T3JXUFlSRjBNaVFFNXpCNUdDZ1piTlJhQ2UxNFlRWWtvd09rTGJXbDhyM0FyaENoaGx1a21VSXlvLVA0VUhva1lqNVB3WUJ0S2NJN29VYkxwNVktbnlDb3JzbmYyMkNueDDSAcMBQVVfeXFMTjlvcDhiYnhicExGWUE4Q0hVNkZSb2tES3ZOcEVhZzVWcHRCaEFyZ3ZPREpwUkFmbkprOUJLVXNwOVpMY28wWmJQSTZTc1lkMEo4a0N0MF9iRS1BeWdqbWFGQW1iMkUyMm5kbE9LZWtGR0NvcmR3bE84T2MxdUFPdF8tOXRWZU9QTU1ERUV0b05yaFJOR01uOFdJSmNoRVNvRmpHOFNuOU9keFNpTF9kenVseURCOV82elFMWGJrMUtFMW5v?oc=5\" target=\"_blank\">Pemerintah Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Industri Nikel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Suara.com</font>",
+      "published": "2026-05-08",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
-      "tier_weight": 5,
-      "summary_raw": "The world's largest nickel producer is heavily dependent on the Gulf for what is a core input for a significant part of its nickel ​processing capacity.",
-      "published": "Fri, 15 May 2026 13:56:58 +0000",
-      "score": 10
+      "score": 12
     },
     {
       "id": "66f86a7d",
@@ -74,18 +77,6 @@
       "summary_raw": "Uzbekistan held talks with Japan’s ITOCHU and JOGMEC on expanding cooperation in geological exploration, mining development, and investment in mineral resources.",
       "published": "Sat, 16 May 2026 13:57:00 +0500",
       "score": 10
-    },
-    {
-      "id": "1bb42dc6",
-      "title": "Japan’s Sojitz eyes Southeast Asia for new rare earths supply",
-      "url": "https://www.mining.com/web/japans-sojitz-eyes-southeast-asia-for-new-rare-earths-supply/",
-      "source": "Mining.com - Critical Minerals (category)",
-      "source_language": "en",
-      "country": "Vietnam",
-      "tier_weight": 5,
-      "summary_raw": "“Areas connected to southern China such as Laos, Cambodia and Vietnam will be potential regions that the company will look into,” its CFO says.",
-      "published": "Tue, 12 May 2026 22:06:21 +0000",
-      "score": 9
     },
     {
       "id": "0a6157fae894",
@@ -208,21 +199,6 @@
       "score": 9
     },
     {
-      "id": "1ce30bcf8b70",
-      "title": "Indonesia-Filipina jalin kerja sama perkuat rantai pasok mineral kritis - ANTARA News Manado",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaTN1SV9ZWXh4bXdTWGFfQURrRkJtazV1SzdXTjB0c21Pd2hxSzl5MWVraWFIWVRlQl9LX1Brb0UtdUJVZl9oSGZjLWNBaFdNLUpib1ozRXV2Z3d6MkM2M2p0QTFybW1iWFFZbTVTNlBiYnhld3JGT19vVzVjYnl1R2FLMzdzaF9aVUR5SHY4czg3alZ4aXI5Y3VmZVRRTkZYbkJoVWVMUkNHcDhCRDljSno3N1FRZw?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNaTN1SV9ZWXh4bXdTWGFfQURrRkJtazV1SzdXTjB0c21Pd2hxSzl5MWVraWFIWVRlQl9LX1Brb0UtdUJVZl9oSGZjLWNBaFdNLUpib1ozRXV2Z3d6MkM2M2p0QTFybW1iWFFZbTVTNlBiYnhld3JGT19vVzVjYnl1R2FLMzdzaF9aVUR5SHY4czg3alZ4aXI5Y3VmZVRRTkZYbkJoVWVMUkNHcDhCRDljSno3N1FRZw?oc=5\" target=\"_blank\">Indonesia-Filipina jalin kerja sama perkuat rantai pasok mineral kritis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ANTARA News Manado</font>",
-      "published": "2026-05-08",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 9
-    },
-    {
       "id": "0f934580",
       "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
       "url": "https://www.mongolianminingjournal.com/a/75056",
@@ -293,21 +269,6 @@
       "source_language": "id",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5\" target=\"_blank\">Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
       "published": "2026-05-12",
-      "tier_weight": 1,
-      "priority_boost": 0,
-      "source_type": "google_news",
-      "search_query": "Indonesia hilirisasi nikel",
-      "country": "Indonesia",
-      "score": 8
-    },
-    {
-      "id": "664560ce316a",
-      "title": "Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis - Pojok Papua",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5",
-      "source": "Google News (ID:id)",
-      "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPaUFIVmZmVkZyaHN2UHpyZk1YTV9PWi1HdWhNdFg3dWxVaUMweGpLc1NSNjVqUU1VRnFTOUlPNXNYWV9PQmstNjd0c2JoZ1JaaGdxOWhMOW5CbW1uYmRhOWQ4VURuZE92SGxRSDAtSUp5M0ZTb3BuQkxNTDRubGdkZGlQUE5qbXp1UEliWVI5YllEUWxJZ0ZJSmpKa2lEenE3?oc=5\" target=\"_blank\">Indonesia dan Filipina Perkuat Hilirisasi Nikel Melalui Kerja Sama Bisnis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pojok Papua</font>",
-      "published": "2026-05-11",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
