@@ -1,8 +1,216 @@
 {
   "week_of": "2026-05-17",
-  "generated_at": "2026-05-17T00:08:50.675845+00:00",
-  "total_cards": 5,
+  "generated_at": "2026-05-17T01:00:31.802540+00:00",
+  "total_cards": 21,
   "articles": [
+    {
+      "id": "02f9593ff2df",
+      "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HNEtZWHcxN1ZRTjEyRzgzZ3BYdFFEMGt5VHVUdVpsR0VQZzNGVE03RGVQTnpEc0l3UTM0LURNSUpWVEpzTzFIUUV4dlo4U2c?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "country": "Vietnam",
+      "tier_weight": 1,
+      "score": 29,
+      "published": "2026-04-29",
+      "korean_summary": [
+        "전윤종 KIAT 원장이 2027년 베트남에 광물 기술협력센터 설립 계획을 발표함.",
+        "센터는 한-베트남 핵심광물 기술이전 및 인력양성 거점으로 기능할 예정임.",
+        "베트남의 광물 산업 고도화와 한국의 자원 안보 전략 강화를 동시에 추진하는 ODA 협력 모델임."
+      ],
+      "oda_relevance": "KIAT 주관의 핵심광물 ODA 사업으로서 베트남 내 기술협력센터 설립은 한국의 자원외교 거점 구축과 동시에 베트남의 광물 부가가치 창출을 지원하는 전략적 협력임. KIGAM 기술파트너십과 연계하여 탐사·선광·제련 기술 이전 및 현지 인력 교육프로그램 운영으로 확대 가능함.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "KIAT",
+        "베트남",
+        "광물기술협력센터",
+        "인력양성",
+        "기술이전"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "광물 기술협력센터",
+          "meaning": "한국의 광물 관련 기술과 노하우를 협력국에 이전·교육하는 거점 기구"
+        },
+        {
+          "phrase": "내년",
+          "meaning": "기사 발행년도(2026년) 기준 2027년"
+        },
+        {
+          "phrase": "KIAT 원장",
+          "meaning": "한국산업기술진흥원 원장으로서 핵심광물 ODA 실무 주관 기관의 최고 경영진"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:58:57.134119+00:00"
+    },
+    {
+      "id": "52257040c9f7",
+      "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4ZXpqSkFTaUhTWDhBNm1SdGw3UUNoVlROX3BSWnJXT1FVVDBYYm5PbzdxUThrQWJhLWJKdnY4a0hyYVBpQWZsa1lmU2k4Sm9BLWFQRw?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "country": "Vietnam",
+      "tier_weight": 1,
+      "score": 29,
+      "published": "2026-04-29",
+      "korean_summary": [
+        "전윤종 KIAT 원장이 내년 베트남에 광물 기술협력센터 설립을 발표했음.",
+        "KIAT는 베트남의 광물자원 개발과 기술이전을 위한 실질적 협력거점 구축을 추진 중임.",
+        "한국의 핵심광물 ODA 전략에서 베트남을 주요 협력국으로 강화하는 신호로 해석됨."
+      ],
+      "oda_relevance": "KIAT의 핵심광물 ODA 실무 주관 역할의 구체적 실현으로, 베트남 기술협력센터는 한국-베트남 자원개발협력 및 광물 기술이전 플랫폼으로 기능할 것으로 예상. KIGAM과의 합동 기술협력 거점으로도 운영 가능성 높음.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "베트남",
+        "기술협력센터",
+        "KIAT",
+        "광물",
+        "자원개발"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "광물 기술협력센터",
+          "meaning": "한국이 협력국에 구축하는 광물 탐사·평가·개발 기술이전 및 인력양성 거점"
+        },
+        {
+          "phrase": "내년 설립",
+          "meaning": "2026년 또는 2027년(발표 시점 기준) 구축 예정"
+        },
+        {
+          "phrase": "KIAT 원장",
+          "meaning": "한국산업기술진흥원 지휘자로서 핵심광물 ODA 사업 실무 주관 책임자"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:01.382157+00:00"
+    },
+    {
+      "id": "889e26b85658",
+      "title": "Pemerintah Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Industri Nikel - Suara.com",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzVJNGlfZlJaSGV6TDdnWmVGQWoyVmNsa3VmU0VhWHJYVDRrRldnN0REakxXZFFycHctQXg1TE1QSk9OWDlWZERXRGx1THBZWW5PekZ6NUp2c2JEUnd3NTI3T3JXUFlSRjBNaVFFNXpCNUdDZ1piTlJhQ2UxNFlRWWtvd09rTGJXbDhyM0FyaENoaGx1a21VSXlvLVA0VUhva1lqNVB3WUJ0S2NJN29VYkxwNVktbnlDb3JzbmYyMkNueDDSAcMBQVVfeXFMTjlvcDhiYnhicExGWUE4Q0hVNkZSb2tES3ZOcEVhZzVWcHRCaEFyZ3ZPREpwUkFmbkprOUJLVXNwOVpMY28wWmJQSTZTc1lkMEo4a0N0MF9iRS1BeWdqbWFGQW1iMkUyMm5kbE9LZWtGR0NvcmR3bE84T2MxdUFPdF8tOXRWZU9QTU1ERUV0b05yaFJOR01uOFdJSmNoRVNvRmpHOFNuOU9keFNpTF9kenVseURCOV82elFMWGJrMUtFMW5v?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 12,
+      "published": "2026-05-08",
+      "korean_summary": [
+        "인도네시아와 필리핀 정부가 니켈 산업 하류 공정 협력을 위한 양해각서를 체결함.",
+        "양국은 니켈 제련·배터리·전기차 부품 등 부가가치 산업 협력 확대를 합의함.",
+        "동남아 주요 니켈 생산국 간 공급망 통합으로 한국의 원재료 확보 경쟁 심화 전망됨."
+      ],
+      "oda_relevance": "인도네시아의 광물 부가가치 정책 강화 추세를 반영. 한국의 KIAT 주도 핵심광물 ODA 사업(인도네시아 니켈 제련·배터리 기술협력)을 대(對)필리핀 확대와 연동할 필요성 증대. 양국의 하류산업 통합 시 한국 기업의 접근성 제약 가능성도 대비 필요.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "인도네시아",
+        "필리핀",
+        "하류산업(하이드로메탈루르지·배터리)",
+        "ESDM"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Industri Nikel",
+          "meaning": "니켈 산업의 하류 공정(정제·제련·2차 가공) 국내화"
+        },
+        {
+          "phrase": "Kerja Sama",
+          "meaning": "양국 간 협력·양해각서"
+        },
+        {
+          "phrase": "Industri Baterai dan Kendaraan Listrik",
+          "meaning": "배터리 및 전기차 산업 육성"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:07.459954+00:00"
+    },
+    {
+      "id": "b6d31922",
+      "title": "Column: Sulfur squeeze piles more pressure on Indonesian nickel sector",
+      "url": "https://www.mining.com/web/sulfur-squeeze-piles-more-pressure-on-indonesian-nickel-sector/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "score": 10,
+      "published": "Fri, 15 May 2026 13:56:58 +0000",
+      "korean_summary": [
+        "인도네시아의 니켈 제련 산업이 걸프만 황(硫黃) 공급에 심각하게 의존하고 있는 상황이 드러남.",
+        "세계 최대 니켈 생산국의 제련 용량 상당 부분이 황 수입에 의존하고 있으며, 공급 차질 시 생산 차질 우려됨.",
+        "인도네시아 니켈 산업의 공급망 안정성 강화와 원료 다각화 필요성이 대두됨."
+      ],
+      "oda_relevance": "인도네시아의 핵심광물 제련 기술과 원료 공급망 다각화는 KIAT의 자원개발협력 사업 범위에 해당하며, 한국 기업의 인도네시아 내 니켈 투자 리스크 평가 및 기술협력 전략 수립에 정책적 참고 자료로 활용 가능함.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "황(황산)",
+        "인도네시아",
+        "ESDM",
+        "제련"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "world's largest nickel producer",
+          "meaning": "세계 최대 니켈 생산국(인도네시아)"
+        },
+        {
+          "phrase": "heavily dependent on the Gulf",
+          "meaning": "걸프만(중동)에 대한 심각한 의존"
+        },
+        {
+          "phrase": "core input for nickel processing",
+          "meaning": "니켈 제련의 핵심 투입물(황)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:11.792231+00:00"
+    },
+    {
+      "id": "66f86a7d",
+      "title": "Kazakhstan to Issue Limited-Edition Coin Celebrating Golden Horde Legacy",
+      "url": "https://astanatimes.com/2026/05/kazakhstan-to-issue-limited-edition-coin-celebrating-golden-horde-legacy/",
+      "source": "The Astana Times (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "score": 10,
+      "published": "Fri, 15 May 2026 12:34:25 +0000",
+      "korean_summary": [
+        "카자흐스탄 국립은행이 골든 호드의 역사적 유산을 기념하는 제한판 수집용 주화를 발행함.",
+        "2,000텡게(약 4.25달러) 규모의 'ALTYN ORDA' 주화로, NBK의 '주요 사건과 인물' 시리즈의 일부임.",
+        "13~15세기 유라시아 최대 규모 국가 중 하나였던 골든 호드의 문화유산을 국가 차원에서 기념하는 상징적 조치임."
+      ],
+      "oda_relevance": "카자흐스탄의 역사·문화 정체성 강화 정책으로, 국가 브랜딩 및 내부 결집 차원이나 광물자원 외교와는 직접 연계성이 없음. 한국의 핵심광물 ODA 협력국 관계에서 정책 우선순위 이슈는 아님.",
+      "category": "policy_regulation",
+      "category_ko": "정책·법규",
+      "tags": [
+        "카자흐스탄",
+        "문화정책",
+        "국립은행"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Golden Horde legacy",
+          "meaning": "골든 호드 유산"
+        },
+        {
+          "phrase": "Limited-edition coin",
+          "meaning": "제한판 수집용 주화"
+        },
+        {
+          "phrase": "Outstanding Events and People series",
+          "meaning": "주요 사건과 인물 시리즈"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:15.960427+00:00"
+    },
     {
       "id": "82d971cd",
       "title": "Uzbekistan Discusses Geological Exploration Cooperation with ITOCHU and JOGMEC",
@@ -14,19 +222,19 @@
       "score": 10,
       "published": "Sat, 16 May 2026 13:57:00 +0500",
       "korean_summary": [
-        "우즈베키스탄, 일본의 이토추(ITOCHU)·일본석유가스·금속자원기구(JOGMEC)와 지질탐사 협력 확대 논의함.",
-        "양측은 지질탐사, 광산개발, 광물자원 투자 분야의 협력 확대를 중심으로 협의함.",
-        "일본의 자원개발 기술과 자본이 우즈베키스탄의 광물자원 개발에 투입될 가능성 제시됨."
+        "우즈베키스탄이 일본 이토추(ITOCHU)·일본석유가스금속광물자원기구(JOGMEC)와 지질탐사 협력 확대를 논의함",
+        "양국은 광물자원 개발·투자·탐사 분야 협력 범위를 넓히기로 합의한 것으로 보임",
+        "한국의 우즈베키스탄 자원협력 경쟁 심화 속 일본의 적극적 광물외교 전개 시사"
       ],
-      "oda_relevance": "한국의 핵심광물 ODA는 우즈베키스탄의 광물자원 개발협력에서 일본과 경쟁 구도에 직면. KIAT의 우즈베키스탄 자원개발협력사업이 일본 JOGMEC 수준의 실질적 기술이전·투자 연계방식으로 고도화 필요.",
+      "oda_relevance": "우즈베키스탄은 한국 핵심광물 ODA 협력국인데, 일본이 JOGMEC 같은 공적자금 기반 지질탐사·광물개발 협력을 강화 중임. KIAT·KIGAM은 우즈베키스탄과의 기술협력 및 탐사사업 연계 강화로 선제적 협력을 모색할 필요 있음.",
       "category": "oda_cooperation",
       "category_ko": "ODA 협력",
       "tags": [
         "우즈베키스탄",
-        "일본 경쟁",
         "지질탐사",
-        "광물자원개발",
-        "JOGMEC"
+        "광물자원",
+        "JOGMEC",
+        "일본 자원외교"
       ],
       "key_phrases": [
         {
@@ -35,15 +243,397 @@
         },
         {
           "phrase": "mining development and investment",
-          "meaning": "광산개발 및 투자"
+          "meaning": "광물개발 및 투자"
         },
         {
-          "phrase": "ITOCHU and JOGMEC",
-          "meaning": "일본의 이토추 무역회사 및 일본석유가스·금속자원기구"
+          "phrase": "mineral resources",
+          "meaning": "광물자원"
         }
       ],
       "ai_processed": true,
-      "processed_at": "2026-05-17T00:08:33.003645+00:00"
+      "processed_at": "2026-05-17T00:59:20.237924+00:00"
+    },
+    {
+      "id": "1bb42dc6",
+      "title": "Japan’s Sojitz eyes Southeast Asia for new rare earths supply",
+      "url": "https://www.mining.com/web/japans-sojitz-eyes-southeast-asia-for-new-rare-earths-supply/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "score": 9,
+      "published": "Tue, 12 May 2026 22:06:21 +0000",
+      "korean_summary": [
+        "일본의 종합상사 소지츠가 동남아 희토류 공급처 다변화 추진함",
+        "라오스·캄보디아·베트남 등 중국 남부 인접 지역을 신규 탐사 대상으로 선정함",
+        "희토류 수급 불안정성 해소 및 대중국 의존도 감축 전략의 일환임"
+      ],
+      "oda_relevance": "베트남·라오스는 한국 핵심광물 ODA 협력국으로서 일본의 희토류 공급처 개발이 동남아 광물 협력 경쟁 심화를 의미. KIAT·KIGAM의 베트남 희토류(Núi Pháo 광산 등) 및 라오스 광물자원 ODA 협력 사업의 전략적 중요성 강조 필요.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "희토류",
+        "베트남",
+        "라오스",
+        "소지츠",
+        "광물공급망"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Southeast Asia for new rare earths supply",
+          "meaning": "동남아 희토류 신규 공급원 개발"
+        },
+        {
+          "phrase": "connected to southern China such as Laos, Cambodia and Vietnam",
+          "meaning": "중국 남부 인접 지역(라오스·캄보디아·베트남)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:24.354360+00:00"
+    },
+    {
+      "id": "0a6157fae894",
+      "title": "Indonesia Gandeng Rusia Perkuat Sektor Energi dan Hilirisasi Mineral Lewat Investasi Strategis - BeritaSatu.com",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeUpLVUhOVVFFTWRJZ1lXUDBhOXBpUUlsVE5sMnRYanpJZ0x5a1NSZjhQZ0NjU01JcmNxaGZhcHlMYldoSU1tOHpJQ1JGbmJEQUgwOEdlYUptM3Rwek1PRW51QWsxdVp4Wmo2XzIyZXdQTEhVMXNBVDczc19vbG9yNmdaVjQ3eDY2UGZCbVowdXBTSXBMM3FVRERDUHBVenJPalVKS2o3NjRaQjU0VnBSREcwZkRIUkhTVWtsRnotbzk5dlp0WHdxN0xYQUJQMjI0SkZ1QXJZUnEyUThTd1RRbHluNA?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-14",
+      "korean_summary": [
+        "인도네시아가 러시아와 협력하여 에너지 부문과 광물 하류산업(downstream) 강화를 위한 전략적 투자를 추진하고 있음.",
+        "양국은 광물 하류산업 발전과 에너지 안보 강화를 목표로 구체적 투자 협력안을 논의 중임.",
+        "인도네시아의 광물 고부가가치화 정책 추진으로 한국의 광물 공급망 구조 재편 필요성 증대."
+      ],
+      "oda_relevance": "인도네시아의 ESDM을 통한 광물 하류산업 정책 강화는 한국의 니켈·코발트·주석 등 핵심광물 수급 전략에 영향. KIAT의 인도네시아 광물가공·제련 기술협력 ODA 사업 확대 검토 필요.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "광물하류산업",
+        "에너지협력"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Mineral",
+          "meaning": "광물 하류산업화·고부가가치화"
+        },
+        {
+          "phrase": "Investasi Strategis",
+          "meaning": "전략적 투자"
+        },
+        {
+          "phrase": "Sektor Energi",
+          "meaning": "에너지 부문"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:28.547060+00:00"
+    },
+    {
+      "id": "5b3b73d32b4a",
+      "title": "Hilirisasi Nikel dan Persaingan AS–Tiongkok di Indonesia - netralnews.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZW1UMmtIQ0NjMndRN1M2X0pXTmRfMmVhVE1VM093WjNyZk9mQWFGbTdPRHpPNXVxTmhiZ0NJRFlsdVdaUEU5RmlRa0RCTnlRcUJfTTgzRkVXOG5MUWtQZFVJMkJMZUtaR3h0MjBRcWRhak91UE1CbUhoMVBMTzB3M0pLbm1iMzR4eE54NWR4UmhUSDhCYlJjZWt1dnBXUjc4d2FvVnA1djdEYXB5dlhxWC02U1cwQQ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-16",
+      "korean_summary": [
+        "인도네시아의 니켈 하류산업화(hilirisasi)가 미국과 중국의 경쟁 무대가 되고 있음.",
+        "인도네시아 정부는 니켈 채굴에서 정련·배터리 생산까지 수직계열화를 추진 중이며, 미·중이 투자·기술 지원으로 영향력 경쟁을 벌이고 있음.",
+        "한국의 배터리·전기차 업계가 인도네시아 니켈 공급망에 전략적으로 접근해야 하는 상황이 심화되고 있음."
+      ],
+      "oda_relevance": "인도네시아 ESDM과의 니켈 정련·배터리 기술협력은 KIAT 자원개발협력사업의 전략적 우선순위임. 미·중 경쟁 구도에서 한국의 기술이전·인력양성 ODA를 통해 공급망 선점이 필요함.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "니켈",
+        "하류산업화",
+        "인도네시아 ESDM",
+        "배터리 기술협력",
+        "미·중 경쟁"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel",
+          "meaning": "니켈 하류산업화 (채굴→정련→배터리 생산의 수직계열화)"
+        },
+        {
+          "phrase": "Persaingan AS–Tiongkok",
+          "meaning": "미국과 중국 간의 경쟁"
+        },
+        {
+          "phrase": "Nilai tambah",
+          "meaning": "부가가치 (인도네시아가 추구하는 가치사슬의 상위 단계)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:33.626737+00:00"
+    },
+    {
+      "id": "38ed5c541737",
+      "title": "Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS - Pojok Papua",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-16",
+      "korean_summary": [
+        "인도네시아가 니켈 하류산업화를 통해 수출액을 300억 달러까지 확대할 계획임.",
+        "ESDM부가 니켈 정련·가공 산업 고도화로 부가가치 증진 및 수출 경쟁력 강화를 추진 중임.",
+        "한국의 배터리·전기차 산업 수급망 확보 차원에서 인도네시아 니켈 공급망 다층화 기회 제공."
+      ],
+      "oda_relevance": "인도네시아 ESDM의 니켈 하류산업화 정책과 연계하여 KIAT·KIGAM이 정련·가공 기술협력 및 인력양성 ODA 사업 기획 여지 있음. 한국의 배터리 소재 자립화 전략과도 부합.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "ESDM",
+        "하류산업화",
+        "인도네시아",
+        "배터리 소재"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel",
+          "meaning": "니켈 하류산업화, 광석을 정련·가공하여 부가가치 높은 제품으로 전환"
+        },
+        {
+          "phrase": "Ekspor hingga 30 Miliar Dolar AS",
+          "meaning": "미화 300억 달러 규모의 수출 목표"
+        },
+        {
+          "phrase": "ESDM (Kementerian Energi dan Sumber Daya Mineral)",
+          "meaning": "인도네시아 에너지광물자원부"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:38.577073+00:00"
+    },
+    {
+      "id": "d1f0a19a427c",
+      "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-15",
+      "korean_summary": [
+        "인도네시아 니켈 하류산업화(정제·가공)가 수출을 10배 이상 증가시킬 수 있는 성장 전략으로 평가됨.",
+        "ESDM(에너지광물자원부)이 주도하는 니켈 밸류체인 고도화 정책으로 원광 수출에서 정제품·배터리 소재 수출로 전환 추진 중.",
+        "한국의 배터리·전기차 산업과 인도네시아 니켈 공급망 연계 강화 기회 제공."
+      ],
+      "oda_relevance": "인도네시아의 니켈 정제·배터리 소재 산업화 전략은 KIAT 핵심광물 ODA 협력 포인트. 채광-제련-가공의 기술이전 및 인력양성 협력 강화로 양국 배터리 공급망 안정화 지원 가능.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "하류산업화",
+        "ESDM",
+        "배터리 소재",
+        "Babel"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel",
+          "meaning": "니켈 하류산업화 (채광·제련·가공 전 과정의 고부가가치화)"
+        },
+        {
+          "phrase": "Dongkrak Ekspor Hingga Sepuluh Kali Lipat",
+          "meaning": "수출액을 10배 이상 증가시키다"
+        },
+        {
+          "phrase": "Kementerian ESDM",
+          "meaning": "인도네시아 에너지광물자원부 (광물행정 주관)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:43.742849+00:00"
+    },
+    {
+      "id": "5b04147ebbea",
+      "title": "Beri Materi di KKL Pemuda Katolik, Bambang Patijaya Yakin Hilirisasi Nikel dan Industri EV Jadi Peluang Besar Indonesia - negeri laskar pelangi",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMkM0enRpZkRIQ0l0TXVVWUhVNGJBcVZlS1pBOUdhY21VMVlfbjFYZThFNVJpejgzMWJ0Z2xwblJ4QmNsak52Ym5nN3A1d1pldlVaalhEb2NwWHhmQlpWSl9fR1hxQUZyR1BHTGVZYWc2LUtGTFpMU252ZzVHY2ZPTkdCMUF3SGVJS0xhV0lMTmhfR2J2c0I5T1pTeUE2QjdlTHM3RGhCcWwyUFh5WS0zUGtYWkV5QkNqeDdjRlZnVEh0cnRGbmhMbHRSVGF2dGhaUWl3QkpxZDY3QURtd3lpS2xBcXNybTlnS2dwUVR1SU9PSS1r?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-15",
+      "korean_summary": [
+        "인도네시아 정부 관계자가 가톨릭청년회 강연에서 니켈 하류산업화와 EV 산업을 인도네시아의 큰 기회로 제시함",
+        "Bambang Patijaya가 강연자로 참석해 니켈 기반 산업 고도화 및 전기차 산업 진출의 경제적 가치를 강조함",
+        "인도네시아의 니켈 자원을 활용한 배터리·EV 산업 육성 정책이 지속적으로 추진되고 있음을 시사함"
+      ],
+      "oda_relevance": "인도네시아의 니켈 하류산업화(배터리·EV) 전략 강화로 한국의 배터리 소재·기술협력 수요 증가 예상. KIAT의 ESDM과 협력 기술협력 사업(니켈 정련·배터리 소재 기술이전) 발굴 가치 있음.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "전기차·배터리",
+        "ESDM",
+        "하류산업화",
+        "인도네시아"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel",
+          "meaning": "니켈 하류산업화 (광석→정련·제품 고부가가치화)"
+        },
+        {
+          "phrase": "Industri EV",
+          "meaning": "전기차(Electric Vehicle) 산업"
+        },
+        {
+          "phrase": "Bambang Patijaya",
+          "meaning": "인도네시아 정부 관계자 (강연자)"
+        },
+        {
+          "phrase": "KKL Pemuda Katolik",
+          "meaning": "가톨릭청년회 강좌/강연"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:49.516637+00:00"
+    },
+    {
+      "id": "848016659e4f",
+      "title": "Presdir PT Dahana: Hilirisasi Mineral Perlu Ekosistem Industri yang Kuat - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFhXTXZIRE03SnE0dGNmVWdxVUdfejNRZmo3VDBfLXpHb0JRTWtNM1cwSWNkQlBrWG83c3NKYm8zVnBtMENIMEhsa3dhSVJJRWZGSEttWVNPZVhTWHZFMTl4N2NhdXc0QzRhZWhDYVBEZFhvVUhyQ1BmUzhhVHBHMnA4dHZUNTN1TWFNMkhxQnN4SFl5MUhuTUswMHYyQWwxeHlsNU5R?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-15",
+      "korean_summary": [
+        "인도네시아 국영 화약·광물 공사 PT Dahana의 사장이 광물의 고부가가치화(hilirisasi)에는 강력한 산업 생태계가 필수적임을 강조했음",
+        "PT Dahana 사장은 단순 원광 수출 단계를 넘어 정련·가공·제조 산업의 통합 지원체계 구축의 중요성을 언급",
+        "인도네시아가 니켈·구리·주석 등 풍부한 광물자원을 기반으로 고부가가치 산업 생태계 조성을 추진 중임을 시사"
+      ],
+      "oda_relevance": "인도네시아의 광물 고부가가치화 정책 추진 배경을 이해할 수 있는 정책 신호로, MOTIE·KIAT의 인도네시아 자원 협력 전략 수립 시 산업 생태계 통합 지원 방식의 벤치마킹 가치 있음. 한국의 정련·가공 기술과 산업 클러스터 모델을 제시하는 기술협력 ODA 기획 기회 제공",
+      "category": "policy_regulation",
+      "category_ko": "정책·법규",
+      "tags": [
+        "니켈",
+        "광물 고부가가치화",
+        "산업 생태계",
+        "PT Dahana",
+        "인도네시아"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi mineral",
+          "meaning": "광물의 고부가가치화·정련·가공 산업화"
+        },
+        {
+          "phrase": "Ekosistem industri yang kuat",
+          "meaning": "강력한 산업 생태계"
+        },
+        {
+          "phrase": "Presdir PT Dahana",
+          "meaning": "PT Dahana (인도네시아 국영 화약·광물 공사) 사장"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:59:55.432980+00:00"
+    },
+    {
+      "id": "ef2d8bd2ba1b",
+      "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-13",
+      "korean_summary": [
+        "인도네시아 황(황산)가격 급등이 니켈 제련·정련 프로젝트 비용을 가중시키고 있음",
+        "황 수입가격 상승으로 제련업체들의 원가 부담 증가, 정부 지원 필요성 대두",
+        "니켈 밸류체인 고도화 전략 추진 중인 인도네시아 정부의 정책 효과성 재검토 시점"
+      ],
+      "oda_relevance": "인도네시아 니켈 제련산업의 원료비 압박 심화는 기술협력 및 공급망 안정화의 중요성을 부각. KIGAM-ESDM 간 제련효율·부산물 회수 기술협력, KIAT의 자원산업 경쟁력 강화 ODA 사업 수요 증가를 시사함.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "황산",
+        "제련",
+        "ESDM",
+        "Sulawesi"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Lonjakan Harga Sulfur",
+          "meaning": "황 가격 급등"
+        },
+        {
+          "phrase": "Proyek Hilirisasi Nikel",
+          "meaning": "니켈 밸류체인 고도화 사업"
+        },
+        {
+          "phrase": "Industri Smelter",
+          "meaning": "제련업계"
+        },
+        {
+          "phrase": "Stimulus",
+          "meaning": "정부 지원·정책 지원"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T01:00:00.043235+00:00"
+    },
+    {
+      "id": "dde744c22d75",
+      "title": "Hilirisasi Nikel Dorong Pertumbuhan Ekonomi Indonesia Jangka Panjang - haloindonesia.co.id",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rUzZ6SkM1Q1NHelhjeWl5cUJVWk1mNVNZUWRfUmN3c0VLSmRERHNKcWZjb0NKVElXUVRMSVhmNG5WNzlLUHF1ZVMtTzVUWWNuMzQ4NWhGTmxTNkxhd0R3dm9MM3BjSHQ1cWhRb2p2ZzctZG5hTHpCSVBQTQ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-05-14",
+      "korean_summary": [
+        "인도네시아가 니켈 하류산업화(제련·배터리 제조)를 통한 장기 경제성장 전략을 추진 중임",
+        "니켈 광석 수출 제한 정책으로 국내 제련 및 배터리 산업 고부가가치화 추구",
+        "인도네시아의 광물 부가가치 확대 전략은 한국의 핵심광물 공급망 구조 재편에 영향을 미칠 전망"
+      ],
+      "oda_relevance": "인도네시아 ESDM과의 니켈 하류산업 기술협력(배터리재료·제련공정 기술이전)은 KIAT 핵심광물 ODA 사업 영역이며, KIGAM과의 합동 기술협력 모델 개발 기회를 제공함.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "ESDM",
+        "배터리",
+        "하류산업",
+        "인도네시아"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel",
+          "meaning": "니켈 하류산업화(광석→제련→완제품의 가치사슬 확대)"
+        },
+        {
+          "phrase": "Pertumbuhan Ekonomi Jangka Panjang",
+          "meaning": "장기 경제성장"
+        },
+        {
+          "phrase": "Mineral Jangka Panjang",
+          "meaning": "광물 자원의 장기 수익화 전략"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T01:00:04.657689+00:00"
     },
     {
       "id": "0f934580",
@@ -56,36 +646,36 @@
       "score": 8,
       "published": null,
       "korean_summary": [
-        "몽골의 오유톨고이 광산이 독일-몽골 자원기술연구소(GMIRT)에 전자주사현미경(SEM)을 기증함",
-        "기증된 첨단 분석 장비는 광물 미세구조 분석 및 자원기술 연구 강화에 활용될 예정임",
-        "몽골 광물 연구역량 고도화 및 국제 학술협력 강화 움직임으로 평가됨"
+        "오유톨고이가 독일-몽골 자원기술연구소에 주사전자현미경(SEM) 기증함",
+        "오유톨고이 광산 운영사 Rio Tinto가 GMIT에 고급 분석 장비 기부로 광물 연구 역량 강화 지원",
+        "독일과의 기술 협력 증진으로 몽골 광업 부문 산업기술 기반 고도화 추진"
       ],
-      "oda_relevance": "몽골 광물 연구기관의 분석역량 강화 동향으로, KIGAM의 GMIRT·MRPAM과의 기술협력 ODA 사업 발굴 및 자원인력양성 프로그램 협의 기회를 제공함",
-      "category": "research_academic",
-      "category_ko": "연구·학술",
+      "oda_relevance": "몽골 자원기술 인프라 확충과 MRPAM·광업연구기관 역량 강화의 사례. 한국의 KIGAM-GMIT 유사 양자 기술협력 ODA 모델 학습 및 KIAT 자원개발협력 사업의 장비 지원·기술이전 전략 수립에 참고 가치 있음.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
       "tags": [
-        "몽골",
         "오유톨고이",
-        "GMIRT",
-        "전자주사현미경",
-        "자원기술"
+        "몽골",
+        "광물분석",
+        "기술협력",
+        "GMIT"
       ],
       "key_phrases": [
         {
           "phrase": "Scanning Electron Microscope (SEM)",
-          "meaning": "전자주사현미경, 광물·합금의 미세구조와 성분 분석에 사용되는 첨단 분석 장비"
+          "meaning": "주사전자현미경(미량 원소 분석·광물 특성 파악 핵심 장비)"
         },
         {
-          "phrase": "German-Mongolian Institute for Resources and Technology (GMIRT)",
-          "meaning": "독일-몽골 자원기술연구소, 광물학·지질공학 연구 협력기관"
+          "phrase": "German-Mongolian Institute for Resources and Technology",
+          "meaning": "독일-몽골 자원기술연구소"
         },
         {
-          "phrase": "Oyu Tolgoi",
-          "meaning": "몽골의 주요 구리·금 광산, Rio Tinto 운영"
+          "phrase": "Rio Tinto",
+          "meaning": "오유톨고이 광산 운영사(글로벌 다국적 광업기업)"
         }
       ],
       "ai_processed": true,
-      "processed_at": "2026-05-17T00:08:37.644425+00:00"
+      "processed_at": "2026-05-17T01:00:09.507226+00:00"
     },
     {
       "id": "1497ec5b",
@@ -98,36 +688,36 @@
       "score": 8,
       "published": null,
       "korean_summary": [
-        "독일-몽골 3+3 광업 프로그램이 새로운 세대의 광업 엔지니어 배출에 성공함",
-        "카르스텐 드레벤슈테트(Carsten Drebenstedt) 주도 협력으로 몽골 광업 인력 개발 가속화됨",
-        "한국의 핵심광물 ODA 사업과 유사 인력 개발 모델 벤치마킹 기회 제시함"
+        "독일-몽골 3+3 광산 프로그램이 광업 인력 양성에 성과를 내고 있음",
+        "카르스텐 드레벤슈테트 교수 주도로 독일 프라이베르크 광산대와 몽골 협력 인력 육성 진행 중",
+        "한국의 몽골 광물 정책과 인력 육성 협력 기반 확보 기회로 평가됨"
       ],
-      "oda_relevance": "몽골의 광업 인력 개발에 대한 국제 협력 사례로, 한국의 KIAT·KIGAM이 추진 중인 몽골 핵심광물 기술협력 ODA 사업에서 인력양성 프로그램 강화의 참고 모델이 될 수 있음.",
+      "oda_relevance": "독일의 광산 인력 양성 모델(3+3 프로그램)은 한국이 KIAT·KIGAM을 통해 몽골과 추진 중인 핵심광물 기술협력 ODA의 교육훈련 컴포넌트 설계에 벤치마킹 가치 있음. 몽골 MRPAM·광산청과의 공동 인력 양성 사업 확대 기반으로 활용 가능.",
       "category": "research_academic",
       "category_ko": "연구·학술",
       "tags": [
         "몽골",
-        "인력양성",
-        "광업교육",
-        "독일협력",
-        "MRPAM"
+        "광산 인력 양성",
+        "기술협력",
+        "MRPAM",
+        "프라이베르크 광산대"
       ],
       "key_phrases": [
         {
-          "phrase": "German-Mongolian 3+3 Mining Program",
-          "meaning": "3개월 한국/몽골, 3개월 상대국 학습·실습을 통한 광업 엔지니어 양성 프로그램"
+          "phrase": "3+3 mining program",
+          "meaning": "3년+3년 구성의 광산 교육협력 프로그램"
         },
         {
-          "phrase": "Carsten Drebenstedt",
-          "meaning": "독일 광업 전문가, 몽골-독일 광업협력 주도자"
+          "phrase": "German-Mongolian",
+          "meaning": "독일-몽골 양국 협력"
         },
         {
-          "phrase": "New Generation of Engineers",
-          "meaning": "국제적 광업 기술과 현지 맥락을 모두 습득한 다음 세대 광업 기술자"
+          "phrase": "new generation of engineers",
+          "meaning": "새로운 세대의 광산 엔지니어 양성"
         }
       ],
       "ai_processed": true,
-      "processed_at": "2026-05-17T00:08:42.166515+00:00"
+      "processed_at": "2026-05-17T01:00:13.923990+00:00"
     },
     {
       "id": "da3f9efb",
@@ -140,32 +730,36 @@
       "score": 8,
       "published": null,
       "korean_summary": [
-        "몽골 광업 분야의 주요 국제 전시회인 '몽골 마이닝 2026'의 첫째 날 행사가 성공적으로 마무리되었음.",
-        "행사 개최 일시는 2026년 4월 16일이며, 광업 관련 기업·정책 담당자·기술 전문가들이 참석했음.",
-        "몽골의 광물 개발 협력 확대 및 국제 자원 네트워크 강화의 기회로 평가되고 있음."
+        "몽골 광업 업계의 최대 규모 국제회의인 '몽골 마이닝 2026'이 성공적으로 개최되었음.",
+        "4월 16일 첫째 날 주요 광업·광물 정책 담당자, 채굴 기업, 국제 투자자 등이 참석하여 협력 방안을 논의했음.",
+        "한국의 핵심광물 수급 협력국으로서 몽골의 광업 현안과 기술이전 기회에 대한 실시간 정보 수집 창구 역할을 할 수 있음."
       ],
-      "oda_relevance": "몽골 광업 분야의 국제 플랫폼 확대로 한국의 KIAT·KIGAM 등 핵심광물 ODA 사업 협력 대상국(몽골)과의 네트워킹 및 기술협력 체계 고도화의 적기를 제시함.",
+      "oda_relevance": "몽골 마이닝 2026 컨퍼런스는 KIAT·KIGAM이 몽골 MRPAM·광산중공업부와의 핵심광물 ODA 협력 현황을 점검하고 향후 자원개발·기술이전 사업 수요를 파악하는 중요한 외교 채널이 될 수 있음.",
       "category": "oda_cooperation",
       "category_ko": "ODA 협력",
       "tags": [
         "몽골",
-        "광업 정책",
-        "국제 협력",
         "MRPAM",
-        "자원 개발"
+        "국제회의",
+        "광업정책",
+        "투자협력"
       ],
       "key_phrases": [
         {
           "phrase": "Mongolia Mining 2026",
-          "meaning": "몽골 광업 국제 전시회·컨퍼런스"
+          "meaning": "몽골 광업 국제 컨퍼런스"
         },
         {
-          "phrase": "First day concluded successfully",
-          "meaning": "첫째 날 행사가 성공적으로 마무리됨"
+          "phrase": "First Day",
+          "meaning": "첫째 날"
+        },
+        {
+          "phrase": "mining industry stakeholders",
+          "meaning": "광업계 관계자"
         }
       ],
       "ai_processed": true,
-      "processed_at": "2026-05-17T00:08:45.925211+00:00"
+      "processed_at": "2026-05-17T01:00:18.089448+00:00"
     },
     {
       "id": "e7f006a2",
@@ -178,19 +772,19 @@
       "score": 8,
       "published": "Tue, 5 May 2026 17:12:00 GMT",
       "korean_summary": [
-        "우즈베키스탄 대통령이 ADB 이사회 회의에서 AI, 신재생에너지, 물류, 핵심광물 협력 확대를 제안함.",
-        "중앙아시아의 AI, 녹색에너지, 물류 디지털화, 핵심광물, 기후, 관광 분야 프로젝트 확대를 주장하며 글로벌 분쟁으로 인한 운송비 상승(최대 30%) 언급함.",
-        "우즈베키스탄의 핵심광물 개발 및 수출 정책이 국제금융기구 차원에서 우선순위로 인식되고 있으며, 한국의 광물 수급 다변화 협력 기회 창출함."
+        "우즈베키스탄 대통령이 ADB 이사회에서 AI·녹색에너지·핵심광물 협력 확대를 제안함",
+        "ADB와의 중앙아시아 지역 협력을 물류·기후·관광 프로젝트까지 포괄적으로 확대하는 내용임",
+        "글로벌 분쟁으로 운송비 30% 상승 속에서 자원 공급망 안정화 협력 추진 의지 표현"
       ],
-      "oda_relevance": "우즈베키스탄 정부가 ADB를 통한 핵심광물 분야 국제협력 강화를 공식 제안한 만큼, KIAT와 KIGAM의 우즈베키스탄 자원개발·기술협력 ODA 사업 추진 시기가 성숙했음. 한국의 핵심광물 수급망 다원화 전략과 결합한 양자협력 강화 검토 가치 높음.",
+      "oda_relevance": "우즈베키스탄이 ADB를 통한 핵심광물 협력 의지를 공식화함에 따라, KIAT의 우즈베키스탄 광물지질부·Almalyk MMC·Navoi MMC 등과의 ODA 연계 기술협력 사업 추진 기회가 확대될 전망임. 특히 녹색에너지와 핵심광물 병행 전략에서 KIGAM의 지질탐사·기술이전 역할 강화가 필요함.",
       "category": "oda_cooperation",
       "category_ko": "ODA 협력",
       "tags": [
-        "핵심광물",
         "우즈베키스탄",
+        "핵심광물",
         "ADB",
-        "에너지",
-        "물류"
+        "녹색에너지",
+        "MRPAM"
       ],
       "key_phrases": [
         {
@@ -198,20 +792,100 @@
           "meaning": "핵심광물"
         },
         {
-          "phrase": "ADB Board of Governors",
-          "meaning": "아시아개발은행 이사회"
+          "phrase": "ADB Board of Governors meeting",
+          "meaning": "아시아개발은행 이사회 회의"
         },
         {
-          "phrase": "green energy",
-          "meaning": "신재생에너지"
-        },
-        {
-          "phrase": "logistics digitalization",
-          "meaning": "물류 디지털화"
+          "phrase": "Central Asia",
+          "meaning": "중앙아시아"
         }
       ],
       "ai_processed": true,
-      "processed_at": "2026-05-17T00:08:50.675798+00:00"
+      "processed_at": "2026-05-17T01:00:22.751250+00:00"
+    },
+    {
+      "id": "8f81b9a8e0a5",
+      "title": "Resmi! Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Nikel - Wajah Batam News",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONjBBNXI3YzA1a2lBcEppc2s0MDZBSlYwVllHbG54ZHNXdDZOWUJHWmZ4elhvY190RjBYdGR2LUd5M2hWZFNKRVlVR2hZZTN3SGlOSVA1RnVHZk9zXzFzVUM4RllOUFFEUldVVGZkMUlDcjVrX2JhX09JU2NLV1FoMW9ZNmEtNExGNGZFdTk3TWR2S1o5NmtkNWl5R0ZwU1l5bDNYOVgwUWs?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 8,
+      "published": "2026-05-12",
+      "korean_summary": [
+        "인도네시아와 필리핀이 니켈 하류산업 협력에 공식 합의함.",
+        "양국 정부 간 니켈 정련·가공 공동사업 추진 협약 체결됨.",
+        "동남아 니켈 공급망 통합으로 한국의 배터리 원료 공급 다각화 기회 증대 예상됨."
+      ],
+      "oda_relevance": "인도네시아의 니켈 광물 가치사슬 고도화 추세에서 한국의 KIAT·KIGAM이 정련·가공 기술협력 및 인력양성 ODA 사업 발굴 가능성 높음. 필리핀과의 협력 확대도 한국 자원외교 차원에서 모니터링 필요.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "인도네시아",
+        "필리핀",
+        "하류산업",
+        "광물가공"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Kerja Sama Hilirisasi Nikel",
+          "meaning": "니켈 하류산업 협력"
+        },
+        {
+          "phrase": "Indonesia dan Filipina",
+          "meaning": "인도네시아와 필리핀"
+        },
+        {
+          "phrase": "Resmi",
+          "meaning": "공식적"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T01:00:26.826016+00:00"
+    },
+    {
+      "id": "c1ce1dbdad63",
+      "title": "Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun - Babel Insight",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 8,
+      "published": "2026-05-12",
+      "korean_summary": [
+        "인도네시아 니켈 가공산업이 205조 루피아(약 145억 달러) 규모의 투자를 흡수했음",
+        "니켈 채광에서 정제·배터리 소재까지 수직통합 전략으로 부가가치 창출 중",
+        "한국의 배터리·전기차 공급망 구축에 인도네시아 니켈이 중추 역할하는 상황"
+      ],
+      "oda_relevance": "인도네시아 니켈 가공 시설의 현지화 확대는 한국 배터리 산업의 공급망 안정성을 강화하며, KIAT의 자원개발협력 프로젝트와 KIGAM의 기술이전 협력을 통한 채광·정제 효율화 지원이 양국 협력 심화에 필수적임",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "니켈",
+        "가공산업",
+        "배터리 소재",
+        "인도네시아",
+        "공급망"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Hilirisasi Nikel Indonesia",
+          "meaning": "인도네시아 니켈 가공산업화 (광석에서 정제·가공재까지 부가가치 단계 확대)"
+        },
+        {
+          "phrase": "Rp 205 Triliun",
+          "meaning": "205조 루피아 (약 145억 달러 규모 투자액)"
+        },
+        {
+          "phrase": "Investasi sektor nikel",
+          "meaning": "니켈 부문 투자 (채광·정제·2차 가공 전 영역)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T01:00:31.802494+00:00"
     }
   ]
 }
