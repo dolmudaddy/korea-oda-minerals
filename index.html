@@ -382,7 +382,7 @@
     <!-- 메일 구독 폼 (Mailchimp) -->
     <div class="subscribe-block">
       <div class="subscribe-label">매주 일요일 아침, 메일로 받아보기</div>
-      <form action="https://github.us13.list-manage.com/subscribe/post?u=dda99bfc442fc94e2a241297d&amp;id=41ae712934&amp;f_id=000550e1f0" method="post" target="_blank" novalidate class="subscribe-form">
+      <form action="#mailchimp-not-configured" method="post" target="_blank" novalidate class="subscribe-form">
         <input type="email" name="EMAIL" placeholder="이메일 주소" required class="subscribe-input">
         <!-- Mailchimp 봇 차단용 honeypot 필드 (사용자에게 안 보임) -->
         <div aria-hidden="true" style="position: absolute; left: -5000px;">
@@ -1417,6 +1417,39 @@ ${summaryHtml}
   </article>`;
   }
 
+  // build_index.py 의 count_by + collect_tags + build_filter_options 를
+  // JS 로 포팅. 회차 변경 시 필터 select 옵션을 그 회차의 카드 기준으로
+  // 재구성. select.innerHTML 을 통째로 갈아엎으므로 사용자 선택값은
+  // 자연스럽게 "전체"로 리셋됨.
+  function rebuildFilterOptions(articles) {
+    const countryCounts = {};
+    const categoryCounts = {};
+    const tagCounts = {};
+    articles.forEach(a => {
+      if (a.country) countryCounts[a.country] = (countryCounts[a.country] || 0) + 1;
+      if (a.category) categoryCounts[a.category] = (categoryCounts[a.category] || 0) + 1;
+      (a.tags || []).forEach(t => {
+        tagCounts[t] = (tagCounts[t] || 0) + 1;
+      });
+    });
+
+    const total = articles.length;
+    const buildOpts = (counts, koMap, limit) => {
+      let items = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      if (limit) items = items.slice(0, limit);
+      const head = `<option value="">전체 (${total})</option>`;
+      const rest = items.map(([val, cnt]) => {
+        const label = koMap ? (koMap[val] || val) : val;
+        return `<option value="${esc(val)}">${esc(label)} (${cnt})</option>`;
+      }).join('');
+      return head + rest;
+    };
+
+    $country.innerHTML = buildOpts(countryCounts, COUNTRY_KO);
+    $category.innerHTML = buildOpts(categoryCounts, CATEGORY_KO);
+    $tag.innerHTML = buildOpts(tagCounts, null, 10);
+  }
+
   async function loadArchiveIndex() {
     if (!$weekSelector) return;
     try {
@@ -1471,8 +1504,9 @@ ${summaryHtml}
         });
       }
 
-      // cards 배열을 새 DOM 으로 재바인딩 후 필터 재적용
+      // cards 배열을 새 DOM 으로 재바인딩 + 필터 옵션을 새 회차 기준으로 재구성
       cards = Array.from(document.querySelectorAll('.card'));
+      rebuildFilterOptions(articles);
       applyFilters();
     } catch (e) {
       console.error('Failed to load week', filename, e);
