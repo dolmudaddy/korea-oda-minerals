@@ -1,0 +1,217 @@
+{
+  "week_of": "2026-05-17",
+  "generated_at": "2026-05-17T00:08:50.675845+00:00",
+  "total_cards": 5,
+  "articles": [
+    {
+      "id": "82d971cd",
+      "title": "Uzbekistan Discusses Geological Exploration Cooperation with ITOCHU and JOGMEC",
+      "url": "https://www.uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec/",
+      "source": "UZ Daily - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "score": 10,
+      "published": "Sat, 16 May 2026 13:57:00 +0500",
+      "korean_summary": [
+        "우즈베키스탄, 일본의 이토추(ITOCHU)·일본석유가스·금속자원기구(JOGMEC)와 지질탐사 협력 확대 논의함.",
+        "양측은 지질탐사, 광산개발, 광물자원 투자 분야의 협력 확대를 중심으로 협의함.",
+        "일본의 자원개발 기술과 자본이 우즈베키스탄의 광물자원 개발에 투입될 가능성 제시됨."
+      ],
+      "oda_relevance": "한국의 핵심광물 ODA는 우즈베키스탄의 광물자원 개발협력에서 일본과 경쟁 구도에 직면. KIAT의 우즈베키스탄 자원개발협력사업이 일본 JOGMEC 수준의 실질적 기술이전·투자 연계방식으로 고도화 필요.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "우즈베키스탄",
+        "일본 경쟁",
+        "지질탐사",
+        "광물자원개발",
+        "JOGMEC"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "geological exploration cooperation",
+          "meaning": "지질탐사 협력"
+        },
+        {
+          "phrase": "mining development and investment",
+          "meaning": "광산개발 및 투자"
+        },
+        {
+          "phrase": "ITOCHU and JOGMEC",
+          "meaning": "일본의 이토추 무역회사 및 일본석유가스·금속자원기구"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:08:33.003645+00:00"
+    },
+    {
+      "id": "0f934580",
+      "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "몽골의 오유톨고이 광산이 독일-몽골 자원기술연구소(GMIRT)에 전자주사현미경(SEM)을 기증함",
+        "기증된 첨단 분석 장비는 광물 미세구조 분석 및 자원기술 연구 강화에 활용될 예정임",
+        "몽골 광물 연구역량 고도화 및 국제 학술협력 강화 움직임으로 평가됨"
+      ],
+      "oda_relevance": "몽골 광물 연구기관의 분석역량 강화 동향으로, KIGAM의 GMIRT·MRPAM과의 기술협력 ODA 사업 발굴 및 자원인력양성 프로그램 협의 기회를 제공함",
+      "category": "research_academic",
+      "category_ko": "연구·학술",
+      "tags": [
+        "몽골",
+        "오유톨고이",
+        "GMIRT",
+        "전자주사현미경",
+        "자원기술"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Scanning Electron Microscope (SEM)",
+          "meaning": "전자주사현미경, 광물·합금의 미세구조와 성분 분석에 사용되는 첨단 분석 장비"
+        },
+        {
+          "phrase": "German-Mongolian Institute for Resources and Technology (GMIRT)",
+          "meaning": "독일-몽골 자원기술연구소, 광물학·지질공학 연구 협력기관"
+        },
+        {
+          "phrase": "Oyu Tolgoi",
+          "meaning": "몽골의 주요 구리·금 광산, Rio Tinto 운영"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:08:37.644425+00:00"
+    },
+    {
+      "id": "1497ec5b",
+      "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+      "url": "https://www.mongolianminingjournal.com/a/75059",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "독일-몽골 3+3 광업 프로그램이 새로운 세대의 광업 엔지니어 배출에 성공함",
+        "카르스텐 드레벤슈테트(Carsten Drebenstedt) 주도 협력으로 몽골 광업 인력 개발 가속화됨",
+        "한국의 핵심광물 ODA 사업과 유사 인력 개발 모델 벤치마킹 기회 제시함"
+      ],
+      "oda_relevance": "몽골의 광업 인력 개발에 대한 국제 협력 사례로, 한국의 KIAT·KIGAM이 추진 중인 몽골 핵심광물 기술협력 ODA 사업에서 인력양성 프로그램 강화의 참고 모델이 될 수 있음.",
+      "category": "research_academic",
+      "category_ko": "연구·학술",
+      "tags": [
+        "몽골",
+        "인력양성",
+        "광업교육",
+        "독일협력",
+        "MRPAM"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "German-Mongolian 3+3 Mining Program",
+          "meaning": "3개월 한국/몽골, 3개월 상대국 학습·실습을 통한 광업 엔지니어 양성 프로그램"
+        },
+        {
+          "phrase": "Carsten Drebenstedt",
+          "meaning": "독일 광업 전문가, 몽골-독일 광업협력 주도자"
+        },
+        {
+          "phrase": "New Generation of Engineers",
+          "meaning": "국제적 광업 기술과 현지 맥락을 모두 습득한 다음 세대 광업 기술자"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:08:42.166515+00:00"
+    },
+    {
+      "id": "da3f9efb",
+      "title": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+      "url": "https://www.mongolianminingjournal.com/a/74967",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "몽골 광업 분야의 주요 국제 전시회인 '몽골 마이닝 2026'의 첫째 날 행사가 성공적으로 마무리되었음.",
+        "행사 개최 일시는 2026년 4월 16일이며, 광업 관련 기업·정책 담당자·기술 전문가들이 참석했음.",
+        "몽골의 광물 개발 협력 확대 및 국제 자원 네트워크 강화의 기회로 평가되고 있음."
+      ],
+      "oda_relevance": "몽골 광업 분야의 국제 플랫폼 확대로 한국의 KIAT·KIGAM 등 핵심광물 ODA 사업 협력 대상국(몽골)과의 네트워킹 및 기술협력 체계 고도화의 적기를 제시함.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "몽골",
+        "광업 정책",
+        "국제 협력",
+        "MRPAM",
+        "자원 개발"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Mongolia Mining 2026",
+          "meaning": "몽골 광업 국제 전시회·컨퍼런스"
+        },
+        {
+          "phrase": "First day concluded successfully",
+          "meaning": "첫째 날 행사가 성공적으로 마무리됨"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:08:45.925211+00:00"
+    },
+    {
+      "id": "e7f006a2",
+      "title": "President of Uzbekistan proposes to ADB expanding projects in AI, energy, minerals and logistics",
+      "url": "https://www.gazeta.uz/en/2026/05/05/president-uzb-adb/",
+      "source": "Gazeta.uz - English (Uzbekistan)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 5,
+      "score": 8,
+      "published": "Tue, 5 May 2026 17:12:00 GMT",
+      "korean_summary": [
+        "우즈베키스탄 대통령이 ADB 이사회 회의에서 AI, 신재생에너지, 물류, 핵심광물 협력 확대를 제안함.",
+        "중앙아시아의 AI, 녹색에너지, 물류 디지털화, 핵심광물, 기후, 관광 분야 프로젝트 확대를 주장하며 글로벌 분쟁으로 인한 운송비 상승(최대 30%) 언급함.",
+        "우즈베키스탄의 핵심광물 개발 및 수출 정책이 국제금융기구 차원에서 우선순위로 인식되고 있으며, 한국의 광물 수급 다변화 협력 기회 창출함."
+      ],
+      "oda_relevance": "우즈베키스탄 정부가 ADB를 통한 핵심광물 분야 국제협력 강화를 공식 제안한 만큼, KIAT와 KIGAM의 우즈베키스탄 자원개발·기술협력 ODA 사업 추진 시기가 성숙했음. 한국의 핵심광물 수급망 다원화 전략과 결합한 양자협력 강화 검토 가치 높음.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "핵심광물",
+        "우즈베키스탄",
+        "ADB",
+        "에너지",
+        "물류"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "critical minerals",
+          "meaning": "핵심광물"
+        },
+        {
+          "phrase": "ADB Board of Governors",
+          "meaning": "아시아개발은행 이사회"
+        },
+        {
+          "phrase": "green energy",
+          "meaning": "신재생에너지"
+        },
+        {
+          "phrase": "logistics digitalization",
+          "meaning": "물류 디지털화"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-05-17T00:08:50.675798+00:00"
+    }
+  ]
+}
