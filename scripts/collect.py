@@ -319,6 +319,9 @@ def score_article(article, source_meta, scoring_cfg):
     # 1. Country match - mandatory
     country = detect_country(text)
     if not country:
+        # v6.4: silent drop 가시화. 2026-05-17 진단에서 카자흐/러시아어/카자흐어
+        # 본문이 PURGED 로그 없이 0건 잡힌 사고를 막기 위함.
+        print(f"    [DROP-no country] {article['title'][:60]}")
         return None, None
     article["country"] = country
 
@@ -383,6 +386,8 @@ def score_article(article, source_meta, scoring_cfg):
         # Drop if too old
         freshness = scoring_cfg.get("freshness_days", 30)
         if delta_days > freshness:
+            # v6.4: freshness silent drop 가시화
+            print(f"    [DROP-too old: {delta_days}d > {freshness}d] {article['title'][:50]}")
             return None, None
 
     # ─────────────────────────────────────────────────────────────
