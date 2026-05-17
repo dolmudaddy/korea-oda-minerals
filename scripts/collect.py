@@ -91,28 +91,73 @@ def load_sources():
 # -----------------------------------------------------------------
 # Country detection (mandatory filter)
 # -----------------------------------------------------------------
-TARGET_COUNTRIES = [
-    "Tanzania", "Indonesia", "Vietnam", "Mongolia",
-    "Kazakhstan", "Uzbekistan", "Laos",
-    # Korean names
-    "탄자니아", "인도네시아", "베트남", "몽골",
-    "카자흐스탄", "우즈베키스탄", "라오스",
-]
+# v6.4 (2026-05-17): 다국어 본문 country detection.
+# 박사님 카자흐 데이터 분석 결과 — 러시아어/카자흐어 본문은 'Казахстан'/'Қазақстан'
+# 표기라 영어+한국어만 가진 리스트에서 silent drop 됐다. score_article은
+# country=None 시 PURGED 로그도 안 찍고 조용히 떨군다 (collect.py:259-262).
+# 결과: Kapital.kz 30 fetched / kazakhstan_russian 372 entries / kazakhstan_kazakh
+# 102 entries 가 모두 카드 0건. 다국어 표기 추가로 해결.
+COUNTRY_ALIASES = {
+    "Tanzania": [
+        "Tanzania", "탄자니아",
+        "Танзания",       # 러시아어
+        "Tansania",       # 스와힐리/독일어 (참고)
+    ],
+    "Indonesia": [
+        "Indonesia", "인도네시아",
+        "Индонезия",
+    ],
+    "Vietnam": [
+        "Vietnam", "Viet Nam", "Việt Nam",   # 베트남어 정식 표기
+        "베트남",
+        "Вьетнам",
+    ],
+    "Mongolia": [
+        "Mongolia", "몽골",
+        "Монголия",                          # 러시아어
+        "Монгол",                            # 몽골 키릴 자국 표기
+    ],
+    "Kazakhstan": [
+        "Kazakhstan", "카자흐스탄",
+        "Казахстан",                         # 러시아어
+        "Қазақстан",                         # 카자흐어 (Қ는 키릴 K + descender)
+    ],
+    "Uzbekistan": [
+        "Uzbekistan", "우즈베키스탄",
+        "Узбекистан",                        # 러시아어
+        "Oʻzbekiston", "O'zbekiston",        # 우즈베크 라틴 표기
+    ],
+    "Laos": [
+        "Laos", "라오스",
+        "Lao PDR", "Lao P.D.R", "Lao People",
+        "ລາວ",                              # 라오어
+        "Лаос",                              # 러시아어
+    ],
+}
+
+# Flat list (lowercased once) for fast scan; alias -> canonical English name
+_ALIAS_TO_CANONICAL = {
+    alias.lower(): canonical
+    for canonical, aliases in COUNTRY_ALIASES.items()
+    for alias in aliases
+}
+# Order: longer aliases first so "Việt Nam" wins over short prefixes
+_ALIAS_KEYS_SORTED = sorted(_ALIAS_TO_CANONICAL.keys(), key=len, reverse=True)
+
+# 호환용: 다른 코드가 TARGET_COUNTRIES 참조할 경우 대비
+TARGET_COUNTRIES = list(_ALIAS_TO_CANONICAL.keys())
 
 
 def detect_country(text):
-    """Return the matched country name or None."""
+    """Return canonical English country name, or None.
+
+    Scans aliases in length-desc order so multi-word ("Việt Nam", "Lao PDR")
+    match before any shorter prefix collision.
+    """
     text_lower = text.lower()
-    for country in TARGET_COUNTRIES:
-        if country.lower() in text_lower:
-            # Normalize to English
-            mapping = {
-                "탄자니아": "Tanzania", "인도네시아": "Indonesia",
-                "베트남": "Vietnam", "몽골": "Mongolia",
-                "카자흐스탄": "Kazakhstan", "우즈베키스탄": "Uzbekistan",
-                "라오스": "Laos",
-            }
-            return mapping.get(country, country)
+    for alias in _ALIAS_KEYS_SORTED:
+        if alias in text_lower:
+            return _ALIAS_TO_CANONICAL[alias]
     return None
 
 
@@ -144,6 +189,10 @@ def has_critical_mineral(text, scoring_cfg):
         # 비활성화 시 통과 (이전 호환)
         return "PASS", "filter disabled"
 
+    # v6.4: unicode hyphen 정규화. "rare‑earth" (U+2010) 같은 표기가
+    # 사전의 ASCII hyphen "rare-earth" 와 매칭되도록 통일.
+    # U+2010~U+2015 (hyphen/en/em dash 계열) + U+2212 (minus) → ASCII "-"
+    text = re.sub(r'[‐-―−]', '-', text)
     text_lower = text.lower()
 
     # Step 1: exclusion_terms (부분일치) → 폐기
