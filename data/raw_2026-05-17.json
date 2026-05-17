@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-17T02:36:28.421445+00:00",
+  "generated_at": "2026-05-17T04:18:24.207508+00:00",
   "stats": {
     "sources_tried": 23,
-    "items_fetched": 307,
-    "items_qualified": 23,
+    "items_fetched": 245,
+    "items_qualified": 20,
     "google_news_queries": 104,
-    "google_news_items": 4823
+    "google_news_items": 4832
   },
-  "total": 23,
+  "total": 20,
   "articles": [
     {
       "id": "c5a03a6bc171",
@@ -55,30 +55,6 @@
       "score": 12
     },
     {
-      "id": "b6d31922",
-      "title": "Column: Sulfur squeeze piles more pressure on Indonesian nickel sector",
-      "url": "https://www.mining.com/web/sulfur-squeeze-piles-more-pressure-on-indonesian-nickel-sector/",
-      "source": "Mining.com - Critical Minerals (category)",
-      "source_language": "en",
-      "country": "Indonesia",
-      "tier_weight": 5,
-      "summary_raw": "The world's largest nickel producer is heavily dependent on the Gulf for what is a core input for a significant part of its nickel ​processing capacity.",
-      "published": "Fri, 15 May 2026 13:56:58 +0000",
-      "score": 10
-    },
-    {
-      "id": "66f86a7d",
-      "title": "Kazakhstan to Issue Limited-Edition Coin Celebrating Golden Horde Legacy",
-      "url": "https://astanatimes.com/2026/05/kazakhstan-to-issue-limited-edition-coin-celebrating-golden-horde-legacy/",
-      "source": "The Astana Times (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 5,
-      "summary_raw": "<p>The Astana Times provides news and information from Kazakhstan and around the world.</p>\n<p>ALMATY – The National Bank of Kazakhstan (NBK) announced the release of a new 2,000-tenge (US$4.25) collectible coin titled ALTYN ORDA, dedicated to the historical legacy of the Golden Horde, one of the largest states in Eurasia during the 13th–15th centuries. The coin is part of the NBK’s Outstanding Events and People series. Information about&#8230;</p>\n<p>The post <a href=\"https://astanatimes.com/2026/05/kazakhstan-to-issue-limited-edition-coin-celebrating-golden-horde-legacy/\">Kazakhstan to Issue Limited-Edition Coin Celebrating Golden Horde Legacy</a> appeared first on <a href=\"https://astanatimes.com\">The Astana Times</a>.</p>",
-      "published": "Fri, 15 May 2026 12:34:25 +0000",
-      "score": 10
-    },
-    {
       "id": "82d971cd",
       "title": "Uzbekistan Discusses Geological Exploration Cooperation with ITOCHU and JOGMEC",
       "url": "https://www.uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec/",
@@ -89,18 +65,6 @@
       "summary_raw": "Uzbekistan held talks with Japan’s ITOCHU and JOGMEC on expanding cooperation in geological exploration, mining development, and investment in mineral resources.",
       "published": "Sat, 16 May 2026 13:57:00 +0500",
       "score": 10
-    },
-    {
-      "id": "1bb42dc6",
-      "title": "Japan’s Sojitz eyes Southeast Asia for new rare earths supply",
-      "url": "https://www.mining.com/web/japans-sojitz-eyes-southeast-asia-for-new-rare-earths-supply/",
-      "source": "Mining.com - Critical Minerals (category)",
-      "source_language": "en",
-      "country": "Vietnam",
-      "tier_weight": 5,
-      "summary_raw": "“Areas connected to southern China such as Laos, Cambodia and Vietnam will be potential regions that the company will look into,” its CFO says.",
-      "published": "Tue, 12 May 2026 22:06:21 +0000",
-      "score": 9
     },
     {
       "id": "0a6157fae894",
@@ -133,13 +97,13 @@
       "score": 9
     },
     {
-      "id": "38ed5c541737",
-      "title": "Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS - Pojok Papua",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5",
+      "id": "d1f0a19a427c",
+      "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5\" target=\"_blank\">Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pojok Papua</font>",
-      "published": "2026-05-16",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5\" target=\"_blank\">Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
+      "published": "2026-05-15",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
@@ -148,13 +112,13 @@
       "score": 9
     },
     {
-      "id": "d1f0a19a427c",
-      "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
+      "id": "38ed5c541737",
+      "title": "Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS - Pojok Papua",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5\" target=\"_blank\">Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Babel Insight</font>",
-      "published": "2026-05-15",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5\" target=\"_blank\">Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pojok Papua</font>",
+      "published": "2026-05-16",
       "tier_weight": 1,
       "priority_boost": 0,
       "source_type": "google_news",
