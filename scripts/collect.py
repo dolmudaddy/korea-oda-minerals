@@ -47,6 +47,7 @@ import requests
 import yaml
 import hashlib
 import json
+import random
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
@@ -63,10 +64,20 @@ SOURCES_FILE = ROOT_DIR / "sources.yaml"
 OUTPUT_DIR = ROOT_DIR / "data"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; KCMO-Weekly/0.1; "
-    "+https://dolmudaddy.github.io/korea-oda-minerals/)"
-)
+# Google News 등 일부 매체가 봇 식별자 UA를 차단하는 사례 발생
+# (2026-05-17 회차에서 Google News 4665→0 items로 완전 차단 관찰).
+# 실제 브라우저 UA 풀에서 매 호출 무작위 선택해 회피.
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+]
+
+def pick_user_agent():
+    return random.choice(USER_AGENTS)
+
 REQUEST_TIMEOUT = 20
 
 # -----------------------------------------------------------------
@@ -357,7 +368,7 @@ def scrape_html_listing(url, language="en", limit=20):
     """
     try:
         r = requests.get(url, timeout=REQUEST_TIMEOUT,
-                         headers={"User-Agent": USER_AGENT})
+                         headers={"User-Agent": pick_user_agent()})
         r.raise_for_status()
     except Exception as e:
         print(f"  [WARN] fetch failed: {url} ({e})")
@@ -412,7 +423,7 @@ def scrape_html_listing(url, language="en", limit=20):
 # -----------------------------------------------------------------
 def fetch_rss(url):
     try:
-        feed = feedparser.parse(url, agent=USER_AGENT)
+        feed = feedparser.parse(url, agent=pick_user_agent())
         items = []
         for entry in feed.entries[:30]:
             pub_dt = None
@@ -523,10 +534,12 @@ GOOGLE_NEWS_LOCALES = {
 }
 
 
-def fetch_google_news_feed(query, locale_tuple):
+def fetch_google_news_feed(query, locale_tuple, max_retries=3):
     """Google News RSS를 한 쿼리에 대해 호출. feedparser로 결과 파싱.
 
-    feedparser에 명시적 User-Agent 전달하여 차단 회피.
+    각 시도마다 다른 User-Agent를 사용해 차단을 회피.
+    bozo + 빈 entries 응답은 차단/파싱오류 시그널로 보고 지수 backoff 재시도.
+    정상 빈 결과(검색어 매칭 없음)는 재시도하지 않고 즉시 반환.
     """
     from urllib.parse import quote_plus
     hl, gl, ceid = locale_tuple
@@ -534,17 +547,24 @@ def fetch_google_news_feed(query, locale_tuple):
         f"https://news.google.com/rss/search?"
         f"q={quote_plus(query)}&hl={hl}&gl={gl}&ceid={ceid}"
     )
-    try:
-        # feedparser는 agent 인자 지원
-        feed = feedparser.parse(url, agent=USER_AGENT)
-        # bozo는 파싱 오류 플래그. 0이면 정상
-        if feed.bozo and not feed.entries:
-            # 파싱 오류 + 빈 결과면 진짜 실패
-            return []
-        return feed.entries
-    except Exception as e:
-        print(f"    [WARN] Google News fetch failed for '{query}': {e}")
-        return []
+    for attempt in range(1, max_retries + 1):
+        try:
+            feed = feedparser.parse(url, agent=pick_user_agent())
+            # bozo + 빈 entries = 차단/파싱오류 의심 → 재시도
+            if feed.bozo and not feed.entries:
+                if attempt < max_retries:
+                    backoff = 2 ** attempt  # 2s, 4s
+                    print(f"    [retry {attempt}/{max_retries}] '{query}' empty/error, sleep {backoff}s")
+                    time.sleep(backoff)
+                    continue
+                return []
+            # 정상 응답 (빈 결과여도 진짜 0건일 수 있음)
+            return feed.entries
+        except Exception as e:
+            print(f"    [WARN attempt {attempt}/{max_retries}] '{query}': {e}")
+            if attempt < max_retries:
+                time.sleep(2 ** attempt)
+    return []
 
 
 def resolve_google_news_url(google_url, session=None):
@@ -561,7 +581,7 @@ def resolve_google_news_url(google_url, session=None):
 
     if session is None:
         session = requests.Session()
-        session.headers.update({"User-Agent": USER_AGENT})
+        session.headers.update({"User-Agent": pick_user_agent()})
 
     try:
         # HEAD 요청만, 짧은 타임아웃 5초
@@ -584,7 +604,7 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
 
     # URL 변환용 세션 (재사용으로 성능 향상)
     url_session = requests.Session()
-    url_session.headers.update({"User-Agent": USER_AGENT})
+    url_session.headers.update({"User-Agent": pick_user_agent()})
 
     # 모든 쿼리 키를 탐색
     for query_key, locale in GOOGLE_NEWS_LOCALES.items():

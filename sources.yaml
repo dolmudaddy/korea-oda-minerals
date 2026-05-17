@@ -833,8 +833,12 @@ scoring:
       - "antimony"
       - "rare earth"
       - "rare earths"
+      - "rare-earth"      # 하이픈 표기 (영어권 매체 다수 사용)
+      - "rare-earths"
       - "rare metal"
       - "rare metals"
+      - "rare-metal"
+      - "rare-metals"
       - "bauxite"
       - "potash"
       - "chromium"
