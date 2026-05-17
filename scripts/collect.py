@@ -527,9 +527,11 @@ GOOGLE_NEWS_LOCALES = {
     "mongolia_local_queries":    ("mn", "MN", "MN:mn"),
     "kazakhstan_english_queries": ("en", "KZ", "KZ:en"),
     "kazakhstan_russian_queries": ("ru", "KZ", "KZ:ru"),
+    "kazakhstan_kazakh_queries": ("kk", "KZ", "KZ:kk"),  # v6.3 신규
     "uzbekistan_english_queries": ("en", "UZ", "UZ:en"),
     "uzbekistan_russian_queries": ("ru", "UZ", "UZ:ru"),
     "laos_english_queries":      ("en", "LA", "LA:en"),
+    "laos_local_queries":        ("lo", "LA", "LA:lo"),  # v6.3 신규 (라오어)
     "korea_cross_queries":       ("ko", "KR", "KR:ko"),
 }
 

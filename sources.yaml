@@ -363,7 +363,17 @@ tier_2_korea:
 
 tier_3_tanzania_media:
   weight: 3
-  sources: []
+  sources:
+    # v6.3 신규 (2026-05-17 박사님 환경에서 RSS 정상 응답 확인, 10 items)
+    - name: "Daily News Tanzania (RSS)"
+      url: "https://dailynews.co.tz/feed/"
+      rss: "https://dailynews.co.tz/feed/"
+      scrape_method: rss
+      country: Tanzania
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "탄자니아 정부계 영문 일간. madini.go.tz 정책 보도 인용 빈번."
 
 tier_3_indonesia_media:
   weight: 3
@@ -379,7 +389,27 @@ tier_3_mongolia_media:
 
 tier_3_kazakhstan_media:
   weight: 3
-  sources: []
+  sources:
+    # v6.3 신규 (2026-05-17 박사님 환경에서 RSS 정상 응답 확인)
+    - name: "Kapital.kz - Business news (RSS)"
+      url: "https://kapital.kz/feed"
+      rss: "https://kapital.kz/feed"
+      scrape_method: rss
+      country: Kazakhstan
+      language: ru
+      verified: true
+      priority_boost: 2
+      note: "카자흐 경제 매체 (러). 광업·산업·자원외교 보도 빈번 (68 items)."
+
+    - name: "The Astana Times (RSS)"
+      url: "https://astanatimes.com/feed/"
+      rss: "https://astanatimes.com/feed/"
+      scrape_method: rss
+      country: Kazakhstan
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "카자흐 영문 매체. 정부·자원·외교 보도 (10 items)."
 
 tier_3_uzbekistan_media:
   weight: 3
@@ -591,6 +621,10 @@ tier_4_broad_search:
     - "Tanzania madini ya kimkakati"
     - "Tanzania uchimbaji urani"
     - "Wizara ya Madini taarifa"
+    # v6.3 추가: 스와힐리 광업 어휘 확장
+    - "Tanzania madini muhimu"        # 핵심광물
+    - "Tanzania nikeli Kabanga"       # 니켈 Kabanga
+    - "Tanzania urani Mantra"         # 우라늄 Mantra
 
   indonesia_english_queries:
     - "Indonesia nickel critical mineral"
@@ -643,6 +677,12 @@ tier_4_broad_search:
     - "Казахстан редкоземельные металлы"
     - "Казахстан стратегические минералы"
     - "Казахстан горнодобывающая промышленность"
+  # v6.3 추가: 카자흐어 (kk) 쿼리
+  kazakhstan_kazakh_queries:
+    - "Қазақстан уран"                       # 카자흐스탄 우라늄
+    - "Қазақстан сирек жер металдары"        # 카자흐스탄 희토류
+    - "Қазақстан мыс кеніші"                 # 카자흐스탄 구리광
+    - "Қазақстан стратегиялық минералдар"    # 카자흐스탄 전략광물
 
   # Phase C NEW: Uzbekistan
   uzbekistan_english_queries:
@@ -665,6 +705,12 @@ tier_4_broad_search:
     - "Laos mining investment"
     - "Laos MOIC mineral"
     - "Laos Ministry of Industry and Commerce mining"
+  # v6.3 추가: 라오어 (lo) 쿼리
+  laos_local_queries:
+    - "ບໍ່ແຮ່ ສຳຄັນ ລາວ"      # 라오스 핵심광물
+    - "ບໍ່ແຮ່ ທອງແດງ ລາວ"     # 라오스 구리광
+    - "ບໍ່ແຮ່ ບອກໄຊ ລາວ"      # 라오스 보크사이트
+    - "MOIC ບໍ່ແຮ່"            # 산업통상부 광물
 
   korea_cross_queries:
     - "Korea Tanzania mineral cooperation"
