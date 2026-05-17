@@ -7,19 +7,20 @@
       "filename": "cards_2026-05-17.json",
       "total_cards": 21,
       "category_counts": {
-        "oda_cooperation": 7,
-        "supply_chain_trade": 11,
-        "policy_regulation": 2,
-        "research_academic": 1
+        "oda_cooperation": 4,
+        "supply_chain_trade": 10,
+        "policy_regulation": 4,
+        "exploration_development": 1,
+        "research_academic": 2
       },
       "top_tags": [
         "니켈",
         "인도네시아",
         "ESDM",
-        "하류산업화",
+        "KIGAM",
         "베트남"
       ],
-      "generated_at": "2026-05-17T01:00:31.802540+00:00"
+      "generated_at": "2026-05-17T01:14:00.376754+00:00"
     },
     {
       "week_of": "2026-05-16",
