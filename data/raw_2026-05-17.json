@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-17T02:12:10.644951+00:00",
+  "generated_at": "2026-05-17T02:36:28.421445+00:00",
   "stats": {
     "sources_tried": 23,
-    "items_fetched": 245,
-    "items_qualified": 19,
+    "items_fetched": 307,
+    "items_qualified": 23,
     "google_news_queries": 104,
-    "google_news_items": 4849
+    "google_news_items": 4823
   },
-  "total": 19,
+  "total": 23,
   "articles": [
     {
       "id": "c5a03a6bc171",
@@ -55,6 +55,18 @@
       "score": 12
     },
     {
+      "id": "b6d31922",
+      "title": "Column: Sulfur squeeze piles more pressure on Indonesian nickel sector",
+      "url": "https://www.mining.com/web/sulfur-squeeze-piles-more-pressure-on-indonesian-nickel-sector/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "The world's largest nickel producer is heavily dependent on the Gulf for what is a core input for a significant part of its nickel ​processing capacity.",
+      "published": "Fri, 15 May 2026 13:56:58 +0000",
+      "score": 10
+    },
+    {
       "id": "66f86a7d",
       "title": "Kazakhstan to Issue Limited-Edition Coin Celebrating Golden Horde Legacy",
       "url": "https://astanatimes.com/2026/05/kazakhstan-to-issue-limited-edition-coin-celebrating-golden-horde-legacy/",
@@ -77,6 +89,18 @@
       "summary_raw": "Uzbekistan held talks with Japan’s ITOCHU and JOGMEC on expanding cooperation in geological exploration, mining development, and investment in mineral resources.",
       "published": "Sat, 16 May 2026 13:57:00 +0500",
       "score": 10
+    },
+    {
+      "id": "1bb42dc6",
+      "title": "Japan’s Sojitz eyes Southeast Asia for new rare earths supply",
+      "url": "https://www.mining.com/web/japans-sojitz-eyes-southeast-asia-for-new-rare-earths-supply/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Vietnam",
+      "tier_weight": 5,
+      "summary_raw": "“Areas connected to southern China such as Laos, Cambodia and Vietnam will be potential regions that the company will look into,” its CFO says.",
+      "published": "Tue, 12 May 2026 22:06:21 +0000",
+      "score": 9
     },
     {
       "id": "0a6157fae894",
@@ -199,6 +223,21 @@
       "score": 9
     },
     {
+      "id": "5c2d6786e97c",
+      "title": "«Казатомпром» запустит поиски урана в Монголии - dprom.kz",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VcW4yU0VEQVM0T0swMXlFYXRfSU11Y2llMXRnWUtxRm9Fa0RMZ00xWnA5RHUxcHYxbmo4bm82ZTl1UUJxYnRwaDZ3aVlnWFpNNmpkdzBuZlVGS0s3UW9SY2NFUTh3d0ppcjB3dGk1ZUJSTHNydHh4YWJB?oc=5",
+      "source": "Google News (KZ:kk)",
+      "source_language": "kk",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE1VcW4yU0VEQVM0T0swMXlFYXRfSU11Y2llMXRnWUtxRm9Fa0RMZ00xWnA5RHUxcHYxbmo4bm82ZTl1UUJxYnRwaDZ3aVlnWFpNNmpkdzBuZlVGS0s3UW9SY2NFUTh3d0ppcjB3dGk1ZUJSTHNydHh4YWJB?oc=5\" target=\"_blank\">«Казатомпром» запустит поиски урана в Монголии</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">dprom.kz</font>",
+      "published": "2026-04-25",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Қазақстан уран",
+      "country": "Mongolia",
+      "score": 9
+    },
+    {
       "id": "0f934580",
       "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
       "url": "https://www.mongolianminingjournal.com/a/75056",
@@ -253,6 +292,21 @@
       "source": "Google News (ID:id)",
       "source_language": "id",
       "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxONjBBNXI3YzA1a2lBcEppc2s0MDZBSlYwVllHbG54ZHNXdDZOWUJHWmZ4elhvY190RjBYdGR2LUd5M2hWZFNKRVlVR2hZZTN3SGlOSVA1RnVHZk9zXzFzVUM4RllOUFFEUldVVGZkMUlDcjVrX2JhX09JU2NLV1FoMW9ZNmEtNExGNGZFdTk3TWR2S1o5NmtkNWl5R0ZwU1l5bDNYOVgwUWs?oc=5\" target=\"_blank\">Resmi! Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Nikel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Wajah Batam News</font>",
+      "published": "2026-05-12",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 8
+    },
+    {
+      "id": "1b54c51fac77",
+      "title": "Gebrakan Hilirisasi: Indonesia Siap Pimpin Rantai Pasok Baterai EV Global Menuju 2045 - BERNAS.id",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNN29oXzVJMXp0SU9mLU5hMGs1cnhYUkp6dWJVb1dCSS04eTF2RWhIbDlyNzY4OXd0dFJpS09YanRZUGhmY1NqZDM5T0tyUFJ3dzhCUkZCUEZudklrSndmeGFHR1RNYTlkM25kZmVtRDgtSlFjWmpJSlFBZDZpMmtncTJJUQ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxNN29oXzVJMXp0SU9mLU5hMGs1cnhYUkp6dWJVb1dCSS04eTF2RWhIbDlyNzY4OXd0dFJpS09YanRZUGhmY1NqZDM5T0tyUFJ3dzhCUkZCUEZudklrSndmeGFHR1RNYTlkM25kZmVtRDgtSlFjWmpJSlFBZDZpMmtncTJJUQ?oc=5\" target=\"_blank\">Gebrakan Hilirisasi: Indonesia Siap Pimpin Rantai Pasok Baterai EV Global Menuju 2045</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BERNAS.id</font>",
       "published": "2026-05-12",
       "tier_weight": 1,
       "priority_boost": 0,
