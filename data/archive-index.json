@@ -1,0 +1,97 @@
+{
+  "total_weeks": 5,
+  "latest_week": "2026-05-17",
+  "weeks": [
+    {
+      "week_of": "2026-05-17",
+      "filename": "cards_2026-05-17.json",
+      "total_cards": 5,
+      "category_counts": {
+        "oda_cooperation": 3,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "몽골",
+        "우즈베키스탄",
+        "MRPAM",
+        "일본 경쟁",
+        "지질탐사"
+      ],
+      "generated_at": "2026-05-17T00:08:50.675845+00:00"
+    },
+    {
+      "week_of": "2026-05-16",
+      "filename": "cards_2026-05-16.json",
+      "total_cards": 18,
+      "category_counts": {
+        "oda_cooperation": 5,
+        "supply_chain_trade": 8,
+        "policy_regulation": 3,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "니켈",
+        "인도네시아",
+        "ESDM",
+        "배터리 소재",
+        "하류산업화"
+      ],
+      "generated_at": "2026-05-16T23:40:41.090866+00:00"
+    },
+    {
+      "week_of": "2026-05-15",
+      "filename": "cards_2026-05-15.json",
+      "total_cards": 23,
+      "category_counts": {
+        "oda_cooperation": 8,
+        "supply_chain_trade": 12,
+        "policy_regulation": 2,
+        "research_academic": 1
+      },
+      "top_tags": [
+        "니켈",
+        "인도네시아",
+        "ESDM",
+        "베트남",
+        "KIGAM"
+      ],
+      "generated_at": "2026-05-15T13:40:23.778058+00:00"
+    },
+    {
+      "week_of": "2026-05-14",
+      "filename": "cards_2026-05-14.json",
+      "total_cards": 34,
+      "category_counts": {
+        "oda_cooperation": 8,
+        "policy_regulation": 11,
+        "supply_chain_trade": 15
+      },
+      "top_tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "베트남",
+        "라오스"
+      ],
+      "generated_at": "2026-05-14T10:43:02.900616+00:00"
+    },
+    {
+      "week_of": "2026-05-13",
+      "filename": "cards_2026-05-13.json",
+      "total_cards": 9,
+      "category_counts": {
+        "supply_chain_trade": 1,
+        "policy_regulation": 6,
+        "oda_cooperation": 2
+      },
+      "top_tags": [
+        "탄자니아",
+        "국제협력",
+        "광물전략",
+        "공급망",
+        "광물 정책"
+      ],
+      "generated_at": "2026-05-13T09:20:02.897845+00:00"
+    }
+  ]
+}

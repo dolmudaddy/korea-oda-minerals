@@ -244,6 +244,79 @@ def main():
     print(f"Wrote: {OUTPUT_FILE}")
     print(f"Cards rendered: {total}")
 
+    # 아카이브 인덱스 갱신 (풀다운 메뉴용)
+    build_archive_index()
+
+
+def build_archive_index():
+    """data/cards_*.json 을 스캔해 data/archive-index.json 작성.
+
+    같은 week_of 가 여러 파일에 있으면 generated_at 가장 최신 한 개만 선택
+    (수동 dispatch + cron 지연 발화로 같은 회차가 중복 발생한 사례 정리).
+    total_cards == 0 인 파일은 제외.
+    """
+    weeks_by_date = {}
+
+    for cf in sorted(DATA_DIR.glob("cards_*.json")):
+        try:
+            with open(cf, encoding="utf-8") as f:
+                d = json.load(f)
+        except Exception as e:
+            print(f"  [archive] skip {cf.name}: {e}")
+            continue
+
+        week_of = d.get("week_of") or ""
+        if not week_of:
+            continue
+        articles = d.get("articles", []) or []
+        total = d.get("total_cards") if d.get("total_cards") is not None else len(articles)
+        if not total:
+            continue
+
+        generated_at = d.get("generated_at") or ""
+
+        # category counts + top tags
+        cat_counts = {}
+        tag_counter = {}
+        for a in articles:
+            cat = a.get("category")
+            if cat:
+                cat_counts[cat] = cat_counts.get(cat, 0) + 1
+            for t in a.get("tags", []) or []:
+                tag_counter[t] = tag_counter.get(t, 0) + 1
+        top_tags = [t for t, _ in sorted(tag_counter.items(), key=lambda x: -x[1])[:5]]
+
+        entry = {
+            "week_of": week_of,
+            "filename": cf.name,
+            "total_cards": total,
+            "category_counts": cat_counts,
+            "top_tags": top_tags,
+            "generated_at": generated_at,
+        }
+
+        existing = weeks_by_date.get(week_of)
+        if existing is None or generated_at > existing.get("generated_at", ""):
+            weeks_by_date[week_of] = entry
+
+    weeks_sorted = sorted(
+        weeks_by_date.values(),
+        key=lambda w: w["week_of"],
+        reverse=True,
+    )
+    index = {
+        "total_weeks": len(weeks_sorted),
+        "latest_week": weeks_sorted[0]["week_of"] if weeks_sorted else "",
+        "weeks": weeks_sorted,
+    }
+
+    out_path = DATA_DIR / "archive-index.json"
+    out_path.write_text(
+        json.dumps(index, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Wrote: {out_path} ({len(weeks_sorted)} weeks)")
+
 
 if __name__ == "__main__":
     main()

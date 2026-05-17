@@ -85,6 +85,14 @@
     }
     header.site .meta { text-align: right; font-size: 13px; opacity: 0.9; }
     header.site .meta .next { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+    header.site .week-selector {
+      font: inherit; font-size: 12px;
+      padding: 3px 8px; margin-bottom: 6px;
+      border: 1px solid rgba(255,255,255,0.3); border-radius: 4px;
+      background: rgba(255,255,255,0.08); color: var(--primary-bg);
+      cursor: pointer; max-width: 220px;
+    }
+    header.site .week-selector option { color: var(--text); background: var(--surface); }
 
     /* 메일 구독 블록 */
     .subscribe-block {
@@ -361,6 +369,11 @@
         <div class="curator">Curated by 조성준 (KIGAM)</div>
       </div>
       <div class="meta">
+        <div>
+          <select id="week-selector" class="week-selector" aria-label="회차 선택">
+            <option value="" disabled selected>회차 선택</option>
+          </select>
+        </div>
         <div>{{WEEK_OF}} 발행</div>
         <div class="next">{{TOTAL}} cards · 다음 발송: {{NEXT_DISPATCH}}</div>
       </div>
@@ -424,13 +437,20 @@
 
 <script>
 (function() {
-  const cards = Array.from(document.querySelectorAll('.card'));
+  // ─────────────────────────────────────────────────────────
+  // 필터 + 정렬 + 회차 풀다운
+  // 현재 회차는 서버에서 pre-render된 카드를 그대로 사용 (SEO 유지).
+  // 풀다운에서 다른 회차 선택 시 해당 cards JSON fetch → DOM 재구성.
+  // ─────────────────────────────────────────────────────────
+  let cards = Array.from(document.querySelectorAll('.card'));
   const $country = document.getElementById('f-country');
   const $category = document.getElementById('f-category');
   const $tag = document.getElementById('f-tag');
   const $sort = document.getElementById('f-sort');
   const $info = document.getElementById('results-info');
   const $main = document.getElementById('cards');
+  const $weekSelector = document.getElementById('week-selector');
+  const CURRENT_WEEK = '{{WEEK_OF}}';
 
   function applyFilters() {
     const ct = $country.value;
@@ -471,7 +491,160 @@
   [$country, $category, $tag].forEach(el => el.addEventListener('change', applyFilters));
   $sort.addEventListener('change', () => { applySort(); applyFilters(); });
 
+  // ─────────────────────────────────────────────────────────
+  // 회차 풀다운 (archive-index.json)
+  // ─────────────────────────────────────────────────────────
+  const COUNTRY_KO = {
+    Tanzania: '탄자니아', Indonesia: '인도네시아', Vietnam: '베트남',
+    Mongolia: '몽골', Kazakhstan: '카자흐스탄',
+    Uzbekistan: '우즈베키스탄', Laos: '라오스',
+  };
+  const CATEGORY_KO = {
+    oda_cooperation: 'ODA 협력', policy_regulation: '정책·법규',
+    exploration_development: '탐사·개발', supply_chain_trade: '공급망·교역',
+    research_academic: '연구·학술',
+  };
+  const LANGUAGE_KO = {
+    sw: 'sw 원문', ko: 'ko 원문', en: 'en 원문',
+    id: 'id 원문', vi: 'vi 원문', mn: 'mn 원문',
+  };
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  // build_index.py 의 render_card() 를 JS로 포팅.
+  // 카드 HTML 구조가 바뀌면 양쪽 동시에 수정해야 함.
+  function renderCard(card) {
+    const countryKo = COUNTRY_KO[card.country] || card.country || '';
+    const categoryKo = card.category_ko || CATEGORY_KO[card.category] || '';
+    const langBadge = LANGUAGE_KO[card.source_language || 'en'] || '원문';
+    const tags = card.tags || [];
+    const prominentTags = tags.slice(0, 2);
+
+    const summaryHtml = (card.korean_summary || [])
+      .map(l => `      <p>${esc(l)}</p>`).join('\n');
+
+    let phrasesHtml = '';
+    const phrases = card.key_phrases || [];
+    if (phrases.length) {
+      const rows = phrases.map(p =>
+        `        <tr><td class="phrase">${esc(p.phrase || '')}</td>` +
+        `<td class="meaning">${esc(p.meaning || '')}</td></tr>`
+      ).join('\n');
+      phrasesHtml = `
+    <details class="phrases">
+      <summary>원문 핵심 표현 ${phrases.length}개 보기</summary>
+      <table>
+${rows}
+      </table>
+    </details>`;
+    }
+
+    let relevanceHtml = '';
+    if (card.oda_relevance) {
+      relevanceHtml = `
+    <div class="relevance">
+      <div class="relevance-label">한국 ODA 시사점</div>
+      <p>${esc(card.oda_relevance)}</p>
+    </div>`;
+    }
+
+    const tagChips = prominentTags
+      .map(t => `      <span class="chip chip-tag">${esc(t)}</span>`)
+      .join('\n');
+
+    return `<article class="card"
+    data-id="${esc(card.id || '')}"
+    data-country="${esc(card.country || '')}"
+    data-category="${esc(card.category || '')}"
+    data-language="${esc(card.source_language || 'en')}"
+    data-tags="${esc(tags.join(','))}"
+    data-score="${esc(card.score || 0)}"
+    data-published="${esc(card.published || '')}">
+    <div class="card-meta">
+      <span class="chip chip-country">${esc(countryKo)}</span>
+      <span class="chip chip-category">${esc(categoryKo)}</span>
+${tagChips}
+      <span class="card-score">${esc(card.score || 0)}</span>
+    </div>
+    <h3><a href="${esc(card.url || '#')}" target="_blank" rel="noopener">${esc(card.title || '')}</a></h3>
+    <div class="card-source">
+      <span>${esc(card.source || '')} · ${esc(card.published || '')}</span>
+      <a class="chip chip-lang chip-lang-link" href="${esc(card.url || '#')}" target="_blank" rel="noopener" title="원문 보기">${esc(langBadge)} ↗</a>
+    </div>
+    <div class="summary">
+${summaryHtml}
+    </div>${relevanceHtml}${phrasesHtml}
+  </article>`;
+  }
+
+  async function loadArchiveIndex() {
+    if (!$weekSelector) return;
+    try {
+      const res = await fetch('./data/archive-index.json?t=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const index = await res.json();
+      if (!index.weeks || !index.weeks.length) throw new Error('empty index');
+
+      $weekSelector.innerHTML = '';
+      index.weeks.forEach(w => {
+        const opt = document.createElement('option');
+        opt.value = w.filename;
+        opt.textContent = `${w.week_of} (${w.total_cards} cards)`;
+        opt.dataset.weekOf = w.week_of;
+        if (w.week_of === CURRENT_WEEK) opt.selected = true;
+        $weekSelector.appendChild(opt);
+      });
+
+      $weekSelector.addEventListener('change', (e) => {
+        const opt = e.target.selectedOptions[0];
+        if (!opt || !opt.value) return;
+        if (opt.dataset.weekOf === CURRENT_WEEK) {
+          // 현재 회차는 이미 임베드된 카드 그대로 사용 — 재로드 불필요
+          return;
+        }
+        loadWeek(opt.value);
+      });
+    } catch (e) {
+      // archive index 없거나 fetch 실패 시 풀다운 숨김
+      $weekSelector.style.display = 'none';
+    }
+  }
+
+  async function loadWeek(filename) {
+    try {
+      const res = await fetch(`./data/${filename}?t=` + Date.now());
+      const data = await res.json();
+      const articles = (data.articles || []).slice()
+        .sort((a, b) => (b.score || 0) - (a.score || 0));
+
+      // 기존 카드/empty 메시지 제거 ($results-info 는 보존)
+      $main.querySelectorAll('article.card, p.empty').forEach(el => el.remove());
+
+      if (!articles.length) {
+        const empty = document.createElement('p');
+        empty.className = 'empty';
+        empty.textContent = '이 회차는 임계값 이상의 ODA 동향이 없습니다.';
+        $main.appendChild(empty);
+      } else {
+        articles.forEach(a => {
+          $main.insertAdjacentHTML('beforeend', renderCard(a));
+        });
+      }
+
+      // cards 배열을 새 DOM 으로 재바인딩 후 필터 재적용
+      cards = Array.from(document.querySelectorAll('.card'));
+      applyFilters();
+    } catch (e) {
+      console.error('Failed to load week', filename, e);
+    }
+  }
+
   applyFilters();
+  loadArchiveIndex();
 })();
 </script>
 
