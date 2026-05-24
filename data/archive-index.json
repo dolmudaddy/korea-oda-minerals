@@ -1,7 +1,27 @@
 {
-  "total_weeks": 5,
-  "latest_week": "2026-05-17",
+  "total_weeks": 6,
+  "latest_week": "2026-05-24",
   "weeks": [
+    {
+      "week_of": "2026-05-24",
+      "filename": "cards_2026-05-24.json",
+      "total_cards": 17,
+      "category_counts": {
+        "oda_cooperation": 2,
+        "policy_regulation": 5,
+        "supply_chain_trade": 6,
+        "exploration_development": 2,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "니켈",
+        "인도네시아",
+        "ESDM",
+        "몽골",
+        "MRPAM"
+      ],
+      "generated_at": "2026-05-24T00:03:15.729734+00:00"
+    },
     {
       "week_of": "2026-05-17",
       "filename": "cards_2026-05-17.json",
