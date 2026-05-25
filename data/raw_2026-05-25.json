@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-25T12:25:33.065774+00:00",
+  "generated_at": "2026-05-25T12:50:49.677194+00:00",
   "stats": {
     "sources_tried": 23,
-    "items_fetched": 235,
-    "items_qualified": 19,
+    "items_fetched": 307,
+    "items_qualified": 15,
     "google_news_queries": 115,
-    "google_news_items": 5405
+    "google_news_items": 5393
   },
-  "total": 19,
+  "total": 15,
   "articles": [
     {
       "id": "8b41551bf785",
@@ -53,6 +53,18 @@
       "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
       "score": 12
+    },
+    {
+      "id": "5fb78335",
+      "title": "Nickel price spikes as risks to supply grow in top producer Indonesia",
+      "url": "https://www.mining.com/web/nickel-price-spikes-as-risks-to-supply-grow-in-top-producer-indonesia/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "Shanghai Metals Market reported that 10%-15% of high-grade nickel pig iron capacity at Weda Bay will be placed under rotational maintenance.",
+      "published": "Tue, 19 May 2026 17:32:12 +0000",
+      "score": 9
     },
     {
       "id": "efe5e03c7274",
@@ -115,6 +127,18 @@
       "score": 9
     },
     {
+      "id": "e36b3da2",
+      "title": "Freeport says Grasberg on track for full production by end of 2027",
+      "url": "https://www.mining.com/freeport-says-grasberg-on-track-for-full-production-by-end-of-2027/",
+      "source": "Mining.com - All news",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "Grasberg is now running at 50% of capacity and is expected to reach 65% later this year, Freeport Indonesia's CEO says.",
+      "published": "Wed, 20 May 2026 16:03:00 +0000",
+      "score": 8
+    },
+    {
       "id": "0f934580",
       "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
       "url": "https://www.mongolianminingjournal.com/a/75056",
@@ -139,78 +163,6 @@
       "score": 8
     },
     {
-      "id": "fad3bb35",
-      "title": "Kazakh wrestlers earn 12 medals in Vietnam",
-      "url": "https://kz.kursiv.media/en/2026-05-25/engk-tank-kazakh-wrestlers-earn-12-medals-in-vietnam/?utm_source=rss&utm_medium=rss&utm_campaign=engk-tank-kazakh-wrestlers-earn-12-medals-in-vietnam",
-      "source": "Kursiv Media - English (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 5,
-      "summary_raw": "The Asian U23 Wrestling Championships began in Vietnam over the weekend, with Kazakhstan’s national team winning 12 medals after the first two days of competition. Greco-Roman wrestling Kazakhstan’s Greco-Roman wrestlers claimed eight medals overall, including two golds won by Aibek Aitbekov (60 kg) and Islam Yevloyev (97 kg). In the finals, Aitbekov defeated India’s Suraj ...",
-      "published": "Mon, 25 May 2026 10:36:55 +0000",
-      "score": 8
-    },
-    {
-      "id": "1df5d15b",
-      "title": "Fuel vs. atoms: New Kazakh refinery project hits nuclear-level costs",
-      "url": "https://kz.kursiv.media/en/2026-05-25/engk-yeri-fuel-vs-atoms-new-kazakh-refinery-project-hits-nuclear-level-costs/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-fuel-vs-atoms-new-kazakh-refinery-project-hits-nuclear-level-costs",
-      "source": "Kursiv Media - English (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 5,
-      "summary_raw": "Building a fourth large oil refinery in Kazakhstan with an annual processing capacity of 10 million tons could cost as much as $15 billion, including infrastructure expenses, according to Nurlan Zhumagulov, author of the Telegram channel Energy Monitor. Zhumagulov said the estimated price tag is comparable to the cost of constructing a nuclear power plant. ...",
-      "published": "Mon, 25 May 2026 04:00:00 +0000",
-      "score": 8
-    },
-    {
-      "id": "6533deb7",
-      "title": "Diversifying the grid: Oil now accounts for less than 45% of Kazakh exports",
-      "url": "https://kz.kursiv.media/en/2026-05-25/engk-yeri-diversifying-the-grid-oil-now-accounts-for-less-than-45-of-kazakh-exports/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-diversifying-the-grid-oil-now-accounts-for-less-than-45-of-kazakh-exports",
-      "source": "Kursiv Media - English (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 5,
-      "summary_raw": "The share of crude oil in Kazakhstan’s exports fell to a historic low of 44.4% in the first quarter of 2026. Strong growth in the non-oil sector helped offset losses from hydrocarbons, as record prices for copper, silver and sulfur boosted export revenues. Analysts say current geopolitical tensions could further benefit Kazakh exporters in the ...",
-      "published": "Sun, 24 May 2026 19:01:00 +0000",
-      "score": 8
-    },
-    {
-      "id": "613e1ae1",
-      "title": "Uzbek Gymnasts Win Five Medals at World Cup Challenge in Tashkent",
-      "url": "https://www.uzdaily.uz/en/uzbek-gymnasts-win-five-medals-at-world-cup-challenge-in-tashkent/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "Uzbekistan’s artistic gymnastics team secured five medals at the FIG World Cup Challenge series stage held in Tashkent, including one gold, two silver, and two bronze.",
-      "published": "Sun, 24 May 2026 15:23:00 +0500",
-      "score": 8
-    },
-    {
-      "id": "aee41e82",
-      "title": "Uzbekistan Wins Four Medals at U23 Asian Greco-Roman Wrestling Championships",
-      "url": "https://www.uzdaily.uz/en/uzbekistan-wins-four-medals-at-u23-asian-greco-roman-wrestling-championships/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "Uzbekistan’s U23 Greco-Roman wrestling team secured four medals, including two gold, at the Asian Championships held in Vietnam.",
-      "published": "Sun, 24 May 2026 15:09:00 +0500",
-      "score": 8
-    },
-    {
-      "id": "b8dff0f3",
-      "title": "Uzbekistan Wins 11 Medals at WT Asian Taekwondo Championships",
-      "url": "https://www.uzdaily.uz/en/uzbekistan-wins-11-medals-at-wt-asian-taekwondo-championships/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "The Uzbekistan national taekwondo team secured 11 medals at the Asian Championships in Ulaanbaatar, including two gold, five silver, and four bronze medals.",
-      "published": "Sun, 24 May 2026 14:59:00 +0500",
-      "score": 8
-    },
-    {
       "id": "67c2aa5c3206",
       "title": "Hilirisasi Nikel Rp 22,9 Triliun, Indonesia Bidik Pusat Rantai Pasok EV Dunia - Radar Surabaya",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRHdHdWhFR2ZrVEVZYmlmbG4xMmhZaXdTZk0tZndIamV0UFlkWk01ejFvVU9EbFV6QkEwU2lqQ0pEeGVucVBDUjhTYVBvUHVTRVRvNUFOSXo3MTZaRlFMWlFFTXlJcWlCckVndjhxWXYtVUpEOTI4VnpNaDh0YmhVU3N2dEpSSGVDWWNmUkNhSXhHMzNlZUp3Q2NoZWwtS1Z6bXB6NkFrZDlOZTA1WDVQU3R1Q0pMQlRELVRRRkxvZXptLUdUMXc40gHMAUFVX3lxTE1EdFNUX3A1LUJleC1IR2pCb2pVRlpKUlROVm5wZjgwb1NJZXVFWkE1UWphLUliSDhiN3RDODBhUHI0a2wzMkh1ZlllTWgxRzVNV1ZIbU91X1lNNzg3LUF3Qlp2am96MTJFMlVyektJUXlHeHBjSnpEQmY5NGs5TUFSRGFqem8wLVpJT0t1NmFTS3h2ZXRrVEhaaEhPUHRMNGNURHdoVkNfVDlna0xhYjVzLWl2STJIS1dLaC0tQWw2VVlFQ3hMQnlaYUNaeQ?oc=5",
@@ -226,12 +178,12 @@
       "score": 8
     },
     {
-      "id": "99601df2f7ca",
-      "title": "Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal - Media Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5",
+      "id": "e5244794cddd",
+      "title": "Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5\" target=\"_blank\">Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Indonesia</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5\" target=\"_blank\">Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
       "published": "2026-05-18",
       "tier_weight": 1,
       "priority_boost": 0,
@@ -241,12 +193,12 @@
       "score": 8
     },
     {
-      "id": "e5244794cddd",
-      "title": "Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5",
+      "id": "99601df2f7ca",
+      "title": "Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal - Media Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5\" target=\"_blank\">Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5\" target=\"_blank\">Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Indonesia</font>",
       "published": "2026-05-18",
       "tier_weight": 1,
       "priority_boost": 0,
