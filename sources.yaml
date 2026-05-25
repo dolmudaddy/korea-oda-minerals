@@ -381,7 +381,28 @@ tier_3_indonesia_media:
 
 tier_3_vietnam_media:
   weight: 3
-  sources: []
+  sources:
+    # v6.7 신규 (2026-05-25): 클로드 직접 RSS 검증 통과 매체.
+    # 5/25 dispatch에서 베트남 카드 0건 발견 후 매체 풀 확장.
+    - name: "VietnamPlus - English (Vietnam)"
+      url: "https://en.vietnamplus.vn/"
+      rss: "https://en.vietnamplus.vn/rss/home.rss"
+      scrape_method: rss
+      country: Vietnam
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "베트남 통신사(VNA) 영문 사이트. 정부·외교·경제 광범위 보도."
+
+    - name: "VnExpress English - Business (Vietnam)"
+      url: "https://e.vnexpress.net/"
+      rss: "https://e.vnexpress.net/rss/business.rss"
+      scrape_method: rss
+      country: Vietnam
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "베트남 최대 온라인 매체 영문판 비즈니스 섹션. 광물·산업·투자 보도."
 
 tier_3_mongolia_media:
   weight: 3
@@ -626,6 +647,13 @@ tier_4_broad_search:
     - "Tanzania Ngualla rare earth"
     - "Tanzania mineral exploration"
     - "Tanzania mining investment"
+    # v6.7 추가 (2026-05-25): 광산명·지명 단독 쿼리. 본문에 'Tanzania' 명시 없이
+    # 광산명만 적힌 헤드라인도 매칭하도록. COUNTRY_ALIASES에 이 지명들 등록됨.
+    - "Kabanga nickel"
+    - "Mantra Tanzania uranium"
+    - "Edenville graphite"
+    - "Mkuju River uranium"
+    - "Songea graphite"
   tanzania_swahili_queries:
     - "Tanzania madini ya kimkakati"
     - "Tanzania uchimbaji urani"
@@ -657,6 +685,11 @@ tier_4_broad_search:
     - "Vietnam mineral exploration"
     - "Vietnam mining investment"
     - "Vietnam Lai Chau rare earth"
+    # v6.7 추가 (2026-05-25): 광산명·지명 단독 쿼리.
+    - "Núi Pháo tungsten"
+    - "Dak Nong bauxite"
+    - "Yen Phu rare earth"
+    - "Vinacomin coal mining"
   vietnam_local_queries:
     - "Việt Nam đất hiếm"
     - "Việt Nam khoáng sản chiến lược"
@@ -723,6 +756,11 @@ tier_4_broad_search:
     - "Laos mineral exploration"
     - "Laos PanAust Sepon"
     - "Laos potash exploration"
+    # v6.7 추가 (2026-05-25): 광산명·지명 단독 쿼리.
+    - "Sepon mine copper"
+    - "Phu Bia mining gold"
+    - "Xayaboury Laos mining"
+    - "Bolaven bauxite Laos"
   # v6.3 추가: 라오어 (lo) 쿼리
   laos_local_queries:
     - "ບໍ່ແຮ່ ສຳຄັນ ລາວ"      # 라오스 핵심광물
