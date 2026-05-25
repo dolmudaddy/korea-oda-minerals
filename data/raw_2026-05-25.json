@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-25T11:29:36.711014+00:00",
+  "generated_at": "2026-05-25T11:36:30.058058+00:00",
   "stats": {
     "sources_tried": 23,
-    "items_fetched": 307,
-    "items_qualified": 22,
+    "items_fetched": 235,
+    "items_qualified": 20,
     "google_news_queries": 104,
-    "google_news_items": 4705
+    "google_news_items": 4707
   },
-  "total": 22,
+  "total": 20,
   "articles": [
     {
       "id": "8b41551bf785",
@@ -139,18 +139,6 @@
       "score": 10
     },
     {
-      "id": "5fb78335",
-      "title": "Nickel price spikes as risks to supply grow in top producer Indonesia",
-      "url": "https://www.mining.com/web/nickel-price-spikes-as-risks-to-supply-grow-in-top-producer-indonesia/",
-      "source": "Mining.com - Critical Minerals (category)",
-      "source_language": "en",
-      "country": "Indonesia",
-      "tier_weight": 5,
-      "summary_raw": "Shanghai Metals Market reported that 10%-15% of high-grade nickel pig iron capacity at Weda Bay will be placed under rotational maintenance.",
-      "published": "Tue, 19 May 2026 17:32:12 +0000",
-      "score": 9
-    },
-    {
       "id": "efe5e03c7274",
       "title": "Tak Lagi Ekspor Mentah, PT TIMAH Mulai Gaspol Hilirisasi Mineral Strategis - Listrik Indonesia",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZVlBemtqYnVfd1I2TjhZQV9KdC1sOElOX3VDRk44MXFIM0IwTWY3YmZqaXZ3cUs4bWp5WTM0bTNnYWdjdFBBLVI4QUF4bm85SUIzcHJvUUIzNkY1XzRtUlJFWkE5X2xBek9lbGEwdVVwQTBMYlR5OS1zZFJhVm9SZUNmeVZoMHdheTRLOTBLMWFvN0tUNWdxSHdyR3VrNXpZLWczRE4xbDlWNEdKTUVhWlM2M2Zzdw?oc=5",
@@ -209,18 +197,6 @@
       "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
       "score": 9
-    },
-    {
-      "id": "e36b3da2",
-      "title": "Freeport says Grasberg on track for full production by end of 2027",
-      "url": "https://www.mining.com/freeport-says-grasberg-on-track-for-full-production-by-end-of-2027/",
-      "source": "Mining.com - All news",
-      "source_language": "en",
-      "country": "Indonesia",
-      "tier_weight": 5,
-      "summary_raw": "Grasberg is now running at 50% of capacity and is expected to reach 65% later this year, Freeport Indonesia's CEO says.",
-      "published": "Wed, 20 May 2026 16:03:00 +0000",
-      "score": 8
     },
     {
       "id": "0f934580",
