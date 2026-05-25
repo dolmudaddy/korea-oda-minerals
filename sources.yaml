@@ -408,7 +408,7 @@ tier_3_kazakhstan_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 2
+      priority_boost: 1  # v6.5 (2026-05-25): 2→1. Tier 3X 위치의 같은 매체와 일관성 유지 (광업 외 노이즈).
       note: "카자흐 영문 매체. 정부·자원·외교 보도 (10 items)."
 
 tier_3_uzbekistan_media:
@@ -520,7 +520,7 @@ tier_3X_intl_mining_media:
       country: Mongolia
       language: mn
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 종합 뉴스 RSS라 광물 무관 카드 통과 빈도 높음. 광물 키워드 강매칭 카드만 threshold 통과하도록 score 약화.
       note: "박사님 직접 검증 (2026-05): RSS 작동. 몽골 최대 매체 중 하나."
 
     - name: "Mongolian Mining Journal - English"
@@ -551,7 +551,7 @@ tier_3X_intl_mining_media:
       country: central_asia
       language: en
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 종합 통신사 RSS (광업 외 정치·사법 노이즈 다수). 5/24 'asset recovery and extradition' 카자흐 카드 통과 사례.
       note: "박사님 검증: 카자흐·우즈베크·키르기스·타지크·투르크멘 통합 통신사. 한 RSS로 카자흐+우즈베크+몽골 카드 동시 보강."
 
     - name: "Kursiv Media - English (Kazakhstan)"
@@ -561,7 +561,7 @@ tier_3X_intl_mining_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 카자흐 경제 일반지 (광업 외 산업·금융 노이즈).
       note: "박사님 검증: 카자흐 경제·비즈니스 전문 영문. 카자흐 광업 산업 동향."
 
     - name: "The Astana Times (Kazakhstan)"
@@ -571,7 +571,7 @@ tier_3X_intl_mining_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 카자흐 영문 종합지 (광업 외 외교·정치 노이즈).
       note: "박사님 검증: 카자흐 영문 신문. 정책·외교·자원 동향."
 
     - name: "Gazeta.uz - English (Uzbekistan)"
@@ -581,7 +581,7 @@ tier_3X_intl_mining_media:
       country: Uzbekistan
       language: en
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 우즈벡 일반 영문지 (광업 외 정치·사회 노이즈).
       note: "박사님 검증: 우즈베크 경제·정치 영문 1차 자료."
 
     - name: "UZ Daily - English (Uzbekistan)"
@@ -591,7 +591,7 @@ tier_3X_intl_mining_media:
       country: Uzbekistan
       language: en
       verified: true
-      priority_boost: 3
+      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 우즈벡 종합 비즈니스지. 5/24 'Wins Gold at International Sniper Competition' 카드 통과 사례. Almalyk 등 광업 카드는 mineral 키워드로 통과.
       note: "박사님 검증: 우즈베크 비즈니스·광업 영문. Almalyk MMC 등 자주 다룸."
 
     - name: "World Nuclear News (uranium/nuclear)"
@@ -617,6 +617,15 @@ tier_4_broad_search:
     - "Tanzania uranium Mantra Namtumbo"
     - "Tanzania nickel Kabanga"
     - "Tanzania critical minerals"
+    # v6.5 추가 (2026-05-25): 5/24 raw에서 탄자니아 0건 발견. CMW에서 잡힌
+    # africa.businessinsider.com 'strategic minerals discovery' 기사가
+    # 좁은 쿼리 풀(graphite/rare earth/uranium/nickel)로 누락. 광종 비특정
+    # 쿼리 추가로 풀 확장.
+    - "Tanzania strategic minerals"
+    - "Tanzania mineral discovery"
+    - "Tanzania Ngualla rare earth"
+    - "Tanzania mineral exploration"
+    - "Tanzania mining investment"
   tanzania_swahili_queries:
     - "Tanzania madini ya kimkakati"
     - "Tanzania uchimbaji urani"
@@ -643,6 +652,11 @@ tier_4_broad_search:
     - "Vietnam tungsten Nui Phao"
     - "Vietnam critical mineral strategy"
     - "Vietnam bauxite Tay Nguyen"
+    # v6.5 추가 (2026-05-25): 5/24 raw에서 베트남 0건 발견. 광종 비특정
+    # 일반 광업 쿼리 추가.
+    - "Vietnam mineral exploration"
+    - "Vietnam mining investment"
+    - "Vietnam Lai Chau rare earth"
   vietnam_local_queries:
     - "Việt Nam đất hiếm"
     - "Việt Nam khoáng sản chiến lược"
@@ -705,6 +719,10 @@ tier_4_broad_search:
     - "Laos mining investment"
     - "Laos MOIC mineral"
     - "Laos Ministry of Industry and Commerce mining"
+    # v6.5 추가 (2026-05-25): 5/24 raw에서 라오스 0건 발견.
+    - "Laos mineral exploration"
+    - "Laos PanAust Sepon"
+    - "Laos potash exploration"
   # v6.3 추가: 라오어 (lo) 쿼리
   laos_local_queries:
     - "ບໍ່ແຮ່ ສຳຄັນ ລາວ"      # 라오스 핵심광물
@@ -861,6 +879,19 @@ scoring:
       - "golden age"
       - "golden anniversary"
       - "golden jubilee"
+      # v6.5 추가 (2026-05-25): 5/24 카드 분석으로 발견된 노이즈 패턴 차단.
+      # - 우즈벡 "Wins Gold at International Sniper Competition" → 스포츠 1등 표현
+      # - 카자흐 "agree on asset recovery and extradition" → 사법공조 (광업 무관)
+      # gold/golden 변형은 v6.4에서 cover 못한 스포츠 1등 어휘 추가.
+      - "wins gold"
+      - "won gold"
+      - "gold at international"
+      - "gold at the world"
+      - "sniper competition"
+      - "asset recovery"
+      - "extradition"
+      - "anti-corruption agreement"
+      - "judicial cooperation"
 
     # ────────────────────────────────────────────────────────────
     # 2. 제외 키워드 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
