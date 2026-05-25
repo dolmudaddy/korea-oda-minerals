@@ -1,14 +1,29 @@
 {
-  "generated_at": "2026-05-25T13:10:41.520133+00:00",
+  "generated_at": "2026-05-25T13:54:21.838558+00:00",
   "stats": {
-    "sources_tried": 25,
-    "items_fetched": 295,
-    "items_qualified": 13,
-    "google_news_queries": 128,
-    "google_news_items": 5671
+    "sources_tried": 27,
+    "items_fetched": 345,
+    "items_qualified": 18,
+    "google_news_queries": 122,
+    "google_news_items": 5690
   },
-  "total": 13,
+  "total": 17,
   "articles": [
+    {
+      "id": "c2af42c35eb4",
+      "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - 아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HeEctajc4eXIzaHo5NVVySzEydV9QNmprSGYxN3Q2R2hDMk5WengyaVNvOWRNOWlXQ0M5VF9zWE11WUxwSkd0MFp3dFZyTkhjXzhudFNMT3o4cjVoLTRFNA?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HeEctajc4eXIzaHo5NVVySzEydV9QNmprSGYxN3Q2R2hDMk5WengyaVNvOWRNOWlXQ0M5VF9zWE11WUxwSkd0MFp3dFZyTkhjXzhudFNMT3o4cjVoLTRFNA?oc=5\" target=\"_blank\">전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">아시아경제</font>",
+      "published": "2026-04-29",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "KIAT 베트남",
+      "country": "Vietnam",
+      "score": 29
+    },
     {
       "id": "8b41551bf785",
       "title": "[INTERVIEW] Mongolian ambassador highlights rare earths, health care as future pillars of bilateral ties - The Korea Times",
@@ -53,6 +68,30 @@
       "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
       "score": 12
+    },
+    {
+      "id": "2f8c23c6",
+      "title": "Discovery of Rare Earth Deposits in Tanzania: A Strategic Asset",
+      "url": "https://www.capmad.com/mining-en/discovery-of-rare-earth-deposits-in-tanzania-a-strategic-asset/",
+      "source": "Capmad - Africa Mining (English)",
+      "source_language": "en",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "<p>Tanzania has just reached a strategic milestone with the discovery of significant rare earth deposits, minerals that have become essential for batteries, electronic equipment, electric vehicles,<span class=\"excerpt-hellip\">…</span></p>\n<p>The post <a href=\"https://www.capmad.com/mining-en/discovery-of-rare-earth-deposits-in-tanzania-a-strategic-asset/\">Discovery of Rare Earth Deposits in Tanzania: A Strategic Asset</a> appeared first on <a href=\"https://www.capmad.com\">Capmad.com</a>.</p>",
+      "published": "Thu, 21 May 2026 21:00:00 +0000",
+      "score": 9
+    },
+    {
+      "id": "5b5d2a64",
+      "title": "Nine killed at illegal mine in latest Sumatra landslide tragedy as gold surge continues",
+      "url": "https://news.mongabay.com/2026/05/nine-killed-at-illegal-mine-in-latest-sumatra-landslide-tragedy-as-gold-surge-continues/",
+      "source": "Mongabay - Conservation News",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "PADANG, Indonesia — Nine people were killed on May 14 in Indonesia’s West Sumatra province after heavy rain triggered the collapse of a 30-meter (100-foot) cliff at an illegal gold mine. “Three people survived, while nine others who were buried have been recovered deceased,” said Susmelawati Rosya, a spokesperson for the West Sumatra province police. [&#8230;]",
+      "published": "21 May 2026 18:22:19 +0000",
+      "score": 9
     },
     {
       "id": "efe5e03c7274",
@@ -112,6 +151,21 @@
       "source_type": "google_news",
       "search_query": "Indonesia hilirisasi nikel",
       "country": "Indonesia",
+      "score": 9
+    },
+    {
+      "id": "5c2d6786e97c",
+      "title": "«Казатомпром» запустит поиски урана в Монголии - dprom.kz",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VcW4yU0VEQVM0T0swMXlFYXRfSU11Y2llMXRnWUtxRm9Fa0RMZ00xWnA5RHUxcHYxbmo4bm82ZTl1UUJxYnRwaDZ3aVlnWFpNNmpkdzBuZlVGS0s3UW9SY2NFUTh3d0ppcjB3dGk1ZUJSTHNydHh4YWJB?oc=5",
+      "source": "Google News (KZ:kk)",
+      "source_language": "kk",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE1VcW4yU0VEQVM0T0swMXlFYXRfSU11Y2llMXRnWUtxRm9Fa0RMZ00xWnA5RHUxcHYxbmo4bm82ZTl1UUJxYnRwaDZ3aVlnWFpNNmpkdzBuZlVGS0s3UW9SY2NFUTh3d0ppcjB3dGk1ZUJSTHNydHh4YWJB?oc=5\" target=\"_blank\">«Казатомпром» запустит поиски урана в Монголии</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">dprom.kz</font>",
+      "published": "2026-04-25",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Қазақстан уран",
+      "country": "Mongolia",
       "score": 9
     },
     {
