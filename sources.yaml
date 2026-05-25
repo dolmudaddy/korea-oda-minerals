@@ -408,7 +408,7 @@ tier_3_kazakhstan_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 2→1. Tier 3X 위치의 같은 매체와 일관성 유지 (광업 외 노이즈).
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. v6.5 1점 감소도 부족 (score 8 경계선 통과). Tier 3X 위치와 일관성 유지.
       note: "카자흐 영문 매체. 정부·자원·외교 보도 (10 items)."
 
 tier_3_uzbekistan_media:
@@ -520,7 +520,7 @@ tier_3X_intl_mining_media:
       country: Mongolia
       language: mn
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 종합 뉴스 RSS라 광물 무관 카드 통과 빈도 높음. 광물 키워드 강매칭 카드만 threshold 통과하도록 score 약화.
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. 1점만 낮춰서는 score 8 통과. 0으로 추가 하향.
       note: "박사님 직접 검증 (2026-05): RSS 작동. 몽골 최대 매체 중 하나."
 
     - name: "Mongolian Mining Journal - English"
@@ -551,7 +551,7 @@ tier_3X_intl_mining_media:
       country: central_asia
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 종합 통신사 RSS (광업 외 정치·사법 노이즈 다수). 5/24 'asset recovery and extradition' 카자흐 카드 통과 사례.
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. v6.5 1점 감소도 부족.
       note: "박사님 검증: 카자흐·우즈베크·키르기스·타지크·투르크멘 통합 통신사. 한 RSS로 카자흐+우즈베크+몽골 카드 동시 보강."
 
     - name: "Kursiv Media - English (Kazakhstan)"
@@ -561,7 +561,7 @@ tier_3X_intl_mining_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 카자흐 경제 일반지 (광업 외 산업·금융 노이즈).
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. 5/25 'Kazakh wrestlers earn 12 medals' 카드가 score 8 경계선 통과 사례. 0으로 추가 하향.
       note: "박사님 검증: 카자흐 경제·비즈니스 전문 영문. 카자흐 광업 산업 동향."
 
     - name: "The Astana Times (Kazakhstan)"
@@ -571,7 +571,7 @@ tier_3X_intl_mining_media:
       country: Kazakhstan
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 카자흐 영문 종합지 (광업 외 외교·정치 노이즈).
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. v6.5 1점 감소도 부족.
       note: "박사님 검증: 카자흐 영문 신문. 정책·외교·자원 동향."
 
     - name: "Gazeta.uz - English (Uzbekistan)"
@@ -581,7 +581,7 @@ tier_3X_intl_mining_media:
       country: Uzbekistan
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 우즈벡 일반 영문지 (광업 외 정치·사회 노이즈).
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. v6.5 1점 감소도 부족.
       note: "박사님 검증: 우즈베크 경제·정치 영문 1차 자료."
 
     - name: "UZ Daily - English (Uzbekistan)"
@@ -591,7 +591,7 @@ tier_3X_intl_mining_media:
       country: Uzbekistan
       language: en
       verified: true
-      priority_boost: 1  # v6.5 (2026-05-25): 3→1. 우즈벡 종합 비즈니스지. 5/24 'Wins Gold at International Sniper Competition' 카드 통과 사례. Almalyk 등 광업 카드는 mineral 키워드로 통과.
+      priority_boost: 0  # v6.6 (2026-05-25): 1→0. 5/25 우즈벡 체조/레슬링/태권도 3건 모두 score 8 경계선 통과. 0으로 추가 하향.
       note: "박사님 검증: 우즈베크 비즈니스·광업 영문. Almalyk MMC 등 자주 다룸."
 
     - name: "World Nuclear News (uranium/nuclear)"
@@ -892,6 +892,22 @@ scoring:
       - "extradition"
       - "anti-corruption agreement"
       - "judicial cooperation"
+      # v6.6 추가 (2026-05-25): 5/25 dispatch에서 우즈벡 체조/레슬링/태권도 +
+      # 카자흐 wrestling 4건 통과. 본문에 "two golds won", "one gold,",
+      # "two gold," 같은 단어 순서 변형으로 v6.5 패턴 미스. 메달 색상 나열·
+      # 스포츠 대회 이름·종목명 어휘 추가. "medal" 단독은 자원외교 보도에서도
+      # 쓰일 수 있어 제외하고, 종목·대회명만 매칭.
+      - "golds won"
+      - "asian championships"
+      - "world cup challenge"
+      - "wrestling championship"
+      - "wrestling championships"
+      - "taekwondo championship"
+      - "taekwondo championships"
+      - "artistic gymnastics"
+      - "one gold,"
+      - "two gold,"
+      - "silver and bronze"
 
     # ────────────────────────────────────────────────────────────
     # 2. 제외 키워드 - 단어 경계 (짧은 약어, 부분일치 사고 방지)
