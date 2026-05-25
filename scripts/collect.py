@@ -111,6 +111,15 @@ COUNTRY_ALIASES = {
         "Mantra Tanzania", # Mkuju River 우라늄 사업
         "Mkuju River",     # 우라늄 광산
         "Songea",          # 흑연 광산 지역
+        # v6.8 (2026-05-25): 박사님 5/25 cron 로그 [DROP-no country] 다수
+        # 발생한 광산명·기업명 추가. Mining.com / Mining Weekly / African
+        # Mining 헤드라인이 광산명·운영사명만 적는 패턴.
+        "Mahenge",          # 흑연 광산 (Black Rock Mining)
+        "Lifezone",         # Kabanga 운영사 (Lifezone Metals)
+        "Lindi Jumbo",      # 흑연 광산 (Lindi 주)
+        "Tembo Nickel",     # Kabanga 운영 자회사
+        "Black Rock Mining",# Mahenge 운영사 (결합형, BlackRock 자산사와 구분)
+        "Twiga Minerals",   # Tanzania 광업 합작사 (Barrick)
     ],
     "Indonesia": [
         "Indonesia", "인도네시아",
@@ -126,6 +135,9 @@ COUNTRY_ALIASES = {
         "Lai Chau",        # 희토류 광산 (북서부 지방)
         "Dak Nong",        # 보크사이트 광산 지역
         "Yen Phu",         # 희토류 광산
+        # v6.8 (2026-05-25): 운영사명 추가. Nui Phao 운영자 등.
+        "Masan High-Tech", # Nui Phao 운영사
+        "Blackstone Minerals", # 베트남 nickel 사업자
     ],
     "Mongolia": [
         "Mongolia", "몽골",
@@ -152,6 +164,9 @@ COUNTRY_ALIASES = {
         "Phu Bia",         # 금 광산 (PanAust)
         "Xayaboury",       # 광물 자원 풍부한 북부 도
         "Bolaven",         # 보크사이트 잠재 지역
+        # v6.8 (2026-05-25): 추가 광산명·운영사명.
+        "Phu Kham",        # 구리 광산 (PanAust)
+        "LXML",            # Lane Xang Minerals Ltd (Sepon 운영자)
     ],
 }
 
