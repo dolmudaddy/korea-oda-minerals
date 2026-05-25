@@ -102,6 +102,15 @@ COUNTRY_ALIASES = {
         "Tanzania", "탄자니아",
         "Танзания",       # 러시아어
         "Tansania",       # 스와힐리/독일어 (참고)
+        # v6.7 (2026-05-25): 광산명·지명을 country alias로 등록.
+        # Mining.com 광종 RSS 등에서 헤드라인이 광산명만 적고 본문에 'Tanzania'
+        # 명시 누락되는 케이스 (e.g. "Kabanga nickel project advances") 회복용.
+        # 동일명 충돌 위험이 거의 없는 고유 광산명·지명만 추가.
+        "Kabanga",         # 니켈 광산 (북서부)
+        "Ngualla",         # 희토류 광산 (Peak Resources)
+        "Mantra Tanzania", # Mkuju River 우라늄 사업
+        "Mkuju River",     # 우라늄 광산
+        "Songea",          # 흑연 광산 지역
     ],
     "Indonesia": [
         "Indonesia", "인도네시아",
@@ -111,6 +120,12 @@ COUNTRY_ALIASES = {
         "Vietnam", "Viet Nam", "Việt Nam",   # 베트남어 정식 표기
         "베트남",
         "Вьетнам",
+        # v6.7 (2026-05-25): 광산명·지명 추가
+        "Nui Phao",        # 텅스텐 광산 (Masan High-Tech)
+        "Núi Pháo",        # 베트남어 표기
+        "Lai Chau",        # 희토류 광산 (북서부 지방)
+        "Dak Nong",        # 보크사이트 광산 지역
+        "Yen Phu",         # 희토류 광산
     ],
     "Mongolia": [
         "Mongolia", "몽골",
@@ -132,6 +147,11 @@ COUNTRY_ALIASES = {
         "Lao PDR", "Lao P.D.R", "Lao People",
         "ລາວ",                              # 라오어
         "Лаос",                              # 러시아어
+        # v6.7 (2026-05-25): 광산명·지명 추가
+        "Sepon mine",      # 구리·금 광산 (PanAust)
+        "Phu Bia",         # 금 광산 (PanAust)
+        "Xayaboury",       # 광물 자원 풍부한 북부 도
+        "Bolaven",         # 보크사이트 잠재 지역
     ],
 }
 
