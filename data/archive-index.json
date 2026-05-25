@@ -5,22 +5,21 @@
     {
       "week_of": "2026-05-25",
       "filename": "cards_2026-05-25.json",
-      "total_cards": 20,
+      "total_cards": 17,
       "category_counts": {
         "oda_cooperation": 1,
-        "exploration_development": 1,
+        "policy_regulation": 7,
         "supply_chain_trade": 6,
-        "policy_regulation": 8,
-        "research_academic": 4
+        "research_academic": 3
       },
       "top_tags": [
-        "니켈",
         "ESDM",
         "인도네시아",
+        "니켈",
         "카자흐스탄",
-        "MRPAM"
+        "몽골"
       ],
-      "generated_at": "2026-05-25T11:38:28.019530+00:00"
+      "generated_at": "2026-05-25T12:16:12.140309+00:00"
     },
     {
       "week_of": "2026-05-24",

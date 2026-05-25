@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-25T11:36:30.058058+00:00",
+  "generated_at": "2026-05-25T12:14:22.503576+00:00",
   "stats": {
     "sources_tried": 23,
-    "items_fetched": 235,
-    "items_qualified": 20,
+    "items_fetched": 215,
+    "items_qualified": 17,
     "google_news_queries": 104,
-    "google_news_items": 4707
+    "google_news_items": 4702
   },
-  "total": 20,
+  "total": 17,
   "articles": [
     {
       "id": "8b41551bf785",
@@ -100,42 +100,6 @@
       "tier_weight": 5,
       "summary_raw": "Kazakhstan’s Prosecutor General Berik Assylov visited Hong Kong to sign agreements on extradition, the transfer of sentenced persons and mutual legal assistance in criminal cases. The Prosecutor General’s Office said that the main purpose of the visit was to close off channels for those seeking to hide assets abroad or flee justice. The two sides ...",
       "published": "Fri, 22 May 2026 12:36:05 +0000",
-      "score": 10
-    },
-    {
-      "id": "613e1ae1",
-      "title": "Uzbek Gymnasts Win Five Medals at World Cup Challenge in Tashkent",
-      "url": "https://www.uzdaily.uz/en/uzbek-gymnasts-win-five-medals-at-world-cup-challenge-in-tashkent/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "Uzbekistan’s artistic gymnastics team secured five medals at the FIG World Cup Challenge series stage held in Tashkent, including one gold, two silver, and two bronze.",
-      "published": "Sun, 24 May 2026 15:23:00 +0500",
-      "score": 10
-    },
-    {
-      "id": "aee41e82",
-      "title": "Uzbekistan Wins Four Medals at U23 Asian Greco-Roman Wrestling Championships",
-      "url": "https://www.uzdaily.uz/en/uzbekistan-wins-four-medals-at-u23-asian-greco-roman-wrestling-championships/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "Uzbekistan’s U23 Greco-Roman wrestling team secured four medals, including two gold, at the Asian Championships held in Vietnam.",
-      "published": "Sun, 24 May 2026 15:09:00 +0500",
-      "score": 10
-    },
-    {
-      "id": "b8dff0f3",
-      "title": "Uzbekistan Wins 11 Medals at WT Asian Taekwondo Championships",
-      "url": "https://www.uzdaily.uz/en/uzbekistan-wins-11-medals-at-wt-asian-taekwondo-championships/",
-      "source": "UZ Daily - English (Uzbekistan)",
-      "source_language": "en",
-      "country": "Uzbekistan",
-      "tier_weight": 5,
-      "summary_raw": "The Uzbekistan national taekwondo team secured 11 medals at the Asian Championships in Ulaanbaatar, including two gold, five silver, and four bronze medals.",
-      "published": "Sun, 24 May 2026 14:59:00 +0500",
       "score": 10
     },
     {
@@ -238,12 +202,12 @@
       "score": 8
     },
     {
-      "id": "e5244794cddd",
-      "title": "Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral - Media Nikel Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5",
+      "id": "99601df2f7ca",
+      "title": "Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal - Media Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5\" target=\"_blank\">Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5\" target=\"_blank\">Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Indonesia</font>",
       "published": "2026-05-18",
       "tier_weight": 1,
       "priority_boost": 0,
@@ -253,12 +217,12 @@
       "score": 8
     },
     {
-      "id": "99601df2f7ca",
-      "title": "Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal - Media Indonesia",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5",
+      "id": "e5244794cddd",
+      "title": "Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5",
       "source": "Google News (ID:id)",
       "source_language": "id",
-      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkxEODRVOGN6TUJaTWhzay1oVmxFZG5hbFlyWk1KUUtpcl9Qai1DUnkxTFhPUkc3ZW9vQmxUeUtXX3MxVVJaYll0d09KLUxON3h1N29jSERTMFprZFJyeEE1NkpGQnU2cFVCM0R1Zk5ITlZCZVlfRS05eDFnUEM0c2UwR0gxREZuek9lZ0ltZlI4S2RGWF9NVnhoaGprWXF2YkJkdg?oc=5\" target=\"_blank\">Hilirisasi Nikel Topang Nasionalisme Ekonomi dan Warga Lokal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Indonesia</font>",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0dPR0pSZjVPUkNhUG55UC0taXFDQ3gtRXlVejlSZkNwV1RRNndwbUpicElBSXBHaWVwTzc2Ni1od3N0WngwNHB0aHVhRkM1Zk5CQ3FWRm1lWWlkYWhzV1gyN3FBQWZQQ2tJVHFOR2lpSHpwSFcxTWM4T19RWWhGakZTb1BRcWFzRkdBOUxMX1BobGlQZTBsSEJsVkR3ZERRLWY0cEh3Rk9JWC1K?oc=5\" target=\"_blank\">Kadin China Surati Presiden RI, Soroti Kebijakan Nikel dan Hilirisasi Mineral</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
       "published": "2026-05-18",
       "tier_weight": 1,
       "priority_boost": 0,
