@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-25T09:58:05.731348+00:00",
+  "generated_at": "2026-05-25T11:29:36.711014+00:00",
   "stats": {
     "sources_tried": 23,
     "items_fetched": 307,
     "items_qualified": 22,
     "google_news_queries": 104,
-    "google_news_items": 4693
+    "google_news_items": 4705
   },
   "total": 22,
   "articles": [
@@ -55,6 +55,18 @@
       "score": 12
     },
     {
+      "id": "fad3bb35",
+      "title": "Kazakh wrestlers earn 12 medals in Vietnam",
+      "url": "https://kz.kursiv.media/en/2026-05-25/engk-tank-kazakh-wrestlers-earn-12-medals-in-vietnam/?utm_source=rss&utm_medium=rss&utm_campaign=engk-tank-kazakh-wrestlers-earn-12-medals-in-vietnam",
+      "source": "Kursiv Media - English (Kazakhstan)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "The Asian U23 Wrestling Championships began in Vietnam over the weekend, with Kazakhstan’s national team winning 12 medals after the first two days of competition. Greco-Roman wrestling Kazakhstan’s Greco-Roman wrestlers claimed eight medals overall, including two golds won by Aibek Aitbekov (60 kg) and Islam Yevloyev (97 kg). In the finals, Aitbekov defeated India’s Suraj ...",
+      "published": "Mon, 25 May 2026 10:36:55 +0000",
+      "score": 10
+    },
+    {
       "id": "1df5d15b",
       "title": "Fuel vs. atoms: New Kazakh refinery project hits nuclear-level costs",
       "url": "https://kz.kursiv.media/en/2026-05-25/engk-yeri-fuel-vs-atoms-new-kazakh-refinery-project-hits-nuclear-level-costs/?utm_source=rss&utm_medium=rss&utm_campaign=engk-yeri-fuel-vs-atoms-new-kazakh-refinery-project-hits-nuclear-level-costs",
@@ -88,18 +100,6 @@
       "tier_weight": 5,
       "summary_raw": "Kazakhstan’s Prosecutor General Berik Assylov visited Hong Kong to sign agreements on extradition, the transfer of sentenced persons and mutual legal assistance in criminal cases. The Prosecutor General’s Office said that the main purpose of the visit was to close off channels for those seeking to hide assets abroad or flee justice. The two sides ...",
       "published": "Fri, 22 May 2026 12:36:05 +0000",
-      "score": 10
-    },
-    {
-      "id": "79da8d44",
-      "title": "Kazakhstan kicks off construction of new foundry",
-      "url": "https://kz.kursiv.media/en/2026-05-21/engk-tank-kazakhstan-kicks-off-construction-of-new-foundry/?utm_source=rss&utm_medium=rss&utm_campaign=engk-tank-kazakhstan-kicks-off-construction-of-new-foundry",
-      "source": "Kursiv Media - English (Kazakhstan)",
-      "source_language": "en",
-      "country": "Kazakhstan",
-      "tier_weight": 5,
-      "summary_raw": "Polymet Solutions Corporation LLP, a Kazakhstani manufacturer of rubber, rubber-metal and steel linings made from chromium-molybdenum alloy, has launched construction of a new foundry in the Karaganda region. With total investments exceeding $23 million, the project is expected to reach full operational capacity by 2029. Once completed, the facility will be capable of producing up ...",
-      "published": "Thu, 21 May 2026 12:37:28 +0000",
       "score": 10
     },
     {
