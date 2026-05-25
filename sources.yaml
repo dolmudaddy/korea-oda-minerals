@@ -625,6 +625,30 @@ tier_3X_intl_mining_media:
       priority_boost: 3
       note: "박사님 검증: 우라늄·원자력 전문. 카자흐 Kazatomprom 세계 1위 + 몽골 우라늄 매주 카버."
 
+    # v6.8 신규 (2026-05-25): 박사님이 사례로 알려준 africa.businessinsider /
+    # gasworld / capmad / mongabay 5개 URL 중 RSS 작동 확인된 2개.
+    # Google News rss는 매체 SEO ranking 기반이라 이 매체들이 결과 100건 안에
+    # 못 들어오는 게 원인. 직접 RSS 등록으로 우회.
+    - name: "Capmad - Africa Mining (English)"
+      url: "https://www.capmad.com/"
+      rss: "https://www.capmad.com/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "박사님 사례로 발굴 (2026-05-25): Tanzania rare earth strategic asset 기사가 첫 결과. Africa mining 전문 매체."
+
+    - name: "Mongabay - Conservation News"
+      url: "https://news.mongabay.com/"
+      rss: "https://news.mongabay.com/feed/"
+      scrape_method: rss
+      country: global
+      language: en
+      verified: true
+      priority_boost: 2
+      note: "박사님 사례로 발굴 (2026-05-25): Laos 광물 오염 기사 등 Asia·Africa 환경·광물 보도 풍부."
+
 # =====================================================================
 # Tier 4: Google News broad search (per-country queries)
 # =====================================================================
@@ -649,11 +673,10 @@ tier_4_broad_search:
     - "Tanzania mining investment"
     # v6.7 추가 (2026-05-25): 광산명·지명 단독 쿼리. 본문에 'Tanzania' 명시 없이
     # 광산명만 적힌 헤드라인도 매칭하도록. COUNTRY_ALIASES에 이 지명들 등록됨.
+    # v6.8 (2026-05-25): Edenville/Songea 쿼리는 0 entries로 효과 없어 제거.
     - "Kabanga nickel"
     - "Mantra Tanzania uranium"
-    - "Edenville graphite"
     - "Mkuju River uranium"
-    - "Songea graphite"
   tanzania_swahili_queries:
     - "Tanzania madini ya kimkakati"
     - "Tanzania uchimbaji urani"
@@ -762,11 +785,9 @@ tier_4_broad_search:
     - "Xayaboury Laos mining"
     - "Bolaven bauxite Laos"
   # v6.3 추가: 라오어 (lo) 쿼리
-  laos_local_queries:
-    - "ບໍ່ແຮ່ ສຳຄັນ ລາວ"      # 라오스 핵심광물
-    - "ບໍ່ແຮ່ ທອງແດງ ລາວ"     # 라오스 구리광
-    - "ບໍ່ແຮ່ ບອກໄຊ ລາວ"      # 라오스 보크사이트
-    - "MOIC ບໍ່ແຮ່"            # 산업통상부 광물
+  # v6.8 (2026-05-25): 박사님 5/25 cron 로그에서 모두 0 entries 확인. Google
+  # News rss에 라오어 콘텐츠 거의 없음. 4개 모두 제거.
+  laos_local_queries: []
 
   korea_cross_queries:
     - "Korea Tanzania mineral cooperation"
@@ -868,7 +889,9 @@ scoring:
       - "movie"
       - "cinema"
       - "blockbuster"
-      - "actor"
+      # v6.8 (2026-05-25): "actor" 단독 제거. 박사님 5/25 cron 로그에서 호치민
+      # 보건 보도 본문 "actor" 매칭으로 부작용 폐기 확인. "actress"·"film festival"·
+      # "cinema" 등 다른 키워드로 영화 차단 효과 유지됨.
       - "actress"
       - "tournament"
       - "football"
@@ -1503,7 +1526,7 @@ scoring:
   recency_bonus:
     within_3_days: 2
     within_7_days: 1
-  freshness_days: 21  # 박사님 응급조치 (2026-05): 30 → 21 (다음 주부터 더 안정적인 카드 풀 유지)
+  freshness_days: 30  # v6.8 (2026-05-25): 21 → 30. 박사님 5/25 cron 로그 분석 결과 21d 차단이 탄자/라오/베 카드 회복 막는 가장 큰 원인이었음 (28~50d 광물 보도 대량 폐기). 30d로 환원.
 
 # =====================================================================
 # Special handlers
