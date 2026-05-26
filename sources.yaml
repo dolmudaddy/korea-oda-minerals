@@ -375,6 +375,25 @@ tier_3_tanzania_media:
       priority_boost: 2
       note: "탄자니아 정부계 영문 일간. madini.go.tz 정책 보도 인용 빈번."
 
+    # v6.10 신규 (2026-05-26): 박사님 제안 스와힐리 매체 5종 중 유일하게
+    # GitHub Actions에서 안정 fetch + 광물 전용 카테고리 RSS 보유.
+    # WordPress 카테고리 RSS 직접 검증 (10 items, 2026-03~05 광물 정책 보도 풍부):
+    #   - 5/21 "Njombe 광물 허브 부상" (5/25 dispatch 누락분)
+    #   - 5/4 "Tume ya Madini 수입 보고"
+    #   - 4/27 Tanzanite 수출제재 / 광물 30억실링 밀수
+    #   - 3/2 "Serikali, Lifezone wajadili Mradi wa Kabanga" (Kabanga 니켈)
+    # 배제된 후보: Mwananchi(Cloudflare 403), JamiiForums(403 + 노이즈),
+    # Magazeti(도메인 사망), Millard Ayo/Jambo TV(SNS·연예 중심).
+    - name: "HabariLeo - Madini (RSS)"
+      url: "https://habarileo.co.tz/category/madini/"
+      rss: "https://habarileo.co.tz/category/madini/feed/"
+      scrape_method: rss
+      country: Tanzania
+      language: sw
+      verified: true
+      priority_boost: 3
+      note: "TSN 스와힐리 일간의 madini 전용 카테고리 RSS. Daily News 자매지지만 광물 편집은 별도. 월 3-5건 정책 보도."
+
 tier_3_indonesia_media:
   weight: 3
   sources: []
@@ -403,6 +422,33 @@ tier_3_vietnam_media:
       verified: true
       priority_boost: 2
       note: "베트남 최대 온라인 매체 영문판 비즈니스 섹션. 광물·산업·투자 보도."
+
+    # v6.10 신규 (2026-05-26): 박사님 제안 베트남판 NAVER급 5종 평가 결과.
+    # Báo Mới(RSS 미제공 aggregator)·24h.com.vn(광물 섹션 없음)·Zing/znews
+    # (Anubis 봇 차단) 배제. 기존 영문판은 글로벌 비즈니스 위주 → 베트남어
+    # 풀판이 국내 광물 보도 핵심. 5/26 직접 검증:
+    #   - VnExpress kinh-doanh: 15건 중 "Hòa Phát Thạch Khê 철광산 재개발" 보도
+    #   - VietnamNet kinh-doanh: 같은 날 다른 시각의 Thạch Khê 보도
+    # iron/sắt 매칭으로 core_minerals 통과 예상.
+    - name: "VnExpress - Kinh doanh (Vietnamese RSS)"
+      url: "https://vnexpress.net/kinh-doanh"
+      rss: "https://vnexpress.net/rss/kinh-doanh.rss"
+      scrape_method: rss
+      country: Vietnam
+      language: vi
+      verified: true
+      priority_boost: 2
+      note: "VnExpress 베트남어 비즈니스 섹션. 국내 광물·산업·투자 보도. 기존 영문판과 보완."
+
+    - name: "VietnamNet - Kinh doanh (RSS)"
+      url: "https://vietnamnet.vn/kinh-doanh"
+      rss: "https://vietnamnet.vn/rss/kinh-doanh.rss"
+      scrape_method: rss
+      country: Vietnam
+      language: vi
+      verified: true
+      priority_boost: 2
+      note: "베트남 정부계 종합매체 비즈니스 RSS. Thạch Khê 등 국내 광산 보도."
 
 tier_3_mongolia_media:
   weight: 3
