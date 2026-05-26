@@ -1,7 +1,27 @@
 {
-  "total_weeks": 7,
-  "latest_week": "2026-05-25",
+  "total_weeks": 8,
+  "latest_week": "2026-05-26",
   "weeks": [
+    {
+      "week_of": "2026-05-26",
+      "filename": "cards_2026-05-26.json",
+      "total_cards": 14,
+      "category_counts": {
+        "oda_cooperation": 2,
+        "supply_chain_trade": 5,
+        "policy_regulation": 4,
+        "research_academic": 2,
+        "exploration_development": 1
+      },
+      "top_tags": [
+        "인도네시아",
+        "니켈",
+        "ESDM",
+        "하류산업화",
+        "몽골"
+      ],
+      "generated_at": "2026-05-26T10:02:26.355746+00:00"
+    },
     {
       "week_of": "2026-05-25",
       "filename": "cards_2026-05-25.json",
