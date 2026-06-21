@@ -1,7 +1,27 @@
 {
-  "total_weeks": 11,
-  "latest_week": "2026-06-14",
+  "total_weeks": 12,
+  "latest_week": "2026-06-21",
   "weeks": [
+    {
+      "week_of": "2026-06-21",
+      "filename": "cards_2026-06-21.json",
+      "total_cards": 22,
+      "category_counts": {
+        "oda_cooperation": 5,
+        "supply_chain_trade": 6,
+        "policy_regulation": 7,
+        "exploration_development": 2,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "몽골",
+        "MRPAM",
+        "희토류",
+        "핵심광물",
+        "인도네시아"
+      ],
+      "generated_at": "2026-06-21T00:16:06.592905+00:00"
+    },
     {
       "week_of": "2026-06-14",
       "filename": "cards_2026-06-14.json",
