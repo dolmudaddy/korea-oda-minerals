@@ -1,7 +1,27 @@
 {
-  "total_weeks": 12,
-  "latest_week": "2026-06-21",
+  "total_weeks": 13,
+  "latest_week": "2026-06-28",
   "weeks": [
+    {
+      "week_of": "2026-06-28",
+      "filename": "cards_2026-06-28.json",
+      "total_cards": 33,
+      "category_counts": {
+        "supply_chain_trade": 12,
+        "oda_cooperation": 9,
+        "policy_regulation": 8,
+        "exploration_development": 2,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "몽골",
+        "인도네시아",
+        "ESDM",
+        "카자흐스탄",
+        "핵심광물"
+      ],
+      "generated_at": "2026-06-28T00:10:46.609532+00:00"
+    },
     {
       "week_of": "2026-06-21",
       "filename": "cards_2026-06-21.json",
