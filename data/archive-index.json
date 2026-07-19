@@ -1,7 +1,27 @@
 {
-  "total_weeks": 15,
-  "latest_week": "2026-07-12",
+  "total_weeks": 16,
+  "latest_week": "2026-07-19",
   "weeks": [
+    {
+      "week_of": "2026-07-19",
+      "filename": "cards_2026-07-19.json",
+      "total_cards": 40,
+      "category_counts": {
+        "oda_cooperation": 24,
+        "supply_chain_trade": 9,
+        "policy_regulation": 3,
+        "exploration_development": 2,
+        "research_academic": 2
+      },
+      "top_tags": [
+        "몽골",
+        "MRPAM",
+        "희토류",
+        "핵심광물",
+        "KIAT"
+      ],
+      "generated_at": "2026-07-19T00:03:49.436300+00:00"
+    },
     {
       "week_of": "2026-07-12",
       "filename": "cards_2026-07-12.json",
