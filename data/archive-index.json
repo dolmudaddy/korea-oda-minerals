@@ -1,7 +1,27 @@
 {
-  "total_weeks": 18,
-  "latest_week": "2026-08-02",
+  "total_weeks": 19,
+  "latest_week": "2026-08-08",
   "weeks": [
+    {
+      "week_of": "2026-08-08",
+      "filename": "cards_2026-08-08.json",
+      "total_cards": 45,
+      "category_counts": {
+        "supply_chain_trade": 6,
+        "oda_cooperation": 20,
+        "policy_regulation": 12,
+        "exploration_development": 4,
+        "research_academic": 3
+      },
+      "top_tags": [
+        "몽골",
+        "MRPAM",
+        "희토류",
+        "핵심광물",
+        "니켈"
+      ],
+      "generated_at": "2026-08-08T23:39:01.650324+00:00"
+    },
     {
       "week_of": "2026-08-02",
       "filename": "cards_2026-08-02.json",
