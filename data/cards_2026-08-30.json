@@ -1,0 +1,722 @@
+{
+  "week_of": "2026-08-30",
+  "generated_at": "2026-08-30T01:15:02.044094+00:00",
+  "total_cards": 17,
+  "articles": [
+    {
+      "id": "4f7afa7c9dbe",
+      "title": "China-Mongolia mineral ties pose risk to South Korea diversification - upi.com",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWG5GNzV6Z2ZMcXpHa21EMWp6TlU5Mk5JaF96bWh1aGZkM3E0cl9ZNF9QZ2RTY21MNi0zWWVib1o2dUpjdkxYVVhzUXU3WnRzdHJ2RW9COC1jSXEya1k2NWNSeVRabGRZb2lhcnpQb0FrM21CWV84cWlMclZCellUbllEbmdBNDNWTFBGRm45b3VkWWc3T1NNSi1TSzVnM3M2UENhS3JuQ0ZmWGUyWWJZ0gG0AUFVX3lxTE5OaURQcTJ6Nml5RV9CV1M3RGp0Y3gwaWpHSjFVTkktUmdnWXBDNUJXUlpIcU9YM1EzYlBkNVl4bGFLR25vY3E1WW5FSEhWb3FyRmpQZ2s5cmlkVUVHYVpiWDVXOHUwdHdXcF8ydWRIVlZBb1Q2Sl9ETFo2Q1UzcEw3WDRzYXI3VUhDakVZVTlKbERyTl9MNHdiOC10VFhUZDA2UkYtSFRmSFBFczFuenhmOFVxRQ?oc=5",
+      "source": "Google News (MN:en)",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 1,
+      "score": 14,
+      "published": "2026-08-25",
+      "korean_summary": [
+        "중국-몽골 광물 관계 강화가 한국의 광물 공급망 다각화에 위험 요소로 작용할 수 있음이 지적됨",
+        "몽골의 중국 의존도 심화로 희토류·석탄·구리 등 전략광물 확보 경쟁에서 한국의 입지가 축소될 우려",
+        "한국이 몽골과의 자원외교 강화 및 ODA를 통한 기술협력 재검토가 필요한 시점으로 평가됨"
+      ],
+      "oda_relevance": "몽골의 중국 편중 심화 추세는 한국의 핵심광물 공급망 다각화 전략을 위협하고 있어, KIAT의 몽골 광물자원 협력사업 조정 및 KIGAM-MRPAM 기술협력의 전략적 강화가 시급함. 한국 광물외교의 경쟁력 유지를 위해 ODA 사업의 정치경제학적 가치 재평가 필요.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "몽골",
+        "희토류",
+        "석탄",
+        "구리",
+        "MRPAM",
+        "중국-한국 경쟁"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "China-Mongolia mineral ties",
+          "meaning": "중국-몽골 광물 관계 강화"
+        },
+        {
+          "phrase": "South Korea diversification",
+          "meaning": "한국의 공급망 다각화"
+        },
+        {
+          "phrase": "strategic minerals",
+          "meaning": "전략광물(희토류, 석탄, 구리 등)"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:13:36.810550+00:00"
+    },
+    {
+      "id": "0487dc2c06be",
+      "title": "Uzbekistan, South Korea forge new critical minerals links - trend.az",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tQVJzYkROOU1Cbk9aLUIxTVdFbEU3bFdNOEpXeGhndGxLekVxWENwWVlWVFdxNnFuaGlJOUhTVVhZYUxoeTJZRlE1Y3ZfaHlVRzFJcW03SVJHOVdEdHFJ?oc=5",
+      "source": "Google News (UZ:en)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 1,
+      "score": 13,
+      "published": "2026-08-14",
+      "korean_summary": [
+        "우즈베키스탄과 한국이 핵심광물 분야 새로운 협력 관계를 구축함.",
+        "양국 간 광물자원 개발·기술이전·산업협력에 관한 협의 진행 중으로 파악됨.",
+        "한국의 핵심광물 공급망 다변화 전략과 우즈베키스탄의 자원 산업화 추진이 맞아떨어짐."
+      ],
+      "oda_relevance": "우즈베키스탄의 희토류·우라늄·몰리브덴 등 핵심광물 개발 협력은 KIAT의 자원개발 ODA 사업 확대 대상으로 적합하며, KIGAM과의 지질탐사·기술이전 협력 트랙 구축 기회로 평가됨.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "우즈베키스탄",
+        "핵심광물",
+        "희토류",
+        "우라늄",
+        "한우즈 자원협력"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "critical minerals links",
+          "meaning": "핵심광물 협력 관계"
+        },
+        {
+          "phrase": "South Korea",
+          "meaning": "한국"
+        },
+        {
+          "phrase": "forge new",
+          "meaning": "새로운 ~을 구축하다"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:13:41.604960+00:00"
+    },
+    {
+      "id": "49ac7f5d1139",
+      "title": "Korea, Uzbekistan put AI minerals atop business agenda for C5 summit - Aju Press",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43QmdieUhCRzlpN0JZNW5vcE9nSC1VNVlFVlFoRllYd2ZLaU83a2MxQUJmQjVNV3FlWGF6dUJabDJSZFR1OUUxOFZLbkROTWpGMUtpaEJENEpFWUXSAVdBVV95cUxONHZIaFY1QUp6Vm5YdFRvM3VubHY5a1M0bFFnRDgwRDlrNzA3QnFfd3JEeUx6eW9DX2pVUHpwcFlfRHA0MjNqc0pNSFM0S2dtdmppYnZCbDg?oc=5",
+      "source": "Google News (UZ:en)",
+      "source_language": "en",
+      "country": "Uzbekistan",
+      "tier_weight": 1,
+      "score": 13,
+      "published": "2026-08-11",
+      "korean_summary": [
+        "한국과 우즈베키스탄이 C5 정상회담에서 AI 광물을 비즈니스 의제 최우선으로 설정함",
+        "양국이 인공지능·반도체산업 핵심 광물자원 협력을 C5 정상급 회의에서 논의 예정",
+        "한국의 핵심광물 확보 전략과 우즈베키스탄의 광물 수출 확대 이익 일치로 전략적 협력 강화 예상"
+      ],
+      "oda_relevance": "우즈베키스탄의 주요 핵심광물 자원(리튬·우라늄 등)에 대한 양자협력 강화 국면에서, KIAT 주관의 자원개발 ODA 사업 발굴 및 기술협력 프레임 확대의 정책적 기회임. 정상급 비즈니스 의제 상향화는 KIGAM 기술이전 및 인재양성 ODA 트랙과 연계할 여건 조성.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "우즈베키스탄",
+        "AI광물",
+        "한-우즈 양자협력",
+        "핵심광물",
+        "C5정상회담"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "AI minerals atop business agenda",
+          "meaning": "비즈니스 의제 최우선 순위로 AI용 핵심광물 설정"
+        },
+        {
+          "phrase": "C5 summit",
+          "meaning": "중앙아시아 5개국 협의체(우즈베키스탄·카자흐스탄·키르기스스탄·타지키스탄·투르크메니스탄) 또는 5개국 정상회담"
+        },
+        {
+          "phrase": "Korea-Uzbekistan bilateral cooperation",
+          "meaning": "한-우즈베키스탄 양자 협력 관계"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:13:48.261945+00:00"
+    },
+    {
+      "id": "c380a7131f41",
+      "title": "Korea, Uzbekistan put AI minerals atop business agenda for C5 summit - 네이트",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4Smt6Xzk2SFB2YzUtUVlXQldVMjBlWklNOGwtckpYQU9qaHFDX0VLd2lFQ21qRlo4LU5oTERta3RnYmE1ZWNGREtYOHNXUzJhTmxR?oc=5",
+      "source": "Google News (KR:ko)",
+      "source_language": "ko",
+      "country": "Uzbekistan",
+      "tier_weight": 1,
+      "score": 13,
+      "published": "2026-08-11",
+      "korean_summary": [
+        "한국과 우즈베키스탄이 C5 정상회담에서 AI 광물을 최우선 비즈니스 의제로 상정했음.",
+        "양국이 리튬·코발트 등 핵심광물 협력을 강화하고 공급망 다각화를 추진할 계획임.",
+        "한국의 핵심광물 ODA와 기술협력을 통해 중앙아시아 자원 확보 전략이 가속화될 전망임."
+      ],
+      "oda_relevance": "우즈베키스탄의 핵심광물(리튬·코발트) 개발·가공 역량 강화는 KIAT 주관 자원개발 ODA 사업의 전략적 협력처로서 중요 가치 있음. KIGAM과의 합동 기술이전 및 인력양성 프로그램 확대 기회.",
+      "category": "oda_cooperation",
+      "category_ko": "ODA 협력",
+      "tags": [
+        "리튬·코발트",
+        "우즈베키스탄",
+        "핵심광물",
+        "C5정상회담",
+        "KIAT·KIGAM"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "AI minerals",
+          "meaning": "인공지능 산업용 핵심광물(리튬, 코발트 등)"
+        },
+        {
+          "phrase": "C5 summit",
+          "meaning": "한·우즈베키스탄·카자흐스탄·키르기스스탄·투르크메니스탄 5개국 정상회담"
+        },
+        {
+          "phrase": "supply chain diversification",
+          "meaning": "공급망 다각화"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:13:53.666520+00:00"
+    },
+    {
+      "id": "166b5d03f662",
+      "title": "\"Казатомпром\" планирует крупные сделки по продаже урана Китаю и России - Kazakhstan Today",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMHBfSERqTWZIR1JvdHoxcHFvMG1rakpDbXhNdDJYUnRIUDBsZEF1Z0k4Y3NvM2R2a2IxYmphWWhDYk5zN25lckVWZ1V0VnJpTmlCdVFibXBUMWdWcmlCdjlkblZjREdGSERmVUtXWUZoZEg0ZFdmM2V4RkN1VnZVTkFESkZrREFYMWFkNjltVTVnU2NacjFhRE0zbm5sVEtqSVY5UA?oc=5",
+      "source": "Google News (KZ:ru)",
+      "source_language": "ru",
+      "country": "Kazakhstan",
+      "tier_weight": 1,
+      "score": 11,
+      "published": "2026-08-21",
+      "korean_summary": [
+        "카자흐스탄 국영 우라늄 기업 카자톰프롬이 중국과 러시아에 대규모 우라늄 판매 거래를 추진 중임",
+        "구체적 거래 규모·일정·계약 내용은 기사 본문 미기재. 카자톰프롬의 전략적 판매 계획 발표로 추정됨",
+        "카자흐스탄의 우라늄 수출 수급 정책 변화와 동아시아 핵연료 공급망 재편의 신호임"
+      ],
+      "oda_relevance": "카자흐스탄의 핵연료 수출 전략 재편은 한국의 우라늄 안보와 무관하지 않음. MOTIE 자원외교 차원에서 카자흐스탄 광물부(Ministry of Industry and Construction) 및 국영기업과의 핵심광물·우라늄 공급 안정성 협의 필요성을 상기시킴.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "우라늄",
+        "카자흐스탄",
+        "카자톰프롬",
+        "핵연료",
+        "중국·러시아 수출"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Казатомпром планирует крупные сделки по продаже урана Китаю и России",
+          "meaning": "카자톰프롬이 중국과 러시아에 우라늄을 판매하는 대규모 거래를 계획 중임"
+        },
+        {
+          "phrase": "крупные сделки",
+          "meaning": "대규모 거래·계약"
+        },
+        {
+          "phrase": "продажа урана",
+          "meaning": "우라늄 판매"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:13:59.618723+00:00"
+    },
+    {
+      "id": "15ce9db210f7",
+      "title": "Amigo Resources and STAMICO sign MOU to explore graphite tailings recovery in Tanzania - African Mining Market",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZXpNZ0Y1ajg3NVV3NWNvSTVXX3FQRlpadXRxRVZSODBWbkZGSzNlXy1sdjJHM3J2Y2pFSTFYdTBETG1kMTRwVndqQXJkcmdBbVdNRVUxLTZSNHY3M2x5RDBreEJXT1Y1ZVZyVHk2M0FOMXplVmxzeENaYmRMWU5uX3lPU19pd2dUZ1VEUUM0a2lVNlJWTnAwcmJERmNCeHRZTUVzV2I4c1ctcFVUR1B4UDV1NGQ3TEI2S0oySUdVcGlpeFE?oc=5",
+      "source": "Google News (TZ:en)",
+      "source_language": "en",
+      "country": "Tanzania",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-08-21",
+      "korean_summary": [
+        "탄자니아에서 Amigo Resources와 국영광물공사(STAMICO)가 흑연 광미 회수 탐사 양해각서를 체결함.",
+        "MOU 체결로 흑연 광미에서 고순도 흑연 추출 기술 개발 및 상용화 협력이 추진될 예정임.",
+        "탄자니아의 핵심광물 자원 활용도 제고와 순환경제 기술 수용 기회로 평가됨."
+      ],
+      "oda_relevance": "탄자니아의 흑연 광미 회수 기술 협력은 한국의 핵심광물 자급률 제고 및 지속가능 채광 기술 이전 수요와 부합하며, KIAT의 자원개발협력 ODA 사업 발굴 대상으로 검토 가치 있음. KIGAM의 광미 처리·순환경제 기술과의 협력 기회 창출 가능.",
+      "category": "exploration_development",
+      "category_ko": "탐사·개발",
+      "tags": [
+        "흑연",
+        "광미 회수",
+        "STAMICO",
+        "탄자니아",
+        "순환경제"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "graphite tailings recovery",
+          "meaning": "흑연 광미 회수 (기존 채광 시 버려진 흑연 함유 광미를 재처리하여 경제적 가치 추출)"
+        },
+        {
+          "phrase": "MOU",
+          "meaning": "양해각서 (Memorandum of Understanding, 협력의 원칙과 방향을 규정하는 선언적 계약)"
+        },
+        {
+          "phrase": "STAMICO",
+          "meaning": "State Minerals Trading Corporation, 탄자니아 광물부 산하 국영광물공사"
+        },
+        {
+          "phrase": "Amigo Resources",
+          "meaning": "탄자니아에서 흑연 등 광물 탐사·개발을 진행 중인 민간 광업 회사"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:06.532063+00:00"
+    },
+    {
+      "id": "f913c9fc17f8",
+      "title": "Amigo Resources signs Tanzania graphite tailings MOU with STAMICO - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbVNhdFp4NzR4RlVSeWtCRFM1V0o0YU5XQVJqWUt4QkhKb3NELXMyYmpxMHZjU0JFbVBILXJwZlFUaDY3dEpLT0ZLT2hIY19OU18zQmk4U3JDczNJNURmNHBUbUZEc2lQZDVmdVFxVlpiNUk1MzFWM3lQUFp6R2FHeWxpYmY4MWJBVkFwdHR4cWdpZw?oc=5",
+      "source": "Google News (TZ:en)",
+      "source_language": "en",
+      "country": "Tanzania",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-08-21",
+      "korean_summary": [
+        "아미고 리소스(Amigo Resources)가 탄자니아 국영 광물청(STAMICO)과 흑연 광미(tailings) 재처리 양해각서(MOU)를 체결함.",
+        "양사는 탄자니아 내 흑연 광미로부터 고순도 흑연 추출을 협력하기로 합의했으며, 구체적인 사업 규모와 일정은 추후 공개 예정임.",
+        "한국의 흑연 수급 다변화와 자원외교 강화 측면에서 탄자니아 내 신규 흑연 공급선 발굴의 신호로 평가됨."
+      ],
+      "oda_relevance": "탄자니아 광미 재처리 기술협력은 한국의 핵심광물 안보 강화와 직결된 분야로, KIAT의 자원개발 ODA 사업 발굴 대상으로 검토 가치 있으며, KIGAM의 흑연 추출·정제 기술이전 협력 기반 구축 기회임.",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "흑연",
+        "STAMICO",
+        "Amigo Resources",
+        "광미 재처리",
+        "탄자니아"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "graphite tailings MOU",
+          "meaning": "흑연 광미 재처리 양해각서"
+        },
+        {
+          "phrase": "STAMICO",
+          "meaning": "State Minerals Trading Corporation (탄자니아 국영 광물청)"
+        },
+        {
+          "phrase": "tailings reprocessing",
+          "meaning": "광미 재처리"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:11.986477+00:00"
+    },
+    {
+      "id": "a1f58ed258ba",
+      "title": "Amigo Resources signs Tanzania graphite recovery MOU with state miner STAMICO - Proactive financial news",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNblllSWZWVWZSMjZXUmVBU0V2U3QwWHFsRlAzcHZlQkp1QXVTQ0dEQXB0dDh5SGlrcDBNajRSR2FrYVBramV2aVZZTDg3YmhOZ29HTnlSTlotZTBmaTVURVpXVHloWEZUVVBLOFByWDFrVjhCVy1TWEdIUmt1VmY5M1hSTk9LLXg2am04M3oxX3YtNk9meXpEa1RQZ3RlTElfWEhGc2NTNkViemVWWDJRZ0xBWV90YzVYYVB3dXFSS3JwUmdFVFc2ZG1sMmZCUkotUlN0VjJWb2hJSXNTcHp3ejln?oc=5",
+      "source": "Google News (TZ:en)",
+      "source_language": "en",
+      "country": "Tanzania",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-08-21",
+      "korean_summary": [
+        "캐나다 자원기업 Amigo Resources가 탄자니아 국영광산회사 STAMICO과 흑연 회수 사업 양해각서를 체결함.",
+        "탄자니아 국영광산회사 STAMICO와 흑연 회수 관련 MOU 서명으로 협력 기반 마련.",
+        "탄자니아 핵심광물 자원개발 협력 확대의 신호로, 한국의 자원외교 및 기술협력 기회 창출 가능성 시사."
+      ],
+      "oda_relevance": "탄자니아 핵심광물(흑연) 산업의 민간투자 확대와 함께 STAMICO 등 국영기업의 기술·경영 역량 강화 수요가 증가 중. KIAT의 자원개발협력 ODA 사업과 KIGAM의 흑연 회수·정제 기술이전 프로젝트 발굴 가치 있음.",
+      "category": "exploration_development",
+      "category_ko": "탐사·개발",
+      "tags": [
+        "흑연",
+        "STAMICO",
+        "탄자니아",
+        "광산부",
+        "기술협력"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "graphite recovery MOU",
+          "meaning": "흑연 회수 양해각서"
+        },
+        {
+          "phrase": "state miner STAMICO",
+          "meaning": "탄자니아 국영광산회사 STAMICO"
+        },
+        {
+          "phrase": "Amigo Resources",
+          "meaning": "캐나다 자원기업 Amigo Resources"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:16.645916+00:00"
+    },
+    {
+      "id": "eb90cc31160e",
+      "title": "Новый комплекс на руднике «Жалпак» в Казахстане будет производить 500 тонн урана в год - Казинформ",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMWV2Z19ySVhidlJyNFBTZ2hESlN2enM3c0NfRm1PRlZxRGxwdWpOVVlGZ29kY0NqM2IwaFdnNEJWcll5YkFMUzJ1dXdYbmhFdnFzTldkZFZZY242bHAxOUpwblBfLTZ5RDVfTjkySWNUOUVaZTdQNlBoU0Q2TDZnSXdWNUVBRjlNTzgzYzBSUHZSV19OMTdQQ1hIdFJ3enlRRUJrR2JhRHRqWjd5RnkwY3U2MnbSAbYBQVVfeXFMT0k0T1Z0RXJESlNRbXBYd0cxZGwzYlBvUXpUN2xPU0hIb3hUOGo1QWVVem5lUTN2VGZFZEpWaDdiNVMySTFEVUQ5X3ZKRU9zdUJFNWJrTlloaXNqZUlMd0g2djd6cVdlYmhGX1V6cTczdnJNLWgzQk82UndVWTBhRWxjVDdnTENzTU1qeV9QejREVlN0aUZjTUJjVHVGMzBlcE1VbFl0RDI4UFJoOE1JWlNWS3JWakE?oc=5",
+      "source": "Google News (KZ:kk)",
+      "source_language": "kk",
+      "country": "Kazakhstan",
+      "tier_weight": 1,
+      "score": 9,
+      "published": "2026-08-19",
+      "korean_summary": [
+        "카자흐스탄 잘팍 광산에 새로운 우라늄 생산 시설이 건설되고 있음",
+        "연간 500톤의 우라늄을 생산할 예정이며, 카자흐스탄의 핵연료 산업 확대 계획의 일환임",
+        "우라늄은 핵심광물로 분류되며, 한국의 에너지 안보 및 자원 외교 협력 대상임"
+      ],
+      "oda_relevance": "카자흐스탄의 우라늄 생산 역량 강화는 한국의 핵심광물 안정 공급망 확보와 직결됨. MOTIE·KIAT의 카자흐스탄 자원개발 협력 사업 기획 시 우라늄 채광·제련 기술협력, 환경영향평가 컨설팅 등 ODA 연계 가능성 검토 권장",
+      "category": "exploration_development",
+      "category_ko": "탐사·개발",
+      "tags": [
+        "우라늄",
+        "카자흐스탄",
+        "MRPAM",
+        "잘팍광산",
+        "핵심광물"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Новый комплекс на руднике «Жалпак»",
+          "meaning": "잘팍 광산의 새로운 시설 복합체"
+        },
+        {
+          "phrase": "500 тонн урана в год",
+          "meaning": "연간 500톤의 우라늄 생산"
+        },
+        {
+          "phrase": "Казахстане",
+          "meaning": "카자흐스탄"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:21.139518+00:00"
+    },
+    {
+      "id": "1f5e343e",
+      "title": "US-backed group weighs $500 million Tanzania nickel investment",
+      "url": "https://www.mining.com/web/us-backed-group-weighs-500-million-tanzania-nickel-investment/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "score": 8,
+      "published": "Thu, 20 Aug 2026 17:44:28 +0000",
+      "korean_summary": [
+        "미국 지원 그룹이 탄자니아 카방가 니켈 광산에 5억 달러 투자를 검토 중임",
+        "중국 의존도 감소를 목표로 카방가 니켈 생산 프로젝트 진행 예정",
+        "탄자니아 니켈 자원 개발이 글로벌 공급망 다변화 추세와 부합함"
+      ],
+      "oda_relevance": "탄자니아의 니켈 광상 개발 진전은 한국의 핵심광물 공급 다원화 전략과 일치하므로, KIAT의 자원개발협력 사업으로 탄자니아 광물자원 평가 및 기술이전 ODA 기획의 기회 제공",
+      "category": "exploration_development",
+      "category_ko": "탐사·개발",
+      "tags": [
+        "니켈",
+        "탄자니아",
+        "카방가",
+        "미국 투자",
+        "공급망 다변화"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "US-backed group weighs $500 million Tanzania nickel investment",
+          "meaning": "미국 지원 그룹이 탄자니아 니켈 투자 5억 달러 규모 검토"
+        },
+        {
+          "phrase": "Kabanga",
+          "meaning": "탄자니아 남서부 니켈 광산지역"
+        },
+        {
+          "phrase": "reduce dependence on China",
+          "meaning": "중국 의존도 감소"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:25.966143+00:00"
+    },
+    {
+      "id": "1300faf6",
+      "title": "MONGOLIA'S LOST OPPORTUNITIES FROM COPPER",
+      "url": "https://www.mongolianminingjournal.com/a/75258",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "몽골의 구리 산업에서 기회를 상실하는 상황이 발생하고 있음",
+        "국제 구리 가격 변동 및 정책 불안정성이 광업 투자 부진을 초래하고 있음",
+        "한국의 구리 수입처 다변화 및 광물 안보 전략 수립 필요성이 제기됨"
+      ],
+      "oda_relevance": "몽골의 구리 생산성 저하는 한국의 핵심광물 공급망 리스크 증대를 의미함. KIAT의 몽골 자원개발 ODA 사업 강화와 KIGAM의 기술협력을 통해 몽골 광업 정책 안정화 지원 필요",
+      "category": "supply_chain_trade",
+      "category_ko": "공급망·교역",
+      "tags": [
+        "구리",
+        "몽골",
+        "MRPAM",
+        "공급망 안보",
+        "광업 투자"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Mongolia's lost opportunities from copper",
+          "meaning": "몽골의 구리 산업에서의 기회 상실"
+        },
+        {
+          "phrase": "investment uncertainty",
+          "meaning": "투자 불확실성"
+        },
+        {
+          "phrase": "copper production decline",
+          "meaning": "구리 생산량 감소"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:30.412357+00:00"
+    },
+    {
+      "id": "735d35bc",
+      "title": "2026-07-30MONGOLIA AT THE THRESHOLD OF THE GLOBAL CRITICAL MINERALS NETWORK",
+      "url": "https://www.mongolianminingjournal.com/a/75230",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "몽골이 글로벌 핵심광물 네트워크의 진입 단계에 도달했음을 보도하는 기사임.",
+        "구체적 사업·금액·일정 정보는 본문에 제시되지 않았으나, 몽골의 핵심광물 부문 국제 협력 심화를 시사함.",
+        "한국의 몽골 자원협력(ODA·민간투자) 강화 기회로 평가되며, 특히 MRPAM과의 기술협력 수요 증가 예상됨."
+      ],
+      "oda_relevance": "몽골의 핵심광물 국제 네트워크 참여 활성화는 한국의 자원외교 및 KIAT 중심 핵심광물 ODA 사업 확대의 전략적 기회로, MRPAM·MIED와의 기술협력·인재육성 프로그램 개발 검토 시점임.",
+      "category": "policy_regulation",
+      "category_ko": "정책·법규",
+      "tags": [
+        "몽골",
+        "핵심광물",
+        "MRPAM",
+        "국제협력",
+        "자원외교"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "MONGOLIA AT THE THRESHOLD OF THE GLOBAL CRITICAL MINERALS NETWORK",
+          "meaning": "몽골이 글로벌 핵심광물 네트워크의 진입점에 위치함"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:34.304074+00:00"
+    },
+    {
+      "id": "6464c523",
+      "title": "2026-08-13SCOTT HAYNE: “COMBINING 60 YEARS OF GLOBAL UNDERGROUND EXPERTISE WITH LOCAL CAPABILITY TO DEVELOP THE NEXT GENERATION OF MONGOLIA’S MINING WORKFORCE.”",
+      "url": "https://www.mongolianminingjournal.com/a/75262",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "몽골 광산업 차세대 인력양성을 위해 60년 글로벌 지하채굴 기술과 현지 역량을 결합하는 전략 추진 중임",
+        "스콧 하인(Scott Hayne)이 주도하여 글로벌 채굴 전문성과 몽골 현지 인력을 통합한 워크포스 개발 계획 발표",
+        "몽골의 광산 인력 기술 고도화와 국제 채굴 기준 도입으로 산업 경쟁력 강화 예상"
+      ],
+      "oda_relevance": "몽골 광업 인력 기술협력은 KIGAM의 지질·채굴 기술이전 사업과 KIAT의 자원개발 ODA 사업 연계 대상으로 검토 가치 있으며, 현지 엔지니어링 교육·훈련 프로그램 지원 기회 제공",
+      "category": "research_academic",
+      "category_ko": "연구·학술",
+      "tags": [
+        "몽골 광업",
+        "인력양성",
+        "기술이전",
+        "채굴 기술",
+        "MRPAM"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "60 years of global underground expertise with local capability",
+          "meaning": "60년의 글로벌 지하채굴 기술 경험과 현지 역량의 결합"
+        },
+        {
+          "phrase": "next generation of Mongolia's mining workforce",
+          "meaning": "몽골 광산업 차세대 인력"
+        },
+        {
+          "phrase": "local capability to develop",
+          "meaning": "현지 역량 개발"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:39.521552+00:00"
+    },
+    {
+      "id": "0f934580",
+      "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "오유톨고이가 독일-몽골 자원기술연구소에 주사전자현미경(SEM) 기증함",
+        "고급 광물 분석·광학 장비로 자원 분야 연구 및 인력양성 기반 강화",
+        "한-몽 광물자원 협력 심화 및 기술이전 모델로서 참고 가능"
+      ],
+      "oda_relevance": "몽골의 독일과의 자원기술 협력 확대 사례로, 한국이 KIAT·KIGAM을 통해 몽골 고등교육기관·광업기업과 유사한 기술이전·인력양성 ODA 협력을 강화할 기초 제공.",
+      "category": "research_academic",
+      "category_ko": "연구·학술",
+      "tags": [
+        "몽골",
+        "오유톨고이",
+        "기술이전",
+        "인력양성",
+        "독일-몽골협력"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Scanning Electron Microscope (SEM)",
+          "meaning": "주사전자현미경, 광물의 미세구조 분석에 필수 분석장비"
+        },
+        {
+          "phrase": "German-Mongolian Institute for Resources and Technology",
+          "meaning": "독일-몽골 자원기술연구소, 몽골의 자원 고등교육 및 연구 기관"
+        },
+        {
+          "phrase": "Oyu Tolgoi",
+          "meaning": "몽골 동부의 세계 최대급 미개발 동금은광산, 몽골-투르크메니스탄 국경 근처"
+        },
+        {
+          "phrase": "equipment donation",
+          "meaning": "연구장비 기증을 통한 산업-학계 기술협력 모델"
+        },
+        {
+          "phrase": "capacity building",
+          "meaning": "자원산업 분야 인력양성 및 기술역량 강화"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:44.705748+00:00"
+    },
+    {
+      "id": "2bf3e9f7",
+      "title": "SSAB and Hardox Wear Parts Center Mongolia to Host Technical Seminar for the Mining Sector",
+      "url": "https://www.mongolianminingjournal.com/a/75142",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "SSAB와 Hardox Wear Parts Center Mongolia이 광산업계 기술 세미나를 개최한다고 발표했음",
+        "세미나는 SSAB의 고품질 강재 및 마모 부품 솔루션을 몽골 광산업 종사자들에게 소개하는 자리임",
+        "몽골의 광산 장비 수급망 현지화 및 기술 고도화 기회를 제공할 것으로 예상됨"
+      ],
+      "oda_relevance": "몽골의 광산 인프라 및 장비 기술 수준 개선과 관련하여 KIGAM의 광산기술 이전 및 현지 기술인력 양성 ODA 사업과 정책적 연계 가능성 검토 가치 있음",
+      "category": "research_academic",
+      "category_ko": "연구·학술",
+      "tags": [
+        "몽골",
+        "광산기술",
+        "강재",
+        "마모부품",
+        "기술이전"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "SSAB and Hardox Wear Parts Center Mongolia",
+          "meaning": "SSAB 및 Hardox 마모부품 센터 몽골"
+        },
+        {
+          "phrase": "Technical Seminar for the Mining Sector",
+          "meaning": "광산업계 기술 세미나"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:49.089630+00:00"
+    },
+    {
+      "id": "3215cc8b",
+      "title": "ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+      "url": "https://www.mongolianminingjournal.com/a/75130",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "score": 8,
+      "published": null,
+      "korean_summary": [
+        "프랑스 원전연료 기업 오라노(ORANO)가 몽골 주우브초오 우라늄 프로젝트 개시식을 개최함.",
+        "주우브초오는 몽골 동부 우라늄 광상으로, 오라노가 현지 파트너와 협력해 개발 착수함.",
+        "몽골의 우라늄 산업 고도화 및 글로벌 핵연료 공급망 안정화에 기여할 전망임."
+      ],
+      "oda_relevance": "몽골의 에너지광물자원 산업 고도화 추진으로 한국의 핵심광물 ODA 수요 증대. KIAT의 자원개발협력 사업 대상국 우라늄 개발 역량 강화 모니터링 필요.",
+      "category": "exploration_development",
+      "category_ko": "탐사·개발",
+      "tags": [
+        "우라늄",
+        "몽골",
+        "주우브초오",
+        "ORANO",
+        "MRPAM"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Zuuvch-Ovoo Uranium Project",
+          "meaning": "몽골 동부 지역 우라늄 광산 개발 프로젝트"
+        },
+        {
+          "phrase": "ORANO opening ceremony",
+          "meaning": "오라노사의 프로젝트 개시식 거행"
+        },
+        {
+          "phrase": "Mongolia uranium development",
+          "meaning": "몽골의 우라늄 자원 개발"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:14:54.222787+00:00"
+    },
+    {
+      "id": "e00033f80721",
+      "title": "Indonesia's nickel, cobalt reserves valued at US$800 billion: DEN - ANTARA News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZ0FSRWlvSzZsSzltZlY3bXRrZS1xTmQ4ajFGM29iRmxMVWJrNXdEaGxYZWxkOWFUX1JoeFYyUkZWaFk2cUJUQUJmN3UwdzBIejFMUXpQWlhDWGxnMl9GNlBDeHF3aURYdlgwMzVzejctQU9OOE5KUXprSmNTNXFtM2E3ZDBHQzdZZHAySDNXT2VQM25TTDJ6Wm9xU1ZCV29T?oc=5",
+      "source": "Google News (ID:en)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 1,
+      "score": 8,
+      "published": "2026-08-27",
+      "korean_summary": [
+        "인도네시아 정부가 국내 니켈·코발트 매장량을 8000억 달러로 평가함.",
+        "DEN(국가에너지위원회) 발표, 매장 가치 재평가로 전략광물 자산 재인식.",
+        "인도네시아의 글로벌 핵심광물 공급망 지위 강화 및 한국의 협력 수요 증가 시사."
+      ],
+      "oda_relevance": "인도네시아의 니켈·코발트 매장량 재평가는 KIAT의 핵심광물 ODA 자원개발협력 사업 우선순위 검토와 KIGAM의 기술협력(탐사·평가·경제성분석) 확대 기회로 작용 가능. ESDM과의 협력 심화 기반 마련.",
+      "category": "policy_regulation",
+      "category_ko": "정책·법규",
+      "tags": [
+        "니켈",
+        "코발트",
+        "인도네시아",
+        "ESDM",
+        "DEN"
+      ],
+      "key_phrases": [
+        {
+          "phrase": "Indonesia's nickel, cobalt reserves valued at US$800 billion",
+          "meaning": "인도네시아의 니켈·코발트 매장량 8000억 달러 평가"
+        },
+        {
+          "phrase": "DEN (Dewan Energi Nasional)",
+          "meaning": "인도네시아 국가에너지위원회"
+        },
+        {
+          "phrase": "strategic mineral assets",
+          "meaning": "전략광물 자산"
+        }
+      ],
+      "ai_processed": true,
+      "processed_at": "2026-08-30T01:15:02.044049+00:00"
+    }
+  ]
+}

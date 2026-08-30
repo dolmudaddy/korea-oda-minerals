@@ -1,7 +1,27 @@
 {
-  "total_weeks": 21,
-  "latest_week": "2026-08-22",
+  "total_weeks": 22,
+  "latest_week": "2026-08-30",
   "weeks": [
+    {
+      "week_of": "2026-08-30",
+      "filename": "cards_2026-08-30.json",
+      "total_cards": 17,
+      "category_counts": {
+        "supply_chain_trade": 4,
+        "oda_cooperation": 3,
+        "exploration_development": 5,
+        "policy_regulation": 2,
+        "research_academic": 3
+      },
+      "top_tags": [
+        "몽골",
+        "MRPAM",
+        "핵심광물",
+        "우라늄",
+        "탄자니아"
+      ],
+      "generated_at": "2026-08-30T01:15:02.044094+00:00"
+    },
     {
       "week_of": "2026-08-22",
       "filename": "cards_2026-08-22.json",
