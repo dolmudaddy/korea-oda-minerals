@@ -1,7 +1,27 @@
 {
-  "total_weeks": 23,
-  "latest_week": "2026-09-06",
+  "total_weeks": 24,
+  "latest_week": "2026-09-13",
   "weeks": [
+    {
+      "week_of": "2026-09-13",
+      "filename": "cards_2026-09-13.json",
+      "total_cards": 28,
+      "category_counts": {
+        "oda_cooperation": 6,
+        "policy_regulation": 6,
+        "supply_chain_trade": 11,
+        "exploration_development": 4,
+        "research_academic": 1
+      },
+      "top_tags": [
+        "ESDM",
+        "몽골",
+        "카자흐스탄",
+        "자원외교",
+        "니켈"
+      ],
+      "generated_at": "2026-09-13T00:47:33.638938+00:00"
+    },
     {
       "week_of": "2026-09-06",
       "filename": "cards_2026-09-06.json",
