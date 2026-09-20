@@ -1,7 +1,27 @@
 {
-  "total_weeks": 24,
-  "latest_week": "2026-09-13",
+  "total_weeks": 25,
+  "latest_week": "2026-09-20",
   "weeks": [
+    {
+      "week_of": "2026-09-20",
+      "filename": "cards_2026-09-20.json",
+      "total_cards": 51,
+      "category_counts": {
+        "oda_cooperation": 31,
+        "supply_chain_trade": 10,
+        "policy_regulation": 5,
+        "exploration_development": 4,
+        "research_academic": 1
+      },
+      "top_tags": [
+        "핵심광물",
+        "우즈베키스탄",
+        "우라늄",
+        "카자흐스탄",
+        "KIAT"
+      ],
+      "generated_at": "2026-09-20T00:53:20.883263+00:00"
+    },
     {
       "week_of": "2026-09-13",
       "filename": "cards_2026-09-13.json",
