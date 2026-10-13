@@ -17,6 +17,7 @@
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -32,7 +33,11 @@ from googlenewsdecoder import gnewsdecoder
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "data" / "probe"
-CMW_DATA = Path(r"C:\Users\Seong-Jun Cho\Documents\GitHub\critical-minerals\data")
+# Actions에서는 CMW repo checkout 경로를 CMW_DATA_DIR로 지정
+CMW_DATA = Path(os.environ.get("CMW_DATA_DIR",
+                               r"C:\Users\Seong-Jun Cho\Documents\GitHub\critical-minerals\data"))
+# 결과 파일명 접미사 (예: PROBE_TAG=actions → body_probe_<날짜>_actions.json)
+PROBE_TAG = os.environ.get("PROBE_TAG", "")
 
 DEFAULT_INPUTS = {
     "kcmo": [ROOT / "data" / f"cards_{d}.json" for d in
@@ -224,7 +229,8 @@ def date_match(card_pub, meta):
 
 # ── 실행 ──────────────────────────────────────────────────────
 def out_json_path():
-    return OUT_DIR / f"body_probe_{datetime.now(timezone.utc).date()}.json"
+    suffix = f"_{PROBE_TAG}" if PROBE_TAG else ""
+    return OUT_DIR / f"body_probe_{datetime.now(timezone.utc).date()}{suffix}.json"
 
 
 def run(fmt, inputs, limit):
@@ -270,7 +276,7 @@ def pct(n, d):
 def report():
     path = out_json_path()
     data = json.loads(path.read_text(encoding="utf-8"))
-    L = [f"# Body probe 보고서 ({path.stem.split('_')[-1]})", "",
+    L = [f"# Body probe 보고서 ({path.stem.removeprefix('body_probe_')})", "",
          f"생성: {data['generated_at']} · 기준: full ≥{FULL_MIN}자 / partial {PARTIAL_MIN}~{FULL_MIN - 1}자 "
          f"/ lead_only 1~{PARTIAL_MIN - 1}자 / title_only 0자 · 추출: trafilatura favor_precision", ""]
 
@@ -352,13 +358,68 @@ def report():
     print(f"보고서: {md}")
 
 
+# ── 두 실행 비교 (로컬 vs Actions) ─────────────────────────────
+def got(r):
+    return r["body_status"] in ("full", "partial")
+
+
+def compare(path_a, path_b, label_a="로컬", label_b="Actions"):
+    def load(p):
+        d = json.loads(Path(p).read_text(encoding="utf-8"))
+        return [r for blk in d["services"].values() for r in blk["records"]]
+
+    def rate(rs):
+        return sum(map(got, rs)) / len(rs) * 100 if rs else 0.0
+
+    A, B = load(path_a), load(path_b)
+    L = [f"# Body probe 비교: {label_a} vs {label_b}", "",
+         f"- {label_a}: `{Path(path_a).name}`", f"- {label_b}: `{Path(path_b).name}`", "",
+         "## 서비스별 확보율(full+partial)", "",
+         f"| 서비스 | 건수 | {label_a} | {label_b} | 차이(%p) |", "|---|---:|---:|---:|---:|"]
+    for svc in sorted({r["service"] for r in A + B}):
+        a = [r for r in A if r["service"] == svc]
+        b = [r for r in B if r["service"] == svc]
+        L.append(f"| {svc.upper()} | {len(a)}/{len(b)} | {rate(a):.1f}% | {rate(b):.1f}% | {rate(b) - rate(a):+.1f} |")
+    L += [f"| 전체 | {len(A)}/{len(B)} | {rate(A):.1f}% | {rate(B):.1f}% | **{rate(B) - rate(A):+.1f}** |", ""]
+
+    def by_dom(recs):
+        g = defaultdict(list)
+        for r in recs:
+            g[r["resolved_domain"] or "(주소 해석 실패)"].append(r)
+        return g
+
+    def blocks(rs):
+        return ",".join(sorted({r["block_type"] for r in rs if r["block_type"]})) or "-"
+
+    da, db = by_dom(A), by_dom(B)
+    rows = []
+    for dom in set(da) | set(db):
+        a, b = da.get(dom, []), db.get(dom, [])
+        ga, gb = sum(map(got, a)), sum(map(got, b))
+        changed = (ga / len(a) if a else None) != (gb / len(b) if b else None)
+        rows.append((not changed, -max(len(a), len(b)), dom,
+                     f"| {dom} | {ga}/{len(a)} | {gb}/{len(b)} | {blocks(a)} | {blocks(b)} | "
+                     f"{'**변화**' if changed else ''} |"))
+    L += ["## 도메인별 (변화 있는 도메인 먼저)", "",
+          f"| 도메인 | {label_a} 확보/건수 | {label_b} 확보/건수 | {label_a} 차단 | {label_b} 차단 | |",
+          "|---|---:|---:|---|---|---|"]
+    L += [r[3] for r in sorted(rows)]
+    out = Path(path_b).with_name(Path(path_b).stem + "_compare.md")
+    out.write_text("\n".join(L), encoding="utf-8")
+    print(f"비교: {out}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--format", choices=("kcmo", "cmw"))
     ap.add_argument("--inputs", nargs="*")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--compare", nargs=2, metavar=("LOCAL_JSON", "ACTIONS_JSON"))
     a = ap.parse_args()
+    if a.compare:
+        compare(*a.compare)
+        return
     if a.report:
         report()
         return
