@@ -1,0 +1,6 @@
+# body_probe.py 전용 (운영 파이프라인 weekly.yml과 무관)
+requests
+trafilatura
+googlenewsdecoder==0.2.1
+# googlenewsdecoder 0.2.1은 selectolax 1.0의 Modest 백엔드 제거로 import 실패
+selectolax<1.0
