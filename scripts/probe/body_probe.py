@@ -1,35 +1,36 @@
 """
-리뉴얼 1단계 — Google News 본문 추출 실측 (probe 전용, 운영 파이프라인과 무관)
+리뉴얼 본문 추출 실측 (probe 전용, 운영 파이프라인과 무관)
 
-카드 JSON(KCMO cards_*.json / CMW week-*.json)을 읽어
-  1) Google News 중계 주소 → 원매체 주소 (googlenewsdecoder 배치, 실패 시 리다이렉트 추적)
-  2) 원매체 주소 → 본문 (trafilatura, favor_precision)
-  3) body_status / block_type / 발행일 추출·일치 여부
-를 기록한다. 공개 저장소이므로 본문 전문은 저장하지 않는다 (길이·sha256·앞 200자만).
+카드 JSON(KCMO cards_*.json / CMW week-*.json)을 읽어 공통 코어(mincore)로
+  1) Google News 중계 주소 → 원매체 주소 (mincore.resolve: 배치 + 3회 지수 재시도 + 리다이렉트)
+  2) 원매체 주소 → 본문 (mincore.extract: trafilatura → 도메인 대체표 → og:description → RSS 설명)
+  3) body_status / block_type / body_source / 발행일 추출·일치 여부
+를 기록한다. 운영 collect와 같은 코드를 쓰므로 측정값이 곧 운영 기대값이다.
+공개 저장소이므로 본문 전문은 저장하지 않는다 (길이·sha256·앞 200자·인용 구절만).
 
 사용:
   py scripts/probe/body_probe.py --format kcmo [--limit 5]
   py scripts/probe/body_probe.py --format cmw  [--limit 5]
   py scripts/probe/body_probe.py --report
-의존성: trafilatura, googlenewsdecoder (selectolax<1.0 필요)
+  py scripts/probe/body_probe.py --compare A.json B.json [C.json ...] --labels 1단계 2단계 3a
+의존성: scripts/probe/requirements.txt (mincore)
 """
 
 import argparse
-import hashlib
 import json
 import os
 import re
 import sys
-import time
 from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
-from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import urlparse
 
-import requests
-import trafilatura
-from googlenewsdecoder import gnewsdecoder
+from mincore import __version__ as MINCORE_VERSION
+from mincore.domain_rules import load_rules
+from mincore.extract import FULL_MIN, PARTIAL_MIN, extract_body
+from mincore.fetch import Fetcher
+from mincore.normalize import domain_of, is_gnews, norm_date
+from mincore.resolve import resolve_many
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "data" / "probe"
@@ -46,45 +47,8 @@ DEFAULT_INPUTS = {
             ("2026-09-21", "2026-09-28", "2026-10-05", "2026-10-12")],
 }
 
-DELAY = 0.5
-TIMEOUT = 15
-FULL_MIN, PARTIAL_MIN = 800, 300
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/129.0 Safari/537.36")
-HEADERS = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,ko;q=0.8"}
-
-BOT_STATUS = {401, 403, 429, 503}
-BOT_SIGNS = ("just a moment", "cf-browser-verification", "cf-challenge", "captcha",
-             "are you a robot", "access denied", "perimeterx", "datadome",
-             "enable javascript and cookies", "request unsuccessful")
-PAYWALL_SIGNS = ("paywall", "subscribe to continue", "subscribers only",
-                 "subscriber-only", "premium content", "to continue reading",
-                 '"isaccessibleforfree":false', '"isaccessibleforfree": false',
-                 '"isaccessibleforfree":"false"', '"isaccessibleforfree": "false"')
-
-
-def is_gnews(url):
-    return "news.google.com" in (urlparse(url).netloc or "")
-
-
-def domain_of(url):
-    host = (urlparse(url).netloc or "").lower()
-    return host[4:] if host.startswith("www.") else host
-
 
 # ── 입력 어댑터 ───────────────────────────────────────────────
-def norm_date(s):
-    """ISO('2026-09-15', '2026-10-11T05:10:25+00:00') 또는 RFC822('Tue, 15 Sep 2026 ...') → YYYY-MM-DD"""
-    if not s:
-        return None
-    if re.match(r"\d{4}-\d{2}-\d{2}", s):
-        return s[:10]
-    try:
-        return parsedate_to_datetime(s).date().isoformat()
-    except (TypeError, ValueError):
-        return None
-
-
 def load_cards(fmt, paths):
     cards = []
     for p in paths:
@@ -98,122 +62,10 @@ def load_cards(fmt, paths):
                 "title": a.get("title", ""),
                 "source": a.get("source", ""),
                 "orig_url": a.get("url") or a.get("link", ""),
+                "rss_summary": a.get("summary_raw"),
                 "card_published": norm_date(a.get("published")),
             })
     return cards
-
-
-# ── 1) URL 해석 ───────────────────────────────────────────────
-def resolve_all(cards):
-    gn = [c for c in cards if is_gnews(c["orig_url"])]
-    for c in cards:
-        if not is_gnews(c["orig_url"]):
-            c.update(resolve_method="direct", resolved_url=c["orig_url"])
-    if not gn:
-        return
-    print(f"[resolve] googlenewsdecoder 배치 {len(gn)}건 (interval={DELAY}s)")
-    try:
-        results = gnewsdecoder([c["orig_url"] for c in gn], interval=DELAY, timeout=TIMEOUT)
-    except Exception as e:  # 배치 전체 실패 → 전부 2차로
-        print(f"[resolve] 배치 실패: {e}")
-        results = [{"success": False, "message": str(e)}] * len(gn)
-    if isinstance(results, dict):
-        results = [results]
-    retry = [i for i, r in enumerate(results) if not r.get("success")]
-    if retry:  # SSL/타임아웃 등 일시 오류 대비 1회 재시도
-        print(f"[resolve] 실패 {len(retry)}건 10초 후 재시도")
-        time.sleep(10)
-        for i in retry:
-            try:
-                results[i] = gnewsdecoder(gn[i]["orig_url"], interval=DELAY, timeout=TIMEOUT)
-            except Exception as e:
-                results[i] = {"success": False, "message": str(e)}
-    for c, r in zip(gn, results):
-        if r.get("success") and r.get("decoded_url") and not is_gnews(r["decoded_url"]):
-            c.update(resolve_method="decoder", resolved_url=r["decoded_url"])
-            continue
-        c["resolve_error"] = r.get("message")
-        url = redirect_follow(c["orig_url"])
-        if url:
-            c.update(resolve_method="redirect", resolved_url=url)
-        else:
-            c.update(resolve_method="failed", resolved_url=None)
-
-
-def redirect_follow(url):
-    time.sleep(DELAY)
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-        if r.url and not re.search(r"(^|\.)google\.[a-z.]+$", urlparse(r.url).netloc):
-            return r.url
-    except requests.RequestException:
-        pass
-    return None
-
-
-# ── 2) 본문 fetch + 추출 ───────────────────────────────────────
-def classify_block(status, html_lower, body_len, err):
-    if err == "timeout":
-        return "timeout"
-    if err:
-        return "http_error"
-    if status in BOT_STATUS or (body_len < PARTIAL_MIN and any(s in html_lower[:20000] for s in BOT_SIGNS)):
-        return "bot_block"
-    if any(s in html_lower for s in PAYWALL_SIGNS):
-        return "paywall"
-    if status and status >= 400:
-        return "http_error"
-    return "parse_fail"
-
-
-def extract(c):
-    rec = dict(c)
-    rec.update(resolved_domain=domain_of(c["resolved_url"]) if c.get("resolved_url") else None,
-               http_status=None, body_len=0, body_sha256=None, body_head200=None,
-               meta_date=None, error=None)
-    if not c.get("resolved_url"):
-        rec.update(body_status="title_only", block_type="resolve_fail")
-        return rec
-
-    t0 = time.time()
-    html, err = "", None
-    try:
-        r = requests.get(c["resolved_url"], headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-        rec["http_status"] = r.status_code
-        html = r.text or ""
-        if domain_of(r.url) != rec["resolved_domain"]:
-            rec["final_url"] = r.url
-    except requests.Timeout:
-        err = "timeout"
-    except requests.RequestException as e:
-        err = type(e).__name__
-        rec["error"] = str(e)[:200]
-
-    text = ""
-    if html:
-        try:
-            doc = trafilatura.bare_extraction(html, url=c["resolved_url"], favor_precision=True,
-                                              with_metadata=True)
-            if doc is not None:
-                d = doc if isinstance(doc, dict) else doc.as_dict()
-                text = (d.get("text") or "").strip()
-                rec["meta_date"] = (d.get("date") or None)
-        except Exception as e:
-            rec["error"] = f"extract: {e}"[:200]
-    rec["elapsed_s"] = round(time.time() - t0, 2)
-
-    n = len(text)
-    rec["body_len"] = n
-    if n:
-        rec["body_sha256"] = hashlib.sha256(text.encode("utf-8")).hexdigest()
-        rec["body_head200"] = text[:200]
-    rec["body_status"] = ("full" if n >= FULL_MIN else "partial" if n >= PARTIAL_MIN
-                          else "lead_only" if n > 0 else "title_only")
-    rec["block_type"] = (None if n >= PARTIAL_MIN
-                         else classify_block(rec["http_status"], html.lower(), n, err))
-    if err == "timeout":
-        rec["error"] = "timeout"
-    return rec
 
 
 def date_match(card_pub, meta):
@@ -237,25 +89,39 @@ def run(fmt, inputs, limit):
     cards = load_cards(fmt, inputs)
     if limit:
         cards = cards[:limit]
-    print(f"[{fmt}] 카드 {len(cards)}건, GN {sum(is_gnews(c['orig_url']) for c in cards)}건")
-    resolve_all(cards)
+    print(f"[{fmt}] 카드 {len(cards)}건, GN {sum(is_gnews(c['orig_url']) for c in cards)}건 (mincore {MINCORE_VERSION})")
+
+    resolutions = resolve_many([c["orig_url"] for c in cards])
+    rules, fetcher, ctx = load_rules(), Fetcher(), {}
 
     records = []
-    last_hit = 0.0  # 전체 순차 실행 → 도메인당 동시 1건 자동 보장
-    for i, c in enumerate(cards, 1):
-        if c.get("resolved_url"):
-            time.sleep(max(0.0, DELAY - (time.time() - last_hit)))
-        rec = extract(c)
-        last_hit = time.time()
+    for i, (c, r) in enumerate(zip(cards, resolutions), 1):
+        rec = {k: v for k, v in c.items() if k != "rss_summary"}
+        rec.update(resolve_method=r.method, resolved_url=r.url, resolve_attempts=r.attempts,
+                   resolve_error=r.error if r.method == "failed" else None,
+                   resolved_domain=domain_of(r.url) if r.url else None)
+        if not r.url:
+            rec.update(body_status="title_only", block_type="resolve_fail", primary_block="resolve_fail",
+                       body_source="none", body_len=0, body_sha256=None, body_head200=None, quotes=[],
+                       strategies_tried=[], http_status=None, meta_date=None, error=r.error)
+        else:
+            b = extract_body(r.url, fetcher, rules, title=c["title"], rss_summary=c["rss_summary"], ctx=ctx)
+            rec.update(body_status=b.status, body_source=b.source, body_len=b.chars, body_sha256=b.sha256,
+                       body_head200=b.text[:200] or None, quotes=b.quotes, strategies_tried=b.strategies_tried,
+                       http_status=b.http_status, meta_date=b.extracted_date, error=b.error,
+                       primary_block=b.block_type,
+                       # 1·2단계와 비교 가능하도록: 최종 실패(300자 미만)일 때만 block_type을 남긴다
+                       block_type=b.block_type if b.chars < PARTIAL_MIN else None)
         rec["date_match"] = date_match(rec["card_published"], rec["meta_date"])
         records.append(rec)
-        print(f"  [{i}/{len(cards)}] {rec['body_status']:<10} {rec['block_type'] or '':<12} "
-              f"{rec['resolved_domain'] or '-'}")
+        print(f"  [{i}/{len(cards)}] {rec['body_status']:<10} {rec['body_source']:<15} "
+              f"{rec['primary_block'] or '':<12} {rec['resolved_domain'] or '-'}")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = out_json_path()
     data = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"services": {}}
     data["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    data["mincore_version"] = MINCORE_VERSION
     data["services"][fmt] = {
         "inputs": [str(p) for p in inputs],
         "limit": limit,
@@ -263,6 +129,7 @@ def run(fmt, inputs, limit):
     }
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[{fmt}] 저장: {path}")
+
 
 
 # ── 보고서 ────────────────────────────────────────────────────
@@ -278,7 +145,8 @@ def report():
     data = json.loads(path.read_text(encoding="utf-8"))
     L = [f"# Body probe 보고서 ({path.stem.removeprefix('body_probe_')})", "",
          f"생성: {data['generated_at']} · 기준: full ≥{FULL_MIN}자 / partial {PARTIAL_MIN}~{FULL_MIN - 1}자 "
-         f"/ lead_only 1~{PARTIAL_MIN - 1}자 / title_only 0자 · 추출: trafilatura favor_precision", ""]
+         f"/ lead_only 1~{PARTIAL_MIN - 1}자 / title_only 0자 · 추출: mincore {data.get('mincore_version', '-')} "
+         f"(trafilatura → 도메인 대체표 → og:description → RSS 설명)", ""]
 
     # 1. 서비스별 요약
     L += ["## 1. 서비스별 요약", "",
@@ -306,6 +174,11 @@ def report():
     L.append("")
     rm = Counter((r["service"], r["resolve_method"]) for r in all_recs)
     L.append("주소 해석 방법: " + ", ".join(f"{s.upper()} {m}={n}" for (s, m), n in sorted(rm.items())))
+    src = Counter((r["service"], r.get("body_source", "trafilatura")) for r in all_recs if r["body_len"])
+    L.append("본문 출처: " + ", ".join(f"{s.upper()} {m}={n}" for (s, m), n in sorted(src.items())))
+    rec_ = [r for r in all_recs if r.get("primary_block") and r["body_status"] in ("full", "partial")]
+    L.append(f"1차 차단 후 대체 전략으로 회복: {len(rec_)}건 "
+             + str(dict(Counter(r["resolved_domain"] for r in rec_))))
     L.append("")
 
     # 2. 차단 유형
@@ -358,12 +231,14 @@ def report():
     print(f"보고서: {md}")
 
 
-# ── 두 실행 비교 (로컬 vs Actions) ─────────────────────────────
+# ── 여러 실행 비교 (예: 1단계 로컬 / 2단계 Actions / 3a 코어 Actions) ──────
 def got(r):
     return r["body_status"] in ("full", "partial")
 
 
-def compare(path_a, path_b, label_a="로컬", label_b="Actions"):
+def compare(paths, labels=None):
+    labels = labels or [Path(p).stem.removeprefix("body_probe_") for p in paths]
+
     def load(p):
         d = json.loads(Path(p).read_text(encoding="utf-8"))
         return [r for blk in d["services"].values() for r in blk["records"]]
@@ -371,16 +246,17 @@ def compare(path_a, path_b, label_a="로컬", label_b="Actions"):
     def rate(rs):
         return sum(map(got, rs)) / len(rs) * 100 if rs else 0.0
 
-    A, B = load(path_a), load(path_b)
-    L = [f"# Body probe 비교: {label_a} vs {label_b}", "",
-         f"- {label_a}: `{Path(path_a).name}`", f"- {label_b}: `{Path(path_b).name}`", "",
-         "## 서비스별 확보율(full+partial)", "",
-         f"| 서비스 | 건수 | {label_a} | {label_b} | 차이(%p) |", "|---|---:|---:|---:|---:|"]
-    for svc in sorted({r["service"] for r in A + B}):
-        a = [r for r in A if r["service"] == svc]
-        b = [r for r in B if r["service"] == svc]
-        L.append(f"| {svc.upper()} | {len(a)}/{len(b)} | {rate(a):.1f}% | {rate(b):.1f}% | {rate(b) - rate(a):+.1f} |")
-    L += [f"| 전체 | {len(A)}/{len(B)} | {rate(A):.1f}% | {rate(B):.1f}% | **{rate(B) - rate(A):+.1f}** |", ""]
+    runs = [load(p) for p in paths]
+    hdr = " | ".join(labels)
+    L = [f"# Body probe 비교: {' vs '.join(labels)}", ""]
+    L += [f"- {lab}: `{Path(p).name}`" for lab, p in zip(labels, paths)]
+    L += ["", "## 서비스별 확보율(full+partial)", "",
+          f"| 서비스 | 건수 | {hdr} | 차이(마지막−첫째, %p) |", "|---|---:|" + "---:|" * (len(runs) + 1)]
+    for svc in sorted({r["service"] for run in runs for r in run}) + ["전체"]:
+        sub = [[r for r in run if svc == "전체" or r["service"] == svc] for run in runs]
+        L.append(f"| {svc.upper() if svc != '전체' else svc} | {len(sub[0])} | "
+                 + " | ".join(f"{rate(x):.1f}%" for x in sub) + f" | **{rate(sub[-1]) - rate(sub[0]):+.1f}** |")
+    L.append("")
 
     def by_dom(recs):
         g = defaultdict(list)
@@ -388,24 +264,29 @@ def compare(path_a, path_b, label_a="로컬", label_b="Actions"):
             g[r["resolved_domain"] or "(주소 해석 실패)"].append(r)
         return g
 
-    def blocks(rs):
-        return ",".join(sorted({r["block_type"] for r in rs if r["block_type"]})) or "-"
+    def cell(rs):
+        if not rs:
+            return "-"
+        srcs = sorted({r.get("body_source") for r in rs if got(r) and r.get("body_source") not in (None, "trafilatura")})
+        blk = sorted({r["block_type"] for r in rs if r["block_type"]})
+        note = (" " + "/".join(srcs)) if srcs else ""
+        note += (" ✗" + ",".join(blk)) if blk else ""
+        return f"{sum(map(got, rs))}/{len(rs)}{note}"
 
-    da, db = by_dom(A), by_dom(B)
+    doms = [by_dom(run) for run in runs]
     rows = []
-    for dom in set(da) | set(db):
-        a, b = da.get(dom, []), db.get(dom, [])
-        ga, gb = sum(map(got, a)), sum(map(got, b))
-        changed = (ga / len(a) if a else None) != (gb / len(b) if b else None)
-        rows.append((not changed, -max(len(a), len(b)), dom,
-                     f"| {dom} | {ga}/{len(a)} | {gb}/{len(b)} | {blocks(a)} | {blocks(b)} | "
-                     f"{'**변화**' if changed else ''} |"))
-    L += ["## 도메인별 (변화 있는 도메인 먼저)", "",
-          f"| 도메인 | {label_a} 확보/건수 | {label_b} 확보/건수 | {label_a} 차단 | {label_b} 차단 | |",
-          "|---|---:|---:|---|---|---|"]
+    for dom in set().union(*doms):
+        rates = [(sum(map(got, d[dom])) / len(d[dom])) if d.get(dom) else None for d in doms]
+        changed = len({x for x in rates if x is not None}) > 1
+        n = max(len(d.get(dom, [])) for d in doms)
+        rows.append((not changed, -n, dom, f"| {dom} | " + " | ".join(cell(d.get(dom, [])) for d in doms)
+                     + f" | {'**변화**' if changed else ''} |"))
+    L += ["## 도메인별 확보/건수 (변화 있는 도메인 먼저)", "",
+          "셀 표기: 확보/건수, 대체 출처(amp·feed·og 등), ✗최종 차단유형", "",
+          f"| 도메인 | {hdr} | |", "|---|" + "---|" * (len(runs) + 1)]
     L += [r[3] for r in sorted(rows)]
-    out = Path(path_b).with_name(Path(path_b).stem + "_compare.md")
-    out.write_text("\n".join(L), encoding="utf-8")
+    out = Path(paths[-1]).with_name(Path(paths[-1]).stem + "_compare.md")
+    out.write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"비교: {out}")
 
 
@@ -415,10 +296,13 @@ def main():
     ap.add_argument("--inputs", nargs="*")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--report", action="store_true")
-    ap.add_argument("--compare", nargs=2, metavar=("LOCAL_JSON", "ACTIONS_JSON"))
+    ap.add_argument("--compare", nargs="+", metavar="PROBE_JSON", help="비교할 결과 JSON 2개 이상 (첫째가 기준)")
+    ap.add_argument("--labels", nargs="+")
     a = ap.parse_args()
     if a.compare:
-        compare(*a.compare)
+        if len(a.compare) < 2:
+            ap.error("--compare에는 JSON이 2개 이상 필요")
+        compare(a.compare, a.labels)
         return
     if a.report:
         report()
