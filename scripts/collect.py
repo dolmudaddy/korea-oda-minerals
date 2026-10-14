@@ -598,6 +598,8 @@ def collect_from_source(source, tier_weight, scoring_cfg, results, stats):
 
     print(f"  qualified: {qualified} (threshold={scoring_cfg.get('min_score_threshold')})")
     stats["items_qualified"] += qualified
+    # 리뉴얼 3b: 실행 보고용 소스별 집계 (raw stats에 키 추가만)
+    stats.setdefault("per_source", {})[source_name] = {"fetched": len(items), "qualified": qualified}
 
 
 # -----------------------------------------------------------------
@@ -830,8 +832,18 @@ def main():
     # Sort by score desc
     results.sort(key=lambda r: r["score"], reverse=True)
 
-    # Save
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # 리뉴얼 3b: 공통 코어 그림자 단계 (KCMO_CORE_SHADOW=1 + mincore 설치 시에만).
+    # legacy raw에는 키만 추가되고, 실패해도 아래 raw 저장은 그대로 진행된다.
+    import core_shadow
+    if core_shadow.enabled():
+        try:
+            core_shadow.run(results, stats, today, OUTPUT_DIR)
+        except Exception as e:
+            print(f"[core-shadow][ERROR] 그림자 단계 실패 — legacy raw는 정상 저장: {e!r}")
+
+    # Save
     output_file = OUTPUT_DIR / f"raw_{today}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump({
