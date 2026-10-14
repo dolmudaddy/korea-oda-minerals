@@ -1,0 +1,81 @@
+name: Core Shadow (renewal 3b)
+
+# 리뉴얼 3b 검증 전용 — 수동 실행만. 운영 weekly.yml과 무관.
+# 운영과 같은 파이프라인을 KCMO_CORE_SHADOW=1로 돌려 collected_*.json·실행 보고를 만들고,
+# legacy raw → summarize → build_index → send_email(드라이런)이 그대로 동작하는지 확인한다.
+# 메일은 보내지 않는다: KCMO_DRY_RUN=1 + Mailchimp secret 미전달. commit하지 않고 artifact만 업로드.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 산출물 파일명 날짜 (UTC, 파이프라인과 동일 규칙)
+      - name: Set run date
+        run: echo "D=$(date -u +%F)" >> "$GITHUB_ENV"
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 운영 weekly.yml과 같은 패키지 + 공통 코어
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests pyyaml anthropic beautifulsoup4 lxml
+          pip install -r scripts/probe/requirements.txt
+
+      - name: Collect articles (core shadow)
+        env:
+          KCMO_CORE_SHADOW: '1'
+          PYTHONIOENCODING: utf-8
+        run: python scripts/collect.py
+
+      - name: Collect Tanzania ministry pages
+        continue-on-error: true
+        run: python scripts/madini_html_collector.py
+
+      - name: Summarize with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/summarize.py
+
+      - name: Build index.html
+        run: python scripts/build_index.py
+
+      - name: Email preview (dry run, no send)
+        env:
+          KCMO_DRY_RUN: '1'
+        run: python scripts/send_email.py
+
+      - name: Finalize run report
+        run: |
+          python -m mincore.report finalize --report data/reports/run_$D.json \
+            --raw data/raw_$D.json --cards data/cards_$D.json
+          cat data/reports/run_$D.md >> "$GITHUB_STEP_SUMMARY"
+
+      # data/_cache/(본문 전문)는 업로드하지 않는다
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-shadow
+          path: |
+            data/raw_${{ env.D }}.json
+            data/collected_${{ env.D }}.json
+            data/cards_${{ env.D }}.json
+            data/madini_pages_${{ env.D }}.json
+            data/reports/
+            index.html
+            email_preview.html
+          if-no-files-found: warn
