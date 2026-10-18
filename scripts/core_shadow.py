@@ -7,6 +7,9 @@ collect.py가 legacy raw를 저장하기 직전에 호출된다. 하는 일:
   3) 통일 카드(card.v1) → data/collected_YYYY-MM-DD.json
   4) 실행 보고 → data/reports/run_YYYY-MM-DD.{json,md}
   5) legacy raw 기사에 '키 추가만' (url·id·summary_raw 등 기존 키는 그대로)
+  6) 발행 원장(data/published_ledger.json) 대조 — 이미 발행한 기사는
+     [LEDGER-url]/[LEDGER-title] 로그 + ledger_hit 키로 표시만 (리뉴얼 3d).
+     실제 제외는 collect.py에서 KCMO_LEDGER_ENFORCE=1일 때만.
 
 그림자 원칙: 기존 산출물(raw의 기존 키, 기사 수·순서)은 바꾸지 않는다.
 회차 내 중복(원매체 주소 기준)도 제거하지 않고 dup_of 키로 표시만 한다.
@@ -54,6 +57,7 @@ def run(results, stats, today, data_dir):
     from mincore.domain_rules import load_rules
     from mincore.extract import extract_body
     from mincore.fetch import Fetcher
+    from mincore.ledger import Ledger
     from mincore.normalize import canonical_url, domain_of, norm_date
     from mincore.report import RunReport
     from mincore.resolve import resolve_many
@@ -70,6 +74,14 @@ def run(results, stats, today, data_dir):
     print(f"\n[core-shadow] mincore {mincore_version} — 기사 {len(results)}건 주소 해석")
     resolutions = resolve_many([a.get("url", "") for a in results])
 
+    ledger_path = data_dir / "published_ledger.json"
+    ledger = Ledger.load(ledger_path) if ledger_path.exists() else None
+    if ledger is None:
+        print("[core-shadow] 발행 원장 없음 → 원장 대조 건너뜀")
+    else:
+        print(f"[core-shadow] 발행 원장 {len(ledger.entries)}건 ({', '.join(ledger.weeks()[:1] + ledger.weeks()[-1:])})")
+    ledger_hits = 0
+
     rules, fetcher, ctx = load_rules(), Fetcher(), {}
     cache_dir = data_dir / "_cache" / "bodies"
     cards, seen, errors = [], {}, 0
@@ -79,6 +91,14 @@ def run(results, stats, today, data_dir):
         url = r.url or art.get("url", "")
         canon = canonical_url(url) if r.url else None
 
+        if ledger is not None:                         # 이전 회차 발행분: 표시만
+            reason = ledger.check(r.url, art.get("title"))
+            if reason:
+                art["ledger_hit"] = reason
+                rep.excluded(reason)
+                ledger_hits += 1
+                tag = "url" if reason == "url" else "title"
+                print(f"  [LEDGER-{tag}] ({reason}) {art.get('title', '')[:60]}")
         if canon and canon in seen:                    # 회차 내 중복: 표시만
             art["dup_of"] = seen[canon]
             rep.count("dedup_dropped")
@@ -113,6 +133,8 @@ def run(results, stats, today, data_dir):
               f"{body.block_type or '':<12} {domain_of(url) if r.url else '-'}")
 
     rep.count("validation_errors", errors)
+    if ledger is not None:
+        print(f"[core-shadow] 원장 대조: 이번 회차 {len(results)}건 중 원장 제외 대상 {ledger_hits}건")
     out = data_dir / f"collected_{today}.json"
     out.write_text(json.dumps({
         "schema_version": "card.v1",

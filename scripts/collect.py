@@ -46,6 +46,7 @@ import feedparser
 import requests
 import yaml
 import hashlib
+import os
 import json
 import random
 import re
@@ -863,6 +864,14 @@ def main():
             core_shadow.run(results, stats, today, OUTPUT_DIR)
         except Exception as e:
             print(f"[core-shadow][ERROR] 그림자 단계 실패 — legacy raw는 정상 저장: {e!r}")
+
+    # 리뉴얼 3d: 발행 원장 제외 (KCMO_LEDGER_ENFORCE=1일 때만 실제 제거).
+    # 그림자 단계가 ledger_hit 키를 단 기사만 대상. 기본값(미설정)은 표시만 하고 raw는 그대로.
+    if os.environ.get("KCMO_LEDGER_ENFORCE") == "1":
+        before = len(results)
+        results = [a for a in results if not a.get("ledger_hit")]
+        stats["ledger_excluded"] = before - len(results)
+        print(f"[ledger] 원장 제외 적용: {before} → {len(results)}건")
 
     # Save
     output_file = OUTPUT_DIR / f"raw_{today}.json"
