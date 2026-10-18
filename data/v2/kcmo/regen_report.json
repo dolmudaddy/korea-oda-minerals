@@ -1,0 +1,51 @@
+{
+ "service": "kcmo",
+ "issues": [
+  {
+   "week": "2026-10-18",
+   "test": false,
+   "v1_articles": 36,
+   "cards": 36,
+   "excluded": 0,
+   "body_got": 5,
+   "body_status": {
+    "title_only": 31,
+    "full": 5
+   },
+   "basis": {
+    "title": 31,
+    "body": 5
+   },
+   "original_link": 5,
+   "reader_proxy_used": 0,
+   "fail_reason": {},
+   "v1_original_link": 5,
+   "v1_failed": 0,
+   "model": "claude-haiku-4-5-20251001",
+   "prompt_version": "v2.0"
+  }
+ ],
+ "total": {
+  "v1_articles": 36,
+  "cards": 36,
+  "excluded": 0,
+  "body_got": 5,
+  "original_link": 5,
+  "reader_proxy_used": 0,
+  "v1_original_link": 5,
+  "v1_failed": 0,
+  "basis_body": 5
+ },
+ "operational": {
+  "v1_articles": 36,
+  "cards": 36,
+  "excluded": 0,
+  "body_got": 5,
+  "original_link": 5,
+  "reader_proxy_used": 0,
+  "v1_original_link": 5,
+  "v1_failed": 0,
+  "basis_body": 5
+ },
+ "fail_reasons": {}
+}
