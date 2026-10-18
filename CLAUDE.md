@@ -29,7 +29,7 @@ collect.py → madini_html_collector.py → summarize.py → build_index.py → 
 Each stage reads the previous stage's output from `data/`. All filenames are date-suffixed (`raw_YYYY-MM-DD.json`, `cards_YYYY-MM-DD.json`) so the pipeline is idempotent for a given UTC date — re-running overwrites that day's files.
 
 - **collect.py** — reads `sources.yaml`, fetches Tier 1–3 RSS/HTML sources plus Tier 4 Google News broad search across all 7 countries, runs the 4-stage critical-mineral filter (see below), and writes `data/raw_YYYY-MM-DD.json`. Google News links are resolved to real publisher URLs via HEAD redirect *only after* the article passes scoring (cost optimization).
-- **madini_html_collector.py** — separately scrapes Tanzania ministry (madini.go.tz) page bodies. Failures are non-fatal (`continue-on-error: true` in workflow). Replaces the older `pdf_collector.py`, which is kept in the tree but no longer wired into the workflow.
+- **madini_html_collector.py** — separately collects Tanzania ministry (madini.go.tz) articles via the site's public JSON API (`/api/v1/public/news/?category=...` for listing, `/by-slug/{slug}/` for body). The site moved to Next.js in 2026-10; the old `/otherpage/?p=...` HTML pages 404 and the new listing HTML has no article links, so `tier_1_tanzania` in `sources.yaml` is empty. Failures are non-fatal (`continue-on-error: true` in workflow). Replaces the older `pdf_collector.py`, which is kept in the tree but no longer wired into the workflow.
 - **summarize.py** — calls Claude (`claude-haiku-4-5-20251001`) per article, expecting a strict JSON response with `korean_summary` (3 lines, 발표체), `oda_relevance`, `category`, `tags`, `key_phrases`. The system prompt encodes Korea ODA governance facts (KIAT is the critical-mineral ODA 실무 주관기관, not KOICA) and partner-country ministry mappings (notably: Laos MEM was merged into MOIC on 2025-06-16). Writes `data/cards_YYYY-MM-DD.json`.
 - **build_index.py** — renders `index.html` from `template.html` using a hybrid approach: cards are pre-rendered as `<article>` blocks (SEO/no-JS) AND embedded as JSON for client-side filtering. Computes the next dispatch date from `week_of`.
 - **generate_obsidian.py** — reads the latest `cards_*.json` and writes one markdown note per card plus a weekly index into the target Obsidian vault (`KCMO/articles/{YYYY}/`, `KCMO/weekly/{YYYY}/`). Wikilink vocabulary lives in `obsidian_vocab.yaml`. See "Obsidian 통합" below. Non-fatal in workflow (vault failure must not block email send).
@@ -112,6 +112,10 @@ There are no tests, linters, or build steps beyond the pipeline scripts themselv
 - `build_index.py` substitutes `{{PLACEHOLDERS}}` in `template.html` via plain string replace — no templating engine. `{{CARDS_DATA}}` injects the full cards JSON for client-side filtering.
 - `data/processed_pages.json` and `data/processed_pdfs.json` are dedup registries written by the Tanzania collectors; do not delete unless intentionally re-processing.
 - All dates in code/logs are UTC; KST is only used for display in `build_index.py` and `send_email.py`.
+
+## Recheck items
+
+- **2026-11-01 — kpl.gov.la 인증서**: 2026-10-18 기준 인증서 만료(`CERTIFICATE_VERIFY_FAILED`)로 `tier_1_laos` KPL 수집 실패. 검증 생략(`verify=False`)은 하지 않는다. 소스는 그대로 두어 갱신되면 자동 복구되고, 그동안은 `laos_english_queries`의 `site:kpl.gov.la` 쿼리가 대체한다. 재확인: `curl -sI https://kpl.gov.la/En` 이 인증서 오류 없이 응답하는지, Actions 로그에 `kpl.gov.la ... SSLError`가 사라졌는지.
 
 ## Current status (2026-05-16)
 
