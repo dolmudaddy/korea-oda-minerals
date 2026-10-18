@@ -1001,7 +1001,9 @@ scoring:
       - "gold at the world"
       - "sniper competition"
       - "asset recovery"
-      - "extradition"
+      # v6.9 (2026-10-18): "extradition" 제거. 한-라오스 정상회담 보도("S. Korea, Laos
+      # elevate ties, sign extradition treaty")까지 폐기하던 부작용. 원래 차단 대상인
+      # 카자흐 "asset recovery and extradition" 사법공조 기사는 위 "asset recovery"가 계속 막는다.
       - "anti-corruption agreement"
       - "judicial cooperation"
       # v6.6 추가 (2026-05-25): 5/25 dispatch에서 우즈벡 체조/레슬링/태권도 +
@@ -1578,6 +1580,10 @@ scoring:
     within_3_days: 2
     within_7_days: 1
   freshness_days: 30  # v6.8 (2026-05-25): 21 → 30. 박사님 5/25 cron 로그 분석 결과 21d 차단이 탄자/라오/베 카드 회복 막는 가장 큰 원인이었음 (28~50d 광물 보도 대량 폐기). 30d로 환원.
+  # v6.9 (2026-10-18): 국가별 신선도 예외. 라오스는 영문 광물 보도 자체가 드물어
+  # 30일 창에서 자주 0건 → 창을 넓혀 회수. 다른 나라는 freshness_days 그대로.
+  freshness_days_by_country:
+    Laos: 45
 
 # =====================================================================
 # Special handlers

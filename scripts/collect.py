@@ -167,6 +167,21 @@ COUNTRY_ALIASES = {
         # v6.8 (2026-05-25): 추가 광산명·운영사명.
         "Phu Kham",        # 구리 광산 (PanAust)
         "LXML",            # Lane Xang Minerals Ltd (Sepon 운영자)
+        # v6.9 (2026-10-18): 형용사 "Lao" 결합형. 10/18 로그에서 "Lao government moves
+        # to end raw mineral exports", "Lao President Thongloun Calls for Action on
+        # Illegal Mining"이 [DROP-no country]. 단독 "Lao"는 베트남 Lao Cai·Lao Động과
+        # 충돌하므로 결합형만 등록.
+        "Lao government", "Lao President", "Lao Prime Minister",
+        "Lao National Assembly", "Lao Front", "Lao Ministry",
+        "Lao authorities", "Lao officials", "Lao State",
+        "Lao economy", "Lao mining", "Lao company", "Lao firm",
+        "Laotian",
+        "Vientiane",       # 수도
+        # v6.9 P3: 광산·지명
+        "Hongsa",          # 갈탄 광산·발전소 (Xayaboury)
+        "Khammouane", "Khammuan",  # 칼리·주석 광산 지역
+        "Sekong",          # 보크사이트·금 (남부)
+        "Boten",           # 라오-중국 국경 경제특구
     ],
 }
 
@@ -419,7 +434,8 @@ def score_article(article, source_meta, scoring_cfg):
             score += recency.get("within_7_days", 0)
 
         # Drop if too old
-        freshness = scoring_cfg.get("freshness_days", 30)
+        freshness = (scoring_cfg.get("freshness_days_by_country") or {}).get(
+            country, scoring_cfg.get("freshness_days", 30))
         if delta_days > freshness:
             # v6.4: freshness silent drop 가시화
             print(f"    [DROP-too old: {delta_days}d > {freshness}d] {article['title'][:50]}")
