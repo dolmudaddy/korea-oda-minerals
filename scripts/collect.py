@@ -171,7 +171,7 @@ COUNTRY_ALIASES = {
         # to end raw mineral exports", "Lao President Thongloun Calls for Action on
         # Illegal Mining"이 [DROP-no country]. 단독 "Lao"는 베트남 Lao Cai·Lao Động과
         # 충돌하므로 결합형만 등록.
-        "Lao government", "Lao President", "Lao Prime Minister",
+        "Lao government", "Lao govt", "Lao President", "Lao Prime Minister",
         "Lao National Assembly", "Lao Front", "Lao Ministry",
         "Lao authorities", "Lao officials", "Lao State",
         "Lao economy", "Lao mining", "Lao company", "Lao firm",
