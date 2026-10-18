@@ -22,3 +22,6 @@ Thumbs.db
 
 # 본문 전문 캐시 (공개 저장소 커밋 금지, Actions 작업공간에서만 사용)
 data/_cache/
+
+# oh-my-claudecode 로컬 세션 상태 (사용자별, 커밋 금지)
+.omc/
