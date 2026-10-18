@@ -168,3 +168,13 @@ There are no tests, linters, or build steps beyond the pipeline scripts themselv
 - madini 최신 글 8/3, KPL 인증서: 2026-11-01 재확인
 - K-Resources 뉴스레터 수집: 별도 결정
 ```
+
+### 2026-10-18 후속 결정 (2차)
+
+- PR #17: Katadata·Antara 국문 3피드 제거 후 머지. `kon` 단어경계 이동·인니 제외어 4개 유지. 인도네시아 비중(64%)은 이번 주 손대지 않음.
+- weekly.yml 원장 연결(브랜치 `ops/ledger-enforce`): mincore v0.2.1, collect에 `KCMO_CORE_SHADOW=1`·`KCMO_LEDGER_ENFORCE=1`, summarize 이후 원장 commit(드라이런 시 건너뜀)·report finalize(둘 다 continue-on-error), timeout 15→25. 머지 조건: 브랜치 dispatch(dry_run) 전체 실행 20분 이내. 10/25 자동 발송이 원장 켜진 첫 회차 → 월요일 아침 run 보고서(제외 목록 포함) 확인.
+- **weekly.yml 수정은 앞으로도 매번 박사님 수동 승인** (Bash 허용 규칙 추가하지 않음).
+
+### 보류 목록 추가 (2차)
+
+- **편집 사양**: 회차 상한, 국가별·매체별 할당 (P10·P13). 인도네시아 비중 64% 대응. summarize 연계와 같은 주에 설계.

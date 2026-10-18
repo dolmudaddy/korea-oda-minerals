@@ -389,7 +389,51 @@ tier_3_tanzania_media:
 
 tier_3_indonesia_media:
   weight: 3
-  sources: []
+  sources:
+    # 리뉴얼 ⑤ (2026-10-18): Actions probe run 39111120671 실측 — 아래 4개 피드 모두
+    # GitHub Actions에서 RSS 200 + 본문 확보 8/8. 괄호는 핵심광물 필터 통과 건수(피드 표본 기준).
+    # priority_boost 관례: 광업 전문 3 / 에너지·경제 일반 2 (tier_3 HabariLeo madini=3, 일반지=2).
+    # 제외: CNBC Indonesia·Kontan(Actions 403), CNN Indonesia·suaradewata(본문 차단), Antara English(광물 0).
+    # Katadata·Antara 국문 3피드는 그림자 run(39132561436)에서 kon 수정 후 통과 0건 → 박사님 10/18 결정으로 제외.
+    - name: "Tambang.co.id (RSS)"
+      url: "https://www.tambang.co.id/"
+      rss: "https://www.tambang.co.id/feed/"
+      scrape_method: rss
+      country: Indonesia
+      language: id
+      verified: true
+      priority_boost: 3
+      note: "인도네시아 광업 전문지. 필터 통과 15/15."
+
+    - name: "Nikel.co.id (RSS)"
+      url: "https://www.nikel.co.id/"
+      rss: "https://www.nikel.co.id/feed/"
+      scrape_method: rss
+      country: Indonesia
+      language: id
+      verified: true
+      priority_boost: 3
+      note: "니켈 산업 전문지(다운스트리밍·제련). 필터 통과 10/10."
+
+    - name: "Dunia Energi (RSS)"
+      url: "https://www.dunia-energi.com/"
+      rss: "https://www.dunia-energi.com/feed/"
+      scrape_method: rss
+      country: Indonesia
+      language: id
+      verified: true
+      priority_boost: 2
+      note: "에너지·광업 전문지. 필터 통과 6."
+
+    - name: "Ruang Energi (RSS)"
+      url: "https://www.ruangenergi.com/"
+      rss: "https://www.ruangenergi.com/feed/"
+      scrape_method: rss
+      country: Indonesia
+      language: id
+      verified: true
+      priority_boost: 2
+      note: "에너지·광업 전문지. 필터 통과 5."
 
 tier_3_vietnam_media:
   weight: 3
@@ -913,6 +957,11 @@ scoring:
     # 1. 제외 키워드 - 부분일치 (매칭 시 무조건 폐기)
     # ────────────────────────────────────────────────────────────
     exclusion_terms:
+      # 인니 RSS 잡음 (2026-10-18 그림자 run): 수상·홍보상·부고 기사. 'gold award'·ESDM 부처명(Sumber Daya Mineral)으로 통과하던 것
+      - "raih penghargaan"
+      - "anugerah humas"
+      - "kabar duka"
+      - "berpulang"
       # 금융/외환 (gold reserves ≠ gold mining)
       - "gold reserves"
       - "gold reserve"
@@ -1200,7 +1249,7 @@ scoring:
       - "рудник"
       - "горнодобывающ"
       # 우즈베크 (광업)
-      - "kon"
+      # "kon"은 2026-10-18 core_minerals_wordbound로 이동 — 부분일치로 인니어 ekonomi·kolaborasi·diskon 통과 사고
       - "qazib olish"
       - "konchilik"
 
@@ -1271,6 +1320,7 @@ scoring:
       - "ores"    # 광석들
       - "miner"   # 광부 — "miner-friendly" 같은 표현 매칭, "minor"와 구분 필요 없음
       - "miners"  # 광부들
+      - "kon"     # 우즈베크 '광산' — 2026-10-18 core_minerals에서 이동 (ekonomi·kontribusi 부분일치 차단)
 
     # ────────────────────────────────────────────────────────────
     # 5. KCMO 도메인 용어 (자원외교·ODA·산업기술협력 어휘)
