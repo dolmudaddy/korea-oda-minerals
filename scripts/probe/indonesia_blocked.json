@@ -1,0 +1,179 @@
+{
+ "note": "3a(probe run 38499616220)·3b(shadow run 38500311859)에서 본문 확보 실패한 인도네시아 기사 (고유 URL)",
+ "items": [
+  {
+   "url": "https://www.kompasiana.com/berlianyuliana/6aa78f7b34777c3b0b7acfb1/evaluasi-hilirisasi-nikel-indonesia-capaian-ekonomi-dan-keberlanjutannya",
+   "title": "Evaluasi Hilirisasi Nikel Indonesia: Capaian Ekonomi dan Keberlanjutannya - Kompasiana.com",
+   "from": "3a",
+   "block_type": "parse_fail"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/news/20260925075423-4-770783/perkuat-sektor-mineral-danantara-dorong-kerjasama-mind-id-citic-group/amp",
+   "title": "Perkuat Sektor Mineral, Danantara Dorong Kerjasama MIND ID-CITIC Group - cnbcindonesia.com",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/market/20260921125610-19-769554/ojk-wajibkan-bursa-mineral-dan-komoditas-strategis-miliki-modal-rp1-t",
+   "title": "OJK Wajibkan Bursa Mineral dan Komoditas Strategis Miliki Modal Rp1 T - cnbcindonesia.com",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://rri.co.id/ekonomi/bisnis/2756954/hilirisasi-mineral-indonesia-butuh-sinkronisasi-kebijakan-pusat-dan-daerah",
+   "title": "Hilirisasi Mineral Indonesia Butuh Sinkronisasi Kebijakan Pusat dan Daerah - RRI.co.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://lestari.kompas.com/image/2026/09/30/233944286/nikel-kekuatan-besar-dan-tanggung-jawab-di-balik-hilirisasi-indonesia?page=2",
+   "title": "Foto : Nikel, Kekuatan Besar, dan Tanggung Jawab di Balik Hilirisasi Indonesia Halaman 2 - Kompas.com",
+   "from": "3a",
+   "block_type": "parse_fail"
+  },
+  {
+   "url": "https://nasional.kontan.co.id/news/hilirisasi-mineral-masuk-tahap-dua-indonesia-bidik-industri-baterai-dan-manufaktur",
+   "title": "Hilirisasi Mineral Masuk Tahap Dua, Indonesia Bidik Industri Baterai dan Manufaktur - kontan.co.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://koran-jakarta.com/2026-09-29/hilirisasi-nikel-bikin-indonesia-kuasai-41-persen-produksi-dunia-ini-tantangannya",
+   "title": "Hilirisasi Nikel Bikin Indonesia Kuasai 41 Persen Produksi Dunia, Ini Tantangannya - Koran Jakarta ®",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://rmol.id/read/2026/09/29/723272/kinerja-satgas-hilirisasi-berbuah-manis-indonesia-kuasai-41-persen-nikel-olahan-dunia",
+   "title": "Kinerja Satgas Hilirisasi Berbuah Manis, Indonesia Kuasai 41 Persen Nikel Olahan Dunia - Rmol.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/opini/20260929174228-14-771909/melanjutkan-agenda-hilirisasi-dari-smelting-ke-manufaktur",
+   "title": "Melanjutkan Agenda Hilirisasi: Dari Smelting ke Manufaktur - CNBC Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://nasional.kontan.co.id/news/den-ekspor-indonesia-tetap-tumbuh-ditopang-komoditas-dan-hilirisasi",
+   "title": "DEN: Ekspor Indonesia Tetap Tumbuh, Ditopang Komoditas dan Hilirisasi - kontan.co.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.suaralandak.co.id/penguatan-ekonomi-indonesia-hilirisasi-tambang",
+   "title": "Penguatan Kinerja Pertumbuhan Ekonomi Indonesia Lewat Hilirisasi Tambang - suaralandak.co.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://indonesia.hallo.id/bisnis/115617738030/indonesia-bidik-industri-ai-global-hilirisasi-nikel-dan-tembaga-jadi-modal-utama-apa-tantangan-berikutnya",
+   "title": "Indonesia Bidik Industri AI Global, Hilirisasi Nikel dan Tembaga Jadi Modal Utama, Apa Tantangan Berikutnya? - Hallo Indonesia - Hallo Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://timesindonesia.co.id/peristiwa-nasional/611932/wamenkomdigi-hilirisasi-mineral-bisa-jadi-modal-industri-ai",
+   "title": "Wamenkomdigi: Hilirisasi Mineral Bisa Jadi Modal Industri AI - TIMES Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.suaradewata.com/berita/202405218092/hilirisasi-nikel-jadi-modal-besar-perdagangan-indonesia-hadapi-pasar-global",
+   "title": "Hilirisasi Nikel Jadi Modal Besar Perdagangan Indonesia Hadapi Pasar Global - PT Suara Dewata Media",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://setkab.go.id/presiden-prabowo-luncurkan-11-proyek-hilirisasi-dengan-total-investasi-senilai-rp180-triliun-di-maluku-utara/",
+   "title": "Presiden Prabowo Luncurkan 11 Proyek Hilirisasi dengan Total Investasi Senilai Rp180 Triliun di Maluku Utara - Sekretariat Kabinet Republik Indonesia",
+   "from": "3a",
+   "block_type": "parse_fail"
+  },
+  {
+   "url": "https://www.cnnindonesia.com/ekonomi/20261010204337-537-1413943/pemerintah-kawal-hilirisasi-nikel-agar-ekonomi-tumbuh-dan-bermanfaat",
+   "title": "Pemerintah Kawal Hilirisasi Nikel agar Ekonomi Tumbuh dan Bermanfaat - CNN Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/news/20261008152556-4-774468/rosan-proyek-hilirisasi-nikel-sumbang-separuh-ekonomi-maluku-utara",
+   "title": "Rosan: Proyek Hilirisasi Nikel Sumbang Separuh Ekonomi Maluku Utara - CNBC Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.rmolsumsel.id/hilirisasi-nikel-diperkuat-indonesia-bidik-rantai-pasok-global-baterai-ev",
+   "title": "Hilirisasi Nikel Diperkuat, Indonesia Bidik Rantai Pasok Global Baterai EV - rmolsumsel.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://timesindonesia.co.id/peristiwa-nasional/611991/dari-iwip-halmahera-tengah-prabowo-resmikan-hilirisasi-nikel-dan-ekspor-baterai-ev-perdana",
+   "title": "Dari IWIP Halmahera Tengah, Prabowo Resmikan Hilirisasi Nikel dan Ekspor Baterai EV Perdana - TIMES Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/news/20261009075754-4-774589/prabowo-resmikan-11-proyek-hilirisasi-rp180-triliun-ini-pemiliknya",
+   "title": "Prabowo Resmikan 11 Proyek Hilirisasi Rp180 Triliun, Ini Pemiliknya - CNBC Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnnindonesia.com/ekonomi/20261008101909-92-1412980/rosan-75-persen-investasi-hilirisasi-ada-di-luar-pulau-jawa",
+   "title": "Rosan: 75 Persen Investasi Hilirisasi Ada di Luar Pulau Jawa - CNN Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnnindonesia.com/ekonomi/20261008132257-532-1413096/prabowo-resmikan-11-proyek-hilirisasi-senilai-rp180-t-di-maluku-utara",
+   "title": "Prabowo Resmikan 11 Proyek Hilirisasi Senilai Rp180 T di Maluku Utara - CNN Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://rmol.id/read/2026/10/08/724319/prabowo-ekspor-perdana-baterai-ev-bukti-hilirisasi-indonesia-berhasil",
+   "title": "Prabowo: Ekspor Perdana Baterai EV Bukti Hilirisasi Indonesia Berhasil - Rmol.id",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.cnbcindonesia.com/news/20261008134526-4-774420/diresmikan-prabowo-ini-daftar-11-proyek-hilirisasi-rp180-t-di-iwip/amp",
+   "title": "Diresmikan Prabowo, Ini Daftar 11 Proyek Hilirisasi Rp180 T di IWIP - CNBC Indonesia",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.suaradewata.com/berita/202405218098/hilirisasi-nikel-membuktikan-perdagangan-indonesia-tidak-lagi-bertumpu-pada-bijih-mentah",
+   "title": "Hilirisasi Nikel Membuktikan Perdagangan Indonesia Tidak Lagi Bertumpu pada Bijih Mentah - PT Suara Dewata Media",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://www.suaradewata.com/berita/202405218097/hilirisasi-nikel-jadikan-perdagangan-indonesia-lebih-strategis-dalam-industri-global",
+   "title": "Hilirisasi Nikel Jadikan Perdagangan Indonesia Lebih Strategis dalam Industri Global - PT Suara Dewata Media",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://suaradewata.com/berita/202405218089/hilirisasi-nikel-perkuat-posisi-indonesia-dalam-rantai-pasok-global",
+   "title": "Hilirisasi Nikel Perkuat Posisi Indonesia dalam Rantai Pasok Global - PT Suara Dewata Media",
+   "from": "3a",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://bataviapos.id/wahyono/hilirisasi-nikel-ekspor-tembus-usd40-miliar-berapa-yang-benar-benar-dinikmati-indonesia",
+   "title": "Hilirisasi Nikel: Ekspor Tembus USD40 Miliar, Berapa yang Benar-Benar Dinikmati Indonesia? - bataviapos.id",
+   "from": "3b",
+   "block_type": "bot_block"
+  },
+  {
+   "url": "https://sinarindonesia.id/presiden-prabowo-luncurkan-11-proyek-hilirisasi-nikel-senilai-rp180-triliun-di-maluku-utara",
+   "title": "Presiden Prabowo Luncurkan 11 Proyek Hilirisasi Nikel Senilai Rp180 Triliun di Maluku Utara - Sinar Indonesia",
+   "from": "3b",
+   "block_type": "timeout"
+  }
+ ]
+}
