@@ -1,0 +1,89 @@
+name: Regen v2 (renewal 5)
+
+# 리뉴얼 5단계 — 과거 발행분 v2 재생성 전용. 수동 실행만. 운영 weekly.yml과 무관.
+# v1 파일(cards_*.json·raw_*.json)은 읽기만 하고, 결과는 data/v2/kcmo/ 에만 쓴다.
+# 메일·사이트·vault는 건드리지 않는다. 본문 전문(data/_cache/)은 commit하지 않고 actions/cache로만 재사용.
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: '시작 회차 (YYYY-MM-DD)'
+        required: true
+        default: '2026-05-13'
+      to:
+        description: '끝 회차 (YYYY-MM-DD)'
+        required: true
+        default: '2026-10-18'
+      max_issues:
+        description: '이번 실행 최대 회차 수 (이미 만든 회차는 건너뜀)'
+        required: false
+        default: '10'
+      compare_n:
+        description: '비교 모델로도 요약할 카드 수 (0이면 안 함)'
+        required: false
+        default: '0'
+      compare_model:
+        description: '비교 모델'
+        required: false
+        default: 'claude-sonnet-5-5'
+
+permissions:
+  contents: write
+
+# 같은 저장소 data/v2에 동시에 쓰지 않도록 한 번에 하나만
+concurrency:
+  group: regen-kcmo
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/regen/requirements.txt
+
+      # 본문 캐시: 실행 간 재사용(재요약 시 재추출 생략). artifact로는 올리지 않는다(공개 저장소)
+      - name: Restore body cache
+        uses: actions/cache@v4
+        with:
+          path: data/_cache/bodies
+          key: bodies-kcmo-${{ github.run_id }}
+          restore-keys: bodies-kcmo-
+
+      - name: Regenerate v2
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          python -m mincore.regen --service kcmo --input data --out data/v2 \
+            --prompt prompts/summarize_v2.md --from "${{ inputs.from }}" --to "${{ inputs.to }}" \
+            --resume --max-issues "${{ inputs.max_issues }}" --test-before 2026-05-24 \
+            --compare-n "${{ inputs.compare_n }}" --compare-model "${{ inputs.compare_model }}"
+          cat data/v2/kcmo/regen_report.md >> "$GITHUB_STEP_SUMMARY"
+
+      # 중간에 실패해도 끝난 회차는 남긴다
+      - name: Commit data/v2
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v2/
+          if git diff --staged --quiet; then echo "No v2 changes."; exit 0; fi
+          git commit -m "Regen v2 (kcmo): ${{ inputs.from }}..${{ inputs.to }}"
+          for i in 1 2 3; do
+            if git pull --rebase && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
