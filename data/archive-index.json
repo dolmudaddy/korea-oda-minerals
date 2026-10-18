@@ -1,7 +1,27 @@
 {
-  "total_weeks": 28,
-  "latest_week": "2026-10-11",
+  "total_weeks": 29,
+  "latest_week": "2026-10-18",
   "weeks": [
+    {
+      "week_of": "2026-10-18",
+      "filename": "cards_2026-10-18.json",
+      "total_cards": 36,
+      "category_counts": {
+        "oda_cooperation": 4,
+        "policy_regulation": 17,
+        "supply_chain_trade": 10,
+        "exploration_development": 4,
+        "research_academic": 1
+      },
+      "top_tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "카자흐스탄",
+        "우라늄"
+      ],
+      "generated_at": "2026-10-18T00:48:53.792903+00:00"
+    },
     {
       "week_of": "2026-10-11",
       "filename": "cards_2026-10-11.json",
