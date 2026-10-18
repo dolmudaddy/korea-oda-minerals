@@ -32,7 +32,8 @@ jobs:
     # - 12 → 15분 (Tier 3X 광업 매체 + Google News 누적, summarize 처리시간 포함)
     # - threshold 10점 적용으로 카드 수 95 → 약 50개 감소
     # - 정상 실행은 11-13분. 15분 넘으면 강제 중단.
-    timeout-minutes: 15
+    # 리뉴얼 3d (2026-10-18): 15 → 25분. 코어 단계(주소 해석·본문 추출) 추가분.
+    timeout-minutes: 25
 
     steps:
       # ----------------------------------------------------
@@ -56,11 +57,24 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests pyyaml anthropic beautifulsoup4 lxml
+          # 리뉴얼 3d: 공통 코어(mincore v0.2.1) — 주소 해석·본문 추출·발행 원장·실행 보고
+          pip install -r scripts/probe/requirements.txt
+
+      # 산출물 파일명 날짜 (UTC, 파이프라인과 동일 규칙)
+      - name: Set run date
+        run: echo "D=$(date -u +%F)" >> "$GITHUB_ENV"
 
       # ----------------------------------------------------
       # 4. 수집 단계
+      #    리뉴얼 3d (2026-10-25~): 코어 단계 + 발행 원장 제외.
+      #    이전 회차 발행 기사(원매체 주소 일치 또는 제목 유사도 0.9 이상)는 raw에서 뺀다.
+      #    코어 단계가 실패하면 ledger_hit 표시가 없어 아무것도 빠지지 않는다(기존 동작).
       # ----------------------------------------------------
       - name: Collect articles (7 countries, multilingual)
+        env:
+          KCMO_CORE_SHADOW: '1'
+          KCMO_LEDGER_ENFORCE: '1'
+          PYTHONIOENCODING: utf-8
         run: python scripts/collect.py
 
       # ----------------------------------------------------
@@ -79,6 +93,29 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/summarize.py
+
+      # ----------------------------------------------------
+      # 5b. 발행 원장 갱신 — 이번 회차 카드를 data/published_ledger.json에 추가
+      #     (다음 회차부터 중복 제외). 드라이런 수동 실행은 원장에 넣지 않는다.
+      #     아래 7단계 commit(git add data/)에 함께 실린다.
+      # ----------------------------------------------------
+      - name: Commit cards to published ledger
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          python -m mincore.ledger commit --ledger data/published_ledger.json \
+            --service kcmo --cards data/cards_$D.json
+        continue-on-error: true
+
+      # ----------------------------------------------------
+      # 5c. 실행 보고 마무리 (요약 실패 수 추가) → data/reports/run_<날짜>.md
+      #     원장 제외 목록도 이 보고서에 들어간다.
+      # ----------------------------------------------------
+      - name: Finalize run report
+        run: |
+          python -m mincore.report finalize --report data/reports/run_$D.json \
+            --raw data/raw_$D.json --cards data/cards_$D.json
+          cat data/reports/run_$D.md >> "$GITHUB_STEP_SUMMARY"
+        continue-on-error: true
 
       # ----------------------------------------------------
       # 6. 사이트 빌드
