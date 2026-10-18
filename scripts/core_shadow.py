@@ -15,7 +15,8 @@ collect.py가 legacy raw를 저장하기 직전에 호출된다. 하는 일:
 회차 내 중복(원매체 주소 기준)도 제거하지 않고 dup_of 키로 표시만 한다.
 
 활성 조건: 환경변수 KCMO_CORE_SHADOW=1 이고 mincore가 설치돼 있을 때만.
-운영 weekly.yml은 mincore를 설치하지 않으므로 이 단계는 실행되지 않는다.
+2026-10-25 회차부터 운영 weekly.yml도 KCMO_CORE_SHADOW=1 + KCMO_LEDGER_ENFORCE=1로 실행한다
+(원장 제외 목록은 data/reports/run_*.md에 기록).
 """
 
 import json
@@ -95,7 +96,7 @@ def run(results, stats, today, data_dir):
             reason = ledger.check(r.url, art.get("title"))
             if reason:
                 art["ledger_hit"] = reason
-                rep.excluded(reason)
+                rep.excluded(reason, title=art.get("title"), url=r.url)
                 ledger_hits += 1
                 tag = "url" if reason == "url" else "title"
                 print(f"  [LEDGER-{tag}] ({reason}) {art.get('title', '')[:60]}")
