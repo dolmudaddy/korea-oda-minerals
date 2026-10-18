@@ -29,7 +29,7 @@ collect.py → madini_html_collector.py → summarize.py → build_index.py → 
 Each stage reads the previous stage's output from `data/`. All filenames are date-suffixed (`raw_YYYY-MM-DD.json`, `cards_YYYY-MM-DD.json`) so the pipeline is idempotent for a given UTC date — re-running overwrites that day's files.
 
 - **collect.py** — reads `sources.yaml`, fetches Tier 1–3 RSS/HTML sources plus Tier 4 Google News broad search across all 7 countries, runs the 4-stage critical-mineral filter (see below), and writes `data/raw_YYYY-MM-DD.json`. Google News links are resolved to real publisher URLs via HEAD redirect *only after* the article passes scoring (cost optimization).
-- **madini_html_collector.py** — separately scrapes Tanzania ministry (madini.go.tz) page bodies. Failures are non-fatal (`continue-on-error: true` in workflow). Replaces the older `pdf_collector.py`, which is kept in the tree but no longer wired into the workflow.
+- **madini_html_collector.py** — separately collects Tanzania ministry (madini.go.tz) articles via the site's public JSON API (`/api/v1/public/news/?category=...` for listing, `/by-slug/{slug}/` for body). The site moved to Next.js in 2026-10; the old `/otherpage/?p=...` HTML pages 404 and the new listing HTML has no article links, so `tier_1_tanzania` in `sources.yaml` is empty. Failures are non-fatal (`continue-on-error: true` in workflow). Replaces the older `pdf_collector.py`, which is kept in the tree but no longer wired into the workflow.
 - **summarize.py** — calls Claude (`claude-haiku-4-5-20251001`) per article, expecting a strict JSON response with `korean_summary` (3 lines, 발표체), `oda_relevance`, `category`, `tags`, `key_phrases`. The system prompt encodes Korea ODA governance facts (KIAT is the critical-mineral ODA 실무 주관기관, not KOICA) and partner-country ministry mappings (notably: Laos MEM was merged into MOIC on 2025-06-16). Writes `data/cards_YYYY-MM-DD.json`.
 - **build_index.py** — renders `index.html` from `template.html` using a hybrid approach: cards are pre-rendered as `<article>` blocks (SEO/no-JS) AND embedded as JSON for client-side filtering. Computes the next dispatch date from `week_of`.
 - **generate_obsidian.py** — reads the latest `cards_*.json` and writes one markdown note per card plus a weekly index into the target Obsidian vault (`KCMO/articles/{YYYY}/`, `KCMO/weekly/{YYYY}/`). Wikilink vocabulary lives in `obsidian_vocab.yaml`. See "Obsidian 통합" below. Non-fatal in workflow (vault failure must not block email send).
@@ -113,7 +113,58 @@ There are no tests, linters, or build steps beyond the pipeline scripts themselv
 - `data/processed_pages.json` and `data/processed_pdfs.json` are dedup registries written by the Tanzania collectors; do not delete unless intentionally re-processing.
 - All dates in code/logs are UTC; KST is only used for display in `build_index.py` and `send_email.py`.
 
+## Recheck items
+
+- **2026-11-01 — kpl.gov.la 인증서**: 2026-10-18 기준 인증서 만료(`CERTIFICATE_VERIFY_FAILED`)로 `tier_1_laos` KPL 수집 실패. 검증 생략(`verify=False`)은 하지 않는다. 소스는 그대로 두어 갱신되면 자동 복구되고, 그동안은 `laos_english_queries`의 `site:kpl.gov.la` 쿼리가 대체한다. 재확인: `curl -sI https://kpl.gov.la/En` 이 인증서 오류 없이 응답하는지, Actions 로그에 `kpl.gov.la ... SSLError`가 사라졌는지.
+
 ## Current status (2026-05-16)
 
 - **점수 시스템 v6.2**: 키워드 사전 확장 적용 완료 (`sources.yaml` 및 `collect.py` 반영). 추가 튜닝은 `sources.yaml`의 키워드 사전에서 진행하고 `collect.py` 필터 로직은 손대지 않는다.
 - **옵시디언 통합 (CMW vault 재설정 중)**: 2026-05-15 1차 작업은 별도 repo `dolmudaddy/kcmo-vault`에 push하는 구조로 머지됐으나, 박사님 실제 의도는 평소 사용 중인 CMW vault(`dolmudaddy/critical-minerals`의 `vault/` 폴더)에 `vault/KCMO/` 서브폴더로 통합되어 CMW 카드와 wikilink 교차 연결되는 것. 워크플로우의 vault push 대상을 CMW repo로 교체하고 `pull --rebase` 충돌 방지 안전망 추가. 박사님이 PAT를 `dolmudaddy/critical-minerals` Contents:Write 권한으로 재발급하여 `OBSIDIAN_VAULT_PAT` secret 갱신 후 종단 테스트 예정.
+
+## 리뉴얼 진행 상태
+
+### 2026-10-18 박사님 결정 지시 (원문 그대로, 세션 압축 대비)
+
+```
+결정 반영. 아래 순서대로 진행하고 각 항목 끝에 한 줄 보고. 
+이 메시지 전체를 CLAUDE.md "리뉴얼 진행 상태" 절에 그대로 붙여둘 것 (세션 압축 대비).
+시작 전 git checkout main && git pull.
+
+== 1. PR #14 수정 후 머지 ==
+- sources.yaml에 scoring.country_threshold 도입 (Laos: 3). collect.py가 국가별 기준점을 읽도록 한 줄 추가
+- 라오스 신선도 45일 → 30일 환원 (리플레이에서 효과 미측정)
+- 복구되는 라오스 14건 제목 목록을 PR #14 본문에 첨부
+- 머지 순서: #12, CMW #2 → #13 → #14 → #15
+
+== 2. 인도네시아 소스 복원 (브랜치 fix/indonesia-sources) ==
+- tier_3_indonesia_media(현재 빈 배열)에 추가: Tambang.co.id, Nikel.co.id, Dunia Energi, 
+  Ruang Energi, Katadata, Antara 국문 3피드
+- weight·priority_boost는 기존 Tier 3X 관례 따름
+- CNBC·CNN Indonesia·suaradewata·Kontan은 추가하지 않음 (Actions 403)
+- 그림자 run으로 카드 수·본문 확보율 변화 보고 후 PR
+
+== 3. Jina Reader 폴백 (minerals-core v0.2.0) ==
+- domain_rules에 reader_proxy 전략 추가: 403 도메인 한정, 회차당 20건 상한, 요청 간격 2초, 
+  실패 시 og:description 폴백
+- body_source=reader_proxy 기록, 실행 보고에 사용 건수 표시
+- 태그 v0.2.0, KCMO requirements를 v0.2.0으로 올림
+
+== 4. 발행 원장 enforce 운영 연결 (10/25 회차부터) — 이번 주 유일한 운영 변경 ==
+- 먼저 이번 주 실제 발행 36건으로 dry-run → 제외 13건 목록을 보여줄 것 (제목 유사도 0.9 오탐 확인용)
+- 오탐 없으면: weekly.yml에 KCMO_LEDGER_ENFORCE=1 + 원장 commit 단계(summarize 이후) 연결
+- 제외 목록은 data/reports/run_*.md에 매주 기록
+- summarize 연계·3c(CMW 통합)·weekly.yml 타임아웃 조정은 다음 주
+
+== 보류 목록 (CLAUDE.md에 유지) ==
+- summarize 연계: body_status 기반 요약 규칙, 새 지시문, provenance 기록 (다음 주)
+- 3c CMW 그림자 통합 (summarize 연계 후)
+- 과거 발행분 일괄 재생성: cards_*.json·week-*.json 전 회차(KCMO 28 + CMW 28)를 
+  새 파이프라인(주소 변환 → 본문 추출 → 새 지시문)으로 재요약. 
+  출력은 cards_v2_*.json 등 별도 파일, 원본 덮어쓰기·재발송 금지. 
+  용도: 전후 비교 지표(같은 704건), 골든셋 제작, 위키 재투입. 
+  시점: summarize 연계 완료 후
+- 우즈베키스탄 0건 원인: 다음 주 보고에서 확인
+- madini 최신 글 8/3, KPL 인증서: 2026-11-01 재확인
+- K-Resources 뉴스레터 수집: 별도 결정
+```

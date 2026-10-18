@@ -168,6 +168,21 @@ COUNTRY_ALIASES = {
         # v6.8 (2026-05-25): 추가 광산명·운영사명.
         "Phu Kham",        # 구리 광산 (PanAust)
         "LXML",            # Lane Xang Minerals Ltd (Sepon 운영자)
+        # v6.9 (2026-10-18): 형용사 "Lao" 결합형. 10/18 로그에서 "Lao government moves
+        # to end raw mineral exports", "Lao President Thongloun Calls for Action on
+        # Illegal Mining"이 [DROP-no country]. 단독 "Lao"는 베트남 Lao Cai·Lao Động과
+        # 충돌하므로 결합형만 등록.
+        "Lao government", "Lao govt", "Lao President", "Lao Prime Minister",
+        "Lao National Assembly", "Lao Front", "Lao Ministry",
+        "Lao authorities", "Lao officials", "Lao State",
+        "Lao economy", "Lao mining", "Lao company", "Lao firm",
+        "Laotian",
+        "Vientiane",       # 수도
+        # v6.9 P3: 광산·지명
+        "Hongsa",          # 갈탄 광산·발전소 (Xayaboury)
+        "Khammouane", "Khammuan",  # 칼리·주석 광산 지역
+        "Sekong",          # 보크사이트·금 (남부)
+        "Boten",           # 라오-중국 국경 경제특구
     ],
 }
 
@@ -347,6 +362,12 @@ def compute_gov_citation_bonus(article_text, scoring_cfg):
 # -----------------------------------------------------------------
 # Scoring
 # -----------------------------------------------------------------
+def min_score_for(country, scoring_cfg):
+    """v6.9: 국가별 기준점(scoring.country_threshold) 우선, 없으면 min_score_threshold."""
+    return (scoring_cfg.get("country_threshold") or {}).get(
+        country, scoring_cfg.get("min_score_threshold", 7))
+
+
 def score_article(article, source_meta, scoring_cfg):
     """Compute relevance score. Returns score (int) or None if dropped."""
     text = f"{article['title']} {article.get('summary_raw', '')}"
@@ -420,7 +441,8 @@ def score_article(article, source_meta, scoring_cfg):
             score += recency.get("within_7_days", 0)
 
         # Drop if too old
-        freshness = scoring_cfg.get("freshness_days", 30)
+        freshness = (scoring_cfg.get("freshness_days_by_country") or {}).get(
+            country, scoring_cfg.get("freshness_days", 30))
         if delta_days > freshness:
             # v6.4: freshness silent drop 가시화
             print(f"    [DROP-too old: {delta_days}d > {freshness}d] {article['title'][:50]}")
@@ -578,7 +600,7 @@ def collect_from_source(source, tier_weight, scoring_cfg, results, stats):
         score, country = score_article(item, source_meta, scoring_cfg)
         if score is None:
             continue
-        if score < scoring_cfg.get("min_score_threshold", 7):
+        if score < min_score_for(country, scoring_cfg):
             continue
 
         # Compose article record
@@ -694,7 +716,6 @@ def resolve_google_news_url(google_url, session=None):
 
 def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
     """tier_4_broad_search 섹션의 모든 쿼리를 Google News RSS로 실행."""
-    min_score = scoring_cfg.get("min_score_threshold", 7)
 
     # URL 변환용 세션 (재사용으로 성능 향상)
     url_session = requests.Session()
@@ -760,7 +781,7 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
 
                 # 점수화 (Country detection 포함, freshness 30일 필터 자동)
                 score, country = score_article(article, source_meta, scoring_cfg)
-                if score is None or score < min_score:
+                if score is None or score < min_score_for(country, scoring_cfg):
                     continue
 
                 # 점수 통과 → 이제 URL 변환 (HEAD 요청 비용 발생)
