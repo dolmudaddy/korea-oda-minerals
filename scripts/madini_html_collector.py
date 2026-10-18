@@ -6,10 +6,11 @@ Korea Critical Minerals ODA Weekly
 이전 pdf_collector.py 접근(PDF 직접 크롤링)이 사이트 구조와 맞지 않아
 방향을 전환한 것입니다.
 
-작동 원리:
-1. 광물부 메인 페이지(/) 방문해서 본문 URL들(/page/{uuid}/) 수집
-2. 각 본문 페이지 방문해서 제목·날짜·본문 텍스트 추출
-3. 30일 신선도 필터 적용 (최근 30일 이내만)
+작동 원리 (2026-10 사이트 개편 후 JSON API 방식):
+1. 공개 API(/api/v1/public/news/?category=...)에서 카테고리별 기사 목록 수집
+   (2026-10 사이트가 Next.js로 개편되어 목록 HTML에는 기사 링크가 없음)
+2. 30일 신선도 필터를 목록의 published_at으로 먼저 적용 (본문 요청 절약)
+3. 남은 기사만 by-slug API로 본문(body HTML) 받아 텍스트 추출
 4. processed_pages.json 레지스트리로 중복 방지
 5. raw_*.json에 article로 병합
 
@@ -30,7 +31,6 @@ import hashlib
 import time
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -57,22 +57,13 @@ RETRY_BACKOFF = 5  # seconds
 
 FRESHNESS_DAYS = 30
 
-# 메인 페이지에서 본문 페이지 URL을 발견할 진입점
-# 메인 페이지가 최신 보도자료 + Latest News + Latest Updates를 모두 노출함
-ENTRY_POINTS = [
-    "https://www.madini.go.tz/",
-    "https://www.madini.go.tz/otherpage/?p=latest-news",
-    "https://www.madini.go.tz/otherpage/?p=latest-updates",
-    "https://www.madini.go.tz/otherpage/?p=press-release",
-    "https://www.madini.go.tz/otherpage/?p=public-notes",
-]
-
-# 본문 페이지 URL 패턴: /page/{uuid}/
-PAGE_URL_PATTERN = re.compile(
-    r"https?://www\.madini\.go\.tz/page/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-"
-    r"[0-9a-f]{4}-[0-9a-f]{12}/?",
-    re.IGNORECASE,
-)
+# 2026-10 사이트 개편: 옛 /otherpage/?p=... 와 /page/{uuid}/ 는 404.
+# 목록·본문 모두 공개 JSON API에서 받는다.
+SITE_BASE = "https://www.madini.go.tz"
+API_LIST = SITE_BASE + "/api/v1/public/news/"
+API_DETAIL = SITE_BASE + "/api/v1/public/news/by-slug/{slug}/"
+CATEGORIES = ["press-release", "latest-news", "latest-updates", "public-notes"]
+LIST_PAGE_SIZE = 50  # 최신순 정렬이라 첫 페이지면 30일치를 충분히 덮음
 
 
 # -----------------------------------------------------------------
@@ -117,141 +108,52 @@ def fetch_with_retry(url, session):
 
 
 # -----------------------------------------------------------------
-# Discover page URLs from entry points
+# Discover articles via API
 # -----------------------------------------------------------------
-def discover_page_urls(entry_url, session):
-    """진입점 페이지에서 /page/{uuid}/ URL들을 모두 추출."""
-    r = fetch_with_retry(entry_url, session)
+def discover_items(category, session):
+    """카테고리 목록 API에서 기사 메타데이터(id·slug·title·published_at) 목록."""
+    r = fetch_with_retry(f"{API_LIST}?category={category}&page_size={LIST_PAGE_SIZE}", session)
     if r is None:
         return []
-
-    # HTML에서 패턴 매칭으로 URL 추출 (정규식)
-    matches = PAGE_URL_PATTERN.findall(r.text)
-
-    # URL 정규화 (끝의 / 통일)
-    urls = []
-    seen = set()
-    for m in matches:
-        normalized = m.rstrip("/") + "/"
-        if normalized not in seen:
-            seen.add(normalized)
-            urls.append(normalized)
-
-    return urls
+    try:
+        return r.json().get("results", [])
+    except ValueError:
+        print(f"    [FAIL] list API returned non-JSON")
+        return []
 
 
-# -----------------------------------------------------------------
-# Parse individual page
-# -----------------------------------------------------------------
-DATE_REGEX_PATTERNS = [
-    # "March 19, 2026, 12:30 p.m." 또는 "Feb. 6, 2026, 3:18 p.m."
-    re.compile(
-        r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})",
-        re.IGNORECASE,
-    ),
-    # "2026-03-19" or "19/03/2026"
-    re.compile(r"(\d{4})-(\d{2})-(\d{2})"),
-    re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})"),
-]
-
-MONTH_NAMES = {
-    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
-    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
-}
-
-
-def parse_date_from_text(text):
-    """텍스트에서 날짜 추출. 못 찾으면 None."""
-    if not text:
+def parse_published(item):
+    """'2026-07-31T03:00:00+03:00' → UTC datetime. 실패 시 None."""
+    try:
+        return datetime.fromisoformat(item["published_at"]).astimezone(timezone.utc)
+    except (KeyError, TypeError, ValueError):
         return None
 
-    # 패턴 1: 영문 월 이름
-    m = re.search(
-        r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})",
-        text, re.IGNORECASE,
-    )
-    if m:
-        try:
-            month = MONTH_NAMES[m.group(1).lower()[:3]]
-            day = int(m.group(2))
-            year = int(m.group(3))
-            return datetime(year, month, day, tzinfo=timezone.utc)
-        except (KeyError, ValueError):
-            pass
 
-    # 패턴 2: ISO
-    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
-    if m:
-        try:
-            return datetime(int(m.group(1)), int(m.group(2)),
-                            int(m.group(3)), tzinfo=timezone.utc)
-        except ValueError:
-            pass
-
-    return None
+def item_url(item):
+    """사람이 여는 기사 주소. 사이트 프런트엔드의 /news/{slug} 경로 (전 카테고리 공통)."""
+    return f"{SITE_BASE}/news/{item['slug']}"
 
 
-def parse_page_content(page_url, session):
-    """본문 페이지에서 제목·날짜·본문 텍스트 추출.
-
-    Returns:
-        dict with keys: title, body, published_date, raw_html_size
-        or None on fetch failure
-    """
-    r = fetch_with_retry(page_url, session)
+# -----------------------------------------------------------------
+# Parse individual article body
+# -----------------------------------------------------------------
+def fetch_body(item, session):
+    """by-slug API에서 본문 HTML을 받아 텍스트로. 실패 시 None."""
+    r = fetch_with_retry(API_DETAIL.format(slug=item["slug"]), session)
     if r is None:
         return None
-
-    soup = BeautifulSoup(r.content, "lxml")
-
-    # 1. 제목 추출 - <title> 태그 또는 페이지 내 <h1>/<h2>/<h3>
-    title = ""
-    if soup.title:
-        title = soup.title.get_text(strip=True)
-        # 사이트 공통 부분 제거
-        title = title.replace("Ministry of Minerals - Republic of Tanzania", "").strip(" -|")
-    if not title:
-        for tag in ["h1", "h2", "h3"]:
-            h = soup.find(tag)
-            if h:
-                title = h.get_text(strip=True)
-                if title and len(title) > 10:
-                    break
-
-    # 2. 본문 추출 - <main>, <article>, 또는 <div class="content"> 등
-    body = ""
-    # 가장 흔한 본문 컨테이너 후보들
-    main_candidates = [
-        soup.find("main"),
-        soup.find("article"),
-        soup.find("div", class_=re.compile(r"content|main|body|article", re.IGNORECASE)),
-    ]
-    body_node = next((n for n in main_candidates if n is not None), None)
-
-    if body_node is None:
-        # fallback: 페이지 전체에서 텍스트 추출
-        body_node = soup.body or soup
-
-    # 네비게이션·푸터 등 제외
-    for unwanted in body_node.find_all(["nav", "header", "footer", "script", "style", "aside"]):
-        unwanted.decompose()
-
-    body_text = body_node.get_text(separator="\n", strip=True)
-    # 공백 정규화
+    try:
+        data = r.json().get("data") or {}
+    except ValueError:
+        return None
+    html = data.get("body") or ""
+    body_text = BeautifulSoup(html, "lxml").get_text(separator="\n", strip=True)
     body_text = re.sub(r"\n{3,}", "\n\n", body_text)
     body_text = re.sub(r" {2,}", " ", body_text)
-    body = body_text
-
-    # 3. 날짜 추출 - 페이지 본문에서 발견된 첫 번째 날짜
-    # 본문 처음 1000자에서 찾기 (보통 헤더 근처에 있음)
-    published_date = parse_date_from_text(body[:2000])
-
-    return {
-        "title": title[:300] if title else "",
-        "body": body,
-        "published_date": published_date,
-        "raw_html_size": len(r.content),
-    }
+    if not body_text:
+        body_text = data.get("excerpt") or item.get("excerpt") or ""
+    return body_text
 
 
 # -----------------------------------------------------------------
@@ -309,33 +211,47 @@ def score_page_article(article):
 # -----------------------------------------------------------------
 # Page processing
 # -----------------------------------------------------------------
-def make_page_id(url):
-    """URL 기반 고유 ID (UUID 자체를 활용하면 더 깔끔)."""
-    # /page/{uuid}/ 에서 uuid 추출
-    m = re.search(r"/page/([0-9a-f-]{36})/?", url, re.IGNORECASE)
-    if m:
-        # UUID의 처음 12자만 사용 (충분히 고유)
-        return m.group(1).replace("-", "")[:12]
-    # fallback
-    return hashlib.md5(url.encode("utf-8")).hexdigest()[:12]
+def make_page_id(item):
+    """API 기사 id(UUID)의 처음 12자 (충분히 고유)."""
+    if item.get("id"):
+        return item["id"].replace("-", "")[:12]
+    return hashlib.md5(item_url(item).encode("utf-8")).hexdigest()[:12]
 
 
-def process_page(page_url, session, registry, cutoff_date):
-    """본문 페이지 하나를 처리. article dict 또는 None 반환."""
-    page_id = make_page_id(page_url)
+def process_page(item, session, registry, cutoff_date):
+    """API 기사 하나를 처리. article dict 또는 None 반환."""
+    page_id = make_page_id(item)
+    page_url = item_url(item)
+    title = (item.get("title") or "").strip()
 
     # 중복 체크
     if page_id in registry:
         return None
 
+    # 신선도 체크 (목록의 published_at으로 먼저 — 본문 요청 절약)
+    pub_date = parse_published(item)
+    if pub_date is None:
+        print(f"    [SKIP] no published_at: {title[:60]}")
+        registry[page_id] = {
+            "url": page_url,
+            "skipped_reason": "no_date",
+            "title": title[:100],
+            "processed_at": datetime.now(timezone.utc).isoformat(),
+        }
+        return None
+
+    if pub_date < cutoff_date:
+        # 오래된 기사는 레지스트리에 남기지 않는다 (매주 목록 상단만 보므로 비용 없음)
+        return "stale"
+
     print(f"  [page] {page_url}")
-    parsed = parse_page_content(page_url, session)
-    if parsed is None:
+    body = fetch_body(item, session)
+    if body is None:
         return None
 
     # 본문 너무 짧으면 거부
-    if not parsed["body"] or len(parsed["body"]) < 100:
-        print(f"    [SKIP] body too short ({len(parsed['body'])} chars)")
+    if len(body) < 100:
+        print(f"    [SKIP] body too short ({len(body)} chars)")
         registry[page_id] = {
             "url": page_url,
             "skipped_reason": "empty_body",
@@ -343,42 +259,18 @@ def process_page(page_url, session, registry, cutoff_date):
         }
         return None
 
-    # 신선도 체크
-    pub_date = parsed["published_date"]
-    if pub_date is None:
-        print(f"    [SKIP] no date found in page content")
-        # 날짜가 없으면 일단 건너뛰지만 레지스트리에는 기록 (재시도 방지)
-        registry[page_id] = {
-            "url": page_url,
-            "skipped_reason": "no_date",
-            "title": parsed["title"][:100],
-            "processed_at": datetime.now(timezone.utc).isoformat(),
-        }
-        return None
-
-    if pub_date < cutoff_date:
-        print(f"    [SKIP] stale: {pub_date.strftime('%Y-%m-%d')} < cutoff")
-        registry[page_id] = {
-            "url": page_url,
-            "skipped_reason": "stale",
-            "title": parsed["title"][:100],
-            "pub_date": pub_date.isoformat(),
-            "processed_at": datetime.now(timezone.utc).isoformat(),
-        }
-        return None
-
     # 정상 처리
-    print(f"    [OK] {pub_date.strftime('%Y-%m-%d')} | {len(parsed['body'])} chars | {parsed['title'][:60]}")
+    print(f"    [OK] {pub_date.strftime('%Y-%m-%d')} | {len(body)} chars | {title[:60]}")
 
     article = {
         "id": page_id,
-        "title": parsed["title"] or "(제목 미상)",
+        "title": title or "(제목 미상)",
         "url": page_url,
         "source": "Wizara ya Madini (광물부 본문)",
         "source_language": "sw",
         "country": "Tanzania",
         "tier_weight": 5,
-        "summary_raw": parsed["body"][:3000],  # 토큰 절약
+        "summary_raw": body[:3000],  # 토큰 절약
         "published": pub_date.strftime("%Y-%m-%d"),
         "score": None,
         "source_type": "html_page",
@@ -388,9 +280,9 @@ def process_page(page_url, session, registry, cutoff_date):
     # 레지스트리 기록
     registry[page_id] = {
         "url": page_url,
-        "title": parsed["title"][:100],
+        "title": title[:100],
         "pub_date": pub_date.isoformat(),
-        "body_length": len(parsed["body"]),
+        "body_length": len(body),
         "processed_at": datetime.now(timezone.utc).isoformat(),
     }
 
@@ -403,7 +295,7 @@ def process_page(page_url, session, registry, cutoff_date):
 def main():
     print("=" * 60)
     print("KCMO Weekly - Madini Ministry HTML Collector")
-    print("Target: madini.go.tz (page bodies, last 30 days)")
+    print("Target: madini.go.tz public news API (last 30 days)")
     print("=" * 60)
 
     cutoff_date = datetime.now(timezone.utc) - timedelta(days=FRESHNESS_DAYS)
@@ -415,38 +307,43 @@ def main():
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
 
-    # 1. 진입점에서 본문 URL 발견
-    print(f"\n=== Phase 1: Discovering page URLs ===")
-    all_urls = set()
-    for entry in ENTRY_POINTS:
-        print(f"\n[entry] {entry}")
-        urls = discover_page_urls(entry, session)
-        print(f"  found {len(urls)} page URL(s)")
-        all_urls.update(urls)
+    # 1. 카테고리별 목록 API에서 기사 발견
+    print(f"\n=== Phase 1: Discovering articles via API ===")
+    items_by_id = {}
+    for category in CATEGORIES:
+        print(f"\n[category] {category}")
+        items = discover_items(category, session)
+        print(f"  found {len(items)} item(s)")
+        for it in items:
+            if it.get("slug"):
+                items_by_id.setdefault(it.get("id") or it["slug"], it)
         time.sleep(1)  # 사이트에 부담 주지 않기 위한 지연
 
-    print(f"\nTotal unique page URLs: {len(all_urls)}")
+    all_items = sorted(items_by_id.values(), key=lambda it: it.get("published_at") or "", reverse=True)
+    print(f"\nTotal unique articles: {len(all_items)}")
+    if all_items:
+        print(f"Newest on site:        {all_items[0].get('published_at', '')[:10]} | {all_items[0].get('title', '')[:60]}")
 
-    # 2. 각 본문 페이지 처리
-    print(f"\n=== Phase 2: Processing page bodies ===")
+    # 2. 각 기사 본문 처리
+    print(f"\n=== Phase 2: Processing article bodies ===")
     new_articles = []
-    stats = {"urls_found": len(all_urls), "already_known": 0,
+    stats = {"urls_found": len(all_items), "already_known": 0,
              "fetched": 0, "stale": 0, "no_date": 0, "qualified": 0}
 
-    for page_url in sorted(all_urls):
-        page_id = make_page_id(page_url)
+    for item in all_items:
+        page_id = make_page_id(item)
         if page_id in registry:
             stats["already_known"] += 1
             continue
 
-        stats["fetched"] += 1
-        article = process_page(page_url, session, registry, cutoff_date)
+        article = process_page(item, session, registry, cutoff_date)
 
+        if article == "stale":
+            stats["stale"] += 1
+            continue
+        stats["fetched"] += 1
         if article is None:
-            reason = registry.get(page_id, {}).get("skipped_reason")
-            if reason == "stale":
-                stats["stale"] += 1
-            elif reason == "no_date":
+            if registry.get(page_id, {}).get("skipped_reason") == "no_date":
                 stats["no_date"] += 1
             continue
 

@@ -252,27 +252,17 @@ lao_keywords:
 #   - tumemadini.go.tz: SSL 인증서 오류로 GitHub Actions에서 차단
 #   - gst.go.tz, stamico.co.tz: 응답 있지만 30일간 0건 qualified
 # 응급조치 (2026-05): 작동하지 않는 소스 비활성화. 매주 12분 → 2분
+# 2026-10-18: madini.go.tz가 Next.js로 개편되어 옛 /otherpage/?p=... 주소 404.
+#   새 목록 페이지(/latest-news, /press-releases)는 브라우저에서 그려져 HTML에 기사 링크가 없다.
+#   → collect.py html_listing으로는 수집 불가. 공개 JSON API(/api/v1/public/news/)를
+#     madini_html_collector.py가 직접 읽도록 전환(본문·날짜 포함). 아래 두 소스는 비활성.
 tier_1_tanzania:
   weight: 5
-  sources:
-    - name: "Wizara ya Madini - Press Release"
-      url: "https://www.madini.go.tz/otherpage/?p=press-release"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 3
-      note: "박사님 진단으로 GitHub Actions에서도 작동 확인됨 (2026-05)"
-
-    - name: "Wizara ya Madini - Latest News"
-      url: "https://www.madini.go.tz/otherpage/?p=latest-news"
-      rss: null
-      scrape_method: html_listing
-      country: Tanzania
-      language: sw
-      verified: true
-      priority_boost: 2
+  sources: []
+#    - name: "Wizara ya Madini - Press Release"
+#      url: "https://www.madini.go.tz/otherpage/?p=press-release"   # 404 (2026-10)
+#    - name: "Wizara ya Madini - Latest News"
+#      url: "https://www.madini.go.tz/otherpage/?p=latest-news"     # 404 (2026-10)
 
 # =====================================================================
 # Tier 1B-G: Other countries government (응급조치 2026-05)
@@ -318,6 +308,9 @@ tier_1_uzbekistan:
 # 2025-06-16 라오스 정부 조직개편: MEM(에너지광산부) → MOIC(산업통상부) 통합
 # Source: KPL (Khaosan Pathet Lao), 18/06/2025
 # moic.gov.la는 GitHub Actions에서 응답 없음. KPL은 정상 작동 (1건 qualified).
+# 2026-10-18: kpl.gov.la 인증서 만료로 fetch 실패. 검증 생략은 하지 않는다.
+#   소스는 그대로 두어 인증서 갱신 시 자동 복구되게 하고, 그동안은
+#   laos_english_queries의 site:kpl.gov.la 쿼리로 대체. 2026-11-01 재확인.
 tier_1_laos:
   weight: 5
   sources:
@@ -830,6 +823,18 @@ tier_4_broad_search:
     - "Phu Bia mining gold"
     - "Xayaboury Laos mining"
     - "Bolaven bauxite Laos"
+    # 2026-10-18 추가: kpl.gov.la 직접 수집이 인증서 만료(SSL CERTIFICATE_VERIFY_FAILED)로
+    # 실패 → 검증 생략 대신 Google News 경유로 KPL 보도를 받는다 (site: 쿼리).
+    # 로컬 실측(10/18, 최근 30일 기사 수): site:kpl minerals 14 / mining 5,
+    # Vientiane Times mining 8, mineral export 10, mineral processing 15,
+    # rare earth 1, gold mine 3. 원광 수출 금지(2030) 보도가 이 쿼리들로 잡힘.
+    - "site:kpl.gov.la minerals"
+    - "site:kpl.gov.la mining"
+    - "Vientiane Times mining"
+    - "Laos mineral export"
+    - "Laos mineral processing"
+    - "Laos rare earth"
+    - "Laos gold mine"
   # v6.3 추가: 라오어 (lo) 쿼리
   # v6.8 (2026-05-25): 박사님 5/25 cron 로그에서 모두 0 entries 확인. Google
   # News rss에 라오어 콘텐츠 거의 없음. 4개 모두 제거.
