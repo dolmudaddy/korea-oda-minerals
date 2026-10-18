@@ -997,6 +997,11 @@ scoring:
     # 1. 제외 키워드 - 부분일치 (매칭 시 무조건 폐기)
     # ────────────────────────────────────────────────────────────
     exclusion_terms:
+      # 인니 RSS 잡음 (2026-10-18 그림자 run): 수상·홍보상·부고 기사. 'gold award'·ESDM 부처명(Sumber Daya Mineral)으로 통과하던 것
+      - "raih penghargaan"
+      - "anugerah humas"
+      - "kabar duka"
+      - "berpulang"
       # 금융/외환 (gold reserves ≠ gold mining)
       - "gold reserves"
       - "gold reserve"
@@ -1284,7 +1289,7 @@ scoring:
       - "рудник"
       - "горнодобывающ"
       # 우즈베크 (광업)
-      - "kon"
+      # "kon"은 2026-10-18 core_minerals_wordbound로 이동 — 부분일치로 인니어 ekonomi·kolaborasi·diskon 통과 사고
       - "qazib olish"
       - "konchilik"
 
@@ -1355,6 +1360,7 @@ scoring:
       - "ores"    # 광석들
       - "miner"   # 광부 — "miner-friendly" 같은 표현 매칭, "minor"와 구분 필요 없음
       - "miners"  # 광부들
+      - "kon"     # 우즈베크 '광산' — 2026-10-18 core_minerals에서 이동 (ekonomi·kontribusi 부분일치 차단)
 
     # ────────────────────────────────────────────────────────────
     # 5. KCMO 도메인 용어 (자원외교·ODA·산업기술협력 어휘)
