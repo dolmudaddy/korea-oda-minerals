@@ -390,10 +390,11 @@ tier_3_tanzania_media:
 tier_3_indonesia_media:
   weight: 3
   sources:
-    # 리뉴얼 ⑤ (2026-10-18): Actions probe run 39111120671 실측 — 아래 8개 피드 모두
+    # 리뉴얼 ⑤ (2026-10-18): Actions probe run 39111120671 실측 — 아래 4개 피드 모두
     # GitHub Actions에서 RSS 200 + 본문 확보 8/8. 괄호는 핵심광물 필터 통과 건수(피드 표본 기준).
     # priority_boost 관례: 광업 전문 3 / 에너지·경제 일반 2 (tier_3 HabariLeo madini=3, 일반지=2).
     # 제외: CNBC Indonesia·Kontan(Actions 403), CNN Indonesia·suaradewata(본문 차단), Antara English(광물 0).
+    # Katadata·Antara 국문 3피드는 그림자 run(39132561436)에서 kon 수정 후 통과 0건 → 박사님 10/18 결정으로 제외.
     - name: "Tambang.co.id (RSS)"
       url: "https://www.tambang.co.id/"
       rss: "https://www.tambang.co.id/feed/"
@@ -433,47 +434,6 @@ tier_3_indonesia_media:
       verified: true
       priority_boost: 2
       note: "에너지·광업 전문지. 필터 통과 5."
-
-    - name: "Katadata (RSS)"
-      url: "https://www.katadata.co.id/"
-      rss: "https://www.katadata.co.id/rss"
-      scrape_method: rss
-      country: Indonesia
-      language: id
-      verified: true
-      priority_boost: 2
-      note: "경제·데이터 저널리즘 매체. 필터 통과 6."
-
-    - name: "Antara - Ekonomi (RSS)"
-      url: "https://www.antaranews.com/ekonomi"
-      rss: "https://www.antaranews.com/rss/ekonomi.xml"
-      scrape_method: rss
-      country: Indonesia
-      language: id
-      verified: true
-      priority_boost: 2
-      note: "국영통신 경제 섹션. 필터 통과 2~3."
-
-    - name: "Antara - Ekonomi Bisnis (RSS)"
-      url: "https://www.antaranews.com/ekonomi/bisnis"
-      rss: "https://www.antaranews.com/rss/ekonomi-bisnis.xml"
-      scrape_method: rss
-      country: Indonesia
-      language: id
-      verified: true
-      priority_boost: 2
-      note: "국영통신 경제·비즈니스. 필터 통과 2~3."
-
-    - name: "Antara - Ekonomi Finansial (RSS)"
-      url: "https://www.antaranews.com/ekonomi/finansial"
-      rss: "https://www.antaranews.com/rss/ekonomi-finansial.xml"
-      scrape_method: rss
-      country: Indonesia
-      language: id
-      verified: true
-      priority_boost: 2
-      note: "국영통신 경제·금융. 필터 통과 2~3."
-
 
 tier_3_vietnam_media:
   weight: 3
