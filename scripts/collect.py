@@ -361,6 +361,12 @@ def compute_gov_citation_bonus(article_text, scoring_cfg):
 # -----------------------------------------------------------------
 # Scoring
 # -----------------------------------------------------------------
+def min_score_for(country, scoring_cfg):
+    """v6.9: 국가별 기준점(scoring.country_threshold) 우선, 없으면 min_score_threshold."""
+    return (scoring_cfg.get("country_threshold") or {}).get(
+        country, scoring_cfg.get("min_score_threshold", 7))
+
+
 def score_article(article, source_meta, scoring_cfg):
     """Compute relevance score. Returns score (int) or None if dropped."""
     text = f"{article['title']} {article.get('summary_raw', '')}"
@@ -593,7 +599,7 @@ def collect_from_source(source, tier_weight, scoring_cfg, results, stats):
         score, country = score_article(item, source_meta, scoring_cfg)
         if score is None:
             continue
-        if score < scoring_cfg.get("min_score_threshold", 7):
+        if score < min_score_for(country, scoring_cfg):
             continue
 
         # Compose article record
@@ -709,7 +715,6 @@ def resolve_google_news_url(google_url, session=None):
 
 def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
     """tier_4_broad_search 섹션의 모든 쿼리를 Google News RSS로 실행."""
-    min_score = scoring_cfg.get("min_score_threshold", 7)
 
     # URL 변환용 세션 (재사용으로 성능 향상)
     url_session = requests.Session()
@@ -775,7 +780,7 @@ def collect_from_google_news(tier4_cfg, scoring_cfg, results, stats):
 
                 # 점수화 (Country detection 포함, freshness 30일 필터 자동)
                 score, country = score_article(article, source_meta, scoring_cfg)
-                if score is None or score < min_score:
+                if score is None or score < min_score_for(country, scoring_cfg):
                     continue
 
                 # 점수 통과 → 이제 URL 변환 (HEAD 요청 비용 발생)
