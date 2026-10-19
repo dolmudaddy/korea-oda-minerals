@@ -141,7 +141,7 @@
       "meaning": "활성단층"
      }
     ],
-    "oda_relevance": "KIGAM이 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 몽골 자원개발 진출 지원을 추진함"
+    "oda_relevance": "탐사부터 활용기술까지 공동연구가 넓어져 한국 기업의 몽골 진출과 핵심광물 공급망 협력의 기반이 강화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -151,7 +151,17 @@
     "input_body_status": "full",
     "input_chars": 3390,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:00:10+00:00"
+    "summarized_at": "2026-10-19T03:00:10+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIGAM이 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 몽골 자원개발 진출 지원을 추진함",
+     "rewritten_at": "2026-10-19T06:11:14+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -227,7 +237,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "KIGAM이 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 몽골 자원개발 진출 지원을 추진함",
+    "oda_relevance": "탐사부터 활용기술까지 공동연구가 넓어져 한국 기업의 몽골 진출과 핵심광물 공급망 협력의 기반이 강화될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -248,7 +258,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:00:10+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -321,7 +332,7 @@
       "meaning": "선광(광석 처리)"
      }
     ],
-    "oda_relevance": "KIGAM이 몽골 3개 기관과 MOU를 맺고 희소금속 협력센터 중심 공동연구와 한국 기업의 자원개발 진출 지원을 추진함"
+    "oda_relevance": "탐사부터 선광·제련·활용까지 기술 가치사슬을 구축해 한국의 몽골 핵심광물 공급망 협력이 기술 기반으로 강화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -334,7 +345,17 @@
     "summarized_at": "2026-10-19T03:00:27+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIGAM이 몽골 3개 기관과 MOU를 맺고 희소금속 협력센터 중심 공동연구와 한국 기업의 자원개발 진출 지원을 추진함",
+     "rewritten_at": "2026-10-19T06:11:15+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -411,7 +432,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "KIGAM이 몽골 3개 기관과 MOU를 맺고 희소금속 협력센터 중심 공동연구와 한국 기업의 자원개발 진출 지원을 추진함",
+    "oda_relevance": "탐사부터 선광·제련·활용까지 기술 가치사슬을 구축해 한국의 몽골 핵심광물 공급망 협력이 기술 기반으로 강화될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -432,7 +453,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:00:27+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -508,7 +530,7 @@
       "meaning": "유망지역 공동탐사"
      }
     ],
-    "oda_relevance": "KIGAM이 몽골 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 자원개발 진출 지원을 추진하는 기술협력 사례임"
+    "oda_relevance": "탐사부터 활용 기술까지 협력 범위를 넓히고 한국 기업의 진출 기반을 다져 몽골 희토류·니켈·구리 공급망 협력이 강화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -518,7 +540,17 @@
     "input_body_status": "full",
     "input_chars": 3390,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:00:31+00:00"
+    "summarized_at": "2026-10-19T03:00:31+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIGAM이 몽골 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 자원개발 진출 지원을 추진하는 기술협력 사례임",
+     "rewritten_at": "2026-10-19T06:11:16+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -593,7 +625,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "KIGAM이 몽골 MAS·MRPAM·NGS와 MOU를 맺고 핵심광물 공동연구와 한국 기업의 자원개발 진출 지원을 추진하는 기술협력 사례임",
+    "oda_relevance": "탐사부터 활용 기술까지 협력 범위를 넓히고 한국 기업의 진출 기반을 다져 몽골 희토류·니켈·구리 공급망 협력이 강화될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -614,7 +646,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:00:31+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -689,7 +722,7 @@
       "meaning": "최저가격 보호 장치"
      }
     ],
-    "oda_relevance": "한국 기업 GBI가 참여한 민간 가공 제휴이며, 한국 정부·ODA 사업과의 연계는 본문상 확인 불가임"
+    "oda_relevance": "한국산 텅스텐 정광을 베트남에서 가공하는 구조로, 한국의 비중국 텅스텐 공급망 구축에 베트남이 가공 거점이 될 수 있음을 보여줌"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -699,7 +732,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:00:45+00:00"
+    "summarized_at": "2026-10-19T03:00:45+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 기업 GBI가 참여한 민간 가공 제휴이며, 한국 정부·ODA 사업과의 연계는 본문상 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:18+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -776,7 +819,7 @@
     ],
     "source_language": "en",
     "country": "Vietnam",
-    "oda_relevance": "한국 기업 GBI가 참여한 민간 가공 제휴이며, 한국 정부·ODA 사업과의 연계는 본문상 확인 불가임",
+    "oda_relevance": "한국산 텅스텐 정광을 베트남에서 가공하는 구조로, 한국의 비중국 텅스텐 공급망 구축에 베트남이 가공 거점이 될 수 있음을 보여줌",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -793,7 +836,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:00:45+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -966,8 +1010,10 @@
       "meaning": "공급망에서 빠져 있던 중간 가공 단계"
      }
     ],
-    "processed_at": "2026-10-19T03:00:50+00:00"
-   }
+    "processed_at": "2026-10-19T03:00:50+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1042,7 +1088,7 @@
       "meaning": "탐사·제련·가공·재활용을 아우르는 전주기 광물 공급망"
      }
     ],
-    "oda_relevance": "이재명 대통령의 국빈 방문을 계기로 한국 정부가 몽골과의 희소금속 협력위원회를 장관급으로 격상하기로 한 점이 협력 근거임"
+    "oda_relevance": "한국의 중국산 희토류 수입 의존도가 79.8%인 상황에서 몽골과의 협력위원회 장관급 격상은 공급망 다변화 기반이 될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1052,7 +1098,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:01:05+00:00"
+    "summarized_at": "2026-10-19T03:01:05+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "이재명 대통령의 국빈 방문을 계기로 한국 정부가 몽골과의 희소금속 협력위원회를 장관급으로 격상하기로 한 점이 협력 근거임",
+     "rewritten_at": "2026-10-19T06:11:20+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1129,7 +1185,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "이재명 대통령의 국빈 방문을 계기로 한국 정부가 몽골과의 희소금속 협력위원회를 장관급으로 격상하기로 한 점이 협력 근거임",
+    "oda_relevance": "한국의 중국산 희토류 수입 의존도가 79.8%인 상황에서 몽골과의 협력위원회 장관급 격상은 공급망 다변화 기반이 될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1146,7 +1202,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:01:05+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1224,7 +1281,7 @@
       "meaning": "황금기"
      }
     ],
-    "oda_relevance": "한국 대통령이 몽골 국빈방문에서 공급망·핵심광물 협력 확대와 CEPA 추진에 합의했음. 핵심광물 세부 사업은 확인 불가임."
+    "oda_relevance": "정상급에서 핵심광물·공급망 협력 확대와 CEPA 추진이 합의돼, 한국의 대몽골 핵심광물 협력이 제도적 기반을 갖추게 될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1237,7 +1294,17 @@
     "summarized_at": "2026-10-19T03:01:21+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 몽골 국빈방문에서 공급망·핵심광물 협력 확대와 CEPA 추진에 합의했음. 핵심광물 세부 사업은 확인 불가임.",
+     "rewritten_at": "2026-10-19T06:11:21+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1313,7 +1380,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 몽골 국빈방문에서 공급망·핵심광물 협력 확대와 CEPA 추진에 합의했음. 핵심광물 세부 사업은 확인 불가임.",
+    "oda_relevance": "정상급에서 핵심광물·공급망 협력 확대와 CEPA 추진이 합의돼, 한국의 대몽골 핵심광물 협력이 제도적 기반을 갖추게 될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1334,7 +1401,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:01:21+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1411,7 +1479,7 @@
       "meaning": "은행 간 수출신용 약정"
      }
     ],
-    "oda_relevance": "EDCF 자금 지원 여부는 제2국립암센터 타당성조사 완료 후 결정되며, 수출입은행은 몽골 은행과 $30 million 수출신용 약정을 체결했음"
+    "oda_relevance": "CEPA 예비 타결과 핵심광물 공급망 협력 합의로 한국의 몽골 광물 협력이 무역·투자와 EDCF 등 금융 협력으로 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1424,7 +1492,17 @@
     "summarized_at": "2026-10-19T03:01:39+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 5줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "EDCF 자금 지원 여부는 제2국립암센터 타당성조사 완료 후 결정되며, 수출입은행은 몽골 은행과 $30 million 수출신용 약정을 체결했음",
+     "rewritten_at": "2026-10-19T06:11:24+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1500,7 +1578,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "EDCF 자금 지원 여부는 제2국립암센터 타당성조사 완료 후 결정되며, 수출입은행은 몽골 은행과 $30 million 수출신용 약정을 체결했음",
+    "oda_relevance": "CEPA 예비 타결과 핵심광물 공급망 협력 합의로 한국의 몽골 광물 협력이 무역·투자와 EDCF 등 금융 협력으로 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -1521,7 +1599,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:01:39+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1598,7 +1677,7 @@
       "meaning": "상생 성장 모델"
      }
     ],
-    "oda_relevance": "한국 대통령이 한-몽 공동 희소금속위원회와 울란바토르 희소금속협력센터 활용을 제안해 양국 정부 차원의 협력 근거가 제시됐음"
+    "oda_relevance": "한-몽 공동 희소금속위원회와 울란바토르 희소금속협력센터가 핵심광물 공급망 협력의 정부 간 창구로 활용될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1611,7 +1690,17 @@
     "summarized_at": "2026-10-19T03:01:54+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['12']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 한-몽 공동 희소금속위원회와 울란바토르 희소금속협력센터 활용을 제안해 양국 정부 차원의 협력 근거가 제시됐음",
+     "rewritten_at": "2026-10-19T06:11:25+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1687,7 +1776,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 한-몽 공동 희소금속위원회와 울란바토르 희소금속협력센터 활용을 제안해 양국 정부 차원의 협력 근거가 제시됐음",
+    "oda_relevance": "한-몽 공동 희소금속위원회와 울란바토르 희소금속협력센터가 핵심광물 공급망 협력의 정부 간 창구로 활용될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1708,7 +1797,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:01:54+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1787,7 +1877,7 @@
       "meaning": "매체가 쓰는 강대국 경쟁 시대 2.0 표현"
      }
     ],
-    "oda_relevance": "한국 대통령 국빈 방문 중 CEPA 원칙적 합의와 희소금속 공동연구센터가 언급되나, ODA 사업이나 주관기관은 본문에 없음."
+    "oda_relevance": "광물 채굴을 넘어 정제·합금·자석까지 아우르는 한-몽 희토류 가치사슬 협력이 구체화될 경우, 한국의 핵심광물 공급망 다변화에 기여할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1800,7 +1890,17 @@
     "summarized_at": "2026-10-19T03:02:09+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령 국빈 방문 중 CEPA 원칙적 합의와 희소금속 공동연구센터가 언급되나, ODA 사업이나 주관기관은 본문에 없음.",
+     "rewritten_at": "2026-10-19T06:11:27+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1877,7 +1977,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령 국빈 방문 중 CEPA 원칙적 합의와 희소금속 공동연구센터가 언급되나, ODA 사업이나 주관기관은 본문에 없음.",
+    "oda_relevance": "광물 채굴을 넘어 정제·합금·자석까지 아우르는 한-몽 희토류 가치사슬 협력이 구체화될 경우, 한국의 핵심광물 공급망 다변화에 기여할 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1898,7 +1998,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:02:09+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1977,7 +2078,7 @@
       "meaning": "공동선언"
      }
     ],
-    "oda_relevance": "이재명 대통령이 몽골 대통령과 핵심광물 공급망 협력 확대에 합의했고, 양국 정부가 운영하는 희소금속 위원회를 협력 사례로 언급했음."
+    "oda_relevance": "몽골의 구리·희토류 등 광물자원과 한국의 기술·자본·물류를 잇는 공급망 협력이 양국 희소금속 위원회를 통해 구체화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1987,7 +2088,17 @@
     "input_body_status": "full",
     "input_chars": 3157,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:02:15+00:00"
+    "summarized_at": "2026-10-19T03:02:15+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "이재명 대통령이 몽골 대통령과 핵심광물 공급망 협력 확대에 합의했고, 양국 정부가 운영하는 희소금속 위원회를 협력 사례로 언급했음.",
+     "rewritten_at": "2026-10-19T06:11:29+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2068,7 +2179,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "이재명 대통령이 몽골 대통령과 핵심광물 공급망 협력 확대에 합의했고, 양국 정부가 운영하는 희소금속 위원회를 협력 사례로 언급했음.",
+    "oda_relevance": "몽골의 구리·희토류 등 광물자원과 한국의 기술·자본·물류를 잇는 공급망 협력이 양국 희소금속 위원회를 통해 구체화될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2089,7 +2200,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:02:15+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2168,7 +2280,7 @@
       "meaning": "제3의 이웃 나라"
      }
     ],
-    "oda_relevance": "한국 대통령이 참석한 정상회담에서 핵심광물 공급망 협력이 합의됐으나, 광물 ODA 사업 자체는 본문에서 확인 불가임"
+    "oda_relevance": "정상 차원에서 핵심광물 공급망 협력과 CEPA 원칙 합의가 이뤄져, 한국의 대몽골 광물 협력이 제도적 기반을 확보할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2181,7 +2293,17 @@
     "summarized_at": "2026-10-19T03:02:36+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['11']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 참석한 정상회담에서 핵심광물 공급망 협력이 합의됐으나, 광물 ODA 사업 자체는 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:30+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2262,7 +2384,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 참석한 정상회담에서 핵심광물 공급망 협력이 합의됐으나, 광물 ODA 사업 자체는 본문에서 확인 불가임",
+    "oda_relevance": "정상 차원에서 핵심광물 공급망 협력과 CEPA 원칙 합의가 이뤄져, 한국의 대몽골 광물 협력이 제도적 기반을 확보할 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -2283,7 +2405,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:02:36+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2362,7 +2485,7 @@
       "meaning": "공급망"
      }
     ],
-    "oda_relevance": "한국 대통령이 몽골 정상과 핵심광물 협력 강화에 합의했으나, 구체적 ODA 사업이나 주관기관은 본문에 없어 확인 불가임."
+    "oda_relevance": "정상 차원의 핵심광물 협력 합의로 한국의 공급망 다변화와 몽골 자원 협력 확대를 위한 정책적 토대가 마련됐음."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2375,7 +2498,17 @@
     "summarized_at": "2026-10-19T03:02:50+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 몽골 정상과 핵심광물 협력 강화에 합의했으나, 구체적 ODA 사업이나 주관기관은 본문에 없어 확인 불가임.",
+     "rewritten_at": "2026-10-19T06:11:32+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2452,7 +2585,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 몽골 정상과 핵심광물 협력 강화에 합의했으나, 구체적 ODA 사업이나 주관기관은 본문에 없어 확인 불가임.",
+    "oda_relevance": "정상 차원의 핵심광물 협력 합의로 한국의 공급망 다변화와 몽골 자원 협력 확대를 위한 정책적 토대가 마련됐음.",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -2473,7 +2606,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:02:50+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2552,7 +2686,7 @@
       "meaning": "포괄적 경제동반자협정"
      }
     ],
-    "oda_relevance": "한국 대통령이 몽골 정상과 핵심광물 협력 확대에 합의했으나, 광물 분야 구체 사업이나 ODA 연계는 본문에서 확인 불가임"
+    "oda_relevance": "자원 부국 몽골이 한국의 핵심광물 공급망 다변화 파트너로 부각되어, 정상 차원의 협력 기반이 마련됐음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2562,7 +2696,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:02:55+00:00"
+    "summarized_at": "2026-10-19T03:02:55+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 몽골 정상과 핵심광물 협력 확대에 합의했으나, 광물 분야 구체 사업이나 ODA 연계는 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:33+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2639,7 +2783,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 몽골 정상과 핵심광물 협력 확대에 합의했으나, 광물 분야 구체 사업이나 ODA 연계는 본문에서 확인 불가임",
+    "oda_relevance": "자원 부국 몽골이 한국의 핵심광물 공급망 다변화 파트너로 부각되어, 정상 차원의 협력 기반이 마련됐음",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2660,7 +2804,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:02:55+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2735,7 +2880,7 @@
       "meaning": "지속 가능한 협력 플랫폼"
      }
     ],
-    "oda_relevance": "ODA 사업으로 출범한 희소금속 협력센터가 내년 종료 예정이며, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속 사업을 추진하기로 했음."
+    "oda_relevance": "ODA로 출범한 희소금속 협력센터의 종료 이후에도 후속 사업으로 협력을 이어갈 기반이 마련되어 한국의 대몽골 공급망 협력이 장관급으로 강화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2745,7 +2890,17 @@
     "input_body_status": "full",
     "input_chars": 1586,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:03:01+00:00"
+    "summarized_at": "2026-10-19T03:03:01+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "ODA 사업으로 출범한 희소금속 협력센터가 내년 종료 예정이며, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속 사업을 추진하기로 했음.",
+     "rewritten_at": "2026-10-19T06:11:36+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2819,7 +2974,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "ODA 사업으로 출범한 희소금속 협력센터가 내년 종료 예정이며, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속 사업을 추진하기로 했음.",
+    "oda_relevance": "ODA로 출범한 희소금속 협력센터의 종료 이후에도 후속 사업으로 협력을 이어갈 기반이 마련되어 한국의 대몽골 공급망 협력이 장관급으로 강화될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2840,7 +2995,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:03:01+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2991,8 +3147,10 @@
       "meaning": "핵심광물 공급망"
      }
     ],
-    "processed_at": "2026-10-19T03:03:05+00:00"
-   }
+    "processed_at": "2026-10-19T03:03:05+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3066,7 +3224,7 @@
       "meaning": "NATO와 파트너국 간 군수 계약의 법적·행정 요건을 다루는 기본조달협정"
      }
     ],
-    "oda_relevance": "한국 대통령이 몽골 국빈방문에서 핵심광물 공급망 구축을 추진했다는 점이 나오나, 구체적 사업·자금 내용은 확인 불가임"
+    "oda_relevance": "한국 대통령의 몽골 국빈방문으로 핵심광물 공급망 구축과 광물 관세 철폐 논의가 정상급에서 다뤄져, 양국 광물 협력이 확대될 계기가 됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3076,7 +3234,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:03:18+00:00"
+    "summarized_at": "2026-10-19T03:03:18+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 몽골 국빈방문에서 핵심광물 공급망 구축을 추진했다는 점이 나오나, 구체적 사업·자금 내용은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:37+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3151,7 +3319,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 몽골 국빈방문에서 핵심광물 공급망 구축을 추진했다는 점이 나오나, 구체적 사업·자금 내용은 확인 불가임",
+    "oda_relevance": "한국 대통령의 몽골 국빈방문으로 핵심광물 공급망 구축과 광물 관세 철폐 논의가 정상급에서 다뤄져, 양국 광물 협력이 확대될 계기가 됨",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -3168,7 +3336,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:03:18+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3242,7 +3411,7 @@
       "meaning": "한-몽 관계의 황금기"
      }
     ],
-    "oda_relevance": "한국 대통령이 참여한 CEPA 원칙적 타결로 핵심광물 공급망 협력의 제도적 근거가 마련됐으나, ODA 사업과의 연계는 확인 불가임"
+    "oda_relevance": "구리·희토류 관세 철폐와 공급망 협력 제도화로 한국 기업의 몽골산 핵심광물 조달 여건이 개선될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3252,7 +3421,17 @@
     "input_body_status": "full",
     "input_chars": 3632,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:03:29+00:00"
+    "summarized_at": "2026-10-19T03:03:29+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 2,
+     "before": "한국 대통령이 참여한 CEPA 원칙적 타결로 핵심광물 공급망 협력의 제도적 근거가 마련됐으나, ODA 사업과의 연계는 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:42+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3328,7 +3507,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령이 참여한 CEPA 원칙적 타결로 핵심광물 공급망 협력의 제도적 근거가 마련됐으나, ODA 사업과의 연계는 확인 불가임",
+    "oda_relevance": "구리·희토류 관세 철폐와 공급망 협력 제도화로 한국 기업의 몽골산 핵심광물 조달 여건이 개선될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -3345,7 +3524,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:03:29+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3422,7 +3602,7 @@
       "meaning": "지속 가능한 협력 플랫폼"
      }
     ],
-    "oda_relevance": "ODA 사업으로 추진된 희소금속협력센터가 내년 종료 예정이어서, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속사업을 발굴하기로 했음."
+    "oda_relevance": "희소금속협력센터 종료를 앞두고 후속사업 발굴이 합의돼, 한국의 대몽골 핵심광물 ODA가 지속 가능한 협력 플랫폼 구축 단계로 이어질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3435,7 +3615,17 @@
     "summarized_at": "2026-10-19T03:03:43+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "ODA 사업으로 추진된 희소금속협력센터가 내년 종료 예정이어서, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속사업을 발굴하기로 했음.",
+     "rewritten_at": "2026-10-19T06:11:44+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3510,7 +3700,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "ODA 사업으로 추진된 희소금속협력센터가 내년 종료 예정이어서, 양국이 이를 지속 가능한 협력 플랫폼으로 발전시킬 후속사업을 발굴하기로 했음.",
+    "oda_relevance": "희소금속협력센터 종료를 앞두고 후속사업 발굴이 합의돼, 한국의 대몽골 핵심광물 ODA가 지속 가능한 협력 플랫폼 구축 단계로 이어질 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -3531,7 +3721,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:03:43+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3604,7 +3795,7 @@
       "meaning": "한-몽 황금기"
      }
     ],
-    "oda_relevance": "한국 대통령의 정상회담에서 CEPA 원칙적 합의와 탐사·제련·재활용·인력양성을 아우르는 핵심광물 공급망 협력 모델 추진이 직접 언급됨"
+    "oda_relevance": "CEPA 합의로 희토류 등 핵심광물 안정 확보의 제도적 기반이 마련돼, 탐사부터 인력양성까지 아우르는 협력 확대가 기대됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3614,7 +3805,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:03:56+00:00"
+    "summarized_at": "2026-10-19T03:03:56+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령의 정상회담에서 CEPA 원칙적 합의와 탐사·제련·재활용·인력양성을 아우르는 핵심광물 공급망 협력 모델 추진이 직접 언급됨",
+     "rewritten_at": "2026-10-19T06:11:45+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3690,7 +3891,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령의 정상회담에서 CEPA 원칙적 합의와 탐사·제련·재활용·인력양성을 아우르는 핵심광물 공급망 협력 모델 추진이 직접 언급됨",
+    "oda_relevance": "CEPA 합의로 희토류 등 핵심광물 안정 확보의 제도적 기반이 마련돼, 탐사부터 인력양성까지 아우르는 협력 확대가 기대됨",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -3707,7 +3908,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:03:56+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3782,7 +3984,7 @@
       "meaning": "핵심광물이 풍부한 자원 부국"
      }
     ],
-    "oda_relevance": "한국 대통령의 몽골 국빈 방문과 정상회담에서 희토류 등 핵심광물 공급망 협력이 논의될 예정이라는 점이 근거임"
+    "oda_relevance": "한국 대통령의 몽골 국빈 방문을 계기로 희토류 등 핵심광물 공급망 협력이 정상 차원에서 강화될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3792,7 +3994,17 @@
     "input_body_status": "full",
     "input_chars": 1722,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:04:00+00:00"
+    "summarized_at": "2026-10-19T03:04:00+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령의 몽골 국빈 방문과 정상회담에서 희토류 등 핵심광물 공급망 협력이 논의될 예정이라는 점이 근거임",
+     "rewritten_at": "2026-10-19T06:11:47+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3865,7 +4077,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령의 몽골 국빈 방문과 정상회담에서 희토류 등 핵심광물 공급망 협력이 논의될 예정이라는 점이 근거임",
+    "oda_relevance": "한국 대통령의 몽골 국빈 방문을 계기로 희토류 등 핵심광물 공급망 협력이 정상 차원에서 강화될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -3886,7 +4098,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:04:00+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3958,7 +4171,7 @@
       "meaning": "황금기"
      }
     ],
-    "oda_relevance": "한국 대통령의 몽골 국빈 방문에서 양국이 공동선언에 서명하고 핵심광물·공급망 협력 확대에 합의한 점이 협력 근거임"
+    "oda_relevance": "양국 정상이 핵심광물·공급망 협력 확대와 CEPA 추진에 합의해 한국의 대몽골 광물 협력이 정상급 틀에서 진전될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3968,7 +4181,17 @@
     "input_body_status": "full",
     "input_chars": 1804,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:04:10+00:00"
+    "summarized_at": "2026-10-19T03:04:10+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령의 몽골 국빈 방문에서 양국이 공동선언에 서명하고 핵심광물·공급망 협력 확대에 합의한 점이 협력 근거임",
+     "rewritten_at": "2026-10-19T06:11:48+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4043,7 +4266,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령의 몽골 국빈 방문에서 양국이 공동선언에 서명하고 핵심광물·공급망 협력 확대에 합의한 점이 협력 근거임",
+    "oda_relevance": "양국 정상이 핵심광물·공급망 협력 확대와 CEPA 추진에 합의해 한국의 대몽골 광물 협력이 정상급 틀에서 진전될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -4060,7 +4283,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:04:10+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4139,7 +4363,7 @@
       "meaning": "몽골과 동탄을 합친 한국 젊은층의 신조어"
      }
     ],
-    "oda_relevance": "한국 대통령과 산업통상자원부가 등장하며, 희소금속 협력센터 확대 등 한국-몽골 광물 협력의 근거가 본문에 있음"
+    "oda_relevance": "한국이 몽골산 핵심광물 관세 철폐와 희소금속 협력센터 확대로 공급망 다변화를 추진하는 만큼 양국 광물 협력이 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -4152,7 +4376,17 @@
     "summarized_at": "2026-10-19T03:04:30+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['12']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령과 산업통상자원부가 등장하며, 희소금속 협력센터 확대 등 한국-몽골 광물 협력의 근거가 본문에 있음",
+     "rewritten_at": "2026-10-19T06:11:50+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4229,7 +4463,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령과 산업통상자원부가 등장하며, 희소금속 협력센터 확대 등 한국-몽골 광물 협력의 근거가 본문에 있음",
+    "oda_relevance": "한국이 몽골산 핵심광물 관세 철폐와 희소금속 협력센터 확대로 공급망 다변화를 추진하는 만큼 양국 광물 협력이 확대될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -4250,7 +4484,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:04:30+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4329,7 +4564,7 @@
       "meaning": "포괄적 경제동반자협정"
      }
     ],
-    "oda_relevance": "한국 정부가 희소금속협력센터·위원회 설립과 에너지 전환 MOU로 몽골과 협력하는 근거가 본문에 직접 나옴"
+    "oda_relevance": "희소금속협력센터·위원회 설립으로 한국이 몽골산 희토류·몰리브덴·텅스텐·리튬 공급망을 제도적으로 다변화할 기반이 마련됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -4339,7 +4574,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:04:44+00:00"
+    "summarized_at": "2026-10-19T03:04:44+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 정부가 희소금속협력센터·위원회 설립과 에너지 전환 MOU로 몽골과 협력하는 근거가 본문에 직접 나옴",
+     "rewritten_at": "2026-10-19T06:11:52+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4418,7 +4663,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 정부가 희소금속협력센터·위원회 설립과 에너지 전환 MOU로 몽골과 협력하는 근거가 본문에 직접 나옴",
+    "oda_relevance": "희소금속협력센터·위원회 설립으로 한국이 몽골산 희토류·몰리브덴·텅스텐·리튬 공급망을 제도적으로 다변화할 기반이 마련됨",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -4439,7 +4684,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:04:44+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4514,7 +4760,7 @@
       "meaning": "원광 수출 대신 국내 가공으로 부가가치를 높이는 방식"
      }
     ],
-    "oda_relevance": "한국 대통령의 방문으로 협정과 21 MOUs가 체결됐고, 한국이 몽골 내 가공 역량 구축을 지원하는 조항이 포함됐음"
+    "oda_relevance": "희토류 등 핵심광물 확보와 몽골 내 가공 역량 구축이 함께 추진되어 한국의 대중국 공급망 의존 완화 전략에 활용될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -4527,7 +4773,17 @@
     "summarized_at": "2026-10-19T03:05:07+00:00",
     "retry_reasons": [
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: 'eighbor policy\", \"meaning\": \"몽골의 제3의 이웃 외교정책\"},\\n    {\"phrase'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령의 방문으로 협정과 21 MOUs가 체결됐고, 한국이 몽골 내 가공 역량 구축을 지원하는 조항이 포함됐음",
+     "rewritten_at": "2026-10-19T06:11:53+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4604,7 +4860,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령의 방문으로 협정과 21 MOUs가 체결됐고, 한국이 몽골 내 가공 역량 구축을 지원하는 조항이 포함됐음",
+    "oda_relevance": "희토류 등 핵심광물 확보와 몽골 내 가공 역량 구축이 함께 추진되어 한국의 대중국 공급망 의존 완화 전략에 활용될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -4621,7 +4877,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:05:07+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4699,7 +4956,7 @@
       "meaning": "핵심광물 채굴"
      }
     ],
-    "oda_relevance": "한국 대통령의 방문과 CEPA 원칙적 합의가 본문에 직접 나오나, 핵심광물 ODA 사업 관련 내용은 확인 불가임"
+    "oda_relevance": "한국이 몽골과 CEPA 원칙적 합의를 이루고 핵심광물 협력을 확대해 공급망 다변화를 추진하는 계기가 마련됐음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -4709,7 +4966,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:05:21+00:00"
+    "summarized_at": "2026-10-19T03:05:21+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령의 방문과 CEPA 원칙적 합의가 본문에 직접 나오나, 핵심광물 ODA 사업 관련 내용은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:55+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4789,7 +5056,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 대통령의 방문과 CEPA 원칙적 합의가 본문에 직접 나오나, 핵심광물 ODA 사업 관련 내용은 확인 불가임",
+    "oda_relevance": "한국이 몽골과 CEPA 원칙적 합의를 이루고 핵심광물 협력을 확대해 공급망 다변화를 추진하는 계기가 마련됐음",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -4810,7 +5077,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:05:21+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4889,7 +5157,7 @@
       "meaning": "C5+1 핵심광물 대화"
      }
     ],
-    "oda_relevance": "한국 측 Korea Institute of Industrial Technology 등 두 기관이 센터 설립에 참여함. ODA 사업 여부는 확인 불가임."
+    "oda_relevance": "한국 기관들이 카자흐스탄 희소금속 연구센터 설립에 참여해 양국의 핵심광물 가공기술 협력과 인력양성 연계가 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -4902,7 +5170,17 @@
     "summarized_at": "2026-10-19T03:05:38+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 측 Korea Institute of Industrial Technology 등 두 기관이 센터 설립에 참여함. ODA 사업 여부는 확인 불가임.",
+     "rewritten_at": "2026-10-19T06:11:56+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -4979,7 +5257,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 측 Korea Institute of Industrial Technology 등 두 기관이 센터 설립에 참여함. ODA 사업 여부는 확인 불가임.",
+    "oda_relevance": "한국 기관들이 카자흐스탄 희소금속 연구센터 설립에 참여해 양국의 핵심광물 가공기술 협력과 인력양성 연계가 확대될 전망임",
     "category_ko": "연구·학술",
     "key_phrases": [
      {
@@ -5000,7 +5278,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:05:38+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5075,7 +5354,7 @@
       "meaning": "우즈베키스탄 광물지질부"
      }
     ],
-    "oda_relevance": "KIGAM이 우즈베키스탄 광산 6곳 시료를 확보했고 공동연구협약에 한국 기업 우선 채굴권 조항을 논의 중이라는 점이 협력 근거임"
+    "oda_relevance": "탐사 상세 자료가 한국 기업에 우선 공개될 예정이어서 우즈베키스탄 희토류 개발 참여 판단과 공급망 확보에 유리하게 작용할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -5085,7 +5364,17 @@
     "input_body_status": "full",
     "input_chars": 3650,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:05:45+00:00"
+    "summarized_at": "2026-10-19T03:05:45+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIGAM이 우즈베키스탄 광산 6곳 시료를 확보했고 공동연구협약에 한국 기업 우선 채굴권 조항을 논의 중이라는 점이 협력 근거임",
+     "rewritten_at": "2026-10-19T06:11:58+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -5158,7 +5447,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "KIGAM이 우즈베키스탄 광산 6곳 시료를 확보했고 공동연구협약에 한국 기업 우선 채굴권 조항을 논의 중이라는 점이 협력 근거임",
+    "oda_relevance": "탐사 상세 자료가 한국 기업에 우선 공개될 예정이어서 우즈베키스탄 희토류 개발 참여 판단과 공급망 확보에 유리하게 작용할 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -5179,7 +5468,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:05:45+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5256,7 +5546,7 @@
       "meaning": "타당성 조사"
      }
     ],
-    "oda_relevance": "한국 부총리 회담에서 핵심광물 공급망 협력이 논의됐고, 몽골 제2국립암센터 사업은 타당성 조사 뒤 EDCF 지원 여부를 결정할 예정임"
+    "oda_relevance": "몽골의 구리·희토류 자원을 한국 기술과 결합하는 협력이 CEPA를 통해 핵심광물 개발로 확대될 전망이며, EDCF 연계 사업도 추진됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -5266,7 +5556,17 @@
     "input_body_status": "full",
     "input_chars": 3306,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:05:50+00:00"
+    "summarized_at": "2026-10-19T03:05:50+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 부총리 회담에서 핵심광물 공급망 협력이 논의됐고, 몽골 제2국립암센터 사업은 타당성 조사 뒤 EDCF 지원 여부를 결정할 예정임",
+     "rewritten_at": "2026-10-19T06:11:59+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -5350,7 +5650,7 @@
     ],
     "source_language": "ko",
     "country": "Mongolia",
-    "oda_relevance": "한국 부총리 회담에서 핵심광물 공급망 협력이 논의됐고, 몽골 제2국립암센터 사업은 타당성 조사 뒤 EDCF 지원 여부를 결정할 예정임",
+    "oda_relevance": "몽골의 구리·희토류 자원을 한국 기술과 결합하는 협력이 CEPA를 통해 핵심광물 개발로 확대될 전망이며, EDCF 연계 사업도 추진됨",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -5371,7 +5671,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:05:50+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5553,8 +5854,10 @@
       "meaning": "자이승 전망대"
      }
     ],
-    "processed_at": "2026-10-19T03:06:00+00:00"
-   }
+    "processed_at": "2026-10-19T03:06:00+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5633,7 +5936,7 @@
       "meaning": "미국 규정상 제한 대상인 외국 기관"
      }
     ],
-    "oda_relevance": "한국 민간기업 EcoPro가 인도네시아 니켈 제련소 지분을 늘리는 투자 사례이며, 정부 ODA 사업과의 연계는 본문에서 확인 불가임"
+    "oda_relevance": "한국 배터리 소재 기업의 인도네시아 니켈 제련 투자 확대로, 니켈 공급망과 미국 규제 대응 측면에서 한국의 핵심광물 협력 환경에 영향을 줄 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -5643,7 +5946,17 @@
     "input_body_status": "full",
     "input_chars": 3507,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:06:13+00:00"
+    "summarized_at": "2026-10-19T03:06:13+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 민간기업 EcoPro가 인도네시아 니켈 제련소 지분을 늘리는 투자 사례이며, 정부 ODA 사업과의 연계는 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:12:00+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -5712,7 +6025,7 @@
     ],
     "source_language": "en",
     "country": "Indonesia",
-    "oda_relevance": "한국 민간기업 EcoPro가 인도네시아 니켈 제련소 지분을 늘리는 투자 사례이며, 정부 ODA 사업과의 연계는 본문에서 확인 불가임",
+    "oda_relevance": "한국 배터리 소재 기업의 인도네시아 니켈 제련 투자 확대로, 니켈 공급망과 미국 규제 대응 측면에서 한국의 핵심광물 협력 환경에 영향을 줄 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -5733,7 +6046,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:06:13+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5804,7 +6118,7 @@
       "meaning": "안정적인 공동 공급망"
      }
     ],
-    "oda_relevance": "한국 통상장관이 몽골 장관과 만나 CEPA 협상 가속과 핵심광물 공급망 협력을 논의했음. 다만 ODA 사업이나 자금은 본문에 없음."
+    "oda_relevance": "CEPA 협상 가속으로 몽골 구리·몰리브덴·희토류를 겨냥한 한국의 공동 공급망 구축 협력이 제도적 기반을 갖출 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -5814,7 +6128,17 @@
     "input_body_status": "full",
     "input_chars": 1766,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:06:21+00:00"
+    "summarized_at": "2026-10-19T03:06:21+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 통상장관이 몽골 장관과 만나 CEPA 협상 가속과 핵심광물 공급망 협력을 논의했음. 다만 ODA 사업이나 자금은 본문에 없음.",
+     "rewritten_at": "2026-10-19T06:12:01+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -5891,7 +6215,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 통상장관이 몽골 장관과 만나 CEPA 협상 가속과 핵심광물 공급망 협력을 논의했음. 다만 ODA 사업이나 자금은 본문에 없음.",
+    "oda_relevance": "CEPA 협상 가속으로 몽골 구리·몰리브덴·희토류를 겨냥한 한국의 공동 공급망 구축 협력이 제도적 기반을 갖출 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -5908,7 +6232,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:06:21+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6093,8 +6418,10 @@
       "meaning": "원산지 증명 요건"
      }
     ],
-    "processed_at": "2026-10-19T03:06:34+00:00"
-   }
+    "processed_at": "2026-10-19T03:06:34+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6283,8 +6610,10 @@
       "meaning": "예비 분석 단계"
      }
     ],
-    "processed_at": "2026-10-19T03:06:52+00:00"
-   }
+    "processed_at": "2026-10-19T03:06:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6360,7 +6689,7 @@
       "meaning": "안정적인 법·제도적 틀"
      }
     ],
-    "oda_relevance": "한국 의원들이 우즈벡의 텅스텐·몰리브덴과 한국 제조역량 결합을 거론하며 의회 차원 지원을 약속해, 핵심광물 협력 논의의 정치적 기반이 됨"
+    "oda_relevance": "9월 서울 정상회담을 앞두고 텅스텐·몰리브덴 등 핵심광물 공급망 협력이 의회 차원에서 부각돼, 정상회담 의제에 반영될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -6370,7 +6699,17 @@
     "input_body_status": "full",
     "input_chars": 3926,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:06:58+00:00"
+    "summarized_at": "2026-10-19T03:06:58+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 의원들이 우즈벡의 텅스텐·몰리브덴과 한국 제조역량 결합을 거론하며 의회 차원 지원을 약속해, 핵심광물 협력 논의의 정치적 기반이 됨",
+     "rewritten_at": "2026-10-19T06:12:02+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -6445,7 +6784,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 의원들이 우즈벡의 텅스텐·몰리브덴과 한국 제조역량 결합을 거론하며 의회 차원 지원을 약속해, 핵심광물 협력 논의의 정치적 기반이 됨",
+    "oda_relevance": "9월 서울 정상회담을 앞두고 텅스텐·몰리브덴 등 핵심광물 공급망 협력이 의회 차원에서 부각돼, 정상회담 의제에 반영될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -6466,7 +6805,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:06:58+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6639,8 +6979,10 @@
       "meaning": "전략적 제휴 협정"
      }
     ],
-    "processed_at": "2026-10-19T03:07:09+00:00"
-   }
+    "processed_at": "2026-10-19T03:07:09+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6818,8 +7160,10 @@
       "meaning": "희토류"
      }
     ],
-    "processed_at": "2026-10-19T03:07:24+00:00"
-   }
+    "processed_at": "2026-10-19T03:07:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6995,8 +7339,10 @@
       "meaning": "카자흐스탄 산업건설부"
      }
     ],
-    "processed_at": "2026-10-19T03:07:37+00:00"
-   }
+    "processed_at": "2026-10-19T03:07:37+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7143,8 +7489,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T03:07:55+00:00"
-   }
+    "processed_at": "2026-10-19T03:07:55+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7331,8 +7679,10 @@
       "meaning": "상류부터 하류까지"
      }
     ],
-    "processed_at": "2026-10-19T03:08:09+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:09+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7403,7 +7753,7 @@
       "meaning": "중국 외 텅스텐 공급망"
      }
     ],
-    "oda_relevance": "한국 기업 GBI의 텅스텐 정광을 베트남에서 가공하는 민간 협력이며, 정부·ODA 사업 근거는 본문에서 확인 불가임"
+    "oda_relevance": "한국의 텅스텐 정광을 베트남에서 가공하는 구조로, 중국 외 지역 가공망 확보와 반도체 공급망 안정에 베트남이 기여할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -7413,7 +7763,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T03:08:24+00:00"
+    "summarized_at": "2026-10-19T03:08:24+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 기업 GBI의 텅스텐 정광을 베트남에서 가공하는 민간 협력이며, 정부·ODA 사업 근거는 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:12:04+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -7485,7 +7845,7 @@
     "quotes": [],
     "source_language": "vi",
     "country": "Vietnam",
-    "oda_relevance": "한국 기업 GBI의 텅스텐 정광을 베트남에서 가공하는 민간 협력이며, 정부·ODA 사업 근거는 본문에서 확인 불가임",
+    "oda_relevance": "한국의 텅스텐 정광을 베트남에서 가공하는 구조로, 중국 외 지역 가공망 확보와 반도체 공급망 안정에 베트남이 기여할 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -7506,7 +7866,8 @@
      }
     ],
     "processed_at": "2026-10-19T03:08:24+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7681,8 +8042,10 @@
       "meaning": "가격 하한(최저가) 구조"
      }
     ],
-    "processed_at": "2026-10-19T03:08:29+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7859,8 +8222,10 @@
       "meaning": "공학 조사(부지 조사) 작업"
      }
     ],
-    "processed_at": "2026-10-19T03:08:40+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:40+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8033,8 +8398,10 @@
       "meaning": "유럽-아시아를 잇는 중간 회랑(운송로)"
      }
     ],
-    "processed_at": "2026-10-19T03:08:45+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:45+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8216,8 +8583,10 @@
       "meaning": "높은 이직률"
      }
     ],
-    "processed_at": "2026-10-19T03:08:53+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:53+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8399,8 +8768,10 @@
       "meaning": "상호 이익이 되는 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T03:08:57+00:00"
-   }
+    "processed_at": "2026-10-19T03:08:57+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8573,8 +8944,10 @@
       "meaning": "화석연료 없는 친환경 철강"
      }
     ],
-    "processed_at": "2026-10-19T03:09:07+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8760,8 +9133,10 @@
       "meaning": "지역 사회경제 발전 지원 협력 협정"
      }
     ],
-    "processed_at": "2026-10-19T03:09:10+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:10+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8948,8 +9323,10 @@
       "meaning": "국가개발감사기관(손실액 산정 협력)"
      }
     ],
-    "processed_at": "2026-10-19T03:09:21+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:21+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -9133,8 +9510,10 @@
       "meaning": "인적 자원, 인력"
      }
     ],
-    "processed_at": "2026-10-19T03:09:33+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:33+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -9279,8 +9658,10 @@
       "meaning": "새로운 방향"
      }
     ],
-    "processed_at": "2026-10-19T03:09:35+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:35+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -9471,8 +9852,10 @@
       "meaning": "법인세 면제 기간(최대 20년)"
      }
     ],
-    "processed_at": "2026-10-19T03:09:51+00:00"
-   }
+    "processed_at": "2026-10-19T03:09:51+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -9665,8 +10048,10 @@
       "meaning": "광물 수출 금지 조치"
      }
     ],
-    "processed_at": "2026-10-19T03:10:08+00:00"
-   }
+    "processed_at": "2026-10-19T03:10:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -9851,8 +10236,10 @@
       "meaning": "합작투자 사업"
      }
     ],
-    "processed_at": "2026-10-19T03:10:25+00:00"
-   }
+    "processed_at": "2026-10-19T03:10:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -10042,8 +10429,10 @@
       "meaning": "공급원 다변화"
      }
     ],
-    "processed_at": "2026-10-19T03:10:41+00:00"
-   }
+    "processed_at": "2026-10-19T03:10:41+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -10053,5 +10442,26 @@
   "original_link": 7,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:12:04+00:00",
+   "targets": 31,
+   "rewritten": 31,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 32,
+     "in": 108891,
+     "out": 3043
+    }
+   },
+   "cost_usd": 0.3723
+  }
+ ]
 }

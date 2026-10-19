@@ -138,7 +138,7 @@
       "meaning": "채굴부터 상업화까지의 전 과정"
      }
     ],
-    "oda_relevance": "한국 대통령이 우즈베키스탄 등 중앙아 정상과 핵심광물·공급망을 논의하며, 한국의 탐사·가공 기술과 현지 광물 자원의 결합을 추진하는 협력 근거임"
+    "oda_relevance": "한국이 반도체·전기차 광물 공급원 다변화를 위해 우즈베키스탄 등과 탐사·가공 협력을 정상급으로 격상할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -151,7 +151,17 @@
     "summarized_at": "2026-10-19T04:11:38+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 우즈베키스탄 등 중앙아 정상과 핵심광물·공급망을 논의하며, 한국의 탐사·가공 기술과 현지 광물 자원의 결합을 추진하는 협력 근거임",
+     "rewritten_at": "2026-10-19T06:14:52+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -228,7 +238,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 대통령이 우즈베키스탄 등 중앙아 정상과 핵심광물·공급망을 논의하며, 한국의 탐사·가공 기술과 현지 광물 자원의 결합을 추진하는 협력 근거임",
+    "oda_relevance": "한국이 반도체·전기차 광물 공급원 다변화를 위해 우즈베키스탄 등과 탐사·가공 협력을 정상급으로 격상할 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -249,7 +259,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:11:38+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -325,7 +336,7 @@
       "meaning": "한국 EDCF의 금융 지원 틀"
      }
     ],
-    "oda_relevance": "한국 자금 지원 희소금속센터 시범 공장과 $2 billion EDCF 틀이 언급되나, 후자는 핵심광물 전용 기금이 아니라고 구분했음"
+    "oda_relevance": "한국이 우즈베키스탄 중류 가공 역량 구축에 참여해 중국·러시아 밖의 원료 공급선을 다변화할 수 있는 계기가 될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -338,7 +349,17 @@
     "summarized_at": "2026-10-19T04:11:55+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 자금 지원 희소금속센터 시범 공장과 $2 billion EDCF 틀이 언급되나, 후자는 핵심광물 전용 기금이 아니라고 구분했음",
+     "rewritten_at": "2026-10-19T06:14:53+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -413,7 +434,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 자금 지원 희소금속센터 시범 공장과 $2 billion EDCF 틀이 언급되나, 후자는 핵심광물 전용 기금이 아니라고 구분했음",
+    "oda_relevance": "한국이 우즈베키스탄 중류 가공 역량 구축에 참여해 중국·러시아 밖의 원료 공급선을 다변화할 수 있는 계기가 될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -434,7 +455,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:11:55+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -608,8 +630,10 @@
       "meaning": "교육훈련·R&D 비용에 대한 추가 세금공제 인센티브"
      }
     ],
-    "processed_at": "2026-10-19T04:12:07+00:00"
-   }
+    "processed_at": "2026-10-19T04:12:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -686,7 +710,7 @@
       "meaning": "한미몽 3자 핵심광물 대화"
      }
     ],
-    "oda_relevance": "한국-몽골 희귀금속협력센터와 한미몽 핵심광물 대화가 언급되어, 한국의 몽골 협력이 중국발 리스크에 노출될 수 있음을 시사함"
+    "oda_relevance": "중국이 몽골과 광물 협력을 넓히면서 한국의 몽골 연계 공급망 다변화는 중국 변수까지 고려한 추진 전략이 필요해질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -696,7 +720,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:12:15+00:00"
+    "summarized_at": "2026-10-19T04:12:15+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국-몽골 희귀금속협력센터와 한미몽 핵심광물 대화가 언급되어, 한국의 몽골 협력이 중국발 리스크에 노출될 수 있음을 시사함",
+     "rewritten_at": "2026-10-19T06:14:57+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -771,7 +805,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국-몽골 희귀금속협력센터와 한미몽 핵심광물 대화가 언급되어, 한국의 몽골 협력이 중국발 리스크에 노출될 수 있음을 시사함",
+    "oda_relevance": "중국이 몽골과 광물 협력을 넓히면서 한국의 몽골 연계 공급망 다변화는 중국 변수까지 고려한 추진 전략이 필요해질 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -792,7 +826,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:12:15+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -871,7 +906,7 @@
       "meaning": "기술이전"
      }
     ],
-    "oda_relevance": "TMK 대표단이 MOTIE·KIGAM 등 한국 기관과 핵심광물 가공·제련 기술이전을 논의하고 일부 합의를 도출해 협력 근거가 있음"
+    "oda_relevance": "우즈베키스탄의 핵심광물 심화가공·제련 기술이전 수요가 한국 정부·연구기관·기업과의 협력으로 이어질 여지를 보여줌"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -884,7 +919,17 @@
     "summarized_at": "2026-10-19T04:12:29+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "TMK 대표단이 MOTIE·KIGAM 등 한국 기관과 핵심광물 가공·제련 기술이전을 논의하고 일부 합의를 도출해 협력 근거가 있음",
+     "rewritten_at": "2026-10-19T06:14:59+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -961,7 +1006,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "TMK 대표단이 MOTIE·KIGAM 등 한국 기관과 핵심광물 가공·제련 기술이전을 논의하고 일부 합의를 도출해 협력 근거가 있음",
+    "oda_relevance": "우즈베키스탄의 핵심광물 심화가공·제련 기술이전 수요가 한국 정부·연구기관·기업과의 협력으로 이어질 여지를 보여줌",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -982,7 +1027,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:12:29+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1057,7 +1103,7 @@
       "meaning": "순환경제"
      }
     ],
-    "oda_relevance": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 가공을 MSR에 맡기는 장기 상업 협력 관계가 본문에 나옴"
+    "oda_relevance": "한국 텅스텐 자원 보유 기업이 베트남 MSR을 가공 파트너로 택해, 한국의 텅스텐 공급망 다변화에서 베트남이 가공 거점이 될 수 있음을 보여줌"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1070,7 +1116,17 @@
     "summarized_at": "2026-10-19T04:12:58+00:00",
     "retry_reasons": [
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: '피아오 다금속 광산\"},\\n    {\"phrase\": \"tinh quặng\", \"meaning\": \"정광(선광'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 가공을 MSR에 맡기는 장기 상업 협력 관계가 본문에 나옴",
+     "rewritten_at": "2026-10-19T06:15:01+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1147,7 +1203,7 @@
     ],
     "source_language": "vi",
     "country": "Vietnam",
-    "oda_relevance": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 가공을 MSR에 맡기는 장기 상업 협력 관계가 본문에 나옴",
+    "oda_relevance": "한국 텅스텐 자원 보유 기업이 베트남 MSR을 가공 파트너로 택해, 한국의 텅스텐 공급망 다변화에서 베트남이 가공 거점이 될 수 있음을 보여줌",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1164,7 +1220,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:12:58+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1343,8 +1400,10 @@
       "meaning": "상업 기밀"
      }
     ],
-    "processed_at": "2026-10-19T04:13:03+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:03+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1518,8 +1577,10 @@
       "meaning": "부드럽고 가벼운 라거(맥주 유형 표기)"
      }
     ],
-    "processed_at": "2026-10-19T04:13:12+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:12+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1700,8 +1761,10 @@
       "meaning": "채굴 물량 허가(허용량)"
      }
     ],
-    "processed_at": "2026-10-19T04:13:25+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1869,8 +1932,10 @@
       "meaning": "카자흐 전통 외투"
      }
     ],
-    "processed_at": "2026-10-19T04:13:29+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2052,8 +2117,10 @@
       "meaning": "세후 이익"
      }
     ],
-    "processed_at": "2026-10-19T04:13:42+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:42+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2239,8 +2306,10 @@
       "meaning": "협상 독점권"
      }
     ],
-    "processed_at": "2026-10-19T04:13:46+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:46+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2422,8 +2491,10 @@
       "meaning": "제3자 협의에 대한 독점 협상권"
      }
     ],
-    "processed_at": "2026-10-19T04:13:52+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2598,8 +2669,10 @@
       "meaning": "최종 장문 계약"
      }
     ],
-    "processed_at": "2026-10-19T04:13:56+00:00"
-   }
+    "processed_at": "2026-10-19T04:13:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2792,8 +2865,10 @@
       "meaning": "화학용 알루미나"
      }
     ],
-    "processed_at": "2026-10-19T04:14:11+00:00"
-   }
+    "processed_at": "2026-10-19T04:14:11+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2974,8 +3049,10 @@
       "meaning": "후속 제조업"
      }
     ],
-    "processed_at": "2026-10-19T04:14:25+00:00"
-   }
+    "processed_at": "2026-10-19T04:14:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3122,8 +3199,10 @@
       "meaning": "천연자원"
      }
     ],
-    "processed_at": "2026-10-19T04:14:27+00:00"
-   }
+    "processed_at": "2026-10-19T04:14:27+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3306,8 +3385,10 @@
       "meaning": "포괄적 전략적 동반자 관계"
      }
     ],
-    "processed_at": "2026-10-19T04:14:40+00:00"
-   }
+    "processed_at": "2026-10-19T04:14:40+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3485,8 +3566,10 @@
       "meaning": "광물·원료 자원 기반"
      }
     ],
-    "processed_at": "2026-10-19T04:14:52+00:00"
-   }
+    "processed_at": "2026-10-19T04:14:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3675,8 +3758,10 @@
       "meaning": "합작투자 회사"
      }
     ],
-    "processed_at": "2026-10-19T04:15:07+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3854,8 +3939,10 @@
       "meaning": "라퍼 곡선(세율과 세수의 관계를 설명하는 경제 원리)"
      }
     ],
-    "processed_at": "2026-10-19T04:15:17+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:17+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4033,8 +4120,10 @@
       "meaning": "고정밀 광물 분석"
      }
     ],
-    "processed_at": "2026-10-19T04:15:20+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:20+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4212,8 +4301,10 @@
       "meaning": "지역 사회경제 발전 지원 협력협약"
      }
     ],
-    "processed_at": "2026-10-19T04:15:24+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4358,8 +4449,10 @@
       "meaning": "경제 주권"
      }
     ],
-    "processed_at": "2026-10-19T04:15:26+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:26+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4506,8 +4599,10 @@
       "meaning": "BYD 수방 공장"
      }
     ],
-    "processed_at": "2026-10-19T04:15:44+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:44+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4668,8 +4763,10 @@
       "meaning": "양국 기업계 간 직접 접촉"
      }
     ],
-    "processed_at": "2026-10-19T04:15:48+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4855,8 +4952,10 @@
       "meaning": "생산 현지화"
      }
     ],
-    "processed_at": "2026-10-19T04:15:52+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5038,8 +5137,10 @@
       "meaning": "글로벌 에너지 경쟁"
      }
     ],
-    "processed_at": "2026-10-19T04:15:57+00:00"
-   }
+    "processed_at": "2026-10-19T04:15:57+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -5049,5 +5150,26 @@
   "original_link": 7,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:15:01+00:00",
+   "targets": 5,
+   "rewritten": 5,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 5,
+     "in": 16613,
+     "out": 643
+    }
+   },
+   "cost_usd": 0.0595
+  }
+ ]
 }

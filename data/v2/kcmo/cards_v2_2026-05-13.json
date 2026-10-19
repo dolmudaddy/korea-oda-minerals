@@ -183,8 +183,10 @@
       "meaning": "전략적 입지를 진전시킴"
      }
     ],
-    "processed_at": "2026-10-19T01:55:18+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:18+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -317,8 +319,10 @@
       "meaning": "자국의 입지(위치)를 강화하다"
      }
     ],
-    "processed_at": "2026-10-19T01:55:25+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:25+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -452,8 +456,10 @@
       "meaning": "전략적 입지"
      }
     ],
-    "processed_at": "2026-10-19T01:55:31+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:31+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -596,8 +602,10 @@
       "meaning": "~부문(분야)"
      }
     ],
-    "processed_at": "2026-10-19T01:55:37+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:37+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -732,8 +740,10 @@
       "meaning": "처음으로 참가함"
      }
     ],
-    "processed_at": "2026-10-19T01:55:43+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:43+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -866,8 +876,10 @@
       "meaning": "전략적 입지를 강화·진전시킴"
      }
     ],
-    "processed_at": "2026-10-19T01:55:49+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:49+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1008,8 +1020,10 @@
       "meaning": "~ 분야(부문)"
      }
     ],
-    "processed_at": "2026-10-19T01:55:58+00:00"
-   }
+    "processed_at": "2026-10-19T01:55:58+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1142,8 +1156,10 @@
       "meaning": "전략적 위치를 진전시키다"
      }
     ],
-    "processed_at": "2026-10-19T01:56:04+00:00"
-   }
+    "processed_at": "2026-10-19T01:56:04+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1284,8 +1300,10 @@
       "meaning": "~ 부문"
      }
     ],
-    "processed_at": "2026-10-19T01:56:12+00:00"
-   }
+    "processed_at": "2026-10-19T01:56:12+00:00",
+    "trial": true
+   },
+   "trial": true
   }
  ],
  "excluded": [],
@@ -1295,5 +1313,20 @@
   "original_link": 9,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": true,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:04+00:00",
+   "targets": 0,
+   "rewritten": 0,
+   "kept": [],
+   "usage": {},
+   "cost_usd": 0.0
+  }
+ ]
 }

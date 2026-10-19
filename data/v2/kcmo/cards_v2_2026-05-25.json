@@ -139,7 +139,7 @@
       "meaning": "베트남 광업제련과학기술연구소"
      }
     ],
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 센터를 세워 교육·실증 연구·투자협의체를 운영할 계획임."
+    "oda_relevance": "하노이 센터를 거점으로 한국이 베트남과 핵심광물 공동 연구와 기업 협력을 넓혀 공급망 안정화에 기여할 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -152,7 +152,17 @@
     "summarized_at": "2026-10-19T02:13:33+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIAT가 산업통상부 ODA 사업으로 하노이에 센터를 세워 교육·실증 연구·투자협의체를 운영할 계획임.",
+     "rewritten_at": "2026-10-19T06:10:39+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -229,7 +239,7 @@
     ],
     "source_language": "ko",
     "country": "Vietnam",
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 센터를 세워 교육·실증 연구·투자협의체를 운영할 계획임.",
+    "oda_relevance": "하노이 센터를 거점으로 한국이 베트남과 핵심광물 공동 연구와 기업 협력을 넓혀 공급망 안정화에 기여할 전망임.",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -250,7 +260,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:13:33+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -329,7 +340,7 @@
       "meaning": "전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "2021년 전략적 동반자 관계 격상 이후 희토류 공동연구센터와 공동위원회가 가동되었고 POSCO International이 투자에 관심을 보였다는 점이 협력 근거임"
+    "oda_relevance": "몽골이 원광 수출에서 가공 단계로 전환하려 하며 한국 기술·투자와의 결합을 원해, 한국의 희토류 공급망 다변화에 협력 기회가 될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -342,7 +353,17 @@
     "summarized_at": "2026-10-19T02:13:47+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['12']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "2021년 전략적 동반자 관계 격상 이후 희토류 공동연구센터와 공동위원회가 가동되었고 POSCO International이 투자에 관심을 보였다는 점이 협력 근거임",
+     "rewritten_at": "2026-10-19T06:10:40+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -415,7 +436,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "2021년 전략적 동반자 관계 격상 이후 희토류 공동연구센터와 공동위원회가 가동되었고 POSCO International이 투자에 관심을 보였다는 점이 협력 근거임",
+    "oda_relevance": "몽골이 원광 수출에서 가공 단계로 전환하려 하며 한국 기술·투자와의 결합을 원해, 한국의 희토류 공급망 다변화에 협력 기회가 될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -440,7 +461,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:13:47+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -618,8 +640,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T02:13:59+00:00"
-   }
+    "processed_at": "2026-10-19T02:13:59+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -793,8 +817,10 @@
       "meaning": "원료(광석) 공급 안정성"
      }
     ],
-    "processed_at": "2026-10-19T02:14:08+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -972,8 +998,10 @@
       "meaning": "에너지 전환"
      }
     ],
-    "processed_at": "2026-10-19T02:14:12+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:12+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1159,8 +1187,10 @@
       "meaning": "금 채굴 열풍"
      }
     ],
-    "processed_at": "2026-10-19T02:14:17+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:17+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1336,8 +1366,10 @@
       "meaning": "전략광물 주권 협력 프레임워크"
      }
     ],
-    "processed_at": "2026-10-19T02:14:22+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:22+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1517,8 +1549,10 @@
       "meaning": "니켈 원광 수출 금지"
      }
     ],
-    "processed_at": "2026-10-19T02:14:36+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:36+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1699,8 +1733,10 @@
       "meaning": "국가 수입"
      }
     ],
-    "processed_at": "2026-10-19T02:14:48+00:00"
-   }
+    "processed_at": "2026-10-19T02:14:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1881,8 +1917,10 @@
       "meaning": "바이오디젤 B40에서 B50으로의 전환"
      }
     ],
-    "processed_at": "2026-10-19T02:15:02+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:02+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2045,8 +2083,10 @@
       "meaning": "핵심광물"
      }
     ],
-    "processed_at": "2026-10-19T02:15:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2232,8 +2272,10 @@
       "meaning": "연구 역량"
      }
     ],
-    "processed_at": "2026-10-19T02:15:12+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:12+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2413,8 +2455,10 @@
       "meaning": "독일-몽골 자원기술대학"
      }
     ],
-    "processed_at": "2026-10-19T02:15:27+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:27+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2567,8 +2611,10 @@
       "meaning": "전기차(EV) 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:15:36+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:36+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2758,8 +2804,10 @@
       "meaning": "산림지역 정비 태스크포스"
      }
     ],
-    "processed_at": "2026-10-19T02:15:47+00:00"
-   }
+    "processed_at": "2026-10-19T02:15:47+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2940,8 +2988,10 @@
       "meaning": "국가 핵심 시설"
      }
     ],
-    "processed_at": "2026-10-19T02:16:01+00:00"
-   }
+    "processed_at": "2026-10-19T02:16:01+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3130,8 +3180,10 @@
       "meaning": "연료유 수입"
      }
     ],
-    "processed_at": "2026-10-19T02:16:11+00:00"
-   }
+    "processed_at": "2026-10-19T02:16:11+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -3141,5 +3193,26 @@
   "original_link": 4,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:40+00:00",
+   "targets": 2,
+   "rewritten": 2,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 2,
+     "in": 6652,
+     "out": 167
+    }
+   },
+   "cost_usd": 0.0225
+  }
+ ]
 }

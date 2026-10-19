@@ -238,8 +238,10 @@
       "meaning": "합작 투자 법인"
      }
     ],
-    "processed_at": "2026-10-19T02:18:48+00:00"
-   }
+    "processed_at": "2026-10-19T02:18:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -422,8 +424,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T02:18:52+00:00"
-   }
+    "processed_at": "2026-10-19T02:18:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -612,8 +616,10 @@
       "meaning": "양해각서(MoU)"
      }
     ],
-    "processed_at": "2026-10-19T02:19:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -785,8 +791,10 @@
       "meaning": "전략 초안"
      }
     ],
-    "processed_at": "2026-10-19T02:19:23+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:23+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -958,8 +966,10 @@
       "meaning": "전략 초안"
      }
     ],
-    "processed_at": "2026-10-19T02:19:37+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:37+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1140,8 +1150,10 @@
       "meaning": "무상 영양급식 프로그램"
      }
     ],
-    "processed_at": "2026-10-19T02:19:52+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1288,8 +1300,10 @@
       "meaning": "배터리 생태계"
      }
     ],
-    "processed_at": "2026-10-19T02:19:54+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:54+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1436,8 +1450,10 @@
       "meaning": "중국 투자"
      }
     ],
-    "processed_at": "2026-10-19T02:19:57+00:00"
-   }
+    "processed_at": "2026-10-19T02:19:57+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1615,8 +1631,10 @@
       "meaning": "광물법 개정 동향"
      }
     ],
-    "processed_at": "2026-10-19T02:20:12+00:00"
-   }
+    "processed_at": "2026-10-19T02:20:12+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1801,8 +1819,10 @@
       "meaning": "상호 이익이 되는 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:20:26+00:00"
-   }
+    "processed_at": "2026-10-19T02:20:26+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1983,8 +2003,10 @@
       "meaning": "독일-몽골 자원기술 연구·교육 기관"
      }
     ],
-    "processed_at": "2026-10-19T02:20:41+00:00"
-   }
+    "processed_at": "2026-10-19T02:20:41+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2134,8 +2156,10 @@
       "meaning": "지르콘"
      }
     ],
-    "processed_at": "2026-10-19T02:20:49+00:00"
-   }
+    "processed_at": "2026-10-19T02:20:49+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2313,8 +2337,10 @@
       "meaning": "조건부 협력 기본계약"
      }
     ],
-    "processed_at": "2026-10-19T02:21:04+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2463,8 +2489,10 @@
       "meaning": "니켈 하류화"
      }
     ],
-    "processed_at": "2026-10-19T02:21:06+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:06+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2645,8 +2673,10 @@
       "meaning": "국가 에너지 자립"
      }
     ],
-    "processed_at": "2026-10-19T02:21:17+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:17+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2823,8 +2853,10 @@
       "meaning": "세계 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:21:21+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:21+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -2834,5 +2866,20 @@
   "original_link": 4,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:44+00:00",
+   "targets": 0,
+   "rewritten": 0,
+   "kept": [],
+   "usage": {},
+   "cost_usd": 0.0
+  }
+ ]
 }

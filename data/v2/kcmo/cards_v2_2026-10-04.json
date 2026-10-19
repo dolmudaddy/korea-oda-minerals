@@ -141,7 +141,7 @@
       "meaning": "공급망 다변화"
      }
     ],
-    "oda_relevance": "카자흐스탄 외교장관이 한국과의 핵심광물·AI 협력 확대와 구체적 사업 이행 필요성을 언급했으나, ODA 사업 자체는 본문에 없음."
+    "oda_relevance": "카자흐스탄이 원자재 수출을 넘어 가공·첨단 생산까지 추진해 한국 기업의 공급망 다변화와 핵심광물 협력 확대 논의에 연결될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -151,7 +151,17 @@
     "input_body_status": "full",
     "input_chars": 3934,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:35:23+00:00"
+    "summarized_at": "2026-10-19T04:35:23+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "카자흐스탄 외교장관이 한국과의 핵심광물·AI 협력 확대와 구체적 사업 이행 필요성을 언급했으나, ODA 사업 자체는 본문에 없음.",
+     "rewritten_at": "2026-10-19T06:16:33+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -228,7 +238,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "카자흐스탄 외교장관이 한국과의 핵심광물·AI 협력 확대와 구체적 사업 이행 필요성을 언급했으나, ODA 사업 자체는 본문에 없음.",
+    "oda_relevance": "카자흐스탄이 원자재 수출을 넘어 가공·첨단 생산까지 추진해 한국 기업의 공급망 다변화와 핵심광물 협력 확대 논의에 연결될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -245,7 +255,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:35:23+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -392,8 +403,10 @@
       "meaning": "광물 교역을 모색함"
      }
     ],
-    "processed_at": "2026-10-19T04:35:28+00:00"
-   }
+    "processed_at": "2026-10-19T04:35:28+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -472,7 +485,7 @@
       "meaning": "핵심광물"
      }
     ],
-    "oda_relevance": "한국 대통령과 카자흐스탄 대통령이 핵심광물 협력 확대에 합의해, 한국 정부 차원의 공급망 다변화 협력 근거가 확인됨"
+    "oda_relevance": "정상회담에서 원유·우라늄을 넘어 리튬 등 핵심광물로 협력을 넓히기로 해, 한국의 공급망 다변화와 중국 의존 완화 기반이 될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -482,7 +495,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:35:40+00:00"
+    "summarized_at": "2026-10-19T04:35:40+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령과 카자흐스탄 대통령이 핵심광물 협력 확대에 합의해, 한국 정부 차원의 공급망 다변화 협력 근거가 확인됨",
+     "rewritten_at": "2026-10-19T06:16:34+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -563,7 +586,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 대통령과 카자흐스탄 대통령이 핵심광물 협력 확대에 합의해, 한국 정부 차원의 공급망 다변화 협력 근거가 확인됨",
+    "oda_relevance": "정상회담에서 원유·우라늄을 넘어 리튬 등 핵심광물로 협력을 넓히기로 해, 한국의 공급망 다변화와 중국 의존 완화 기반이 될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -584,7 +607,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:35:40+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -661,7 +685,7 @@
       "meaning": "정기 협의 채널"
      }
     ],
-    "oda_relevance": "한국수출입은행이 우즈베키스탄 정부와 핵심광물 등 분야의 사업 발굴·금융지원 방안을 모색하는 협력 틀을 마련했음"
+    "oda_relevance": "핵심광물 사업 발굴 단계부터 금융지원을 연계하는 틀이 마련돼 한국 기업의 우즈베키스탄 광물 분야 진출이 쉬워질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -671,7 +695,17 @@
     "input_body_status": "full",
     "input_chars": 3292,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:35:51+00:00"
+    "summarized_at": "2026-10-19T04:35:51+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국수출입은행이 우즈베키스탄 정부와 핵심광물 등 분야의 사업 발굴·금융지원 방안을 모색하는 협력 틀을 마련했음",
+     "rewritten_at": "2026-10-19T06:16:36+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -746,7 +780,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국수출입은행이 우즈베키스탄 정부와 핵심광물 등 분야의 사업 발굴·금융지원 방안을 모색하는 협력 틀을 마련했음",
+    "oda_relevance": "핵심광물 사업 발굴 단계부터 금융지원을 연계하는 틀이 마련돼 한국 기업의 우즈베키스탄 광물 분야 진출이 쉬워질 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -767,7 +801,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:35:51+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -948,8 +983,10 @@
       "meaning": "광산 시설 정비 대상 중 하나(원문 용어, 정확한 의미는 확인 불가)"
      }
     ],
-    "processed_at": "2026-10-19T04:36:04+00:00"
-   }
+    "processed_at": "2026-10-19T04:36:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1139,8 +1176,10 @@
       "meaning": "시험(파일럿) 생산"
      }
     ],
-    "processed_at": "2026-10-19T04:36:21+00:00"
-   }
+    "processed_at": "2026-10-19T04:36:21+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1216,7 +1255,7 @@
       "meaning": "Vision 2050의 스와힐리어 명칭"
      }
     ],
-    "oda_relevance": "한국 투자자·기업인이 참석한 행사에서 탄자니아가 핵심광물 등 분야의 한국 투자를 요청한 것이 근거임"
+    "oda_relevance": "탄자니아가 핵심광물·배터리 제조의 현지 가공 투자를 한국에 요청해, 한국의 광물 공급망 협력 확대 논의에 활용될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1230,7 +1269,17 @@
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 5줄)",
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: '\": \"critical minerals\", \"meaning\": \"핵심광물\"},\\n    {\"phrase\": \"'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 투자자·기업인이 참석한 행사에서 탄자니아가 핵심광물 등 분야의 한국 투자를 요청한 것이 근거임",
+     "rewritten_at": "2026-10-19T06:16:37+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1305,7 +1354,7 @@
     ],
     "source_language": "en",
     "country": "Tanzania",
-    "oda_relevance": "한국 투자자·기업인이 참석한 행사에서 탄자니아가 핵심광물 등 분야의 한국 투자를 요청한 것이 근거임",
+    "oda_relevance": "탄자니아가 핵심광물·배터리 제조의 현지 가공 투자를 한국에 요청해, 한국의 광물 공급망 협력 확대 논의에 활용될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1326,7 +1375,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:36:50+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1405,7 +1455,7 @@
       "meaning": "포괄적 전략 동반자 관계"
      }
     ],
-    "oda_relevance": "POSCO Holdings와의 희토류 가공 MOU, Korea Institute of Industrial Technology와의 알마티 희토류 센터 계획, KIGAM의 K-Plant가 본문에 등장함."
+    "oda_relevance": "카자흐스탄이 희토류 가공·분리 단계의 공동 개발 파트너로 부상해, 한국의 희토류 공급망 다변화와 기술협력 확대로 이어질 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1415,7 +1465,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:37:03+00:00"
+    "summarized_at": "2026-10-19T04:37:03+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "POSCO Holdings와의 희토류 가공 MOU, Korea Institute of Industrial Technology와의 알마티 희토류 센터 계획, KIGAM의 K-Plant가 본문에 등장함.",
+     "rewritten_at": "2026-10-19T06:16:39+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1492,7 +1552,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "POSCO Holdings와의 희토류 가공 MOU, Korea Institute of Industrial Technology와의 알마티 희토류 센터 계획, KIGAM의 K-Plant가 본문에 등장함.",
+    "oda_relevance": "카자흐스탄이 희토류 가공·분리 단계의 공동 개발 파트너로 부상해, 한국의 희토류 공급망 다변화와 기술협력 확대로 이어질 전망임.",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1513,7 +1573,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:03+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1590,7 +1651,7 @@
       "meaning": "경제안보"
      }
     ],
-    "oda_relevance": "양국 정상이 핵심광물 협력 확대에 합의했고 카자흐스탄이 한국의 투자·기술을 요청하고 있어 향후 협력 사업의 정치적 토대가 됨."
+    "oda_relevance": "한국이 핵심광물 공급원 다변화를 추진하는 가운데 카자흐스탄이 투자·기술 협력을 원해, 양국 광물 협력이 확대될 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1600,7 +1661,17 @@
     "input_body_status": "full",
     "input_chars": 2078,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:37:10+00:00"
+    "summarized_at": "2026-10-19T04:37:10+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "양국 정상이 핵심광물 협력 확대에 합의했고 카자흐스탄이 한국의 투자·기술을 요청하고 있어 향후 협력 사업의 정치적 토대가 됨.",
+     "rewritten_at": "2026-10-19T06:16:41+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1675,7 +1746,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "양국 정상이 핵심광물 협력 확대에 합의했고 카자흐스탄이 한국의 투자·기술을 요청하고 있어 향후 협력 사업의 정치적 토대가 됨.",
+    "oda_relevance": "한국이 핵심광물 공급원 다변화를 추진하는 가운데 카자흐스탄이 투자·기술 협력을 원해, 양국 광물 협력이 확대될 전망임.",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -1696,7 +1767,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:10+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1770,7 +1842,7 @@
       "meaning": "이재명 대통령이 제안한 새로운 실크로드"
      }
     ],
-    "oda_relevance": "한국 대통령이 참여한 서울선언에 핵심광물·공급망 협력이 포함됐으나, 구체적인 ODA 사업은 본문에서 확인 불가임"
+    "oda_relevance": "서울선언으로 핵심광물·공급망 협력이 정례 정상회의 틀에 오르면서 카자흐스탄 등 중앙아시아와의 광물 협력이 장기 의제로 다뤄질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1780,7 +1852,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:37:22+00:00"
+    "summarized_at": "2026-10-19T04:37:22+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 참여한 서울선언에 핵심광물·공급망 협력이 포함됐으나, 구체적인 ODA 사업은 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:16:42+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1856,7 +1938,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 대통령이 참여한 서울선언에 핵심광물·공급망 협력이 포함됐으나, 구체적인 ODA 사업은 본문에서 확인 불가임",
+    "oda_relevance": "서울선언으로 핵심광물·공급망 협력이 정례 정상회의 틀에 오르면서 카자흐스탄 등 중앙아시아와의 광물 협력이 장기 의제로 다뤄질 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1873,7 +1955,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:22+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1950,7 +2033,7 @@
       "meaning": "타당성 조사"
      }
     ],
-    "oda_relevance": "고속열차 도입과 게놈 바이오뱅크 타당성 조사를 대외경제협력기금으로 수행하고, 핵심광물 포함 6개 산업의 사업 발굴·금융 체계를 마련하기로 했음."
+    "oda_relevance": "핵심광물을 포함한 6개 전략산업의 사업 발굴·금융 체계 구축이 합의돼, 한국의 우즈베키스탄 광물 협력이 구체화될 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1963,7 +2046,17 @@
     "summarized_at": "2026-10-19T04:37:35+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 5줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "고속열차 도입과 게놈 바이오뱅크 타당성 조사를 대외경제협력기금으로 수행하고, 핵심광물 포함 6개 산업의 사업 발굴·금융 체계를 마련하기로 했음.",
+     "rewritten_at": "2026-10-19T06:16:44+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2039,7 +2132,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "고속열차 도입과 게놈 바이오뱅크 타당성 조사를 대외경제협력기금으로 수행하고, 핵심광물 포함 6개 산업의 사업 발굴·금융 체계를 마련하기로 했음.",
+    "oda_relevance": "핵심광물을 포함한 6개 전략산업의 사업 발굴·금융 체계 구축이 합의돼, 한국의 우즈베키스탄 광물 협력이 구체화될 전망임.",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2060,7 +2153,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:35+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2135,7 +2229,7 @@
       "meaning": "양자 전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "무상원조 기본협정 개정 의정서가 서명되었으나, 핵심광물 분야 ODA의 구체적 내용은 본문에서 확인 불가임"
+    "oda_relevance": "핵심광물 공급망이 양국 정상회담 협력 의제로 올랐고 무상원조 기본협정 개정 의정서도 서명돼, 광물 협력의 제도적 기반이 넓어질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2145,7 +2239,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:37:48+00:00"
+    "summarized_at": "2026-10-19T04:37:48+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "무상원조 기본협정 개정 의정서가 서명되었으나, 핵심광물 분야 ODA의 구체적 내용은 본문에서 확인 불가임",
+     "rewritten_at": "2026-10-19T06:16:45+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2222,7 +2326,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "무상원조 기본협정 개정 의정서가 서명되었으나, 핵심광물 분야 ODA의 구체적 내용은 본문에서 확인 불가임",
+    "oda_relevance": "핵심광물 공급망이 양국 정상회담 협력 의제로 올랐고 무상원조 기본협정 개정 의정서도 서명돼, 광물 협력의 제도적 기반이 넓어질 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2239,7 +2343,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:48+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2314,7 +2419,7 @@
       "meaning": "핵심광물 공급망"
      }
     ],
-    "oda_relevance": "양국 정부·공공기관이 핵심광물, 개발협력·인프라 분야 등에서 MOU 5건을 체결했으나 개별 MOU의 구체 내용은 확인 불가임"
+    "oda_relevance": "핵심광물 공급망이 양국 협력 의제에 오르면서 우즈베키스탄과의 광물 협력이 교역에서 공동 생산·투자 중심으로 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2324,7 +2429,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:37:59+00:00"
+    "summarized_at": "2026-10-19T04:37:59+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "양국 정부·공공기관이 핵심광물, 개발협력·인프라 분야 등에서 MOU 5건을 체결했으나 개별 MOU의 구체 내용은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:16:47+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2401,7 +2516,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "양국 정부·공공기관이 핵심광물, 개발협력·인프라 분야 등에서 MOU 5건을 체결했으나 개별 MOU의 구체 내용은 확인 불가임",
+    "oda_relevance": "핵심광물 공급망이 양국 협력 의제에 오르면서 우즈베키스탄과의 광물 협력이 교역에서 공동 생산·투자 중심으로 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2418,7 +2533,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:37:59+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2490,7 +2606,7 @@
       "meaning": "특별 전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "핵심광물·AI·개발협력·인프라를 다룬 MOU 5건을 양국 정부·공공기관이 체결해 협력 근거가 있음"
+    "oda_relevance": "핵심광물 공급망이 양국 신규 협력 분야로 부상하고 MOU도 체결돼, 한국의 우즈벡 핵심광물 협력이 공동 생산·투자로 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2500,7 +2616,17 @@
     "input_body_status": "full",
     "input_chars": 2600,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:12+00:00"
+    "summarized_at": "2026-10-19T04:38:12+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "핵심광물·AI·개발협력·인프라를 다룬 MOU 5건을 양국 정부·공공기관이 체결해 협력 근거가 있음",
+     "rewritten_at": "2026-10-19T06:16:48+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2575,7 +2701,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "핵심광물·AI·개발협력·인프라를 다룬 MOU 5건을 양국 정부·공공기관이 체결해 협력 근거가 있음",
+    "oda_relevance": "핵심광물 공급망이 양국 신규 협력 분야로 부상하고 MOU도 체결돼, 한국의 우즈벡 핵심광물 협력이 공동 생산·투자로 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2592,7 +2718,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:12+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2671,7 +2798,7 @@
       "meaning": "혁신·기술 동맹"
      }
     ],
-    "oda_relevance": "KOICA·Korea Eximbank·EDCF 지원 사업이 진행 중이며 정상회담에서 핵심광물이 우선 협력분야로 논의됐음"
+    "oda_relevance": "핵심광물이 양국 경제협력 5대 우선분야로 꼽혀, 기존 개발협력 채널을 활용한 한-우즈벡 광물 협력이 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2681,7 +2808,17 @@
     "input_body_status": "full",
     "input_chars": 2468,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:24+00:00"
+    "summarized_at": "2026-10-19T04:38:24+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KOICA·Korea Eximbank·EDCF 지원 사업이 진행 중이며 정상회담에서 핵심광물이 우선 협력분야로 논의됐음",
+     "rewritten_at": "2026-10-19T06:16:50+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2754,7 +2891,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "KOICA·Korea Eximbank·EDCF 지원 사업이 진행 중이며 정상회담에서 핵심광물이 우선 협력분야로 논의됐음",
+    "oda_relevance": "핵심광물이 양국 경제협력 5대 우선분야로 꼽혀, 기존 개발협력 채널을 활용한 한-우즈벡 광물 협력이 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -2775,7 +2912,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:24+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2849,7 +2987,7 @@
       "meaning": "확대 정상회담"
      }
     ],
-    "oda_relevance": "한국 대통령이 정상회담에서 핵심광물 공급망을 우즈베키스탄과의 협력 확대 분야로 합의했으나, 구체적 ODA 사업은 확인 불가임."
+    "oda_relevance": "중앙아시아 유일의 특별 전략적 동반자국과 핵심광물 공급망을 협력 분야로 합의해 한국의 광물 협력이 정상급에서 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2859,7 +2997,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:35+00:00"
+    "summarized_at": "2026-10-19T04:38:35+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령이 정상회담에서 핵심광물 공급망을 우즈베키스탄과의 협력 확대 분야로 합의했으나, 구체적 ODA 사업은 확인 불가임.",
+     "rewritten_at": "2026-10-19T06:16:52+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2935,7 +3083,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 대통령이 정상회담에서 핵심광물 공급망을 우즈베키스탄과의 협력 확대 분야로 합의했으나, 구체적 ODA 사업은 확인 불가임.",
+    "oda_relevance": "중앙아시아 유일의 특별 전략적 동반자국과 핵심광물 공급망을 협력 분야로 합의해 한국의 광물 협력이 정상급에서 확대될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -2952,7 +3100,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:35+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3025,7 +3174,7 @@
       "meaning": "합작투자 형태"
      }
     ],
-    "oda_relevance": "한-우즈벡 정상이 핵심광물 공급을 포함한 협력 분야를 약속했으나, 구체적인 ODA 사업이나 자금은 본문에 확인 불가임"
+    "oda_relevance": "정상 차원에서 핵심광물 공급 협력이 합의돼, 우즈베키스탄과의 광물 분야 협력 확대에 정치적 기반이 마련됐음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3035,7 +3184,17 @@
     "input_body_status": "full",
     "input_chars": 1374,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:39+00:00"
+    "summarized_at": "2026-10-19T04:38:39+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한-우즈벡 정상이 핵심광물 공급을 포함한 협력 분야를 약속했으나, 구체적인 ODA 사업이나 자금은 본문에 확인 불가임",
+     "rewritten_at": "2026-10-19T06:16:53+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3111,7 +3270,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한-우즈벡 정상이 핵심광물 공급을 포함한 협력 분야를 약속했으나, 구체적인 ODA 사업이나 자금은 본문에 확인 불가임",
+    "oda_relevance": "정상 차원에서 핵심광물 공급 협력이 합의돼, 우즈베키스탄과의 광물 분야 협력 확대에 정치적 기반이 마련됐음",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
@@ -3128,7 +3287,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:39+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3201,7 +3361,7 @@
       "meaning": "공동 번영"
      }
     ],
-    "oda_relevance": "한국·우즈베키스탄 정상 임석하에 핵심광물 공급망을 포함한 13개 분야 정부 간 MOU가 체결돼 양국 협력의 근거가 확인됨"
+    "oda_relevance": "핵심광물 공급망이 정상 임석 정부 간 MOU 분야에 포함돼, 한국의 우즈베키스탄 광물 협력이 정상급 의제로 다뤄질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3211,7 +3371,17 @@
     "input_body_status": "full",
     "input_chars": 1824,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:43+00:00"
+    "summarized_at": "2026-10-19T04:38:43+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국·우즈베키스탄 정상 임석하에 핵심광물 공급망을 포함한 13개 분야 정부 간 MOU가 체결돼 양국 협력의 근거가 확인됨",
+     "rewritten_at": "2026-10-19T06:16:55+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3286,7 +3456,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국·우즈베키스탄 정상 임석하에 핵심광물 공급망을 포함한 13개 분야 정부 간 MOU가 체결돼 양국 협력의 근거가 확인됨",
+    "oda_relevance": "핵심광물 공급망이 정상 임석 정부 간 MOU 분야에 포함돼, 한국의 우즈베키스탄 광물 협력이 정상급 의제로 다뤄질 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -3303,7 +3473,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:43+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3376,7 +3547,7 @@
       "meaning": "도체·신소재 설계·시험 센터"
      }
     ],
-    "oda_relevance": "한국 수출입은행·KIGAM 관계자가 참석해 핵심광물 가공과 공동 펀드가 논의됐으나, ODA 사업 여부는 확인 불가임"
+    "oda_relevance": "핵심광물 프로젝트 공동 펀드와 가공 협력이 논의돼, 한국 금융·지질 기관의 우즈베키스탄 광물 협력이 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3386,7 +3557,17 @@
     "input_body_status": "full",
     "input_chars": 1091,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:38:58+00:00"
+    "summarized_at": "2026-10-19T04:38:58+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 수출입은행·KIGAM 관계자가 참석해 핵심광물 가공과 공동 펀드가 논의됐으나, ODA 사업 여부는 확인 불가임",
+     "rewritten_at": "2026-10-19T06:16:57+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3461,7 +3642,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 수출입은행·KIGAM 관계자가 참석해 핵심광물 가공과 공동 펀드가 논의됐으나, ODA 사업 여부는 확인 불가임",
+    "oda_relevance": "핵심광물 프로젝트 공동 펀드와 가공 협력이 논의돼, 한국 금융·지질 기관의 우즈베키스탄 광물 협력이 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -3478,7 +3659,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:38:58+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3557,7 +3739,7 @@
       "meaning": "중앙아시아–한국 협력 형식"
      }
     ],
-    "oda_relevance": "우즈베키스탄 대통령이 서울 서밋에서 핵심광물 등 분야의 한국 기업 투자·기술 참여를 직접 제안했음. 다만 ODA 사업 근거는 본문에 없음."
+    "oda_relevance": "우즈베키스탄이 핵심광물 120개 사업과 구리 가공 등에 한국 기업의 투자·기술 참여를 요청해 한국의 자원 협력 확대 수요가 확인됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -3567,7 +3749,17 @@
     "input_body_status": "full",
     "input_chars": 3088,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:39:02+00:00"
+    "summarized_at": "2026-10-19T04:39:02+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "우즈베키스탄 대통령이 서울 서밋에서 핵심광물 등 분야의 한국 기업 투자·기술 참여를 직접 제안했음. 다만 ODA 사업 근거는 본문에 없음.",
+     "rewritten_at": "2026-10-19T06:16:58+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -3644,7 +3836,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "우즈베키스탄 대통령이 서울 서밋에서 핵심광물 등 분야의 한국 기업 투자·기술 참여를 직접 제안했음. 다만 ODA 사업 근거는 본문에 없음.",
+    "oda_relevance": "우즈베키스탄이 핵심광물 120개 사업과 구리 가공 등에 한국 기업의 투자·기술 참여를 요청해 한국의 자원 협력 확대 수요가 확인됨",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -3665,7 +3857,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:39:02+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3859,8 +4052,10 @@
       "meaning": "혼합수산화물침전물(니켈 중간재)"
      }
     ],
-    "processed_at": "2026-10-19T04:39:17+00:00"
-   }
+    "processed_at": "2026-10-19T04:39:17+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4035,8 +4230,10 @@
       "meaning": "이전, 양도"
      }
     ],
-    "processed_at": "2026-10-19T04:39:28+00:00"
-   }
+    "processed_at": "2026-10-19T04:39:28+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4227,8 +4424,10 @@
       "meaning": "연간 계획"
      }
     ],
-    "processed_at": "2026-10-19T04:39:42+00:00"
-   }
+    "processed_at": "2026-10-19T04:39:42+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4410,8 +4609,10 @@
       "meaning": "지역 간 연계"
      }
     ],
-    "processed_at": "2026-10-19T04:39:56+00:00"
-   }
+    "processed_at": "2026-10-19T04:39:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4600,8 +4801,10 @@
       "meaning": "진흙 유입 사고"
      }
     ],
-    "processed_at": "2026-10-19T04:40:10+00:00"
-   }
+    "processed_at": "2026-10-19T04:40:10+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4779,8 +4982,10 @@
       "meaning": "자본(금) 보유를 의무화함"
      }
     ],
-    "processed_at": "2026-10-19T04:40:22+00:00"
-   }
+    "processed_at": "2026-10-19T04:40:22+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4966,8 +5171,10 @@
       "meaning": "니켈 제련소"
      }
     ],
-    "processed_at": "2026-10-19T04:40:34+00:00"
-   }
+    "processed_at": "2026-10-19T04:40:34+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5157,8 +5364,10 @@
       "meaning": "탐사 활동"
      }
     ],
-    "processed_at": "2026-10-19T04:40:47+00:00"
-   }
+    "processed_at": "2026-10-19T04:40:47+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5336,8 +5545,10 @@
       "meaning": "광미 건식 적치 처리 기술"
      }
     ],
-    "processed_at": "2026-10-19T04:40:56+00:00"
-   }
+    "processed_at": "2026-10-19T04:40:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5515,8 +5726,10 @@
       "meaning": "합작 회사"
      }
     ],
-    "processed_at": "2026-10-19T04:41:13+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:13+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5665,8 +5878,10 @@
       "meaning": "니켈, 거대한 힘, 그리고 책임"
      }
     ],
-    "processed_at": "2026-10-19T04:41:16+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:16+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5839,8 +6054,10 @@
       "meaning": "종합적이고 계량 가능한 방식"
      }
     ],
-    "processed_at": "2026-10-19T04:41:29+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5987,8 +6204,10 @@
       "meaning": "배터리 산업"
      }
     ],
-    "processed_at": "2026-10-19T04:41:31+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:31+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6174,8 +6393,10 @@
       "meaning": "고압산침출 니켈 제련 공정"
      }
     ],
-    "processed_at": "2026-10-19T04:41:43+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:43+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6351,8 +6572,10 @@
       "meaning": "대통령의 고유 권한(인사권)"
      }
     ],
-    "processed_at": "2026-10-19T04:41:48+00:00"
-   }
+    "processed_at": "2026-10-19T04:41:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6530,8 +6753,10 @@
       "meaning": "광물 원료 안보"
      }
     ],
-    "processed_at": "2026-10-19T04:42:00+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:00+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6610,7 +6835,7 @@
       "meaning": "순환경제"
      }
     ],
-    "oda_relevance": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 베트남 내 가공 파트너로 MSR을 택한 장기 상업 협력 사례가 본문에 나옴"
+    "oda_relevance": "한국 내 텅스텐 자원을 베트남에서 가공하는 민간 협력이 확인돼, 텅스텐 공급망 다변화에서 한국·베트남 가공 연계 가능성을 보여줌"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -6620,7 +6845,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T04:42:12+00:00"
+    "summarized_at": "2026-10-19T04:42:12+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 베트남 내 가공 파트너로 MSR을 택한 장기 상업 협력 사례가 본문에 나옴",
+     "rewritten_at": "2026-10-19T06:16:59+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -6697,7 +6932,7 @@
     ],
     "source_language": "vi",
     "country": "Vietnam",
-    "oda_relevance": "한국 기업 GB Innovation이 한국 내 텅스텐 자원의 베트남 내 가공 파트너로 MSR을 택한 장기 상업 협력 사례가 본문에 나옴",
+    "oda_relevance": "한국 내 텅스텐 자원을 베트남에서 가공하는 민간 협력이 확인돼, 텅스텐 공급망 다변화에서 한국·베트남 가공 연계 가능성을 보여줌",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -6718,7 +6953,8 @@
      }
     ],
     "processed_at": "2026-10-19T04:42:12+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6904,8 +7140,10 @@
       "meaning": "누이파오 확장 구역"
      }
     ],
-    "processed_at": "2026-10-19T04:42:24+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7060,8 +7298,10 @@
       "meaning": "카자톰프롬(카자흐스탄 우라늄 기업)"
      }
     ],
-    "processed_at": "2026-10-19T04:42:26+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:26+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7243,8 +7483,10 @@
       "meaning": "상호 이익이 되는 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T04:42:31+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:31+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7425,8 +7667,10 @@
       "meaning": "협력협정"
      }
     ],
-    "processed_at": "2026-10-19T04:42:44+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:44+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7612,8 +7856,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T04:42:49+00:00"
-   }
+    "processed_at": "2026-10-19T04:42:49+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7809,8 +8055,10 @@
       "meaning": "협상력(교섭 자산)"
      }
     ],
-    "processed_at": "2026-10-19T04:43:04+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -7996,8 +8244,10 @@
       "meaning": "니켈 광석 수출 금지"
      }
     ],
-    "processed_at": "2026-10-19T04:43:09+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:09+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8187,8 +8437,10 @@
       "meaning": "협상력"
      }
     ],
-    "processed_at": "2026-10-19T04:43:18+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8381,8 +8633,10 @@
       "meaning": "스테인리스강"
      }
     ],
-    "processed_at": "2026-10-19T04:43:33+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:33+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8533,8 +8787,10 @@
       "meaning": "인도네시아 수출이 계속 성장함"
      }
     ],
-    "processed_at": "2026-10-19T04:43:35+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:35+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -8685,8 +8941,10 @@
       "meaning": "경제성장"
      }
     ],
-    "processed_at": "2026-10-19T04:43:37+00:00"
-   }
+    "processed_at": "2026-10-19T04:43:37+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -8696,5 +8954,26 @@
   "original_link": 7,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:16:59+00:00",
+   "targets": 18,
+   "rewritten": 18,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 18,
+     "in": 60429,
+     "out": 1558
+    }
+   },
+   "cost_usd": 0.2047
+  }
+ ]
 }

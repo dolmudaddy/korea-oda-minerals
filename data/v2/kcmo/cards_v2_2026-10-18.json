@@ -142,7 +142,7 @@
       "meaning": "포괄적 전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "한국 정부가 카자흐스탄과 원유·우라늄을 넘어 리튬 등 핵심광물 협력 확대를 요청했고 정상회담에서 13건 문서에 서명했음"
+    "oda_relevance": "한국이 대중 의존을 줄일 공급망 다변화를 위해 카자흐스탄과 리튬 등 핵심광물로 협력을 넓힐 계기가 마련됐음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -152,7 +152,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T01:46:07+00:00"
+    "summarized_at": "2026-10-19T01:46:07+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 정부가 카자흐스탄과 원유·우라늄을 넘어 리튬 등 핵심광물 협력 확대를 요청했고 정상회담에서 13건 문서에 서명했음",
+     "rewritten_at": "2026-10-19T06:17:23+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -233,7 +243,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 정부가 카자흐스탄과 원유·우라늄을 넘어 리튬 등 핵심광물 협력 확대를 요청했고 정상회담에서 13건 문서에 서명했음",
+    "oda_relevance": "한국이 대중 의존을 줄일 공급망 다변화를 위해 카자흐스탄과 리튬 등 핵심광물로 협력을 넓힐 계기가 마련됐음",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -254,7 +264,8 @@
      }
     ],
     "processed_at": "2026-10-19T01:46:07+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -430,8 +441,10 @@
       "meaning": "광산 사고"
      }
     ],
-    "processed_at": "2026-10-19T01:46:21+00:00"
-   }
+    "processed_at": "2026-10-19T01:46:21+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -625,8 +638,10 @@
       "meaning": "국가전략프로젝트"
      }
     ],
-    "processed_at": "2026-10-19T01:46:26+00:00"
-   }
+    "processed_at": "2026-10-19T01:46:26+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -701,7 +716,7 @@
       "meaning": "미래지향적 포괄적 전략 동반자 관계"
      }
     ],
-    "oda_relevance": "한국 대통령과의 정상회담, POSCO Holdings MOU, 한국 기관과의 알마티 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴"
+    "oda_relevance": "한국이 희토류 분리 역량을 구축 중이어서 카자흐스탄과의 합작·기술협력이 한국의 핵심광물 공급망 다변화에 기여할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -714,7 +729,17 @@
     "summarized_at": "2026-10-19T01:46:52+00:00",
     "retry_reasons": [
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: 'res\": [\"$19 billion\", \"approximately 91%\", \"2027-2030\"],\\n  \"'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 대통령과의 정상회담, POSCO Holdings MOU, 한국 기관과의 알마티 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴",
+     "rewritten_at": "2026-10-19T06:17:24+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -791,7 +816,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 대통령과의 정상회담, POSCO Holdings MOU, 한국 기관과의 알마티 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴",
+    "oda_relevance": "한국이 희토류 분리 역량을 구축 중이어서 카자흐스탄과의 합작·기술협력이 한국의 핵심광물 공급망 다변화에 기여할 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -808,7 +833,8 @@
      }
     ],
     "processed_at": "2026-10-19T01:46:52+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -886,7 +912,7 @@
       "meaning": "한-중앙아 정상회의"
      }
     ],
-    "oda_relevance": "이재명 대통령이 핵심광물 가치사슬 개발을 제안했고 선언에 핵심광물·공급망 협력이 포함됐음. 구체적 ODA 사업은 확인 불가임"
+    "oda_relevance": "한-중앙아 정상회의 정례화와 핵심광물 공급망 협력 합의로 카자흐스탄 등과의 광물 협력이 정상급 의제로 올라갈 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -896,7 +922,17 @@
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-19T01:47:02+00:00"
+    "summarized_at": "2026-10-19T01:47:02+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "이재명 대통령이 핵심광물 가치사슬 개발을 제안했고 선언에 핵심광물·공급망 협력이 포함됐음. 구체적 ODA 사업은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:17:26+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -972,7 +1008,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "이재명 대통령이 핵심광물 가치사슬 개발을 제안했고 선언에 핵심광물·공급망 협력이 포함됐음. 구체적 ODA 사업은 확인 불가임",
+    "oda_relevance": "한-중앙아 정상회의 정례화와 핵심광물 공급망 협력 합의로 카자흐스탄 등과의 광물 협력이 정상급 의제로 올라갈 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -993,7 +1029,8 @@
      }
     ],
     "processed_at": "2026-10-19T01:47:02+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1182,8 +1219,10 @@
       "meaning": "시험 생산"
      }
     ],
-    "processed_at": "2026-10-19T01:47:16+00:00"
-   }
+    "processed_at": "2026-10-19T01:47:16+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1368,8 +1407,10 @@
       "meaning": "글로벌 가치사슬"
      }
     ],
-    "processed_at": "2026-10-19T01:47:32+00:00"
-   }
+    "processed_at": "2026-10-19T01:47:32+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1548,8 +1589,10 @@
       "meaning": "협력을 모색함"
      }
     ],
-    "processed_at": "2026-10-19T01:47:36+00:00"
-   }
+    "processed_at": "2026-10-19T01:47:36+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1727,8 +1770,10 @@
       "meaning": "지질 탐사 작업"
      }
     ],
-    "processed_at": "2026-10-19T01:47:49+00:00"
-   }
+    "processed_at": "2026-10-19T01:47:49+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1908,8 +1953,10 @@
       "meaning": "지질탐사 작업"
      }
     ],
-    "processed_at": "2026-10-19T01:48:18+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2098,8 +2145,10 @@
       "meaning": "원자재 분야 전략적 파트너"
      }
     ],
-    "processed_at": "2026-10-19T01:48:30+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:30+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2273,8 +2322,10 @@
       "meaning": "합작 기업"
      }
     ],
-    "processed_at": "2026-10-19T01:48:38+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:38+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2465,8 +2516,10 @@
       "meaning": "광물의 국내 가공"
      }
     ],
-    "processed_at": "2026-10-19T01:48:44+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:44+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2644,8 +2697,10 @@
       "meaning": "자본 보유를 의무화함"
      }
     ],
-    "processed_at": "2026-10-19T01:48:54+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:54+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2835,8 +2890,10 @@
       "meaning": "글로벌 공급망"
      }
     ],
-    "processed_at": "2026-10-19T01:48:58+00:00"
-   }
+    "processed_at": "2026-10-19T01:48:58+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2987,8 +3044,10 @@
       "meaning": "하류화 가속"
      }
     ],
-    "processed_at": "2026-10-19T01:49:06+00:00"
-   }
+    "processed_at": "2026-10-19T01:49:06+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3178,8 +3237,10 @@
       "meaning": "공급과잉"
      }
     ],
-    "processed_at": "2026-10-19T01:49:18+00:00"
-   }
+    "processed_at": "2026-10-19T01:49:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3355,8 +3416,10 @@
       "meaning": "2026년 니켈 수출 목표가 USD45 Miliar 돌파로 설정됨"
      }
     ],
-    "processed_at": "2026-10-19T01:49:29+00:00"
-   }
+    "processed_at": "2026-10-19T01:49:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3505,8 +3568,10 @@
       "meaning": "전기차 생태계"
      }
     ],
-    "processed_at": "2026-10-19T01:49:32+00:00"
-   }
+    "processed_at": "2026-10-19T01:49:32+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3696,8 +3761,10 @@
       "meaning": "혼합수산화침전물(배터리용 중간재)"
      }
     ],
-    "processed_at": "2026-10-19T01:49:43+00:00"
-   }
+    "processed_at": "2026-10-19T01:49:43+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3886,8 +3953,10 @@
       "meaning": "전해 코발트(고순도 코발트 금속)"
      }
     ],
-    "processed_at": "2026-10-19T01:50:01+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:01+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4066,8 +4135,10 @@
       "meaning": "에너지 안보"
      }
     ],
-    "processed_at": "2026-10-19T01:50:06+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:06+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4212,8 +4283,10 @@
       "meaning": "618 miliar 달러(원문 표기)"
      }
     ],
-    "processed_at": "2026-10-19T01:50:08+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4360,8 +4433,10 @@
       "meaning": "배출량 감축"
      }
     ],
-    "processed_at": "2026-10-19T01:50:10+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:10+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4551,8 +4626,10 @@
       "meaning": "국가 정치경제적 자립"
      }
     ],
-    "processed_at": "2026-10-19T01:50:24+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4744,8 +4821,10 @@
       "meaning": "니켈 원광 수출 중단"
      }
     ],
-    "processed_at": "2026-10-19T01:50:36+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:36+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4931,8 +5010,10 @@
       "meaning": "녹색 산업"
      }
     ],
-    "processed_at": "2026-10-19T01:50:41+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:41+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5115,8 +5196,10 @@
       "meaning": "수출 통제"
      }
     ],
-    "processed_at": "2026-10-19T01:50:46+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:46+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5255,8 +5338,10 @@
       "meaning": "6년간의 우라늄 탐사권"
      }
     ],
-    "processed_at": "2026-10-19T01:50:48+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5442,8 +5527,10 @@
       "meaning": "고정밀 광물 분석"
      }
     ],
-    "processed_at": "2026-10-19T01:50:59+00:00"
-   }
+    "processed_at": "2026-10-19T01:50:59+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5625,8 +5712,10 @@
       "meaning": "지역 사회경제 발전 지원 협력협약"
      }
     ],
-    "processed_at": "2026-10-19T01:51:04+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5812,8 +5901,10 @@
       "meaning": "인산염 분야"
      }
     ],
-    "processed_at": "2026-10-19T01:51:08+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6001,8 +6092,10 @@
       "meaning": "지역내총생산"
      }
     ],
-    "processed_at": "2026-10-19T01:51:23+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:23+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6184,8 +6277,10 @@
       "meaning": "혼합수산화침전물(배터리 소재용 중간재)"
      }
     ],
-    "processed_at": "2026-10-19T01:51:29+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6335,8 +6430,10 @@
       "meaning": "정부가 뒷받침·관리함"
      }
     ],
-    "processed_at": "2026-10-19T01:51:32+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:32+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -6525,8 +6622,10 @@
       "meaning": "부처 간 프로그램 조율"
      }
     ],
-    "processed_at": "2026-10-19T01:51:51+00:00"
-   }
+    "processed_at": "2026-10-19T01:51:51+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -6536,5 +6635,26 @@
   "original_link": 5,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:17:26+00:00",
+   "targets": 3,
+   "rewritten": 3,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 3,
+     "in": 10863,
+     "out": 246
+    }
+   },
+   "cost_usd": 0.0363
+  }
+ ]
 }

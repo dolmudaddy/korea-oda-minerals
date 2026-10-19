@@ -136,7 +136,7 @@
       "meaning": "광물 가공 부문"
      }
     ],
-    "oda_relevance": "한-몽 희토류 공동연구센터 출범, 공동위원회, 투자포럼 등 정부 간 협력과 POSCO International의 투자 재검토가 본문에 직접 나옴"
+    "oda_relevance": "몽골이 한국 기술과 결합한 희토류 가공 투자를 원해 공동연구센터를 축으로 한 가공·공급망 협력이 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -149,7 +149,17 @@
     "summarized_at": "2026-10-19T02:21:41+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['12']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한-몽 희토류 공동연구센터 출범, 공동위원회, 투자포럼 등 정부 간 협력과 POSCO International의 투자 재검토가 본문에 직접 나옴",
+     "rewritten_at": "2026-10-19T06:10:45+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -222,7 +232,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한-몽 희토류 공동연구센터 출범, 공동위원회, 투자포럼 등 정부 간 협력과 POSCO International의 투자 재검토가 본문에 직접 나옴",
+    "oda_relevance": "몽골이 한국 기술과 결합한 희토류 가공 투자를 원해 공동연구센터를 축으로 한 가공·공급망 협력이 확대될 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -243,7 +253,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:21:41+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -432,8 +443,10 @@
       "meaning": "공급망 투명성"
      }
     ],
-    "processed_at": "2026-10-19T02:21:54+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:54+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -612,8 +625,10 @@
       "meaning": "니켈 가격 변동성"
      }
     ],
-    "processed_at": "2026-10-19T02:21:58+00:00"
-   }
+    "processed_at": "2026-10-19T02:21:58+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -777,8 +792,10 @@
       "meaning": "특례(특별) 메커니즘"
      }
     ],
-    "processed_at": "2026-10-19T02:22:11+00:00"
-   }
+    "processed_at": "2026-10-19T02:22:11+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -950,8 +967,10 @@
       "meaning": "협력 심화 로드맵"
      }
     ],
-    "processed_at": "2026-10-19T02:22:27+00:00"
-   }
+    "processed_at": "2026-10-19T02:22:27+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1132,8 +1151,10 @@
       "meaning": "전략적 파트너"
      }
     ],
-    "processed_at": "2026-10-19T02:22:56+00:00"
-   }
+    "processed_at": "2026-10-19T02:22:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1313,8 +1334,10 @@
       "meaning": "핵심광물"
      }
     ],
-    "processed_at": "2026-10-19T02:23:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1495,8 +1518,10 @@
       "meaning": "시장 접근"
      }
     ],
-    "processed_at": "2026-10-19T02:23:23+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:23+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1678,8 +1703,10 @@
       "meaning": "국가중기개발계획"
      }
     ],
-    "processed_at": "2026-10-19T02:23:34+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:34+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1864,8 +1891,10 @@
       "meaning": "산업 회복력"
      }
     ],
-    "processed_at": "2026-10-19T02:23:49+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:49+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2012,8 +2041,10 @@
       "meaning": "추가될 것으로 전망됨"
      }
     ],
-    "processed_at": "2026-10-19T02:23:51+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:51+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2160,8 +2191,10 @@
       "meaning": "북말루쿠 니켈 생태계"
      }
     ],
-    "processed_at": "2026-10-19T02:23:53+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:53+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2308,8 +2341,10 @@
       "meaning": "인도네시아와 EU의 WTO 분쟁"
      }
     ],
-    "processed_at": "2026-10-19T02:23:55+00:00"
-   }
+    "processed_at": "2026-10-19T02:23:55+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2492,8 +2527,10 @@
       "meaning": "부가가치 중심의 핵심산업 개발"
      }
     ],
-    "processed_at": "2026-10-19T02:24:00+00:00"
-   }
+    "processed_at": "2026-10-19T02:24:00+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2675,8 +2712,10 @@
       "meaning": "상호 호혜적 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:24:04+00:00"
-   }
+    "processed_at": "2026-10-19T02:24:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2847,8 +2886,10 @@
       "meaning": "소규모 광업"
      }
     ],
-    "processed_at": "2026-10-19T02:24:09+00:00"
-   }
+    "processed_at": "2026-10-19T02:24:09+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -2858,5 +2899,26 @@
   "original_link": 2,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:45+00:00",
+   "targets": 1,
+   "rewritten": 1,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 1,
+     "in": 3467,
+     "out": 76
+    }
+   },
+   "cost_usd": 0.0115
+  }
+ ]
 }

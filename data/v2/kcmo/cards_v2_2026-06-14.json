@@ -140,7 +140,7 @@
       "meaning": "부가가치 가공"
      }
     ],
-    "oda_relevance": "한국과 몽골이 희토류 공동연구센터와 공동위원회, 투자포럼을 운영하며 한국 기업의 가공 분야 투자를 유도하고 있음."
+    "oda_relevance": "몽골이 원광 수출을 넘어 가공·제품화를 원하고 있어, 한국의 희토류 공급망 확보가 현지 가공 투자와 기술 결합 중심으로 전개될 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -153,7 +153,17 @@
     "summarized_at": "2026-10-19T02:40:34+00:00",
     "retry_reasons": [
      "입력에 없는 숫자: ['12', '2025']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국과 몽골이 희토류 공동연구센터와 공동위원회, 투자포럼을 운영하며 한국 기업의 가공 분야 투자를 유도하고 있음.",
+     "rewritten_at": "2026-10-19T06:10:47+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -222,7 +232,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국과 몽골이 희토류 공동연구센터와 공동위원회, 투자포럼을 운영하며 한국 기업의 가공 분야 투자를 유도하고 있음.",
+    "oda_relevance": "몽골이 원광 수출을 넘어 가공·제품화를 원하고 있어, 한국의 희토류 공급망 확보가 현지 가공 투자와 기술 결합 중심으로 전개될 전망임.",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -243,7 +253,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:40:34+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -316,7 +327,7 @@
       "meaning": "가시적 성과"
      }
     ],
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범시키고 희소금속·핵심광물·공급망 협력을 논의한 점이 협력의 근거임."
+    "oda_relevance": "한국과 몽골이 차관급 전략대화라는 정례 협의 틀을 마련해 희소금속·핵심광물·공급망 협력을 논의할 외교 채널이 생겼음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -326,7 +337,17 @@
     "input_body_status": "full",
     "input_chars": 1116,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:40:37+00:00"
+    "summarized_at": "2026-10-19T02:40:37+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부가 몽골과 차관급 전략대화를 출범시키고 희소금속·핵심광물·공급망 협력을 논의한 점이 협력의 근거임.",
+     "rewritten_at": "2026-10-19T06:10:48+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -394,7 +415,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범시키고 희소금속·핵심광물·공급망 협력을 논의한 점이 협력의 근거임.",
+    "oda_relevance": "한국과 몽골이 차관급 전략대화라는 정례 협의 틀을 마련해 희소금속·핵심광물·공급망 협력을 논의할 외교 채널이 생겼음",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -415,7 +436,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:40:37+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -488,7 +510,7 @@
       "meaning": "공급망"
      }
     ],
-    "oda_relevance": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력을 논의한 것이 근거이며, ODA 사업이나 자금 투입 여부는 확인 불가임."
+    "oda_relevance": "한국과 몽골이 첫 차관급 전략대화에서 희소금속·핵심광물·공급망을 협력 의제로 올려 양국 자원협력의 외교적 틀이 마련됐음."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -501,7 +523,17 @@
     "summarized_at": "2026-10-19T02:40:52+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 5줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력을 논의한 것이 근거이며, ODA 사업이나 자금 투입 여부는 확인 불가임.",
+     "rewritten_at": "2026-10-19T06:10:50+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -573,7 +605,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력을 논의한 것이 근거이며, ODA 사업이나 자금 투입 여부는 확인 불가임.",
+    "oda_relevance": "한국과 몽골이 첫 차관급 전략대화에서 희소금속·핵심광물·공급망을 협력 의제로 올려 양국 자원협력의 외교적 틀이 마련됐음.",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -594,7 +626,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:40:52+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -669,7 +702,7 @@
       "meaning": "공급망"
      }
     ],
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화에서 핵심광물·공급망 협력 심화를 논의했으나, ODA 사업 등 구체 내용은 확인 불가임"
+    "oda_relevance": "한국과 몽골이 차관급 전략대화로 핵심광물·희소금속·공급망 협력을 논의하는 정례 외교 채널을 마련했다는 의미임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -682,7 +715,17 @@
     "summarized_at": "2026-10-19T02:41:15+00:00",
     "retry_reasons": [
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: 'ing\": \"공급망\"}\\n  ],\\n  \"oda_relevance\": \"한국 외교부가 몽골과 핵심광물·공급망 협'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부가 몽골과 차관급 전략대화에서 핵심광물·공급망 협력 심화를 논의했으나, ODA 사업 등 구체 내용은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:10:51+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -755,7 +798,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화에서 핵심광물·공급망 협력 심화를 논의했으나, ODA 사업 등 구체 내용은 확인 불가임",
+    "oda_relevance": "한국과 몽골이 차관급 전략대화로 핵심광물·희소금속·공급망 협력을 논의하는 정례 외교 채널을 마련했다는 의미임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -776,7 +819,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:41:15+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -962,8 +1006,10 @@
       "meaning": "북말루쿠 지속가능성 방문 행사"
      }
     ],
-    "processed_at": "2026-10-19T02:41:19+00:00"
-   }
+    "processed_at": "2026-10-19T02:41:19+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1153,8 +1199,10 @@
       "meaning": "투자 계약"
      }
     ],
-    "processed_at": "2026-10-19T02:41:22+00:00"
-   }
+    "processed_at": "2026-10-19T02:41:22+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1327,8 +1375,10 @@
       "meaning": "울바 야금공장"
      }
     ],
-    "processed_at": "2026-10-19T02:41:41+00:00"
-   }
+    "processed_at": "2026-10-19T02:41:41+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1506,8 +1556,10 @@
       "meaning": "원조가 아닌 사업 협력을 강조하는 미국 측 표현"
      }
     ],
-    "processed_at": "2026-10-19T02:41:45+00:00"
-   }
+    "processed_at": "2026-10-19T02:41:45+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1693,8 +1745,10 @@
       "meaning": "인도네시아 금융거래분석보고센터"
      }
     ],
-    "processed_at": "2026-10-19T02:41:56+00:00"
-   }
+    "processed_at": "2026-10-19T02:41:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1843,8 +1897,10 @@
       "meaning": "주브치 오보(몽골 내 프로젝트 현장)"
      }
     ],
-    "processed_at": "2026-10-19T02:42:02+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:02+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1991,8 +2047,10 @@
       "meaning": "하류화(가공·부가가치 사업 확대)"
      }
     ],
-    "processed_at": "2026-10-19T02:42:04+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2139,8 +2197,10 @@
       "meaning": "다운스트림화(하류부문 가공·산업화)"
      }
     ],
-    "processed_at": "2026-10-19T02:42:06+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:06+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2287,8 +2347,10 @@
       "meaning": "다운스트림화(하류 산업화)"
      }
     ],
-    "processed_at": "2026-10-19T02:42:08+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2481,8 +2543,10 @@
       "meaning": "전기차 배터리 생태계"
      }
     ],
-    "processed_at": "2026-10-19T02:42:26+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:26+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2663,8 +2727,10 @@
       "meaning": "공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:42:38+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:38+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2817,8 +2883,10 @@
       "meaning": "녹색 하류화(광물 가공·부가가치 사업의 친환경화)"
      }
     ],
-    "processed_at": "2026-10-19T02:42:42+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:42+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2996,8 +3064,10 @@
       "meaning": "지속가능한 폐기물 관리"
      }
     ],
-    "processed_at": "2026-10-19T02:42:47+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:47+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3183,8 +3253,10 @@
       "meaning": "배터리 셀"
      }
     ],
-    "processed_at": "2026-10-19T02:42:52+00:00"
-   }
+    "processed_at": "2026-10-19T02:42:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3377,8 +3449,10 @@
       "meaning": "직업교육"
      }
     ],
-    "processed_at": "2026-10-19T02:43:08+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:08+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3564,8 +3638,10 @@
       "meaning": "투자 매력"
      }
     ],
-    "processed_at": "2026-10-19T02:43:13+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:13+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3755,8 +3831,10 @@
       "meaning": "지역 인적자원"
      }
     ],
-    "processed_at": "2026-10-19T02:43:18+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3935,8 +4013,10 @@
       "meaning": "배터리 재활용"
      }
     ],
-    "processed_at": "2026-10-19T02:43:24+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4114,8 +4194,10 @@
       "meaning": "개발 협력 파트너"
      }
     ],
-    "processed_at": "2026-10-19T02:43:28+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:28+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4279,8 +4361,10 @@
       "meaning": "채굴·가공·활용을 잇는 동기화된 산업 인프라 사슬"
      }
     ],
-    "processed_at": "2026-10-19T02:43:43+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:43+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4452,8 +4536,10 @@
       "meaning": "로드맵"
      }
     ],
-    "processed_at": "2026-10-19T02:43:51+00:00"
-   }
+    "processed_at": "2026-10-19T02:43:51+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4629,8 +4715,10 @@
       "meaning": "아와자 행동계획(2024–2034), 내륙 개도국 협력의 틀"
      }
     ],
-    "processed_at": "2026-10-19T02:44:13+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:13+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4815,8 +4903,10 @@
       "meaning": "상호 호혜적 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:44:25+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4994,8 +5084,10 @@
       "meaning": "기관 간 협력"
      }
     ],
-    "processed_at": "2026-10-19T02:44:29+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5141,8 +5233,10 @@
       "meaning": "생태계가 이미 확립되어 있음"
      }
     ],
-    "processed_at": "2026-10-19T02:44:35+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:35+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5332,8 +5426,10 @@
       "meaning": "열연코일(HRC) 수출 세계 1위"
      }
     ],
-    "processed_at": "2026-10-19T02:44:51+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:51+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5480,8 +5576,10 @@
       "meaning": "세계 무역의 혼란·변동"
      }
     ],
-    "processed_at": "2026-10-19T02:44:53+00:00"
-   }
+    "processed_at": "2026-10-19T02:44:53+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5668,8 +5766,10 @@
       "meaning": "시장 접근"
      }
     ],
-    "processed_at": "2026-10-19T02:45:10+00:00"
-   }
+    "processed_at": "2026-10-19T02:45:10+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5830,8 +5930,10 @@
       "meaning": "공동 투자"
      }
     ],
-    "processed_at": "2026-10-19T02:45:14+00:00"
-   }
+    "processed_at": "2026-10-19T02:45:14+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -5841,5 +5943,26 @@
   "original_link": 6,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:51+00:00",
+   "targets": 4,
+   "rewritten": 4,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 4,
+     "in": 11961,
+     "out": 333
+    }
+   },
+   "cost_usd": 0.0409
+  }
+ ]
 }

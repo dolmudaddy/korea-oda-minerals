@@ -138,7 +138,7 @@
       "meaning": "센터가 운영할 계획인 광물 기업 투자 협의 조직"
      }
     ],
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 핵심 광물 기술협력센터를 세워 교육·실증연구·투자협의체를 운영할 예정임."
+    "oda_relevance": "하노이 센터가 ODA 기반 교육·실증연구·기업 협의체 거점이 되어 한국의 베트남 핵심광물 공급망 협력이 확대될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -148,7 +148,17 @@
     "input_body_status": "full",
     "input_chars": 1115,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:07:41+00:00"
+    "summarized_at": "2026-10-19T02:07:41+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIAT가 산업통상부 ODA 사업으로 하노이에 핵심 광물 기술협력센터를 세워 교육·실증연구·투자협의체를 운영할 예정임.",
+     "rewritten_at": "2026-10-19T06:10:32+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -225,7 +235,7 @@
     ],
     "source_language": "ko",
     "country": "Vietnam",
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 핵심 광물 기술협력센터를 세워 교육·실증연구·투자협의체를 운영할 예정임.",
+    "oda_relevance": "하노이 센터가 ODA 기반 교육·실증연구·기업 협의체 거점이 되어 한국의 베트남 핵심광물 공급망 협력이 확대될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -241,8 +251,10 @@
       "meaning": "센터가 운영할 계획인 광물 기업 투자 협의 조직"
      }
     ],
-    "processed_at": "2026-10-19T02:07:41+00:00"
-   }
+    "processed_at": "2026-10-19T02:07:41+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -317,7 +329,7 @@
       "meaning": "베트남 광업제련과학기술연구소"
      }
     ],
-    "oda_relevance": "산업통상부 ODA 사업으로 KIAT가 하노이에 광물 기술협력센터를 세우고 교육·실증연구·투자협의체를 운영할 예정임"
+    "oda_relevance": "하노이 센터 설립으로 한국이 베트남 희토류·보크사이트·텅스텐 자원과 연계한 핵심광물 공급망 협력 거점을 확보할 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -330,7 +342,17 @@
     "summarized_at": "2026-10-19T02:07:54+00:00",
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "산업통상부 ODA 사업으로 KIAT가 하노이에 광물 기술협력센터를 세우고 교육·실증연구·투자협의체를 운영할 예정임",
+     "rewritten_at": "2026-10-19T06:10:33+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -407,7 +429,7 @@
     ],
     "source_language": "ko",
     "country": "Vietnam",
-    "oda_relevance": "산업통상부 ODA 사업으로 KIAT가 하노이에 광물 기술협력센터를 세우고 교육·실증연구·투자협의체를 운영할 예정임",
+    "oda_relevance": "하노이 센터 설립으로 한국이 베트남 희토류·보크사이트·텅스텐 자원과 연계한 핵심광물 공급망 협력 거점을 확보할 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -423,8 +445,10 @@
       "meaning": "베트남 광업제련과학기술연구소"
      }
     ],
-    "processed_at": "2026-10-19T02:07:54+00:00"
-   }
+    "processed_at": "2026-10-19T02:07:54+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -606,8 +630,10 @@
       "meaning": "핵심광물"
      }
     ],
-    "processed_at": "2026-10-19T02:08:02+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:02+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -792,8 +818,10 @@
       "meaning": "투자 기회"
      }
     ],
-    "processed_at": "2026-10-19T02:08:15+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:15+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -942,8 +970,10 @@
       "meaning": "전략적 투자"
      }
     ],
-    "processed_at": "2026-10-19T02:08:17+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:17+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1100,8 +1130,10 @@
       "meaning": "핵심광물 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:08:21+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:21+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1248,8 +1280,10 @@
       "meaning": "열 배"
      }
     ],
-    "processed_at": "2026-10-19T02:08:32+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:32+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1400,8 +1434,10 @@
       "meaning": "수출을 끌어올리다"
      }
     ],
-    "processed_at": "2026-10-19T02:08:34+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:34+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1587,8 +1623,10 @@
       "meaning": "현지 노동력·지역 인력"
      }
     ],
-    "processed_at": "2026-10-19T02:08:39+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:39+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1769,8 +1807,10 @@
       "meaning": "국내 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:08:51+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:51+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -1927,8 +1967,10 @@
       "meaning": "인센티브 부양책"
      }
     ],
-    "processed_at": "2026-10-19T02:08:54+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:54+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2071,8 +2113,10 @@
       "meaning": "장기 경제성장"
      }
     ],
-    "processed_at": "2026-10-19T02:08:56+00:00"
-   }
+    "processed_at": "2026-10-19T02:08:56+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2243,8 +2287,10 @@
       "meaning": "핵심광물"
      }
     ],
-    "processed_at": "2026-10-19T02:09:01+00:00"
-   }
+    "processed_at": "2026-10-19T02:09:01+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2426,8 +2472,10 @@
       "meaning": "상호 호혜적 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:09:05+00:00"
-   }
+    "processed_at": "2026-10-19T02:09:05+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2609,8 +2657,10 @@
       "meaning": "광산 계획 수립"
      }
     ],
-    "processed_at": "2026-10-19T02:09:19+00:00"
-   }
+    "processed_at": "2026-10-19T02:09:19+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2781,8 +2831,10 @@
       "meaning": "제15회 행사"
      }
     ],
-    "processed_at": "2026-10-19T02:09:22+00:00"
-   }
+    "processed_at": "2026-10-19T02:09:22+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -2857,7 +2909,7 @@
       "meaning": "CAREC 프로그램 하의 디지털 세관·물류 연합 제안"
      }
     ],
-    "oda_relevance": "한국 파트너와 설립한 R&D 센터가 언급되나, 한국 정부 기관이나 ODA 사업 연계 여부는 확인 불가임"
+    "oda_relevance": "한국 파트너와 R&D 센터를 세운 우즈베키스탄이 심층가공 중심 광물 개발을 추진해 한국의 기술협력 확대 여지가 있음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -2870,7 +2922,17 @@
     "summarized_at": "2026-10-19T02:09:53+00:00",
     "retry_reasons": [
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: 'g\": \"CAREC 프로그램 하의 디지털 세관·물류 연합 제안\"}\\n  ],\\n  \"oda_relevance\":'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 파트너와 설립한 R&D 센터가 언급되나, 한국 정부 기관이나 ODA 사업 연계 여부는 확인 불가임",
+     "rewritten_at": "2026-10-19T06:10:35+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -2947,7 +3009,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 파트너와 설립한 R&D 센터가 언급되나, 한국 정부 기관이나 ODA 사업 연계 여부는 확인 불가임",
+    "oda_relevance": "한국 파트너와 R&D 센터를 세운 우즈베키스탄이 심층가공 중심 광물 개발을 추진해 한국의 기술협력 확대 여지가 있음",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
@@ -2963,8 +3025,10 @@
       "meaning": "CAREC 프로그램 하의 디지털 세관·물류 연합 제안"
      }
     ],
-    "processed_at": "2026-10-19T02:09:53+00:00"
-   }
+    "processed_at": "2026-10-19T02:09:53+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -3142,8 +3206,10 @@
       "meaning": "원료 공급 안정 보장"
      }
     ],
-    "processed_at": "2026-10-19T02:10:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:10:07+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -3325,8 +3391,10 @@
       "meaning": "인도네시아 독립 100주년 목표 국가 발전 로드맵"
      }
     ],
-    "processed_at": "2026-10-19T02:10:22+00:00"
-   }
+    "processed_at": "2026-10-19T02:10:22+00:00",
+    "trial": true
+   },
+   "trial": true
   },
   {
    "schema_version": "card.v1",
@@ -3473,8 +3541,10 @@
       "meaning": "투자를 흡수함"
      }
     ],
-    "processed_at": "2026-10-19T02:10:34+00:00"
-   }
+    "processed_at": "2026-10-19T02:10:34+00:00",
+    "trial": true
+   },
+   "trial": true
   }
  ],
  "excluded": [],
@@ -3484,5 +3554,26 @@
   "original_link": 5,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": true,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:35+00:00",
+   "targets": 3,
+   "rewritten": 3,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 3,
+     "in": 10346,
+     "out": 242
+    }
+   },
+   "cost_usd": 0.0347
+  }
+ ]
 }

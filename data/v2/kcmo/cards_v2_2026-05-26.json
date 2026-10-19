@@ -138,7 +138,7 @@
       "meaning": "베트남 광업과학기술협회"
      }
     ],
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 광물 기술협력센터를 설립해 교육·실증 연구·기업 투자협의체를 운영할 계획임."
+    "oda_relevance": "하노이 센터를 거점으로 교육·실증 연구·투자협의체가 가동되면 한국의 핵심광물 공급망 안정화를 위한 현지 협력 기반이 마련될 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -148,7 +148,17 @@
     "input_body_status": "full",
     "input_chars": 873,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:16:23+00:00"
+    "summarized_at": "2026-10-19T02:16:23+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "KIAT가 산업통상부 ODA 사업으로 하노이에 광물 기술협력센터를 설립해 교육·실증 연구·기업 투자협의체를 운영할 계획임.",
+     "rewritten_at": "2026-10-19T06:10:42+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -225,7 +235,7 @@
     ],
     "source_language": "ko",
     "country": "Vietnam",
-    "oda_relevance": "KIAT가 산업통상부 ODA 사업으로 하노이에 광물 기술협력센터를 설립해 교육·실증 연구·기업 투자협의체를 운영할 계획임.",
+    "oda_relevance": "하노이 센터를 거점으로 교육·실증 연구·투자협의체가 가동되면 한국의 핵심광물 공급망 안정화를 위한 현지 협력 기반이 마련될 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -246,7 +256,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:16:23+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -321,7 +332,7 @@
       "meaning": "전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "한국 정부·기업이 등장하며 희토류 공동연구센터와 공동위원회 등 한-몽 협력 근거가 있으나, ODA 사업 여부는 확인 불가임"
+    "oda_relevance": "몽골이 원료 수출을 넘어 가공 단계로 확대하려 해, 한국의 기술·투자와 연계한 희토류 공급망 협력이 넓어질 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -335,7 +346,17 @@
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)",
      "입력에 없는 숫자: ['12', '2025']"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 정부·기업이 등장하며 희토류 공동연구센터와 공동위원회 등 한-몽 협력 근거가 있으나, ODA 사업 여부는 확인 불가임",
+     "rewritten_at": "2026-10-19T06:10:44+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -416,7 +437,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 정부·기업이 등장하며 희토류 공동연구센터와 공동위원회 등 한-몽 협력 근거가 있으나, ODA 사업 여부는 확인 불가임",
+    "oda_relevance": "몽골이 원료 수출을 넘어 가공 단계로 확대하려 해, 한국의 기술·투자와 연계한 희토류 공급망 협력이 넓어질 전망임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -437,7 +458,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:16:37+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -616,8 +638,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T02:16:40+00:00"
-   }
+    "processed_at": "2026-10-19T02:16:40+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -803,8 +827,10 @@
       "meaning": "양해각서(MoU)"
      }
     ],
-    "processed_at": "2026-10-19T02:16:48+00:00"
-   }
+    "processed_at": "2026-10-19T02:16:48+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -979,8 +1005,10 @@
       "meaning": "희토류"
      }
     ],
-    "processed_at": "2026-10-19T02:16:54+00:00"
-   }
+    "processed_at": "2026-10-19T02:16:54+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1167,8 +1195,10 @@
       "meaning": "국가 수입(세입)"
      }
     ],
-    "processed_at": "2026-10-19T02:17:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1313,8 +1343,10 @@
       "meaning": "선진 산업국"
      }
     ],
-    "processed_at": "2026-10-19T02:17:24+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:24+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1495,8 +1527,10 @@
       "meaning": "데이터 식민주의"
      }
     ],
-    "processed_at": "2026-10-19T02:17:34+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:34+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1682,8 +1716,10 @@
       "meaning": "상호 호혜적 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:17:39+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:39+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1865,8 +1901,10 @@
       "meaning": "광업 분야 교육"
      }
     ],
-    "processed_at": "2026-10-19T02:17:52+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2044,8 +2082,10 @@
       "meaning": "에너지 전환"
      }
     ],
-    "processed_at": "2026-10-19T02:17:56+00:00"
-   }
+    "processed_at": "2026-10-19T02:17:56+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2226,8 +2266,10 @@
       "meaning": "에너지 자립"
      }
     ],
-    "processed_at": "2026-10-19T02:18:11+00:00"
-   }
+    "processed_at": "2026-10-19T02:18:11+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2380,8 +2422,10 @@
       "meaning": "전기차(EV) 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:18:23+00:00"
-   }
+    "processed_at": "2026-10-19T02:18:23+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2562,8 +2606,10 @@
       "meaning": "국가전략프로젝트"
      }
     ],
-    "processed_at": "2026-10-19T02:18:35+00:00"
-   }
+    "processed_at": "2026-10-19T02:18:35+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -2573,5 +2619,26 @@
   "original_link": 3,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:10:44+00:00",
+   "targets": 2,
+   "rewritten": 2,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 2,
+     "in": 6605,
+     "out": 167
+    }
+   },
+   "cost_usd": 0.0223
+  }
+ ]
 }

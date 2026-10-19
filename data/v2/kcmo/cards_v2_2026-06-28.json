@@ -232,8 +232,10 @@
       "meaning": "공급원을 다변화함"
      }
     ],
-    "processed_at": "2026-10-19T02:49:15+00:00"
-   }
+    "processed_at": "2026-10-19T02:49:15+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -418,8 +420,10 @@
       "meaning": "FV72 등급 페로텅스텐"
      }
     ],
-    "processed_at": "2026-10-19T02:49:25+00:00"
-   }
+    "processed_at": "2026-10-19T02:49:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -605,8 +609,10 @@
       "meaning": "예비 분석 단계"
      }
     ],
-    "processed_at": "2026-10-19T02:49:38+00:00"
-   }
+    "processed_at": "2026-10-19T02:49:38+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -679,7 +685,7 @@
       "meaning": "첫 한국-중앙아시아 정상회의"
      }
     ],
-    "oda_relevance": "한국 경제부총리와 우즈베키스탄 장관이 핵심광물 공급망 협력에 합의했고, 향후 EDCF 정책협의를 통해 논의를 이어가기로 했음."
+    "oda_relevance": "우즈베키스탄의 다양한 전략광물을 활용한 공급망 협력 확대와 EDCF 정책협의 지속이 9월 정상회의 전후 협력 구체화의 계기가 될 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -689,7 +695,17 @@
     "input_body_status": "full",
     "input_chars": 2662,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:49:43+00:00"
+    "summarized_at": "2026-10-19T02:49:43+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 경제부총리와 우즈베키스탄 장관이 핵심광물 공급망 협력에 합의했고, 향후 EDCF 정책협의를 통해 논의를 이어가기로 했음.",
+     "rewritten_at": "2026-10-19T06:10:58+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -761,7 +777,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 경제부총리와 우즈베키스탄 장관이 핵심광물 공급망 협력에 합의했고, 향후 EDCF 정책협의를 통해 논의를 이어가기로 했음.",
+    "oda_relevance": "우즈베키스탄의 다양한 전략광물을 활용한 공급망 협력 확대와 EDCF 정책협의 지속이 9월 정상회의 전후 협력 구체화의 계기가 될 전망임.",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -782,7 +798,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:49:43+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -851,7 +868,7 @@
       "meaning": "특별 전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "한국 국회의원들이 핵심광물·공급망 협력에 의회 차원 지원을 약속했으나 ODA 사업 등 구체 내용은 확인 불가임"
+    "oda_relevance": "9월 서울 정상회담을 앞두고 텅스텐·몰리브덴 등 핵심광물을 공급망 협력의 축으로 제시해 한-우즈벡 광물 협력 확대 논의가 힘을 받을 전망임"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -865,7 +882,17 @@
     "retry_reasons": [
      "lines는 3줄이어야 함 (현재 4줄)",
      "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: ': \"안정적인 법·제도적 틀\"}\\n  ],\\n  \"oda_relevance\": \"한국 국회의원들이 핵심광물·공급'"
-    ]
+    ],
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 국회의원들이 핵심광물·공급망 협력에 의회 차원 지원을 약속했으나 ODA 사업 등 구체 내용은 확인 불가임",
+     "rewritten_at": "2026-10-19T06:10:59+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -937,7 +964,7 @@
     ],
     "source_language": "en",
     "country": "Uzbekistan",
-    "oda_relevance": "한국 국회의원들이 핵심광물·공급망 협력에 의회 차원 지원을 약속했으나 ODA 사업 등 구체 내용은 확인 불가임",
+    "oda_relevance": "9월 서울 정상회담을 앞두고 텅스텐·몰리브덴 등 핵심광물을 공급망 협력의 축으로 제시해 한-우즈벡 광물 협력 확대 논의가 힘을 받을 전망임",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -954,7 +981,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:50:11+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1125,8 +1153,10 @@
       "meaning": "회복력 있고 다변화된 공급망"
      }
     ],
-    "processed_at": "2026-10-19T02:50:17+00:00"
-   }
+    "processed_at": "2026-10-19T02:50:17+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1199,7 +1229,7 @@
       "meaning": "공급망"
      }
     ],
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범해 핵심광물·희소금속·공급망 협력 확대를 논의한 점이 협력 근거임"
+    "oda_relevance": "차관급 전략대화라는 정례 협의 틀이 마련돼 몽골과의 희소금속·핵심광물·공급망 협력을 정책 차원에서 논의할 수 있게 됐음"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1209,7 +1239,17 @@
     "input_body_status": "full",
     "input_chars": 1116,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:50:21+00:00"
+    "summarized_at": "2026-10-19T02:50:21+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부가 몽골과 차관급 전략대화를 출범해 핵심광물·희소금속·공급망 협력 확대를 논의한 점이 협력 근거임",
+     "rewritten_at": "2026-10-19T06:11:01+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1281,7 +1321,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범해 핵심광물·희소금속·공급망 협력 확대를 논의한 점이 협력 근거임",
+    "oda_relevance": "차관급 전략대화라는 정례 협의 틀이 마련돼 몽골과의 희소금속·핵심광물·공급망 협력을 정책 차원에서 논의할 수 있게 됐음",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
@@ -1302,7 +1342,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:50:21+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1375,7 +1416,7 @@
       "meaning": "공급망 회복력"
      }
     ],
-    "oda_relevance": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력 확대를 논의한 첫 차관급 전략대화로, 양국 협력의 정책 대화 기반이 마련되었음."
+    "oda_relevance": "핵심광물·공급망 협력을 다루는 첫 차관급 전략대화가 출범해, 한국의 대(對)몽골 광물 협력을 외교 채널로 확대할 계기가 될 전망임."
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1385,7 +1426,17 @@
     "input_body_status": "full",
     "input_chars": 1657,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:50:25+00:00"
+    "summarized_at": "2026-10-19T02:50:25+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력 확대를 논의한 첫 차관급 전략대화로, 양국 협력의 정책 대화 기반이 마련되었음.",
+     "rewritten_at": "2026-10-19T06:11:02+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1457,7 +1508,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부 제1차관이 몽골 측과 핵심광물·공급망 협력 확대를 논의한 첫 차관급 전략대화로, 양국 협력의 정책 대화 기반이 마련되었음.",
+    "oda_relevance": "핵심광물·공급망 협력을 다루는 첫 차관급 전략대화가 출범해, 한국의 대(對)몽골 광물 협력을 외교 채널로 확대할 계기가 될 전망임.",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1478,7 +1529,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:50:25+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1549,7 +1601,7 @@
       "meaning": "공급망"
      }
     ],
-    "oda_relevance": "한국 외교부가 몽골과 핵심광물·공급망 협력을 논의하는 차관급 전략대화를 시작한 점이 한국과의 협력 근거임"
+    "oda_relevance": "한국 외교부와 몽골의 차관급 전략대화로 핵심광물·공급망 협력을 논의할 정례 외교 채널이 마련됨"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1559,7 +1611,17 @@
     "input_body_status": "full",
     "input_chars": 2571,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:50:40+00:00"
+    "summarized_at": "2026-10-19T02:50:40+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 외교부가 몽골과 핵심광물·공급망 협력을 논의하는 차관급 전략대화를 시작한 점이 한국과의 협력 근거임",
+     "rewritten_at": "2026-10-19T06:11:04+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1628,7 +1690,7 @@
     ],
     "source_language": "en",
     "country": "Mongolia",
-    "oda_relevance": "한국 외교부가 몽골과 핵심광물·공급망 협력을 논의하는 차관급 전략대화를 시작한 점이 한국과의 협력 근거임",
+    "oda_relevance": "한국 외교부와 몽골의 차관급 전략대화로 핵심광물·공급망 협력을 논의할 정례 외교 채널이 마련됨",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
@@ -1645,7 +1707,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:50:40+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -1718,7 +1781,7 @@
       "meaning": "희소금속 협력센터(한-몽골, 울란바토르)"
      }
     ],
-    "oda_relevance": "한국 정부(Ministry of Trade, Industry and Resources)가 키르기스스탄과 핵심광물 협력을 논의했으나 ODA 사업 여부는 확인 불가임"
+    "oda_relevance": "한국이 키르기스스탄과 핵심광물을 협력 의제에 올려, 중앙아시아에서 한국의 광물 협력 대상이 넓어질 가능성을 보여줌"
    },
    "provenance": {
     "model": "claude-sonnet-5-5",
@@ -1728,7 +1791,17 @@
     "input_body_status": "full",
     "input_chars": 1191,
     "attempts": 1,
-    "summarized_at": "2026-10-19T02:50:51+00:00"
+    "summarized_at": "2026-10-19T02:50:51+00:00",
+    "rewrite": {
+     "field": "oda_relevance",
+     "model": "claude-sonnet-5-5",
+     "prompt_file": "prompts/summarize_v2.md",
+     "prompt_version": "v2.2",
+     "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+     "attempts": 1,
+     "before": "한국 정부(Ministry of Trade, Industry and Resources)가 키르기스스탄과 핵심광물 협력을 논의했으나 ODA 사업 여부는 확인 불가임",
+     "rewritten_at": "2026-10-19T06:11:05+00:00"
+    }
    },
    "ext": {
     "kcmo": {
@@ -1804,7 +1877,7 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국 정부(Ministry of Trade, Industry and Resources)가 키르기스스탄과 핵심광물 협력을 논의했으나 ODA 사업 여부는 확인 불가임",
+    "oda_relevance": "한국이 키르기스스탄과 핵심광물을 협력 의제에 올려, 중앙아시아에서 한국의 광물 협력 대상이 넓어질 가능성을 보여줌",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
@@ -1821,7 +1894,8 @@
      }
     ],
     "processed_at": "2026-10-19T02:50:51+00:00"
-   }
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2002,8 +2076,10 @@
       "meaning": "카자흐스탄이 실무 지원 역할을 수행한 과거 핵합의"
      }
     ],
-    "processed_at": "2026-10-19T02:51:03+00:00"
-   }
+    "processed_at": "2026-10-19T02:51:03+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2192,8 +2268,10 @@
       "meaning": "정책 개선"
      }
     ],
-    "processed_at": "2026-10-19T02:51:18+00:00"
-   }
+    "processed_at": "2026-10-19T02:51:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2379,8 +2457,10 @@
       "meaning": "부가가치"
      }
     ],
-    "processed_at": "2026-10-19T02:51:23+00:00"
-   }
+    "processed_at": "2026-10-19T02:51:23+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2561,8 +2641,10 @@
       "meaning": "글로벌 공급망 회복력"
      }
     ],
-    "processed_at": "2026-10-19T02:51:36+00:00"
-   }
+    "processed_at": "2026-10-19T02:51:36+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2739,8 +2821,10 @@
       "meaning": "3+세대 원자로 기술"
      }
     ],
-    "processed_at": "2026-10-19T02:51:52+00:00"
-   }
+    "processed_at": "2026-10-19T02:51:52+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -2925,8 +3009,10 @@
       "meaning": "공급 과잉(잉여)"
      }
     ],
-    "processed_at": "2026-10-19T02:52:04+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:04+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3113,8 +3199,10 @@
       "meaning": "고로(용광로)"
      }
     ],
-    "processed_at": "2026-10-19T02:52:14+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:14+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3287,8 +3375,10 @@
       "meaning": "유럽과 아시아를 잇는 중간회랑(운송로)"
      }
     ],
-    "processed_at": "2026-10-19T02:52:18+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:18+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3460,8 +3550,10 @@
       "meaning": "연구·혁신 주간"
      }
     ],
-    "processed_at": "2026-10-19T02:52:35+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:35+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3651,8 +3743,10 @@
       "meaning": "이동의 자유와 안전의 완전한 보장"
      }
     ],
-    "processed_at": "2026-10-19T02:52:39+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:39+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -3833,8 +3927,10 @@
       "meaning": "공급망 회복력"
      }
     ],
-    "processed_at": "2026-10-19T02:52:53+00:00"
-   }
+    "processed_at": "2026-10-19T02:52:53+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4017,8 +4113,10 @@
       "meaning": "제련 부산물인 슬래그"
      }
     ],
-    "processed_at": "2026-10-19T02:53:07+00:00"
-   }
+    "processed_at": "2026-10-19T02:53:07+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4209,8 +4307,10 @@
       "meaning": "자바섬 외 지역"
      }
     ],
-    "processed_at": "2026-10-19T02:53:20+00:00"
-   }
+    "processed_at": "2026-10-19T02:53:20+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4374,8 +4474,10 @@
       "meaning": "채굴·가공·활용을 잇는 일관된 산업 인프라 체인"
      }
     ],
-    "processed_at": "2026-10-19T02:53:33+00:00"
-   }
+    "processed_at": "2026-10-19T02:53:33+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4544,8 +4646,10 @@
       "meaning": "1994년 미국의 우라늄 비밀 반출 작전"
      }
     ],
-    "processed_at": "2026-10-19T02:53:42+00:00"
-   }
+    "processed_at": "2026-10-19T02:53:42+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4710,8 +4814,10 @@
       "meaning": "협력 심화 로드맵"
      }
     ],
-    "processed_at": "2026-10-19T02:53:46+00:00"
-   }
+    "processed_at": "2026-10-19T02:53:46+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -4883,8 +4989,10 @@
       "meaning": "아직 개발되지 않은 자원"
      }
     ],
-    "processed_at": "2026-10-19T02:54:03+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:03+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5057,8 +5165,10 @@
       "meaning": "화석연료 없는 친환경 철강"
      }
     ],
-    "processed_at": "2026-10-19T02:54:14+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:14+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5247,8 +5357,10 @@
       "meaning": "지역 사회경제 발전 지원을 위한 협력 협정"
      }
     ],
-    "processed_at": "2026-10-19T02:54:25+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:25+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5430,8 +5542,10 @@
       "meaning": "상호 이익이 되는 협력관계"
      }
     ],
-    "processed_at": "2026-10-19T02:54:29+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:29+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5613,8 +5727,10 @@
       "meaning": "니켈 하류화(가공·제련 고도화)"
      }
     ],
-    "processed_at": "2026-10-19T02:54:43+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:43+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5763,8 +5879,10 @@
       "meaning": "세대 간 메가프로젝트"
      }
     ],
-    "processed_at": "2026-10-19T02:54:47+00:00"
-   }
+    "processed_at": "2026-10-19T02:54:47+00:00",
+    "trial": false
+   },
+   "trial": false
   },
   {
    "schema_version": "card.v1",
@@ -5953,8 +6071,10 @@
       "meaning": "주요 구매처(인수자)"
      }
     ],
-    "processed_at": "2026-10-19T02:55:01+00:00"
-   }
+    "processed_at": "2026-10-19T02:55:01+00:00",
+    "trial": false
+   },
+   "trial": false
   }
  ],
  "excluded": [],
@@ -5964,5 +6084,26 @@
   "original_link": 10,
   "body_based": 0,
   "failed": 0
- }
+ },
+ "trial": false,
+ "rewrites": [
+  {
+   "field": "oda_relevance",
+   "prompt_version": "v2.2",
+   "prompt_sha256": "49d1e9f44d8eae38904f7467d35690dedcb1d886bf699abd1e6c764e63cda905",
+   "model": "claude-sonnet-5-5",
+   "at": "2026-10-19T06:11:05+00:00",
+   "targets": 6,
+   "rewritten": 6,
+   "kept": [],
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 6,
+     "in": 17801,
+     "out": 516
+    }
+   },
+   "cost_usd": 0.0611
+  }
+ ]
 }
