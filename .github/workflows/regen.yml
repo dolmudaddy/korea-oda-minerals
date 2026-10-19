@@ -26,6 +26,10 @@ on:
         description: '비교 모델'
         required: false
         default: 'claude-sonnet-5-5'
+      rewrite_field:
+        description: '이 필드 문장만 재작성하는 패스 (예: oda_relevance). 비우면 일반 재생성'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -66,12 +70,20 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PYTHONIOENCODING: utf-8
+          REWRITE_FIELD: ${{ inputs.rewrite_field }}
         run: |
-          python -m mincore.regen --service kcmo --input data --out data/v2 \
-            --prompt prompts/summarize_v2.md --from "${{ inputs.from }}" --to "${{ inputs.to }}" \
-            --resume --max-issues "${{ inputs.max_issues }}" --test-before 2026-05-24 \
-            --compare-n "${{ inputs.compare_n }}" --compare-model "${{ inputs.compare_model }}"
-          cat data/v2/kcmo/regen_report.md >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$REWRITE_FIELD" ]; then
+            python -m mincore.regen --service kcmo --input data --out data/v2 \
+              --prompt prompts/summarize_v2.md --from "${{ inputs.from }}" --to "${{ inputs.to }}" \
+              --test-before 2026-05-24 --rewrite-field "$REWRITE_FIELD"
+            cat "data/v2/kcmo/rewrite_report_${REWRITE_FIELD}.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            python -m mincore.regen --service kcmo --input data --out data/v2 \
+              --prompt prompts/summarize_v2.md --from "${{ inputs.from }}" --to "${{ inputs.to }}" \
+              --resume --max-issues "${{ inputs.max_issues }}" --test-before 2026-05-24 \
+              --compare-n "${{ inputs.compare_n }}" --compare-model "${{ inputs.compare_model }}"
+            cat data/v2/kcmo/regen_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       # 중간에 실패해도 끝난 회차는 남긴다
       - name: Commit data/v2
