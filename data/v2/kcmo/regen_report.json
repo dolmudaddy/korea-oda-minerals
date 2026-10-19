@@ -2,27 +2,51 @@
  "service": "kcmo",
  "issues": [
   {
+   "line_median": 45.0,
+   "line_max": 78,
+   "over100": 0,
+   "oda_filled": 3,
+   "flags": {},
+   "model_used": {
+    "claude-sonnet-5-5": 36
+   },
+   "retry_reason": {
+    "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048)": 1,
+    "입력에 없는 숫자: ['12']": 3,
+    "lines는 3줄이어야 함 (현재 5줄)": 2,
+    "lines는 3줄이어야 함 (현재 4줄)": 4,
+    "JSON 파싱 실패: 문법 오류(Extra data, 위치 868)": 1,
+    "너무 짧은 줄 1개 (최소 15자)": 1
+   },
+   "cost_usd": 1.0554,
+   "usage": {
+    "claude-sonnet-5-5": {
+     "calls": 45,
+     "in": 152110,
+     "out": 39936
+    }
+   },
    "week": "2026-10-18",
    "test": false,
    "v1_articles": 36,
    "cards": 36,
    "excluded": 0,
-   "body_got": 31,
+   "body_got": 30,
    "body_status": {
-    "full": 30,
+    "full": 29,
     "partial": 1,
-    "title_only": 5
+    "title_only": 6
    },
    "basis": {
-    "body": 31,
-    "title": 5
+    "body": 30,
+    "title": 6
    },
    "original_link": 36,
    "reader_proxy_used": 4,
    "fail_reason": {},
    "v1_original_link": 5,
    "v1_failed": 0,
-   "model": "claude-haiku-4-5-20251001",
+   "model": "claude-sonnet-5-5",
    "prompt_version": "v2.1"
   }
  ],
@@ -30,23 +54,39 @@
   "v1_articles": 36,
   "cards": 36,
   "excluded": 0,
-  "body_got": 31,
+  "body_got": 30,
   "original_link": 36,
   "reader_proxy_used": 4,
   "v1_original_link": 5,
   "v1_failed": 0,
-  "basis_body": 31
+  "cost_usd": 1.0554,
+  "basis_body": 30
  },
  "operational": {
   "v1_articles": 36,
   "cards": 36,
   "excluded": 0,
-  "body_got": 31,
+  "body_got": 30,
   "original_link": 36,
   "reader_proxy_used": 4,
   "v1_original_link": 5,
   "v1_failed": 0,
-  "basis_body": 31
+  "cost_usd": 1.0554,
+  "basis_body": 30
  },
- "fail_reasons": {}
+ "fail_reasons": {},
+ "retry_reasons": {
+  "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048)": 1,
+  "입력에 없는 숫자: ['12']": 3,
+  "lines는 3줄이어야 함 (현재 5줄)": 2,
+  "lines는 3줄이어야 함 (현재 4줄)": 4,
+  "JSON 파싱 실패: 문법 오류(Extra data, 위치 868)": 1,
+  "너무 짧은 줄 1개 (최소 15자)": 1
+ },
+ "flags": {},
+ "line_len": {
+  "lines": 96,
+  "median": 45.0,
+  "max": 78
+ }
 }

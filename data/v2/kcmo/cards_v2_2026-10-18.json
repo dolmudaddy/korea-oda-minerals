@@ -2,28 +2,44 @@
  "schema_version": "card.v1",
  "service": "kcmo",
  "week_of": "2026-10-18",
- "generated_at": "2026-10-18T15:47:56+00:00",
- "mincore_version": "0.3.2",
- "model": "claude-haiku-4-5-20251001",
+ "generated_at": "2026-10-19T01:51:51+00:00",
+ "mincore_version": "0.3.3",
+ "model": "claude-sonnet-5-5",
  "prompt_version": "v2.1",
  "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
  "stats": {
   "v1_articles": 36,
   "cards": 36,
   "excluded": 0,
-  "body_got": 31,
-  "body_rate": 0.861,
+  "body_got": 30,
+  "body_rate": 0.833,
   "original_link": 36,
   "reader_proxy_used": 4,
+  "line_len": {
+   "lines": 96,
+   "median": 45.0,
+   "max": 78,
+   "over60": 10,
+   "over100": 0
+  },
+  "oda_filled": 3,
+  "usage": {
+   "claude-sonnet-5-5": {
+    "calls": 45,
+    "in": 152110,
+    "out": 39936
+   }
+  },
+  "cost_usd": 1.0554,
   "body_status": {
-   "full": 30,
+   "full": 29,
    "partial": 1,
-   "title_only": 5
+   "title_only": 6
   },
   "body_source": {
-   "trafilatura": 27,
+   "trafilatura": 26,
    "reader_proxy": 4,
-   "none": 5
+   "none": 6
   },
   "resolve": {
    "decoder": 31,
@@ -31,8 +47,20 @@
   },
   "fail_reason": {},
   "basis": {
-   "body": 31,
-   "title": 5
+   "body": 30,
+   "title": 6
+  },
+  "retry_reason": {
+   "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048)": 1,
+   "입력에 없는 숫자: ['12']": 3,
+   "lines는 3줄이어야 함 (현재 5줄)": 2,
+   "lines는 3줄이어야 함 (현재 4줄)": 4,
+   "JSON 파싱 실패: 문법 오류(Extra data, 위치 868)": 1,
+   "너무 짧은 줄 1개 (최소 15자)": 1
+  },
+  "flags": {},
+  "model_used": {
+   "claude-sonnet-5-5": 36
   }
  },
  "total": 36,
@@ -54,7 +82,7 @@
    },
    "published": "2026-09-17",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:35:51+00:00",
+   "collected_at": "2026-10-19T01:45:55+00:00",
    "score": 16,
    "body": {
     "status": "full",
@@ -74,9 +102,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "한국과 카자흐스탄이 대통령 정상회담에서 원자력 에너지 협력 양해각서를 포함해 13개 문서에 서명함.",
-     "양국은 원유·우라늄 거래를 넘어 리튬 등 핵심광물 협력 확대에 합의했으며, 한국의 대카 투자는 12 billion 달러를 초과함.",
-     "한국이 중앙아 5개국 지도자를 초청해 첫 대통령급 정상회담을 개최했으며, 핵심광물·에너지·기술 협력 심화를 추구 중임."
+     "토카예프 대통령 방한 중 한국·카자흐스탄이 원자력 평화적 이용 MoU를 체결했음",
+     "서울 정상회담에서 원유·과학기술 등을 포함한 문서 13건이 서명됐음",
+     "한국은 원유·우라늄을 넘어 리튬 등 핵심광물로 협력 확대를 요청했음"
     ],
     "basis": "body",
     "key_figures": [
@@ -88,18 +116,18 @@
      "Bilateral trade exceeded $3 billion last year, while South Korean investment in Kazakhstan has surpassed $12 billion.",
      "The planned facility will process 5 billion cubic meters of raw gas annually."
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
      "카자흐스탄",
+     "한국",
      "핵심광물",
-     "원자력에너지",
-     "한·카 협력",
-     "공급망 다각화"
+     "리튬",
+     "원자력"
     ],
     "key_phrases": [
      {
-      "phrase": "Comprehensive Strategic Partnership",
-      "meaning": "포괄적 전략적 동반자 관계"
+      "phrase": "peaceful use of nuclear energy",
+      "meaning": "원자력의 평화적 이용"
      },
      {
       "phrase": "critical minerals",
@@ -107,20 +135,24 @@
      },
      {
       "phrase": "diversify its supply chains",
-      "meaning": "공급망을 다각화하다"
+      "meaning": "공급망 다변화"
+     },
+     {
+      "phrase": "Comprehensive Strategic Partnership",
+      "meaning": "포괄적 전략적 동반자 관계"
      }
     ],
-    "oda_relevance": "한국이 카자흐스탄과 원자력, 핵심광물(리튬 포함), 에너지 협력을 강화하는 정상회담을 개최했으며, 중국 의존도 감소와 공급망 다각화를 목표로 중앙아 5개국과의 관계 고도화를 추진 중임."
+    "oda_relevance": "한국 정부가 카자흐스탄과 원유·우라늄을 넘어 리튬 등 핵심광물 협력 확대를 요청했고 정상회담에서 13건 문서에 서명했음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:35:57+00:00"
+    "summarized_at": "2026-10-19T01:46:07+00:00"
    },
    "ext": {
     "kcmo": {
@@ -129,14 +161,6 @@
      "country": "Kazakhstan",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -182,17 +206,17 @@
     "score": 16,
     "published": "2026-09-17",
     "korean_summary": [
-     "한국과 카자흐스탄이 대통령 정상회담에서 원자력 에너지 협력 양해각서를 포함해 13개 문서에 서명함.",
-     "양국은 원유·우라늄 거래를 넘어 리튬 등 핵심광물 협력 확대에 합의했으며, 한국의 대카 투자는 12 billion 달러를 초과함.",
-     "한국이 중앙아 5개국 지도자를 초청해 첫 대통령급 정상회담을 개최했으며, 핵심광물·에너지·기술 협력 심화를 추구 중임."
+     "토카예프 대통령 방한 중 한국·카자흐스탄이 원자력 평화적 이용 MoU를 체결했음",
+     "서울 정상회담에서 원유·과학기술 등을 포함한 문서 13건이 서명됐음",
+     "한국은 원유·우라늄을 넘어 리튬 등 핵심광물로 협력 확대를 요청했음"
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
      "카자흐스탄",
+     "한국",
      "핵심광물",
-     "원자력에너지",
-     "한·카 협력",
-     "공급망 다각화"
+     "리튬",
+     "원자력"
     ],
     "ai_processed": true,
     "card_id": "6e72c8249329",
@@ -209,12 +233,12 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국이 카자흐스탄과 원자력, 핵심광물(리튬 포함), 에너지 협력을 강화하는 정상회담을 개최했으며, 중국 의존도 감소와 공급망 다각화를 목표로 중앙아 5개국과의 관계 고도화를 추진 중임.",
-    "category_ko": "ODA 협력",
+    "oda_relevance": "한국 정부가 카자흐스탄과 원유·우라늄을 넘어 리튬 등 핵심광물 협력 확대를 요청했고 정상회담에서 13건 문서에 서명했음",
+    "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "Comprehensive Strategic Partnership",
-      "meaning": "포괄적 전략적 동반자 관계"
+      "phrase": "peaceful use of nuclear energy",
+      "meaning": "원자력의 평화적 이용"
      },
      {
       "phrase": "critical minerals",
@@ -222,10 +246,14 @@
      },
      {
       "phrase": "diversify its supply chains",
-      "meaning": "공급망을 다각화하다"
+      "meaning": "공급망 다변화"
+     },
+     {
+      "phrase": "Comprehensive Strategic Partnership",
+      "meaning": "포괄적 전략적 동반자 관계"
      }
     ],
-    "processed_at": "2026-10-18T15:35:57+00:00"
+    "processed_at": "2026-10-19T01:46:07+00:00"
    }
   },
   {
@@ -245,7 +273,7 @@
    },
    "published": "2026-09-28",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:36:27+00:00",
+   "collected_at": "2026-10-19T01:46:11+00:00",
    "score": 14,
    "body": {
     "status": "full",
@@ -262,9 +290,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "탄자니아 광물부 차관이 광산업자들에게 엘니뇨 대비 채굴지 안전시설 개선을 지시함.",
-     "지표면 붕괴·배수·갱목·위생시설 개선과 조기 준비를 강조했으며, 광산 사고의 70%가 지반 붕괴로 발생한다고 지적함.",
-     "탄자니아 기상청의 엘니뇨 강우 예보에 앞서 광산 근로자 보호를 위한 세미나가 개최됨."
+     "탄자니아 광물부 사무차관이 Kahama 세미나에서 El Nino 대비 광산 안전을 지시했음",
+     "사고의 70%가 젖어 무거워진 토양 탓이라며 배수로·mtingi 교체를 주문했음",
+     "CHAWUMITA는 mtingi를 고정하고 쓰지 않는 구덩이를 메우는 조치를 시작했음"
     ],
     "basis": "body",
     "key_figures": [
@@ -274,35 +302,40 @@
     "category": "policy_regulation",
     "tags": [
      "탄자니아",
+     "광물부",
+     "소규모 광부",
      "광산 안전",
-     "엘니뇨",
-     "Wizara ya Madini"
+     "El Nino"
     ],
     "key_phrases": [
      {
-      "phrase": "tahadhari",
-      "meaning": "주의·대비"
+      "phrase": "mvua za El Nino",
+      "meaning": "El Nino 강우"
      },
      {
-      "phrase": "El Nino",
-      "meaning": "엘니뇨"
+      "phrase": "wachimbaji wadogo",
+      "meaning": "소규모 광부"
      },
      {
-      "phrase": "udongo kulowana",
-      "meaning": "지표면 붕괴"
+      "phrase": "tahadhari mapema",
+      "meaning": "사전 예방 조치"
+     },
+     {
+      "phrase": "ajali migodini",
+      "meaning": "광산 사고"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2141,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:36:31+00:00"
+    "summarized_at": "2026-10-19T01:46:21+00:00"
    },
    "ext": {
     "kcmo": {
@@ -311,50 +344,6 @@
      "country": "Tanzania",
      "source_language": "sw"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "탄자니아 광물부 사무차관이 광산주·관리자에게 El Nino 대비 현장 정비를 지시했음",
-      "Kahama 소규모 광부 세미나에서 광산 사고의 asilimia 70이 젖은 흙 탓이라 밝혔음",
-      "TMA가 예보한 El Nino 강우 전 조치이며 Samia 대통령의 조기 대비 강조에 부합함"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "asilimia 70"
-     ],
-     "quotes": [],
-     "category": "policy_regulation",
-     "tags": [
-      "탄자니아",
-      "광물부",
-      "El Nino",
-      "광산안전",
-      "소규모광부"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Katibu Mkuu wa Wizara ya Madini",
-       "meaning": "광물부 사무차관"
-      },
-      {
-       "phrase": "mvua za El Nino",
-       "meaning": "El Nino 강우"
-      },
-      {
-       "phrase": "wachimbaji wadogo",
-       "meaning": "소규모 광부"
-      },
-      {
-       "phrase": "tahadhari",
-       "meaning": "경계·사전 예방 조치"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -399,16 +388,17 @@
     "score": 14,
     "published": "2026-09-28",
     "korean_summary": [
-     "탄자니아 광물부 차관이 광산업자들에게 엘니뇨 대비 채굴지 안전시설 개선을 지시함.",
-     "지표면 붕괴·배수·갱목·위생시설 개선과 조기 준비를 강조했으며, 광산 사고의 70%가 지반 붕괴로 발생한다고 지적함.",
-     "탄자니아 기상청의 엘니뇨 강우 예보에 앞서 광산 근로자 보호를 위한 세미나가 개최됨."
+     "탄자니아 광물부 사무차관이 Kahama 세미나에서 El Nino 대비 광산 안전을 지시했음",
+     "사고의 70%가 젖어 무거워진 토양 탓이라며 배수로·mtingi 교체를 주문했음",
+     "CHAWUMITA는 mtingi를 고정하고 쓰지 않는 구덩이를 메우는 조치를 시작했음"
     ],
     "category": "policy_regulation",
     "tags": [
      "탄자니아",
+     "광물부",
+     "소규모 광부",
      "광산 안전",
-     "엘니뇨",
-     "Wizara ya Madini"
+     "El Nino"
     ],
     "ai_processed": true,
     "card_id": "986abb00f426",
@@ -424,19 +414,23 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "tahadhari",
-      "meaning": "주의·대비"
+      "phrase": "mvua za El Nino",
+      "meaning": "El Nino 강우"
      },
      {
-      "phrase": "El Nino",
-      "meaning": "엘니뇨"
+      "phrase": "wachimbaji wadogo",
+      "meaning": "소규모 광부"
      },
      {
-      "phrase": "udongo kulowana",
-      "meaning": "지표면 붕괴"
+      "phrase": "tahadhari mapema",
+      "meaning": "사전 예방 조치"
+     },
+     {
+      "phrase": "ajali migodini",
+      "meaning": "광산 사고"
      }
     ],
-    "processed_at": "2026-10-18T15:36:31+00:00"
+    "processed_at": "2026-10-19T01:46:21+00:00"
    }
   },
   {
@@ -456,7 +450,7 @@
    },
    "published": "2026-10-11",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:36:59+00:00",
+   "collected_at": "2026-10-19T01:46:22+00:00",
    "score": 13,
    "body": {
     "status": "full",
@@ -465,7 +459,7 @@
     "source": "trafilatura",
     "block_type": null,
     "http_status": 200,
-    "extracted_date": "2026-10-18",
+    "extracted_date": "2026-10-19",
     "quotes": [
      "Pada semester I-2026, nilai ekspor nikel dan barang meningkat 69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS) atau sekitar Rp117,05 triliun dibandingkan periode yang sama tahun sebelumnya.",
      "Produksi bijih nikel per 1 September 2026 tercatat 173,79 juta ton."
@@ -476,19 +470,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 니켈 하류화 정책이 광물 부가가치·국가수입·국내 가공산업 발전을 통해 경제구조 개편을 시작했음.",
-     "2026년 상반기 니켈 수출액이 69.3% 증가해 6.54 billion 달러에 도달했고, 니켈 비조세수입은 Rp21 triliun으로 전년 같은 기간 Rp10 triliun에서 증가함.",
-     "다음 단계는 전구체·음극재·배터리셀·최종제조까지 생산 체인을 국내에서 연장하고 더 많은 국내 공급업체를 포함시키는 것이 필요함."
+     "CORE Indonesia 연구원 Yusuf Rendy Manilet가 니켈 하류화 정책이 인도네시아 경제구조를 바꾸기 시작했다고 평가했음",
+     "2026년 상반기 니켈 및 제품 수출액은 6,54 miliar 달러로 69,3 persen 늘었고 PNBP는 Rp21 triliun에 달했음",
+     "중간재 중심 구조라 전구체·양극재·배터리 셀까지 국내 공급망을 늘려야 한다고 밝혔음"
     ],
     "basis": "body",
     "key_figures": [
-     "69,3 persen",
-     "6,54 miliar dolar Amerika Serikat",
+     "69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS)",
      "Rp21 triliun",
-     "Rp10 triliun",
-     "173,79 juta ton",
-     "240 ribu ton MHP per tahun",
-     "7,2 miliar dolar AS"
+     "173,79 juta ton"
     ],
     "quotes": [
      "Pada semester I-2026, nilai ekspor nikel dan barang meningkat 69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS) atau sekitar Rp117,05 triliun dibandingkan periode yang sama tahun sebelumnya.",
@@ -497,23 +487,27 @@
     "category": "policy_regulation",
     "tags": [
      "니켈",
-     "하류화(hilirisasi)",
+     "하류화",
      "인도네시아",
-     "MHP",
-     "배터리"
+     "Vale Indonesia",
+     "MIND ID"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi nikel",
-      "meaning": "니켈의 하류화·부가가치 향상 정책"
+      "meaning": "니켈 하류화(가공 고도화)"
      },
      {
-      "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "니켈 원석을 중간산물로 처리하는 기술"
+      "phrase": "penerimaan negara bukan pajak (PNBP)",
+      "meaning": "비조세 국가수입"
      },
      {
       "phrase": "mixed hydroxide precipitate (MHP)",
-      "meaning": "전기차 배터리 생산 체인의 중간산물"
+      "meaning": "혼합수산화침전물(배터리 소재 중간재)"
+     },
+     {
+      "phrase": "produk antara",
+      "meaning": "중간재"
      },
      {
       "phrase": "Proyek Strategis Nasional (PSN)",
@@ -523,14 +517,14 @@
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:37:05+00:00"
+    "summarized_at": "2026-10-19T01:46:26+00:00"
    },
    "ext": {
     "kcmo": {
@@ -539,14 +533,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -588,30 +574,26 @@
     "score": 13,
     "published": "2026-10-11",
     "korean_summary": [
-     "인도네시아 니켈 하류화 정책이 광물 부가가치·국가수입·국내 가공산업 발전을 통해 경제구조 개편을 시작했음.",
-     "2026년 상반기 니켈 수출액이 69.3% 증가해 6.54 billion 달러에 도달했고, 니켈 비조세수입은 Rp21 triliun으로 전년 같은 기간 Rp10 triliun에서 증가함.",
-     "다음 단계는 전구체·음극재·배터리셀·최종제조까지 생산 체인을 국내에서 연장하고 더 많은 국내 공급업체를 포함시키는 것이 필요함."
+     "CORE Indonesia 연구원 Yusuf Rendy Manilet가 니켈 하류화 정책이 인도네시아 경제구조를 바꾸기 시작했다고 평가했음",
+     "2026년 상반기 니켈 및 제품 수출액은 6,54 miliar 달러로 69,3 persen 늘었고 PNBP는 Rp21 triliun에 달했음",
+     "중간재 중심 구조라 전구체·양극재·배터리 셀까지 국내 공급망을 늘려야 한다고 밝혔음"
     ],
     "category": "policy_regulation",
     "tags": [
      "니켈",
-     "하류화(hilirisasi)",
+     "하류화",
      "인도네시아",
-     "MHP",
-     "배터리"
+     "Vale Indonesia",
+     "MIND ID"
     ],
     "ai_processed": true,
     "card_id": "d43fbd45bbf9",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "69,3 persen",
-     "6,54 miliar dolar Amerika Serikat",
+     "69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS)",
      "Rp21 triliun",
-     "Rp10 triliun",
-     "173,79 juta ton",
-     "240 ribu ton MHP per tahun",
-     "7,2 miliar dolar AS"
+     "173,79 juta ton"
     ],
     "quotes": [
      "Pada semester I-2026, nilai ekspor nikel dan barang meningkat 69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS) atau sekitar Rp117,05 triliun dibandingkan periode yang sama tahun sebelumnya.",
@@ -624,22 +606,26 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi nikel",
-      "meaning": "니켈의 하류화·부가가치 향상 정책"
+      "meaning": "니켈 하류화(가공 고도화)"
      },
      {
-      "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "니켈 원석을 중간산물로 처리하는 기술"
+      "phrase": "penerimaan negara bukan pajak (PNBP)",
+      "meaning": "비조세 국가수입"
      },
      {
       "phrase": "mixed hydroxide precipitate (MHP)",
-      "meaning": "전기차 배터리 생산 체인의 중간산물"
+      "meaning": "혼합수산화침전물(배터리 소재 중간재)"
+     },
+     {
+      "phrase": "produk antara",
+      "meaning": "중간재"
      },
      {
       "phrase": "Proyek Strategis Nasional (PSN)",
       "meaning": "국가전략프로젝트"
      }
     ],
-    "processed_at": "2026-10-18T15:37:05+00:00"
+    "processed_at": "2026-10-19T01:46:26+00:00"
    }
   },
   {
@@ -659,7 +645,7 @@
    },
    "published": "2026-09-17",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:37:29+00:00",
+   "collected_at": "2026-10-19T01:46:26+00:00",
    "score": 13,
    "body": {
     "status": "full",
@@ -679,56 +665,56 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "카자흐스탄 토카예프 대통령이 한국과의 공동 핵심광물 회사 설립을 제안했음.",
-     "9월 16일 서울 중앙아시아-한국 정상회담에서 양국이 경제안보·첨단산업·과학기술을 우선으로 하는 포괄적 전략적 동반자 관계로 격상했으며, approximately $19 billion 규모의 상용 협약이 체결됨.",
-     "카자흐스탄 국영광물회사 Tau-Ken Samruk과 POSCO Holdings 간 양극성 희토류 재료 처리·분리·정제 기술 협력 양해각서 등이 포함되었고, 알마티에 한국산업기술연구원과 공동 희토류 센터 건립이 계획 중임."
+     "토카예프 대통령이 서울 정상회의에서 한국과 핵심광물 합작회사를 제안했음",
+     "Tau-Ken Samruk와 POSCO Holdings가 희토류 가공·분리 MOU를 체결했음",
+     "알마티 희토류 센터 설립과 2027-2030 협력 종합프로그램도 제안·환영했음"
     ],
     "basis": "body",
     "key_figures": [
-     "approximately $19 billion",
-     "approximately 91% of global separation and refining output for magnet rare earths in 2024"
+     "$19 billion",
+     "91%",
+     "2027-2030"
     ],
     "quotes": [
      "Around 80 commercial agreements worth approximately $19 billion were signed during the visit, including a memorandum between Kazakhstan’s national mining company Tau-Ken Samruk and POSCO Holdings.",
      "Kazakhstan-South Korea ties deepen through critical minerals and technology"
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
-     "희토류·희토류 광물",
      "카자흐스탄",
-     "한국",
-     "핵심광물 처리·분리",
-     "기술협력"
+     "희토류",
+     "POSCO Holdings",
+     "Tau-Ken Samruk",
+     "한국"
     ],
     "key_phrases": [
      {
-      "phrase": "joint Kazakh-Korean critical minerals company",
-      "meaning": "한국-카자흐스탄 공동 핵심광물 회사"
+      "phrase": "joint critical minerals company",
+      "meaning": "핵심광물 합작회사"
      },
      {
-      "phrase": "Tau-Ken Samruk and POSCO Holdings",
-      "meaning": "카자흐스탄 국영광물회사와 포스코홀딩스"
+      "phrase": "deep processing",
+      "meaning": "심층 가공"
      },
      {
-      "phrase": "full production cycle for critical materials",
-      "meaning": "핵심 광물의 연구·채굴에서 심가공까지 전체 생산 사이클"
-     },
-     {
-      "phrase": "separation and refining",
-      "meaning": "분리 및 정제"
+      "phrase": "future-oriented comprehensive strategic partnership",
+      "meaning": "미래지향적 포괄적 전략 동반자 관계"
      }
     ],
-    "oda_relevance": "카자흐스탄이 양극성 희토류 처리·분리·정제 기술과 공동 연구센터 건립을 통해 한국과 심화된 기술협력을 추진 중이며, 이는 한국의 희토류 자립 역량 강화와 공급망 안정성 확보에 직결됨."
+    "oda_relevance": "한국 대통령과의 정상회담, POSCO Holdings MOU, 한국 기관과의 알마티 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 2,
-    "summarized_at": "2026-10-18T15:37:41+00:00"
+    "summarized_at": "2026-10-19T01:46:52+00:00",
+    "retry_reasons": [
+     "JSON 파싱 실패: 출력 길이 초과(max_tokens 2048) — 끝: 'res\": [\"$19 billion\", \"approximately 91%\", \"2027-2030\"],\\n  \"'"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -737,55 +723,6 @@
      "country": "Kazakhstan",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "토카예프 대통령이 한국과의 핵심광물 합작회사 설립을 제안했음",
-      "9월 16일 서울 중앙아시아-한국 정상회의에서 제안했고 약 80건, 약 $19 billion 규모 계약이 체결됐음",
-      "Tau-Ken Samruk와 POSCO Holdings가 희토류 가공·분리·정제 기술 협력 MOU를 맺었음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "approximately $19 billion",
-      "Around 80 commercial agreements",
-      "approximately 91%"
-     ],
-     "quotes": [
-      "Around 80 commercial agreements worth approximately $19 billion were signed during the visit, including a memorandum between Kazakhstan’s national mining company Tau-Ken Samruk and POSCO Holdings.",
-      "Kazakhstan-South Korea ties deepen through critical minerals and technology"
-     ],
-     "category": "oda_cooperation",
-     "tags": [
-      "카자흐스탄",
-      "희토류",
-      "POSCO Holdings",
-      "Tau-Ken Samruk",
-      "KIGAM"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "joint Kazakh-Korean critical minerals company",
-       "meaning": "카자흐스탄-한국 핵심광물 합작회사"
-      },
-      {
-       "phrase": "deep processing",
-       "meaning": "심층 가공(고부가 가공)"
-      },
-      {
-       "phrase": "comprehensive strategic partnership",
-       "meaning": "포괄적 전략적 동반자 관계"
-      },
-      {
-       "phrase": "Comprehensive Program for Trade, Economic and Investment Cooperation for 2027-2030",
-       "meaning": "2027-2030 무역·경제·투자 협력 종합 프로그램"
-      }
-     ],
-     "oda_relevance": "한국 대통령과의 회담, POSCO Holdings MOU, 한국산업기술시험원 아닌 Korea Institute of Industrial Technology 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴."
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -827,25 +764,26 @@
     "score": 13,
     "published": "2026-09-17",
     "korean_summary": [
-     "카자흐스탄 토카예프 대통령이 한국과의 공동 핵심광물 회사 설립을 제안했음.",
-     "9월 16일 서울 중앙아시아-한국 정상회담에서 양국이 경제안보·첨단산업·과학기술을 우선으로 하는 포괄적 전략적 동반자 관계로 격상했으며, approximately $19 billion 규모의 상용 협약이 체결됨.",
-     "카자흐스탄 국영광물회사 Tau-Ken Samruk과 POSCO Holdings 간 양극성 희토류 재료 처리·분리·정제 기술 협력 양해각서 등이 포함되었고, 알마티에 한국산업기술연구원과 공동 희토류 센터 건립이 계획 중임."
+     "토카예프 대통령이 서울 정상회의에서 한국과 핵심광물 합작회사를 제안했음",
+     "Tau-Ken Samruk와 POSCO Holdings가 희토류 가공·분리 MOU를 체결했음",
+     "알마티 희토류 센터 설립과 2027-2030 협력 종합프로그램도 제안·환영했음"
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
-     "희토류·희토류 광물",
      "카자흐스탄",
-     "한국",
-     "핵심광물 처리·분리",
-     "기술협력"
+     "희토류",
+     "POSCO Holdings",
+     "Tau-Ken Samruk",
+     "한국"
     ],
     "ai_processed": true,
     "card_id": "45ab7b7c3215",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "approximately $19 billion",
-     "approximately 91% of global separation and refining output for magnet rare earths in 2024"
+     "$19 billion",
+     "91%",
+     "2027-2030"
     ],
     "quotes": [
      "Around 80 commercial agreements worth approximately $19 billion were signed during the visit, including a memorandum between Kazakhstan’s national mining company Tau-Ken Samruk and POSCO Holdings.",
@@ -853,27 +791,23 @@
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "카자흐스탄이 양극성 희토류 처리·분리·정제 기술과 공동 연구센터 건립을 통해 한국과 심화된 기술협력을 추진 중이며, 이는 한국의 희토류 자립 역량 강화와 공급망 안정성 확보에 직결됨.",
-    "category_ko": "ODA 협력",
+    "oda_relevance": "한국 대통령과의 정상회담, POSCO Holdings MOU, 한국 기관과의 알마티 센터 계획 등 한국 측 협력 근거가 본문에 직접 나옴",
+    "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "joint Kazakh-Korean critical minerals company",
-      "meaning": "한국-카자흐스탄 공동 핵심광물 회사"
+      "phrase": "joint critical minerals company",
+      "meaning": "핵심광물 합작회사"
      },
      {
-      "phrase": "Tau-Ken Samruk and POSCO Holdings",
-      "meaning": "카자흐스탄 국영광물회사와 포스코홀딩스"
+      "phrase": "deep processing",
+      "meaning": "심층 가공"
      },
      {
-      "phrase": "full production cycle for critical materials",
-      "meaning": "핵심 광물의 연구·채굴에서 심가공까지 전체 생산 사이클"
-     },
-     {
-      "phrase": "separation and refining",
-      "meaning": "분리 및 정제"
+      "phrase": "future-oriented comprehensive strategic partnership",
+      "meaning": "미래지향적 포괄적 전략 동반자 관계"
      }
     ],
-    "processed_at": "2026-10-18T15:37:41+00:00"
+    "processed_at": "2026-10-19T01:46:52+00:00"
    }
   },
   {
@@ -893,7 +827,7 @@
    },
    "published": "2026-09-20",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:38:06+00:00",
+   "collected_at": "2026-10-19T01:46:52+00:00",
    "score": 13,
    "body": {
     "status": "full",
@@ -913,23 +847,26 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "한국과 중앙아시아 5개국이 서울선언을 채택해 광물·에너지·AI 분야 30년 협력 비전을 수립했음.",
-     "카자흐스탄은 2028년 아스타나에서 차기 정상회담 개최를 제안했으며 다른 국가들이 동의했음.",
-     "한국 대통령이 자동차·에너지·원자재를 넘어 무역을 확대하고 핵심광물 가치사슬을 구축하는 '신실크로드' 건설을 제안했음."
+     "한국과 중앙아시아 5개국이 서울선언을 채택했다고 Korea Times가 보도했음",
+     "서울선언은 핵심광물·공급망·에너지·무역·AI·디지털 전환·안보를 다룸",
+     "카자흐스탄이 2028년 아스타나 차기 정상회의 개최를 제안했고 다른 국가들이 동의했음"
     ],
     "basis": "body",
-    "key_figures": [],
+    "key_figures": [
+     "30-year vision",
+     "Astana in 2028"
+    ],
     "quotes": [
      "The frontier-market index, due to launch by the end of September, will cover 26 countries and nearly $330 billion in eligible bonds.",
      "Non-resident holdings reached KZT 2.5 trillion ($5.4 billion) by the end of June, up 28.3% since the start of the year."
     ],
     "category": "oda_cooperation",
     "tags": [
-     "광물",
-     "에너지",
-     "한국-중앙아시아",
+     "핵심광물",
      "카자흐스탄",
-     "서울선언"
+     "서울선언",
+     "한-중앙아 정상회의",
+     "공급망"
     ],
     "key_phrases": [
      {
@@ -937,25 +874,29 @@
       "meaning": "서울선언"
      },
      {
-      "phrase": "Korea-Central Asia Summit",
-      "meaning": "한국-중앙아시아 정상회담"
+      "phrase": "critical-mineral value chains",
+      "meaning": "핵심광물 가치사슬"
      },
      {
-      "phrase": "critical minerals, supply chains, energy, trade, artificial intelligence, digital transformation and security",
-      "meaning": "핵심광물, 공급망, 에너지, 무역, 인공지능, 디지털 변환, 안보"
+      "phrase": "new Silk Road",
+      "meaning": "새로운 실크로드"
+     },
+     {
+      "phrase": "Korea-Central Asia Summit",
+      "meaning": "한-중앙아 정상회의"
      }
     ],
-    "oda_relevance": "한국이 주도한 서울선언에서 카자흐스탄을 포함한 중앙아시아 5개국과 30년 단위 광물·에너지 협력 프레임을 설정했으며, 핵심광물 가치사슬 구축을 명시했음."
+    "oda_relevance": "이재명 대통령이 핵심광물 가치사슬 개발을 제안했고 선언에 핵심광물·공급망 협력이 포함됐음. 구체적 ODA 사업은 확인 불가임"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:38:11+00:00"
+    "summarized_at": "2026-10-19T01:47:02+00:00"
    },
    "ext": {
     "kcmo": {
@@ -964,50 +905,6 @@
      "country": "Kazakhstan",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "한국과 중앙아시아 5개국이 첫 정상회의에서 서울선언을 채택했음",
-      "선언은 핵심광물·공급망·에너지·무역·AI·디지털 전환·안보를 포괄함",
-      "카자흐스탄이 2028년 아스타나 차기 정상회의 개최를 제안했고 합의됐음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "30-year",
-      "2028"
-     ],
-     "quotes": [
-      "The frontier-market index, due to launch by the end of September, will cover 26 countries and nearly $330 billion in eligible bonds.",
-      "Non-resident holdings reached KZT 2.5 trillion ($5.4 billion) by the end of June, up 28.3% since the start of the year."
-     ],
-     "category": "oda_cooperation",
-     "tags": [
-      "핵심광물",
-      "카자흐스탄",
-      "서울선언",
-      "한-중앙아 정상회의",
-      "공급망"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Seoul Declaration",
-       "meaning": "한-중앙아 정상회의에서 채택된 서울선언"
-      },
-      {
-       "phrase": "critical-mineral value chains",
-       "meaning": "핵심광물 가치사슬"
-      },
-      {
-       "phrase": "new Silk Road",
-       "meaning": "이재명 대통령이 제안한 새로운 실크로드"
-      }
-     ],
-     "oda_relevance": "이재명 대통령이 핵심광물 가치사슬 구축을 제안했고 서울선언에 핵심광물·공급망 협력이 포함됐음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -1049,30 +946,33 @@
     "score": 13,
     "published": "2026-09-20",
     "korean_summary": [
-     "한국과 중앙아시아 5개국이 서울선언을 채택해 광물·에너지·AI 분야 30년 협력 비전을 수립했음.",
-     "카자흐스탄은 2028년 아스타나에서 차기 정상회담 개최를 제안했으며 다른 국가들이 동의했음.",
-     "한국 대통령이 자동차·에너지·원자재를 넘어 무역을 확대하고 핵심광물 가치사슬을 구축하는 '신실크로드' 건설을 제안했음."
+     "한국과 중앙아시아 5개국이 서울선언을 채택했다고 Korea Times가 보도했음",
+     "서울선언은 핵심광물·공급망·에너지·무역·AI·디지털 전환·안보를 다룸",
+     "카자흐스탄이 2028년 아스타나 차기 정상회의 개최를 제안했고 다른 국가들이 동의했음"
     ],
     "category": "oda_cooperation",
     "tags": [
-     "광물",
-     "에너지",
-     "한국-중앙아시아",
+     "핵심광물",
      "카자흐스탄",
-     "서울선언"
+     "서울선언",
+     "한-중앙아 정상회의",
+     "공급망"
     ],
     "ai_processed": true,
     "card_id": "8c57d5e784e1",
     "basis": "body",
     "body_status": "full",
-    "key_figures": [],
+    "key_figures": [
+     "30-year vision",
+     "Astana in 2028"
+    ],
     "quotes": [
      "The frontier-market index, due to launch by the end of September, will cover 26 countries and nearly $330 billion in eligible bonds.",
      "Non-resident holdings reached KZT 2.5 trillion ($5.4 billion) by the end of June, up 28.3% since the start of the year."
     ],
     "source_language": "en",
     "country": "Kazakhstan",
-    "oda_relevance": "한국이 주도한 서울선언에서 카자흐스탄을 포함한 중앙아시아 5개국과 30년 단위 광물·에너지 협력 프레임을 설정했으며, 핵심광물 가치사슬 구축을 명시했음.",
+    "oda_relevance": "이재명 대통령이 핵심광물 가치사슬 개발을 제안했고 선언에 핵심광물·공급망 협력이 포함됐음. 구체적 ODA 사업은 확인 불가임",
     "category_ko": "ODA 협력",
     "key_phrases": [
      {
@@ -1080,15 +980,19 @@
       "meaning": "서울선언"
      },
      {
-      "phrase": "Korea-Central Asia Summit",
-      "meaning": "한국-중앙아시아 정상회담"
+      "phrase": "critical-mineral value chains",
+      "meaning": "핵심광물 가치사슬"
      },
      {
-      "phrase": "critical minerals, supply chains, energy, trade, artificial intelligence, digital transformation and security",
-      "meaning": "핵심광물, 공급망, 에너지, 무역, 인공지능, 디지털 변환, 안보"
+      "phrase": "new Silk Road",
+      "meaning": "새로운 실크로드"
+     },
+     {
+      "phrase": "Korea-Central Asia Summit",
+      "meaning": "한-중앙아 정상회의"
      }
     ],
-    "processed_at": "2026-10-18T15:38:11+00:00"
+    "processed_at": "2026-10-19T01:47:02+00:00"
    }
   },
   {
@@ -1108,7 +1012,7 @@
    },
    "published": "2026-10-01",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:38:36+00:00",
+   "collected_at": "2026-10-19T01:47:03+00:00",
    "score": 13,
    "body": {
     "status": "full",
@@ -1128,16 +1032,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "LS Cable & System과 LS Eco Energy가 한국과 베트남에서 희토류 영구자석 공급망 구축을 위해 총 KRW 161.6 billion을 투자함.",
-     "LS Cable & System은 희토류 영구자석 제조·판매 전문 신설회사 Korea Motion Works에 KRW 150 billion을 투자하고, LS Eco Energy는 베트남에 사마륨 금속 제조사 GSHM을 설립해 KRW 11.6 billion을 투자하며 58% 지분을 보유함.",
-     "호찌민에 위치한 LSCV 시설에서 연 240톤 생산용량을 구축 중이며, 호주 Lynas Rare Earths 원료 → 베트남 사마륨 금속 가공 → 한국 영구자석 제조 순 통합 공급망을 구축해 미국 국방용 희토류 수급 요건 충족을 목표로 함."
+     "LS Cable & System과 LS Eco Energy가 한국·베트남 희토류 영구자석 공급망에 투자하기로 했음",
+     "자석사 KRW 150 billion, 베트남 GSHM KRW 11.6 billion 투자임",
+     "GSHM은 호찌민 LSCV 설비에서 연 240 tons 사마륨을 생산하며 December 시험생산 예정임"
     ],
     "basis": "body",
     "key_figures": [
      "KRW 161.6 billion",
-     "KRW 150 billion",
      "KRW 11.6 billion",
-     "58%",
      "240 tons"
     ],
     "quotes": [
@@ -1146,37 +1048,44 @@
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "희토류·영구자석",
+     "희토류",
      "사마륨",
-     "LS그룹",
+     "영구자석",
      "베트남",
-     "한국"
+     "LS그룹"
     ],
     "key_phrases": [
      {
-      "phrase": "rare-earth permanent magnet supply chain",
-      "meaning": "희토류 영구자석 공급망"
+      "phrase": "rare-earth permanent magnet",
+      "meaning": "희토류 영구자석"
      },
      {
       "phrase": "samarium metal",
       "meaning": "사마륨 금속"
      },
      {
-      "phrase": "defense-related applications",
-      "meaning": "국방 관련 용도"
+      "phrase": "integrated rare-earth value chain",
+      "meaning": "통합 희토류 가치사슬"
+     },
+     {
+      "phrase": "pilot production",
+      "meaning": "시험 생산"
      }
     ],
-    "oda_relevance": "한국 기업의 베트남 희토류 가공·제조 직접투자 사례로, 한국의 핵심광물 공급망 다변화 전략과 관련 있음."
+    "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1998,
     "attempts": 2,
-    "summarized_at": "2026-10-18T15:38:46+00:00"
+    "summarized_at": "2026-10-19T01:47:16+00:00",
+    "retry_reasons": [
+     "입력에 없는 숫자: ['12']"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -1185,14 +1094,6 @@
      "country": "Vietnam",
      "source_language": "ko"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -1234,17 +1135,17 @@
     "score": 13,
     "published": "2026-10-01",
     "korean_summary": [
-     "LS Cable & System과 LS Eco Energy가 한국과 베트남에서 희토류 영구자석 공급망 구축을 위해 총 KRW 161.6 billion을 투자함.",
-     "LS Cable & System은 희토류 영구자석 제조·판매 전문 신설회사 Korea Motion Works에 KRW 150 billion을 투자하고, LS Eco Energy는 베트남에 사마륨 금속 제조사 GSHM을 설립해 KRW 11.6 billion을 투자하며 58% 지분을 보유함.",
-     "호찌민에 위치한 LSCV 시설에서 연 240톤 생산용량을 구축 중이며, 호주 Lynas Rare Earths 원료 → 베트남 사마륨 금속 가공 → 한국 영구자석 제조 순 통합 공급망을 구축해 미국 국방용 희토류 수급 요건 충족을 목표로 함."
+     "LS Cable & System과 LS Eco Energy가 한국·베트남 희토류 영구자석 공급망에 투자하기로 했음",
+     "자석사 KRW 150 billion, 베트남 GSHM KRW 11.6 billion 투자임",
+     "GSHM은 호찌민 LSCV 설비에서 연 240 tons 사마륨을 생산하며 December 시험생산 예정임"
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "희토류·영구자석",
+     "희토류",
      "사마륨",
-     "LS그룹",
+     "영구자석",
      "베트남",
-     "한국"
+     "LS그룹"
     ],
     "ai_processed": true,
     "card_id": "e2b8c6b74f02",
@@ -1252,9 +1153,7 @@
     "body_status": "full",
     "key_figures": [
      "KRW 161.6 billion",
-     "KRW 150 billion",
      "KRW 11.6 billion",
-     "58%",
      "240 tons"
     ],
     "quotes": [
@@ -1263,23 +1162,27 @@
     ],
     "source_language": "ko",
     "country": "Vietnam",
-    "oda_relevance": "한국 기업의 베트남 희토류 가공·제조 직접투자 사례로, 한국의 핵심광물 공급망 다변화 전략과 관련 있음.",
+    "oda_relevance": "",
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "rare-earth permanent magnet supply chain",
-      "meaning": "희토류 영구자석 공급망"
+      "phrase": "rare-earth permanent magnet",
+      "meaning": "희토류 영구자석"
      },
      {
       "phrase": "samarium metal",
       "meaning": "사마륨 금속"
      },
      {
-      "phrase": "defense-related applications",
-      "meaning": "국방 관련 용도"
+      "phrase": "integrated rare-earth value chain",
+      "meaning": "통합 희토류 가치사슬"
+     },
+     {
+      "phrase": "pilot production",
+      "meaning": "시험 생산"
      }
     ],
-    "processed_at": "2026-10-18T15:38:46+00:00"
+    "processed_at": "2026-10-19T01:47:16+00:00"
    }
   },
   {
@@ -1299,7 +1202,7 @@
    },
    "published": "2026-10-13",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:39:10+00:00",
+   "collected_at": "2026-10-19T01:47:18+00:00",
    "score": 11,
    "body": {
     "status": "full",
@@ -1319,9 +1222,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 재무차관이 광물자원의 하류산업화와 산업화를 경제 가치 증대의 핵심으로 제시함.",
-     "Weda Bay 배터리 수출 프로젝트(Rp180 triliun 규모)와 9월 2026 BYD 수방공장 준공을 고부가가치 산업 사례로 언급함.",
-     "정부 재정의 역할은 기초 인프라 조성이며, 민간투자 활성화와 Danantara 같은 장기자금 조성 수단의 필요성을 강조함."
+     "Juda Agung 재무부 차관이 하류화와 산업화가 경제 부가가치 제고의 핵심이라고 밝혔음",
+     "Weda Bay 배터리 수출 및 Rp180 triliun 투자 프로젝트를 사례로 들었음",
+     "APBN은 민간투자를 대체하지 않고 끌어들여야 하며 Danantara도 장기자본 동원 수단이라고 했음"
     ],
     "basis": "body",
     "key_figures": [
@@ -1333,16 +1236,16 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "배터리",
-     "하류산업화",
      "인도네시아",
-     "고부가가치"
+     "하류화",
+     "배터리",
+     "Danantara",
+     "BYD"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi dan industrialisasi",
-      "meaning": "하류산업화 및 산업화"
+      "meaning": "하류화(다운스트림화)와 산업화"
      },
      {
       "phrase": "nilai tambah",
@@ -1350,20 +1253,27 @@
      },
      {
       "phrase": "crowding in",
-      "meaning": "민간투자 유인"
+      "meaning": "재정이 민간투자를 끌어들이는 효과"
+     },
+     {
+      "phrase": "rantai nilai global",
+      "meaning": "글로벌 가치사슬"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 3179,
-    "attempts": 1,
-    "summarized_at": "2026-10-18T15:39:15+00:00"
+    "attempts": 2,
+    "summarized_at": "2026-10-19T01:47:32+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 5줄)"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -1372,14 +1282,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -1421,17 +1323,17 @@
     "score": 11,
     "published": "2026-10-13",
     "korean_summary": [
-     "인도네시아 재무차관이 광물자원의 하류산업화와 산업화를 경제 가치 증대의 핵심으로 제시함.",
-     "Weda Bay 배터리 수출 프로젝트(Rp180 triliun 규모)와 9월 2026 BYD 수방공장 준공을 고부가가치 산업 사례로 언급함.",
-     "정부 재정의 역할은 기초 인프라 조성이며, 민간투자 활성화와 Danantara 같은 장기자금 조성 수단의 필요성을 강조함."
+     "Juda Agung 재무부 차관이 하류화와 산업화가 경제 부가가치 제고의 핵심이라고 밝혔음",
+     "Weda Bay 배터리 수출 및 Rp180 triliun 투자 프로젝트를 사례로 들었음",
+     "APBN은 민간투자를 대체하지 않고 끌어들여야 하며 Danantara도 장기자본 동원 수단이라고 했음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "배터리",
-     "하류산업화",
      "인도네시아",
-     "고부가가치"
+     "하류화",
+     "배터리",
+     "Danantara",
+     "BYD"
     ],
     "ai_processed": true,
     "card_id": "7b2dcdf50894",
@@ -1451,7 +1353,7 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi dan industrialisasi",
-      "meaning": "하류산업화 및 산업화"
+      "meaning": "하류화(다운스트림화)와 산업화"
      },
      {
       "phrase": "nilai tambah",
@@ -1459,10 +1361,14 @@
      },
      {
       "phrase": "crowding in",
-      "meaning": "민간투자 유인"
+      "meaning": "재정이 민간투자를 끌어들이는 효과"
+     },
+     {
+      "phrase": "rantai nilai global",
+      "meaning": "글로벌 가치사슬"
      }
     ],
-    "processed_at": "2026-10-18T15:39:15+00:00"
+    "processed_at": "2026-10-19T01:47:32+00:00"
    }
   },
   {
@@ -1482,7 +1388,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:39:34+00:00",
+   "collected_at": "2026-10-19T01:47:33+00:00",
    "score": 11,
    "body": {
     "status": "full",
@@ -1491,7 +1397,7 @@
     "source": "trafilatura",
     "block_type": null,
     "http_status": 200,
-    "extracted_date": "2026-10-18",
+    "extracted_date": "2026-10-19",
     "quotes": [
      "PT Pertamina Internasional Eksplorasi dan Produksi (PIEP) menguasai lebih dari 70 persen saham perusahaan eksplorasi migas asal Prancis, Maurel & Prom, yang memiliki aset di Angola, Gabon, hingga Tanzania."
     ],
@@ -1501,9 +1407,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아가 가봉과 희토류금속 가공 협력을 추진 중임.",
-     "인도네시아 주 카메룬 대사가 희토류광물 부문 협력이 진행 중이며 아직 세부사항을 공개할 수 없다고 밝혔음.",
-     "인도네시아는 또한 콩고와 인산염광물 협력을 검토 중이며, 기존에는 가봉·앙골라와 석유·가스 교역에 중점을 두었음."
+     "인도네시아가 가봉과 희토류 가공 분야 협력을 추진하고 있다고 주중 대사가 밝혔음",
+     "Agung Cahaya Sumirat 대사가 13일 자카르타에서 가봉과 희토류, 콩고공화국과 인산염 협력을 언급했음",
+     "협상이 진행 중이라 세부 내용은 확인 불가이며, 후속 일정도 확인 불가임"
     ],
     "basis": "body",
     "key_figures": [
@@ -1514,36 +1420,41 @@
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "희토류금속",
+     "희토류",
+     "인도네시아",
      "가봉",
-     "인산염광물",
-     "인도네시아"
+     "인산염",
+     "아프리카"
     ],
     "key_phrases": [
      {
-      "phrase": "rare earth minerals, mineral tanah jarang",
-      "meaning": "희토류광물"
+      "phrase": "logam tanah jarang",
+      "meaning": "희토류"
+     },
+     {
+      "phrase": "masih berproses, on going",
+      "meaning": "아직 진행 중임"
      },
      {
       "phrase": "mineral fosfat",
-      "meaning": "인산염광물"
+      "meaning": "인산염 광물"
      },
      {
-      "phrase": "on going, sedang dirintis",
-      "meaning": "진행 중, 추진 중"
+      "phrase": "menjajaki kerja sama",
+      "meaning": "협력을 모색함"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2190,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:39:41+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:47:36+00:00"
    },
    "ext": {
     "kcmo": {
@@ -1552,52 +1463,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "인도네시아가 가봉과 희토류 가공 분야 협력을 새로 추진 중이라고 주한 아닌 주카메룬 대사가 밝혔음",
-      "아궁 차하야 수미랏 대사가 10월 13일 자카르타에서 발언했고, 콩고와는 인광물 협력을 타진 중임",
-      "협의가 진행 중이라 세부 내용과 결과는 확인 불가이며 후속 일정도 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "lebih dari 70 persen"
-     ],
-     "quotes": [
-      "PT Pertamina Internasional Eksplorasi dan Produksi (PIEP) menguasai lebih dari 70 persen saham perusahaan eksplorasi migas asal Prancis, Maurel & Prom, yang memiliki aset di Angola, Gabon, hingga Tanzania."
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "희토류",
-      "인도네시아",
-      "가봉",
-      "인광물",
-      "아프리카"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "logam tanah jarang",
-       "meaning": "희토류"
-      },
-      {
-       "phrase": "masih berproses, on going",
-       "meaning": "아직 진행 중임"
-      },
-      {
-       "phrase": "mineral fosfat",
-       "meaning": "인(燐)광물"
-      },
-      {
-       "phrase": "sumber utama impor minyak mentah",
-       "meaning": "원유 수입의 주요 공급원"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -1639,16 +1504,17 @@
     "score": 11,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아가 가봉과 희토류금속 가공 협력을 추진 중임.",
-     "인도네시아 주 카메룬 대사가 희토류광물 부문 협력이 진행 중이며 아직 세부사항을 공개할 수 없다고 밝혔음.",
-     "인도네시아는 또한 콩고와 인산염광물 협력을 검토 중이며, 기존에는 가봉·앙골라와 석유·가스 교역에 중점을 두었음."
+     "인도네시아가 가봉과 희토류 가공 분야 협력을 추진하고 있다고 주중 대사가 밝혔음",
+     "Agung Cahaya Sumirat 대사가 13일 자카르타에서 가봉과 희토류, 콩고공화국과 인산염 협력을 언급했음",
+     "협상이 진행 중이라 세부 내용은 확인 불가이며, 후속 일정도 확인 불가임"
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "희토류금속",
+     "희토류",
+     "인도네시아",
      "가봉",
-     "인산염광물",
-     "인도네시아"
+     "인산염",
+     "아프리카"
     ],
     "ai_processed": true,
     "card_id": "3f7e5770933f",
@@ -1666,19 +1532,23 @@
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "rare earth minerals, mineral tanah jarang",
-      "meaning": "희토류광물"
+      "phrase": "logam tanah jarang",
+      "meaning": "희토류"
+     },
+     {
+      "phrase": "masih berproses, on going",
+      "meaning": "아직 진행 중임"
      },
      {
       "phrase": "mineral fosfat",
-      "meaning": "인산염광물"
+      "meaning": "인산염 광물"
      },
      {
-      "phrase": "on going, sedang dirintis",
-      "meaning": "진행 중, 추진 중"
+      "phrase": "menjajaki kerja sama",
+      "meaning": "협력을 모색함"
      }
     ],
-    "processed_at": "2026-10-18T15:39:41+00:00"
+    "processed_at": "2026-10-19T01:47:36+00:00"
    }
   },
   {
@@ -1698,7 +1568,7 @@
    },
    "published": "2026-09-21",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:39:46+00:00",
+   "collected_at": "2026-10-19T01:47:37+00:00",
    "score": 11,
    "body": {
     "status": "full",
@@ -1707,7 +1577,7 @@
     "source": "trafilatura",
     "block_type": null,
     "http_status": 200,
-    "extracted_date": "2026-10-18",
+    "extracted_date": "2026-10-19",
     "quotes": [
      "Its preliminary resources are estimated at around 10,000 tonnes of uranium, the company’s press service said.",
      "Kazatomprom has obtained the right to explore for uranium at the Kyzylту site in Kazakhstan’s Kyzylorda region."
@@ -1718,13 +1588,13 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "카자흐스탄의 국영 우라늄 기업 카자톰프롬이 키질오르다주 키질투 지역의 우라늄 탐사권을 획득했음.",
-     "예비 자원량은 약 10,000 tonnes의 우라늄이며, 탐사권은 6년간 독점 보유함.",
-     "러시아 공급사들은 2026년 기존 황산 공급 계약 이행이 가능하다고 확인했으며, 2027년 공급 조건에 대해 협의 중임."
+     "Kazatomprom이 키질오르다주 Kyzylту 광구의 우라늄 탐사권을 확보했음",
+     "예비 자원량은 약 10,000 tonnes이며 탐사권은 6년간 단독 부여됐음",
+     "가까운 시일 내 지질탐사를 시작해 자원량과 잠재력을 평가할 예정임"
     ],
     "basis": "body",
     "key_figures": [
-     "10,000 tonnes",
+     "10,000 tonnes of uranium",
      "six years"
     ],
     "quotes": [
@@ -1734,14 +1604,14 @@
     "category": "exploration_development",
     "tags": [
      "우라늄",
-     "카자톰프롬",
      "카자흐스탄",
-     "탐사권"
+     "Kazatomprom",
+     "키질오르다"
     ],
     "key_phrases": [
      {
       "phrase": "subsoil-use rights",
-      "meaning": "광물채굴권"
+      "meaning": "지하자원 사용권"
      },
      {
       "phrase": "preliminary resources",
@@ -1755,14 +1625,18 @@
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1130,
-    "attempts": 3,
-    "summarized_at": "2026-10-18T15:39:56+00:00"
+    "attempts": 2,
+    "summarized_at": "2026-10-19T01:47:49+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)",
+     "입력에 없는 숫자: ['12']"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -1771,49 +1645,6 @@
      "country": "Kazakhstan",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "Kazatomprom이 Kyzylorda주 Kyzylту 광구의 우라늄 탐사권을 확보했음",
-      "예비 추정 자원량은 약 10,000 tonnes이며 탐사권 기간은 six years임",
-      "가까운 시일 내 지질탐사를 시작해 자원량과 잠재력을 평가할 예정임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "10,000 tonnes",
-      "six years"
-     ],
-     "quotes": [
-      "Its preliminary resources are estimated at around 10,000 tonnes of uranium, the company’s press service said.",
-      "Kazatomprom has obtained the right to explore for uranium at the Kyzylту site in Kazakhstan’s Kyzylorda region."
-     ],
-     "category": "exploration_development",
-     "tags": [
-      "우라늄",
-      "Kazatomprom",
-      "카자흐스탄",
-      "Kyzylorda"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "subsoil-use rights",
-       "meaning": "지하자원 사용권"
-      },
-      {
-       "phrase": "preliminary resources",
-       "meaning": "예비 추정 자원량"
-      },
-      {
-       "phrase": "geological exploration work",
-       "meaning": "지질 탐사 작업"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -1855,23 +1686,23 @@
     "score": 11,
     "published": "2026-09-21",
     "korean_summary": [
-     "카자흐스탄의 국영 우라늄 기업 카자톰프롬이 키질오르다주 키질투 지역의 우라늄 탐사권을 획득했음.",
-     "예비 자원량은 약 10,000 tonnes의 우라늄이며, 탐사권은 6년간 독점 보유함.",
-     "러시아 공급사들은 2026년 기존 황산 공급 계약 이행이 가능하다고 확인했으며, 2027년 공급 조건에 대해 협의 중임."
+     "Kazatomprom이 키질오르다주 Kyzylту 광구의 우라늄 탐사권을 확보했음",
+     "예비 자원량은 약 10,000 tonnes이며 탐사권은 6년간 단독 부여됐음",
+     "가까운 시일 내 지질탐사를 시작해 자원량과 잠재력을 평가할 예정임"
     ],
     "category": "exploration_development",
     "tags": [
      "우라늄",
-     "카자톰프롬",
      "카자흐스탄",
-     "탐사권"
+     "Kazatomprom",
+     "키질오르다"
     ],
     "ai_processed": true,
     "card_id": "bf971a01246e",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "10,000 tonnes",
+     "10,000 tonnes of uranium",
      "six years"
     ],
     "quotes": [
@@ -1885,7 +1716,7 @@
     "key_phrases": [
      {
       "phrase": "subsoil-use rights",
-      "meaning": "광물채굴권"
+      "meaning": "지하자원 사용권"
      },
      {
       "phrase": "preliminary resources",
@@ -1896,7 +1727,7 @@
       "meaning": "지질 탐사 작업"
      }
     ],
-    "processed_at": "2026-10-18T15:39:56+00:00"
+    "processed_at": "2026-10-19T01:47:49+00:00"
    }
   },
   {
@@ -1916,7 +1747,7 @@
    },
    "published": "2026-09-21",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:40:18+00:00",
+   "collected_at": "2026-10-19T01:47:50+00:00",
    "score": 11,
    "body": {
     "status": "full",
@@ -1925,7 +1756,7 @@
     "source": "trafilatura",
     "block_type": null,
     "http_status": 200,
-    "extracted_date": "2026-10-18",
+    "extracted_date": "2026-10-19",
     "quotes": [
      "Право недропользования на участок принадлежит исключительно \"Казатомпрому\" и предоставлено на шесть лет.",
      "Как пояснили в \"Казатомпроме\", новые меры не запрещают поставки, но предусматривают согласование объемов экспорта."
@@ -1936,15 +1767,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "카자흐스탄의 국영 핵심광물 기업 '카자톰프롬'이 키질오르다주 키질투 우라늄 광구에 대한 탐사권을 획득함.",
-     "탐사권은 6년간 카자톰프롬에게만 부여되며, 해당 광구의 우라늄 자원량은 약 10 тысяч тонн으로 추정됨.",
-     "카자톰프롬은 자원량 확정을 위해 지질탐사를 진행할 계획이며, 러시아로부터의 황산 공급은 현재 협상 중임."
+     "카자톰프롬이 크즐오르다주 크즐투 구역의 우라늄 탐사권을 획득했음",
+     "크즐투의 예비 자원량은 약 10 тысяч тонн урана로 추정됨",
+     "조만간 지질탐사에 착수해 자원량 규모와 잠재력을 평가할 계획임"
     ],
     "basis": "body",
     "key_figures": [
-     "примерно в 10 тысяч тонн урана",
-     "шесть лет",
-     "31 декабря 2026 года"
+     "10 тысяч тонн урана",
+     "шесть лет"
     ],
     "quotes": [
      "Право недропользования на участок принадлежит исключительно \"Казатомпрому\" и предоставлено на шесть лет.",
@@ -1954,30 +1784,39 @@
     "tags": [
      "우라늄",
      "카자톰프롬",
-     "카자흐스탄",
-     "광구탐사"
+     "크즐오르다주",
+     "탐사권",
+     "카자흐스탄"
     ],
     "key_phrases": [
      {
+      "phrase": "право на разведку урана",
+      "meaning": "우라늄 탐사권"
+     },
+     {
       "phrase": "право недропользования",
-      "meaning": "광물채굴권/광구사용권"
+      "meaning": "지하자원 이용권"
      },
      {
       "phrase": "геологоразведочные работы",
-      "meaning": "지질탐사사업"
+      "meaning": "지질탐사 작업"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1098,
-    "attempts": 3,
-    "summarized_at": "2026-10-18T15:40:29+00:00"
+    "attempts": 2,
+    "summarized_at": "2026-10-19T01:48:18+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)",
+     "입력에 없는 숫자: ['12']"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -1986,49 +1825,6 @@
      "country": "Kazakhstan",
      "source_language": "ru"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "카자톰프롬이 키질오르다주 키즐투 구역의 우라늄 탐사권을 확보했음",
-      "키즐투의 예비 자원량은 약 10 тысяч тонн урана로 평가되며 탐사권은 6년간 부여됐음",
-      "조만간 지질탐사를 시작해 자원량을 확인할 계획이며 한국 관련 내용은 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "10 тысяч тонн урана",
-      "шесть лет"
-     ],
-     "quotes": [
-      "Право недропользования на участок принадлежит исключительно \"Казатомпрому\" и предоставлено на шесть лет.",
-      "Как пояснили в \"Казатомпроме\", новые меры не запрещают поставки, но предусматривают согласование объемов экспорта."
-     ],
-     "category": "exploration_development",
-     "tags": [
-      "우라늄",
-      "카자톰프롬",
-      "키질오르다주",
-      "카자흐스탄"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "право на разведку урана",
-       "meaning": "우라늄 탐사권"
-      },
-      {
-       "phrase": "право недропользования",
-       "meaning": "지하자원 사용권"
-      },
-      {
-       "phrase": "геологоразведочные работы",
-       "meaning": "지질탐사 작업"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -2070,25 +1866,25 @@
     "score": 11,
     "published": "2026-09-21",
     "korean_summary": [
-     "카자흐스탄의 국영 핵심광물 기업 '카자톰프롬'이 키질오르다주 키질투 우라늄 광구에 대한 탐사권을 획득함.",
-     "탐사권은 6년간 카자톰프롬에게만 부여되며, 해당 광구의 우라늄 자원량은 약 10 тысяч тонн으로 추정됨.",
-     "카자톰프롬은 자원량 확정을 위해 지질탐사를 진행할 계획이며, 러시아로부터의 황산 공급은 현재 협상 중임."
+     "카자톰프롬이 크즐오르다주 크즐투 구역의 우라늄 탐사권을 획득했음",
+     "크즐투의 예비 자원량은 약 10 тысяч тонн урана로 추정됨",
+     "조만간 지질탐사에 착수해 자원량 규모와 잠재력을 평가할 계획임"
     ],
     "category": "exploration_development",
     "tags": [
      "우라늄",
      "카자톰프롬",
-     "카자흐스탄",
-     "광구탐사"
+     "크즐오르다주",
+     "탐사권",
+     "카자흐스탄"
     ],
     "ai_processed": true,
     "card_id": "53b310ce6573",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "примерно в 10 тысяч тонн урана",
-     "шесть лет",
-     "31 декабря 2026 года"
+     "10 тысяч тонн урана",
+     "шесть лет"
     ],
     "quotes": [
      "Право недропользования на участок принадлежит исключительно \"Казатомпрому\" и предоставлено на шесть лет.",
@@ -2100,15 +1896,19 @@
     "category_ko": "탐사·개발",
     "key_phrases": [
      {
+      "phrase": "право на разведку урана",
+      "meaning": "우라늄 탐사권"
+     },
+     {
       "phrase": "право недропользования",
-      "meaning": "광물채굴권/광구사용권"
+      "meaning": "지하자원 이용권"
      },
      {
       "phrase": "геологоразведочные работы",
-      "meaning": "지질탐사사업"
+      "meaning": "지질탐사 작업"
      }
     ],
-    "processed_at": "2026-10-18T15:40:29+00:00"
+    "processed_at": "2026-10-19T01:48:18+00:00"
    }
   },
   {
@@ -2128,7 +1928,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:40:51+00:00",
+   "collected_at": "2026-10-19T01:48:18+00:00",
    "score": 10,
    "body": {
     "status": "full",
@@ -2148,14 +1948,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "EU가 중국 의존도 감소를 위해 베트남과의 핵심광물 협력 강화를 추진 중임.",
-     "베트남은 텅스텐, 희토류, 안티모니, 비스무트, 보크사이트 등 풍부한 매장량을 보유하고 있음.",
-     "EU 위임부는 베트남의 광산·제련업에 재정 지원을 권고하며 중국 수출 제한 이후 공급망 차단 위험을 경고함."
+     "EU가 중국 의존을 줄이려 베트남산 핵심광물 확보를 모색 중임",
+     "베트남은 텅스텐·희토류·안티모니 등을 보유하나 EU 수출은 텅스텐·안티모니 위주임",
+     "10월 22일 EU 지도부와 To Lam 회담이 예정되었으나 공식 발표는 없었음"
     ],
     "basis": "body",
     "key_figures": [
-     "4.99%",
-     "5%"
+     "16 strategic partners",
+     "October 22",
+     "4.99%"
     ],
     "quotes": [
      "Last month, Masan High-Tech sold a 4.99% stake to Elmet Group (NASDAQ: ELMT), a tungsten supplier to the US defence stockpile.",
@@ -2163,37 +1964,44 @@
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "텅스텐",
-     "희토류",
      "베트남",
      "EU",
+     "텅스텐",
+     "희토류",
      "안티모니"
     ],
     "key_phrases": [
      {
       "phrase": "add an alternative to China",
-      "meaning": "중국의 대안 공급처 추가"
+      "meaning": "중국의 대안을 추가함"
      },
      {
-      "phrase": "de-risk as fast as possible",
-      "meaning": "가능한 한 빠르게 공급 리스크 제거"
+      "phrase": "de-risk",
+      "meaning": "공급망 위험을 줄임"
      },
      {
-      "phrase": "administrative bottlenecks",
-      "meaning": "행정적 병목"
+      "phrase": "critical raw materials",
+      "meaning": "핵심 원자재"
+     },
+     {
+      "phrase": "strategic partners on raw minerals",
+      "meaning": "원자재 분야 전략적 파트너"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 2,
-    "summarized_at": "2026-10-18T15:40:58+00:00"
+    "summarized_at": "2026-10-19T01:48:30+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 5줄)"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -2202,54 +2010,6 @@
      "country": "Vietnam",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "EU가 중국 의존을 줄이려 베트남산 핵심광물 확보를 확대하려 한다고 보도됨",
-      "내부 문서는 텅스텐·비스무트·안티모니·티타늄 접근 유지·확대를 위한 금융 지원을 권고했음",
-      "To Lam 베트남 지도자의 브뤼셀 방문이 10월 22일 EU 지도부 회담으로 예정됐으나 공식 발표는 없음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "16 strategic partners",
-      "4.99% stake"
-     ],
-     "quotes": [
-      "Last month, Masan High-Tech sold a 4.99% stake to Elmet Group (NASDAQ: ELMT), a tungsten supplier to the US defence stockpile.",
-      "Masan High-Tech is also in talks with a non-European foreign investor for the sale of another 5% stake, two people familiar with the discussions said."
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "베트남",
-      "EU",
-      "텅스텐",
-      "희토류",
-      "안티모니"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "add an alternative to China",
-       "meaning": "중국에 대한 대안을 추가함"
-      },
-      {
-       "phrase": "de-risk",
-       "meaning": "공급망 위험을 줄임"
-      },
-      {
-       "phrase": "critical raw materials",
-       "meaning": "핵심 원자재"
-      },
-      {
-       "phrase": "tax-haven blacklist",
-       "meaning": "조세회피처 블랙리스트"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -2291,16 +2051,16 @@
     "score": 10,
     "published": "2026-10-14",
     "korean_summary": [
-     "EU가 중국 의존도 감소를 위해 베트남과의 핵심광물 협력 강화를 추진 중임.",
-     "베트남은 텅스텐, 희토류, 안티모니, 비스무트, 보크사이트 등 풍부한 매장량을 보유하고 있음.",
-     "EU 위임부는 베트남의 광산·제련업에 재정 지원을 권고하며 중국 수출 제한 이후 공급망 차단 위험을 경고함."
+     "EU가 중국 의존을 줄이려 베트남산 핵심광물 확보를 모색 중임",
+     "베트남은 텅스텐·희토류·안티모니 등을 보유하나 EU 수출은 텅스텐·안티모니 위주임",
+     "10월 22일 EU 지도부와 To Lam 회담이 예정되었으나 공식 발표는 없었음"
     ],
     "category": "supply_chain_trade",
     "tags": [
-     "텅스텐",
-     "희토류",
      "베트남",
      "EU",
+     "텅스텐",
+     "희토류",
      "안티모니"
     ],
     "ai_processed": true,
@@ -2308,8 +2068,9 @@
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "4.99%",
-     "5%"
+     "16 strategic partners",
+     "October 22",
+     "4.99%"
     ],
     "quotes": [
      "Last month, Masan High-Tech sold a 4.99% stake to Elmet Group (NASDAQ: ELMT), a tungsten supplier to the US defence stockpile.",
@@ -2322,18 +2083,22 @@
     "key_phrases": [
      {
       "phrase": "add an alternative to China",
-      "meaning": "중국의 대안 공급처 추가"
+      "meaning": "중국의 대안을 추가함"
      },
      {
-      "phrase": "de-risk as fast as possible",
-      "meaning": "가능한 한 빠르게 공급 리스크 제거"
+      "phrase": "de-risk",
+      "meaning": "공급망 위험을 줄임"
      },
      {
-      "phrase": "administrative bottlenecks",
-      "meaning": "행정적 병목"
+      "phrase": "critical raw materials",
+      "meaning": "핵심 원자재"
+     },
+     {
+      "phrase": "strategic partners on raw minerals",
+      "meaning": "원자재 분야 전략적 파트너"
      }
     ],
-    "processed_at": "2026-10-18T15:40:58+00:00"
+    "processed_at": "2026-10-19T01:48:30+00:00"
    }
   },
   {
@@ -2353,7 +2118,7 @@
    },
    "published": "2026-10-12",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:41:02+00:00",
+   "collected_at": "2026-10-19T01:48:31+00:00",
    "score": 10,
    "body": {
     "status": "full",
@@ -2373,14 +2138,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "카자흐스탄이 2025년 21,36 тыс. тонн의 천연우라늄을 수출해 $2,98 млрд의 수익을 올림.",
-     "카자톰프롬이 2030년까지 75–85 млрд теңге를 투자해 6개 유망 우라늄 광구에서 지질탐사를 확대할 계획임.",
-     "카자톰프롬이 2025년 스위스·체코·일본 에너지기업과 우라늄 공급 계약을 체결했으며, 2018년 상장 이후 시가총액이 7배 이상 증가함."
+     "카자흐스탄 우라늄 수출 현황과 탐사 계획을 Kazinform이 정리했음",
+     "2024년 28 тыс. тонн 이상을 $4,54 млрд에 수출했음",
+     "Казатомпром이 2030년까지 75–85 млрд теңге를 탐사에 투자할 계획임"
     ],
     "basis": "body",
     "key_figures": [
-     "21,36 тыс. тонн",
-     "$2,98 млрд",
+     "28 тыс. тонн",
+     "$4,54 млрд",
      "75–85 млрд теңге"
     ],
     "quotes": [
@@ -2392,34 +2157,34 @@
      "우라늄",
      "카자흐스탄",
      "카자톰프롬",
-     "지질탐사",
-     "수출"
+     "수출",
+     "지질탐사"
     ],
     "key_phrases": [
      {
-      "phrase": "Казатомпром",
-      "meaning": "카자흐스탄의 국영 원자력·우라늄 생산 기업"
-     },
-     {
-      "phrase": "совместные предприятия",
-      "meaning": "합작기업(카자흐스탄과 외국 기업의 공동 소유)"
+      "phrase": "природный уран",
+      "meaning": "천연 우라늄"
      },
      {
       "phrase": "геологоразведка",
-      "meaning": "지질탐사·광물탐사"
+      "meaning": "지질 탐사"
+     },
+     {
+      "phrase": "совместные предприятия",
+      "meaning": "합작 기업"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:41:11+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:48:38+00:00"
    },
    "ext": {
     "kcmo": {
@@ -2428,51 +2193,6 @@
      "country": "Kazakhstan",
      "source_language": "kk"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "Kazinform이 카자흐스탄 우라늄의 구매국과 수출 수익을 정리했음",
-      "2024년 수출량은 28 тыс. тонн 이상, 금액은 $4,54 млрд였음",
-      "«Казатомпром»은 2030년까지 6개 광구에 75–85 млрд теңге 투자 계획임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "$4,54 млрд",
-      "28 тыс. тонн",
-      "75–85 млрд теңге"
-     ],
-     "quotes": [
-      "тонн природного урана и его соединений на сумму $4,54 млрд.",
-      "Таким образом, в 2016–2024 годах Казахстан экспортировал природного урана примерно на $23,4 млрд."
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "우라늄",
-      "카자흐스탄",
-      "Казатомпром",
-      "수출",
-      "합작기업"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "экспорт природного урана",
-       "meaning": "천연 우라늄 수출"
-      },
-      {
-       "phrase": "совместные предприятия",
-       "meaning": "합작기업"
-      },
-      {
-       "phrase": "геологоразведка",
-       "meaning": "지질탐사"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -2510,25 +2230,25 @@
     "score": 10,
     "published": "2026-10-12",
     "korean_summary": [
-     "카자흐스탄이 2025년 21,36 тыс. тонн의 천연우라늄을 수출해 $2,98 млрд의 수익을 올림.",
-     "카자톰프롬이 2030년까지 75–85 млрд теңге를 투자해 6개 유망 우라늄 광구에서 지질탐사를 확대할 계획임.",
-     "카자톰프롬이 2025년 스위스·체코·일본 에너지기업과 우라늄 공급 계약을 체결했으며, 2018년 상장 이후 시가총액이 7배 이상 증가함."
+     "카자흐스탄 우라늄 수출 현황과 탐사 계획을 Kazinform이 정리했음",
+     "2024년 28 тыс. тонн 이상을 $4,54 млрд에 수출했음",
+     "Казатомпром이 2030년까지 75–85 млрд теңге를 탐사에 투자할 계획임"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "우라늄",
      "카자흐스탄",
      "카자톰프롬",
-     "지질탐사",
-     "수출"
+     "수출",
+     "지질탐사"
     ],
     "ai_processed": true,
     "card_id": "548a6dc36155",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "21,36 тыс. тонн",
-     "$2,98 млрд",
+     "28 тыс. тонн",
+     "$4,54 млрд",
      "75–85 млрд теңге"
     ],
     "quotes": [
@@ -2541,19 +2261,19 @@
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "Казатомпром",
-      "meaning": "카자흐스탄의 국영 원자력·우라늄 생산 기업"
-     },
-     {
-      "phrase": "совместные предприятия",
-      "meaning": "합작기업(카자흐스탄과 외국 기업의 공동 소유)"
+      "phrase": "природный уран",
+      "meaning": "천연 우라늄"
      },
      {
       "phrase": "геологоразведка",
-      "meaning": "지질탐사·광물탐사"
+      "meaning": "지질 탐사"
+     },
+     {
+      "phrase": "совместные предприятия",
+      "meaning": "합작 기업"
      }
     ],
-    "processed_at": "2026-10-18T15:41:11+00:00"
+    "processed_at": "2026-10-19T01:48:38+00:00"
    }
   },
   {
@@ -2573,7 +2293,7 @@
    },
    "published": "2026-10-06",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:41:35+00:00",
+   "collected_at": "2026-10-19T01:48:41+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -2592,13 +2312,13 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "탄자니아가 국제 경쟁 심화 속에서 광물 계약으로 국익을 보호해야 한다는 주장이 제기됨.",
-     "광물 계약은 생산 통제, 처리 지역, 정부 수입, 채굴 영향 범위 등을 결정하는 중요 수단임.",
-     "기니의 시마도우 철광 사업 사례에서 연 Dola bilioni moja 이상 수익 가능성이 나타났으며, 투명성 강화와 사전 법·경제 검토가 필요함을 보여줌."
+     "HabariLeo가 탄자니아 광물 계약은 국가 이익을 우선해야 한다는 논지의 기사를 냈음",
+     "기니 Simandou 철광, 잠비아 구리, DRC 코발트, 가나 현지 계약업체 참여 사례를 비교했음",
+     "탄자니아에 현지 참여·투명한 세금·로열티, 국내 가공 조건을 계약에 담을 것을 제안했음"
     ],
     "basis": "body",
     "key_figures": [
-     "Dola bilioni moja",
+     "Dola bilioni moja za Marekani",
      "Machi 2025",
      "Mwaka 2026"
     ],
@@ -2607,41 +2327,45 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "광물 계약",
-     "투명성",
-     "현지인 참여",
      "탄자니아",
-     "자원 거버넌스"
+     "광물 계약",
+     "현지 참여",
+     "코발트",
+     "구리"
     ],
     "key_phrases": [
      {
-      "phrase": "maslahi ya taifa",
+      "phrase": "Maslahi ya taifa",
       "meaning": "국가 이익"
      },
      {
-      "phrase": "uwazi katika mikataba",
-      "meaning": "계약 투명성"
-     },
-     {
       "phrase": "ushiriki wa wazawa",
-      "meaning": "현지인 참여"
+      "meaning": "현지인(자국민) 참여"
      },
      {
-      "phrase": "Extractive Industries Transparency Initiative (EITI)",
-      "meaning": "채취산업투명성이니셔티브"
+      "phrase": "uwazi katika mikataba",
+      "meaning": "계약의 투명성"
+     },
+     {
+      "phrase": "mrabaha",
+      "meaning": "로열티"
+     },
+     {
+      "phrase": "uchakataji wa madini nchini",
+      "meaning": "광물의 국내 가공"
      }
     ],
-    "oda_relevance": "탄자니아의 광물 계약 정책과 거버넌스 강화는 한국의 핵심광물 ODA 협력에서 정책 조화 및 기술협력의 기초가 될 수 있음."
+    "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:41:46+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:48:44+00:00"
    },
    "ext": {
     "kcmo": {
@@ -2650,54 +2374,6 @@
      "country": "Tanzania",
      "source_language": "sw"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "HabariLeo는 광물 계약이 국가 이익을 지켜야 한다고 강조했음",
-      "기니 Simandou 철광은 EITI 기준 초기 연 Dola bilioni moja 이상 수입 가능성이 있다고 했음",
-      "탄자니아에 현지 참여 기준과 세금·로열티 투명성 확보를 제안했음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "Dola bilioni moja",
-      "Machi 2025",
-      "Mwaka 2026"
-     ],
-     "quotes": [
-      "Vikwazo vya mauzo pia vilisababisha kuongezeka kwa akiba ya cobalt katika baadhi ya vipindi."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "탄자니아",
-      "광물 계약",
-      "현지 참여",
-      "EITI",
-      "아프리카 사례"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "mikataba ya madini",
-       "meaning": "광물 계약"
-      },
-      {
-       "phrase": "ushiriki wa wazawa",
-       "meaning": "현지인(자국 기업) 참여"
-      },
-      {
-       "phrase": "uwazi katika kodi, mrabaha na mgawanyo wa mapato",
-       "meaning": "세금·로열티·수익 배분의 투명성"
-      },
-      {
-       "phrase": "uchakataji wa madini nchini",
-       "meaning": "광물의 국내 가공"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -2739,24 +2415,24 @@
     "score": 9,
     "published": "2026-10-06",
     "korean_summary": [
-     "탄자니아가 국제 경쟁 심화 속에서 광물 계약으로 국익을 보호해야 한다는 주장이 제기됨.",
-     "광물 계약은 생산 통제, 처리 지역, 정부 수입, 채굴 영향 범위 등을 결정하는 중요 수단임.",
-     "기니의 시마도우 철광 사업 사례에서 연 Dola bilioni moja 이상 수익 가능성이 나타났으며, 투명성 강화와 사전 법·경제 검토가 필요함을 보여줌."
+     "HabariLeo가 탄자니아 광물 계약은 국가 이익을 우선해야 한다는 논지의 기사를 냈음",
+     "기니 Simandou 철광, 잠비아 구리, DRC 코발트, 가나 현지 계약업체 참여 사례를 비교했음",
+     "탄자니아에 현지 참여·투명한 세금·로열티, 국내 가공 조건을 계약에 담을 것을 제안했음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "광물 계약",
-     "투명성",
-     "현지인 참여",
      "탄자니아",
-     "자원 거버넌스"
+     "광물 계약",
+     "현지 참여",
+     "코발트",
+     "구리"
     ],
     "ai_processed": true,
     "card_id": "587fe5d1856a",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "Dola bilioni moja",
+     "Dola bilioni moja za Marekani",
      "Machi 2025",
      "Mwaka 2026"
     ],
@@ -2765,27 +2441,31 @@
     ],
     "source_language": "sw",
     "country": "Tanzania",
-    "oda_relevance": "탄자니아의 광물 계약 정책과 거버넌스 강화는 한국의 핵심광물 ODA 협력에서 정책 조화 및 기술협력의 기초가 될 수 있음.",
+    "oda_relevance": "",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "maslahi ya taifa",
+      "phrase": "Maslahi ya taifa",
       "meaning": "국가 이익"
      },
      {
-      "phrase": "uwazi katika mikataba",
-      "meaning": "계약 투명성"
-     },
-     {
       "phrase": "ushiriki wa wazawa",
-      "meaning": "현지인 참여"
+      "meaning": "현지인(자국민) 참여"
      },
      {
-      "phrase": "Extractive Industries Transparency Initiative (EITI)",
-      "meaning": "채취산업투명성이니셔티브"
+      "phrase": "uwazi katika mikataba",
+      "meaning": "계약의 투명성"
+     },
+     {
+      "phrase": "mrabaha",
+      "meaning": "로열티"
+     },
+     {
+      "phrase": "uchakataji wa madini nchini",
+      "meaning": "광물의 국내 가공"
      }
     ],
-    "processed_at": "2026-10-18T15:41:46+00:00"
+    "processed_at": "2026-10-19T01:48:44+00:00"
    }
   },
   {
@@ -2805,7 +2485,7 @@
    },
    "published": "2026-09-21",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:42:00+00:00",
+   "collected_at": "2026-10-19T01:48:47+00:00",
    "score": 9,
    "body": {
     "status": "partial",
@@ -2829,9 +2509,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 금융감독청(OJK)이 광물·전략물자 거래소 운영에 관한 새 규정을 제정함.",
-     "거래소는 Rp1 T 이상의 자본금을 보유해야 하며, 규정은 2027년부터 시행될 예정임.",
-     "구체적 내용과 후속 이행 계획은 확인 불가임."
+     "OJK가 광물·전략 상품 거래소 운영에 관한 새 규정을 정했음",
+     "해당 거래소는 Rp1 T 자본을 갖춰야 하며 두 개 POJK에 담겼음",
+     "두 POJK는 2027년부터 시행 예정이며 세부 내용은 확인 불가임"
     ],
     "basis": "body",
     "key_figures": [
@@ -2843,32 +2523,37 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "광물거래소",
-     "OJK",
      "인도네시아",
-     "자본금 규제"
+     "OJK",
+     "광물거래소",
+     "전략상품",
+     "POJK"
     ],
     "key_phrases": [
      {
-      "phrase": "bursa mineral dan komoditas strategis",
-      "meaning": "광물 및 전략물자 거래소"
+      "phrase": "Bursa Mineral dan Komoditas Strategis",
+      "meaning": "광물 및 전략 상품 거래소"
      },
      {
       "phrase": "Peraturan OJK (POJK)",
-      "meaning": "OJK 규정"
+      "meaning": "금융감독청(OJK) 규정"
+     },
+     {
+      "phrase": "Wajibkan Miliki Modal",
+      "meaning": "자본 보유를 의무화함"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "partial",
     "input_chars": 395,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:42:04+00:00"
+    "summarized_at": "2026-10-19T01:48:54+00:00"
    },
    "ext": {
     "kcmo": {
@@ -2877,49 +2562,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "OJK가 광물·전략 상품 거래소 운영에 관한 새 규정을 정했음",
-      "제목상 거래소는 Rp1 T 자본금을 갖춰야 하며 두 건의 POJK에 담겼음",
-      "규정은 2027년부터 시행되며 세부 조항은 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "Rp1 T"
-     ],
-     "quotes": [
-      "OJK Wajibkan Bursa Mineral dan Komoditas Strategis Miliki Modal Rp1 T",
-      "Jakarta, CNBC Indonesia- Otoritas Jasa Keuangan (OJK) menetapkan ketentuan baru terkait penyelenggaraan bursa mineral dan komoditas strategis."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "인도네시아",
-      "OJK",
-      "광물거래소",
-      "전략상품",
-      "자본금 규제"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Bursa Mineral dan Komoditas Strategis",
-       "meaning": "광물 및 전략 상품 거래소"
-      },
-      {
-       "phrase": "Peraturan OJK (POJK)",
-       "meaning": "금융감독청(OJK) 규정"
-      },
-      {
-       "phrase": "Miliki Modal Rp1 T",
-       "meaning": "자본금 Rp1 T 보유"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -2961,16 +2603,17 @@
     "score": 9,
     "published": "2026-09-21",
     "korean_summary": [
-     "인도네시아 금융감독청(OJK)이 광물·전략물자 거래소 운영에 관한 새 규정을 제정함.",
-     "거래소는 Rp1 T 이상의 자본금을 보유해야 하며, 규정은 2027년부터 시행될 예정임.",
-     "구체적 내용과 후속 이행 계획은 확인 불가임."
+     "OJK가 광물·전략 상품 거래소 운영에 관한 새 규정을 정했음",
+     "해당 거래소는 Rp1 T 자본을 갖춰야 하며 두 개 POJK에 담겼음",
+     "두 POJK는 2027년부터 시행 예정이며 세부 내용은 확인 불가임"
     ],
     "category": "policy_regulation",
     "tags": [
-     "광물거래소",
-     "OJK",
      "인도네시아",
-     "자본금 규제"
+     "OJK",
+     "광물거래소",
+     "전략상품",
+     "POJK"
     ],
     "ai_processed": true,
     "card_id": "aa657bf504d5",
@@ -2989,15 +2632,19 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "bursa mineral dan komoditas strategis",
-      "meaning": "광물 및 전략물자 거래소"
+      "phrase": "Bursa Mineral dan Komoditas Strategis",
+      "meaning": "광물 및 전략 상품 거래소"
      },
      {
       "phrase": "Peraturan OJK (POJK)",
-      "meaning": "OJK 규정"
+      "meaning": "금융감독청(OJK) 규정"
+     },
+     {
+      "phrase": "Wajibkan Miliki Modal",
+      "meaning": "자본 보유를 의무화함"
      }
     ],
-    "processed_at": "2026-10-18T15:42:04+00:00"
+    "processed_at": "2026-10-19T01:48:54+00:00"
    }
   },
   {
@@ -3017,7 +2664,7 @@
    },
    "published": "2026-10-15",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:42:12+00:00",
+   "collected_at": "2026-10-19T01:48:55+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -3037,15 +2684,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 정부가 2026년 니켈 수출액을 최소 USD45 miliar에 도달시키겠다고 목표를 제시했음.",
-     "2017~2018년 USD3.3 miliar에서 2025년 USD40 miliar 이상으로 증가한 하이라이제이션 정책의 성과를 바탕으로 함.",
-     "정부는 2040년까지의 하이라이제이션 로드맵을 수립했으며 광물·석탄·에너지·임업·수산·농업 등 여러 부문에 USD618 miliar 투자를 목표로 설정했음."
+     "바힐 장관이 2026년 니켈 수출 목표를 최소 USD45 miliar로 제시했음",
+     "수출액은 2017–2018년 약 USD3,3 miliar, 2023년 USD34 miliar, 2025년 USD40 miliar 초과였음",
+     "2040년까지 하류화 로드맵에 USD618 miliar 투자를 목표로 하며 광물·석탄 등을 포함함"
     ],
     "basis": "body",
     "key_figures": [
      "USD45 miliar",
      "USD3,3 miliar",
-     "USD40 miliar",
      "USD618 miliar"
     ],
     "quotes": [
@@ -3054,32 +2700,41 @@
     ],
     "category": "policy_regulation",
     "tags": [
+     "인도네시아",
      "니켈",
-     "하이라이제이션",
-     "수출",
-     "인도네시아"
+     "하류화",
+     "ESDM",
+     "Trade Expo Indonesia"
     ],
     "key_phrases": [
      {
-      "phrase": "Hilirisasi",
-      "meaning": "원재료 수출을 제한하고 국내에서 가공·처리하여 부가가치를 높이는 정책"
+      "phrase": "hilirisasi",
+      "meaning": "하류화(원자재 국내 가공·부가가치 제고 정책)"
      },
      {
-      "phrase": "pengolahan sumber daya alam di dalam negeri",
-      "meaning": "국내 천연자원 처리·가공"
+      "phrase": "peta jalan hilirisasi hingga 2040",
+      "meaning": "2040년까지의 하류화 로드맵"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel mentah",
+      "meaning": "니켈 원광 수출 중단"
+     },
+     {
+      "phrase": "rantai pasok global",
+      "meaning": "글로벌 공급망"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 3601,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:42:17+00:00"
+    "summarized_at": "2026-10-19T01:48:58+00:00"
    },
    "ext": {
     "kcmo": {
@@ -3088,51 +2743,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "Bahlil 장관이 2026년 니켈 수출 목표를 최소 USD45 miliar로 제시했음",
-      "수출액은 2017–2018년 약 USD3,3 miliar에서 2025년 USD40 miliar 이상으로 늘었음",
-      "2040년까지 하류화 로드맵의 투자 목표는 USD618 miliar이며 후속 일정은 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "USD45 miliar",
-      "USD40 miliar",
-      "USD618 miliar"
-     ],
-     "quotes": [
-      "Menko Bahlil: Hilirisasi Jadi Kunci Dongkrak Ekspor Nikel Indonesia hingga USD45 Miliar",
-      "Jakarta – Pemerintah menargetkan nilai ekspor nikel Indonesia mencapai sedikitnya USD45 miliar pada 2026."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "니켈",
-      "하류화",
-      "인도네시아",
-      "ESDM",
-      "수출"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "hilirisasi",
-       "meaning": "하류화(자원의 국내 가공·부가가치 제고 정책)"
-      },
-      {
-       "phrase": "peta jalan hilirisasi hingga 2040",
-       "meaning": "2040년까지의 하류화 로드맵"
-      },
-      {
-       "phrase": "Penghentian ekspor bijih nikel mentah",
-       "meaning": "니켈 원광 수출 중단"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -3178,16 +2788,17 @@
     "score": 9,
     "published": "2026-10-15",
     "korean_summary": [
-     "인도네시아 정부가 2026년 니켈 수출액을 최소 USD45 miliar에 도달시키겠다고 목표를 제시했음.",
-     "2017~2018년 USD3.3 miliar에서 2025년 USD40 miliar 이상으로 증가한 하이라이제이션 정책의 성과를 바탕으로 함.",
-     "정부는 2040년까지의 하이라이제이션 로드맵을 수립했으며 광물·석탄·에너지·임업·수산·농업 등 여러 부문에 USD618 miliar 투자를 목표로 설정했음."
+     "바힐 장관이 2026년 니켈 수출 목표를 최소 USD45 miliar로 제시했음",
+     "수출액은 2017–2018년 약 USD3,3 miliar, 2023년 USD34 miliar, 2025년 USD40 miliar 초과였음",
+     "2040년까지 하류화 로드맵에 USD618 miliar 투자를 목표로 하며 광물·석탄 등을 포함함"
     ],
     "category": "policy_regulation",
     "tags": [
+     "인도네시아",
      "니켈",
-     "하이라이제이션",
-     "수출",
-     "인도네시아"
+     "하류화",
+     "ESDM",
+     "Trade Expo Indonesia"
     ],
     "ai_processed": true,
     "card_id": "6adf384f5131",
@@ -3196,7 +2807,6 @@
     "key_figures": [
      "USD45 miliar",
      "USD3,3 miliar",
-     "USD40 miliar",
      "USD618 miliar"
     ],
     "quotes": [
@@ -3209,15 +2819,23 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "Hilirisasi",
-      "meaning": "원재료 수출을 제한하고 국내에서 가공·처리하여 부가가치를 높이는 정책"
+      "phrase": "hilirisasi",
+      "meaning": "하류화(원자재 국내 가공·부가가치 제고 정책)"
      },
      {
-      "phrase": "pengolahan sumber daya alam di dalam negeri",
-      "meaning": "국내 천연자원 처리·가공"
+      "phrase": "peta jalan hilirisasi hingga 2040",
+      "meaning": "2040년까지의 하류화 로드맵"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel mentah",
+      "meaning": "니켈 원광 수출 중단"
+     },
+     {
+      "phrase": "rantai pasok global",
+      "meaning": "글로벌 공급망"
      }
     ],
-    "processed_at": "2026-10-18T15:42:17+00:00"
+    "processed_at": "2026-10-19T01:48:58+00:00"
    }
   },
   {
@@ -3237,7 +2855,7 @@
    },
    "published": "2026-10-17",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:42:29+00:00",
+   "collected_at": "2026-10-19T01:48:59+00:00",
    "score": 9,
    "body": {
     "status": "title_only",
@@ -3254,38 +2872,39 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "세계 니켈 수요 증가에 따라 인도네시아가 하류산업 고도화 가속화를 요구받음"
+     "세계 니켈 수요가 늘어나면서 인도네시아에 하류화 가속을 촉구함"
     ],
     "basis": "title",
     "key_figures": [],
     "quotes": [],
-    "category": "supply_chain_trade",
+    "category": "policy_regulation",
     "tags": [
      "니켈",
      "인도네시아",
-     "하류산업"
+     "하류화",
+     "니켈 수요"
     ],
     "key_phrases": [
      {
-      "phrase": "Permintaan Nikel Dunia",
-      "meaning": "세계 니켈 수요"
+      "phrase": "Permintaan Nikel Dunia Meningkat",
+      "meaning": "세계 니켈 수요 증가"
      },
      {
-      "phrase": "Hilirisasi",
-      "meaning": "하류산업 고도화/부가가치 증대"
+      "phrase": "Percepat Hilirisasi",
+      "meaning": "하류화 가속"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "title_only",
     "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:42:31+00:00"
+    "summarized_at": "2026-10-19T01:49:06+00:00"
    },
    "ext": {
     "kcmo": {
@@ -3294,37 +2913,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "세계 니켈 수요가 증가하며 인도네시아에 하류화 가속이 촉구됨"
-     ],
-     "basis": "title",
-     "key_figures": [],
-     "quotes": [],
-     "category": "policy_regulation",
-     "tags": [
-      "니켈",
-      "인도네시아",
-      "하류화",
-      "니켈 수요"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Percepat Hilirisasi",
-       "meaning": "하류화를 가속하다"
-      },
-      {
-       "phrase": "Permintaan Nikel Dunia Meningkat",
-       "meaning": "세계 니켈 수요 증가"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -3370,13 +2958,14 @@
     "score": 9,
     "published": "2026-10-17",
     "korean_summary": [
-     "[제목 기반] 세계 니켈 수요 증가에 따라 인도네시아가 하류산업 고도화 가속화를 요구받음"
+     "[제목 기반] 세계 니켈 수요가 늘어나면서 인도네시아에 하류화 가속을 촉구함"
     ],
-    "category": "supply_chain_trade",
+    "category": "policy_regulation",
     "tags": [
      "니켈",
      "인도네시아",
-     "하류산업"
+     "하류화",
+     "니켈 수요"
     ],
     "ai_processed": true,
     "card_id": "7c3730a2d8f6",
@@ -3387,18 +2976,18 @@
     "source_language": "id",
     "country": "Indonesia",
     "oda_relevance": "",
-    "category_ko": "공급망·교역",
+    "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "Permintaan Nikel Dunia",
-      "meaning": "세계 니켈 수요"
+      "phrase": "Permintaan Nikel Dunia Meningkat",
+      "meaning": "세계 니켈 수요 증가"
      },
      {
-      "phrase": "Hilirisasi",
-      "meaning": "하류산업 고도화/부가가치 증대"
+      "phrase": "Percepat Hilirisasi",
+      "meaning": "하류화 가속"
      }
     ],
-    "processed_at": "2026-10-18T15:42:31+00:00"
+    "processed_at": "2026-10-19T01:49:06+00:00"
    }
   },
   {
@@ -3418,7 +3007,7 @@
    },
    "published": "2026-10-16",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:42:34+00:00",
+   "collected_at": "2026-10-19T01:49:07+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -3442,17 +3031,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 에너지광물자원부 장관 바흘릴이 국내 니켈 제련소 반제품을 흡수할 하류산업 발전을 촉구했음.",
-     "정부는 100% 부가가치 창출을 목표로 반제품만 생산하는 신규 제련소 건설 제한을 검토 중이며, 전 세계 니켈 공급 과잉이 배경임.",
-     "인도네시아 니켈산업포럼에 따르면 2025년 국내 니켈 정제 생산량은 2,5 juta ton으로 세계 수요의 약 60%를 차지했음."
+     "Bahlil 장관이 반제품만 만드는 신규 니켈 제련소 제한을 검토한다고 밝혔음",
+     "Bahlil은 세계 니켈 oversupply가 2,5 juta ton이라고 설명했음",
+     "반제품 해외 반출을 줄이도록 하류산업 건설을 추진할 계획임"
     ],
     "basis": "body",
     "key_figures": [
      "2,5 juta ton",
-     "2,5 juta ton",
-     "60%",
      "2,7 juta ton Ni",
-     "450 ribu ton nikel dalam bentuk MHP - Nikel Sulfat"
+     "900 ribu ton nikel"
     ],
     "quotes": [
      "Wacana itu seiring dengan target pemerintah mendapatkan nilai tambah 100% di dalam negeri, sekaligus merespons kondisi kelebihan pasokan nikel di pasar global.",
@@ -3460,41 +3047,41 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "제련·정제",
      "인도네시아",
-     "정책·규제",
-     "하류산업"
+     "니켈",
+     "제련소",
+     "하류화",
+     "Kementerian ESDM"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "하류산업 개발, 가공도 제고"
-     },
-     {
-      "phrase": "smelter",
-      "meaning": "제련소, 정제시설"
+      "meaning": "하류화(국내 가공·정제로 부가가치 확대)"
      },
      {
       "phrase": "produk setengah jadi",
-      "meaning": "반제품, 중간제품"
+      "meaning": "반제품"
      },
      {
       "phrase": "nilai tambah 100%",
-      "meaning": "100% 부가가치"
+      "meaning": "부가가치 100% 국내 확보"
+     },
+     {
+      "phrase": "oversupply",
+      "meaning": "공급과잉"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 3827,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:42:43+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:49:18+00:00"
    },
    "ext": {
     "kcmo": {
@@ -3503,55 +3090,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "Bahlil 장관이 니켈 반제품만 만드는 신규 제련소 건설 제한을 검토 중이라고 밝혔음",
-      "세계 니켈 소비와 생산 사이 oversupply가 2,5 juta ton이라고 설명했음",
-      "반제품을 국내 하류산업이 흡수하도록 유도할 계획이며 검토 결과는 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "2,5 juta ton",
-      "nilai tambah 100%",
-      "900 ribu ton"
-     ],
-     "quotes": [
-      "Wacana itu seiring dengan target pemerintah mendapatkan nilai tambah 100% di dalam negeri, sekaligus merespons kondisi kelebihan pasokan nikel di pasar global.",
-      "Terjadi oversupply 2,5 juta antara konsumsi dunia dengan produksi,\" jelasnya."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "니켈",
-      "인도네시아",
-      "하류산업",
-      "제련소",
-      "ESDM"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "hilirisasi",
-       "meaning": "하류화(국내 가공·정제로 부가가치를 높이는 정책)"
-      },
-      {
-       "phrase": "produk setengah jadi",
-       "meaning": "반제품"
-      },
-      {
-       "phrase": "oversupply",
-       "meaning": "공급과잉"
-      },
-      {
-       "phrase": "nilai tambah 100%",
-       "meaning": "국내 부가가치 100% 달성"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -3593,17 +3131,17 @@
     "score": 9,
     "published": "2026-10-16",
     "korean_summary": [
-     "인도네시아 에너지광물자원부 장관 바흘릴이 국내 니켈 제련소 반제품을 흡수할 하류산업 발전을 촉구했음.",
-     "정부는 100% 부가가치 창출을 목표로 반제품만 생산하는 신규 제련소 건설 제한을 검토 중이며, 전 세계 니켈 공급 과잉이 배경임.",
-     "인도네시아 니켈산업포럼에 따르면 2025년 국내 니켈 정제 생산량은 2,5 juta ton으로 세계 수요의 약 60%를 차지했음."
+     "Bahlil 장관이 반제품만 만드는 신규 니켈 제련소 제한을 검토한다고 밝혔음",
+     "Bahlil은 세계 니켈 oversupply가 2,5 juta ton이라고 설명했음",
+     "반제품 해외 반출을 줄이도록 하류산업 건설을 추진할 계획임"
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "제련·정제",
      "인도네시아",
-     "정책·규제",
-     "하류산업"
+     "니켈",
+     "제련소",
+     "하류화",
+     "Kementerian ESDM"
     ],
     "ai_processed": true,
     "card_id": "bdbed9f7bd00",
@@ -3611,10 +3149,8 @@
     "body_status": "full",
     "key_figures": [
      "2,5 juta ton",
-     "2,5 juta ton",
-     "60%",
      "2,7 juta ton Ni",
-     "450 ribu ton nikel dalam bentuk MHP - Nikel Sulfat"
+     "900 ribu ton nikel"
     ],
     "quotes": [
      "Wacana itu seiring dengan target pemerintah mendapatkan nilai tambah 100% di dalam negeri, sekaligus merespons kondisi kelebihan pasokan nikel di pasar global.",
@@ -3627,22 +3163,22 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "하류산업 개발, 가공도 제고"
-     },
-     {
-      "phrase": "smelter",
-      "meaning": "제련소, 정제시설"
+      "meaning": "하류화(국내 가공·정제로 부가가치 확대)"
      },
      {
       "phrase": "produk setengah jadi",
-      "meaning": "반제품, 중간제품"
+      "meaning": "반제품"
      },
      {
       "phrase": "nilai tambah 100%",
-      "meaning": "100% 부가가치"
+      "meaning": "부가가치 100% 국내 확보"
+     },
+     {
+      "phrase": "oversupply",
+      "meaning": "공급과잉"
      }
     ],
-    "processed_at": "2026-10-18T15:42:43+00:00"
+    "processed_at": "2026-10-19T01:49:18+00:00"
    }
   },
   {
@@ -3662,7 +3198,7 @@
    },
    "published": "2026-10-15",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:43:04+00:00",
+   "collected_at": "2026-10-19T01:49:19+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -3682,9 +3218,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 대통령 프라보워가 니켈 하류산업 프로젝트 11개를 준공함.",
-     "이 프로젝트의 규모는 Rp180 Triliun이며, 2026년 니켈 수출 목표는 USD45 Miliar임.",
-     "녹색 제품이 글로벌 시장에서 더 높은 가치를 평가받는 추세 속에서 진행됨."
+     "프라보워 대통령이 니켈 하류화 프로젝트 11건을 공식 개시했음",
+     "해당 사업의 규모는 Rp180 Triliun으로 제시됐음",
+     "2026년 니켈 수출 목표는 USD45 Miliar이며 세부 내용은 확인 불가임"
     ],
     "basis": "body",
     "key_figures": [
@@ -3698,30 +3234,36 @@
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "하류산업",
-     "인도네시아"
+     "하류화",
+     "인도네시아",
+     "프라보워",
+     "니켈 수출"
     ],
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류산업화(광석에서 가공·제련 제품으로의 부가가치 향상)"
+      "meaning": "니켈 하류화(가공·부가가치 사업)"
      },
      {
-      "phrase": "Produk Hijau",
-      "meaning": "녹색 제품(환경친화적 생산·공정 기준을 충족한 제품)"
+      "phrase": "Prabowo Resmikan 11 Proyek",
+      "meaning": "프라보워 대통령이 11개 프로젝트를 공식 개시함"
+     },
+     {
+      "phrase": "Ekspor Nikel Ditargetkan Tembus USD45 Miliar pada 2026",
+      "meaning": "2026년 니켈 수출 목표가 USD45 Miliar 돌파로 설정됨"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2595,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:43:08+00:00"
+    "summarized_at": "2026-10-19T01:49:29+00:00"
    },
    "ext": {
     "kcmo": {
@@ -3730,50 +3272,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "프라보워 대통령이 니켈 하류화 프로젝트 11건을 공식 개시했음",
-      "해당 11개 사업의 규모는 Rp180 Triliun으로 제시됐음",
-      "니켈 수출은 2026년 USD45 Miliar 돌파가 목표로 제시됐음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "11 Proyek",
-      "Rp180 Triliun",
-      "USD45 Miliar"
-     ],
-     "quotes": [
-      "Prabowo Resmikan 11 Proyek Hilirisasi Nikel Senilai Rp180 Triliun",
-      "Ekspor Nikel Ditargetkan Tembus USD45 Miliar pada 2026"
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "인도네시아",
-      "니켈",
-      "하류화",
-      "니켈 수출"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Hilirisasi Nikel",
-       "meaning": "니켈 하류화(가공·제련 등 부가가치 확대)"
-      },
-      {
-       "phrase": "Prabowo Resmikan",
-       "meaning": "프라보워 대통령이 공식 개시했음"
-      },
-      {
-       "phrase": "Ditargetkan Tembus",
-       "meaning": "돌파를 목표로 함"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -3815,15 +3313,17 @@
     "score": 9,
     "published": "2026-10-15",
     "korean_summary": [
-     "인도네시아 대통령 프라보워가 니켈 하류산업 프로젝트 11개를 준공함.",
-     "이 프로젝트의 규모는 Rp180 Triliun이며, 2026년 니켈 수출 목표는 USD45 Miliar임.",
-     "녹색 제품이 글로벌 시장에서 더 높은 가치를 평가받는 추세 속에서 진행됨."
+     "프라보워 대통령이 니켈 하류화 프로젝트 11건을 공식 개시했음",
+     "해당 사업의 규모는 Rp180 Triliun으로 제시됐음",
+     "2026년 니켈 수출 목표는 USD45 Miliar이며 세부 내용은 확인 불가임"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "하류산업",
-     "인도네시아"
+     "하류화",
+     "인도네시아",
+     "프라보워",
+     "니켈 수출"
     ],
     "ai_processed": true,
     "card_id": "d4859178d7ab",
@@ -3844,14 +3344,18 @@
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류산업화(광석에서 가공·제련 제품으로의 부가가치 향상)"
+      "meaning": "니켈 하류화(가공·부가가치 사업)"
      },
      {
-      "phrase": "Produk Hijau",
-      "meaning": "녹색 제품(환경친화적 생산·공정 기준을 충족한 제품)"
+      "phrase": "Prabowo Resmikan 11 Proyek",
+      "meaning": "프라보워 대통령이 11개 프로젝트를 공식 개시함"
+     },
+     {
+      "phrase": "Ekspor Nikel Ditargetkan Tembus USD45 Miliar pada 2026",
+      "meaning": "2026년 니켈 수출 목표가 USD45 Miliar 돌파로 설정됨"
      }
     ],
-    "processed_at": "2026-10-18T15:43:08+00:00"
+    "processed_at": "2026-10-19T01:49:29+00:00"
    }
   },
   {
@@ -3871,7 +3375,7 @@
    },
    "published": "2026-10-16",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:43:26+00:00",
+   "collected_at": "2026-10-19T01:49:29+00:00",
    "score": 9,
    "body": {
     "status": "title_only",
@@ -3888,7 +3392,7 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "니켈 하류 산업화가 전기차 생태계 강화 및 술라웨시 지역경제 발전의 초점임."
+     "니켈 하류화가 전기차 생태계를 강화하고 술라웨시 지역경제가 주목받고 있음"
     ],
     "basis": "title",
     "key_figures": [],
@@ -3896,31 +3400,32 @@
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "인도네시아",
+     "하류화",
      "전기차",
+     "인도네시아",
      "술라웨시"
     ],
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류 산업화"
+      "meaning": "니켈 하류화(下流化)"
      },
      {
-      "phrase": "Kendaraan Listrik",
-      "meaning": "전기차"
+      "phrase": "Ekosistem Kendaraan Listrik",
+      "meaning": "전기차 생태계"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "title_only",
     "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:43:28+00:00"
+    "summarized_at": "2026-10-19T01:49:32+00:00"
    },
    "ext": {
     "kcmo": {
@@ -3929,38 +3434,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "니켈 다운스트림화가 전기차 생태계를 강화하고 술라웨시 지역경제가 주목받고 있음"
-     ],
-     "basis": "title",
-     "key_figures": [],
-     "quotes": [],
-     "category": "supply_chain_trade",
-     "tags": [
-      "니켈",
-      "다운스트림화",
-      "전기차",
-      "인도네시아",
-      "술라웨시"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Hilirisasi Nikel",
-       "meaning": "니켈 다운스트림화(하류 산업화)"
-      },
-      {
-       "phrase": "Ekosistem Kendaraan Listrik",
-       "meaning": "전기차 생태계"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -4002,13 +3475,14 @@
     "score": 9,
     "published": "2026-10-16",
     "korean_summary": [
-     "[제목 기반] 니켈 하류 산업화가 전기차 생태계 강화 및 술라웨시 지역경제 발전의 초점임."
+     "[제목 기반] 니켈 하류화가 전기차 생태계를 강화하고 술라웨시 지역경제가 주목받고 있음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "인도네시아",
+     "하류화",
      "전기차",
+     "인도네시아",
      "술라웨시"
     ],
     "ai_processed": true,
@@ -4024,14 +3498,14 @@
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류 산업화"
+      "meaning": "니켈 하류화(下流化)"
      },
      {
-      "phrase": "Kendaraan Listrik",
-      "meaning": "전기차"
+      "phrase": "Ekosistem Kendaraan Listrik",
+      "meaning": "전기차 생태계"
      }
     ],
-    "processed_at": "2026-10-18T15:43:28+00:00"
+    "processed_at": "2026-10-19T01:49:32+00:00"
    }
   },
   {
@@ -4051,7 +3525,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:43:31+00:00",
+   "collected_at": "2026-10-19T01:49:33+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -4075,17 +3549,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 니켈산업포럼(FINI)이 2026년 니켈 가공산 생산량이 2025년 대비 3.5~4% 감소할 것으로 전망함.",
-     "2025년 니켈 가공산 생산량 2.5 juta ton 중 NPI·FeNi·Matte 2.05 juta ton, MHP·니켈황산염 450 ribu ton 구성임.",
-     "2027년 HPAL 기반 수소화학침출 설비 완공으로 생산량 회복 예상되며, MHP 생산량이 450 ribu ton에서 lebih dari 900 ribu ton으로 증가할 것으로 전망됨."
+     "인도네시아 니켈산업포럼 FINI가 2026년 가공 니켈 생산 감소를 전망했음",
+     "2025년 2,5 juta ton 대비 3,5% hingga 4% 감소할 것으로 예상했음",
+     "HPAL 프로젝트 가동으로 2027년 MHP 생산능력이 반등할 것으로 봤음"
     ],
     "basis": "body",
     "key_figures": [
      "3,5% hingga 4%",
      "2,5 juta ton",
-     "2,05 juta ton",
-     "450 ribu ton",
-     "lebih dari 900 ribu ton"
+     "900 ribu ton nikel"
     ],
     "quotes": [
      "Jakarta, CNBC Indonesia - Forum Industri Nikel Indonesia (FINI) memproyeksikan total produksi nikel olahan hasil hilirisasi di dalam negeri akan mengalami penurunan sebesar 3,5% hingga 4% pada 2026.",
@@ -4094,39 +3566,40 @@
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "가공산 생산",
+     "인도네시아",
+     "FINI",
      "HPAL",
-     "인도네시아"
+     "MHP"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "자원의 원료 형태에서 가공·최종 제품으로 옮겨가는 산업화 과정"
+      "meaning": "하류화(원광 가공·제련 확대 정책)"
+     },
+     {
+      "phrase": "moratorium smelter nikel",
+      "meaning": "니켈 제련소 건설 모라토리엄"
      },
      {
       "phrase": "oversupply",
-      "meaning": "초과 공급"
-     },
-     {
-      "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "고압산침출 공정으로 니켈 수소화학침출에 사용"
+      "meaning": "공급 과잉"
      },
      {
       "phrase": "Mixed Hydroxide Precipitate (MHP)",
-      "meaning": "혼합수산화물 침전물, 전기자동차 배터리 지원 제품"
+      "meaning": "혼합수산화침전물(배터리용 중간재)"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:43:41+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:49:43+00:00"
    },
    "ext": {
     "kcmo": {
@@ -4135,55 +3608,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "FINI가 2026년 인도네시아 니켈 가공품 생산이 감소할 것으로 전망했음",
-      "2026년 생산은 2025년 2,5 juta ton 대비 3,5% hingga 4% 줄 것으로 봤음",
-      "HPAL 가동으로 MHP 생산능력이 2027년 말 900 ribu ton 이상으로 늘 전망임"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "2,5 juta ton",
-      "3,5% hingga 4%",
-      "900 ribu ton nikel"
-     ],
-     "quotes": [
-      "Jakarta, CNBC Indonesia - Forum Industri Nikel Indonesia (FINI) memproyeksikan total produksi nikel olahan hasil hilirisasi di dalam negeri akan mengalami penurunan sebesar 3,5% hingga 4% pada 2026.",
-      "Produksi Nikel Hasil Hilirisasi RI Diramal Turun Tahun Ini"
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "니켈",
-      "인도네시아",
-      "FINI",
-      "HPAL",
-      "MHP"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "hilirisasi",
-       "meaning": "하류화(다운스트림) 정책"
-      },
-      {
-       "phrase": "High Pressure Acid Leach (HPAL)",
-       "meaning": "고압산침출 제련 방식"
-      },
-      {
-       "phrase": "moratorium smelter nikel",
-       "meaning": "니켈 제련소 신설 중단 논의"
-      },
-      {
-       "phrase": "oversupply",
-       "meaning": "공급과잉"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -4225,16 +3649,17 @@
     "score": 9,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아 니켈산업포럼(FINI)이 2026년 니켈 가공산 생산량이 2025년 대비 3.5~4% 감소할 것으로 전망함.",
-     "2025년 니켈 가공산 생산량 2.5 juta ton 중 NPI·FeNi·Matte 2.05 juta ton, MHP·니켈황산염 450 ribu ton 구성임.",
-     "2027년 HPAL 기반 수소화학침출 설비 완공으로 생산량 회복 예상되며, MHP 생산량이 450 ribu ton에서 lebih dari 900 ribu ton으로 증가할 것으로 전망됨."
+     "인도네시아 니켈산업포럼 FINI가 2026년 가공 니켈 생산 감소를 전망했음",
+     "2025년 2,5 juta ton 대비 3,5% hingga 4% 감소할 것으로 예상했음",
+     "HPAL 프로젝트 가동으로 2027년 MHP 생산능력이 반등할 것으로 봤음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "가공산 생산",
+     "인도네시아",
+     "FINI",
      "HPAL",
-     "인도네시아"
+     "MHP"
     ],
     "ai_processed": true,
     "card_id": "46bfdee6b762",
@@ -4243,9 +3668,7 @@
     "key_figures": [
      "3,5% hingga 4%",
      "2,5 juta ton",
-     "2,05 juta ton",
-     "450 ribu ton",
-     "lebih dari 900 ribu ton"
+     "900 ribu ton nikel"
     ],
     "quotes": [
      "Jakarta, CNBC Indonesia - Forum Industri Nikel Indonesia (FINI) memproyeksikan total produksi nikel olahan hasil hilirisasi di dalam negeri akan mengalami penurunan sebesar 3,5% hingga 4% pada 2026.",
@@ -4258,22 +3681,22 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "자원의 원료 형태에서 가공·최종 제품으로 옮겨가는 산업화 과정"
+      "meaning": "하류화(원광 가공·제련 확대 정책)"
+     },
+     {
+      "phrase": "moratorium smelter nikel",
+      "meaning": "니켈 제련소 건설 모라토리엄"
      },
      {
       "phrase": "oversupply",
-      "meaning": "초과 공급"
-     },
-     {
-      "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "고압산침출 공정으로 니켈 수소화학침출에 사용"
+      "meaning": "공급 과잉"
      },
      {
       "phrase": "Mixed Hydroxide Precipitate (MHP)",
-      "meaning": "혼합수산화물 침전물, 전기자동차 배터리 지원 제품"
+      "meaning": "혼합수산화침전물(배터리용 중간재)"
      }
     ],
-    "processed_at": "2026-10-18T15:43:41+00:00"
+    "processed_at": "2026-10-19T01:49:43+00:00"
    }
   },
   {
@@ -4293,7 +3716,7 @@
    },
    "published": "2026-10-15",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:44:08+00:00",
+   "collected_at": "2026-10-19T01:49:44+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -4313,15 +3736,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아가 니켈 광석 처리 과정에서 코발트를 추출해 세계 2대 코발트 생산국으로 부상했음.",
-     "2025년 인도네시아의 코발트 생산량은 약 44,000톤으로 세계 광산 코발트 생산의 약 14%를 차지했음.",
-     "HPAL(고압산성침출) 기술을 통해 니켈과 코발트를 분리하며, Harita Nickel은 월 약 55,000톤 니켈황산염과 6,750톤 코발트황산염을 생산 중임."
+     "인도네시아가 니켈 하류화 과정에서 세계 2위 코발트 생산국이 됐다고 보도했음",
+     "USGS 기준 2025년 코발트 약 44.000 ton, 세계 광산 생산의 약 14 persen임",
+     "전용 코발트 광산 없이 리모나이트 니켈 광석의 HPAL 처리로 얻는다고 설명했음"
     ],
     "basis": "body",
     "key_figures": [
-     "sekitar 44.000 ton",
-     "sekitar 14 persen",
-     "sekitar 55.000 ton nikel dalam bentuk nikel sulfat dan 6.750 ton kobalt dalam bentuk kobalt sulfat"
+     "44.000 ton",
+     "14 persen",
+     "6.750 ton"
     ],
     "quotes": [
      "Geological Survey (USGS) menunjukkan, produksi kobalt terkandung Indonesia mencapai sekitar 44.000 ton sepanjang 2025.",
@@ -4331,35 +3754,42 @@
     "tags": [
      "코발트",
      "니켈",
+     "HPAL",
      "인도네시아",
-     "하일화",
-     "HPAL 기술"
+     "Harita Nickel"
     ],
     "key_phrases": [
      {
       "phrase": "high-pressure acid leaching (HPAL)",
-      "meaning": "고압산성침출: 니켈과 코발트를 분리하는 기술"
+      "meaning": "고압 산 침출 공법"
      },
      {
       "phrase": "mixed hydroxide precipitate (MHP)",
-      "meaning": "니켈과 코발트를 함유한 중간 생산물"
+      "meaning": "혼합 수산화물 침전물(니켈·코발트 중간재)"
+     },
+     {
+      "phrase": "hilirisasi mineral",
+      "meaning": "광물 하류화(가공·부가가치 창출 정책)"
      },
      {
       "phrase": "electrolytic cobalt",
-      "meaning": "순도 99.98% 이상의 정제 코발트"
+      "meaning": "전해 코발트(고순도 코발트 금속)"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 2,
-    "summarized_at": "2026-10-18T15:44:17+00:00"
+    "summarized_at": "2026-10-19T01:50:01+00:00",
+    "retry_reasons": [
+     "JSON 파싱 실패: 문법 오류(Extra data, 위치 868) — 주변: '  \"oda_relevance\": \"해당 없음\"\\n}\\n\\n**주의:** 위 `lines`는 지침상 정확히 3줄이'"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -4368,55 +3798,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "인도네시아가 니켈 하류화로 세계 2위 코발트 생산국이 됐다고 보도했음",
-      "USGS 자료상 2025년 코발트 생산량은 약 44.000 ton, 세계 약 14 persen임",
-      "전용 코발트 광산 없이 limonit 니켈 광석을 HPAL로 처리해 얻고 있음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "44.000 ton",
-      "14 persen",
-      "6.750 ton kobalt"
-     ],
-     "quotes": [
-      "Geological Survey (USGS) menunjukkan, produksi kobalt terkandung Indonesia mencapai sekitar 44.000 ton sepanjang 2025.",
-      "Jumlah tersebut setara dengan sekitar 14 persen produksi tambang kobalt dunia, sekaligus menempatkan Indonesia tepat di bawah Republik Demokratik Kongo (DRC)."
-     ],
-     "category": "supply_chain_trade",
-     "tags": [
-      "인도네시아",
-      "코발트",
-      "니켈",
-      "HPAL",
-      "Harita Nickel"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "high-pressure acid leaching (HPAL)",
-       "meaning": "고압산침출, 니켈 라테라이트 광석에서 니켈·코발트를 추출하는 공정"
-      },
-      {
-       "phrase": "mixed hydroxide precipitate (MHP)",
-       "meaning": "니켈·코발트 혼합수산화물 침전물, 중간 제품"
-      },
-      {
-       "phrase": "hilirisasi nikel",
-       "meaning": "니켈 하류화(가공 산업 육성)"
-      },
-      {
-       "phrase": "kobalt elektrolitik",
-       "meaning": "전해 코발트, 고순도 코발트 금속"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -4458,26 +3839,26 @@
     "score": 9,
     "published": "2026-10-15",
     "korean_summary": [
-     "인도네시아가 니켈 광석 처리 과정에서 코발트를 추출해 세계 2대 코발트 생산국으로 부상했음.",
-     "2025년 인도네시아의 코발트 생산량은 약 44,000톤으로 세계 광산 코발트 생산의 약 14%를 차지했음.",
-     "HPAL(고압산성침출) 기술을 통해 니켈과 코발트를 분리하며, Harita Nickel은 월 약 55,000톤 니켈황산염과 6,750톤 코발트황산염을 생산 중임."
+     "인도네시아가 니켈 하류화 과정에서 세계 2위 코발트 생산국이 됐다고 보도했음",
+     "USGS 기준 2025년 코발트 약 44.000 ton, 세계 광산 생산의 약 14 persen임",
+     "전용 코발트 광산 없이 리모나이트 니켈 광석의 HPAL 처리로 얻는다고 설명했음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "코발트",
      "니켈",
+     "HPAL",
      "인도네시아",
-     "하일화",
-     "HPAL 기술"
+     "Harita Nickel"
     ],
     "ai_processed": true,
     "card_id": "88cb1c2d34e2",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "sekitar 44.000 ton",
-     "sekitar 14 persen",
-     "sekitar 55.000 ton nikel dalam bentuk nikel sulfat dan 6.750 ton kobalt dalam bentuk kobalt sulfat"
+     "44.000 ton",
+     "14 persen",
+     "6.750 ton"
     ],
     "quotes": [
      "Geological Survey (USGS) menunjukkan, produksi kobalt terkandung Indonesia mencapai sekitar 44.000 ton sepanjang 2025.",
@@ -4490,18 +3871,22 @@
     "key_phrases": [
      {
       "phrase": "high-pressure acid leaching (HPAL)",
-      "meaning": "고압산성침출: 니켈과 코발트를 분리하는 기술"
+      "meaning": "고압 산 침출 공법"
      },
      {
       "phrase": "mixed hydroxide precipitate (MHP)",
-      "meaning": "니켈과 코발트를 함유한 중간 생산물"
+      "meaning": "혼합 수산화물 침전물(니켈·코발트 중간재)"
+     },
+     {
+      "phrase": "hilirisasi mineral",
+      "meaning": "광물 하류화(가공·부가가치 창출 정책)"
      },
      {
       "phrase": "electrolytic cobalt",
-      "meaning": "순도 99.98% 이상의 정제 코발트"
+      "meaning": "전해 코발트(고순도 코발트 금속)"
      }
     ],
-    "processed_at": "2026-10-18T15:44:17+00:00"
+    "processed_at": "2026-10-19T01:50:01+00:00"
    }
   },
   {
@@ -4521,7 +3906,7 @@
    },
    "published": "2026-10-16",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:44:30+00:00",
+   "collected_at": "2026-10-19T01:50:02+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -4540,9 +3925,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 에너지광물자원부 장관 겸 신설 하류화·에너지전환조정부 장관 바흘릴이 정부 부처 지도자들과 조율 회의를 개최했음.",
-     "회의는 자원 관리의 부가가치 창출, 국가 비세금 수입 증대, 외화 확보를 목표로 진행되었음.",
-     "에너지 안보 강화와 국가 에너지전환 추진도 논의 대상에 포함되었음."
+     "바흘릴 라하달리아 장관이 신설 조정부처 차원의 부처 간 조정회의를 열었음",
+     "2026-10-16 자카르타 ESDM 청사에서 DPR 지도부, 투자부 장관, BP BUMN 청장, 경찰청장 등이 참석했음",
+     "부가가치 창출, PNBP 확대, 외환 보유 강화를 목표로 에너지 안보·전환 지원을 요청했음"
     ],
     "basis": "body",
     "key_figures": [],
@@ -4551,18 +3936,24 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "에너지·광물",
      "인도네시아",
-     "정부 조율"
+     "다운스트림",
+     "에너지광물자원부",
+     "에너지전환",
+     "조정부처"
     ],
     "key_phrases": [
      {
-      "phrase": "Menko Hilirisasi dan Transisi Energi",
-      "meaning": "하류화 및 에너지전환 조정부"
+      "phrase": "Menteri Koordinator Bidang Hilirisasi dan Transisi Energi",
+      "meaning": "다운스트림·에너지전환 조정장관"
      },
      {
-      "phrase": "nilai tambah",
-      "meaning": "부가가치"
+      "phrase": "penciptaan nilai tambah",
+      "meaning": "부가가치 창출"
+     },
+     {
+      "phrase": "penerimaan negara bukan pajak (PNBP)",
+      "meaning": "비조세 국가수입"
      },
      {
       "phrase": "ketahanan energi",
@@ -4572,14 +3963,14 @@
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1757,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:44:37+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:50:06+00:00"
    },
    "ext": {
     "kcmo": {
@@ -4588,50 +3979,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "바힐 라하달리아 장관이 신설 조정부처 차원의 부처 간 조정회의를 열었음",
-      "16일 ESDM 청사 기자회견에서 DPR 지도부·투자부 장관·BP BUMN 청장 등과 협의했다고 밝혔음",
-      "부가가치 창출, PNBP 확대, 외화 확충과 에너지안보·전환 지원을 요청했으며 후속 일정은 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [],
-     "quotes": [
-      "“Rapat ini sebetulnya koordinasi biasa aja, dalam rangka mendorong bagaimana penciptaan nilai tambah, dan bagaimana bisa meningkatkan PNBP, dan meningkatkan devisa kita di era kondisi global yang tidak menentu,” ujarnya."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "인도네시아",
-      "다운스트림화",
-      "에너지전환",
-      "ESDM",
-      "조정회의"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Menteri Koordinator Bidang Hilirisasi dan Transisi Energi",
-       "meaning": "다운스트림화·에너지전환 담당 조정장관"
-      },
-      {
-       "phrase": "penciptaan nilai tambah",
-       "meaning": "부가가치 창출"
-      },
-      {
-       "phrase": "penerimaan negara bukan pajak (PNBP)",
-       "meaning": "비조세 국가수입"
-      },
-      {
-       "phrase": "ketahanan energi",
-       "meaning": "에너지 안보"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -4677,15 +4024,17 @@
     "score": 9,
     "published": "2026-10-16",
     "korean_summary": [
-     "인도네시아 에너지광물자원부 장관 겸 신설 하류화·에너지전환조정부 장관 바흘릴이 정부 부처 지도자들과 조율 회의를 개최했음.",
-     "회의는 자원 관리의 부가가치 창출, 국가 비세금 수입 증대, 외화 확보를 목표로 진행되었음.",
-     "에너지 안보 강화와 국가 에너지전환 추진도 논의 대상에 포함되었음."
+     "바흘릴 라하달리아 장관이 신설 조정부처 차원의 부처 간 조정회의를 열었음",
+     "2026-10-16 자카르타 ESDM 청사에서 DPR 지도부, 투자부 장관, BP BUMN 청장, 경찰청장 등이 참석했음",
+     "부가가치 창출, PNBP 확대, 외환 보유 강화를 목표로 에너지 안보·전환 지원을 요청했음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "에너지·광물",
      "인도네시아",
-     "정부 조율"
+     "다운스트림",
+     "에너지광물자원부",
+     "에너지전환",
+     "조정부처"
     ],
     "ai_processed": true,
     "card_id": "759825a07f4b",
@@ -4701,19 +4050,23 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "Menko Hilirisasi dan Transisi Energi",
-      "meaning": "하류화 및 에너지전환 조정부"
+      "phrase": "Menteri Koordinator Bidang Hilirisasi dan Transisi Energi",
+      "meaning": "다운스트림·에너지전환 조정장관"
      },
      {
-      "phrase": "nilai tambah",
-      "meaning": "부가가치"
+      "phrase": "penciptaan nilai tambah",
+      "meaning": "부가가치 창출"
+     },
+     {
+      "phrase": "penerimaan negara bukan pajak (PNBP)",
+      "meaning": "비조세 국가수입"
      },
      {
       "phrase": "ketahanan energi",
       "meaning": "에너지 안보"
      }
     ],
-    "processed_at": "2026-10-18T15:44:37+00:00"
+    "processed_at": "2026-10-19T01:50:06+00:00"
    }
   },
   {
@@ -4733,7 +4086,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:44:41+00:00",
+   "collected_at": "2026-10-19T01:50:06+00:00",
    "score": 9,
    "body": {
     "status": "title_only",
@@ -4750,7 +4103,7 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아, 광물 하류산업 규모을 618 miliar 달러로 확대하겠다는 목표 제시됨."
+     "바릴 장관이 인도네시아 하류화 목표를 618 miliar 달러로 제시했음"
     ],
     "basis": "title",
     "key_figures": [],
@@ -4758,26 +4111,30 @@
     "category": "policy_regulation",
     "tags": [
      "인도네시아",
-     "광물산업",
-     "하류산업"
+     "하류화",
+     "광물정책"
     ],
     "key_phrases": [
      {
       "phrase": "Hilirisasi",
-      "meaning": "하류산업 육성(원재료 처리·정제·가공 단계)"
+      "meaning": "하류화(원자재 가공·부가가치 확대)"
+     },
+     {
+      "phrase": "618 Miliar Dolar",
+      "meaning": "618 miliar 달러(원문 표기)"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "title_only",
     "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:44:43+00:00"
+    "summarized_at": "2026-10-19T01:50:08+00:00"
    },
    "ext": {
     "kcmo": {
@@ -4786,37 +4143,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "바릴 장관, 인도네시아 하일리라시 618 miliar 달러 달성 목표 제시했음"
-     ],
-     "basis": "title",
-     "key_figures": [],
-     "quotes": [],
-     "category": "policy_regulation",
-     "tags": [
-      "인도네시아",
-      "하일리라시",
-      "바릴",
-      "광물 정책"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Hilirisasi",
-       "meaning": "하류화(원자재 가공·부가가치 사업 확대)"
-      },
-      {
-       "phrase": "618 Miliar Dolar",
-       "meaning": "618 miliar 달러(원문 표기)"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -4858,13 +4184,13 @@
     "score": 9,
     "published": "2026-10-14",
     "korean_summary": [
-     "[제목 기반] 인도네시아, 광물 하류산업 규모을 618 miliar 달러로 확대하겠다는 목표 제시됨."
+     "[제목 기반] 바릴 장관이 인도네시아 하류화 목표를 618 miliar 달러로 제시했음"
     ],
     "category": "policy_regulation",
     "tags": [
      "인도네시아",
-     "광물산업",
-     "하류산업"
+     "하류화",
+     "광물정책"
     ],
     "ai_processed": true,
     "card_id": "dee9fac9bc66",
@@ -4879,10 +4205,14 @@
     "key_phrases": [
      {
       "phrase": "Hilirisasi",
-      "meaning": "하류산업 육성(원재료 처리·정제·가공 단계)"
+      "meaning": "하류화(원자재 가공·부가가치 확대)"
+     },
+     {
+      "phrase": "618 Miliar Dolar",
+      "meaning": "618 miliar 달러(원문 표기)"
      }
     ],
-    "processed_at": "2026-10-18T15:44:43+00:00"
+    "processed_at": "2026-10-19T01:50:08+00:00"
    }
   },
   {
@@ -4902,73 +4232,56 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:44:46+00:00",
+   "collected_at": "2026-10-19T01:50:08+00:00",
    "score": 9,
    "body": {
-    "status": "full",
-    "chars": 4364,
-    "sha256": "5485adcc8444861140555fc276301400b741ffbc6bc75d62083d5f7bd3c71e7f",
-    "source": "trafilatura",
-    "block_type": null,
-    "http_status": 200,
-    "extracted_date": "2026-10-14",
-    "quotes": [
-     "Anggota Komisi XII DPR RI, Ateng Sutisna, mendukung pembentukan Kementerian Koordinator Bidang Hilirisasi dan Transisi Energi.",
-     "Ateng menjelaskan, hilirisasi tidak seharusnya berhenti pada pembangunan fasilitas peleburan (smelter) dan produksi barang setengah jadi."
-    ],
-    "final_url": "https://nikel.co.id/2026/10/14/ateng-sutisna-hilirisasi-harus-sejalan-dengan-penurunan-emisi/",
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "http_error",
+    "http_status": null,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": null,
     "strategies_tried": []
    },
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 국회 광업위원회 의원 아뗑 수티스나가 광물 하류산업 발전은 에너지 전환과 배출 감소를 동반해야 함을 강조했음.",
-     "광물 하류산업 발전 시 제련소·반제품 생산뿐 아니라 국내 제조업 강화·기술 습득·노동력 기술 향상과 글로벌 공급망 참여가 필요함을 주장했음.",
-     "연간 목표 설정·재정 배분·투명한 측정·보고·검증(MRV) 체계 등을 통해 파리협약 공약을 이행하고 에너지 전환 진행 상황을 공개해야 함을 제시했음."
+     "아텡 수티스나, 하류화는 배출량 감축과 보조를 맞춰야 한다고 밝혔음"
     ],
-    "basis": "body",
+    "basis": "title",
     "key_figures": [],
-    "quotes": [
-     "Anggota Komisi XII DPR RI, Ateng Sutisna, mendukung pembentukan Kementerian Koordinator Bidang Hilirisasi dan Transisi Energi.",
-     "Ateng menjelaskan, hilirisasi tidak seharusnya berhenti pada pembangunan fasilitas peleburan (smelter) dan produksi barang setengah jadi."
-    ],
+    "quotes": [],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
      "인도네시아",
-     "에너지전환",
-     "하류산업",
-     "탄소감축"
+     "하류화",
+     "니켈",
+     "배출 감축"
     ],
     "key_phrases": [
      {
-      "phrase": "hilirisasi",
-      "meaning": "광물의 가공·제련 등 하류산업화"
+      "phrase": "Hilirisasi",
+      "meaning": "하류화(원료 가공·제련 등 부가가치 사슬 확대)"
      },
      {
-      "phrase": "captive power plant",
-      "meaning": "산업시설 자체 발전소"
-     },
-     {
-      "phrase": "Nationally Determined Contribution (NDC)",
-      "meaning": "국가결정기여도(각 국가의 온실가스 감축 목표)"
-     },
-     {
-      "phrase": "measurement, reporting, and verification (MRV)",
-      "meaning": "측정·보고·검증(탄소감축량 투명한 확인 체계)"
+      "phrase": "Penurunan Emisi",
+      "meaning": "배출량 감축"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
-    "input_body_status": "full",
-    "input_chars": 4000,
+    "input_body_status": "title_only",
+    "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:44:52+00:00"
+    "summarized_at": "2026-10-19T01:50:10+00:00"
    },
    "ext": {
     "kcmo": {
@@ -4977,51 +4290,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "DPR Komisi XII 소속 아텡 수티스나 의원이 하류화·에너지전환 조정부 신설을 지지했음",
-      "석탄 의존 감축 로드맵과 NDC에 맞춘 연간 목표가 필요하다고 밝혔음",
-      "저탄소 제품 요구가 커지는 가운데 신설 부처 후속 일정은 확인 불가임"
-     ],
-     "basis": "body",
-     "key_figures": [],
-     "quotes": [
-      "Anggota Komisi XII DPR RI, Ateng Sutisna, mendukung pembentukan Kementerian Koordinator Bidang Hilirisasi dan Transisi Energi.",
-      "Ateng menjelaskan, hilirisasi tidak seharusnya berhenti pada pembangunan fasilitas peleburan (smelter) dan produksi barang setengah jadi."
-     ],
-     "category": "policy_regulation",
-     "tags": [
-      "인도네시아",
-      "하류화",
-      "니켈",
-      "에너지전환",
-      "DPR"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Kementerian Koordinator Bidang Hilirisasi dan Transisi Energi",
-       "meaning": "하류화·에너지전환 조정부(신설 논의 중)"
-      },
-      {
-       "phrase": "hilirisasi",
-       "meaning": "하류화(광물 가공·부가가치 확대)"
-      },
-      {
-       "phrase": "captive power plant",
-       "meaning": "산업단지 자가 발전소"
-      },
-      {
-       "phrase": "measurement, reporting, and verification (MRV)",
-       "meaning": "측정·보고·검증 체계"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -5063,50 +4331,36 @@
     "score": 9,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아 국회 광업위원회 의원 아뗑 수티스나가 광물 하류산업 발전은 에너지 전환과 배출 감소를 동반해야 함을 강조했음.",
-     "광물 하류산업 발전 시 제련소·반제품 생산뿐 아니라 국내 제조업 강화·기술 습득·노동력 기술 향상과 글로벌 공급망 참여가 필요함을 주장했음.",
-     "연간 목표 설정·재정 배분·투명한 측정·보고·검증(MRV) 체계 등을 통해 파리협약 공약을 이행하고 에너지 전환 진행 상황을 공개해야 함을 제시했음."
+     "[제목 기반] 아텡 수티스나, 하류화는 배출량 감축과 보조를 맞춰야 한다고 밝혔음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
      "인도네시아",
-     "에너지전환",
-     "하류산업",
-     "탄소감축"
+     "하류화",
+     "니켈",
+     "배출 감축"
     ],
     "ai_processed": true,
     "card_id": "8bd6509350dd",
-    "basis": "body",
-    "body_status": "full",
+    "basis": "title",
+    "body_status": "title_only",
     "key_figures": [],
-    "quotes": [
-     "Anggota Komisi XII DPR RI, Ateng Sutisna, mendukung pembentukan Kementerian Koordinator Bidang Hilirisasi dan Transisi Energi.",
-     "Ateng menjelaskan, hilirisasi tidak seharusnya berhenti pada pembangunan fasilitas peleburan (smelter) dan produksi barang setengah jadi."
-    ],
+    "quotes": [],
     "source_language": "id",
     "country": "Indonesia",
     "oda_relevance": "",
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "hilirisasi",
-      "meaning": "광물의 가공·제련 등 하류산업화"
+      "phrase": "Hilirisasi",
+      "meaning": "하류화(원료 가공·제련 등 부가가치 사슬 확대)"
      },
      {
-      "phrase": "captive power plant",
-      "meaning": "산업시설 자체 발전소"
-     },
-     {
-      "phrase": "Nationally Determined Contribution (NDC)",
-      "meaning": "국가결정기여도(각 국가의 온실가스 감축 목표)"
-     },
-     {
-      "phrase": "measurement, reporting, and verification (MRV)",
-      "meaning": "측정·보고·검증(탄소감축량 투명한 확인 체계)"
+      "phrase": "Penurunan Emisi",
+      "meaning": "배출량 감축"
      }
     ],
-    "processed_at": "2026-10-18T15:44:52+00:00"
+    "processed_at": "2026-10-19T01:50:10+00:00"
    }
   },
   {
@@ -5126,7 +4380,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:45:07+00:00",
+   "collected_at": "2026-10-19T01:50:12+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -5146,17 +4400,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 조정부장관 바힐이 2040년까지 광물·석탄·임산물 등 천연자원 가공산업 가치를 US$618 miliar(Rp 11.062 triliun)에 달하도록 목표를 설정함.",
-     "니켈 사례로 2017-2018년 약 US$3,3 miliar 수준의 니켈 광석 수출이 2023년 US$34 miliar, 2025년 US$40 miliar 이상으로 증가했으며 2026년 최소 US$45 miliar을 목표로 제시함.",
-     "가공산업 육성을 통한 부가가치 창출이 경제성장뿐 아니라 국가 경제·정치적 자주성 강화 전략의 일부라고 강조함."
+     "Bahlil 조정장관이 2040년까지 하류화 가치 US$618 miliar 달성을 목표로 제시했음",
+     "이는 Rp 11.062 triliun에 해당하며 광물·석탄, 석유·가스, 임업, 수산, 농업을 포괄함",
+     "니켈 수출은 2025년 US$40 miliar 넘었고 2026년 최소 US$45 miliar 목표임"
     ],
     "basis": "body",
     "key_figures": [
      "US$618 miliar",
      "Rp 11.062 triliun",
-     "US$3,3 miliar",
-     "US$34 miliar",
-     "US$40 miliar",
      "US$45 miliar"
     ],
     "quotes": [
@@ -5166,31 +4417,40 @@
     "category": "policy_regulation",
     "tags": [
      "인도네시아",
-     "광물·석탄 가공",
+     "하류화",
      "니켈",
-     "수출 정책"
+     "ESDM",
+     "Trade Expo Indonesia"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "상류(채굴)에서 하류(가공·제조)까지 가치사슬의 다운스트림 확대, 천연자원의 국내 가공 고도화"
+      "meaning": "하류화(자원 국내 가공·정제를 통한 산업 고도화)"
      },
      {
-      "phrase": "nilai tambah sumber daya alam",
-      "meaning": "천연자원의 부가가치"
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel",
+      "meaning": "니켈 광석 수출 중단"
+     },
+     {
+      "phrase": "kemandirian politik ekonomi nasional",
+      "meaning": "국가 정치경제적 자립"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2231,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:45:17+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:50:24+00:00"
    },
    "ext": {
     "kcmo": {
@@ -5199,14 +4459,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -5252,16 +4504,17 @@
     "score": 9,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아 조정부장관 바힐이 2040년까지 광물·석탄·임산물 등 천연자원 가공산업 가치를 US$618 miliar(Rp 11.062 triliun)에 달하도록 목표를 설정함.",
-     "니켈 사례로 2017-2018년 약 US$3,3 miliar 수준의 니켈 광석 수출이 2023년 US$34 miliar, 2025년 US$40 miliar 이상으로 증가했으며 2026년 최소 US$45 miliar을 목표로 제시함.",
-     "가공산업 육성을 통한 부가가치 창출이 경제성장뿐 아니라 국가 경제·정치적 자주성 강화 전략의 일부라고 강조함."
+     "Bahlil 조정장관이 2040년까지 하류화 가치 US$618 miliar 달성을 목표로 제시했음",
+     "이는 Rp 11.062 triliun에 해당하며 광물·석탄, 석유·가스, 임업, 수산, 농업을 포괄함",
+     "니켈 수출은 2025년 US$40 miliar 넘었고 2026년 최소 US$45 miliar 목표임"
     ],
     "category": "policy_regulation",
     "tags": [
      "인도네시아",
-     "광물·석탄 가공",
+     "하류화",
      "니켈",
-     "수출 정책"
+     "ESDM",
+     "Trade Expo Indonesia"
     ],
     "ai_processed": true,
     "card_id": "bf0348ca8eee",
@@ -5270,9 +4523,6 @@
     "key_figures": [
      "US$618 miliar",
      "Rp 11.062 triliun",
-     "US$3,3 miliar",
-     "US$34 miliar",
-     "US$40 miliar",
      "US$45 miliar"
     ],
     "quotes": [
@@ -5286,14 +4536,22 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "상류(채굴)에서 하류(가공·제조)까지 가치사슬의 다운스트림 확대, 천연자원의 국내 가공 고도화"
+      "meaning": "하류화(자원 국내 가공·정제를 통한 산업 고도화)"
      },
      {
-      "phrase": "nilai tambah sumber daya alam",
-      "meaning": "천연자원의 부가가치"
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel",
+      "meaning": "니켈 광석 수출 중단"
+     },
+     {
+      "phrase": "kemandirian politik ekonomi nasional",
+      "meaning": "국가 정치경제적 자립"
      }
     ],
-    "processed_at": "2026-10-18T15:45:17+00:00"
+    "processed_at": "2026-10-19T01:50:24+00:00"
    }
   },
   {
@@ -5313,7 +4571,7 @@
    },
    "published": "2026-10-15",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:45:42+00:00",
+   "collected_at": "2026-10-19T01:50:25+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -5333,17 +4591,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 정부가 2040년까지 광물·석탄·석유가스·임업·어업·농업 등 전 부문의 광물 및 자원 가공 산업화 목표를 제시함.",
-     "2040년 가공산업 수출 목표값은 US$618 miliar(Rp11.062 triliun)이며, 니켈 산업 경험을 토대로 확대 전략을 추진 중임.",
-     "니켈 광석 수출 금지 정책(2017~2018)으로 니켈 수출액이 US$3.3 miliar에서 2023년 US$34 miliar, 2025년 US$40 miliar를 초과했음."
+     "Bahlil 조정장관이 Trade Expo Indonesia 2026에서 하류화 목표를 밝혔음",
+     "2040년 목표는 US$618 miliar(Rp11.062 triliun)이며 전 부문 포함임",
+     "니켈 수출액은 US$3,3 miliar에서 2023년 US$34 miliar로 증가했음"
     ],
     "basis": "body",
     "key_figures": [
      "US$618 miliar",
      "Rp11.062 triliun",
-     "US$3,3 miliar",
-     "US$34 miliar",
-     "US$40 miliar",
      "US$45 miliar"
     ],
     "quotes": [
@@ -5352,37 +4607,41 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "광물 가공(hilirisasi)",
      "인도네시아",
-     "산업화",
-     "배터리 생태계"
+     "하류화",
+     "니켈",
+     "배터리 생태계",
+     "원료 수출 중단"
     ],
     "key_phrases": [
      {
-      "phrase": "tidak lagi menjadi negara yang hanya mengekspor bahan baku",
-      "meaning": "더 이상 원료만 수출하는 국가가 아님"
-     },
-     {
       "phrase": "hilirisasi",
-      "meaning": "자원의 부가가치 창출을 위한 가공·산업화"
+      "meaning": "하류화(원자재를 국내에서 가공해 부가가치를 높이는 정책)"
      },
      {
-      "phrase": "ekosistem baterai mobil dari hulu ke hilir",
-      "meaning": "전기자동차 배터리의 상류에서 하류까지의 산업 생태계"
+      "phrase": "bahan mentah",
+      "meaning": "원자재, 가공 전 원료"
+     },
+     {
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel",
+      "meaning": "니켈 원광 수출 중단"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:45:48+00:00"
+    "summarized_at": "2026-10-19T01:50:36+00:00"
    },
    "ext": {
     "kcmo": {
@@ -5391,14 +4650,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -5446,17 +4697,17 @@
     "score": 9,
     "published": "2026-10-15",
     "korean_summary": [
-     "인도네시아 정부가 2040년까지 광물·석탄·석유가스·임업·어업·농업 등 전 부문의 광물 및 자원 가공 산업화 목표를 제시함.",
-     "2040년 가공산업 수출 목표값은 US$618 miliar(Rp11.062 triliun)이며, 니켈 산업 경험을 토대로 확대 전략을 추진 중임.",
-     "니켈 광석 수출 금지 정책(2017~2018)으로 니켈 수출액이 US$3.3 miliar에서 2023년 US$34 miliar, 2025년 US$40 miliar를 초과했음."
+     "Bahlil 조정장관이 Trade Expo Indonesia 2026에서 하류화 목표를 밝혔음",
+     "2040년 목표는 US$618 miliar(Rp11.062 triliun)이며 전 부문 포함임",
+     "니켈 수출액은 US$3,3 miliar에서 2023년 US$34 miliar로 증가했음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "니켈",
-     "광물 가공(hilirisasi)",
      "인도네시아",
-     "산업화",
-     "배터리 생태계"
+     "하류화",
+     "니켈",
+     "배터리 생태계",
+     "원료 수출 중단"
     ],
     "ai_processed": true,
     "card_id": "991c7c9b04cd",
@@ -5465,9 +4716,6 @@
     "key_figures": [
      "US$618 miliar",
      "Rp11.062 triliun",
-     "US$3,3 miliar",
-     "US$34 miliar",
-     "US$40 miliar",
      "US$45 miliar"
     ],
     "quotes": [
@@ -5480,19 +4728,23 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "tidak lagi menjadi negara yang hanya mengekspor bahan baku",
-      "meaning": "더 이상 원료만 수출하는 국가가 아님"
-     },
-     {
       "phrase": "hilirisasi",
-      "meaning": "자원의 부가가치 창출을 위한 가공·산업화"
+      "meaning": "하류화(원자재를 국내에서 가공해 부가가치를 높이는 정책)"
      },
      {
-      "phrase": "ekosistem baterai mobil dari hulu ke hilir",
-      "meaning": "전기자동차 배터리의 상류에서 하류까지의 산업 생태계"
+      "phrase": "bahan mentah",
+      "meaning": "원자재, 가공 전 원료"
+     },
+     {
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     },
+     {
+      "phrase": "penghentian ekspor bijih nikel",
+      "meaning": "니켈 원광 수출 중단"
      }
     ],
-    "processed_at": "2026-10-18T15:45:48+00:00"
+    "processed_at": "2026-10-19T01:50:36+00:00"
    }
   },
   {
@@ -5512,7 +4764,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:46:17+00:00",
+   "collected_at": "2026-10-19T01:50:37+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -5532,16 +4784,14 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 조율부 장관 바흘릴이 2040년 광물·에너지·임업·어업·농업 등 전 부문 하류산업(hilirisasi) 가치를 USD618 miliar로 목표 설정함.",
-     "니켈 사례로 2017–2018년 USD3,3 miliar에서 2023년 USD34 miliar, 2025년 USD40 miliar 이상으로 증가했으며, 2026년 최소 USD45 miliar 목표임.",
-     "정부는 하류산업 발전이 원자재 수출 중심에서 부가가치 높은 제품 생산으로의 전환을 통해 경제 자립도를 강화하는 전략임을 강조함."
+     "바릴 라하달리아 조정장관이 2040년 하류화 가치 목표를 618 miliar 달러로 제시했음",
+     "니켈 수출액은 2017–2018년 약 USD3,3 miliar에서 2023년 USD34 miliar로 늘었다고 밝혔음",
+     "2026년 니켈 수출 목표는 최소 USD45 miliar이며 투자자에게 투자 기회 활용을 촉구했음"
     ],
     "basis": "body",
     "key_figures": [
      "USD618 miliar",
-     "USD3,3 miliar",
      "USD34 miliar",
-     "USD40 miliar",
      "USD45 miliar"
     ],
     "quotes": [
@@ -5550,33 +4800,41 @@
     ],
     "category": "policy_regulation",
     "tags": [
-     "하류산업",
-     "니켈",
      "인도네시아",
-     "부가가치",
-     "자원정책"
+     "하류화",
+     "니켈",
+     "수출",
+     "Trade Expo Indonesia"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "원자재를 고부가가치 제품으로 가공·처리하는 산업화 전략"
+      "meaning": "하류화(원자재를 국내에서 가공해 부가가치를 높이는 정책)"
      },
      {
       "phrase": "nilai tambah",
       "meaning": "부가가치"
+     },
+     {
+      "phrase": "peta jalan",
+      "meaning": "로드맵"
+     },
+     {
+      "phrase": "industri hijau",
+      "meaning": "녹색 산업"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2653,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:46:24+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:50:41+00:00"
    },
    "ext": {
     "kcmo": {
@@ -5585,14 +4843,6 @@
      "country": "Indonesia",
      "source_language": "id"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -5634,17 +4884,17 @@
     "score": 9,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아 조율부 장관 바흘릴이 2040년 광물·에너지·임업·어업·농업 등 전 부문 하류산업(hilirisasi) 가치를 USD618 miliar로 목표 설정함.",
-     "니켈 사례로 2017–2018년 USD3,3 miliar에서 2023년 USD34 miliar, 2025년 USD40 miliar 이상으로 증가했으며, 2026년 최소 USD45 miliar 목표임.",
-     "정부는 하류산업 발전이 원자재 수출 중심에서 부가가치 높은 제품 생산으로의 전환을 통해 경제 자립도를 강화하는 전략임을 강조함."
+     "바릴 라하달리아 조정장관이 2040년 하류화 가치 목표를 618 miliar 달러로 제시했음",
+     "니켈 수출액은 2017–2018년 약 USD3,3 miliar에서 2023년 USD34 miliar로 늘었다고 밝혔음",
+     "2026년 니켈 수출 목표는 최소 USD45 miliar이며 투자자에게 투자 기회 활용을 촉구했음"
     ],
     "category": "policy_regulation",
     "tags": [
-     "하류산업",
-     "니켈",
      "인도네시아",
-     "부가가치",
-     "자원정책"
+     "하류화",
+     "니켈",
+     "수출",
+     "Trade Expo Indonesia"
     ],
     "ai_processed": true,
     "card_id": "3dae40e03429",
@@ -5652,9 +4902,7 @@
     "body_status": "full",
     "key_figures": [
      "USD618 miliar",
-     "USD3,3 miliar",
      "USD34 miliar",
-     "USD40 miliar",
      "USD45 miliar"
     ],
     "quotes": [
@@ -5668,14 +4916,22 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi",
-      "meaning": "원자재를 고부가가치 제품으로 가공·처리하는 산업화 전략"
+      "meaning": "하류화(원자재를 국내에서 가공해 부가가치를 높이는 정책)"
      },
      {
       "phrase": "nilai tambah",
       "meaning": "부가가치"
+     },
+     {
+      "phrase": "peta jalan",
+      "meaning": "로드맵"
+     },
+     {
+      "phrase": "industri hijau",
+      "meaning": "녹색 산업"
      }
     ],
-    "processed_at": "2026-10-18T15:46:24+00:00"
+    "processed_at": "2026-10-19T01:50:41+00:00"
    }
   },
   {
@@ -5695,7 +4951,7 @@
    },
    "published": "2026-10-16",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:46:46+00:00",
+   "collected_at": "2026-10-19T01:50:42+00:00",
    "score": 9,
    "body": {
     "status": "full",
@@ -5714,12 +4970,16 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "중국이 미국과의 통상 합의 기한과 관계없이 EU에 대한 희토류 수출 허가 승인을 계속하겠다고 밝힘.",
-     "중국은 EU에 희토류 공급을 유지하기 위해 '그린 채널' 메커니즘 적용 의지를 표시했으며, EU의 쌍용도 물품 수입 지원을 요청함.",
-     "EU 집행위원회 지도부는 중국과의 통상 협상 진행 상황을 검토하기 위해 브뤼셀에서 회동 예정임."
+     "중국 상무부 대변인이 유럽으로 가는 희토류 수출 허가를 계속 승인할 용의가 있다고 밝혔음",
+     "중국은 10월 15일 발표에서 희토류 공급 유지를 위한 'luồng xanh(그린 레인)' 제도 적용 의사를 밝혔음",
+     "중국은 대가로 EU가 이중용도 품목 수입을 지지하길 요청했으며, 미·중 휴전은 2027년 1월까지 연장됐음"
     ],
     "basis": "body",
-    "key_figures": [],
+    "key_figures": [
+     "0,1% đất hiếm",
+     "20.000 thực thể Trung Quốc",
+     "tháng 1/2027"
+    ],
     "quotes": [
      "Tháng 10/2025, Trung Quốc siết chặt các biện pháp kiểm soát xuất khẩu đất hiếm, bao gồm cả những sản phẩm chỉ chứa 0,1% đất hiếm có nguồn gốc từ Trung Quốc."
     ],
@@ -5728,29 +4988,38 @@
      "희토류",
      "중국",
      "EU",
-     "통상"
+     "수출통제",
+     "베트남"
     ],
     "key_phrases": [
      {
-      "phrase": "cơ chế luồng xanh",
-      "meaning": "그린 채널 메커니즘(수출입 절차 간소화)"
+      "phrase": "giấy phép xuất khẩu đất hiếm",
+      "meaning": "희토류 수출 허가"
+     },
+     {
+      "phrase": "luồng xanh",
+      "meaning": "그린 레인(수출 허가 신속 처리 절차)"
      },
      {
       "phrase": "hàng hóa lưỡng dụng",
-      "meaning": "쌍용도 물품(민간·군사 양쪽 용도)"
+      "meaning": "민간·군사 겸용 이중용도 품목"
+     },
+     {
+      "phrase": "kiểm soát xuất khẩu",
+      "meaning": "수출 통제"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1739,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:46:50+00:00"
+    "summarized_at": "2026-10-19T01:50:46+00:00"
    },
    "ext": {
     "kcmo": {
@@ -5759,14 +5028,6 @@
      "country": "Vietnam",
      "source_language": "vi"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": false,
-    "summary": null,
-    "errors": [
-     "JSON 파싱 실패"
-    ]
    },
    "v1": {
     "korean_summary": [
@@ -5808,22 +5069,27 @@
     "score": 9,
     "published": "2026-10-16",
     "korean_summary": [
-     "중국이 미국과의 통상 합의 기한과 관계없이 EU에 대한 희토류 수출 허가 승인을 계속하겠다고 밝힘.",
-     "중국은 EU에 희토류 공급을 유지하기 위해 '그린 채널' 메커니즘 적용 의지를 표시했으며, EU의 쌍용도 물품 수입 지원을 요청함.",
-     "EU 집행위원회 지도부는 중국과의 통상 협상 진행 상황을 검토하기 위해 브뤼셀에서 회동 예정임."
+     "중국 상무부 대변인이 유럽으로 가는 희토류 수출 허가를 계속 승인할 용의가 있다고 밝혔음",
+     "중국은 10월 15일 발표에서 희토류 공급 유지를 위한 'luồng xanh(그린 레인)' 제도 적용 의사를 밝혔음",
+     "중국은 대가로 EU가 이중용도 품목 수입을 지지하길 요청했으며, 미·중 휴전은 2027년 1월까지 연장됐음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "희토류",
      "중국",
      "EU",
-     "통상"
+     "수출통제",
+     "베트남"
     ],
     "ai_processed": true,
     "card_id": "cc2967eda18c",
     "basis": "body",
     "body_status": "full",
-    "key_figures": [],
+    "key_figures": [
+     "0,1% đất hiếm",
+     "20.000 thực thể Trung Quốc",
+     "tháng 1/2027"
+    ],
     "quotes": [
      "Tháng 10/2025, Trung Quốc siết chặt các biện pháp kiểm soát xuất khẩu đất hiếm, bao gồm cả những sản phẩm chỉ chứa 0,1% đất hiếm có nguồn gốc từ Trung Quốc."
     ],
@@ -5833,15 +5099,23 @@
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "cơ chế luồng xanh",
-      "meaning": "그린 채널 메커니즘(수출입 절차 간소화)"
+      "phrase": "giấy phép xuất khẩu đất hiếm",
+      "meaning": "희토류 수출 허가"
+     },
+     {
+      "phrase": "luồng xanh",
+      "meaning": "그린 레인(수출 허가 신속 처리 절차)"
      },
      {
       "phrase": "hàng hóa lưỡng dụng",
-      "meaning": "쌍용도 물품(민간·군사 양쪽 용도)"
+      "meaning": "민간·군사 겸용 이중용도 품목"
+     },
+     {
+      "phrase": "kiểm soát xuất khẩu",
+      "meaning": "수출 통제"
      }
     ],
-    "processed_at": "2026-10-18T15:46:50+00:00"
+    "processed_at": "2026-10-19T01:50:46+00:00"
    }
   },
   {
@@ -5861,7 +5135,7 @@
    },
    "published": "2026-09-21",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:11+00:00",
+   "collected_at": "2026-10-19T01:50:46+00:00",
    "score": 9,
    "body": {
     "status": "title_only",
@@ -5878,7 +5152,7 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "카자흐스탄이 Kazatomprom에 6년간 우라늄 탐사권을 부여했음"
+     "카자흐스탄이 카자톰프롬에 6년간의 우라늄 탐사권을 부여했음"
     ],
     "basis": "title",
     "key_figures": [],
@@ -5886,26 +5160,27 @@
     "category": "exploration_development",
     "tags": [
      "우라늄",
-     "Kazatomprom",
-     "카자흐스탄"
+     "카자흐스탄",
+     "카자톰프롬",
+     "탐사권"
     ],
     "key_phrases": [
      {
-      "phrase": "Uranium Exploration Rights",
-      "meaning": "우라늄 탐사권"
+      "phrase": "Six-Year Uranium Exploration Rights",
+      "meaning": "6년간의 우라늄 탐사권"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "title_only",
     "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:13+00:00"
+    "summarized_at": "2026-10-19T01:50:48+00:00"
    },
    "ext": {
     "kcmo": {
@@ -5914,33 +5189,6 @@
      "country": "Kazakhstan",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "카자흐스탄이 카자톰프롬에 6년간의 우라늄 탐사권을 부여했음"
-     ],
-     "basis": "title",
-     "key_figures": [],
-     "quotes": [],
-     "category": "exploration_development",
-     "tags": [
-      "카자흐스탄",
-      "우라늄",
-      "카자톰프롬",
-      "탐사권"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Six-Year Uranium Exploration Rights",
-       "meaning": "6년간의 우라늄 탐사권"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -5982,13 +5230,14 @@
     "score": 9,
     "published": "2026-09-21",
     "korean_summary": [
-     "[제목 기반] 카자흐스탄이 Kazatomprom에 6년간 우라늄 탐사권을 부여했음"
+     "[제목 기반] 카자흐스탄이 카자톰프롬에 6년간의 우라늄 탐사권을 부여했음"
     ],
     "category": "exploration_development",
     "tags": [
      "우라늄",
-     "Kazatomprom",
-     "카자흐스탄"
+     "카자흐스탄",
+     "카자톰프롬",
+     "탐사권"
     ],
     "ai_processed": true,
     "card_id": "16c30f6e77e3",
@@ -6002,11 +5251,11 @@
     "category_ko": "탐사·개발",
     "key_phrases": [
      {
-      "phrase": "Uranium Exploration Rights",
-      "meaning": "우라늄 탐사권"
+      "phrase": "Six-Year Uranium Exploration Rights",
+      "meaning": "6년간의 우라늄 탐사권"
      }
     ],
-    "processed_at": "2026-10-18T15:47:13+00:00"
+    "processed_at": "2026-10-19T01:50:48+00:00"
    }
   },
   {
@@ -6026,7 +5275,7 @@
    },
    "published": "2026-05-14",
    "published_from": null,
-   "collected_at": "2026-10-18T15:47:16+00:00",
+   "collected_at": "2026-10-19T01:50:49+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -6046,9 +5295,9 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "Oyu Tolgoi가 독일-몽골 자원기술연구소에 주사전자현미경(SEM)을 기증했음.",
-     "MNT 276 million 규모의 투자로 고정밀 광물분석용 장비를 제공했음.",
-     "독일 대사는 독일-몽골 우호협력 틀 내 연구역량 강화 노력을 언급했으며, 몽골 교육부 지원 하에 민간부문의 주도적 역할을 평가했음."
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 공식 기증했음",
+     "고정밀 광물 분석용 장비이며 투자액은 MNT 276 million임",
+     "CEO는 이 실험실이 몽골 광업 부문의 다른 기업에도 중요할 것이라 밝혔음"
     ],
     "basis": "body",
     "key_figures": [
@@ -6060,9 +5309,11 @@
     ],
     "category": "research_academic",
     "tags": [
-     "광물분석장비",
-     "독일-몽골 연구소",
-     "몽골"
+     "몽골",
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "광물 분석"
     ],
     "key_phrases": [
      {
@@ -6070,21 +5321,33 @@
       "meaning": "주사전자현미경"
      },
      {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "독일-몽골 자원기술대학"
+     },
+     {
+      "phrase": "handover ceremony",
+      "meaning": "인수 기증식"
+     },
+     {
       "phrase": "high-precision mineral analysis",
-      "meaning": "고정밀 광물분석"
+      "meaning": "고정밀 광물 분석"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1790,
-    "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:19+00:00"
+    "attempts": 2,
+    "summarized_at": "2026-10-19T01:50:59+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)",
+     "너무 짧은 줄 1개 (최소 15자)"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -6093,53 +5356,6 @@
      "country": "Mongolia",
      "source_language": "en"
     }
-   },
-   "compare": {
-    "model": "claude-sonnet-5-5",
-    "ok": true,
-    "summary": {
-     "lines": [
-      "오유 톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 공식 기증했음",
-      "고정밀 광물 분석용 장비이며 MNT 276 million이 투자되었음",
-      "CEO는 이 실험실이 오유 톨고이뿐 아니라 몽골 광업 기업 전반에 중요하다고 밝혔음"
-     ],
-     "basis": "body",
-     "key_figures": [
-      "MNT 276 million"
-     ],
-     "quotes": [
-      "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
-      "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
-     ],
-     "category": "research_academic",
-     "tags": [
-      "오유 톨고이",
-      "몽골",
-      "주사전자현미경",
-      "독일-몽골 자원기술대학",
-      "광물 분석"
-     ],
-     "key_phrases": [
-      {
-       "phrase": "Scanning Electron Microscope (SEM)",
-       "meaning": "주사전자현미경"
-      },
-      {
-       "phrase": "German-Mongolian Institute for Resources and Technology",
-       "meaning": "독일-몽골 자원기술대학"
-      },
-      {
-       "phrase": "handover ceremony",
-       "meaning": "인도(기증) 기념식"
-      },
-      {
-       "phrase": "mutually beneficial partnership",
-       "meaning": "상호 호혜적 협력관계"
-      }
-     ],
-     "oda_relevance": "해당 없음"
-    },
-    "errors": []
    },
    "v1": {
     "korean_summary": [
@@ -6181,15 +5397,17 @@
     "score": 8,
     "published": "2026-05-14",
     "korean_summary": [
-     "Oyu Tolgoi가 독일-몽골 자원기술연구소에 주사전자현미경(SEM)을 기증했음.",
-     "MNT 276 million 규모의 투자로 고정밀 광물분석용 장비를 제공했음.",
-     "독일 대사는 독일-몽골 우호협력 틀 내 연구역량 강화 노력을 언급했으며, 몽골 교육부 지원 하에 민간부문의 주도적 역할을 평가했음."
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 공식 기증했음",
+     "고정밀 광물 분석용 장비이며 투자액은 MNT 276 million임",
+     "CEO는 이 실험실이 몽골 광업 부문의 다른 기업에도 중요할 것이라 밝혔음"
     ],
     "category": "research_academic",
     "tags": [
-     "광물분석장비",
-     "독일-몽골 연구소",
-     "몽골"
+     "몽골",
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "광물 분석"
     ],
     "ai_processed": true,
     "card_id": "4a74577dc0e6",
@@ -6212,11 +5430,19 @@
       "meaning": "주사전자현미경"
      },
      {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "독일-몽골 자원기술대학"
+     },
+     {
+      "phrase": "handover ceremony",
+      "meaning": "인수 기증식"
+     },
+     {
       "phrase": "high-precision mineral analysis",
-      "meaning": "고정밀 광물분석"
+      "meaning": "고정밀 광물 분석"
      }
     ],
-    "processed_at": "2026-10-18T15:47:19+00:00"
+    "processed_at": "2026-10-19T01:50:59+00:00"
    }
   },
   {
@@ -6236,7 +5462,7 @@
    },
    "published": "2026-06-16",
    "published_from": null,
-   "collected_at": "2026-10-18T15:47:23+00:00",
+   "collected_at": "2026-10-19T01:51:00+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -6256,16 +5482,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "프랑스 우라늄 회사 오라노가 몽골 도르노고비주 주우브칫-오보 우라늄 광산의 건설 개시식을 2026년 6월 3일 울란바드락 소움에서 개최했음.",
-     "시범 생산은 2026년, 본격 채광은 2028년 예정이며, 기반시설 구축과 300명 규모 영구 캠프 건설이 진행 중임.",
-     "약 1,600개의 직·간접 일자리 창출이 예상되며, 지역 사회경제 발전을 위해 MNT 1 billion의 초기 투자가 배분됨."
+     "오라노 그룹이 몽골 주브치-오보 우라늄 사업의 건설 착수 기념 개막식을 열었음",
+     "행사는 2026년 6월 3일 도르노고비주 울란바드라흐 솜에서 열렸고, 시험생산은 2026년, 본격 채굴은 2028년 시작 예정임",
+     "상시 캠프 300명 규모와 일자리 약 1,600개 창출이 예상되며, 한국 관련 내용은 확인 불가임"
     ],
     "basis": "body",
     "key_figures": [
-     "2028",
-     "1,600",
+     "approximately 1,600 direct and indirect jobs",
      "MNT 1 billion",
-     "USD 1 million per year"
+     "approximately USD 1 million per year"
     ],
     "quotes": [
      "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
@@ -6276,34 +5501,34 @@
      "우라늄",
      "몽골",
      "오라노",
-     "도르노고비주",
-     "광산개발"
+     "도르노고비",
+     "주브치-오보"
     ],
     "key_phrases": [
      {
       "phrase": "pilot-scale production",
-      "meaning": "시범 규모 생산"
+      "meaning": "시험(파일럿) 규모 생산"
      },
      {
       "phrase": "full-scale mining operations",
-      "meaning": "본격 채광 사업"
+      "meaning": "본격 채굴 가동"
      },
      {
-      "phrase": "Badrakh Energy LLC",
-      "meaning": "바드락 에너지 유한책임회사(몽골 현지 협력사)"
+      "phrase": "cooperation agreement to support local socio-economic development",
+      "meaning": "지역 사회경제 발전 지원 협력협약"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 1778,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:27+00:00"
+    "summarized_at": "2026-10-19T01:51:04+00:00"
    },
    "ext": {
     "kcmo": {
@@ -6357,27 +5582,26 @@
     "score": 8,
     "published": "2026-06-16",
     "korean_summary": [
-     "프랑스 우라늄 회사 오라노가 몽골 도르노고비주 주우브칫-오보 우라늄 광산의 건설 개시식을 2026년 6월 3일 울란바드락 소움에서 개최했음.",
-     "시범 생산은 2026년, 본격 채광은 2028년 예정이며, 기반시설 구축과 300명 규모 영구 캠프 건설이 진행 중임.",
-     "약 1,600개의 직·간접 일자리 창출이 예상되며, 지역 사회경제 발전을 위해 MNT 1 billion의 초기 투자가 배분됨."
+     "오라노 그룹이 몽골 주브치-오보 우라늄 사업의 건설 착수 기념 개막식을 열었음",
+     "행사는 2026년 6월 3일 도르노고비주 울란바드라흐 솜에서 열렸고, 시험생산은 2026년, 본격 채굴은 2028년 시작 예정임",
+     "상시 캠프 300명 규모와 일자리 약 1,600개 창출이 예상되며, 한국 관련 내용은 확인 불가임"
     ],
     "category": "exploration_development",
     "tags": [
      "우라늄",
      "몽골",
      "오라노",
-     "도르노고비주",
-     "광산개발"
+     "도르노고비",
+     "주브치-오보"
     ],
     "ai_processed": true,
     "card_id": "ec1702997f10",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "2028",
-     "1,600",
+     "approximately 1,600 direct and indirect jobs",
      "MNT 1 billion",
-     "USD 1 million per year"
+     "approximately USD 1 million per year"
     ],
     "quotes": [
      "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
@@ -6390,18 +5614,18 @@
     "key_phrases": [
      {
       "phrase": "pilot-scale production",
-      "meaning": "시범 규모 생산"
+      "meaning": "시험(파일럿) 규모 생산"
      },
      {
       "phrase": "full-scale mining operations",
-      "meaning": "본격 채광 사업"
+      "meaning": "본격 채굴 가동"
      },
      {
-      "phrase": "Badrakh Energy LLC",
-      "meaning": "바드락 에너지 유한책임회사(몽골 현지 협력사)"
+      "phrase": "cooperation agreement to support local socio-economic development",
+      "meaning": "지역 사회경제 발전 지원 협력협약"
      }
     ],
-    "processed_at": "2026-10-18T15:47:27+00:00"
+    "processed_at": "2026-10-19T01:51:04+00:00"
    }
   },
   {
@@ -6421,7 +5645,7 @@
    },
    "published": "2026-10-14",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:28+00:00",
+   "collected_at": "2026-10-19T01:51:05+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -6441,51 +5665,57 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아가 가봉과 희토류광물 양자협력을 모색 중임을 주재 카메룬 대사가 밝혔음.",
-     "기술·외교 협의가 진행 중이며 협정의 구체적 일정과 범위는 확정되지 않았음.",
-     "인도네시아는 역사적으로 중앙아프리카 국가들과의 자원협력을 탄화수소 중심으로 진행해옴."
+     "인도네시아가 가봉과 희토류 분야 양자 협력을 모색 중이라고 주카메룬 대사가 밝혔음",
+     "대사는 10월 13일 발언에서 콩고공화국과 인산염(phosphate) 분야 협력 가능성도 탐색 중이라고 했음",
+     "기술·외교 협의가 진행 중이라 협력 시기와 범위는 확인 불가이며, 기존 협력은 탄화수소 중심이었음"
     ],
     "basis": "body",
     "key_figures": [
+     "more than 70 percent",
      "US$411.3 million",
-     "US$422.7 million",
-     "US$11.4 million"
+     "US$1.09 billion"
     ],
     "quotes": [
      "According to Indonesian Ministry of Trade data for January–August 2026, Indonesia recorded a US$411.3 million trade deficit with Gabon, importing US$422.7 million worth of goods while exporting US$11.4 million.",
      "Related news: RI clears $124 million mineral exports after rare earth rules dispute"
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
-     "희토류광물",
-     "인도네시아-가봉",
-     "양자협력"
+     "희토류",
+     "인도네시아",
+     "가봉",
+     "인산염",
+     "콩고공화국"
     ],
     "key_phrases": [
      {
       "phrase": "rare earth minerals",
-      "meaning": "희토류광물"
+      "meaning": "희토류 광물"
      },
      {
       "phrase": "bilateral cooperation",
-      "meaning": "양자협력"
+      "meaning": "양자 협력"
      },
      {
-      "phrase": "strategic interest",
-      "meaning": "전략적 이해관계"
+      "phrase": "trade deficit",
+      "meaning": "무역적자"
+     },
+     {
+      "phrase": "phosphate sector",
+      "meaning": "인산염 분야"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2407,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:32+00:00"
+    "summarized_at": "2026-10-19T01:51:08+00:00"
    },
    "ext": {
     "kcmo": {
@@ -6535,24 +5765,26 @@
     "score": 8,
     "published": "2026-10-14",
     "korean_summary": [
-     "인도네시아가 가봉과 희토류광물 양자협력을 모색 중임을 주재 카메룬 대사가 밝혔음.",
-     "기술·외교 협의가 진행 중이며 협정의 구체적 일정과 범위는 확정되지 않았음.",
-     "인도네시아는 역사적으로 중앙아프리카 국가들과의 자원협력을 탄화수소 중심으로 진행해옴."
+     "인도네시아가 가봉과 희토류 분야 양자 협력을 모색 중이라고 주카메룬 대사가 밝혔음",
+     "대사는 10월 13일 발언에서 콩고공화국과 인산염(phosphate) 분야 협력 가능성도 탐색 중이라고 했음",
+     "기술·외교 협의가 진행 중이라 협력 시기와 범위는 확인 불가이며, 기존 협력은 탄화수소 중심이었음"
     ],
-    "category": "oda_cooperation",
+    "category": "supply_chain_trade",
     "tags": [
-     "희토류광물",
-     "인도네시아-가봉",
-     "양자협력"
+     "희토류",
+     "인도네시아",
+     "가봉",
+     "인산염",
+     "콩고공화국"
     ],
     "ai_processed": true,
     "card_id": "bd76a010a0dd",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
+     "more than 70 percent",
      "US$411.3 million",
-     "US$422.7 million",
-     "US$11.4 million"
+     "US$1.09 billion"
     ],
     "quotes": [
      "According to Indonesian Ministry of Trade data for January–August 2026, Indonesia recorded a US$411.3 million trade deficit with Gabon, importing US$422.7 million worth of goods while exporting US$11.4 million.",
@@ -6561,22 +5793,26 @@
     "source_language": "en",
     "country": "Indonesia",
     "oda_relevance": "",
-    "category_ko": "ODA 협력",
+    "category_ko": "공급망·교역",
     "key_phrases": [
      {
       "phrase": "rare earth minerals",
-      "meaning": "희토류광물"
+      "meaning": "희토류 광물"
      },
      {
       "phrase": "bilateral cooperation",
-      "meaning": "양자협력"
+      "meaning": "양자 협력"
      },
      {
-      "phrase": "strategic interest",
-      "meaning": "전략적 이해관계"
+      "phrase": "trade deficit",
+      "meaning": "무역적자"
+     },
+     {
+      "phrase": "phosphate sector",
+      "meaning": "인산염 분야"
      }
     ],
-    "processed_at": "2026-10-18T15:47:32+00:00"
+    "processed_at": "2026-10-19T01:51:08+00:00"
    }
   },
   {
@@ -6596,7 +5832,7 @@
    },
    "published": "2026-10-12",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:32+00:00",
+   "collected_at": "2026-10-19T01:51:11+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -6618,16 +5854,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아의 니켈 제품 수출액이 8월까지 약 USD26 miliar를 기록했으며 연말에 USD40 miliar에 도달할 것으로 예상됨.",
-     "모로왈리 지구의 2025년 지역내총생산이 Rp188,86 triliun이고 광물 가공산업이 73.5%를 차지함.",
-     "니켈 수출액의 증대가 반드시 국민 소득 증대로 이어지는지 검증이 필요하며 수입 투입물·세금·해외 투자자 배당 등을 차감해야 실제 경제 효과 파악 가능함."
+     "인도네시아 니켈 하류화의 이익이 국내에 얼마나 남는지 짚은 기사임",
+     "8월까지 니켈 제품 수출액은 USD26 miliar 근접, 연말 USD40 miliar 전망임",
+     "수출액이 곧 국내 몫은 아니라며 USD100 매출 가정 시뮬레이션을 제시했음"
     ],
     "basis": "body",
     "key_figures": [
      "USD26 miliar",
      "USD40 miliar",
-     "Rp188,86 triliun",
-     "73,5%"
+     "18%"
     ],
     "quotes": [
      "- Nilai ekspor produk nikel Indonesia hingga Agustus mencatatkan hampir USD26 miliar dan diproyeksikan mencapai USD40 miliar pada akhir tahun.",
@@ -6636,36 +5871,40 @@
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
+     "하류화",
      "인도네시아",
      "모로왈리",
-     "하일리리사시",
-     "수출"
+     "IMIP"
     ],
     "key_phrases": [
      {
-      "phrase": "Hilirisasi nikel",
-      "meaning": "니켈의 다단계 가공·처리"
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(국내 가공·제련 확대)"
      },
      {
-      "phrase": "nilai ekspor tidak sama dengan laba perusahaan ataupun pendapatan nasional",
-      "meaning": "수출액이 기업 이윤이나 국가 수익과 같지 않음"
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
      },
      {
-      "phrase": "distribusi manfaat ekonomi",
-      "meaning": "경제적 이익의 분배"
+      "phrase": "Nilai ekspor tidak sama dengan nilai yang dinikmati",
+      "meaning": "수출액이 곧 국내가 누리는 가치는 아님"
+     },
+     {
+      "phrase": "Produk Domestik Regional Bruto (PDRB)",
+      "meaning": "지역내총생산"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 4000,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:38+00:00"
+    "summarized_at": "2026-10-19T01:51:23+00:00"
    },
    "ext": {
     "kcmo": {
@@ -6715,17 +5954,17 @@
     "score": 8,
     "published": "2026-10-12",
     "korean_summary": [
-     "인도네시아의 니켈 제품 수출액이 8월까지 약 USD26 miliar를 기록했으며 연말에 USD40 miliar에 도달할 것으로 예상됨.",
-     "모로왈리 지구의 2025년 지역내총생산이 Rp188,86 triliun이고 광물 가공산업이 73.5%를 차지함.",
-     "니켈 수출액의 증대가 반드시 국민 소득 증대로 이어지는지 검증이 필요하며 수입 투입물·세금·해외 투자자 배당 등을 차감해야 실제 경제 효과 파악 가능함."
+     "인도네시아 니켈 하류화의 이익이 국내에 얼마나 남는지 짚은 기사임",
+     "8월까지 니켈 제품 수출액은 USD26 miliar 근접, 연말 USD40 miliar 전망임",
+     "수출액이 곧 국내 몫은 아니라며 USD100 매출 가정 시뮬레이션을 제시했음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
+     "하류화",
      "인도네시아",
      "모로왈리",
-     "하일리리사시",
-     "수출"
+     "IMIP"
     ],
     "ai_processed": true,
     "card_id": "166ddeccb51e",
@@ -6734,8 +5973,7 @@
     "key_figures": [
      "USD26 miliar",
      "USD40 miliar",
-     "Rp188,86 triliun",
-     "73,5%"
+     "18%"
     ],
     "quotes": [
      "- Nilai ekspor produk nikel Indonesia hingga Agustus mencatatkan hampir USD26 miliar dan diproyeksikan mencapai USD40 miliar pada akhir tahun.",
@@ -6747,19 +5985,23 @@
     "category_ko": "공급망·교역",
     "key_phrases": [
      {
-      "phrase": "Hilirisasi nikel",
-      "meaning": "니켈의 다단계 가공·처리"
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(국내 가공·제련 확대)"
      },
      {
-      "phrase": "nilai ekspor tidak sama dengan laba perusahaan ataupun pendapatan nasional",
-      "meaning": "수출액이 기업 이윤이나 국가 수익과 같지 않음"
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
      },
      {
-      "phrase": "distribusi manfaat ekonomi",
-      "meaning": "경제적 이익의 분배"
+      "phrase": "Nilai ekspor tidak sama dengan nilai yang dinikmati",
+      "meaning": "수출액이 곧 국내가 누리는 가치는 아님"
+     },
+     {
+      "phrase": "Produk Domestik Regional Bruto (PDRB)",
+      "meaning": "지역내총생산"
      }
     ],
-    "processed_at": "2026-10-18T15:47:38+00:00"
+    "processed_at": "2026-10-19T01:51:23+00:00"
    }
   },
   {
@@ -6779,7 +6021,7 @@
    },
    "published": "2026-10-12",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:39+00:00",
+   "collected_at": "2026-10-19T01:51:24+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -6799,15 +6041,13 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아의 니켈 하류산업(다운스트림) 발전이 전기차 배터리 원료 생산으로 가치사슬을 강화하고 있음.",
-     "PT Vale Indonesia 등이 Pomalaa·Morowali·Sorowako에서 HPAL 기술로 MHP를 생산하는 프로젝트를 진행 중임.",
-     "Morowali 지역의 경우 최근 10년간 광업·농업 중심에서 광물 가공 산업 중심으로 경제구조가 전환되었으나, 지역 산업 연계 강화와 환경 관리 개선이 필요함."
+     "인도네시아 니켈 하류화가 전기차 가치사슬 통합을 강화하고 있다고 CORE 인도네시아 경제학자가 평가했음",
+     "모로왈리·북모로왈리는 산업 비중이 75 persen 넘고, PT Vale Indonesia는 HPAL로 MHP 생산 프로젝트를 추진 중임",
+     "상류는 성숙했으나 중·하류는 발전 중이며, 현지 인력·기업 연계와 환경 관리가 필요하다고 밝혔음"
     ],
     "basis": "body",
     "key_figures": [
-     "lebih dari 75 persen",
-     "High Pressure Acid Leach (HPAL)",
-     "Mixed Hydroxide Precipitate (MHP)"
+     "Lebih dari 75 persen"
     ],
     "quotes": [
      "Lebih dari 75 persen perekonomian daerah tersebut kini ditopang sektor industri.",
@@ -6816,36 +6056,40 @@
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "하류산업",
-     "인도네시아",
+     "하류화",
      "전기차 배터리",
-     "Sulawesi"
+     "술라웨시",
+     "PT Vale Indonesia"
     ],
     "key_phrases": [
      {
       "phrase": "hilirisasi nikel",
-      "meaning": "니켈 하류산업 발전"
+      "meaning": "니켈 하류화(가공·제련 고도화)"
+     },
+     {
+      "phrase": "rantai nilai kendaraan listrik",
+      "meaning": "전기차 가치사슬"
      },
      {
       "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "고압산침출 기술"
+      "meaning": "고압산침출 제련 기술"
      },
      {
       "phrase": "Mixed Hydroxide Precipitate (MHP)",
-      "meaning": "혼합수산화물침전물, 배터리 원료 중간제품"
+      "meaning": "혼합수산화침전물(배터리 소재용 중간재)"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 2977,
-    "attempts": 2,
-    "summarized_at": "2026-10-18T15:47:47+00:00"
+    "attempts": 1,
+    "summarized_at": "2026-10-19T01:51:29+00:00"
    },
    "ext": {
     "kcmo": {
@@ -6895,26 +6139,24 @@
     "score": 8,
     "published": "2026-10-12",
     "korean_summary": [
-     "인도네시아의 니켈 하류산업(다운스트림) 발전이 전기차 배터리 원료 생산으로 가치사슬을 강화하고 있음.",
-     "PT Vale Indonesia 등이 Pomalaa·Morowali·Sorowako에서 HPAL 기술로 MHP를 생산하는 프로젝트를 진행 중임.",
-     "Morowali 지역의 경우 최근 10년간 광업·농업 중심에서 광물 가공 산업 중심으로 경제구조가 전환되었으나, 지역 산업 연계 강화와 환경 관리 개선이 필요함."
+     "인도네시아 니켈 하류화가 전기차 가치사슬 통합을 강화하고 있다고 CORE 인도네시아 경제학자가 평가했음",
+     "모로왈리·북모로왈리는 산업 비중이 75 persen 넘고, PT Vale Indonesia는 HPAL로 MHP 생산 프로젝트를 추진 중임",
+     "상류는 성숙했으나 중·하류는 발전 중이며, 현지 인력·기업 연계와 환경 관리가 필요하다고 밝혔음"
     ],
     "category": "supply_chain_trade",
     "tags": [
      "니켈",
-     "하류산업",
-     "인도네시아",
+     "하류화",
      "전기차 배터리",
-     "Sulawesi"
+     "술라웨시",
+     "PT Vale Indonesia"
     ],
     "ai_processed": true,
     "card_id": "558229070c89",
     "basis": "body",
     "body_status": "full",
     "key_figures": [
-     "lebih dari 75 persen",
-     "High Pressure Acid Leach (HPAL)",
-     "Mixed Hydroxide Precipitate (MHP)"
+     "Lebih dari 75 persen"
     ],
     "quotes": [
      "Lebih dari 75 persen perekonomian daerah tersebut kini ditopang sektor industri.",
@@ -6927,18 +6169,22 @@
     "key_phrases": [
      {
       "phrase": "hilirisasi nikel",
-      "meaning": "니켈 하류산업 발전"
+      "meaning": "니켈 하류화(가공·제련 고도화)"
+     },
+     {
+      "phrase": "rantai nilai kendaraan listrik",
+      "meaning": "전기차 가치사슬"
      },
      {
       "phrase": "High Pressure Acid Leach (HPAL)",
-      "meaning": "고압산침출 기술"
+      "meaning": "고압산침출 제련 기술"
      },
      {
       "phrase": "Mixed Hydroxide Precipitate (MHP)",
-      "meaning": "혼합수산화물침전물, 배터리 원료 중간제품"
+      "meaning": "혼합수산화침전물(배터리 소재용 중간재)"
      }
     ],
-    "processed_at": "2026-10-18T15:47:47+00:00"
+    "processed_at": "2026-10-19T01:51:29+00:00"
    }
   },
   {
@@ -6958,7 +6204,7 @@
    },
    "published": "2026-10-10",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:48+00:00",
+   "collected_at": "2026-10-19T01:51:30+00:00",
    "score": 8,
    "body": {
     "status": "title_only",
@@ -6978,7 +6224,7 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 정부가 니켈 하류산업화를 감시하여 경제 성장과 이익 창출을 도모 중임."
+     "정부가 경제 성장과 혜택을 위해 니켈 다운스트림화를 뒷받침한다고 밝혔음"
     ],
     "basis": "title",
     "key_figures": [],
@@ -6986,26 +6232,31 @@
     "category": "policy_regulation",
     "tags": [
      "니켈",
+     "다운스트림화",
      "인도네시아",
-     "하류산업화"
+     "정부 정책"
     ],
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류산업화 (채굴에서 정제·가공까지 부가가치 사슬 확대)"
+      "meaning": "니켈 다운스트림화(하류 산업 육성)"
+     },
+     {
+      "phrase": "Pemerintah Kawal",
+      "meaning": "정부가 뒷받침·관리함"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "title_only",
     "input_chars": 0,
     "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:50+00:00"
+    "summarized_at": "2026-10-19T01:51:32+00:00"
    },
    "ext": {
     "kcmo": {
@@ -7055,13 +6306,14 @@
     "score": 8,
     "published": "2026-10-10",
     "korean_summary": [
-     "[제목 기반] 인도네시아 정부가 니켈 하류산업화를 감시하여 경제 성장과 이익 창출을 도모 중임."
+     "[제목 기반] 정부가 경제 성장과 혜택을 위해 니켈 다운스트림화를 뒷받침한다고 밝혔음"
     ],
     "category": "policy_regulation",
     "tags": [
      "니켈",
+     "다운스트림화",
      "인도네시아",
-     "하류산업화"
+     "정부 정책"
     ],
     "ai_processed": true,
     "card_id": "d8a524d7120b",
@@ -7076,10 +6328,14 @@
     "key_phrases": [
      {
       "phrase": "Hilirisasi Nikel",
-      "meaning": "니켈 하류산업화 (채굴에서 정제·가공까지 부가가치 사슬 확대)"
+      "meaning": "니켈 다운스트림화(하류 산업 육성)"
+     },
+     {
+      "phrase": "Pemerintah Kawal",
+      "meaning": "정부가 뒷받침·관리함"
      }
     ],
-    "processed_at": "2026-10-18T15:47:50+00:00"
+    "processed_at": "2026-10-19T01:51:32+00:00"
    }
   },
   {
@@ -7099,7 +6355,7 @@
    },
    "published": "2026-10-10",
    "published_from": "rss",
-   "collected_at": "2026-10-18T15:47:52+00:00",
+   "collected_at": "2026-10-19T01:51:33+00:00",
    "score": 8,
    "body": {
     "status": "full",
@@ -7119,16 +6375,15 @@
    "summary_input_max_chars": 4000,
    "summary": {
     "lines": [
-     "인도네시아 조율조정부(Menko) 바흘릴이 니켈 하류화 성과에 불만을 표시함.",
-     "니켈 수출액이 2017-2018년 USD3.3 miliar에서 2023년 USD34 miliar로 증가했으나, 2026년 USD38-40 miliar 전망임.",
-     "바흘릴은 대부분 제품이 중간재 단계에 머물러 있다며 지속가능한 고부가가치 산업으로의 전환을 강조함."
+     "Bahlil 조정장관은 제련 제품 대부분이 반제품이라 성과가 부족하다고 평가했음",
+     "수출액은 2017-2018년 USD3,3 miliar에서 2023년 USD34 miliar로 늘었음",
+     "관련 부처 간 하류화 프로그램을 조율할 예정이라고 밝혔음"
     ],
     "basis": "body",
     "key_figures": [
      "USD3,3 miliar",
      "USD34 miliar",
-     "Rp608 triliun",
-     "USD38-40 miliar"
+     "Rp608 triliun"
     ],
     "quotes": [
      "Listrik Indonesia | Hilirisasi nikel telah meningkatkan nilai ekspor Indonesia dari USD3,3 miliar pada 2017-2018 menjadi USD34 miliar pada 2023 atau sekitar Rp608 triliun (kurs Rp17.900 per Dolar AS).",
@@ -7137,34 +6392,43 @@
     "category": "policy_regulation",
     "tags": [
      "니켈",
-     "하류화(hilirisasi)",
-     "인도네시아"
+     "하류화",
+     "인도네시아",
+     "제련소",
+     "ESDM"
     ],
     "key_phrases": [
      {
-      "phrase": "hilirisasi",
-      "meaning": "부가가치 생성을 위한 원자재의 다단계 가공·처리 과정"
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(다운스트림 산업화)"
      },
      {
       "phrase": "produk setengah jadi",
-      "meaning": "반제품·중간재"
+      "meaning": "반제품"
      },
      {
       "phrase": "nilai tambah",
       "meaning": "부가가치"
+     },
+     {
+      "phrase": "sinkronisasi program",
+      "meaning": "부처 간 프로그램 조율"
      }
     ],
     "oda_relevance": "해당 없음"
    },
    "provenance": {
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-sonnet-5-5",
     "prompt_file": "prompts/summarize_v2.md",
     "prompt_version": "v2.1",
     "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
     "input_body_status": "full",
     "input_chars": 3259,
-    "attempts": 1,
-    "summarized_at": "2026-10-18T15:47:56+00:00"
+    "attempts": 2,
+    "summarized_at": "2026-10-19T01:51:51+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
    },
    "ext": {
     "kcmo": {
@@ -7214,15 +6478,17 @@
     "score": 8,
     "published": "2026-10-10",
     "korean_summary": [
-     "인도네시아 조율조정부(Menko) 바흘릴이 니켈 하류화 성과에 불만을 표시함.",
-     "니켈 수출액이 2017-2018년 USD3.3 miliar에서 2023년 USD34 miliar로 증가했으나, 2026년 USD38-40 miliar 전망임.",
-     "바흘릴은 대부분 제품이 중간재 단계에 머물러 있다며 지속가능한 고부가가치 산업으로의 전환을 강조함."
+     "Bahlil 조정장관은 제련 제품 대부분이 반제품이라 성과가 부족하다고 평가했음",
+     "수출액은 2017-2018년 USD3,3 miliar에서 2023년 USD34 miliar로 늘었음",
+     "관련 부처 간 하류화 프로그램을 조율할 예정이라고 밝혔음"
     ],
     "category": "policy_regulation",
     "tags": [
      "니켈",
-     "하류화(hilirisasi)",
-     "인도네시아"
+     "하류화",
+     "인도네시아",
+     "제련소",
+     "ESDM"
     ],
     "ai_processed": true,
     "card_id": "fab8c1db3115",
@@ -7231,8 +6497,7 @@
     "key_figures": [
      "USD3,3 miliar",
      "USD34 miliar",
-     "Rp608 triliun",
-     "USD38-40 miliar"
+     "Rp608 triliun"
     ],
     "quotes": [
      "Listrik Indonesia | Hilirisasi nikel telah meningkatkan nilai ekspor Indonesia dari USD3,3 miliar pada 2017-2018 menjadi USD34 miliar pada 2023 atau sekitar Rp608 triliun (kurs Rp17.900 per Dolar AS).",
@@ -7244,19 +6509,23 @@
     "category_ko": "정책·법규",
     "key_phrases": [
      {
-      "phrase": "hilirisasi",
-      "meaning": "부가가치 생성을 위한 원자재의 다단계 가공·처리 과정"
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(다운스트림 산업화)"
      },
      {
       "phrase": "produk setengah jadi",
-      "meaning": "반제품·중간재"
+      "meaning": "반제품"
      },
      {
       "phrase": "nilai tambah",
       "meaning": "부가가치"
+     },
+     {
+      "phrase": "sinkronisasi program",
+      "meaning": "부처 간 프로그램 조율"
      }
     ],
-    "processed_at": "2026-10-18T15:47:56+00:00"
+    "processed_at": "2026-10-19T01:51:51+00:00"
    }
   }
  ],
