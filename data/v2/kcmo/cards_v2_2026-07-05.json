@@ -1,0 +1,4020 @@
+{
+ "schema_version": "card.v1",
+ "service": "kcmo",
+ "week_of": "2026-07-05",
+ "generated_at": "2026-10-19T02:59:30+00:00",
+ "mincore_version": "0.3.5",
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2.1",
+ "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+ "stats": {
+  "v1_articles": 22,
+  "cards": 22,
+  "excluded": 0,
+  "body_got": 20,
+  "body_rate": 0.909,
+  "original_link": 22,
+  "reader_proxy_used": 1,
+  "line_len": {
+   "lines": 63,
+   "median": 46,
+   "max": 82,
+   "over60": 4,
+   "over100": 0
+  },
+  "oda_filled": 5,
+  "usage": {
+   "claude-sonnet-5-5": {
+    "calls": 32,
+    "in": 110790,
+    "out": 28592
+   }
+  },
+  "cost_usd": 0.7612,
+  "body_status": {
+   "full": 20,
+   "title_only": 1,
+   "lead_only": 1
+  },
+  "body_source": {
+   "trafilatura": 19,
+   "none": 1,
+   "og_description": 1,
+   "reader_proxy": 1
+  },
+  "resolve": {
+   "decoder": 14,
+   "direct": 8
+  },
+  "fail_reason": {},
+  "basis": {
+   "body": 20,
+   "title": 1,
+   "lead": 1
+  },
+  "retry_reason": {
+   "입력에 없는 숫자: ['12']": 1,
+   "lines는 3줄이어야 함 (현재 4줄)": 6,
+   "입력에 없는 숫자: ['10', '11']": 1,
+   "lines는 3줄이어야 함 (현재 5줄)": 2
+  },
+  "flags": {},
+  "model_used": {
+   "claude-sonnet-5-5": 22
+  }
+ },
+ "total": 22,
+ "cards": [
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "249434eeed2c",
+   "title": "South Korea's EcoPro expands Indonesia nickel investment - upi.com",
+   "title_norm": "south korea s ecopro expands indonesia nickel investment",
+   "url": "https://upi.com/Top_News/World-News/2026/06/30/ecopro-indonesia-nickel-smelter/5151782865507",
+   "gnews_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQekdRZmRXZWgxbnFpTXlwUjU1NVctQXdMRHBNRVpka0RIbGFQNEpseE9XeG5RRnRLakRKYnJvcFBReGxVc2tiLW43S3RKLW1YTDRwcngydkROdUVPZlJYWVp0d25tQnUyanRzWDZxUXpTbHpmRVI3Q0NkMXZueldFcC1IOHV4bTRFM3dnWWZxOVAwN0NVRElwNGZyYWUyUdIBowFBVV95cUxOR1FaNnlyWjBpeDRNRk91Uk9PR20wdlBaZTRweHFpbzVtcU5qNHV3R1hnRmg5a2NzMUgzcTlUdkk3SFp2NEZrd3hzcTV3OVhaNy1HVDB6VjloNDNTWUN5UUYzTHl1aDFOdlp1QkplZWFwZE1BZnJ5d3d3bUNKdC1UZ2I2RVJhR0Vkc2pmYWxhQU4xQlRTQ0tlMmpaNWdxVjBmaFBr?oc=5",
+   "source": {
+    "name": "Google News (ID:en)",
+    "domain": "upi.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "en"
+   },
+   "published": "2026-07-01",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:55:11+00:00",
+   "score": 15,
+   "body": {
+    "status": "full",
+    "chars": 3507,
+    "sha256": "ecedf089367f3a5d0c7b317b00aafe9772b89ebd65e74e656f002e64e40a0c80",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-30",
+    "quotes": [
+     "EcoPro and its subsidiary EcoPro BM plan to increase their combined stake in the Bahodopi Nickel Smelting Indonesia project to 39%, becoming major shareholders and taking a leading role in its development.",
+     "The remaining 150 billion won, or about $97 million, will finance production facilities."
+    ],
+    "final_url": "https://www.upi.com/Top_News/World-News/2026/06/30/ecopro-indonesia-nickel-smelter/5151782865507/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "에코프로와 에코프로BM이 인도네시아 BNSI 니켈 제련소 지분을 39%로 늘릴 계획임",
+     "에코프로BM이 1.2 trillion won 유상증자로 조달하며 총투자는 약 1.5 trillion won임",
+     "니켈·전구체·양극재 통합 공급망을 구축해 미국 요건에 대응하려는 취지임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "39%",
+     "1.5 trillion won",
+     "90,000 metric tons"
+    ],
+    "quotes": [
+     "EcoPro and its subsidiary EcoPro BM plan to increase their combined stake in the Bahodopi Nickel Smelting Indonesia project to 39%, becoming major shareholders and taking a leading role in its development.",
+     "The remaining 150 billion won, or about $97 million, will finance production facilities."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "에코프로",
+     "인도네시아",
+     "술라웨시",
+     "제련소"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "rights offering",
+      "meaning": "기존 주주 대상 유상증자"
+     },
+     {
+      "phrase": "integrated supply chain",
+      "meaning": "니켈·전구체·양극재를 잇는 통합 공급망"
+     },
+     {
+      "phrase": "prohibited foreign entities",
+      "meaning": "미국 규정상 제한 대상인 외국 기관"
+     }
+    ],
+    "oda_relevance": "한국 기업 에코프로의 민간 투자 사례이며, 정부 ODA 사업과의 연계는 본문에서 확인 불가임"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 3507,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:55:24+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "efa5ed471560",
+     "v1_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQekdRZmRXZWgxbnFpTXlwUjU1NVctQXdMRHBNRVpka0RIbGFQNEpseE9XeG5RRnRLakRKYnJvcFBReGxVc2tiLW43S3RKLW1YTDRwcngydkROdUVPZlJYWVp0d25tQnUyanRzWDZxUXpTbHpmRVI3Q0NkMXZueldFcC1IOHV4bTRFM3dnWWZxOVAwN0NVRElwNGZyYWUyUdIBowFBVV95cUxOR1FaNnlyWjBpeDRNRk91Uk9PR20wdlBaZTRweHFpbzVtcU5qNHV3R1hnRmg5a2NzMUgzcTlUdkk3SFp2NEZrd3hzcTV3OVhaNy1HVDB6VjloNDNTWUN5UUYzTHl1aDFOdlp1QkplZWFwZE1BZnJ5d3d3bUNKdC1UZ2I2RVJhR0Vkc2pmYWxhQU4xQlRTQ0tlMmpaNWdxVjBmaFBr?oc=5",
+     "country": "Indonesia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "한국 에코프로가 인도네시아 니켈 사업 확대를 추진함",
+     "인도네시아 ESDM부와 협력하여 니켈 채광·제련 투자 규모 확대 예정",
+     "한국의 배터리 핵심광물 공급망 다변화 및 인도네시아와의 자원협력 강화 의미"
+    ],
+    "oda_relevance": "인도네시아의 니켈 산업 고도화 및 환경·기술 표준 선진화 수요를 감안하면, KIAT의 인도네시아 핵심광물 ODA 사업(기술이전, 인재육성, 자원개발협력)으로 민간투자 선순환 기반 구축 가능성 검토 필요.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "ESDM",
+     "배터리소재",
+     "에코프로"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "EcoPro expands Indonesia nickel investment",
+      "meaning": "에코프로의 인도네시아 니켈 투자 확대"
+     },
+     {
+      "phrase": "nickel mining and smelting",
+      "meaning": "니켈 채광 및 제련"
+     },
+     {
+      "phrase": "battery material supply chain",
+      "meaning": "배터리 소재 공급망"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "efa5ed471560",
+    "title": "South Korea's EcoPro expands Indonesia nickel investment - upi.com",
+    "url": "https://upi.com/Top_News/World-News/2026/06/30/ecopro-indonesia-nickel-smelter/5151782865507",
+    "source": "Google News (ID:en)",
+    "tier_weight": 1,
+    "score": 15,
+    "published": "2026-07-01",
+    "korean_summary": [
+     "에코프로와 에코프로BM이 인도네시아 BNSI 니켈 제련소 지분을 39%로 늘릴 계획임",
+     "에코프로BM이 1.2 trillion won 유상증자로 조달하며 총투자는 약 1.5 trillion won임",
+     "니켈·전구체·양극재 통합 공급망을 구축해 미국 요건에 대응하려는 취지임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "에코프로",
+     "인도네시아",
+     "술라웨시",
+     "제련소"
+    ],
+    "ai_processed": true,
+    "card_id": "249434eeed2c",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "39%",
+     "1.5 trillion won",
+     "90,000 metric tons"
+    ],
+    "quotes": [
+     "EcoPro and its subsidiary EcoPro BM plan to increase their combined stake in the Bahodopi Nickel Smelting Indonesia project to 39%, becoming major shareholders and taking a leading role in its development.",
+     "The remaining 150 billion won, or about $97 million, will finance production facilities."
+    ],
+    "source_language": "en",
+    "country": "Indonesia",
+    "oda_relevance": "한국 기업 에코프로의 민간 투자 사례이며, 정부 ODA 사업과의 연계는 본문에서 확인 불가임",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "rights offering",
+      "meaning": "기존 주주 대상 유상증자"
+     },
+     {
+      "phrase": "integrated supply chain",
+      "meaning": "니켈·전구체·양극재를 잇는 통합 공급망"
+     },
+     {
+      "phrase": "prohibited foreign entities",
+      "meaning": "미국 규정상 제한 대상인 외국 기관"
+     }
+    ],
+    "processed_at": "2026-10-19T02:55:24+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "a8197e1703da",
+   "title": "South Korea, Mongolia push forward trade pact, critical minerals cooperation - Anadolu Ajansı",
+   "title_norm": "south korea mongolia push forward trade pact critical minerals cooperation",
+   "url": "https://aa.com.tr/en/asia-pacific/south-korea-mongolia-push-forward-trade-pact-critical-minerals-cooperation/3969221",
+   "gnews_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQ0ViWFZBUk4yQ2RXbVJNRWVNTGxpdzB5am12eWQzMjNWVEZteUh0dzJyTmVZci1TZUhGSlc5TExmYkE5ckxkb3dZVzdhaFhVRUc0Q1R3REt2cmJsUG1QdElmX2FKaEQxR3VmeHFDSXNheU96UnRXR0hGcVJRZzdsSTEtaExwb1JTdHk0aHRVU3czSHN5YjR1Y1M0WHZfOVctTEFSS1QwU0xjcVpMejhfUmRnR0l2eEhHa0Q3Mw?oc=5",
+   "source": {
+    "name": "Google News (MN:en)",
+    "domain": "aa.com.tr",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "en"
+   },
+   "published": "2026-06-17",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:55:28+00:00",
+   "score": 13,
+   "body": {
+    "status": "full",
+    "chars": 1766,
+    "sha256": "7b8bdb9fdacad220d25b8872121cf6e4bdc35da89a7807d836c376ceefaa80a8",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-17",
+    "quotes": [
+     "\"The CEPA between South Korea and Mongolia will serve as a key institutional framework not only for the expansion of trade and investment but also for establishing a stable joint supply chain,\" Yeo said.",
+     "South Korea, Mongolia push forward trade pact, critical minerals cooperation"
+    ],
+    "final_url": "https://www.aa.com.tr/en/asia-pacific/south-korea-mongolia-push-forward-trade-pact-critical-minerals-cooperation/3969221",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "한국과 몽골이 포괄적경제동반자협정(CEPA) 협상을 가속하기로 합의했음",
+     "여한구 통상장관이 울란바토르에서 몽골 경제개발부 장관 Jadambyn Enkhbayar와 만났음",
+     "CEPA 협상은 2023년 개시됐으며, 후속 협상 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "\"The CEPA between South Korea and Mongolia will serve as a key institutional framework not only for the expansion of trade and investment but also for establishing a stable joint supply chain,\" Yeo said.",
+     "South Korea, Mongolia push forward trade pact, critical minerals cooperation"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "CEPA",
+     "구리",
+     "몰리브덴",
+     "희토류"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "comprehensive economic partnership agreement (CEPA)",
+      "meaning": "포괄적경제동반자협정"
+     },
+     {
+      "phrase": "critical mineral supply chains",
+      "meaning": "핵심광물 공급망"
+     },
+     {
+      "phrase": "stable joint supply chain",
+      "meaning": "안정적인 공동 공급망"
+     },
+     {
+      "phrase": "rare earth elements",
+      "meaning": "희토류 원소"
+     }
+    ],
+    "oda_relevance": "한국 통상장관이 몽골 장관과 CEPA 협상 가속과 핵심광물 공급망 협력을 논의했으나, ODA 사업 근거는 본문에 없음."
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1766,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:55:31+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "fc17e9e409b4",
+     "v1_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQ0ViWFZBUk4yQ2RXbVJNRWVNTGxpdzB5am12eWQzMjNWVEZteUh0dzJyTmVZci1TZUhGSlc5TExmYkE5ckxkb3dZVzdhaFhVRUc0Q1R3REt2cmJsUG1QdElmX2FKaEQxR3VmeHFDSXNheU96UnRXR0hGcVJRZzdsSTEtaExwb1JTdHk0aHRVU3czSHN5YjR1Y1M0WHZfOVctTEFSS1QwU0xjcVpMejhfUmRnR0l2eEhHa0Q3Mw?oc=5",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "한국과 몽골이 무역협정 체결과 핵심광물 협력을 추진하고 있음",
+     "양국이 자유무역협정(FTA) 협상 진행 중이며 핵심광물 공급망 협력 강화를 논의함",
+     "몽골의 희토류·텅스텐 등 광물자원 개발에서 한국의 기술협력 기회 확대 전망"
+    ],
+    "oda_relevance": "몽골 MRPAM 및 광산부와의 핵심광물 ODA 협력 체계화 기회. KIAT의 자원개발협력 사업 확대 및 KIGAM의 기술이전 프로그램 확충 검토 필요. FTA 체결 시 ODA를 통한 채굴·제련 기술협력 로드맵 수립 권고.",
+    "category": "oda_cooperation",
+    "tags": [
+     "몽골",
+     "MRPAM",
+     "희토류",
+     "텅스텐",
+     "핵심광물"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "critical minerals cooperation",
+      "meaning": "핵심광물 협력"
+     },
+     {
+      "phrase": "trade pact",
+      "meaning": "무역협정"
+     },
+     {
+      "phrase": "Mongolia MRPAM",
+      "meaning": "몽골 광물석유청"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "fc17e9e409b4",
+    "title": "South Korea, Mongolia push forward trade pact, critical minerals cooperation - Anadolu Ajansı",
+    "url": "https://aa.com.tr/en/asia-pacific/south-korea-mongolia-push-forward-trade-pact-critical-minerals-cooperation/3969221",
+    "source": "Google News (MN:en)",
+    "tier_weight": 1,
+    "score": 13,
+    "published": "2026-06-17",
+    "korean_summary": [
+     "한국과 몽골이 포괄적경제동반자협정(CEPA) 협상을 가속하기로 합의했음",
+     "여한구 통상장관이 울란바토르에서 몽골 경제개발부 장관 Jadambyn Enkhbayar와 만났음",
+     "CEPA 협상은 2023년 개시됐으며, 후속 협상 일정은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "CEPA",
+     "구리",
+     "몰리브덴",
+     "희토류"
+    ],
+    "ai_processed": true,
+    "card_id": "a8197e1703da",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "\"The CEPA between South Korea and Mongolia will serve as a key institutional framework not only for the expansion of trade and investment but also for establishing a stable joint supply chain,\" Yeo said.",
+     "South Korea, Mongolia push forward trade pact, critical minerals cooperation"
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "한국 통상장관이 몽골 장관과 CEPA 협상 가속과 핵심광물 공급망 협력을 논의했으나, ODA 사업 근거는 본문에 없음.",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "comprehensive economic partnership agreement (CEPA)",
+      "meaning": "포괄적경제동반자협정"
+     },
+     {
+      "phrase": "critical mineral supply chains",
+      "meaning": "핵심광물 공급망"
+     },
+     {
+      "phrase": "stable joint supply chain",
+      "meaning": "안정적인 공동 공급망"
+     },
+     {
+      "phrase": "rare earth elements",
+      "meaning": "희토류 원소"
+     }
+    ],
+    "processed_at": "2026-10-19T02:55:31+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "e59540a82fdd",
+   "title": "Korea, Mongolia launch strategic dialogue for critical minerals, supply chain cooperation - The Korea Times",
+   "title_norm": "korea mongolia launch strategic dialogue for critical minerals supply chain cooperation",
+   "url": "https://koreatimes.co.kr/foreignaffairs/20260609/korea-mongolia-launch-strategic-dialogue-for-critical-minerals-supply-chain-cooperation",
+   "gnews_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRjkwQmlybFczWC1ISmEwTmZONHBKMWdHNG9KWVM0Q3hqTHJaNDJmYjFqVm5QdHNFUVVxUm1PSUtndkFtSU54eWpldmFnXy1PWVNFTUhSeEJnZVFuSmZBSU54TmxzZWtxUDNoLUo0dE1aaU50WWl0c1BONXZ0VW5ESTVLQjMwWnVHZHRZdjc4LV9QZ2ktX3RpM2hoTGVtS1c5TlZmVVZnUENWTUljcWRvcWZJUGpoVVBJYjk4eUtsMElVZHY5MVBZTllHdUJtV0VmMWUzbFV2MNIB3AFBVV95cUxQWU1EaWVaQmlpcmRSbFowVVpPNHJqbG4zOUtTVFBpY1IxeU1jcEFBNnRWUWYzT2Rxd0ZfQTVzNGp0aUVEUGxUaTFxWXQ3el8wSVBmM0d0T1JlZFZGU3FCa1JNdWtZd1BxYWplX0NkVUxpV25CZFNCRHVOYzMyR1VHdGNMTUVMQ1ZGRlNRVHpMZnV4TVMxYXUtZjdFT0prOFRhc1lWTEU1SnlwV2lvcHYyWmU0NlVUU0hsLUNzVXVVSE1aeFpDZGRVcXNOclhjUm9jYjVxeU5HMzdheTRu?oc=5",
+   "source": {
+    "name": "Google News (MN:en)",
+    "domain": "koreatimes.co.kr",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "en"
+   },
+   "published": "2026-06-09",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:55:32+00:00",
+   "score": 13,
+   "body": {
+    "status": "full",
+    "chars": 1116,
+    "sha256": "bc552f43eb7960d9e246f7e5505334b1ce45273c9d5661e7132c819e605ee225",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-09",
+    "quotes": [
+     "Park called for closer collaboration in areas with direct benefits for both countries, including rare metals, critical minerals, supply chains and healthcare, as well as cooperation on international issues."
+    ],
+    "final_url": "https://www.koreatimes.co.kr/foreignaffairs/20260609/korea-mongolia-launch-strategic-dialogue-for-critical-minerals-supply-chain-cooperation",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "한국과 몽골이 핵심광물·공급망 협력 확대를 목표로 차관급 전략대화를 출범시켰음",
+     "박윤주 제1차관이 울란바토르에서 몽골 측 Gombosuren Amartuvsuin 카운터파트와 첫 회의를 가졌음",
+     "희소금속·핵심광물·공급망·보건의료 협력을 논의했고 한반도 정세와 지역 평화·안정 협력에도 합의했음"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "Park called for closer collaboration in areas with direct benefits for both countries, including rare metals, critical minerals, supply chains and healthcare, as well as cooperation on international issues."
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "몽골",
+     "핵심광물",
+     "공급망",
+     "희소금속",
+     "외교부"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "vice ministerial-level strategic dialogue",
+      "meaning": "차관급 전략대화"
+     },
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "supply chains",
+      "meaning": "공급망"
+     },
+     {
+      "phrase": "rare metals",
+      "meaning": "희소금속"
+     }
+    ],
+    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범시키고 핵심광물·공급망 협력 확대를 논의한 직접적인 협력 근거임"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1116,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:55:35+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "1bcf55276770",
+     "v1_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRjkwQmlybFczWC1ISmEwTmZONHBKMWdHNG9KWVM0Q3hqTHJaNDJmYjFqVm5QdHNFUVVxUm1PSUtndkFtSU54eWpldmFnXy1PWVNFTUhSeEJnZVFuSmZBSU54TmxzZWtxUDNoLUo0dE1aaU50WWl0c1BONXZ0VW5ESTVLQjMwWnVHZHRZdjc4LV9QZ2ktX3RpM2hoTGVtS1c5TlZmVVZnUENWTUljcWRvcWZJUGpoVVBJYjk4eUtsMElVZHY5MVBZTllHdUJtV0VmMWUzbFV2MNIB3AFBVV95cUxQWU1EaWVaQmlpcmRSbFowVVpPNHJqbG4zOUtTVFBpY1IxeU1jcEFBNnRWUWYzT2Rxd0ZfQTVzNGp0aUVEUGxUaTFxWXQ3el8wSVBmM0d0T1JlZFZGU3FCa1JNdWtZd1BxYWplX0NkVUxpV25CZFNCRHVOYzMyR1VHdGNMTUVMQ1ZGRlNRVHpMZnV4TVMxYXUtZjdFT0prOFRhc1lWTEU1SnlwV2lvcHYyWmU0NlVUU0hsLUNzVXVVSE1aeFpDZGRVcXNOclhjUm9jYjVxeU5HMzdheTRu?oc=5",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "한국과 몽골이 핵심광물·공급망 협력을 위한 전략적 대화를 개시함",
+     "양국 정부 간 광물자원 개발, 기술이전, 공급망 안정화 협력 논의 진행 중",
+     "한국의 핵심광물 확보 전략과 몽골의 자원개발 수출 정책이 전략적으로 부합할 전망"
+    ],
+    "oda_relevance": "몽골의 MRPAM·광산중공업부와 한국 MOTIE·KIAT 간 자원개발 ODA 및 기술협력 사업 확대의 계기. KIGAM 탐사·평가 기술과 KIAT 산업기술협력 트랙을 통한 실질적 협력 구조화 필요.",
+    "category": "oda_cooperation",
+    "tags": [
+     "핵심광물",
+     "몽골",
+     "한-몽 자원외교",
+     "MRPAM",
+     "공급망"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "strategic dialogue for critical minerals, supply chain cooperation",
+      "meaning": "핵심광물 및 공급망 협력을 위한 전략적 대화"
+     },
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "Korea-Mongolia cooperation",
+      "meaning": "한-몽 협력"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "1bcf55276770",
+    "title": "Korea, Mongolia launch strategic dialogue for critical minerals, supply chain cooperation - The Korea Times",
+    "url": "https://koreatimes.co.kr/foreignaffairs/20260609/korea-mongolia-launch-strategic-dialogue-for-critical-minerals-supply-chain-cooperation",
+    "source": "Google News (MN:en)",
+    "tier_weight": 1,
+    "score": 13,
+    "published": "2026-06-09",
+    "korean_summary": [
+     "한국과 몽골이 핵심광물·공급망 협력 확대를 목표로 차관급 전략대화를 출범시켰음",
+     "박윤주 제1차관이 울란바토르에서 몽골 측 Gombosuren Amartuvsuin 카운터파트와 첫 회의를 가졌음",
+     "희소금속·핵심광물·공급망·보건의료 협력을 논의했고 한반도 정세와 지역 평화·안정 협력에도 합의했음"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "몽골",
+     "핵심광물",
+     "공급망",
+     "희소금속",
+     "외교부"
+    ],
+    "ai_processed": true,
+    "card_id": "e59540a82fdd",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "Park called for closer collaboration in areas with direct benefits for both countries, including rare metals, critical minerals, supply chains and healthcare, as well as cooperation on international issues."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "한국 외교부가 몽골과 차관급 전략대화를 출범시키고 핵심광물·공급망 협력 확대를 논의한 직접적인 협력 근거임",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "vice ministerial-level strategic dialogue",
+      "meaning": "차관급 전략대화"
+     },
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "supply chains",
+      "meaning": "공급망"
+     },
+     {
+      "phrase": "rare metals",
+      "meaning": "희소금속"
+     }
+    ],
+    "processed_at": "2026-10-19T02:55:35+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "e396fb70a902",
+   "title": "South Korea and Mongolia Resume CEPA Negotiations to Expand Critical Mineral Supply Chains - Aju Press",
+   "title_norm": "south korea and mongolia resume cepa negotiations to expand critical mineral supply chains",
+   "url": "https://ajupress.com/view/20260607110370783",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VS3VsTFdNaWMwOXJGNHBKbUNsNFhielQ0WEhJTlV3a2lpTGphR3lhak9BZ2xEakZYS0gySm5BUFVLcTYtNFd6S2dVMHlWeFU2N2VaZEdocWZHeU3SAVdBVV95cUxPZl9YZWJIS3FMWGJHU1VlcEtoM0N6SVNfSjNuTnk1ZXYwaGJsZWpFWjFLdXBkWmY0bFNGZWhyMDIyUEw4RFR1MmJVYjB5Ri1HMFBZcmNTZm8?oc=5",
+   "source": {
+    "name": "Google News (MN:en)",
+    "domain": "ajupress.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "en"
+   },
+   "published": "2026-06-07",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:55:37+00:00",
+   "score": 13,
+   "body": {
+    "status": "full",
+    "chars": 1692,
+    "sha256": "f575155c99d7a35514eb120f8fbe76e1009e26f6b963d26f91330fb37fde9924",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-07",
+    "quotes": [],
+    "final_url": "https://www.ajupress.com/view/20260607110370783",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "한국과 몽골이 CEPA 협상을 재개한다고 산업통상자원부가 밝혔음",
+     "권혜진 통상협상국장과 Batkhuyag Idersh 몽골 경제개발부 차관이 협상을 이끎",
+     "협상은 2023년 시작해 네 차례 진행 후 중단됐고 약 1년 7개월 만에 재개됨"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "around 40 representatives",
+     "four rounds of talks",
+     "approximately 1 year and 7 months"
+    ],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "CEPA",
+     "리튬",
+     "구리",
+     "희토류"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "CEPA negotiations",
+      "meaning": "CEPA 협상"
+     },
+     {
+      "phrase": "highly complementary",
+      "meaning": "상호 보완성이 매우 높음"
+     },
+     {
+      "phrase": "tariff concessions",
+      "meaning": "관세 양허"
+     },
+     {
+      "phrase": "critical minerals such as lithium, copper, and rare earth elements",
+      "meaning": "리튬·구리·희토류 등 핵심광물"
+     },
+     {
+      "phrase": "secure supply chain stability",
+      "meaning": "공급망 안정 확보"
+     }
+    ],
+    "oda_relevance": "산업통상자원부가 몽골과 CEPA 협상을 재개해 리튬·구리·희토류 등 핵심광물 공급망 협력 확대를 모색하는 근거가 본문에 있음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1692,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:55:55+00:00",
+    "retry_reasons": [
+     "입력에 없는 숫자: ['12']"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "e28eb120794f",
+     "v1_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VS3VsTFdNaWMwOXJGNHBKbUNsNFhielQ0WEhJTlV3a2lpTGphR3lhak9BZ2xEakZYS0gySm5BUFVLcTYtNFd6S2dVMHlWeFU2N2VaZEdocWZHeU3SAVdBVV95cUxPZl9YZWJIS3FMWGJHU1VlcEtoM0N6SVNfSjNuTnk1ZXYwaGJsZWpFWjFLdXBkWmY0bFNGZWhyMDIyUEw4RFR1MmJVYjB5Ri1HMFBZcmNTZm8?oc=5",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "한국과 몽골이 포괄적경제동반자협정(CEPA) 협상을 재개하여 핵심광물 공급망 확대를 추진함.",
+     "양국은 희토류·텅스텐 등 전략광물 협력 강화 및 광물 무역 장벽 완화를 협상 의제에 포함하기로 합의함.",
+     "협상 성공 시 한국의 몽골 내 광물 개발 사업 참여 확대와 안정적 공급망 확보가 가능할 전망임."
+    ],
+    "oda_relevance": "몽골의 핵심광물 개발·수출 역량 강화는 한국의 공급망 보안과 직결되므로, KIAT의 몽골 자원개발협력 ODA 사업(기술이전·탐사·인력양성)을 CEPA 협상 성과와 연계하여 확대할 기회로 평가됨.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "CEPA",
+     "희토류",
+     "텅스텐",
+     "MRPAM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "CEPA Negotiations",
+      "meaning": "포괄적경제동반자협정 협상"
+     },
+     {
+      "phrase": "Critical Mineral Supply Chains",
+      "meaning": "핵심광물 공급망"
+     },
+     {
+      "phrase": "Rare Earth Elements",
+      "meaning": "희토류"
+     },
+     {
+      "phrase": "Strategic minerals",
+      "meaning": "전략광물"
+     },
+     {
+      "phrase": "Trade barrier reduction",
+      "meaning": "무역 장벽 완화"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "e28eb120794f",
+    "title": "South Korea and Mongolia Resume CEPA Negotiations to Expand Critical Mineral Supply Chains - Aju Press",
+    "url": "https://ajupress.com/view/20260607110370783",
+    "source": "Google News (MN:en)",
+    "tier_weight": 1,
+    "score": 13,
+    "published": "2026-06-07",
+    "korean_summary": [
+     "한국과 몽골이 CEPA 협상을 재개한다고 산업통상자원부가 밝혔음",
+     "권혜진 통상협상국장과 Batkhuyag Idersh 몽골 경제개발부 차관이 협상을 이끎",
+     "협상은 2023년 시작해 네 차례 진행 후 중단됐고 약 1년 7개월 만에 재개됨"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "CEPA",
+     "리튬",
+     "구리",
+     "희토류"
+    ],
+    "ai_processed": true,
+    "card_id": "e396fb70a902",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "around 40 representatives",
+     "four rounds of talks",
+     "approximately 1 year and 7 months"
+    ],
+    "quotes": [],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "산업통상자원부가 몽골과 CEPA 협상을 재개해 리튬·구리·희토류 등 핵심광물 공급망 협력 확대를 모색하는 근거가 본문에 있음",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "CEPA negotiations",
+      "meaning": "CEPA 협상"
+     },
+     {
+      "phrase": "highly complementary",
+      "meaning": "상호 보완성이 매우 높음"
+     },
+     {
+      "phrase": "tariff concessions",
+      "meaning": "관세 양허"
+     },
+     {
+      "phrase": "critical minerals such as lithium, copper, and rare earth elements",
+      "meaning": "리튬·구리·희토류 등 핵심광물"
+     },
+     {
+      "phrase": "secure supply chain stability",
+      "meaning": "공급망 안정 확보"
+     }
+    ],
+    "processed_at": "2026-10-19T02:55:55+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "2fa3bec7a524",
+   "title": "[Uzbekistan Forum] Korean lawmakers seek next phase in Uzbekistan ties through minerals, AI - The Korea Herald",
+   "title_norm": "uzbekistan forum korean lawmakers seek next phase in uzbekistan ties through minerals ai",
+   "url": "https://koreaherald.com/article/10782983",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtUGpXLUptNTJZQk5UTFN4NFMxWmZaZ2luM1pValU0cm5nM3RpT3VWN1RFbzcwTW5hOFZYOXRoWXZtZDZkSXNEekw3N1U1VUZUWWY0TnZ1dw?oc=5",
+   "source": {
+    "name": "Google News (UZ:en)",
+    "domain": "koreaherald.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "en"
+   },
+   "published": "2026-06-21",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:55:56+00:00",
+   "score": 13,
+   "body": {
+    "status": "full",
+    "chars": 3926,
+    "sha256": "6d68127f6b89d819d110b21e8c26cf34891fbc8d9b83b592eab2564002ad2c83",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-21",
+    "quotes": [
+     "“Daewoo’s pioneering spirit from more than 30 years ago remains as deep trust between the two countries and has become a valuable foundation for building a greater future together,” he said."
+    ],
+    "final_url": "https://www.koreaherald.com/article/10782983",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "한국 국회의원들이 우즈벡과의 경제협력 확대에 의회 차원 지원을 약속했음",
+     "윤재옥 의원은 텅스텐·몰리브덴 등 핵심광물과 공급망 협력을 다음 단계로 제시했음",
+     "9월 서울 정상회담을 앞두고 있으며 구체 협력사업 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "“Daewoo’s pioneering spirit from more than 30 years ago remains as deep trust between the two countries and has become a valuable foundation for building a greater future together,” he said."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "텅스텐",
+     "몰리브덴",
+     "공급망"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "critical minerals and resources",
+      "meaning": "핵심광물 및 자원"
+     },
+     {
+      "phrase": "global supply chain cooperation",
+      "meaning": "글로벌 공급망 협력"
+     },
+     {
+      "phrase": "stable legal and institutional framework",
+      "meaning": "안정적인 법·제도적 틀"
+     },
+     {
+      "phrase": "special strategic partnership",
+      "meaning": "특별 전략적 동반자 관계"
+     }
+    ],
+    "oda_relevance": "한국 국회의원이 핵심광물·공급망 분야 협력에 의회 차원 지원을 약속했으나, 구체적 사업이나 자금은 확인 불가임"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 3926,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:56:08+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "f3e182f72a17",
+     "v1_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtUGpXLUptNTJZQk5UTFN4NFMxWmZaZ2luM1pValU0cm5nM3RpT3VWN1RFbzcwTW5hOFZYOXRoWXZtZDZkSXNEekw3N1U1VUZUWWY0TnZ1dw?oc=5",
+     "country": "Uzbekistan",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "한국 국회의원들이 우즈베키스탄과의 광물·AI 협력 확대를 통한 양국 관계 심화를 추진 중임",
+     "한국 의원단이 우즈베키스탄 포럼에서 핵심광물 자원개발과 인공지능 산업협력을 차세대 양국 협력축으로 제시함",
+     "우즈베키스탄의 풍부한 광물자원과 한국의 기술력 결합으로 전략적 자원외교 강화 예정임"
+    ],
+    "oda_relevance": "우즈베키스탄과의 광물협력 고도화는 한국의 핵심광물 수급 안보 전략과 직결되며, KIAT의 자원개발 ODA 사업 확대 및 MOTIE 자원외교 정책과 연계하여 정부 차원의 구체적 협력 로드맵 수립이 필요한 시점임.",
+    "category": "oda_cooperation",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "자원외교",
+     "한-우즈베키스탄 관계",
+     "AI협력"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Korean lawmakers seek next phase in Uzbekistan ties through minerals, AI",
+      "meaning": "한국 국회의원들이 광물·AI를 통해 우즈베키스탄과의 관계를 다음 단계로 발전시키려 추진 중"
+     },
+     {
+      "phrase": "minerals",
+      "meaning": "광물·광물자원"
+     },
+     {
+      "phrase": "Uzbekistan Forum",
+      "meaning": "우즈베키스탄 포럼 (양국 협력 논의 플랫폼)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "f3e182f72a17",
+    "title": "[Uzbekistan Forum] Korean lawmakers seek next phase in Uzbekistan ties through minerals, AI - The Korea Herald",
+    "url": "https://koreaherald.com/article/10782983",
+    "source": "Google News (UZ:en)",
+    "tier_weight": 1,
+    "score": 13,
+    "published": "2026-06-21",
+    "korean_summary": [
+     "한국 국회의원들이 우즈벡과의 경제협력 확대에 의회 차원 지원을 약속했음",
+     "윤재옥 의원은 텅스텐·몰리브덴 등 핵심광물과 공급망 협력을 다음 단계로 제시했음",
+     "9월 서울 정상회담을 앞두고 있으며 구체 협력사업 일정은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "텅스텐",
+     "몰리브덴",
+     "공급망"
+    ],
+    "ai_processed": true,
+    "card_id": "2fa3bec7a524",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "“Daewoo’s pioneering spirit from more than 30 years ago remains as deep trust between the two countries and has become a valuable foundation for building a greater future together,” he said."
+    ],
+    "source_language": "en",
+    "country": "Uzbekistan",
+    "oda_relevance": "한국 국회의원이 핵심광물·공급망 분야 협력에 의회 차원 지원을 약속했으나, 구체적 사업이나 자금은 확인 불가임",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "critical minerals and resources",
+      "meaning": "핵심광물 및 자원"
+     },
+     {
+      "phrase": "global supply chain cooperation",
+      "meaning": "글로벌 공급망 협력"
+     },
+     {
+      "phrase": "stable legal and institutional framework",
+      "meaning": "안정적인 법·제도적 틀"
+     },
+     {
+      "phrase": "special strategic partnership",
+      "meaning": "특별 전략적 동반자 관계"
+     }
+    ],
+    "processed_at": "2026-10-19T02:56:08+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "3b602062e5b1",
+   "title": "카자흐스탄, 이란 고농축 우라늄 수탁 제안…미·이란 핵협상 새 돌파구 되나 역할 주목 - newskorea.ne.kr",
+   "title_norm": "카자흐스탄 이란 고농축 우라늄 수탁 제안 미 이란 핵협상 새 돌파구 되나 역할 주목",
+   "url": "https://newskorea.ne.kr/news/articleView.html?idxno=20502",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tU0RuVk41NlhsTW13eDFLWnVWT0xFMk9GaFZRY3Bka0hCYkdkeENOQWZ3MkNaM2hSamFiY2ZNOEFXRlNzd002czRoMm11S2FqeU54UmZ2UEVBYkRxellBeUc4dGFIVW1DWmtxRzdn?oc=5",
+   "source": {
+    "name": "Google News (KR:ko)",
+    "domain": "newskorea.ne.kr",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "ko"
+   },
+   "published": "2026-06-08",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:56:09+00:00",
+   "score": 13,
+   "body": {
+    "status": "full",
+    "chars": 1395,
+    "sha256": "c26c1b218cf731ac792a3186dad5c64cd47d50d848457f9b36bbf87c9c3791bb",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-08",
+    "quotes": [
+     "현재 미국과 이란 간 핵협상에서 가장 큰 걸림돌은 이란이 보유한 약 440kg 규모의 60% 농축 우라늄 처리 문제다.",
+     "카자흐 외무부 “국제적 합의 전제, 중재자로서 기술적 지원 준비 완료” 공식 확인"
+    ],
+    "final_url": "https://www.newskorea.ne.kr/news/articleView.html?idxno=20502",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "카자흐스탄이 이란 고농축 우라늄을 자국에 보관할 의향을 밝혔음",
+     "IAEA 그로시 사무총장이 FT 인터뷰에서 밝혔고 카자흐 외무부가 브리핑으로 확인했음",
+     "미국·이란 핵합의가 성사되면 수탁이 가능하나 이란 내 강경파 반발이 변수임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "약 440kg",
+     "60% 농축 우라늄",
+     "2019년"
+    ],
+    "quotes": [
+     "현재 미국과 이란 간 핵협상에서 가장 큰 걸림돌은 이란이 보유한 약 440kg 규모의 60% 농축 우라늄 처리 문제다.",
+     "카자흐 외무부 “국제적 합의 전제, 중재자로서 기술적 지원 준비 완료” 공식 확인"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "카자흐스탄",
+     "우라늄",
+     "IAEA",
+     "이란 핵협상",
+     "핵안보"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "저농축우라늄(LEU) 은행",
+      "meaning": "IAEA가 카자흐스탄에서 운영하는 저농축 우라늄 비축 시설"
+     },
+     {
+      "phrase": "우라늄 수탁",
+      "meaning": "타국 우라늄을 맡아 보관하는 것"
+     },
+     {
+      "phrase": "핵주권",
+      "meaning": "이란이 주장하는 자국 핵 활동의 권리"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1395,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:56:13+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "6071c231b9be",
+     "v1_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tU0RuVk41NlhsTW13eDFLWnVWT0xFMk9GaFZRY3Bka0hCYkdkeENOQWZ3MkNaM2hSamFiY2ZNOEFXRlNzd002czRoMm11S2FqeU54UmZ2UEVBYkRxellBeUc4dGFIVW1DWmtxRzdn?oc=5",
+     "country": "Kazakhstan",
+     "source_language": "ko"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "카자흐스탄이 이란의 고농축 우라늄 수탁을 제안하며 미·이란 핵협상의 중재자 역할을 모색하고 있음.",
+     "카자흐스탄 정부가 이란 핵 문제 해결을 위해 우라늄 저장소 제공을 통해 중재 역할을 수행할 방침임.",
+     "카자흐스탄의 핵 중재 역할은 중앙아시아 에너지 지정학에서 한국의 자원 외교 전략과 연계 가능성을 시사함."
+    ],
+    "oda_relevance": "카자흐스탄의 핵 중재 역할 강화로 국제적 위상이 제고되고 있으며, 한국의 핵심광물 ODA 협력국으로서 카자흐스탄과의 우라늄·에너지 자원 협력 채널 확대가 전략적 기회임. MOTIE와 외교부의 자원외교 정책 우선순위 재검토 필요.",
+    "category": "policy_regulation",
+    "tags": [
+     "우라늄",
+     "카자흐스탄",
+     "핵 협상",
+     "중앙아시아",
+     "에너지 지정학"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "고농축 우라늄 수탁",
+      "meaning": "이란의 농축 우라늄을 카자흐스탄이 보관·관리하는 방안"
+     },
+     {
+      "phrase": "미·이란 핵협상",
+      "meaning": "미국과 이란 간 핵 프로그램 제한 협상"
+     },
+     {
+      "phrase": "중재자 역할",
+      "meaning": "국제 분쟁 해결을 위한 중립적 중개 위치"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "6071c231b9be",
+    "title": "카자흐스탄, 이란 고농축 우라늄 수탁 제안…미·이란 핵협상 새 돌파구 되나 역할 주목 - newskorea.ne.kr",
+    "url": "https://newskorea.ne.kr/news/articleView.html?idxno=20502",
+    "source": "Google News (KR:ko)",
+    "tier_weight": 1,
+    "score": 13,
+    "published": "2026-06-08",
+    "korean_summary": [
+     "카자흐스탄이 이란 고농축 우라늄을 자국에 보관할 의향을 밝혔음",
+     "IAEA 그로시 사무총장이 FT 인터뷰에서 밝혔고 카자흐 외무부가 브리핑으로 확인했음",
+     "미국·이란 핵합의가 성사되면 수탁이 가능하나 이란 내 강경파 반발이 변수임"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "카자흐스탄",
+     "우라늄",
+     "IAEA",
+     "이란 핵협상",
+     "핵안보"
+    ],
+    "ai_processed": true,
+    "card_id": "3b602062e5b1",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "약 440kg",
+     "60% 농축 우라늄",
+     "2019년"
+    ],
+    "quotes": [
+     "현재 미국과 이란 간 핵협상에서 가장 큰 걸림돌은 이란이 보유한 약 440kg 규모의 60% 농축 우라늄 처리 문제다.",
+     "카자흐 외무부 “국제적 합의 전제, 중재자로서 기술적 지원 준비 완료” 공식 확인"
+    ],
+    "source_language": "ko",
+    "country": "Kazakhstan",
+    "oda_relevance": "",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "저농축우라늄(LEU) 은행",
+      "meaning": "IAEA가 카자흐스탄에서 운영하는 저농축 우라늄 비축 시설"
+     },
+     {
+      "phrase": "우라늄 수탁",
+      "meaning": "타국 우라늄을 맡아 보관하는 것"
+     },
+     {
+      "phrase": "핵주권",
+      "meaning": "이란이 주장하는 자국 핵 활동의 권리"
+     }
+    ],
+    "processed_at": "2026-10-19T02:56:13+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "0409422a1d17",
+   "title": "Bensimon Tawarkan Kolaborasi Hilirisasi Nikel antara Kaleddonia Baru dan Indonesia - Media Nikel Indonesia",
+   "title_norm": "bensimon tawarkan kolaborasi hilirisasi nikel antara kaleddonia baru dan indonesia",
+   "url": "https://nikel.co.id/2026/06/05/bensimon-tawarkan-kolaborasi-hilirisasi-nikel-antara-kaleddonia-baru-dan-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbjBMN1VjeXJQb0JiUzUzQk1FenllQmxRTUdsSl9WdWF6cjRMMjlHM0xNMnViLVRzaXRacUh5b2UwTk5GZUNJcklFU0NkdzY2MDJsMWlFc0hKVDc0eEMzM1h5STFpZVAzS0wzVkUyOS1SalM3Rk55VldqQU55VzM3Rk5yNU5PbXBkamkyOEU5d0JDSDk2bkJzRzN1N0JzQ2FGalU5N251VGxFckFBcTNtSHJzUFE?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "nikel.co.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-06-05",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:56:14+00:00",
+   "score": 12,
+   "body": {
+    "status": "full",
+    "chars": 2921,
+    "sha256": "7240ab2242b7a984b31b9946be82765d9c7390803dde96bb9209523967ee57df",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-05",
+    "quotes": [
+     "“Indonesia telah mengembangkan platform yang luar biasa untuk pemurnian dan pengolahan mineral,” ujarnya.",
+     "“Kita bersama-sama dapat membangun rantai pasok yang kuat dan tangguh untuk memenuhi kebutuhan industri masa depan,” ujarnya."
+    ],
+    "final_url": "https://nikel.co.id/2026/06/05/bensimon-tawarkan-kolaborasi-hilirisasi-nikel-antara-kaleddonia-baru-dan-indonesia/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "뉴칼레도니아 대통령 특별고문이 인도네시아에 니켈 하류화 협력을 제안했음",
+     "Gabriel Bensimon이 자카르타 ICMCE 2026 폐막일 기조연설에서 밝혔음",
+     "뉴칼레도니아는 고품질 광석·중간재를 보유하며 후속 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "“Indonesia telah mengembangkan platform yang luar biasa untuk pemurnian dan pengolahan mineral,” ujarnya.",
+     "“Kita bersama-sama dapat membangun rantai pasok yang kuat dan tangguh untuk memenuhi kebutuhan industri masa depan,” ujarnya."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "뉴칼레도니아",
+     "하류화",
+     "APNI"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·정제 확대)"
+     },
+     {
+      "phrase": "rantai pasok mineral kritis",
+      "meaning": "핵심광물 공급망"
+     },
+     {
+      "phrase": "produk antara",
+      "meaning": "중간재(중간 제품)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 2921,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:56:23+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "7da8a8af7076",
+     "v1_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbjBMN1VjeXJQb0JiUzUzQk1FenllQmxRTUdsSl9WdWF6cjRMMjlHM0xNMnViLVRzaXRacUh5b2UwTk5GZUNJcklFU0NkdzY2MDJsMWlFc0hKVDc0eEMzM1h5STFpZVAzS0wzVkUyOS1SalM3Rk55VldqQU55VzM3Rk5yNU5PbXBkamkyOEU5d0JDSDk2bkJzRzN1N0JzQ2FGalU5N251VGxFckFBcTNtSHJzUFE?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "프랑스 뉘칼레도니아의 벤시몽이 인도네시아와 니켈 하류산업화 협력을 제안함",
+     "뉘칼레도니아의 풍부한 니켈 광석과 인도네시아의 제련·가공 기술 결합 모색 중",
+     "양국 간 니켈 공급망 통합으로 태평양 지역 핵심광물 협력 기반 조성 가능성"
+    ],
+    "oda_relevance": "인도네시아 ESDM과의 니켈 하류산업화 협력은 한국의 핵심광물 공급망 다층화 전략과 부합. KIAT 자원개발협력 사업으로 한국 제련기술 수출 및 인도네시아 광물 보안 공고화 기회 제시.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "ESDM",
+     "하류산업화",
+     "뉘칼레도니아"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Kolaborasi Hilirisasi Nikel",
+      "meaning": "니켈 하류산업화 협력"
+     },
+     {
+      "phrase": "Bensimon",
+      "meaning": "프랑스령 뉘칼레도니아의 정치인/기관"
+     },
+     {
+      "phrase": "Kaleddonia Baru",
+      "meaning": "뉘칼레도니아(New Caledonia)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "7da8a8af7076",
+    "title": "Bensimon Tawarkan Kolaborasi Hilirisasi Nikel antara Kaleddonia Baru dan Indonesia - Media Nikel Indonesia",
+    "url": "https://nikel.co.id/2026/06/05/bensimon-tawarkan-kolaborasi-hilirisasi-nikel-antara-kaleddonia-baru-dan-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 12,
+    "published": "2026-06-05",
+    "korean_summary": [
+     "뉴칼레도니아 대통령 특별고문이 인도네시아에 니켈 하류화 협력을 제안했음",
+     "Gabriel Bensimon이 자카르타 ICMCE 2026 폐막일 기조연설에서 밝혔음",
+     "뉴칼레도니아는 고품질 광석·중간재를 보유하며 후속 일정은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "뉴칼레도니아",
+     "하류화",
+     "APNI"
+    ],
+    "ai_processed": true,
+    "card_id": "0409422a1d17",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "“Indonesia telah mengembangkan platform yang luar biasa untuk pemurnian dan pengolahan mineral,” ujarnya.",
+     "“Kita bersama-sama dapat membangun rantai pasok yang kuat dan tangguh untuk memenuhi kebutuhan industri masa depan,” ujarnya."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·정제 확대)"
+     },
+     {
+      "phrase": "rantai pasok mineral kritis",
+      "meaning": "핵심광물 공급망"
+     },
+     {
+      "phrase": "produk antara",
+      "meaning": "중간재(중간 제품)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:56:23+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "d4851facb2aa",
+   "title": "HDBank ghi dấu ấn với bộ ba giải thưởng quốc tế uy tín",
+   "title_norm": "hdbank ghi dấu ấn với bộ ba giải thưởng quốc tế uy tín",
+   "url": "https://vietnamnet.vn/hdbank-ghi-dau-an-voi-bo-ba-giai-thuong-quoc-te-uy-tin-2532371.html",
+   "gnews_url": null,
+   "source": {
+    "name": "VietnamNet - Kinh doanh (RSS)",
+    "domain": "vietnamnet.vn",
+    "tier": null,
+    "tier_weight": 3,
+    "language": "vi"
+   },
+   "published": "2026-07-04",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:56:25+00:00",
+   "score": 10,
+   "body": {
+    "status": "full",
+    "chars": 2859,
+    "sha256": "a3d0672aca138814260d9a2097c3bb889c33c431a1b69c16aeb2acbd9503d401",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-07-04",
+    "quotes": [
+     "Kết thúc quý I/2026, HDBank đạt tổng dư nợ tín dụng 635.085 tỉ đồng, tăng trưởng 8%, cao hơn mức bình quân toàn ngành (ước khoảng 3,18%), tập trung vào các lĩnh vực ưu tiên và là các động lực tăng trưởng của nền kinh tế."
+    ],
+    "final_url": "https://vietnamnet.vn/hdbank-ghi-dau-an-voi-bo-ba-giai-thuong-quoc-te-uy-tin-2532371.html",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "HDBank가 싱가포르 시상식에서 소매은행·SME은행상을 5회 연속 받았음",
+     "2026년 1분기 말 신용 잔액은 635.085 tỉ đồng으로 8% 늘었음",
+     "6월 11일 The Asian Banker의 공급망금융 은행상도 받았음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "635.085 tỉ đồng",
+     "106%",
+     "100 triệu USD"
+    ],
+    "quotes": [
+     "Kết thúc quý I/2026, HDBank đạt tổng dư nợ tín dụng 635.085 tỉ đồng, tăng trưởng 8%, cao hơn mức bình quân toàn ngành (ước khoảng 3,18%), tập trung vào các lĩnh vực ưu tiên và là các động lực tăng trưởng của nền kinh tế."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "베트남",
+     "HDBank",
+     "공급망금융",
+     "SME금융"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Best Supply Chain Finance Bank in Vietnam",
+      "meaning": "베트남 최우수 공급망금융 은행"
+     },
+     {
+      "phrase": "Ngân hàng SME của năm",
+      "meaning": "올해의 SME 은행"
+     },
+     {
+      "phrase": "tài trợ chuỗi giá trị",
+      "meaning": "가치사슬 금융 지원"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 2859,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:56:43+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "922ccfd1",
+     "v1_url": "https://vietnamnet.vn/hdbank-ghi-dau-an-voi-bo-ba-giai-thuong-quoc-te-uy-tin-2532371.html",
+     "country": "Vietnam",
+     "source_language": "vi"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "베트남 HDBank가 국제 금융기관 3곳으로부터 공급망금융·중소기업금융·소매금융 부문 상을 수상했음",
+     "The Asian Banker, Global Banking & Finance Review, Asian Banking & Finance 등이 수여했으며 베트남 금융 부문 신뢰도를 제고했음",
+     "베트남 금융시장 역량 강화로 자원개발금융 협력 기반 조성에 시사점 제공"
+    ],
+    "oda_relevance": "베트남 금융부문 국제 신용도 상승은 핵심광물 프로젝트 자금조달 여건 개선을 의미함. MOTIE·KIGAM의 베트남 광물자원 개발협력사업이 EDCF 유상원조 활용 시 금융 파트너로서 HDBank 같은 신뢰도 높은 기관과의 연계 가능성 증대.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "베트남",
+     "금융시장",
+     "공급망금융",
+     "MOIT",
+     "자원금융"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "tài trợ chuỗi cung ứng",
+      "meaning": "공급망금융(Supply Chain Finance)"
+     },
+     {
+      "phrase": "ngân hàng SME",
+      "meaning": "중소기업 금융"
+     },
+     {
+      "phrase": "ngân hàng bán lẻ",
+      "meaning": "소매금융"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "922ccfd1",
+    "title": "HDBank ghi dấu ấn với bộ ba giải thưởng quốc tế uy tín",
+    "url": "https://vietnamnet.vn/hdbank-ghi-dau-an-voi-bo-ba-giai-thuong-quoc-te-uy-tin-2532371.html",
+    "source": "VietnamNet - Kinh doanh (RSS)",
+    "tier_weight": 3,
+    "score": 10,
+    "published": "2026-07-04",
+    "korean_summary": [
+     "HDBank가 싱가포르 시상식에서 소매은행·SME은행상을 5회 연속 받았음",
+     "2026년 1분기 말 신용 잔액은 635.085 tỉ đồng으로 8% 늘었음",
+     "6월 11일 The Asian Banker의 공급망금융 은행상도 받았음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "베트남",
+     "HDBank",
+     "공급망금융",
+     "SME금융"
+    ],
+    "ai_processed": true,
+    "card_id": "d4851facb2aa",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "635.085 tỉ đồng",
+     "106%",
+     "100 triệu USD"
+    ],
+    "quotes": [
+     "Kết thúc quý I/2026, HDBank đạt tổng dư nợ tín dụng 635.085 tỉ đồng, tăng trưởng 8%, cao hơn mức bình quân toàn ngành (ước khoảng 3,18%), tập trung vào các lĩnh vực ưu tiên và là các động lực tăng trưởng của nền kinh tế."
+    ],
+    "source_language": "vi",
+    "country": "Vietnam",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Best Supply Chain Finance Bank in Vietnam",
+      "meaning": "베트남 최우수 공급망금융 은행"
+     },
+     {
+      "phrase": "Ngân hàng SME của năm",
+      "meaning": "올해의 SME 은행"
+     },
+     {
+      "phrase": "tài trợ chuỗi giá trị",
+      "meaning": "가치사슬 금융 지원"
+     }
+    ],
+    "processed_at": "2026-10-19T02:56:43+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "ad034b4c35f9",
+   "title": "Tập đoàn TKV đạt doanh thu hợp nhất 17.118 tỷ đồng trong tháng 6",
+   "title_norm": "tập đoàn tkv đạt doanh thu hợp nhất 17 118 tỷ đồng trong tháng 6",
+   "url": "https://vietnamnet.vn/tap-doan-tkv-dat-doanh-thu-hop-nhat-17-118-ty-dong-trong-thang-6-2532159.html",
+   "gnews_url": null,
+   "source": {
+    "name": "VietnamNet - Kinh doanh (RSS)",
+    "domain": "vietnamnet.vn",
+    "tier": null,
+    "tier_weight": 3,
+    "language": "vi"
+   },
+   "published": "2026-07-03",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:56:43+00:00",
+   "score": 10,
+   "body": {
+    "status": "full",
+    "chars": 4299,
+    "sha256": "a66f5e809e83a6d1ee6203ed64ad605eba643074264ecb25595de3d54b050dd3",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-07-03",
+    "quotes": [
+     "Cụ thể: Than nguyên khai sản xuất dự kiến đạt 3,3 triệu tấn; bằng 104,5% kế hoạch tháng; lũy kế 6 tháng đầu năm ước đạt 19,6 triệu tấn.",
+     "Tiêu thụ Alumina đạt 145,3 nghìn tấn, bằng 126,3% kế hoạch tháng; lũy kế 6 tháng dự kiến đạt 645,4 nghìn tấn."
+    ],
+    "final_url": "https://vietnamnet.vn/tap-doan-tkv-dat-doanh-thu-hop-nhat-17-118-ty-dong-trong-thang-6-2532159.html",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "베트남 TKV가 2026년 6월 생산·영업 실적을 공개했음",
+     "6월 연결 매출은 17.118 tỷ đồng, 상반기 누계 추정은 94.146 tỷ đồng임",
+     "7월에는 중동 분쟁과 투입 비용 상승이 부담이 될 것으로 전망했음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "17.118 tỷ đồng",
+     "94.146 tỷ đồng",
+     "122,5 nghìn tấn"
+    ],
+    "quotes": [
+     "Cụ thể: Than nguyên khai sản xuất dự kiến đạt 3,3 triệu tấn; bằng 104,5% kế hoạch tháng; lũy kế 6 tháng đầu năm ước đạt 19,6 triệu tấn.",
+     "Tiêu thụ Alumina đạt 145,3 nghìn tấn, bằng 126,3% kế hoạch tháng; lũy kế 6 tháng dự kiến đạt 645,4 nghìn tấn."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "베트남",
+     "TKV",
+     "석탄",
+     "알루미나",
+     "구리정광"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "doanh thu hợp nhất",
+      "meaning": "연결 매출"
+     },
+     {
+      "phrase": "lũy kế 6 tháng",
+      "meaning": "상반기(6개월) 누계"
+     },
+     {
+      "phrase": "Than nguyên khai",
+      "meaning": "원탄(채굴한 그대로의 석탄)"
+     },
+     {
+      "phrase": "Tinh quặng đồng",
+      "meaning": "구리 정광"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:56:51+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "8361110a",
+     "v1_url": "https://vietnamnet.vn/tap-doan-tkv-dat-doanh-thu-hop-nhat-17-118-ty-dong-trong-thang-6-2532159.html",
+     "country": "Vietnam",
+     "source_language": "vi"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "베트남 TKV 그룹 6월 광산물 판매수익 17.118조 동 기록",
+     "TKV(베트남탄-광물산업그룹)가 월간 생산·경영을 높은 수준 유지, 주요 지표 계획 달성",
+     "베트남 광물자원 산업 안정적 운영으로 광물 수출 공급망 기여 중"
+    ],
+    "oda_relevance": "베트남 MOIT 산하 주요 국영광물기업의 안정적 생산 유지는 한국의 광물 구매처 신뢰도 제고와 장기 공급계약 안정성에 긍정적. MOTIE의 베트남 광물자원 외교 및 KIAT의 자원개발협력 사업 안정성 평가 참고 자료로 활용 가치 있음.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "베트남",
+     "TKV",
+     "광물",
+     "석탄",
+     "MOIT"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Tập đoàn Công nghiệp Than - Khoáng sản Việt Nam (TKV)",
+      "meaning": "베트남탄-광물산업그룹(TKV)"
+     },
+     {
+      "phrase": "doanh thu hợp nhất",
+      "meaning": "연결 수익/통합 판매수익"
+     },
+     {
+      "phrase": "tuân thủ nghiêm kỷ luật điều hành",
+      "meaning": "경영 규율 엄격히 준수"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "8361110a",
+    "title": "Tập đoàn TKV đạt doanh thu hợp nhất 17.118 tỷ đồng trong tháng 6",
+    "url": "https://vietnamnet.vn/tap-doan-tkv-dat-doanh-thu-hop-nhat-17-118-ty-dong-trong-thang-6-2532159.html",
+    "source": "VietnamNet - Kinh doanh (RSS)",
+    "tier_weight": 3,
+    "score": 10,
+    "published": "2026-07-03",
+    "korean_summary": [
+     "베트남 TKV가 2026년 6월 생산·영업 실적을 공개했음",
+     "6월 연결 매출은 17.118 tỷ đồng, 상반기 누계 추정은 94.146 tỷ đồng임",
+     "7월에는 중동 분쟁과 투입 비용 상승이 부담이 될 것으로 전망했음"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "베트남",
+     "TKV",
+     "석탄",
+     "알루미나",
+     "구리정광"
+    ],
+    "ai_processed": true,
+    "card_id": "ad034b4c35f9",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "17.118 tỷ đồng",
+     "94.146 tỷ đồng",
+     "122,5 nghìn tấn"
+    ],
+    "quotes": [
+     "Cụ thể: Than nguyên khai sản xuất dự kiến đạt 3,3 triệu tấn; bằng 104,5% kế hoạch tháng; lũy kế 6 tháng đầu năm ước đạt 19,6 triệu tấn.",
+     "Tiêu thụ Alumina đạt 145,3 nghìn tấn, bằng 126,3% kế hoạch tháng; lũy kế 6 tháng dự kiến đạt 645,4 nghìn tấn."
+    ],
+    "source_language": "vi",
+    "country": "Vietnam",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "doanh thu hợp nhất",
+      "meaning": "연결 매출"
+     },
+     {
+      "phrase": "lũy kế 6 tháng",
+      "meaning": "상반기(6개월) 누계"
+     },
+     {
+      "phrase": "Than nguyên khai",
+      "meaning": "원탄(채굴한 그대로의 석탄)"
+     },
+     {
+      "phrase": "Tinh quặng đồng",
+      "meaning": "구리 정광"
+     }
+    ],
+    "processed_at": "2026-10-19T02:56:51+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "66132c4d8caa",
+   "title": "EBRD to Finance $300 Million Gold Processing Project in Kazakhstan",
+   "title_norm": "ebrd to finance 300 million gold processing project in kazakhstan",
+   "url": "https://astanatimes.com/2026/07/ebrd-to-finance-300-million-gold-processing-project-in-kazakhstan",
+   "gnews_url": null,
+   "source": {
+    "name": "The Astana Times (RSS)",
+    "domain": "astanatimes.com",
+    "tier": null,
+    "tier_weight": 3,
+    "language": "en"
+   },
+   "published": "2026-07-03",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:56:51+00:00",
+   "score": 10,
+   "body": {
+    "status": "full",
+    "chars": 1869,
+    "sha256": "a5356469acadd1ea07179cdce07c6ce29ef498f50629ba520338c07d3e06e8f2",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-07-03",
+    "quotes": [
+     "The EBRD has invested nearly $12.8 billion in Kazakhstan through 354 projects, making the country its largest and longest-running investment destination in Central Asia."
+    ],
+    "final_url": "https://astanatimes.com/2026/07/ebrd-to-finance-300-million-gold-processing-project-in-kazakhstan/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "EBRD가 카자흐스탄 파블로다르 습식제련 단지에 최대 $300 million 대출을 제공하기로 했음",
+     "Solidcore Resources 대상, 연 최대 278.5 kilotonnes 금 정광 처리 예정임",
+     "EBRD가 주도 대주이며 Green Climate Fund와 기술지원도 제공함"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "$300 million",
+     "278.5 kilotonnes",
+     "$12.8 billion"
+    ],
+    "quotes": [
+     "The EBRD has invested nearly $12.8 billion in Kazakhstan through 354 projects, making the country its largest and longest-running investment destination in Central Asia."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "금",
+     "카자흐스탄",
+     "EBRD",
+     "파블로다르",
+     "Solidcore Resources"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hydrometallurgical complex",
+      "meaning": "습식제련 단지"
+     },
+     {
+      "phrase": "refractory gold concentrates",
+      "meaning": "난처리성 금 정광"
+     },
+     {
+      "phrase": "pressure oxidation",
+      "meaning": "가압산화 공법"
+     },
+     {
+      "phrase": "anchor lender",
+      "meaning": "주도 대주(대출 참여 은행단의 중심 대주)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1869,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:57:07+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "ca4dc555",
+     "v1_url": "https://astanatimes.com/2026/07/ebrd-to-finance-300-million-gold-processing-project-in-kazakhstan/",
+     "country": "Kazakhstan",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "EBRD가 카자흐스탄의 금 처리 프로젝트에 3억 달러 대출을 제공함",
+     "파블로다르 지역 수소야금학 복합시설 건설을 위해 Solidcore Resources에 자금 지원",
+     "환경친화적 금 처리 기술 도입으로 카자흐스탄 광물 가공 역량 강화 예정"
+    ],
+    "oda_relevance": "카자흐스탄의 광물 가공 기술 고도화 사례로서, 한국의 KIAT·KIGAM이 추진할 핵심광물 처리·환경기술 ODA 협력 모델 벤치마킹 가치 있음. 특히 수소야금학 같은 고부가가치 기술 이전 협력 기회 검토 필요.",
+    "category": "exploration_development",
+    "tags": [
+     "금(Gold)",
+     "수소야금학",
+     "카자흐스탄",
+     "Pavlodar",
+     "기술이전"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hydrometallurgical complex",
+      "meaning": "수소야금학 복합시설 (습식 야금 기술로 광물에서 금속을 추출·정제하는 시설)"
+     },
+     {
+      "phrase": "environmentally responsible technology",
+      "meaning": "환경친화적 기술"
+     },
+     {
+      "phrase": "domestic gold processing capacity",
+      "meaning": "국내 금 처리 능력"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "ca4dc555",
+    "title": "EBRD to Finance $300 Million Gold Processing Project in Kazakhstan",
+    "url": "https://astanatimes.com/2026/07/ebrd-to-finance-300-million-gold-processing-project-in-kazakhstan",
+    "source": "The Astana Times (RSS)",
+    "tier_weight": 3,
+    "score": 10,
+    "published": "2026-07-03",
+    "korean_summary": [
+     "EBRD가 카자흐스탄 파블로다르 습식제련 단지에 최대 $300 million 대출을 제공하기로 했음",
+     "Solidcore Resources 대상, 연 최대 278.5 kilotonnes 금 정광 처리 예정임",
+     "EBRD가 주도 대주이며 Green Climate Fund와 기술지원도 제공함"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "금",
+     "카자흐스탄",
+     "EBRD",
+     "파블로다르",
+     "Solidcore Resources"
+    ],
+    "ai_processed": true,
+    "card_id": "66132c4d8caa",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "$300 million",
+     "278.5 kilotonnes",
+     "$12.8 billion"
+    ],
+    "quotes": [
+     "The EBRD has invested nearly $12.8 billion in Kazakhstan through 354 projects, making the country its largest and longest-running investment destination in Central Asia."
+    ],
+    "source_language": "en",
+    "country": "Kazakhstan",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "hydrometallurgical complex",
+      "meaning": "습식제련 단지"
+     },
+     {
+      "phrase": "refractory gold concentrates",
+      "meaning": "난처리성 금 정광"
+     },
+     {
+      "phrase": "pressure oxidation",
+      "meaning": "가압산화 공법"
+     },
+     {
+      "phrase": "anchor lender",
+      "meaning": "주도 대주(대출 참여 은행단의 중심 대주)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:57:07+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "d25e066a23fb",
+   "title": "Dari Tambang ke Baterai: Membidik Nilai Tambah Hilirisasi Nikel Indonesia - Kontan TV",
+   "title_norm": "dari tambang ke baterai membidik nilai tambah hilirisasi nikel indonesia",
+   "url": "https://tv.kontan.co.id/video/D6XjoWZvqT0",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XMmRHNjNSRlFaVDc1UC1VQ3M1YzduXzhTMTd5VHNLV2ZYWEZQaTJ1cnFHdmh0SXV4cW8xcnpWc3ZZekctRzM1UHZScDNaLUFRYlo0?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "tv.kontan.co.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-06-24",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:57:23+00:00",
+   "score": 10,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "timeout",
+    "http_status": null,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": null,
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "광산에서 배터리까지, 인도네시아 니켈 하류화의 부가가치를 겨냥함"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "배터리"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 등 downstream 산업 육성)"
+     },
+     {
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:57:25+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "10d3d1e364c2",
+     "v1_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XMmRHNjNSRlFaVDc1UC1VQ3M1YzduXzhTMTd5VHNLV2ZYWEZQaTJ1cnFHdmh0SXV4cW8xcnpWc3ZZekctRzM1UHZScDNaLUFRYlo0?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아가 니켈 광산에서 배터리까지 전주기 가치사슬 고도화를 추진 중임",
+     "인도네시아 정부가 니켈 하류산업(배터리·전기자동차) 집중 육성으로 광물 수출 부가가치 확대를 목표로 함",
+     "한국의 배터리·전기자동차 기술 수입 수요 증대로 인도네시아와 기술협력 강화 기회 제시"
+    ],
+    "oda_relevance": "인도네시아 ESDM의 니켈 하류산업 정책에 부응하여 KIAT가 주도하는 핵심광물 ODA 사업에서 니켈 정광·배터리 소재 기술이전·인력양성 협력 트랙 확대 검토 가치 있음. KIGAM-현지 지질·자원기관 간 니켈 가공·정제 기술협력도 병행 권장.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "배터리",
+     "하류산업",
+     "ESDM",
+     "인도네시아"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel Indonesia",
+      "meaning": "인도네시아 니켈 하류산업화·고부가가치화"
+     },
+     {
+      "phrase": "Nilai Tambah",
+      "meaning": "부가가치"
+     },
+     {
+      "phrase": "Dari Tambang ke Baterai",
+      "meaning": "광산(원광)에서 배터리까지의 전주기 가치사슬"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "10d3d1e364c2",
+    "title": "Dari Tambang ke Baterai: Membidik Nilai Tambah Hilirisasi Nikel Indonesia - Kontan TV",
+    "url": "https://tv.kontan.co.id/video/D6XjoWZvqT0",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 10,
+    "published": "2026-06-24",
+    "korean_summary": [
+     "[제목 기반] 광산에서 배터리까지, 인도네시아 니켈 하류화의 부가가치를 겨냥함"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "배터리"
+    ],
+    "ai_processed": true,
+    "card_id": "d25e066a23fb",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 등 downstream 산업 육성)"
+     },
+     {
+      "phrase": "nilai tambah",
+      "meaning": "부가가치"
+     }
+    ],
+    "processed_at": "2026-10-19T02:57:25+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "58f013684a38",
+   "title": "PBT Siap Investasi USD350 Juta Bangun Fasilitas PCAM, Lengkapi Hilirisasi Nikel Indonesia - BPOK APNI",
+   "title_norm": "pbt siap investasi usd350 juta bangun fasilitas pcam lengkapi hilirisasi nikel indonesia",
+   "url": "https://apni.id/berita/729/pbt-siap-investasi-usd350-juta-bangun-fasilitas-pcam-lengkapi-hilirisasi-nikel-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWnlOY1FpOUhTQzViYnlBenBLd2dNd1U1bFZlVGFZWFdacVBrM0xOVWtDOVZzT1Z4YTdZNmFNd1oxSGZRbnlzMDQ1UGRjYXp4UHpWQ3VrNndrdi1ieFFaV3pyZmJsRlhXUk16cGtEd0dPa0J0dHhZSmtsQ2F2ZEhWclpjU3RQQ0tUTXhJR293ZnJnTnR1V0wtTTJYN0xVTTU0ZTg5RjV6WWszRUJRT0dJYkdtNUFmQQ?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "apni.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-07-03",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:57:27+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 3612,
+    "sha256": "6f33b2f36172e77e4065a66391a9e472a97eedd3de730f9e7fb5b65ef74dff3d",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-07-03",
+    "quotes": [
+     "Nilai investasi proyek tersebut direncanakan mencapai sekitar US$350 juta.",
+     "Diketahui, Wamen Investasi dan Hilirisasi/Waka BKPM, Todotua Pasaribu, bersama Direktur IIPC Sydney, Leidy Surianingrat serta Chairman Pure Battery Technologies, Stephen Wilmot, bertemu di kantor IIPC Sydney, Australia."
+    ],
+    "final_url": "https://apni.id/berita/729/pbt-siap-investasi-usd350-juta-bangun-fasilitas-pcam-lengkapi-hilirisasi-nikel-indonesia",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "호주 PBT가 인도네시아에 PCAM 생산시설 투자를 추진하며 정부와 논의를 심화했음",
+     "투자 규모는 약 US$350 juta로 계획됐고 HPAL 시설의 MHP를 원료로 쓸 예정임",
+     "시드니에서 법인 설립·부지·금융 방안을 논의했으며 후속 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "US$350 juta"
+    ],
+    "quotes": [
+     "Nilai investasi proyek tersebut direncanakan mencapai sekitar US$350 juta.",
+     "Diketahui, Wamen Investasi dan Hilirisasi/Waka BKPM, Todotua Pasaribu, bersama Direktur IIPC Sydney, Leidy Surianingrat serta Chairman Pure Battery Technologies, Stephen Wilmot, bertemu di kantor IIPC Sydney, Australia."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "PCAM",
+     "MHP",
+     "인도네시아",
+     "BKPM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "precursor cathode active material (PCAM)",
+      "meaning": "양극활물질 전구체"
+     },
+     {
+      "phrase": "mixed hydroxide precipitate (MHP)",
+      "meaning": "혼합수산화물침전물"
+     },
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공 고도화)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 3612,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:57:37+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "7dfe1ce96f53",
+     "v1_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWnlOY1FpOUhTQzViYnlBenBLd2dNd1U1bFZlVGFZWFdacVBrM0xOVWtDOVZzT1Z4YTdZNmFNd1oxSGZRbnlzMDQ1UGRjYXp4UHpWQ3VrNndrdi1ieFFaV3pyZmJsRlhXUk16cGtEd0dPa0J0dHhZSmtsQ2F2ZEhWclpjU3RQQ0tUTXhJR293ZnJnTnR1V0wtTTJYN0xVTTU0ZTg5RjV6WWszRUJRT0dJYkdtNUFmQQ?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 PBT가 니켈 하이라이징을 위해 PCAM(전구체 화학 물질) 시설 건설에 3억 5천만 달러 투자 계획을 발표함",
+     "BPOK APNI 보도에 따르면 PBT는 인도네시아 니켈 산업 수직계열화(하이라이징) 완성을 목표로 대규모 설비투자를 추진 중임",
+     "인도네시아의 니켈 고부가가치화 전략이 가속화되면서 한국의 2차전지·스테인리스강 업체들의 공급망 재편 필요성 증가"
+    ],
+    "oda_relevance": "인도네시아의 니켈 하이라이징 고도화로 ESDM과의 기술협력 수요 증대. KIGAM-KIAT 연계 사업으로 정련·화학 공정 기술협력 및 인력양성 ODA 제안 검토 필요.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "ESDM",
+     "PCAM",
+     "하이라이징",
+     "수직계열화"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Fasilitas PCAM",
+      "meaning": "전구체 화학 물질(Precursor Chemicals) 시설"
+     },
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 산업 수직계열화·고부가가치화"
+     },
+     {
+      "phrase": "BPOK APNI",
+      "meaning": "인도네시아 광업·신광물 산업협회(Association of Indonesian Mineral Mining and Processing Companies)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "7dfe1ce96f53",
+    "title": "PBT Siap Investasi USD350 Juta Bangun Fasilitas PCAM, Lengkapi Hilirisasi Nikel Indonesia - BPOK APNI",
+    "url": "https://apni.id/berita/729/pbt-siap-investasi-usd350-juta-bangun-fasilitas-pcam-lengkapi-hilirisasi-nikel-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-07-03",
+    "korean_summary": [
+     "호주 PBT가 인도네시아에 PCAM 생산시설 투자를 추진하며 정부와 논의를 심화했음",
+     "투자 규모는 약 US$350 juta로 계획됐고 HPAL 시설의 MHP를 원료로 쓸 예정임",
+     "시드니에서 법인 설립·부지·금융 방안을 논의했으며 후속 일정은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "PCAM",
+     "MHP",
+     "인도네시아",
+     "BKPM"
+    ],
+    "ai_processed": true,
+    "card_id": "58f013684a38",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "US$350 juta"
+    ],
+    "quotes": [
+     "Nilai investasi proyek tersebut direncanakan mencapai sekitar US$350 juta.",
+     "Diketahui, Wamen Investasi dan Hilirisasi/Waka BKPM, Todotua Pasaribu, bersama Direktur IIPC Sydney, Leidy Surianingrat serta Chairman Pure Battery Technologies, Stephen Wilmot, bertemu di kantor IIPC Sydney, Australia."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "precursor cathode active material (PCAM)",
+      "meaning": "양극활물질 전구체"
+     },
+     {
+      "phrase": "mixed hydroxide precipitate (MHP)",
+      "meaning": "혼합수산화물침전물"
+     },
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공 고도화)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:57:37+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "78368c6604c9",
+   "title": "Investor Australia Tertarik Masuk Bisnis Hilirisasi Nikel di Indonesia - IDX Channel",
+   "title_norm": "investor australia tertarik masuk bisnis hilirisasi nikel di indonesia",
+   "url": "https://idxchannel.com/economics/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNclp2d3JfQ01uaGh0SHlXeWRhclRYMV9nbElnRGd4OXI3U01ISkRkZE0wWE16cjhsYkRXMU9MOEhFX196b0FwLURlUURPX3EwanJMLWU1NWJObUd2dVJzMnJuWVZfcFh3Y01aQThOUENSb0IzNTU5ZUVubDN2c2llcDJFLVFhMW1HVG1xZnFjTlU4Z0pOS2V5QnNxdkE1bUxKbm9DeGxHMFpUV03SAbABQVVfeXFMTVhxd1p0MmE1WDdhVm16TUQ3VmZRSkdTdmc4aFozUXYxT045UThGX2ZZbllnOFZzaHR6WlRxU1JJYlZFUEJQdVhiZUJCaXh4ZUt3MlZxNXhrUzYyckRXLXdJWU84Vk02LUFYeG1ORXJGVVR6ZF82TnJOMFByODBUR3lpS0xyVE1Edkx1OVl2TXAxQWRwSXNXZjhaUDl3RjZIZkxnek5WN3I0VDNpX3FEblo?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "idxchannel.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-07-02",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:57:38+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 1258,
+    "sha256": "225d538bacb70c2f1063f47a1f59528bcecffd97d7e89966acedecfbd899ea91",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-07-02",
+    "quotes": [
+     "Pemerintah telah mengidentifikasi 28 komoditas strategis dengan potensi investasi mencapai USD618 miliar hingga tahun 2040.",
+     "Dengan demikian, perusahaan asal Australia tersebut berpotensi masuk dalam ekosistem hilirisasi nikel nasional."
+    ],
+    "final_url": "https://www.idxchannel.com/economics/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "호주 배터리 소재 기업 PBT가 인도네시아에 pCAM 시설 건설을 계획한다고 BKPM이 밝혔음",
+     "BKPM 투자·하류화 차관 Todotua Pasaribu는 HPAL 시설이 이미 있고 곧 배터리 셀 제조도 갖출 것이라고 했음",
+     "pCAM과 양극재가 남은 고리로 꼽혔고, 정부는 28개 전략 품목에 2040년까지 USD618 miliar 투자 잠재력을 파악했음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "USD618 miliar",
+     "28 komoditas strategis",
+     "2040"
+    ],
+    "quotes": [
+     "Pemerintah telah mengidentifikasi 28 komoditas strategis dengan potensi investasi mencapai USD618 miliar hingga tahun 2040.",
+     "Dengan demikian, perusahaan asal Australia tersebut berpotensi masuk dalam ekosistem hilirisasi nikel nasional."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "니켈",
+     "하류화",
+     "BKPM",
+     "호주",
+     "인도네시아"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 후방산업 육성)"
+     },
+     {
+      "phrase": "High Pressure Acid Leach (HPAL)",
+      "meaning": "고압산침출 공법"
+     },
+     {
+      "phrase": "precursor Cathode Active Material (pCAM)",
+      "meaning": "양극활물질 전구체"
+     },
+     {
+      "phrase": "Mata rantai yang tersisa",
+      "meaning": "남아 있는 밸류체인 고리"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1258,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:57:42+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "43118537449b",
+     "v1_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNclp2d3JfQ01uaGh0SHlXeWRhclRYMV9nbElnRGd4OXI3U01ISkRkZE0wWE16cjhsYkRXMU9MOEhFX196b0FwLURlUURPX3EwanJMLWU1NWJObUd2dVJzMnJuWVZfcFh3Y01aQThOUENSb0IzNTU5ZUVubDN2c2llcDJFLVFhMW1HVG1xZnFjTlU4Z0pOS2V5QnNxdkE1bUxKbm9DeGxHMFpUV03SAbABQVVfeXFMTVhxd1p0MmE1WDdhVm16TUQ3VmZRSkdTdmc4aFozUXYxT045UThGX2ZZbllnOFZzaHR6WlRxU1JJYlZFUEJQdVhiZUJCaXh4ZUt3MlZxNXhrUzYyckRXLXdJWU84Vk02LUFYeG1ORXJGVVR6ZF82TnJOMFByODBUR3lpS0xyVE1Edkx1OVl2TXAxQWRwSXNXZjhaUDl3RjZIZkxnek5WN3I0VDNpX3FEblo?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "호주 투자자가 인도네시아의 니켈 하류산업 진출에 관심을 보임.",
+     "인도네시아의 니켈 정광 생산 역량을 바탕으로 호주 자본이 제련·정제 사업 참여를 추진 중임.",
+     "인도네시아의 핵심광물 가치사슬 고도화와 지역 투자 다변화 추세를 반영함."
+    ],
+    "oda_relevance": "인도네시아 ESDM과 협력하여 한국 기업의 니켈 하류산업(배터리·스테인리스) 진출 기회를 검토할 시점. KIAT의 자원개발협력 사업으로 한국-인도네시아 간 정제기술 이전 및 산업기술협력 추진 가능성 검토 권고.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "ESDM",
+     "하류산업·제련",
+     "호주 투자"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류산업화(정광에서 고부가가치 정제·가공 단계로의 산업고도화)"
+     },
+     {
+      "phrase": "investor Australia",
+      "meaning": "호주 투자자"
+     },
+     {
+      "phrase": "bisnis nikel Indonesia",
+      "meaning": "인도네시아 니켈 사업"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "43118537449b",
+    "title": "Investor Australia Tertarik Masuk Bisnis Hilirisasi Nikel di Indonesia - IDX Channel",
+    "url": "https://idxchannel.com/economics/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-07-02",
+    "korean_summary": [
+     "호주 배터리 소재 기업 PBT가 인도네시아에 pCAM 시설 건설을 계획한다고 BKPM이 밝혔음",
+     "BKPM 투자·하류화 차관 Todotua Pasaribu는 HPAL 시설이 이미 있고 곧 배터리 셀 제조도 갖출 것이라고 했음",
+     "pCAM과 양극재가 남은 고리로 꼽혔고, 정부는 28개 전략 품목에 2040년까지 USD618 miliar 투자 잠재력을 파악했음"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "니켈",
+     "하류화",
+     "BKPM",
+     "호주",
+     "인도네시아"
+    ],
+    "ai_processed": true,
+    "card_id": "78368c6604c9",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "USD618 miliar",
+     "28 komoditas strategis",
+     "2040"
+    ],
+    "quotes": [
+     "Pemerintah telah mengidentifikasi 28 komoditas strategis dengan potensi investasi mencapai USD618 miliar hingga tahun 2040.",
+     "Dengan demikian, perusahaan asal Australia tersebut berpotensi masuk dalam ekosistem hilirisasi nikel nasional."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 후방산업 육성)"
+     },
+     {
+      "phrase": "High Pressure Acid Leach (HPAL)",
+      "meaning": "고압산침출 공법"
+     },
+     {
+      "phrase": "precursor Cathode Active Material (pCAM)",
+      "meaning": "양극활물질 전구체"
+     },
+     {
+      "phrase": "Mata rantai yang tersisa",
+      "meaning": "남아 있는 밸류체인 고리"
+     }
+    ],
+    "processed_at": "2026-10-19T02:57:42+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "20224752a371",
+   "title": "Investor Australia Tertarik Masuk Bisnis Hilirisasi Nikel di Indonesia - RCTI+",
+   "title_norm": "investor australia tertarik masuk bisnis hilirisasi nikel di indonesia",
+   "url": "https://m.rctiplus.com/news/detail/terkini/5419457/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNHB4ZVkyWVJmUDcybC1HTjRLMEc0M044WjU3Mm1hSWpDWTdyaFRsc2ZON2N4Uy1GbmVxWjVYZ3lBc2M5Rkl1Vm9SQl9CMDBzN0h5Z1czNXc1QlUzSW5xYjZkcTVIWVV1ZlZvRjdvdjlORmh1SjJsQnZNeUs1MHlldjZvSHg0ak1ESGRpRExwSWFNelhxTXJPSXBVQ1pBZlc4azRTQXJ2OWtidmFONGo1UFRpMVIzakVleU0yeXVB?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "m.rctiplus.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-07-02",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:57:43+00:00",
+   "score": 9,
+   "body": {
+    "status": "lead_only",
+    "chars": 163,
+    "sha256": "936393b5ef5832ca56ab16e6d8ad620d6e72733c6d79b44c9ad7de91a6c42a02",
+    "source": "og_description",
+    "block_type": "parse_fail",
+    "http_status": 200,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": "https://m.rctiplus.com/news/detail/terkini/5419457/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "호주 투자자가 인도네시아 니켈 다운스트림 사업 진출에 관심을 보였음",
+     "BKPM이 배터리 소재 가공 기술기업 Pure Battery Technologies(PBT)의 계획을 밝혔으나 리드가 잘려 세부 내용은 확인 불가임"
+    ],
+    "basis": "lead",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "BKPM",
+     "다운스트림",
+     "호주"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류 가공) 산업화"
+     },
+     {
+      "phrase": "Badan Koordinasi Penanaman Modal (BKPM)",
+      "meaning": "인도네시아 투자조정청"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "lead_only",
+    "input_chars": 163,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:57:45+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "7de2c1f18acd",
+     "v1_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNHB4ZVkyWVJmUDcybC1HTjRLMEc0M044WjU3Mm1hSWpDWTdyaFRsc2ZON2N4Uy1GbmVxWjVYZ3lBc2M5Rkl1Vm9SQl9CMDBzN0h5Z1czNXc1QlUzSW5xYjZkcTVIWVV1ZlZvRjdvdjlORmh1SjJsQnZNeUs1MHlldjZvSHg0ak1ESGRpRExwSWFNelhxTXJPSXBVQ1pBZlc4azRTQXJ2OWtidmFONGo1UFRpMVIzakVleU0yeXVB?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "호주 투자자들이 인도네시아 니켈 하류산업(제련·배터리) 사업 진출에 관심을 보이고 있음",
+     "인도네시아 정부의 광물 가공·수출 정책 및 니켈 수급망 확대 전략의 일환으로 추진 중",
+     "한국 배터리·전기차 업계의 니켈 공급망 다변화 및 협력 기회 창출 전망"
+    ],
+    "oda_relevance": "인도네시아의 니켈 광업 고도화 정책 추진으로 MOTIE·KIAT의 광물하류산업 기술협력(제련·배터리 소재) ODA 사업 수요 증대 예상. KIGAM-KIAT 기술이전 사업과 정책 연계 검토 필요.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류산업",
+     "배터리",
+     "ESDM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi nikel",
+      "meaning": "니켈 하류산업화(제련·가공·부가가치 사업)"
+     },
+     {
+      "phrase": "Investor Australia",
+      "meaning": "호주 투자자"
+     },
+     {
+      "phrase": "Bisnis nikel",
+      "meaning": "니켈 사업"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "7de2c1f18acd",
+    "title": "Investor Australia Tertarik Masuk Bisnis Hilirisasi Nikel di Indonesia - RCTI+",
+    "url": "https://m.rctiplus.com/news/detail/terkini/5419457/investor-australia-tertarik-masuk-bisnis-hilirisasi-nikel-di-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-07-02",
+    "korean_summary": [
+     "[본문 미확보] 호주 투자자가 인도네시아 니켈 다운스트림 사업 진출에 관심을 보였음",
+     "BKPM이 배터리 소재 가공 기술기업 Pure Battery Technologies(PBT)의 계획을 밝혔으나 리드가 잘려 세부 내용은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "BKPM",
+     "다운스트림",
+     "호주"
+    ],
+    "ai_processed": true,
+    "card_id": "20224752a371",
+    "basis": "lead",
+    "body_status": "lead_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류 가공) 산업화"
+     },
+     {
+      "phrase": "Badan Koordinasi Penanaman Modal (BKPM)",
+      "meaning": "인도네시아 투자조정청"
+     }
+    ],
+    "processed_at": "2026-10-19T02:57:45+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "36ef5087df15",
+   "title": "Terobosan Baterai Tanpa Nikel BYD, Ambisi Hilirisasi Nikel Indonesia Mulai Dipertanyakan - Koran Jakarta ®",
+   "title_norm": "terobosan baterai tanpa nikel byd ambisi hilirisasi nikel indonesia mulai dipertanyakan",
+   "url": "https://koran-jakarta.com/2026-07-02/terobosan-baterai-tanpa-nikel-byd-ambisi-hilirisasi-nikel-indonesia-mulai-dipertanyakan",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQmZTS25TUFViUzgxWTVHd2dBX0NCaEN4aXFEQ1lBU1Bob3FmTXVtak1ENGRXZzBTX1luaTJLMnE0QUFGdWx3QUEtYjB5ZGlUZ1NxMlFCODFDWE4wSlJ6ZWthYUJUUkwxcmdDaGpTYzhIMnQ3OXRoV09kTDYzSzZwLUVfMWdHdDZBd3Zob1Z0X29faTNBY3JCY1ZCMWZqUXhrQWRUeEpoVjV6bzY5QWtwSWtMS3RTWTVETHRFRllxdkZMd9IBxwFBVV95cUxQZmdsRDFJV2dsSTlNZkZBT0p0SVpNZVhkYTl0UTlFZUxEUVJYQVllZTRQMmVITlJKM2JuMnBXZ1Byak85NmJTWkdqak1tT2p5eWtKb3dvNWhSZ01lYVJURFM4dkhrZ0p4MkFlSnQzU0FYbV9qN3dOeVFYTUdENjh3dFhoQTBYak44WXI4T01adW5DajU2eGRxUEpCckxjalJfQlFVRGwyaDhXYXR1anl6UWg3dGFPdmlIT2doQmtIR1djTlRBYWVV?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "koran-jakarta.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-07-02",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:57:51+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 3863,
+    "sha256": "998c35a2ac035e39d7690b2716d015ea433277d4a15cea8471d8eb9953b514bf",
+    "source": "reader_proxy",
+    "block_type": "bot_block",
+    "http_status": 403,
+    "extracted_date": null,
+    "quotes": [
+     "- Lalu klik pilihan untuk menonaktifkan atau pilihan \"Don't run on this website / on this page\".",
+     "Terobosan Baterai Tanpa Nikel BYD, Ambisi Hilirisasi Nikel Indonesia Mulai Dipertanyakan"
+    ],
+    "final_url": "https://koran-jakarta.com/2026-07-02/terobosan-baterai-tanpa-nikel-byd-ambisi-hilirisasi-nikel-indonesia-mulai-dipertanyakan",
+    "strategies_tried": [
+     "reader_proxy"
+    ]
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "BYD 무니켈 배터리가 인도네시아 니켈 하류화에 도전이라고 Asia Times가 분석했음",
+     "'Datang'은 53일간 150.000 건 주문, 최고 사양은 CLTC 950 킬로미터임",
+     "생산쿼터·수출 부과금 변화로 투자 신중론이 커졌으나 스테인리스강 니켈 수요는 유지 전망임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "150.000 pesanan",
+     "53 hari",
+     "950 kilometer"
+    ],
+    "quotes": [
+     "- Lalu klik pilihan untuk menonaktifkan atau pilihan \"Don't run on this website / on this page\".",
+     "Terobosan Baterai Tanpa Nikel BYD, Ambisi Hilirisasi Nikel Indonesia Mulai Dipertanyakan"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "BYD",
+     "LMFP",
+     "하류화"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(국내 제련·가공 산업 육성)"
+     },
+     {
+      "phrase": "Lithium Manganese Iron Phosphate (LMFP)",
+      "meaning": "리튬망간인산철, 니켈·코발트를 쓰지 않는 배터리 소재"
+     },
+     {
+      "phrase": "daya tawar",
+      "meaning": "협상력, 교섭력"
+     },
+     {
+      "phrase": "devisa hasil ekspor",
+      "meaning": "수출대금 외환(수출 수익 외화 관련 규정)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 3863,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:58:09+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "786731d9ee7c",
+     "v1_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQmZTS25TUFViUzgxWTVHd2dBX0NCaEN4aXFEQ1lBU1Bob3FmTXVtak1ENGRXZzBTX1luaTJLMnE0QUFGdWx3QUEtYjB5ZGlUZ1NxMlFCODFDWE4wSlJ6ZWthYUJUUkwxcmdDaGpTYzhIMnQ3OXRoV09kTDYzSzZwLUVfMWdHdDZBd3Zob1Z0X29faTNBY3JCY1ZCMWZqUXhrQWRUeEpoVjV6bzY5QWtwSWtMS3RTWTVETHRFRllxdkZMd9IBxwFBVV95cUxQZmdsRDFJV2dsSTlNZkZBT0p0SVpNZVhkYTl0UTlFZUxEUVJYQVllZTRQMmVITlJKM2JuMnBXZ1Byak85NmJTWkdqak1tT2p5eWtKb3dvNWhSZ01lYVJURFM4dkhrZ0p4MkFlSnQzU0FYbV9qN3dOeVFYTUdENjh3dFhoQTBYak44WXI4T01adW5DajU2eGRxUEpCckxjalJfQlFVRGwyaDhXYXR1anl6UWg3dGFPdmlIT2doQmtIR1djTlRBYWVV?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "중국 BYD가 니켈 없는 배터리 기술을 개발함에 따라 인도네시아의 니켈 하류산업화 전략이 도전에 직면했음.",
+     "BYD의 혁신 배터리 기술이 상용화되면서 인도네시아 니켈 수요 감소 가능성이 제기됨.",
+     "한국의 배터리·수소에너지 산업 경쟁력 강화와 인도네시아 광물자원 협력 재검토 필요성이 대두됨."
+    ],
+    "oda_relevance": "인도네시아의 니켈 가치사슬 장기 수요 불확실성이 증대되고 있어, KIAT의 핵심광물 ODA 사업 포트폴리오 재점검이 시급함. MOTIE와 협력하여 인도네시아 ESDM과의 배터리 소재·양극재 등 차세대 기술협력 방향 전환 검토 필요.",
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "배터리",
+     "ESDM",
+     "인도네시아",
+     "하류산업화"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Terobosan Baterai Tanpa Nikel BYD",
+      "meaning": "BYD의 니켈 없는 배터리 혁신 기술"
+     },
+     {
+      "phrase": "Hilirisasi Nikel Indonesia",
+      "meaning": "인도네시아 니켈 하류산업화·부가가치산업화"
+     },
+     {
+      "phrase": "Ambisi dipertanyakan",
+      "meaning": "야심·목표가 의문에 처함"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "786731d9ee7c",
+    "title": "Terobosan Baterai Tanpa Nikel BYD, Ambisi Hilirisasi Nikel Indonesia Mulai Dipertanyakan - Koran Jakarta ®",
+    "url": "https://koran-jakarta.com/2026-07-02/terobosan-baterai-tanpa-nikel-byd-ambisi-hilirisasi-nikel-indonesia-mulai-dipertanyakan",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-07-02",
+    "korean_summary": [
+     "BYD 무니켈 배터리가 인도네시아 니켈 하류화에 도전이라고 Asia Times가 분석했음",
+     "'Datang'은 53일간 150.000 건 주문, 최고 사양은 CLTC 950 킬로미터임",
+     "생산쿼터·수출 부과금 변화로 투자 신중론이 커졌으나 스테인리스강 니켈 수요는 유지 전망임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "BYD",
+     "LMFP",
+     "하류화"
+    ],
+    "ai_processed": true,
+    "card_id": "36ef5087df15",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "150.000 pesanan",
+     "53 hari",
+     "950 kilometer"
+    ],
+    "quotes": [
+     "- Lalu klik pilihan untuk menonaktifkan atau pilihan \"Don't run on this website / on this page\".",
+     "Terobosan Baterai Tanpa Nikel BYD, Ambisi Hilirisasi Nikel Indonesia Mulai Dipertanyakan"
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(국내 제련·가공 산업 육성)"
+     },
+     {
+      "phrase": "Lithium Manganese Iron Phosphate (LMFP)",
+      "meaning": "리튬망간인산철, 니켈·코발트를 쓰지 않는 배터리 소재"
+     },
+     {
+      "phrase": "daya tawar",
+      "meaning": "협상력, 교섭력"
+     },
+     {
+      "phrase": "devisa hasil ekspor",
+      "meaning": "수출대금 외환(수출 수익 외화 관련 규정)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:58:09+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "dc6cc2298d7c",
+   "title": "Операция «Сапфир»: как США тайно вывезли советский уран из Казахстана - Азаттык Азия",
+   "title_norm": "операция сапфир как сша тайно вывезли советский уран из казахстана",
+   "url": "https://azattyqasia.org/a/kak-ssha-tayno-vyvezli-sovetskiy-uran-iz-kazahstana/33776044.html",
+   "gnews_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRm1SbWt5Y3lIc05SYml3OEoxdk82ZE9MU0RQQWxCTnhIWGdOSzJoMkVsbnJTLWlyTjRSUGNLS2NaVlRIZFcxMURjZklES0s2ODA2bDRWaFFtWlVjdFRyNzhCR2ljX2NVNFlvai1hbjk2OVBEc01DaUxPVXJyaHRXeFdwV3VFVUh1emNDbnpSS3ZYNkptejV2MkU1UdIBngFBVV95cUxOYmNvXzFYZ04wUjgwUDJTTEJ4QTN2TS1DbHk2a1NrbXBuUzdTWGpkRGx4ZHNUTExxT05STkl3X2FEaUNXaWV6VDRlb1kwVFBXQUd0NnkybmJQMHMzVV9NaFRyX3N4UWs5aFNJNW5CRjBSTVZrblk0VHFaSHp6OUtHUVFvSEJhQXhmM2ZJVEF3LTZORElkMmIyclY4RmlsZw?oc=5",
+   "source": {
+    "name": "Google News (KZ:kk)",
+    "domain": "azattyqasia.org",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "kk"
+   },
+   "published": "2026-06-09",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:58:12+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 4627,
+    "sha256": "d3990da5f97f7b12b602873e4eeeeee5cda09c0d3d90daf6fdc417c2dca408ae",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-09",
+    "quotes": [],
+    "final_url": "https://www.azattyqasia.org/a/kak-ssha-tayno-vyvezli-sovetskiy-uran-iz-kazahstana/33776044.html",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "카자흐스탄이 이란의 농축우라늄 비축분을 자국에 보관하자고 제안했음",
+     "1994년 작전에서 미국 전문가 31명이 581킬로그램 우라늄을 448개 통에 포장했음",
+     "1993년 공장장의 매각 제안으로 시작된 작전은 수송기 세 대로 우라늄을 반출하며 끝났음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "581 килограмм",
+     "448 металлических бочек",
+     "31 американского специалиста"
+    ],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "우라늄",
+     "카자흐스탄",
+     "Ulba 금속공장",
+     "Project Sapphire",
+     "이란"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Ульбинский металлургический завод",
+      "meaning": "울바 금속공장(우스트카메노고르스크 소재)"
+     },
+     {
+      "phrase": "высокообогащённый уран",
+      "meaning": "고농축 우라늄"
+     },
+     {
+      "phrase": "операция «Сапфир»",
+      "meaning": "사파이어 작전(Project Sapphire)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:58:25+00:00",
+    "retry_reasons": [
+     "입력에 없는 숫자: ['10', '11']"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "7e586e547b13",
+     "v1_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRm1SbWt5Y3lIc05SYml3OEoxdk82ZE9MU0RQQWxCTnhIWGdOSzJoMkVsbnJTLWlyTjRSUGNLS2NaVlRIZFcxMURjZklES0s2ODA2bDRWaFFtWlVjdFRyNzhCR2ljX2NVNFlvai1hbjk2OVBEc01DaUxPVXJyaHRXeFdwV3VFVUh1emNDbnpSS3ZYNkptejV2MkU1UdIBngFBVV95cUxOYmNvXzFYZ04wUjgwUDJTTEJ4QTN2TS1DbHk2a1NrbXBuUzdTWGpkRGx4ZHNUTExxT05STkl3X2FEaUNXaWV6VDRlb1kwVFBXQUd0NnkybmJQMHMzVV9NaFRyX3N4UWs5aFNJNW5CRjBSTVZrblk0VHFaSHp6OUtHUVFvSEJhQXhmM2ZJVEF3LTZORElkMmIyclY4RmlsZw?oc=5",
+     "country": "Kazakhstan",
+     "source_language": "kk"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "미국이 냉전시대 소련 우라늄을 카자흐스탄에서 비밀리에 반출했던 '사파이어 작전'의 역사적 사실이 드러남",
+     "1990년대 초 미국이 소련 붕괴 후 구소련 핵물질을 회수하기 위해 카자흐스탄으로부터 우라늄을 수송한 것으로 알려짐",
+     "카자흐스탄의 핵물질 관리 역사와 현재 우라늄 산업의 지정학적 중요성을 재조명하는 계기가 될 전망"
+    ],
+    "oda_relevance": "카자흐스탄의 우라늄 및 핵물질 관리 역사는 현재 한국의 핵심광물 공급망 다변화 전략과 관련하여, 카자흐스탄의 자원 외교 정책과 국제 협력 기조를 이해하는 데 중요한 배경 정보임. 향후 MOTIE의 우라늄 공급 협력 협상 시 역사적 신뢰성 구축 필요.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "카자흐스탄",
+     "우라늄",
+     "핵물질",
+     "역사적 배경",
+     "냉전"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Операция «Сапфир»",
+      "meaning": "사파이어 작전 (미국의 비밀 우라늄 회수 작전)"
+     },
+     {
+      "phrase": "советский уран",
+      "meaning": "소련 우라늄"
+     },
+     {
+      "phrase": "тайно вывезли",
+      "meaning": "비밀리에 반출했다"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "7e586e547b13",
+    "title": "Операция «Сапфир»: как США тайно вывезли советский уран из Казахстана - Азаттык Азия",
+    "url": "https://azattyqasia.org/a/kak-ssha-tayno-vyvezli-sovetskiy-uran-iz-kazahstana/33776044.html",
+    "source": "Google News (KZ:kk)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-06-09",
+    "korean_summary": [
+     "카자흐스탄이 이란의 농축우라늄 비축분을 자국에 보관하자고 제안했음",
+     "1994년 작전에서 미국 전문가 31명이 581킬로그램 우라늄을 448개 통에 포장했음",
+     "1993년 공장장의 매각 제안으로 시작된 작전은 수송기 세 대로 우라늄을 반출하며 끝났음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "우라늄",
+     "카자흐스탄",
+     "Ulba 금속공장",
+     "Project Sapphire",
+     "이란"
+    ],
+    "ai_processed": true,
+    "card_id": "dc6cc2298d7c",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "581 килограмм",
+     "448 металлических бочек",
+     "31 американского специалиста"
+    ],
+    "quotes": [],
+    "source_language": "kk",
+    "country": "Kazakhstan",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Ульбинский металлургический завод",
+      "meaning": "울바 금속공장(우스트카메노고르스크 소재)"
+     },
+     {
+      "phrase": "высокообогащённый уран",
+      "meaning": "고농축 우라늄"
+     },
+     {
+      "phrase": "операция «Сапфир»",
+      "meaning": "사파이어 작전(Project Sapphire)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:58:25+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "cbcb2de55087",
+   "title": "От урана к АЭС: Казахстан формирует новую архитектуру отечественной атомной энергетики - Kazakhstan Today",
+   "title_norm": "от урана к аэс казахстан формирует новую архитектуру отечественной атомной энергетики",
+   "url": "https://kt.kz/rus/interview/ot_urana_k_aes_kazahstan_formiruet_novuyu_arhitekturu_1377993432.html",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLVBPTVdXZGhQTXNsV1A1enF3cmhLOTZJLU9XQ0lpREtxZE5UUnhDYW8wZlNsQURvem9kLTFVM0JBZWI1cFUyT003RU1NeDhoTVhaNU9xZHRlRW9VdEpsS20wNDAwbUU0Wkh1VGt4RlJIM2F1OUpHZFUxMi1TbUdja1V0MUs4YW82YjZIcmtGTlFmV0M2UFBhT1NudEdDWkI1d3k0?oc=5",
+   "source": {
+    "name": "Google News (KZ:kk)",
+    "domain": "kt.kz",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "kk"
+   },
+   "published": "2026-06-24",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:58:27+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 6675,
+    "sha256": "f4a38c064ea30a22f32255275e5948b0ac3efb1fd93a80ad78a0bc0356cb0b37",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-10-19",
+    "quotes": [],
+    "final_url": "https://www.kt.kz/rus/interview/ot_urana_k_aes_kazahstan_formiruet_novuyu_arhitekturu_1377993432.html",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "카자흐스탄 원자력청이 자국 원전 개발 현황과 국제협력을 인터뷰에서 설명했음",
+     "첫 원전 АЭС \"Балхаш\" 건설 지역은 알마티주 잠블 지구로 결정됐음",
+     "로사톰이 컨소시엄을 주관하며 2026년 5월 28일 정부간 협정이 서명됐음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "не менее трех АЭС",
+     "порядка 18 месяцев",
+     "28 мая 2026 года"
+    ],
+    "quotes": [],
+    "category": "policy_regulation",
+    "tags": [
+     "카자흐스탄",
+     "원자력",
+     "우라늄",
+     "원전",
+     "로사톰"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Агентство Республики Казахстан по атомной энергии",
+      "meaning": "카자흐스탄 원자력청"
+     },
+     {
+      "phrase": "межправительственное соглашение",
+      "meaning": "정부간 협정"
+     },
+     {
+      "phrase": "инженерно-изыскательские работы",
+      "meaning": "공학 조사(부지 조사) 작업"
+     },
+     {
+      "phrase": "реакторные технологии поколения 3+",
+      "meaning": "3+세대 원자로 기술"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:58:36+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "6ca646ebdb33",
+     "v1_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLVBPTVdXZGhQTXNsV1A1enF3cmhLOTZJLU9XQ0lpREtxZE5UUnhDYW8wZlNsQURvem9kLTFVM0JBZWI1cFUyT003RU1NeDhoTVhaNU9xZHRlRW9VdEpsS20wNDAwbUU0Wkh1VGt4RlJIM2F1OUpHZFUxMi1TbUdja1V0MUs4YW82YjZIcmtGTlFmV0M2UFBhT1NudEdDWkI1d3k0?oc=5",
+     "country": "Kazakhstan",
+     "source_language": "kk"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "카자흐스탄이 우라늄에서 원전까지 국내 원자력에너지 산업의 새로운 구조를 구축하고 있음",
+     "우라늄 채광·정제에서 원전 운영까지 전주기 자급체계 수립을 추진 중",
+     "중앙아시아 에너지 안보 강화와 탄소중립 목표 달성의 전략적 의의"
+    ],
+    "oda_relevance": "카자흐스탄의 핵심광물(우라늄) 상류 개발·기술 고도화는 한국의 에너지 수입원 다각화 전략과 맞닿음. KIGAM·KIAT의 우라늄 탐사·개발 기술협력 및 인력양성 ODA 수요 발굴 가치 있음.",
+    "category": "policy_regulation",
+    "tags": [
+     "우라늄",
+     "원자력에너지",
+     "카자흐스탄",
+     "자원개발",
+     "Ministry of Industry and Construction"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "От урана к АЭС",
+      "meaning": "우라늄에서 원전으로 (우라늄 채광부터 원전 운영까지의 통합 가치사슬)"
+     },
+     {
+      "phrase": "новая архитектура отечественной атомной энергетики",
+      "meaning": "국내 원자력에너지 산업의 새로운 구조"
+     },
+     {
+      "phrase": "полный цикл производства",
+      "meaning": "완전한 생산 사이클 (상류에서 하류까지)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "6ca646ebdb33",
+    "title": "От урана к АЭС: Казахстан формирует новую архитектуру отечественной атомной энергетики - Kazakhstan Today",
+    "url": "https://kt.kz/rus/interview/ot_urana_k_aes_kazahstan_formiruet_novuyu_arhitekturu_1377993432.html",
+    "source": "Google News (KZ:kk)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-06-24",
+    "korean_summary": [
+     "카자흐스탄 원자력청이 자국 원전 개발 현황과 국제협력을 인터뷰에서 설명했음",
+     "첫 원전 АЭС \"Балхаш\" 건설 지역은 알마티주 잠블 지구로 결정됐음",
+     "로사톰이 컨소시엄을 주관하며 2026년 5월 28일 정부간 협정이 서명됐음"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "카자흐스탄",
+     "원자력",
+     "우라늄",
+     "원전",
+     "로사톰"
+    ],
+    "ai_processed": true,
+    "card_id": "cbcb2de55087",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "не менее трех АЭС",
+     "порядка 18 месяцев",
+     "28 мая 2026 года"
+    ],
+    "quotes": [],
+    "source_language": "kk",
+    "country": "Kazakhstan",
+    "oda_relevance": "",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "Агентство Республики Казахстан по атомной энергии",
+      "meaning": "카자흐스탄 원자력청"
+     },
+     {
+      "phrase": "межправительственное соглашение",
+      "meaning": "정부간 협정"
+     },
+     {
+      "phrase": "инженерно-изыскательские работы",
+      "meaning": "공학 조사(부지 조사) 작업"
+     },
+     {
+      "phrase": "реакторные технологии поколения 3+",
+      "meaning": "3+세대 원자로 기술"
+     }
+    ],
+    "processed_at": "2026-10-19T02:58:36+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "f1f93d70b87a",
+   "title": "Ground view Kazakhstan: Brezhnev’s needles",
+   "title_norm": "ground view kazakhstan brezhnev s needles",
+   "url": "https://mining.com/ground-view-kazakhstan-brezhnevs-needles",
+   "gnews_url": null,
+   "source": {
+    "name": "Mining.com - Critical Minerals (category)",
+    "domain": "mining.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-06-26",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:58:36+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 10882,
+    "sha256": "760b3a72538d94361e3b478048d7dc067163a13c2219a6118de40aecd46f9ab0",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-26",
+    "quotes": [
+     "“Which is, of course, very unfortunate.”",
+     "Soviet geological maps are, by Galiyev’s own description, “beautiful objects,” hand-drawn with a precision that looks almost typeset."
+    ],
+    "final_url": "https://www.mining.com/ground-view-kazakhstan-brezhnevs-needles/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "카자흐스탄 국가지질청이 소련 시대 지질 자료를 AI가 읽을 수 있는 형태로 변환 중임",
+     "1960년대 지진 탐사 자기테이프를 재생할 수 있는 장비는 전국에 약 3대뿐임",
+     "일부 테이프는 이미 자기가 소실돼 복구 불가하며, 후속 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "more than twenty US companies",
+     "over seventeen billion dollars",
+     "ninth-largest country"
+    ],
+    "quotes": [
+     "“Which is, of course, very unfortunate.”",
+     "Soviet geological maps are, by Galiyev’s own description, “beautiful objects,” hand-drawn with a precision that looks almost typeset."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "카자흐스탄",
+     "핵심광물",
+     "국가지질청",
+     "지질 아카이브",
+     "AI"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "National Geological Service (NGS)",
+      "meaning": "카자흐스탄 국가지질청"
+     },
+     {
+      "phrase": "Pre-Paid Exploration",
+      "meaning": "이미 비용이 지불된 소련 시대 탐사 자료"
+     },
+     {
+      "phrase": "from dialogue to action",
+      "meaning": "대화에서 실행으로"
+     },
+     {
+      "phrase": "C5+1 critical minerals dialogue",
+      "meaning": "C5+1 핵심광물 대화"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:58:40+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "b78be860",
+     "v1_url": "https://www.mining.com/ground-view-kazakhstan-brezhnevs-needles/",
+     "country": "Kazakhstan",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "카자흐스탄이 소련 시대의 광대한 지질자료 보유로 서방의 핵심광물 공급 잠재력 재평가됨",
+     "소련 시대 축적된 지질탐사 기록과 광상 데이터베이스가 현대적 재평가를 통해 신규 광상 발굴 가능성 증대",
+     "서방의 핵심광물 공급망 재편 시 카자흐스탄의 지질정보 자산이 전략적 가치 제고될 전망"
+    ],
+    "oda_relevance": "카자흐스탄의 소련 시대 지질 아카이브 활용은 한국의 핵심광물 자원개발협력 대상으로 적합하며, KIAT-KIGAM 공동의 기술협력 및 자료 공유 사업(지질정보 전산화, 재평가, 탐사 기술이전)을 통해 장기 공급 안정성 강화 가능함.",
+    "category": "exploration_development",
+    "tags": [
+     "카자흐스탄",
+     "지질자료",
+     "핵심광물",
+     "소련 시대 유산",
+     "자원탐사"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "vast geological archive from the Soviet era",
+      "meaning": "소련 시대로부터 축적된 광대한 지질자료"
+     },
+     {
+      "phrase": "critical minerals to the West",
+      "meaning": "서방권에 대한 핵심광물 공급"
+     },
+     {
+      "phrase": "Brezhnev's needles",
+      "meaning": "브레즈네프 시대 소련의 광물 자원 개발 유산"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "b78be860",
+    "title": "Ground view Kazakhstan: Brezhnev’s needles",
+    "url": "https://mining.com/ground-view-kazakhstan-brezhnevs-needles",
+    "source": "Mining.com - Critical Minerals (category)",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-06-26",
+    "korean_summary": [
+     "카자흐스탄 국가지질청이 소련 시대 지질 자료를 AI가 읽을 수 있는 형태로 변환 중임",
+     "1960년대 지진 탐사 자기테이프를 재생할 수 있는 장비는 전국에 약 3대뿐임",
+     "일부 테이프는 이미 자기가 소실돼 복구 불가하며, 후속 일정은 확인 불가임"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "카자흐스탄",
+     "핵심광물",
+     "국가지질청",
+     "지질 아카이브",
+     "AI"
+    ],
+    "ai_processed": true,
+    "card_id": "f1f93d70b87a",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "more than twenty US companies",
+     "over seventeen billion dollars",
+     "ninth-largest country"
+    ],
+    "quotes": [
+     "“Which is, of course, very unfortunate.”",
+     "Soviet geological maps are, by Galiyev’s own description, “beautiful objects,” hand-drawn with a precision that looks almost typeset."
+    ],
+    "source_language": "en",
+    "country": "Kazakhstan",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "National Geological Service (NGS)",
+      "meaning": "카자흐스탄 국가지질청"
+     },
+     {
+      "phrase": "Pre-Paid Exploration",
+      "meaning": "이미 비용이 지불된 소련 시대 탐사 자료"
+     },
+     {
+      "phrase": "from dialogue to action",
+      "meaning": "대화에서 실행으로"
+     },
+     {
+      "phrase": "C5+1 critical minerals dialogue",
+      "meaning": "C5+1 핵심광물 대화"
+     }
+    ],
+    "processed_at": "2026-10-19T02:58:40+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "4a638abc525e",
+   "title": "T. Zorigtsaikhan: FLS Mongolia is Ready to Support the Next Generation of Mining Development",
+   "title_norm": "t zorigtsaikhan fls mongolia is ready to support the next generation of mining development",
+   "url": "https://mongolianminingjournal.com/a/75138",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-06-18",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:58:45+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 4699,
+    "sha256": "ad311a245d1a52760c9e388410c54ddfd3e56c6297294c813050adb5e1550bc6",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-18",
+    "quotes": [
+     "As Mongolia’s mining sector continues to expand, FLS (FLSmidth) Mongolia has established itself as a critical partner for the nation's largest mega-projects, including Oyu Tolgoi, Erdenet, and MAK.",
+     "The high turnover rate in the mining sector, especially among younger engineers, is a challenge."
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75138",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "FLS Mongolia 사업개발 이사 T. Zorigtsaikhan이 인터뷰에서 회사 전략을 밝혔음",
+     "2013년 설립, 울란바토르에 47 staff, Oyu Tolgoi·Erdenet·MAK 등과 협력함",
+     "젊은 엔지니어 해외 이직이 과제이며 2030년 net-zero를 목표로 한다고 밝혔음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "47 staff",
+     "2027",
+     "net-zero emissions by 2030"
+    ],
+    "quotes": [
+     "As Mongolia’s mining sector continues to expand, FLS (FLSmidth) Mongolia has established itself as a critical partner for the nation's largest mega-projects, including Oyu Tolgoi, Erdenet, and MAK.",
+     "The high turnover rate in the mining sector, especially among younger engineers, is a challenge."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "몽골",
+     "FLS Mongolia",
+     "광산장비",
+     "Oyu Tolgoi",
+     "Erdenet"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "full flowsheet solution providers",
+      "meaning": "전체 공정 흐름 솔루션 공급업체"
+     },
+     {
+      "phrase": "net-zero emissions by 2030",
+      "meaning": "2030년까지 순배출 제로 달성"
+     },
+     {
+      "phrase": "untapped resources",
+      "meaning": "아직 개발되지 않은 자원"
+     },
+     {
+      "phrase": "high turnover rate",
+      "meaning": "높은 이직률"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:59:01+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 5줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "0d650a98",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75138",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "FLS 몽골이 다음 세대 광업개발 지원에 나섬을 선언했음",
+     "T. 조릭차이칸(FLS 몽골 대표)이 회사의 광업 기술·서비스 역량을 강조함",
+     "몽골 광업 현대화·기술고도화 과정에서 FLS의 파트너십 역할 전망됨"
+    ],
+    "oda_relevance": "몽골 광업 부문 민간 기술서비스 기업의 역량 강화 관심 신호. 향후 KIAT 자원개발협력사업 파트너선정 및 기술이전 프레임워크 구축 시 현지 기술 수용성 평가 자료로 활용 가능.",
+    "category": "policy_regulation",
+    "tags": [
+     "몽골",
+     "광업기술서비스",
+     "FLS Mongolia",
+     "광업발전",
+     "MRPAM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Next Generation of Mining Development",
+      "meaning": "차세대 광업개발 (기술고도화·효율화 기반 광업)"
+     },
+     {
+      "phrase": "FLS Mongolia",
+      "meaning": "FLS 몽골 (광업 공정·기술 서비스 기업)"
+     },
+     {
+      "phrase": "Support the mining sector",
+      "meaning": "광산업 부문 지원"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "0d650a98",
+    "title": "T. Zorigtsaikhan: FLS Mongolia is Ready to Support the Next Generation of Mining Development",
+    "url": "https://mongolianminingjournal.com/a/75138",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-06-18",
+    "korean_summary": [
+     "FLS Mongolia 사업개발 이사 T. Zorigtsaikhan이 인터뷰에서 회사 전략을 밝혔음",
+     "2013년 설립, 울란바토르에 47 staff, Oyu Tolgoi·Erdenet·MAK 등과 협력함",
+     "젊은 엔지니어 해외 이직이 과제이며 2030년 net-zero를 목표로 한다고 밝혔음"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "몽골",
+     "FLS Mongolia",
+     "광산장비",
+     "Oyu Tolgoi",
+     "Erdenet"
+    ],
+    "ai_processed": true,
+    "card_id": "4a638abc525e",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "47 staff",
+     "2027",
+     "net-zero emissions by 2030"
+    ],
+    "quotes": [
+     "As Mongolia’s mining sector continues to expand, FLS (FLSmidth) Mongolia has established itself as a critical partner for the nation's largest mega-projects, including Oyu Tolgoi, Erdenet, and MAK.",
+     "The high turnover rate in the mining sector, especially among younger engineers, is a challenge."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "full flowsheet solution providers",
+      "meaning": "전체 공정 흐름 솔루션 공급업체"
+     },
+     {
+      "phrase": "net-zero emissions by 2030",
+      "meaning": "2030년까지 순배출 제로 달성"
+     },
+     {
+      "phrase": "untapped resources",
+      "meaning": "아직 개발되지 않은 자원"
+     },
+     {
+      "phrase": "high turnover rate",
+      "meaning": "높은 이직률"
+     }
+    ],
+    "processed_at": "2026-10-19T02:59:01+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "ec1702997f10",
+   "title": "2026-06-16ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+   "title_norm": "2026 06 16orano holds opening ceremony for mongolia s zuuvch ovoo uranium project",
+   "url": "https://mongolianminingjournal.com/a/75130",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-06-16",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:59:02+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 1778,
+    "sha256": "938db27abf757dccb7d5fde5d98dc8eb6f6509d69d7ce057647749683b00404d",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-16",
+    "quotes": [
+     "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
+     "The company also plans to gradually increase this support, with annual contributions projected to reach approximately USD 1 million per year in the future."
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75130",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "Orano 그룹이 몽골 Zuuvch-Ovoo 우라늄 사업의 건설 단계 착수 기념식을 열었음",
+     "행사는 2026년 6월 3일 도르노고비주 울란바드라흐 솜에서 열렸고 시범 생산은 2026년 시작 예정임",
+     "본격 채굴은 2028년 개시 예정이며 약 1,600개 직간접 일자리가 창출될 전망임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "MNT 1 billion",
+     "approximately USD 1 million per year",
+     "approximately 1,600 direct and indirect jobs"
+    ],
+    "quotes": [
+     "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
+     "The company also plans to gradually increase this support, with annual contributions projected to reach approximately USD 1 million per year in the future."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "우라늄",
+     "몽골",
+     "Orano",
+     "Badrakh Energy",
+     "도르노고비"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "commencement of the construction phase",
+      "meaning": "건설 단계 착수"
+     },
+     {
+      "phrase": "pilot-scale production",
+      "meaning": "시범 규모 생산"
+     },
+     {
+      "phrase": "full-scale mining operations",
+      "meaning": "본격 채굴 운영"
+     },
+     {
+      "phrase": "cooperation agreement to support local socio-economic development",
+      "meaning": "지역 사회·경제 발전 지원 협력 협약"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1778,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:59:05+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "3215cc8b",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75130",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "프랑스 원전연료 기업 오라노(ORANO)가 몽골 주우브초오 우라늄 프로젝트 개막식을 개최했음",
+     "몽골 정부와 오라노가 주우브초오 광산 개발 착수식에 참석, 우라늄 생산 본격화 예정",
+     "몽골의 우라늄 광물자원 개발이 진전되며 한국의 핵심광물 수급 다변화 기회 창출"
+    ],
+    "oda_relevance": "몽골의 우라늄 대형 프로젝트 가동으로 핵심광물 수급선 확보 중요성 대두. KIAT의 몽골 자원개발협력 사업 확대 및 KIGAM의 우라늄 탐사·평가 기술협력 강화 검토 가치 있음.",
+    "category": "exploration_development",
+    "tags": [
+     "우라늄",
+     "몽골",
+     "ORANO",
+     "MRPAM",
+     "주우브초오"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Zuuvch-Ovoo Uranium Project",
+      "meaning": "주우브초오 우라늄 프로젝트"
+     },
+     {
+      "phrase": "ORANO opening ceremony",
+      "meaning": "오라노 개막식"
+     },
+     {
+      "phrase": "Mongolia uranium production",
+      "meaning": "몽골 우라늄 생산"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "3215cc8b",
+    "title": "2026-06-16ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+    "url": "https://mongolianminingjournal.com/a/75130",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-06-16",
+    "korean_summary": [
+     "Orano 그룹이 몽골 Zuuvch-Ovoo 우라늄 사업의 건설 단계 착수 기념식을 열었음",
+     "행사는 2026년 6월 3일 도르노고비주 울란바드라흐 솜에서 열렸고 시범 생산은 2026년 시작 예정임",
+     "본격 채굴은 2028년 개시 예정이며 약 1,600개 직간접 일자리가 창출될 전망임"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "우라늄",
+     "몽골",
+     "Orano",
+     "Badrakh Energy",
+     "도르노고비"
+    ],
+    "ai_processed": true,
+    "card_id": "ec1702997f10",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "MNT 1 billion",
+     "approximately USD 1 million per year",
+     "approximately 1,600 direct and indirect jobs"
+    ],
+    "quotes": [
+     "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
+     "The company also plans to gradually increase this support, with annual contributions projected to reach approximately USD 1 million per year in the future."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "commencement of the construction phase",
+      "meaning": "건설 단계 착수"
+     },
+     {
+      "phrase": "pilot-scale production",
+      "meaning": "시범 규모 생산"
+     },
+     {
+      "phrase": "full-scale mining operations",
+      "meaning": "본격 채굴 운영"
+     },
+     {
+      "phrase": "cooperation agreement to support local socio-economic development",
+      "meaning": "지역 사회·경제 발전 지원 협력 협약"
+     }
+    ],
+    "processed_at": "2026-10-19T02:59:05+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "cde47e1aa541",
+   "title": "2026-06-18SSAB and Hardox Wear Parts Center Mongolia to Host Technical Seminar for the Mining Sector",
+   "title_norm": "2026 06 18ssab and hardox wear parts center mongolia to host technical seminar for the mining sector",
+   "url": "https://mongolianminingjournal.com/a/75142",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-06-18",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:59:06+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 2063,
+    "sha256": "f72bb8441a83d45f1f3574d2b3a27ad63245dfad656bf007caf1be1b7e772f9d",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-06-18",
+    "quotes": [
+     "The expert team will host the \"SSAB Hardox-Technical Seminar & Discussion\" on June 25, 2026, at the Kempinski Hotel Khan Palace, tailored specifically for engineers and technical decision-makers in the mining industry.",
+     "Introduction to XMOR® high-productivity mining equipment solutions."
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75142",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "SSAB와 ZME LLC가 몽골 광업 기술자 대상 Hardox 세미나를 개최할 예정임",
+     "2026년 6월 25일 Kempinski Hotel Khan Palace에서 열릴 예정임",
+     "Oyu Tolgoi LLC 노천·갱내 광산의 Hardox 적용 사례를 공유할 예정임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "The expert team will host the \"SSAB Hardox-Technical Seminar & Discussion\" on June 25, 2026, at the Kempinski Hotel Khan Palace, tailored specifically for engineers and technical decision-makers in the mining industry.",
+     "Introduction to XMOR® high-productivity mining equipment solutions."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "SSAB",
+     "Hardox",
+     "Oyu Tolgoi",
+     "광산장비"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Total Cost of Ownership (TCO)",
+      "meaning": "총소유비용"
+     },
+     {
+      "phrase": "Hardox Wear Parts Center Mongolia",
+      "meaning": "SSAB 공식 인증 파트너인 몽골 내 Hardox 마모부품 센터"
+     },
+     {
+      "phrase": "fossil-free green steel production",
+      "meaning": "화석연료를 쓰지 않는 친환경 철강 생산"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 2063,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:59:17+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 5줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "2bf3e9f7",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75142",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "스웨덴 철강기업 SSAB와 Hardox 마모부품센터가 몽골 광산업 부문을 위한 기술세미나를 개최하기로 함.",
+     "2026년 6월 18일 예정된 이 세미나는 광산 기계장비의 내마모성 강재 솔루션을 주제로 진행될 예정임.",
+     "몽골 광산업의 채굴 효율성 및 장비 내구성 향상을 위한 기술 협력 기회로 평가됨."
+    ],
+    "oda_relevance": "몽골 광산업 기술 역량 강화의 맥락에서 관심할 사항이나, SSAB 세미나는 상업적 기술이전으로 KIGAM·KIAT 직접 협력 대상은 아님. 향후 한국 철강·광산장비 기업의 몽골 시장 진출 및 기술협력 기회 모니터링 필요.",
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "철강소재",
+     "광산장비",
+     "기술협력",
+     "MRPAM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "SSAB and Hardox Wear Parts Center Mongolia",
+      "meaning": "스웨덴 철강사 SSAB와 몽골 마모부품센터"
+     },
+     {
+      "phrase": "Technical Seminar for the Mining Sector",
+      "meaning": "광산 부문 기술세미나"
+     },
+     {
+      "phrase": "Wear resistance steel solutions",
+      "meaning": "마모 저항성 강재 솔루션"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "2bf3e9f7",
+    "title": "2026-06-18SSAB and Hardox Wear Parts Center Mongolia to Host Technical Seminar for the Mining Sector",
+    "url": "https://mongolianminingjournal.com/a/75142",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-06-18",
+    "korean_summary": [
+     "SSAB와 ZME LLC가 몽골 광업 기술자 대상 Hardox 세미나를 개최할 예정임",
+     "2026년 6월 25일 Kempinski Hotel Khan Palace에서 열릴 예정임",
+     "Oyu Tolgoi LLC 노천·갱내 광산의 Hardox 적용 사례를 공유할 예정임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "SSAB",
+     "Hardox",
+     "Oyu Tolgoi",
+     "광산장비"
+    ],
+    "ai_processed": true,
+    "card_id": "cde47e1aa541",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "The expert team will host the \"SSAB Hardox-Technical Seminar & Discussion\" on June 25, 2026, at the Kempinski Hotel Khan Palace, tailored specifically for engineers and technical decision-makers in the mining industry.",
+     "Introduction to XMOR® high-productivity mining equipment solutions."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Total Cost of Ownership (TCO)",
+      "meaning": "총소유비용"
+     },
+     {
+      "phrase": "Hardox Wear Parts Center Mongolia",
+      "meaning": "SSAB 공식 인증 파트너인 몽골 내 Hardox 마모부품 센터"
+     },
+     {
+      "phrase": "fossil-free green steel production",
+      "meaning": "화석연료를 쓰지 않는 친환경 철강 생산"
+     }
+    ],
+    "processed_at": "2026-10-19T02:59:17+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "4a74577dc0e6",
+   "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+   "title_norm": "2026 05 14oyu tolgoi donates a scanning electron microscope sem to german mongolian institute for resources and technology",
+   "url": "https://mongolianminingjournal.com/a/75056",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-05-14",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:59:18+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 1790,
+    "sha256": "18a641dbabf5548d4b625b3651728131021a203f6f1472ec1930c5541e210580",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-14",
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75056",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 인계했음",
+     "고정밀 광물 분석용 장비이며 투자액은 MNT 276 million임",
+     "CEO는 이 실험실이 다른 몽골 광업 기업에도 중요하다고 밝혔음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "MNT 276 million"
+    ],
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "광물 분석"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "독일-몽골 자원기술대학"
+     },
+     {
+      "phrase": "handover ceremony",
+      "meaning": "인도식(장비 인계 행사)"
+     },
+     {
+      "phrase": "mutually beneficial partnership",
+      "meaning": "상호 호혜적 협력관계"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1790,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:59:30+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "0f934580",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75056",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "몽골 오유톨고이(OT)가 독일-몽골 자원기술연구소에 주사전자현미경(SEM)을 기증함",
+     "OT가 광물 분석 및 기술 연구 역량 강화를 위해 고급 검사 장비를 지원하는 사회공헌 활동임",
+     "몽골의 광물자원 기술 수준 향상과 국제 협력 강화가 진행 중임"
+    ],
+    "oda_relevance": "몽골 광물자원 기술 인프라 고도화 사례로서, 한국의 KIGAM-MRPAM 간 기술협력 ODA 사업 시 유사 장비 지원 또는 기술이전 모델로 검토 가치 있음. KIAT의 핵심광물 자원개발협력 트랙에서 기술 거버넌스 강화 방안으로 활용 가능.",
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "오유톨고이",
+     "분석장비",
+     "기술협력",
+     "MRPAM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경 - 광물 미세구조 및 성분 분석 장비"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "독일-몽골 자원기술연구소 - 양국 협력 연구기관"
+     },
+     {
+      "phrase": "Oyu Tolgoi",
+      "meaning": "오유톨고이 - 몽골의 주요 구리·금 광산"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "0f934580",
+    "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+    "url": "https://mongolianminingjournal.com/a/75056",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-05-14",
+    "korean_summary": [
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 인계했음",
+     "고정밀 광물 분석용 장비이며 투자액은 MNT 276 million임",
+     "CEO는 이 실험실이 다른 몽골 광업 기업에도 중요하다고 밝혔음"
+    ],
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "광물 분석"
+    ],
+    "ai_processed": true,
+    "card_id": "4a74577dc0e6",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "MNT 276 million"
+    ],
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "연구·학술",
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "독일-몽골 자원기술대학"
+     },
+     {
+      "phrase": "handover ceremony",
+      "meaning": "인도식(장비 인계 행사)"
+     },
+     {
+      "phrase": "mutually beneficial partnership",
+      "meaning": "상호 호혜적 협력관계"
+     }
+    ],
+    "processed_at": "2026-10-19T02:59:30+00:00"
+   }
+  }
+ ],
+ "excluded": [],
+ "v1_file": "cards_2026-07-05.json",
+ "v1_metrics": {
+  "articles": 22,
+  "original_link": 8,
+  "body_based": 0,
+  "failed": 0
+ }
+}
