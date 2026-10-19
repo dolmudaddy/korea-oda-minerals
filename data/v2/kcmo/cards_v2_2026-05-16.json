@@ -1,0 +1,3145 @@
+{
+ "schema_version": "card.v1",
+ "service": "kcmo",
+ "week_of": "2026-05-16",
+ "generated_at": "2026-10-19T02:07:27+00:00",
+ "mincore_version": "0.3.5",
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2.1",
+ "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+ "stats": {
+  "v1_articles": 18,
+  "cards": 18,
+  "excluded": 0,
+  "body_got": 11,
+  "body_rate": 0.611,
+  "original_link": 18,
+  "reader_proxy_used": 0,
+  "line_len": {
+   "lines": 42,
+   "median": 46.0,
+   "max": 61,
+   "over60": 1,
+   "over100": 0
+  },
+  "oda_filled": 3,
+  "usage": {
+   "claude-sonnet-5-5": {
+    "calls": 21,
+    "in": 60300,
+    "out": 13405
+   }
+  },
+  "cost_usd": 0.382,
+  "body_status": {
+   "full": 10,
+   "title_only": 5,
+   "lead_only": 2,
+   "partial": 1
+  },
+  "body_source": {
+   "trafilatura": 11,
+   "none": 5,
+   "og_description": 2
+  },
+  "resolve": {
+   "decoder": 13,
+   "direct": 5
+  },
+  "fail_reason": {},
+  "basis": {
+   "body": 11,
+   "title": 5,
+   "lead": 2
+  },
+  "retry_reason": {
+   "lines는 3줄이어야 함 (현재 4줄)": 1,
+   "입력에 없는 숫자: ['12']": 1,
+   "입력에 없는 숫자: ['10']": 1
+  },
+  "flags": {},
+  "model_used": {
+   "claude-sonnet-5-5": 18
+  }
+ },
+ "total": 18,
+ "cards": [
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "4932663c5fc3",
+   "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+   "title_norm": "전윤종 kiat 원장 내년 베트남에 광물 기술협력센터 설립",
+   "url": "https://v.daum.net/v/20260429143100874",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HNEtZWHcxN1ZRTjEyRzgzZ3BYdFFEMGt5VHVUdVpsR0VQZzNGVE03RGVQTnpEc0l3UTM0LURNSUpWVEpzTzFIUUV4dlo4U2c?oc=5",
+   "source": {
+    "name": "Google News (KR:ko)",
+    "domain": "v.daum.net",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "ko"
+   },
+   "published": "2026-04-29",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:16+00:00",
+   "score": 29,
+   "body": {
+    "status": "full",
+    "chars": 1115,
+    "sha256": "9e60b55ecde7d4a3863a8439d46636a414c02e0714b0345a5b2dd53e46b18543",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-04-29",
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "final_url": "https://v.daum.net/v/20260429143100874",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "KIAT가 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터를 개소할 예정임",
+     "센터에는 연구 시설, 선광·제련 실험실, 분석실, 관련 기자재가 들어설 예정임",
+     "센터 개소 후 현지 전문 인력 교육과정, 실증 연구 기반 기술협력, 기업 투자협의체를 운영할 계획임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "희토류 매장량 세계 5위",
+     "보크사이트 매장량 세계 3위",
+     "텅스텐 매장량 4위"
+    ],
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "베트남",
+     "KIAT",
+     "ODA",
+     "기술협력센터",
+     "희토류"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "핵심 광물 공급망 기술협력센터",
+      "meaning": "KIAT가 하노이에 설립할 광물 기술협력 거점 시설"
+     },
+     {
+      "phrase": "산업통상부 공적개발원조(ODA) 사업",
+      "meaning": "센터 설립이 추진되는 사업 근거"
+     },
+     {
+      "phrase": "한국-베트남 핵심 광물 협력 전략 포럼",
+      "meaning": "지난 24일 하노이에서 KIAT가 연 포럼"
+     },
+     {
+      "phrase": "광물 기업 투자협의체",
+      "meaning": "센터가 개소 후 운영할 기업 투자 협의 조직"
+     }
+    ],
+    "oda_relevance": "산업통상부 ODA 사업으로 KIAT가 하노이에 센터를 세워 교육·실증 연구·기업 투자협의체를 운영할 계획이며, 한국지질자원연구원과 한국해외자원산업협회도 포럼에 참여했음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1115,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:20+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "02f9593ff2df",
+     "v1_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HNEtZWHcxN1ZRTjEyRzgzZ3BYdFFEMGt5VHVUdVpsR0VQZzNGVE03RGVQTnpEc0l3UTM0LURNSUpWVEpzTzFIUUV4dlo4U2c?oc=5",
+     "country": "Vietnam",
+     "source_language": "ko"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "KIAT 전윤종 원장이 베트남에 광물 기술협력센터 설립 계획을 발표했음",
+     "2027년 베트남 내 센터 설립을 통해 핵심광물 자원개발 기술협력 강화 예정",
+     "한국의 베트남 광물 자원외교 및 ODA 전략의 핵심 거점으로 기능할 전망"
+    ],
+    "oda_relevance": "KIAT의 핵심광물 ODA 실무 주관 기능이 구체적으로 실현되는 사례. 베트남의 산업통상부(MOIT) 및 희토류·희유금속 자원 개발과 연계한 기술협력센터 설립은 KIAT-KIGAM 합동 자원개발협력의 거점화 전략으로, MOTIE의 핵심광물 국가 정책 추진에 부응하는 조치임.",
+    "category": "oda_cooperation",
+    "tags": [
+     "KIAT",
+     "베트남",
+     "희토류",
+     "기술협력센터",
+     "MOIT"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "광물 기술협력센터",
+      "meaning": "한국과 베트남 간 핵심광물 탐사·개발·정제 기술을 공유·교육하는 역할 수행 기관"
+     },
+     {
+      "phrase": "내년 설립",
+      "meaning": "2027년 설립 예정"
+     },
+     {
+      "phrase": "KIAT 원장",
+      "meaning": "한국산업기술진흥원 원장 (핵심광물 ODA 실무 주관기관 대표)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "02f9593ff2df",
+    "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+    "url": "https://v.daum.net/v/20260429143100874",
+    "source": "Google News (KR:ko)",
+    "tier_weight": 1,
+    "score": 29,
+    "published": "2026-04-29",
+    "korean_summary": [
+     "KIAT가 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터를 개소할 예정임",
+     "센터에는 연구 시설, 선광·제련 실험실, 분석실, 관련 기자재가 들어설 예정임",
+     "센터 개소 후 현지 전문 인력 교육과정, 실증 연구 기반 기술협력, 기업 투자협의체를 운영할 계획임"
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "베트남",
+     "KIAT",
+     "ODA",
+     "기술협력센터",
+     "희토류"
+    ],
+    "ai_processed": true,
+    "card_id": "4932663c5fc3",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "희토류 매장량 세계 5위",
+     "보크사이트 매장량 세계 3위",
+     "텅스텐 매장량 4위"
+    ],
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "source_language": "ko",
+    "country": "Vietnam",
+    "oda_relevance": "산업통상부 ODA 사업으로 KIAT가 하노이에 센터를 세워 교육·실증 연구·기업 투자협의체를 운영할 계획이며, 한국지질자원연구원과 한국해외자원산업협회도 포럼에 참여했음",
+    "category_ko": "ODA 협력",
+    "key_phrases": [
+     {
+      "phrase": "핵심 광물 공급망 기술협력센터",
+      "meaning": "KIAT가 하노이에 설립할 광물 기술협력 거점 시설"
+     },
+     {
+      "phrase": "산업통상부 공적개발원조(ODA) 사업",
+      "meaning": "센터 설립이 추진되는 사업 근거"
+     },
+     {
+      "phrase": "한국-베트남 핵심 광물 협력 전략 포럼",
+      "meaning": "지난 24일 하노이에서 KIAT가 연 포럼"
+     },
+     {
+      "phrase": "광물 기업 투자협의체",
+      "meaning": "센터가 개소 후 운영할 기업 투자 협의 조직"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:20+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "1b6edbf712d4",
+   "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+   "title_norm": "전윤종 kiat 원장 내년 베트남에 광물 기술협력센터 설립",
+   "url": "https://v.daum.net/v/20260429143100874?f=p",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4ZXpqSkFTaUhTWDhBNm1SdGw3UUNoVlROX3BSWnJXT1FVVDBYYm5PbzdxUThrQWJhLWJKdnY4a0hyYVBpQWZsa1lmU2k4Sm9BLWFQRw?oc=5",
+   "source": {
+    "name": "Google News (KR:ko)",
+    "domain": "v.daum.net",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "ko"
+   },
+   "published": "2026-04-29",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:21+00:00",
+   "score": 29,
+   "body": {
+    "status": "full",
+    "chars": 1115,
+    "sha256": "9e60b55ecde7d4a3863a8439d46636a414c02e0714b0345a5b2dd53e46b18543",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-04-29",
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "final_url": "https://v.daum.net/v/20260429143100874?f=p",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "KIAT가 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터를 개소할 예정임",
+     "센터에는 연구 시설, 선광·제련 실험실, 분석실, 관련 기자재가 들어설 예정임",
+     "센터 개소 후 현지 전문 인력 교육과정, 실증 연구 기술협력, 기업 투자협의체를 운영할 계획임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "희토류 매장량 세계 5위",
+     "보크사이트 매장량 세계 3위",
+     "텅스텐 매장량 4위"
+    ],
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "베트남",
+     "KIAT",
+     "핵심광물",
+     "기술협력센터",
+     "하노이"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "핵심 광물 공급망 기술협력센터",
+      "meaning": "KIAT가 하노이에 설립할 ODA 사업 거점 센터"
+     },
+     {
+      "phrase": "선광(광물 분류) 및 제련(금속 추출) 실험실",
+      "meaning": "센터에 들어설 핵심 실험 시설"
+     },
+     {
+      "phrase": "광물 기업 투자협의체",
+      "meaning": "센터가 운영할 한국·베트남 기업 간 투자 협의 조직"
+     },
+     {
+      "phrase": "한국-베트남 핵심 광물 협력 전략 포럼",
+      "meaning": "지난 24일 하노이에서 KIAT가 개최한 행사"
+     }
+    ],
+    "oda_relevance": "센터는 산업통상부 ODA 사업으로 KIAT가 추진하며, 한국지질자원연구원과 베트남 연구기관이 포럼에서 공동 기술협력 방안을 발표함."
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1115,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:25+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "52257040c9f7",
+     "v1_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4ZXpqSkFTaUhTWDhBNm1SdGw3UUNoVlROX3BSWnJXT1FVVDBYYm5PbzdxUThrQWJhLWJKdnY4a0hyYVBpQWZsa1lmU2k4Sm9BLWFQRw?oc=5",
+     "country": "Vietnam",
+     "source_language": "ko"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "전윤종 KIAT 원장이 2027년 베트남에 광물 기술협력센터 설립을 추진하겠다고 발표함",
+     "KIAT는 베트남 산업통상부(MOIT)와 협력하여 광물 탐사·평가·기술이전 거점을 구축할 예정임",
+     "베트남의 희토류·리튬·코발트 등 핵심광물 개발 역량 강화와 한국 자원외교 심화에 기여할 것으로 예상됨"
+    ],
+    "oda_relevance": "KIAT의 핵심광물 ODA 실무 주관 기능의 실질화 신호. 베트남과의 기술협력센터는 KIGAM 기술진을 상주 배치하는 형태로 추진되어야 하며, MOIT와의 공식 MOU 체결을 통해 EDCF 융자 사업 연계 기반을 마련할 가치 있음",
+    "category": "oda_cooperation",
+    "tags": [
+     "희토류·리튬·코발트",
+     "KIAT",
+     "MOIT",
+     "베트남",
+     "기술이전"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "광물 기술협력센터",
+      "meaning": "광물 탐사·분석·기술이전을 수행하는 한국-베트남 공동 거점시설"
+     },
+     {
+      "phrase": "내년 설립",
+      "meaning": "2027년 베트남에 센터 개설 예정"
+     },
+     {
+      "phrase": "KIAT 원장",
+      "meaning": "한국산업기술진흥원 전윤종 원장 (MOTIE 산하 핵심광물 ODA 실무 주관기관 최고 책임자)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "52257040c9f7",
+    "title": "전윤종 KIAT 원장 \"내년 베트남에 광물 기술협력센터 설립\" - v.daum.net",
+    "url": "https://v.daum.net/v/20260429143100874?f=p",
+    "source": "Google News (KR:ko)",
+    "tier_weight": 1,
+    "score": 29,
+    "published": "2026-04-29",
+    "korean_summary": [
+     "KIAT가 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터를 개소할 예정임",
+     "센터에는 연구 시설, 선광·제련 실험실, 분석실, 관련 기자재가 들어설 예정임",
+     "센터 개소 후 현지 전문 인력 교육과정, 실증 연구 기술협력, 기업 투자협의체를 운영할 계획임"
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "베트남",
+     "KIAT",
+     "핵심광물",
+     "기술협력센터",
+     "하노이"
+    ],
+    "ai_processed": true,
+    "card_id": "1b6edbf712d4",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "희토류 매장량 세계 5위",
+     "보크사이트 매장량 세계 3위",
+     "텅스텐 매장량 4위"
+    ],
+    "quotes": [
+     "전윤종 KIAT 원장은 \"첨단산업의 대외 의존도를 낮추고 제조 경쟁력을 갖추려면 핵심 광물 공급망 안정화는 꼭 필요하다\"며 \"하노이에 설립될 센터가 양국 간 탄탄한 공급망 협력을 다지는 핵심 거점이 될 수 있도록 사업을 추진하겠다\"고 말했다.",
+     "한국산업기술진흥원(KIAT·원장 전윤종)이 내년 베트남 하노이에 핵심 광물 공급망 기술협력센터(이하 센터)를 개소한다."
+    ],
+    "source_language": "ko",
+    "country": "Vietnam",
+    "oda_relevance": "센터는 산업통상부 ODA 사업으로 KIAT가 추진하며, 한국지질자원연구원과 베트남 연구기관이 포럼에서 공동 기술협력 방안을 발표함.",
+    "category_ko": "ODA 협력",
+    "key_phrases": [
+     {
+      "phrase": "핵심 광물 공급망 기술협력센터",
+      "meaning": "KIAT가 하노이에 설립할 ODA 사업 거점 센터"
+     },
+     {
+      "phrase": "선광(광물 분류) 및 제련(금속 추출) 실험실",
+      "meaning": "센터에 들어설 핵심 실험 시설"
+     },
+     {
+      "phrase": "광물 기업 투자협의체",
+      "meaning": "센터가 운영할 한국·베트남 기업 간 투자 협의 조직"
+     },
+     {
+      "phrase": "한국-베트남 핵심 광물 협력 전략 포럼",
+      "meaning": "지난 24일 하노이에서 KIAT가 개최한 행사"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:25+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "d954f5272bb3",
+   "title": "Pemerintah Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Industri Nikel - Suara.com",
+   "title_norm": "pemerintah indonesia dan filipina sepakat kerja sama hilirisasi industri nikel",
+   "url": "https://suara.com/bisnis/2026/05/08/153533/pemerintah-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-industri-nikel",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzVJNGlfZlJaSGV6TDdnWmVGQWoyVmNsa3VmU0VhWHJYVDRrRldnN0REakxXZFFycHctQXg1TE1QSk9OWDlWZERXRGx1THBZWW5PekZ6NUp2c2JEUnd3NTI3T3JXUFlSRjBNaVFFNXpCNUdDZ1piTlJhQ2UxNFlRWWtvd09rTGJXbDhyM0FyaENoaGx1a21VSXlvLVA0VUhva1lqNVB3WUJ0S2NJN29VYkxwNVktbnlDb3JzbmYyMkNueDDSAcMBQVVfeXFMTjlvcDhiYnhicExGWUE4Q0hVNkZSb2tES3ZOcEVhZzVWcHRCaEFyZ3ZPREpwUkFmbkprOUJLVXNwOVpMY28wWmJQSTZTc1lkMEo4a0N0MF9iRS1BeWdqbWFGQW1iMkUyMm5kbE9LZWtGR0NvcmR3bE84T2MxdUFPdF8tOXRWZU9QTU1ERUV0b05yaFJOR01uOFdJSmNoRVNvRmpHOFNuOU9keFNpTF9kenVseURCOV82elFMWGJrMUtFMW5v?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "suara.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-08",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:25+00:00",
+   "score": 12,
+   "body": {
+    "status": "full",
+    "chars": 4225,
+    "sha256": "42010da8fd0d78e82d1d62999bf8948a7fbbff30e7f6a6c33aae817fc8cc9dfb",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-08",
+    "quotes": [
+     "Menko Airlangga menjelaskan bahwa Indonesia saat ini memiliki ekosistem hilirisasi nikel masif dengan nilai ekspor produk olahan nikel mencapai USD9,73 miliar di 2025.",
+     "Adapun proyeksi investasi hingga 47,36 miliar Dolar AS dan penyerapan 180.600 tenaga kerja ditargetkan tercapai pada 2030."
+    ],
+    "final_url": "https://www.suara.com/bisnis/2026/05/08/153533/pemerintah-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-industri-nikel",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "인도네시아·필리핀 니켈협회(APNI·PNIA)가 니켈 하류화 협력 MoU를 체결했음",
+     "에어랑가 조정장관은 2025년 니켈 가공품 수출액이 USD9,73 miliar라고 밝혔음",
+     "필리핀 광석을 인도네시아 제련소에 잇는 니켈 회랑의 토대로 삼겠다고 했음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "USD9,73 miliar",
+     "47,36 miliar Dolar AS",
+     "73,6 persen"
+    ],
+    "quotes": [
+     "Menko Airlangga menjelaskan bahwa Indonesia saat ini memiliki ekosistem hilirisasi nikel masif dengan nilai ekspor produk olahan nikel mencapai USD9,73 miliar di 2025.",
+     "Adapun proyeksi investasi hingga 47,36 miliar Dolar AS dan penyerapan 180.600 tenaga kerja ditargetkan tercapai pada 2030."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "필리핀",
+     "하류화",
+     "APNI"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Indonesia-Philippines Nickel Corridor",
+      "meaning": "인도네시아 제련·필리핀 광석 공급을 잇는 니켈 회랑 플랫폼"
+     },
+     {
+      "phrase": "hilirisasi",
+      "meaning": "하류화(원광 가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "feedstock security",
+      "meaning": "원료(광석) 공급 안정 확보"
+     },
+     {
+      "phrase": "mineral kritis",
+      "meaning": "핵심광물"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:32+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "889e26b85658",
+     "v1_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzVJNGlfZlJaSGV6TDdnWmVGQWoyVmNsa3VmU0VhWHJYVDRrRldnN0REakxXZFFycHctQXg1TE1QSk9OWDlWZERXRGx1THBZWW5PekZ6NUp2c2JEUnd3NTI3T3JXUFlSRjBNaVFFNXpCNUdDZ1piTlJhQ2UxNFlRWWtvd09rTGJXbDhyM0FyaENoaGx1a21VSXlvLVA0VUhva1lqNVB3WUJ0S2NJN29VYkxwNVktbnlDb3JzbmYyMkNueDDSAcMBQVVfeXFMTjlvcDhiYnhicExGWUE4Q0hVNkZSb2tES3ZOcEVhZzVWcHRCaEFyZ3ZPREpwUkFmbkprOUJLVXNwOVpMY28wWmJQSTZTc1lkMEo4a0N0MF9iRS1BeWdqbWFGQW1iMkUyMm5kbE9LZWtGR0NvcmR3bE84T2MxdUFPdF8tOXRWZU9QTU1ERUV0b05yaFJOR01uOFdJSmNoRVNvRmpHOFNuOU9keFNpTF9kenVseURCOV82elFMWGJrMUtFMW5v?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아와 필리핀 정부가 니켈 산업 하류화 협력에 합의함",
+     "양국이 니켈 정련·가공 분야에서 기술협력 및 투자 확대 추진 예정",
+     "동남아 니켈 공급망 통합으로 한국의 배터리·EV 소재 조달 경로 다변화 기회 증대 예상"
+    ],
+    "oda_relevance": "인도네시아의 니켈 하류화 전략 진전으로 한국의 핵심광물 자원외교 강화 필요. KIAT 자원개발협력 ODA 사업으로 인도네시아와의 정련·가공 기술이전 협력 확대 검토 가치 있음.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "필리핀",
+     "하류화",
+     "배터리 소재"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Kerja Sama Hilirisasi Industri Nikel",
+      "meaning": "니켈 산업 하류화 협력"
+     },
+     {
+      "phrase": "Pemerintah Indonesia dan Filipina",
+      "meaning": "인도네시아 및 필리핀 정부"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "889e26b85658",
+    "title": "Pemerintah Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Industri Nikel - Suara.com",
+    "url": "https://suara.com/bisnis/2026/05/08/153533/pemerintah-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-industri-nikel",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 12,
+    "published": "2026-05-08",
+    "korean_summary": [
+     "인도네시아·필리핀 니켈협회(APNI·PNIA)가 니켈 하류화 협력 MoU를 체결했음",
+     "에어랑가 조정장관은 2025년 니켈 가공품 수출액이 USD9,73 miliar라고 밝혔음",
+     "필리핀 광석을 인도네시아 제련소에 잇는 니켈 회랑의 토대로 삼겠다고 했음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "필리핀",
+     "하류화",
+     "APNI"
+    ],
+    "ai_processed": true,
+    "card_id": "d954f5272bb3",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "USD9,73 miliar",
+     "47,36 miliar Dolar AS",
+     "73,6 persen"
+    ],
+    "quotes": [
+     "Menko Airlangga menjelaskan bahwa Indonesia saat ini memiliki ekosistem hilirisasi nikel masif dengan nilai ekspor produk olahan nikel mencapai USD9,73 miliar di 2025.",
+     "Adapun proyeksi investasi hingga 47,36 miliar Dolar AS dan penyerapan 180.600 tenaga kerja ditargetkan tercapai pada 2030."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Indonesia-Philippines Nickel Corridor",
+      "meaning": "인도네시아 제련·필리핀 광석 공급을 잇는 니켈 회랑 플랫폼"
+     },
+     {
+      "phrase": "hilirisasi",
+      "meaning": "하류화(원광 가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "feedstock security",
+      "meaning": "원료(광석) 공급 안정 확보"
+     },
+     {
+      "phrase": "mineral kritis",
+      "meaning": "핵심광물"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:32+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "b68b557af04f",
+   "title": "Uzbekistan Discusses Geological Exploration Cooperation with ITOCHU and JOGMEC",
+   "title_norm": "uzbekistan discusses geological exploration cooperation with itochu and jogmec",
+   "url": "https://uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec",
+   "gnews_url": null,
+   "source": {
+    "name": "UZ Daily - English (Uzbekistan)",
+    "domain": "uzdaily.uz",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-05-16",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:33+00:00",
+   "score": 10,
+   "body": {
+    "status": "full",
+    "chars": 1097,
+    "sha256": "c483c9e9e1ef1a37eea511c57990f5af47fa254732277f397ad77ee4d7f6da1f",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-16",
+    "quotes": [
+     "Tashkent, Uzbekistan (UzDaily.uz) — The Ministry of Mining Industry and Geology of Uzbekistan has held talks with representatives of Japanese companies ITOCHU and Japan Oil, Gas and Metals National Corporation (JOGMEC).",
+     "The Uzbek delegation was led by Minister Bobir Islamov."
+    ],
+    "final_url": "https://www.uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "우즈베키스탄 광물지질부가 일본 ITOCHU·JOGMEC 대표와 회담했음",
+     "Bobir Islamov 장관이 이끈 대표단이 탐사·광물 채굴 협력 현황을 논의했음",
+     "일본 측이 사업 가속화·신기술 도입을 제안했고 후속 일정은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "Tashkent, Uzbekistan (UzDaily.uz) — The Ministry of Mining Industry and Geology of Uzbekistan has held talks with representatives of Japanese companies ITOCHU and Japan Oil, Gas and Metals National Corporation (JOGMEC).",
+     "The Uzbek delegation was led by Minister Bobir Islamov."
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "우즈베키스탄",
+     "지질탐사",
+     "ITOCHU",
+     "JOGMEC",
+     "일본"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "geological exploration",
+      "meaning": "지질 탐사"
+     },
+     {
+      "phrase": "mineral extraction",
+      "meaning": "광물 채굴"
+     },
+     {
+      "phrase": "strategic importance of the partnership",
+      "meaning": "협력관계의 전략적 중요성"
+     },
+     {
+      "phrase": "introduce modern technologies",
+      "meaning": "최신 기술 도입"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1097,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:05:45+00:00",
+    "retry_reasons": [
+     "lines는 3줄이어야 함 (현재 4줄)"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "82d971cd",
+     "v1_url": "https://www.uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec/",
+     "country": "Uzbekistan",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "우즈베키스탄이 일본 ITOCHU·JOGMEC과 지질탐사 협력 확대를 논의함",
+     "광물자원 개발·투자 분야 협력 강화 및 구체적 사업 추진 방안을 협의함",
+     "일본의 광물 수급 안정화와 우즈베키스탄의 자원개발 역량 강화 양측 이익 도출 예상됨"
+    ],
+    "oda_relevance": "한국과 일본의 핵심광물 ODA 전략이 중앙아시아 지역에서 경쟁 중임을 시사. KIAT·MOTIE는 우즈베키스탄 광물 자원화 협력 로드맵 재검토 필요, 특히 희토류·텅스텐 개발 협력 강화 시급.",
+    "category": "oda_cooperation",
+    "tags": [
+     "우즈베키스탄",
+     "지질탐사",
+     "광물자원개발",
+     "JOGMEC",
+     "일본 경쟁"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "geological exploration cooperation",
+      "meaning": "지질탐사 협력"
+     },
+     {
+      "phrase": "mining development and investment",
+      "meaning": "광물개발 및 투자"
+     },
+     {
+      "phrase": "mineral resources",
+      "meaning": "광물자원"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "82d971cd",
+    "title": "Uzbekistan Discusses Geological Exploration Cooperation with ITOCHU and JOGMEC",
+    "url": "https://uzdaily.uz/en/uzbekistan-discusses-geological-exploration-cooperation-with-itochu-and-jogmec",
+    "source": "UZ Daily - English (Uzbekistan)",
+    "tier_weight": 5,
+    "score": 10,
+    "published": "2026-05-16",
+    "korean_summary": [
+     "우즈베키스탄 광물지질부가 일본 ITOCHU·JOGMEC 대표와 회담했음",
+     "Bobir Islamov 장관이 이끈 대표단이 탐사·광물 채굴 협력 현황을 논의했음",
+     "일본 측이 사업 가속화·신기술 도입을 제안했고 후속 일정은 확인 불가임"
+    ],
+    "category": "exploration_development",
+    "tags": [
+     "우즈베키스탄",
+     "지질탐사",
+     "ITOCHU",
+     "JOGMEC",
+     "일본"
+    ],
+    "ai_processed": true,
+    "card_id": "b68b557af04f",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "Tashkent, Uzbekistan (UzDaily.uz) — The Ministry of Mining Industry and Geology of Uzbekistan has held talks with representatives of Japanese companies ITOCHU and Japan Oil, Gas and Metals National Corporation (JOGMEC).",
+     "The Uzbek delegation was led by Minister Bobir Islamov."
+    ],
+    "source_language": "en",
+    "country": "Uzbekistan",
+    "oda_relevance": "",
+    "category_ko": "탐사·개발",
+    "key_phrases": [
+     {
+      "phrase": "geological exploration",
+      "meaning": "지질 탐사"
+     },
+     {
+      "phrase": "mineral extraction",
+      "meaning": "광물 채굴"
+     },
+     {
+      "phrase": "strategic importance of the partnership",
+      "meaning": "협력관계의 전략적 중요성"
+     },
+     {
+      "phrase": "introduce modern technologies",
+      "meaning": "최신 기술 도입"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:45+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "b955245be42a",
+   "title": "Indonesia Gandeng Rusia Perkuat Sektor Energi dan Hilirisasi Mineral Lewat Investasi Strategis - BeritaSatu.com",
+   "title_norm": "indonesia gandeng rusia perkuat sektor energi dan hilirisasi mineral lewat investasi strategis",
+   "url": "https://beritasatu.com/network/jabar-online/844800/Indonesia-Gandeng-Rusia-Perkuat-Sektor-Energi-dan-Hilirisasi-Mineral-Lewat-Investasi-Strategis",
+   "gnews_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeUpLVUhOVVFFTWRJZ1lXUDBhOXBpUUlsVE5sMnRYanpJZ0x5a1NSZjhQZ0NjU01JcmNxaGZhcHlMYldoSU1tOHpJQ1JGbmJEQUgwOEdlYUptM3Rwek1PRW51QWsxdVp4Wmo2XzIyZXdQTEhVMXNBVDczc19vbG9yNmdaVjQ3eDY2UGZCbVowdXBTSXBMM3FVRERDUHBVenJPalVKS2o3NjRaQjU0VnBSREcwZkRIUkhTVWtsRnotbzk5dlp0WHdxN0xYQUJQMjI0SkZ1QXJZUnEyUThTd1RRbHluNA?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "beritasatu.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-14",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:45+00:00",
+   "score": 9,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "bot_block",
+    "http_status": 403,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": "https://www.beritasatu.com/network/jabar-online/844800/Indonesia-Gandeng-Rusia-Perkuat-Sektor-Energi-dan-Hilirisasi-Mineral-Lewat-Investasi-Strategis",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "인도네시아가 러시아와 손잡고 전략적 투자로 에너지 및 광물 다운스트림화를 강화한다고 밝혔음"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "인도네시아",
+     "러시아",
+     "광물 하류화",
+     "에너지",
+     "투자"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Mineral",
+      "meaning": "광물 하류화(다운스트림화)"
+     },
+     {
+      "phrase": "Investasi Strategis",
+      "meaning": "전략적 투자"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:47+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "0a6157fae894",
+     "v1_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeUpLVUhOVVFFTWRJZ1lXUDBhOXBpUUlsVE5sMnRYanpJZ0x5a1NSZjhQZ0NjU01JcmNxaGZhcHlMYldoSU1tOHpJQ1JGbmJEQUgwOEdlYUptM3Rwek1PRW51QWsxdVp4Wmo2XzIyZXdQTEhVMXNBVDczc19vbG9yNmdaVjQ3eDY2UGZCbVowdXBTSXBMM3FVRERDUHBVenJPalVKS2o3NjRaQjU0VnBSREcwZkRIUkhTVWtsRnotbzk5dlp0WHdxN0xYQUJQMjI0SkZ1QXJZUnEyUThTd1RRbHluNA?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아가 러시아와 에너지 및 광물 하류산업 강화를 위한 전략적 투자 협력을 추진 중임",
+     "양국이 에너지 부문과 광물 가공·정제 산업 고도화를 목표로 협력 프레임워크 구축 진행 중",
+     "한국의 핵심광물 공급망 다원화 전략 관점에서 인도네시아의 러시아 협력 동향 모니터링 필요"
+    ],
+    "oda_relevance": "인도네시아의 광물 하류산업(정제·가공) 고도화 투자가 확대되는 가운데, KIAT의 ESDM(에너지광물자원부) 협력 사업에서 한국의 기술적 경쟁력 차별화 방안 검토 시급. 특히 니켈 습식제련, 배터리 소재 가공 등 고부가가치 영역에서 한국 기술협력의 전략적 위치 강화 필요",
+    "category": "policy_regulation",
+    "tags": [
+     "인도네시아",
+     "ESDM",
+     "광물 하류산업",
+     "니켈",
+     "에너지 협력"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Mineral",
+      "meaning": "광물 하류산업화 (정제·가공·고부가가치화)"
+     },
+     {
+      "phrase": "Investasi Strategis",
+      "meaning": "전략적 투자"
+     },
+     {
+      "phrase": "Sektor Energi",
+      "meaning": "에너지 부문"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "0a6157fae894",
+    "title": "Indonesia Gandeng Rusia Perkuat Sektor Energi dan Hilirisasi Mineral Lewat Investasi Strategis - BeritaSatu.com",
+    "url": "https://beritasatu.com/network/jabar-online/844800/Indonesia-Gandeng-Rusia-Perkuat-Sektor-Energi-dan-Hilirisasi-Mineral-Lewat-Investasi-Strategis",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-14",
+    "korean_summary": [
+     "[제목 기반] 인도네시아가 러시아와 손잡고 전략적 투자로 에너지 및 광물 다운스트림화를 강화한다고 밝혔음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "인도네시아",
+     "러시아",
+     "광물 하류화",
+     "에너지",
+     "투자"
+    ],
+    "ai_processed": true,
+    "card_id": "b955245be42a",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Mineral",
+      "meaning": "광물 하류화(다운스트림화)"
+     },
+     {
+      "phrase": "Investasi Strategis",
+      "meaning": "전략적 투자"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:47+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "f70a54bb32f9",
+   "title": "Hilirisasi Nikel dan Persaingan AS–Tiongkok di Indonesia - netralnews.com",
+   "title_norm": "hilirisasi nikel dan persaingan as tiongkok di indonesia",
+   "url": "https://netralnews.com/hilirisasi-nikel-dan-persaingan-astiongkok-di-indonesia/QUUvaERSZ1ZTZm52VE5aUnc3RW9Xdz09",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZW1UMmtIQ0NjMndRN1M2X0pXTmRfMmVhVE1VM093WjNyZk9mQWFGbTdPRHpPNXVxTmhiZ0NJRFlsdVdaUEU5RmlRa0RCTnlRcUJfTTgzRkVXOG5MUWtQZFVJMkJMZUtaR3h0MjBRcWRhak91UE1CbUhoMVBMTzB3M0pLbm1iMzR4eE54NWR4UmhUSDhCYlJjZWt1dnBXUjc4d2FvVnA1djdEYXB5dlhxWC02U1cwQQ?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "netralnews.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-16",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:48+00:00",
+   "score": 9,
+   "body": {
+    "status": "lead_only",
+    "chars": 215,
+    "sha256": "9fc5fcd49988dc8bfa8f3fc82f4b772c6d57aa4bfd2c78b7b9bed35cbdbdc1e0",
+    "source": "og_description",
+    "block_type": "parse_fail",
+    "http_status": 200,
+    "extracted_date": "2026-05-16",
+    "quotes": [
+     "Kebijakan hilirisasi nikel tidak hanya berdampak pada ekonomi nasional, tetapi juga memicu persaingan geopolitik antara Amerika Serikat dan Tiongkok yang sama-sama ingin menguasai rantai pasok mineral kritis global."
+    ],
+    "final_url": "https://www.netralnews.com/nncopini/hilirisasi-nikel-dan-persaingan-astiongkok-di-indonesia",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "인도네시아의 니켈 下流化와 미국–중국 경쟁이라는 제목의 기사임",
+     "니켈 하류화 정책이 국가 경제뿐 아니라 미·중 지정학적 경쟁도 촉발했다고 리드에서 밝혔음"
+    ],
+    "basis": "lead",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "미국",
+     "중국"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 중심 산업 육성)"
+     },
+     {
+      "phrase": "rantai pasok mineral kritis global",
+      "meaning": "글로벌 핵심광물 공급망"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "lead_only",
+    "input_chars": 215,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:50+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "5b3b73d32b4a",
+     "v1_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZW1UMmtIQ0NjMndRN1M2X0pXTmRfMmVhVE1VM093WjNyZk9mQWFGbTdPRHpPNXVxTmhiZ0NJRFlsdVdaUEU5RmlRa0RCTnlRcUJfTTgzRkVXOG5MUWtQZFVJMkJMZUtaR3h0MjBRcWRhak91UE1CbUhoMVBMTzB3M0pLbm1iMzR4eE54NWR4UmhUSDhCYlJjZWt1dnBXUjc4d2FvVnA1djdEYXB5dlhxWC02U1cwQQ?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아의 니켈 하류산업화(정련·배터리 소재화)를 둘러싼 미국·중국 경쟁이 심화됨",
+     "인도네시아 정부는 니켈 가치사슬 고도화를 통해 수출부가가치 극대화하려 추진 중",
+     "한국의 배터리·자동차 업계도 인도네시아 니켈 공급망 확보 경쟁에 참여 필요"
+    ],
+    "oda_relevance": "인도네시아의 니켈 정련·배터리 소재 기술력 강화는 한국의 핵심광물 공급망 안보와 직결된 이슈로, KIAT의 기술협력 ODA 사업(ESDM과의 공동 프로젝트)을 통한 선제적 협력 확대가 시급함",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "배터리 소재",
+     "ESDM",
+     "미중 경쟁"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류산업화(정련·배터리 소재 가공 단계 고도화)"
+     },
+     {
+      "phrase": "Persaingan AS–Tiongkok",
+      "meaning": "미국-중국 경쟁(공급망 확보 경쟁)"
+     },
+     {
+      "phrase": "Rantai pasokan",
+      "meaning": "공급망·가치사슬"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "5b3b73d32b4a",
+    "title": "Hilirisasi Nikel dan Persaingan AS–Tiongkok di Indonesia - netralnews.com",
+    "url": "https://netralnews.com/hilirisasi-nikel-dan-persaingan-astiongkok-di-indonesia/QUUvaERSZ1ZTZm52VE5aUnc3RW9Xdz09",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-16",
+    "korean_summary": [
+     "[본문 미확보] 인도네시아의 니켈 下流化와 미국–중국 경쟁이라는 제목의 기사임",
+     "니켈 하류화 정책이 국가 경제뿐 아니라 미·중 지정학적 경쟁도 촉발했다고 리드에서 밝혔음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "미국",
+     "중국"
+    ],
+    "ai_processed": true,
+    "card_id": "f70a54bb32f9",
+    "basis": "lead",
+    "body_status": "lead_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 중심 산업 육성)"
+     },
+     {
+      "phrase": "rantai pasok mineral kritis global",
+      "meaning": "글로벌 핵심광물 공급망"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:50+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "1a9a8f11ca5e",
+   "title": "Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS - Pojok Papua",
+   "title_norm": "hilirisasi nikel dorong ekspor indonesia hingga 30 miliar dolar as",
+   "url": "https://pojokpapua.id/hilirisasi-nikel-dongkrak-ekspor-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "pojokpapua.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-16",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:05:50+00:00",
+   "score": 9,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "bot_block",
+    "http_status": 403,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": "https://www.pojokpapua.id/hilirisasi-nikel-dongkrak-ekspor-indonesia",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "니켈 하류화가 인도네시아 수출을 최대 30 miliar 달러 미국까지 끌어올림"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "수출"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 사업 확대)"
+     },
+     {
+      "phrase": "Dorong Ekspor",
+      "meaning": "수출을 끌어올림"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:05:53+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "38ed5c541737",
+     "v1_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnRkY0eV9mTk5UcGRIMmJ5NGNqdl96TFVVZTBKWDQzTVZsTjk4VzZxSi0xTmlUQmcwcVh4YXFrU3RsYlhWeF9CMzFwNmY2VTloUWJaNFlFcjRBMGQ2ZEZnXzAxcmlzVkNfOGxaLURRQkZ4a0J6T1lR?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 니켈 정련·가공(hilirisasi) 산업이 수출을 30억 달러까지 확대할 것으로 예상됨.",
+     "인도네시아는 세계 니켈 생산량의 30% 이상을 차지하며, 광석 수출에서 정련 제품 수출로 전환 추진 중.",
+     "한국의 배터리·전기차 산업에 안정적 니켈 공급원 확보 기회 제공."
+    ],
+    "oda_relevance": "인도네시아의 니켈 가공산업 고도화는 한국의 핵심광물 공급망 다층화 전략과 부합. KIAT의 ESDM과 기술협력사업(정련·제조 기술이전, 인력양성, 품질관리 표준화)을 통해 장기 수급안정성 확보 가능.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "ESDM",
+     "배터리산업",
+     "정련산업"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 정련·가공·고부가가치 수직통합"
+     },
+     {
+      "phrase": "Ekspor hingga 30 Miliar Dolar AS",
+      "meaning": "30억 달러 규모 수출 목표"
+     },
+     {
+      "phrase": "Pojok Papua",
+      "meaning": "파푸아 지역 광산 클러스터"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "38ed5c541737",
+    "title": "Hilirisasi Nikel Dorong Ekspor Indonesia Hingga 30 Miliar Dolar AS - Pojok Papua",
+    "url": "https://pojokpapua.id/hilirisasi-nikel-dongkrak-ekspor-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-16",
+    "korean_summary": [
+     "[제목 기반] 니켈 하류화가 인도네시아 수출을 최대 30 miliar 달러 미국까지 끌어올림"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "수출"
+    ],
+    "ai_processed": true,
+    "card_id": "1a9a8f11ca5e",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 사업 확대)"
+     },
+     {
+      "phrase": "Dorong Ekspor",
+      "meaning": "수출을 끌어올림"
+     }
+    ],
+    "processed_at": "2026-10-19T02:05:53+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "ce1f047764bf",
+   "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
+   "title_norm": "hilirisasi nikel dongkrak ekspor indonesia hingga sepuluh kali lipat",
+   "url": "https://babelinsight.id/hilirisasi-nikel-dongkrak-ekspor-indonesia-sepuluh-kali-lipat",
+   "gnews_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "babelinsight.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-15",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:03+00:00",
+   "score": 9,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "http_error",
+    "http_status": null,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": null,
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "니켈 하류화가 인도네시아 수출을 열 배까지 끌어올렸음"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "수출"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 사슬 확대)"
+     },
+     {
+      "phrase": "Sepuluh Kali Lipat",
+      "meaning": "열 배"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:05+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "d1f0a19a427c",
+     "v1_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVBDTVl6ckhObkZfeGR6c1VZemlMU2NDX2hFSlBpQ1NhNFRYaGI3YU9oSW1RSjZ2QVFTVFVnN0FHY3c4RjViX25TZ2RoTC1SWVZmTVYweWNQQ1dvU3Y0UnVCVGxWOENkR09jUl94RWp3akppUjBYUE1NdjlxTW1MLTByWl9rS3pRSDVHcXhlSTFINk0?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아가 니켈 하류산업화를 통해 수출을 10배 증대할 계획임.",
+     "ESDM부가 주도하는 니켈 정제·배터리 소재 제조 고부가가치화 전략 추진 중.",
+     "동남아 배터리·EV 공급망 재편 속에서 한국 배터리·소재 기업의 인도네시아 생산 거점 확대 기회."
+    ],
+    "oda_relevance": "인도네시아의 니켈 하류산업화 정책과 기술 수요에 대응해 KIAT의 배터리·소재 산업기술 ODA 협력과 KIGAM의 니켈 정제·품질관리 기술이전 프로그램을 연계·강화할 가치 있음. MOTIE와의 자원외교 협의도 병행 필요.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "ESDM",
+     "배터리소재",
+     "하류산업화"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류산업화 / 니켈 정제·가공 부가가치화"
+     },
+     {
+      "phrase": "Dongkrak Ekspor",
+      "meaning": "수출 증대 / 수출 활성화"
+     },
+     {
+      "phrase": "Sepuluh Kali Lipat",
+      "meaning": "10배"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "d1f0a19a427c",
+    "title": "Hilirisasi Nikel Dongkrak Ekspor Indonesia Hingga Sepuluh Kali Lipat - Babel Insight",
+    "url": "https://babelinsight.id/hilirisasi-nikel-dongkrak-ekspor-indonesia-sepuluh-kali-lipat",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-15",
+    "korean_summary": [
+     "[제목 기반] 니켈 하류화가 인도네시아 수출을 열 배까지 끌어올렸음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "수출"
+    ],
+    "ai_processed": true,
+    "card_id": "ce1f047764bf",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 사슬 확대)"
+     },
+     {
+      "phrase": "Sepuluh Kali Lipat",
+      "meaning": "열 배"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:05+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "52ac5c940f80",
+   "title": "Beri Materi di KKL Pemuda Katolik, Bambang Patijaya Yakin Hilirisasi Nikel dan Industri EV Jadi Peluang Besar Indonesia - negeri laskar pelangi",
+   "title_norm": "beri materi di kkl pemuda katolik bambang patijaya yakin hilirisasi nikel dan industri ev jadi peluang besar indonesia",
+   "url": "https://negerilaskarpelangi.com/2026/05/15/beri-materi-di-kkl-pemuda-katolik-bambang-patijaya-yakin-hilirisasi-nikel-dan-industri-ev-jadi-peluang-besar-indonesia",
+   "gnews_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMkM0enRpZkRIQ0l0TXVVWUhVNGJBcVZlS1pBOUdhY21VMVlfbjFYZThFNVJpejgzMWJ0Z2xwblJ4QmNsak52Ym5nN3A1d1pldlVaalhEb2NwWHhmQlpWSl9fR1hxQUZyR1BHTGVZYWc2LUtGTFpMU252ZzVHY2ZPTkdCMUF3SGVJS0xhV0lMTmhfR2J2c0I5T1pTeUE2QjdlTHM3RGhCcWwyUFh5WS0zUGtYWkV5QkNqeDdjRlZnVEh0cnRGbmhMbHRSVGF2dGhaUWl3QkpxZDY3QURtd3lpS2xBcXNybTlnS2dwUVR1SU9PSS1r?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "negerilaskarpelangi.com",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-15",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:05+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 2523,
+    "sha256": "0c2595e69906735f2adbff38139b131cf8ed792cc71795427220545cae9b0ab5",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-15",
+    "quotes": [
+     "“Kalau pabrik ini berhasil diselesaikan dan sudah full capacity, bisa memproduksi 6,9 GWh, setara kurang lebih untuk 100 ribu mobil EV,” ujarnya.",
+     "“Pemuda Katolik Indonesia diharapkan dapat memberikan sumbangsih pemikiran sekaligus menjadi agen pembawa informasi yang benar,” katanya."
+    ],
+    "final_url": "https://negerilaskarpelangi.com/2026/05/15/beri-materi-di-kkl-pemuda-katolik-bambang-patijaya-yakin-hilirisasi-nikel-dan-industri-ev-jadi-peluang-besar-indonesia/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "Komisi XII 위원장이 니켈 다운스트림·EV 산업을 큰 도약으로 평가했음",
+     "Karawang의 IBC·CATL 배터리 공장은 full capacity 시 6,9 GWh 생산임",
+     "2028년 또는 2029년 국내 EV 공장 가능성과 현지 노동자 숙련도 과제를 언급했음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "6,9 GWh",
+     "100 ribu mobil EV",
+     "tahun 2028 atau 2029"
+    ],
+    "quotes": [
+     "“Kalau pabrik ini berhasil diselesaikan dan sudah full capacity, bisa memproduksi 6,9 GWh, setara kurang lebih untuk 100 ribu mobil EV,” ujarnya.",
+     "“Pemuda Katolik Indonesia diharapkan dapat memberikan sumbangsih pemikiran sekaligus menjadi agen pembawa informasi yang benar,” katanya."
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "다운스트림",
+     "전기차",
+     "배터리",
+     "인도네시아"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류 가공 산업화)"
+     },
+     {
+      "phrase": "ekosistem kendaraan listrik nasional",
+      "meaning": "국가 전기차 생태계"
+     },
+     {
+      "phrase": "Kursus Kepemimpinan Lanjut (KKL)",
+      "meaning": "고급 리더십 과정(행사명)"
+     },
+     {
+      "phrase": "pekerja lokal",
+      "meaning": "현지 노동자"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 2523,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:06:18+00:00",
+    "retry_reasons": [
+     "입력에 없는 숫자: ['12']"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "5b04147ebbea",
+     "v1_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMkM0enRpZkRIQ0l0TXVVWUhVNGJBcVZlS1pBOUdhY21VMVlfbjFYZThFNVJpejgzMWJ0Z2xwblJ4QmNsak52Ym5nN3A1d1pldlVaalhEb2NwWHhmQlpWSl9fR1hxQUZyR1BHTGVZYWc2LUtGTFpMU252ZzVHY2ZPTkdCMUF3SGVJS0xhV0lMTmhfR2J2c0I5T1pTeUE2QjdlTHM3RGhCcWwyUFh5WS0zUGtYWkV5QkNqeDdjRlZnVEh0cnRGbmhMbHRSVGF2dGhaUWl3QkpxZDY3QURtd3lpS2xBcXNybTlnS2dwUVR1SU9PSS1r?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 정부 고위 관계자가 니켈 광물 하이라이제이션과 EV 산업이 인도네시아의 큰 기회임을 강조함",
+     "Bambang Patijaya가 가톨릭청년연맹 행사에서 니켈 및 전기차 산업의 부가가치 창출 가능성을 제시함",
+     "인도네시아의 광물 다운스트림 산업화 전략이 동남아 경제 성장 견인의 핵심 기반으로 추진 중임"
+    ],
+    "oda_relevance": "인도네시아의 니켈 하이라이제이션 및 EV 산업 고도화 정책 확대로 KIAT 주관 핵심광물 ODA 사업 확대 기회 증가 예상. 기술협력·인력양성·정책대화 트랙 강화 필요.",
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "하이라이제이션",
+     "전기차산업",
+     "인도네시아",
+     "ESDM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel dan Industri EV",
+      "meaning": "니켈의 하이라이제이션 및 전기차 산업 고도화"
+     },
+     {
+      "phrase": "Bambang Patijaya",
+      "meaning": "인도네시아 정부 고위 관계자 (맥락상 ESDM 또는 산업부 관련)"
+     },
+     {
+      "phrase": "KKL Pemuda Katolik",
+      "meaning": "가톨릭청년연맹 모임/행사"
+     },
+     {
+      "phrase": "Peluang Besar Indonesia",
+      "meaning": "인도네시아의 큰 기회"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "5b04147ebbea",
+    "title": "Beri Materi di KKL Pemuda Katolik, Bambang Patijaya Yakin Hilirisasi Nikel dan Industri EV Jadi Peluang Besar Indonesia - negeri laskar pelangi",
+    "url": "https://negerilaskarpelangi.com/2026/05/15/beri-materi-di-kkl-pemuda-katolik-bambang-patijaya-yakin-hilirisasi-nikel-dan-industri-ev-jadi-peluang-besar-indonesia",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-15",
+    "korean_summary": [
+     "Komisi XII 위원장이 니켈 다운스트림·EV 산업을 큰 도약으로 평가했음",
+     "Karawang의 IBC·CATL 배터리 공장은 full capacity 시 6,9 GWh 생산임",
+     "2028년 또는 2029년 국내 EV 공장 가능성과 현지 노동자 숙련도 과제를 언급했음"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "다운스트림",
+     "전기차",
+     "배터리",
+     "인도네시아"
+    ],
+    "ai_processed": true,
+    "card_id": "52ac5c940f80",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "6,9 GWh",
+     "100 ribu mobil EV",
+     "tahun 2028 atau 2029"
+    ],
+    "quotes": [
+     "“Kalau pabrik ini berhasil diselesaikan dan sudah full capacity, bisa memproduksi 6,9 GWh, setara kurang lebih untuk 100 ribu mobil EV,” ujarnya.",
+     "“Pemuda Katolik Indonesia diharapkan dapat memberikan sumbangsih pemikiran sekaligus menjadi agen pembawa informasi yang benar,” katanya."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류 가공 산업화)"
+     },
+     {
+      "phrase": "ekosistem kendaraan listrik nasional",
+      "meaning": "국가 전기차 생태계"
+     },
+     {
+      "phrase": "Kursus Kepemimpinan Lanjut (KKL)",
+      "meaning": "고급 리더십 과정(행사명)"
+     },
+     {
+      "phrase": "pekerja lokal",
+      "meaning": "현지 노동자"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:18+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "9dbc797ba719",
+   "title": "Presdir PT Dahana: Hilirisasi Mineral Perlu Ekosistem Industri yang Kuat - Media Nikel Indonesia",
+   "title_norm": "presdir pt dahana hilirisasi mineral perlu ekosistem industri yang kuat",
+   "url": "https://nikel.co.id/2026/05/15/presdir-pt-dahana-hilirisasi-mineral-perlu-ekosistem-industri-yang-kuat",
+   "gnews_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFhXTXZIRE03SnE0dGNmVWdxVUdfejNRZmo3VDBfLXpHb0JRTWtNM1cwSWNkQlBrWG83c3NKYm8zVnBtMENIMEhsa3dhSVJJRWZGSEttWVNPZVhTWHZFMTl4N2NhdXc0QzRhZWhDYVBEZFhvVUhyQ1BmUzhhVHBHMnA4dHZUNTN1TWFNMkhxQnN4SFl5MUhuTUswMHYyQWwxeHlsNU5R?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "nikel.co.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-15",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:19+00:00",
+   "score": 9,
+   "body": {
+    "status": "full",
+    "chars": 1446,
+    "sha256": "94d90ca51facb6da96a867f8a4b735b745005a64dd64cceb98d805f876c0a2cc",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-15",
+    "quotes": [
+     "NIKEL.CO.ID, JAKARTA – PT Dahana terus menunjukkan komitmennya dalam medukung program hilirisasi mineral serta penguatan indutri nasional.",
+     "PT Dahana menjadi perusahaan industri pertahanan yang tidak hanya mendukung operasional sektor pertambangan tetapi juga penguatan ketahanan industri nasional."
+    ],
+    "final_url": "https://nikel.co.id/2026/05/15/presdir-pt-dahana-hilirisasi-mineral-perlu-ekosistem-industri-yang-kuat/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "PT Dahana가 광물 하류화와 국가 산업 강화를 지원하겠다는 의지를 재차 밝혔음",
+     "Hary Irmawan 사장이 2026년 5월 12일 자카르타 Met Connext 2026 행사에서 발언했음",
+     "하류화에는 기술·산업용 폭약·통합된 국내 공급망 등 탄탄한 산업 생태계가 필요하다고 강조했음"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "NIKEL.CO.ID, JAKARTA – PT Dahana terus menunjukkan komitmennya dalam medukung program hilirisasi mineral serta penguatan indutri nasional.",
+     "PT Dahana menjadi perusahaan industri pertahanan yang tidak hanya mendukung operasional sektor pertambangan tetapi juga penguatan ketahanan industri nasional."
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "인도네시아",
+     "광물 하류화",
+     "PT Dahana",
+     "산업용 폭약",
+     "공급망"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi mineral",
+      "meaning": "광물 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "ekosistem industri yang kuat",
+      "meaning": "탄탄한 산업 생태계"
+     },
+     {
+      "phrase": "rantai pasok dalam negeri yang terintegrasi",
+      "meaning": "통합된 국내 공급망"
+     },
+     {
+      "phrase": "bahan peledak industri",
+      "meaning": "산업용 폭약"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1446,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:22+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "848016659e4f",
+     "v1_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFhXTXZIRE03SnE0dGNmVWdxVUdfejNRZmo3VDBfLXpHb0JRTWtNM1cwSWNkQlBrWG83c3NKYm8zVnBtMENIMEhsa3dhSVJJRWZGSEttWVNPZVhTWHZFMTl4N2NhdXc0QzRhZWhDYVBEZFhvVUhyQ1BmUzhhVHBHMnA4dHZUNTN1TWFNMkhxQnN4SFl5MUhuTUswMHYyQWwxeHlsNU5R?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 국영광업기업 PT Dahana의 회장이 광물 하류산업화(hilirisasi)를 위해 강력한 산업 생태계 필요성을 강조함",
+     "PT Dahana 경영진이 니켈 등 광물의 부가가치 창출 및 산업 생태계 조성의 중요성을 언급함",
+     "인도네시아가 광물 가공·제련 산업화에 집중하는 가운데 한국과의 기술협력 기회 확대 가능성 시사"
+    ],
+    "oda_relevance": "인도네시아의 광물 하류산업화(hilirisasi) 전략 추진으로 기술이전 및 산업기술협력 수요 증가. KIAT의 광물 가공·제련 기술협력 ODA 사업 및 KIGAM의 부가가치화 기술협력이 협력 채널로 활용 가능.",
+    "category": "oda_cooperation",
+    "tags": [
+     "니켈",
+     "하류산업화(hilirisasi)",
+     "PT Dahana",
+     "기술협력",
+     "ESDM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi mineral",
+      "meaning": "광물 하류산업화(채굴 후 가공·제련·부가가치 창출)"
+     },
+     {
+      "phrase": "Ekosistem industri yang kuat",
+      "meaning": "강력한 산업 생태계(공급망, 기술, 인프라 통합)"
+     },
+     {
+      "phrase": "PT Dahana",
+      "meaning": "인도네시아 국영광업기업(ESDM 산하)"
+     },
+     {
+      "phrase": "Presdir",
+      "meaning": "회장(Presiden Direktur)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "848016659e4f",
+    "title": "Presdir PT Dahana: Hilirisasi Mineral Perlu Ekosistem Industri yang Kuat - Media Nikel Indonesia",
+    "url": "https://nikel.co.id/2026/05/15/presdir-pt-dahana-hilirisasi-mineral-perlu-ekosistem-industri-yang-kuat",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-15",
+    "korean_summary": [
+     "PT Dahana가 광물 하류화와 국가 산업 강화를 지원하겠다는 의지를 재차 밝혔음",
+     "Hary Irmawan 사장이 2026년 5월 12일 자카르타 Met Connext 2026 행사에서 발언했음",
+     "하류화에는 기술·산업용 폭약·통합된 국내 공급망 등 탄탄한 산업 생태계가 필요하다고 강조했음"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "인도네시아",
+     "광물 하류화",
+     "PT Dahana",
+     "산업용 폭약",
+     "공급망"
+    ],
+    "ai_processed": true,
+    "card_id": "9dbc797ba719",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [],
+    "quotes": [
+     "NIKEL.CO.ID, JAKARTA – PT Dahana terus menunjukkan komitmennya dalam medukung program hilirisasi mineral serta penguatan indutri nasional.",
+     "PT Dahana menjadi perusahaan industri pertahanan yang tidak hanya mendukung operasional sektor pertambangan tetapi juga penguatan ketahanan industri nasional."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi mineral",
+      "meaning": "광물 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "ekosistem industri yang kuat",
+      "meaning": "탄탄한 산업 생태계"
+     },
+     {
+      "phrase": "rantai pasok dalam negeri yang terintegrasi",
+      "meaning": "통합된 국내 공급망"
+     },
+     {
+      "phrase": "bahan peledak industri",
+      "meaning": "산업용 폭약"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:22+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "1044fd4f2e4b",
+   "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
+   "title_norm": "lonjakan harga sulfur bebani proyek hilirisasi nikel industri smelter butuh stimulus",
+   "url": "https://dataindonesia.id/industri-perdagangan/detail/lonjakan-harga-sulfur-bebani-proyek-hilirisasi-nikel-industri-smelter-butuh-stimulus",
+   "gnews_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "dataindonesia.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-13",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:23+00:00",
+   "score": 9,
+   "body": {
+    "status": "lead_only",
+    "chars": 283,
+    "sha256": "127434700b1ec3f2fcdab0a89e4b95212251a9d3769bc91153024c2bbf8dedf6",
+    "source": "og_description",
+    "block_type": "parse_fail",
+    "http_status": 200,
+    "extracted_date": null,
+    "quotes": [
+     "Harga sulfur yang melambung pada kuartal I/2026 memunculkan kekhawatiran terhambatnya hilirisasi nikel di Indonesia."
+    ],
+    "final_url": "https://dataindonesia.id/industri-perdagangan/detail/lonjakan-harga-sulfur-bebani-proyek-hilirisasi-nikel-industri-smelter-butuh-stimulus",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "황(sulfur) 가격 급등이 니켈 다운스트림 사업에 부담, 제련업계에 부양책 필요한가",
+     "2026년 1분기 황 가격 급등으로 인도네시아 니켈 다운스트림 지연 우려가 커졌다고 전했음"
+    ],
+    "basis": "lead",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "황",
+     "인도네시아",
+     "제련",
+     "다운스트림"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류화)"
+     },
+     {
+      "phrase": "Impor sulfur makin susut",
+      "meaning": "황 수입이 갈수록 줄어듦"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "lead_only",
+    "input_chars": 283,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:25+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "ef2d8bd2ba1b",
+     "v1_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTHRjWTRrbVdqeFJnaW96TFRGbmJ2SGJlMkJuNHdLQWFCbXVtUlpJVjYzZUd4eEpCTVE2RC1zejY5d2lsd192ZnFGdEhHUlFNVGdMMmd1eXI1LTBPUktObDVLSWlaRm1qRE9wc3JwSm9JMlo3YXg0aHZaWEFuamhlb3dJSVlKQ1VSRjZpZGxfUTYwY3Z0LXd6SDJGeVlxaHJuaG1oSFpUcng1LWlNbjdNOEZRdEl1b2tPbERxa21sdU9qdm85V3NvUGpBZUY4RmJuU3JJ?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 황(sulfur) 가격 급등이 니켈 제련·정련 사업에 부담을 주고 있음",
+     "제련소 업계가 정부 지원 확대를 요청하고 있으며, 니켈 하류산업 경쟁력 악화 우려 대두됨",
+     "한국의 니켈 정련 기술협력과 원료 안정화 협력 수요 증대 시점"
+    ],
+    "oda_relevance": "인도네시아 니켈 제련산업의 원가 부담 심화에 따라 한국의 기술협력·설비 효율화 ODA 수요 증가 가능성 높음. KIGAM의 공정 최적화 기술이전, KIAT의 제련소 에너지·원료 효율화 프로젝트 기획 검토 시점.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "제련·정련",
+     "인도네시아",
+     "ESDM",
+     "황"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Lonjakan Harga Sulfur",
+      "meaning": "황 가격 급등"
+     },
+     {
+      "phrase": "Proyek Hilirisasi Nikel",
+      "meaning": "니켈 하류산업 프로젝트"
+     },
+     {
+      "phrase": "Industri Smelter",
+      "meaning": "제련소 산업"
+     },
+     {
+      "phrase": "Stimulus",
+      "meaning": "정부 지원/자극책"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "ef2d8bd2ba1b",
+    "title": "Lonjakan Harga Sulfur Bebani Proyek Hilirisasi Nikel, Industri Smelter Butuh Stimulus? - DataIndonesia",
+    "url": "https://dataindonesia.id/industri-perdagangan/detail/lonjakan-harga-sulfur-bebani-proyek-hilirisasi-nikel-industri-smelter-butuh-stimulus",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-13",
+    "korean_summary": [
+     "[본문 미확보] 황(sulfur) 가격 급등이 니켈 다운스트림 사업에 부담, 제련업계에 부양책 필요한가",
+     "2026년 1분기 황 가격 급등으로 인도네시아 니켈 다운스트림 지연 우려가 커졌다고 전했음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "황",
+     "인도네시아",
+     "제련",
+     "다운스트림"
+    ],
+    "ai_processed": true,
+    "card_id": "1044fd4f2e4b",
+    "basis": "lead",
+    "body_status": "lead_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 다운스트림(하류화)"
+     },
+     {
+      "phrase": "Impor sulfur makin susut",
+      "meaning": "황 수입이 갈수록 줄어듦"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:25+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "27759c2265a1",
+   "title": "Hilirisasi Nikel Dorong Pertumbuhan Ekonomi Indonesia Jangka Panjang - haloindonesia.co.id",
+   "title_norm": "hilirisasi nikel dorong pertumbuhan ekonomi indonesia jangka panjang",
+   "url": "https://haloindonesia.co.id/hilirisasi-nikel-ekonomi-indonesia-2026",
+   "gnews_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rUzZ6SkM1Q1NHelhjeWl5cUJVWk1mNVNZUWRfUmN3c0VLSmRERHNKcWZjb0NKVElXUVRMSVhmNG5WNzlLUHF1ZVMtTzVUWWNuMzQ4NWhGTmxTNkxhd0R3dm9MM3BjSHQ1cWhRb2p2ZzctZG5hTHpCSVBQTQ?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "haloindonesia.co.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-14",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:26+00:00",
+   "score": 9,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "bot_block",
+    "http_status": 403,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": "https://www.haloindonesia.co.id/hilirisasi-nikel-ekonomi-indonesia-2026",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "니켈 하류화가 인도네시아의 장기 경제 성장을 견인한다는 제목의 보도임"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화"
+     },
+     {
+      "phrase": "Pertumbuhan Ekonomi Jangka Panjang",
+      "meaning": "장기 경제 성장"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:27+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "dde744c22d75",
+     "v1_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rUzZ6SkM1Q1NHelhjeWl5cUJVWk1mNVNZUWRfUmN3c0VLSmRERHNKcWZjb0NKVElXUVRMSVhmNG5WNzlLUHF1ZVMtTzVUWWNuMzQ4NWhGTmxTNkxhd0R3dm9MM3BjSHQ1cWhRb2p2ZzctZG5hTHpCSVBQTQ?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아가 니켈 하이어스화(제련·가공)를 통해 장기 경제성장을 주도하려는 정책을 추진 중임",
+     "니켈 광석의 국내 부가가치 창출 및 산업 고도화를 목표로 원광 수출 제한과 제련소 확대 정책 병행 중",
+     "동남아시아 최대 니켈 매장국으로서 공급망 통합을 통한 글로벌 배터리·EV 시장 영향력 확대 예정"
+    ],
+    "oda_relevance": "인도네시아 ESDM의 니켈 하이어스화 정책 심화는 한국의 KIAT·KIGAM 기술협력(제련·환경오염처리 기술이전, 인력양성) ODA 수요 증대를 의미하며, 배터리 소재 확보 차원 한-인 자원개발협력 강화의 전략적 계기임.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아 ESDM",
+     "하이어스화",
+     "배터리 소재",
+     "경제성장"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하이어스화(원광→제련·가공으로의 부가가치 단계 확대)"
+     },
+     {
+      "phrase": "pertumbuhan ekonomi jangka panjang",
+      "meaning": "장기 경제성장"
+     },
+     {
+      "phrase": "Kementerian ESDM",
+      "meaning": "인도네시아 에너지광물자원부"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "dde744c22d75",
+    "title": "Hilirisasi Nikel Dorong Pertumbuhan Ekonomi Indonesia Jangka Panjang - haloindonesia.co.id",
+    "url": "https://haloindonesia.co.id/hilirisasi-nikel-ekonomi-indonesia-2026",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 9,
+    "published": "2026-05-14",
+    "korean_summary": [
+     "[제목 기반] 니켈 하류화가 인도네시아의 장기 경제 성장을 견인한다는 제목의 보도임"
+    ],
+    "category": "policy_regulation",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아"
+    ],
+    "ai_processed": true,
+    "card_id": "27759c2265a1",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "정책·법규",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화"
+     },
+     {
+      "phrase": "Pertumbuhan Ekonomi Jangka Panjang",
+      "meaning": "장기 경제 성장"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:27+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "4a74577dc0e6",
+   "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+   "title_norm": "oyu tolgoi donates a scanning electron microscope sem to german mongolian institute for resources and technology",
+   "url": "https://mongolianminingjournal.com/a/75056",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-05-14",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:06:28+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 1790,
+    "sha256": "18a641dbabf5548d4b625b3651728131021a203f6f1472ec1930c5541e210580",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-14",
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75056",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 공식 기증했음",
+     "고정밀 광물 분석용 장비이며 MNT 276 million 규모의 투자로 제공되었음",
+     "오유톨고이 CEO는 이 실험실이 다른 몽골 광산업 기업에도 중요할 것이라고 밝혔음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "MNT 276 million"
+    ],
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "category": "research_academic",
+    "tags": [
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "몽골",
+     "광물 분석"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경"
+     },
+     {
+      "phrase": "high-precision mineral analysis",
+      "meaning": "고정밀 광물 분석"
+     },
+     {
+      "phrase": "official handover ceremony",
+      "meaning": "공식 인계식"
+     },
+     {
+      "phrase": "mutually beneficial partnership",
+      "meaning": "상호 이익이 되는 협력관계"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 1790,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:31+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "0f934580",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75056",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "오유톨고이(OT)가 독일-몽골 자원기술원에 주사전자현미경(SEM) 1대를 기증함",
+     "오유톨고이가 GMIRT 기술역량 강화를 위해 고가 분석장비를 제공함. 광물 특성 분석 능력 증대 목적",
+     "몽골 자원분야 기술 고도화와 산학협력 강화로 한국의 기술협력 전략과 연계 가능성 있음"
+    ],
+    "oda_relevance": "몽골 자원기술 인프라 현대화 사례로, KIGAM의 GMIRT 파트너십 기술협력 강화 및 KIAT 자원개발 ODA 사업에서 현지 분석역량 구축 프로젝트 추진 시 모범 사례로 활용 가능함.",
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "오유톨고이",
+     "GMIRT",
+     "분석기기",
+     "기술협력"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경, 광물의 미세구조 및 성분 분석 장비"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology",
+      "meaning": "몽골-독일 자원기술연구소(GMIRT), 몽골의 광물 기술 연구기관"
+     },
+     {
+      "phrase": "Oyu Tolgoi",
+      "meaning": "몽골 남부 투우브주 소재 대규모 구리-금 광산"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "0f934580",
+    "title": "OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+    "url": "https://mongolianminingjournal.com/a/75056",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-05-14",
+    "korean_summary": [
+     "오유톨고이가 독일-몽골 자원기술대학에 주사전자현미경(SEM)을 공식 기증했음",
+     "고정밀 광물 분석용 장비이며 MNT 276 million 규모의 투자로 제공되었음",
+     "오유톨고이 CEO는 이 실험실이 다른 몽골 광산업 기업에도 중요할 것이라고 밝혔음"
+    ],
+    "category": "research_academic",
+    "tags": [
+     "오유톨고이",
+     "주사전자현미경",
+     "독일-몽골 자원기술대학",
+     "몽골",
+     "광물 분석"
+    ],
+    "ai_processed": true,
+    "card_id": "4a74577dc0e6",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "MNT 276 million"
+    ],
+    "quotes": [
+     "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+     "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "연구·학술",
+    "key_phrases": [
+     {
+      "phrase": "Scanning Electron Microscope (SEM)",
+      "meaning": "주사전자현미경"
+     },
+     {
+      "phrase": "high-precision mineral analysis",
+      "meaning": "고정밀 광물 분석"
+     },
+     {
+      "phrase": "official handover ceremony",
+      "meaning": "공식 인계식"
+     },
+     {
+      "phrase": "mutually beneficial partnership",
+      "meaning": "상호 이익이 되는 협력관계"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:31+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "b34644f8f569",
+   "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+   "title_norm": "carsten drebenstedt german mongolian 3 3 mining program produces new generation of engineers",
+   "url": "https://mongolianminingjournal.com/a/75059",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-05-15",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:06:32+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 10075,
+    "sha256": "dc03a2142fca2dca70dfc217df061f6245bce8caad91d70108dddbd67b264908",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-15",
+    "quotes": [
+     "There have also been important initiatives, including education cooperation meetings between Mongolia and the German state of Saxony, as well as the “1000 Engineers Program.”",
+     "Alongside the development of the mining industry, mining education has also advanced significantly."
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/75059",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "독일 프라이베르크 공대 교수들이 몽골 방문 중 MUST와의 3+3 광업 공학 프로그램 성과를 설명했음",
+     "2011년 협정 체결 후 약 60명이 졸업했고 지난해 7명이 프라이베르크로 갔음",
+     "2년 전 갱신된 협정에 복수학위가 도입됐고 올해 MUST에서 제2회 학술회의가 열릴 예정임"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "around 60 students",
+     "seven students"
+    ],
+    "quotes": [
+     "There have also been important initiatives, including education cooperation meetings between Mongolia and the German state of Saxony, as well as the “1000 Engineers Program.”",
+     "Alongside the development of the mining industry, mining education has also advanced significantly."
+    ],
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "광업교육",
+     "MUST",
+     "프라이베르크 공대",
+     "GMIT"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "3+3 program",
+      "meaning": "MUST와 프라이베르크 공대가 공동 운영하는 광업 공학 프로그램"
+     },
+     {
+      "phrase": "double-degree option",
+      "meaning": "독일에서 졸업하면 MUST 이학석사 학위도 함께 받는 복수학위 제도"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology (GMIT)",
+      "meaning": "독일-몽골 자원기술대학"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 2,
+    "summarized_at": "2026-10-19T02:06:46+00:00",
+    "retry_reasons": [
+     "입력에 없는 숫자: ['10']"
+    ]
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "1497ec5b",
+     "v1_url": "https://www.mongolianminingjournal.com/a/75059",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "독일-몽골 3+3 채광 프로그램이 신세대 엔지니어를 배출하고 있음",
+     "독일 교수 카르스텐 드레벤슈테트 주도로 3년 이론·3년 실무 체계 운영, 글로벌 채광 인력 육성",
+     "몽골의 광업 기술 자립 역량 강화로 한국의 기술협력 전략 수립에 참고 가능"
+    ],
+    "oda_relevance": "몽골의 채광 인력 양성 모델로서 독일-몽골 협력 사례는 KIGAM·KIAT의 기술협력 ODA 설계에 벤치마킹 가치 있음. 한국도 유사한 현지 엔지니어 양성 체계 구축으로 몽골 광물자원 개발 협력의 지속성을 강화할 수 있음.",
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "인력양성",
+     "기술교육",
+     "채광공학",
+     "MRPAM"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "3+3 Mining Program",
+      "meaning": "3년 이론교육 + 3년 현장실무 교육 체계"
+     },
+     {
+      "phrase": "German-Mongolian cooperation",
+      "meaning": "독일-몽골 광업 기술협력"
+     },
+     {
+      "phrase": "New generation of engineers",
+      "meaning": "신세대 채광 엔지니어 양성"
+     },
+     {
+      "phrase": "Carsten Drebenstedt",
+      "meaning": "프로그램 주도 독일 채광공학 교수"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "1497ec5b",
+    "title": "CARSTEN DREBENSTEDT: GERMAN-MONGOLIAN 3+3 MINING PROGRAM PRODUCES NEW GENERATION OF ENGINEERS",
+    "url": "https://mongolianminingjournal.com/a/75059",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-05-15",
+    "korean_summary": [
+     "독일 프라이베르크 공대 교수들이 몽골 방문 중 MUST와의 3+3 광업 공학 프로그램 성과를 설명했음",
+     "2011년 협정 체결 후 약 60명이 졸업했고 지난해 7명이 프라이베르크로 갔음",
+     "2년 전 갱신된 협정에 복수학위가 도입됐고 올해 MUST에서 제2회 학술회의가 열릴 예정임"
+    ],
+    "category": "research_academic",
+    "tags": [
+     "몽골",
+     "광업교육",
+     "MUST",
+     "프라이베르크 공대",
+     "GMIT"
+    ],
+    "ai_processed": true,
+    "card_id": "b34644f8f569",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "around 60 students",
+     "seven students"
+    ],
+    "quotes": [
+     "There have also been important initiatives, including education cooperation meetings between Mongolia and the German state of Saxony, as well as the “1000 Engineers Program.”",
+     "Alongside the development of the mining industry, mining education has also advanced significantly."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "연구·학술",
+    "key_phrases": [
+     {
+      "phrase": "3+3 program",
+      "meaning": "MUST와 프라이베르크 공대가 공동 운영하는 광업 공학 프로그램"
+     },
+     {
+      "phrase": "double-degree option",
+      "meaning": "독일에서 졸업하면 MUST 이학석사 학위도 함께 받는 복수학위 제도"
+     },
+     {
+      "phrase": "German-Mongolian Institute for Resources and Technology (GMIT)",
+      "meaning": "독일-몽골 자원기술대학"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:46+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "c1f21a242d5d",
+   "title": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+   "title_norm": "2026 04 16the first day of mongolia mining 2026 concluded successfully",
+   "url": "https://mongolianminingjournal.com/a/74967",
+   "gnews_url": null,
+   "source": {
+    "name": "Mongolian Mining Journal - English",
+    "domain": "mongolianminingjournal.com",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-04-16",
+   "published_from": null,
+   "collected_at": "2026-10-19T02:06:46+00:00",
+   "score": 8,
+   "body": {
+    "status": "partial",
+    "chars": 459,
+    "sha256": "c1f1a4a68513872e536647da0210b4bba091327eef0b985844297e546d5f7958",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-04-16",
+    "quotes": [
+     "The “Mongolia Mining” International Mining Exhibition, which brings together mining supply, investment, and the latest global advancements in equipment and technology on a single platform, was first organized in 2011."
+    ],
+    "final_url": "https://www.mongolianminingjournal.com/a/74967",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "몽골에서 제15회 'Mongolia Mining' 국제 광업 전시회가 2026년 4월 15일 공식 개막했음",
+     "전시회는 2026년 4월 15~17일 Buyant-Ukhaa Sports Palace에서 열림",
+     "2011년 처음 열려 업계 대표 행사로 성장했으며, 참가 기업 등 세부 내용은 확인 불가임"
+    ],
+    "basis": "body",
+    "key_figures": [],
+    "quotes": [
+     "The “Mongolia Mining” International Mining Exhibition, which brings together mining supply, investment, and the latest global advancements in equipment and technology on a single platform, was first organized in 2011."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "Mongolia Mining",
+     "광업 전시회",
+     "광업 장비",
+     "투자"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Mongolia Mining",
+      "meaning": "몽골 국제 광업 전시회 명칭"
+     },
+     {
+      "phrase": "International Mining Exhibition",
+      "meaning": "국제 광업 전시회"
+     },
+     {
+      "phrase": "Buyant-Ukhaa Sports Palace",
+      "meaning": "전시회 개최 장소(부얀트우하 스포츠 궁전)"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "partial",
+    "input_chars": 459,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:06:49+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "da3f9efb",
+     "v1_url": "https://www.mongolianminingjournal.com/a/74967",
+     "country": "Mongolia",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "몽골 광업 분야 국제 컨퍼런스 '몽골 마이닝 2026'의 첫째 날 일정을 성공적으로 마침.",
+     "4월 16일 개최된 본 행사는 광업 정책·기술·투자 논의의 주요 국제 포럼으로 진행됨.",
+     "한국 관련 광업 기술협력 및 자원 공급망 구축 논의 기회 제공 가능."
+    ],
+    "oda_relevance": "몽골 광업 정책 결정층이 참집하는 국제 포럼. KIAT의 몽골 핵심광물(희토류, 구리 등) ODA 기술협력 사업 홍보 및 협력국 네트워크 구축 적합 채널.",
+    "category": "oda_cooperation",
+    "tags": [
+     "몽골",
+     "광업정책",
+     "MRPAM",
+     "희토류",
+     "광물기술"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "MONGOLIA MINING 2026",
+      "meaning": "몽골 광업 2026 국제 컨퍼런스·박람회"
+     },
+     {
+      "phrase": "first day concluded successfully",
+      "meaning": "첫째 날 일정 성공적 종료"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "da3f9efb",
+    "title": "2026-04-16THE FIRST DAY OF ‘MONGOLIA MINING 2026’ CONCLUDED SUCCESSFULLY",
+    "url": "https://mongolianminingjournal.com/a/74967",
+    "source": "Mongolian Mining Journal - English",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-04-16",
+    "korean_summary": [
+     "몽골에서 제15회 'Mongolia Mining' 국제 광업 전시회가 2026년 4월 15일 공식 개막했음",
+     "전시회는 2026년 4월 15~17일 Buyant-Ukhaa Sports Palace에서 열림",
+     "2011년 처음 열려 업계 대표 행사로 성장했으며, 참가 기업 등 세부 내용은 확인 불가임"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "몽골",
+     "Mongolia Mining",
+     "광업 전시회",
+     "광업 장비",
+     "투자"
+    ],
+    "ai_processed": true,
+    "card_id": "c1f21a242d5d",
+    "basis": "body",
+    "body_status": "partial",
+    "key_figures": [],
+    "quotes": [
+     "The “Mongolia Mining” International Mining Exhibition, which brings together mining supply, investment, and the latest global advancements in equipment and technology on a single platform, was first organized in 2011."
+    ],
+    "source_language": "en",
+    "country": "Mongolia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Mongolia Mining",
+      "meaning": "몽골 국제 광업 전시회 명칭"
+     },
+     {
+      "phrase": "International Mining Exhibition",
+      "meaning": "국제 광업 전시회"
+     },
+     {
+      "phrase": "Buyant-Ukhaa Sports Palace",
+      "meaning": "전시회 개최 장소(부얀트우하 스포츠 궁전)"
+     }
+    ],
+    "processed_at": "2026-10-19T02:06:49+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "98ac7b7d8157",
+   "title": "President of Uzbekistan proposes to ADB expanding projects in AI, energy, minerals and logistics",
+   "title_norm": "president of uzbekistan proposes to adb expanding projects in ai energy minerals and logistics",
+   "url": "https://gazeta.uz/en/2026/05/05/president-uzb-adb",
+   "gnews_url": null,
+   "source": {
+    "name": "Gazeta.uz - English (Uzbekistan)",
+    "domain": "gazeta.uz",
+    "tier": null,
+    "tier_weight": 5,
+    "language": "en"
+   },
+   "published": "2026-05-05",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:06:50+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 5560,
+    "sha256": "eb103f306ab80903b5984dfb64f01d9d40d4d5aab1469d87e31f0df3f07558ca",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-05",
+    "quotes": [
+     "“The previous day we signed a new cooperation program with the bank worth $12 billion,” he said.",
+     "According to the World Trade Organization, AI could increase global trade by up to 40% by 2040."
+    ],
+    "final_url": "https://www.gazeta.uz/en/2026/05/05/president-uzb-adb/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "미르지요예프 우즈베키스탄 대통령이 ADB 총회에서 AI·에너지·물류·광물 협력 확대를 제안했음",
+     "구리·텅스텐·몰리브덴 등 보유 광물과 $1.6 billion 규모 70개 이상 사업을 언급했음",
+     "한국 파트너와 R&D 센터를 설립했고 Future Metals Technopark을 건설 중이라 밝혔음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "$1.6 billion",
+     "sixfold by 2040",
+     "$12 billion"
+    ],
+    "quotes": [
+     "“The previous day we signed a new cooperation program with the bank worth $12 billion,” he said.",
+     "According to the World Trade Organization, AI could increase global trade by up to 40% by 2040."
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "ADB",
+     "타슈켄트",
+     "사마르칸트"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "Future Metals Technopark",
+      "meaning": "퓨처메탈즈 테크노파크(미래 금속 산업단지)"
+     },
+     {
+      "phrase": "R&D center",
+      "meaning": "연구개발 센터"
+     }
+    ],
+    "oda_relevance": "우즈베키스탄이 한국 파트너와 R&D 센터를 설립했다고 언급해 광물 분야의 한국 연계 사례로 볼 수 있으나 구체 사업 내용은 확인 불가임"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 4000,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:07:03+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "e7f006a2",
+     "v1_url": "https://www.gazeta.uz/en/2026/05/05/president-uzb-adb/",
+     "country": "Uzbekistan",
+     "source_language": "en"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "우즈베키스탄 대통령이 아시아개발은행(ADB) 이사회에서 AI·에너지·광물·물류 분야 협력 확대를 제안함.",
+     "녹색에너지, 핵심광물, 기후변화 대응, 관광 프로젝트를 중앙아시아 지역에서 추진할 것을 강조함.",
+     "글로벌 분쟁으로 운송비용이 30%까지 상승하고 있는 상황에서 물류 디지털화 필요성을 지적함."
+    ],
+    "oda_relevance": "우즈베키스탄 정부의 핵심광물 개발 정책 우선순위가 명확화되었으며, ADB와의 협력 확대 움직임은 한국의 KIAT 자원개발협력 사업과 상호보완적 기회를 제공함. MOTIE·KIGAM의 우즈베키스탄 자원외교 전략 수립 및 기술협력 채널 확대에 참고 가치 있음.",
+    "category": "policy_regulation",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "ADB협력",
+     "에너지전환",
+     "물류"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "green energy",
+      "meaning": "녹색에너지"
+     },
+     {
+      "phrase": "logistics digitalization",
+      "meaning": "물류 디지털화"
+     },
+     {
+      "phrase": "transport costs",
+      "meaning": "운송비용"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "e7f006a2",
+    "title": "President of Uzbekistan proposes to ADB expanding projects in AI, energy, minerals and logistics",
+    "url": "https://gazeta.uz/en/2026/05/05/president-uzb-adb",
+    "source": "Gazeta.uz - English (Uzbekistan)",
+    "tier_weight": 5,
+    "score": 8,
+    "published": "2026-05-05",
+    "korean_summary": [
+     "미르지요예프 우즈베키스탄 대통령이 ADB 총회에서 AI·에너지·물류·광물 협력 확대를 제안했음",
+     "구리·텅스텐·몰리브덴 등 보유 광물과 $1.6 billion 규모 70개 이상 사업을 언급했음",
+     "한국 파트너와 R&D 센터를 설립했고 Future Metals Technopark을 건설 중이라 밝혔음"
+    ],
+    "category": "oda_cooperation",
+    "tags": [
+     "우즈베키스탄",
+     "핵심광물",
+     "ADB",
+     "타슈켄트",
+     "사마르칸트"
+    ],
+    "ai_processed": true,
+    "card_id": "98ac7b7d8157",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "$1.6 billion",
+     "sixfold by 2040",
+     "$12 billion"
+    ],
+    "quotes": [
+     "“The previous day we signed a new cooperation program with the bank worth $12 billion,” he said.",
+     "According to the World Trade Organization, AI could increase global trade by up to 40% by 2040."
+    ],
+    "source_language": "en",
+    "country": "Uzbekistan",
+    "oda_relevance": "우즈베키스탄이 한국 파트너와 R&D 센터를 설립했다고 언급해 광물 분야의 한국 연계 사례로 볼 수 있으나 구체 사업 내용은 확인 불가임",
+    "category_ko": "ODA 협력",
+    "key_phrases": [
+     {
+      "phrase": "critical minerals",
+      "meaning": "핵심광물"
+     },
+     {
+      "phrase": "Future Metals Technopark",
+      "meaning": "퓨처메탈즈 테크노파크(미래 금속 산업단지)"
+     },
+     {
+      "phrase": "R&D center",
+      "meaning": "연구개발 센터"
+     }
+    ],
+    "processed_at": "2026-10-19T02:07:03+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "6aea69479af0",
+   "title": "Resmi! Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Nikel - Wajah Batam News",
+   "title_norm": "resmi indonesia dan filipina sepakat kerja sama hilirisasi nikel",
+   "url": "https://wajahbatamnews.co.id/2026/05/12/resmi-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-nikel",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONjBBNXI3YzA1a2lBcEppc2s0MDZBSlYwVllHbG54ZHNXdDZOWUJHWmZ4elhvY190RjBYdGR2LUd5M2hWZFNKRVlVR2hZZTN3SGlOSVA1RnVHZk9zXzFzVUM4RllOUFFEUldVVGZkMUlDcjVrX2JhX09JU2NLV1FoMW9ZNmEtNExGNGZFdTk3TWR2S1o5NmtkNWl5R0ZwU1l5bDNYOVgwUWs?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "wajahbatamnews.co.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-12",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:07:07+00:00",
+   "score": 8,
+   "body": {
+    "status": "full",
+    "chars": 3514,
+    "sha256": "82b6b775540306056eaf9a8c75878095da780b420da77ed01b919ad54229dca4",
+    "source": "trafilatura",
+    "block_type": null,
+    "http_status": 200,
+    "extracted_date": "2026-05-12",
+    "quotes": [
+     "Berdasarkan data United States Geological Survey (USGS) 2026, Indonesia dan Filipina secara bersama-sama menguasai 73,6% produksi nikel global per 2025.",
+     "Indonesia menyumbang sekitar 66,7% atau 2,6 juta ton, sedangkan Filipina menyumbang 6,9% atau 270.000 ton."
+    ],
+    "final_url": "https://wajahbatamnews.co.id/2026/05/12/resmi-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-nikel/",
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "인도네시아와 필리핀이 니켈 하류화 분야 협력을 시작했음",
+     "APNI와 PNIA가 2026년 5월 7일 필리핀 세부에서 MoU를 체결했음",
+     "Airlangga는 필리핀 광석과 인도네시아 제련소를 잇는 니켈 회랑의 기반이라고 밝혔음"
+    ],
+    "basis": "body",
+    "key_figures": [
+     "73,6%",
+     "US$9,73 miliar",
+     "US$47,36 miliar"
+    ],
+    "quotes": [
+     "Berdasarkan data United States Geological Survey (USGS) 2026, Indonesia dan Filipina secara bersama-sama menguasai 73,6% produksi nikel global per 2025.",
+     "Indonesia menyumbang sekitar 66,7% atau 2,6 juta ton, sedangkan Filipina menyumbang 6,9% atau 270.000 ton."
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "필리핀",
+     "APNI"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "nota kesepahaman (MoU)",
+      "meaning": "양해각서"
+     },
+     {
+      "phrase": "Indonesia-Philippines Nickel Corridor",
+      "meaning": "인도네시아-필리핀 니켈 회랑"
+     },
+     {
+      "phrase": "feedstock security",
+      "meaning": "원료(광석) 공급 안정성 보장"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "full",
+    "input_chars": 3514,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:07:15+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "8f81b9a8e0a5",
+     "v1_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONjBBNXI3YzA1a2lBcEppc2s0MDZBSlYwVllHbG54ZHNXdDZOWUJHWmZ4elhvY190RjBYdGR2LUd5M2hWZFNKRVlVR2hZZTN3SGlOSVA1RnVHZk9zXzFzVUM4RllOUFFEUldVVGZkMUlDcjVrX2JhX09JU2NLV1FoMW9ZNmEtNExGNGZFdTk3TWR2S1o5NmtkNWl5R0ZwU1l5bDNYOVgwUWs?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아와 필리핀이 니켈 하류산업화 협력에 공식 합의함",
+     "양국 정부가 니켈 광석 처리·정련·배터리 소재화 공동 프로젝트 추진 예정",
+     "동남아 니켈 공급망 통합으로 한국의 배터리 소재 조달 경로 다변화 기회 창출"
+    ],
+    "oda_relevance": "인도네시아의 니켈 하류산업화 정책 강화는 한국의 핵심광물 전략적 파트너십 수요를 반영. KIAT 자원개발협력 사업과 KIGAM 기술이전 협력의 인도네시아 대상 확대 검토 필요성 제시",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "필리핀",
+     "하류산업화",
+     "배터리소재"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Kerja Sama Hilirisasi Nikel",
+      "meaning": "니켈 하류산업화 협력"
+     },
+     {
+      "phrase": "Indonesia dan Filipina",
+      "meaning": "인도네시아와 필리핀"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "8f81b9a8e0a5",
+    "title": "Resmi! Indonesia dan Filipina Sepakat Kerja Sama Hilirisasi Nikel - Wajah Batam News",
+    "url": "https://wajahbatamnews.co.id/2026/05/12/resmi-indonesia-dan-filipina-sepakat-kerja-sama-hilirisasi-nikel",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 8,
+    "published": "2026-05-12",
+    "korean_summary": [
+     "인도네시아와 필리핀이 니켈 하류화 분야 협력을 시작했음",
+     "APNI와 PNIA가 2026년 5월 7일 필리핀 세부에서 MoU를 체결했음",
+     "Airlangga는 필리핀 광석과 인도네시아 제련소를 잇는 니켈 회랑의 기반이라고 밝혔음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "하류화",
+     "인도네시아",
+     "필리핀",
+     "APNI"
+    ],
+    "ai_processed": true,
+    "card_id": "6aea69479af0",
+    "basis": "body",
+    "body_status": "full",
+    "key_figures": [
+     "73,6%",
+     "US$9,73 miliar",
+     "US$47,36 miliar"
+    ],
+    "quotes": [
+     "Berdasarkan data United States Geological Survey (USGS) 2026, Indonesia dan Filipina secara bersama-sama menguasai 73,6% produksi nikel global per 2025.",
+     "Indonesia menyumbang sekitar 66,7% atau 2,6 juta ton, sedangkan Filipina menyumbang 6,9% atau 270.000 ton."
+    ],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "hilirisasi nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "nota kesepahaman (MoU)",
+      "meaning": "양해각서"
+     },
+     {
+      "phrase": "Indonesia-Philippines Nickel Corridor",
+      "meaning": "인도네시아-필리핀 니켈 회랑"
+     },
+     {
+      "phrase": "feedstock security",
+      "meaning": "원료(광석) 공급 안정성 보장"
+     }
+    ],
+    "processed_at": "2026-10-19T02:07:15+00:00"
+   }
+  },
+  {
+   "schema_version": "card.v1",
+   "service": "kcmo",
+   "card_id": "05b7da8f4ad3",
+   "title": "Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun - Babel Insight",
+   "title_norm": "hilirisasi nikel indonesia serap investasi sebesar rp 205 triliun",
+   "url": "https://babelinsight.id/hilirisasi-nikel-serap-investasi-triliun",
+   "gnews_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5",
+   "source": {
+    "name": "Google News (ID:id)",
+    "domain": "babelinsight.id",
+    "tier": null,
+    "tier_weight": 1,
+    "language": "id"
+   },
+   "published": "2026-05-12",
+   "published_from": "rss",
+   "collected_at": "2026-10-19T02:07:25+00:00",
+   "score": 8,
+   "body": {
+    "status": "title_only",
+    "chars": 0,
+    "sha256": null,
+    "source": "none",
+    "block_type": "http_error",
+    "http_status": null,
+    "extracted_date": null,
+    "quotes": [],
+    "final_url": null,
+    "strategies_tried": []
+   },
+   "summary_input_max_chars": 4000,
+   "summary": {
+    "lines": [
+     "인도네시아 니켈 下流化, Rp 205 Triliun 규모 투자 유치했음"
+    ],
+    "basis": "title",
+    "key_figures": [],
+    "quotes": [],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "투자"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "Serap Investasi",
+      "meaning": "투자를 흡수·유치함"
+     }
+    ],
+    "oda_relevance": "해당 없음"
+   },
+   "provenance": {
+    "model": "claude-sonnet-5-5",
+    "prompt_file": "prompts/summarize_v2.md",
+    "prompt_version": "v2.1",
+    "prompt_sha256": "89cd1e6de01bd7b0cf9db635271a28f622683b4c641a40b2ea349c7931811814",
+    "input_body_status": "title_only",
+    "input_chars": 0,
+    "attempts": 1,
+    "summarized_at": "2026-10-19T02:07:27+00:00"
+   },
+   "ext": {
+    "kcmo": {
+     "legacy_id": "c1ce1dbdad63",
+     "v1_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra3I2UHhySWZBTUdFWGpjS1BqTFdtSWpfcWRQU2hkR3EzR1loQkQ1NlNRa0oyVExGQUZsYmpGNWdCaThOSmFqaF8wei11RGs0bHNnN2thb0ZGUnBndkgzd0RWZUVfeFktUml0SFVyTmJuTW1OalBz?oc=5",
+     "country": "Indonesia",
+     "source_language": "id"
+    }
+   },
+   "v1": {
+    "korean_summary": [
+     "인도네시아 니켈 하류산업화(정련·배터리 제조)가 2055년까지 2천 5백억 루피아(약 205조 원) 규모 투자를 흡수할 것으로 예상됨",
+     "에너지광물자원부(ESDM)와 산업부가 주도하는 니켈 밸류체인 고도화 정책으로, 배터리·자동차 산업 육성 목표",
+     "한국 배터리·전기차 기업의 인도네시아 진출 가속화 및 장기 원료 조달 기반 마련 기회"
+    ],
+    "oda_relevance": "KIAT의 핵심광물 ODA 자원개발협력 사업으로 인도네시아 ESDM과의 니켈 정련·배터리 기술협력 협의 기초 자료로 활용 가능. 한국 배터리 산업의 원료 안정성 제고 및 기술이전 ODA 연계 검토 추천.",
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "배터리",
+     "인도네시아",
+     "ESDM",
+     "하류산업화"
+    ],
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel Indonesia",
+      "meaning": "인도네시아 니켈 하류산업화(정련·가공·배터리 제조로의 부가가치 사슬 확대)"
+     },
+     {
+      "phrase": "Rp 205 Triliun",
+      "meaning": "2천 5백억 루피아(약 205조 원, 2026년 환율 기준)"
+     },
+     {
+      "phrase": "Kementerian ESDM",
+      "meaning": "인도네시아 에너지광물자원부"
+     },
+     {
+      "phrase": "investasi jangka panjang",
+      "meaning": "장기투자(2026~2055년)"
+     }
+    ],
+    "ai_processed": true
+   },
+   "legacy": {
+    "id": "c1ce1dbdad63",
+    "title": "Hilirisasi Nikel Indonesia Serap Investasi Sebesar Rp 205 Triliun - Babel Insight",
+    "url": "https://babelinsight.id/hilirisasi-nikel-serap-investasi-triliun",
+    "source": "Google News (ID:id)",
+    "tier_weight": 1,
+    "score": 8,
+    "published": "2026-05-12",
+    "korean_summary": [
+     "[제목 기반] 인도네시아 니켈 下流化, Rp 205 Triliun 규모 투자 유치했음"
+    ],
+    "category": "supply_chain_trade",
+    "tags": [
+     "니켈",
+     "인도네시아",
+     "하류화",
+     "투자"
+    ],
+    "ai_processed": true,
+    "card_id": "05b7da8f4ad3",
+    "basis": "title",
+    "body_status": "title_only",
+    "key_figures": [],
+    "quotes": [],
+    "source_language": "id",
+    "country": "Indonesia",
+    "oda_relevance": "",
+    "category_ko": "공급망·교역",
+    "key_phrases": [
+     {
+      "phrase": "Hilirisasi Nikel",
+      "meaning": "니켈 하류화(가공·제련 등 부가가치 확대)"
+     },
+     {
+      "phrase": "Serap Investasi",
+      "meaning": "투자를 흡수·유치함"
+     }
+    ],
+    "processed_at": "2026-10-19T02:07:27+00:00"
+   }
+  }
+ ],
+ "excluded": [],
+ "v1_file": "cards_2026-05-16.json",
+ "v1_metrics": {
+  "articles": 18,
+  "original_link": 5,
+  "body_based": 0,
+  "failed": 0
+ }
+}
