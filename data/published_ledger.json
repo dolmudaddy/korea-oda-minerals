@@ -57,6 +57,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXNma21SYmE3eGFvM1lzLTBLc1k1X0NGZzhGMWlwTENMZDNkdVN0UjhIamJXekItUGpzYUtFdzl6eTNzVmdmUk1oQVZaN1pBc3BNZkF2M1RoeTFYZlp3R1NmRkZCOW91MFo3b2RodDdEcnFXaGhQc2hEaUk5ZE5paFVvd1diR2FTcVVpZ2haQVNoMW9ESFBSMmVXZ2tJZURoTlRYNWhPTjM0MlNELVHSAbABQVVfeXFMTWtjYzhrR3g2LUR2VE9wem4yNnAzNHItalVwU2NZd1U0UVNUbE1vd1BQa29nLUd0V1dZNUlDMlA5anZDaXl5aUpyMmo5N0dTZ2hRSEU1bTg1Ql9EaWx5SlFaMzhhMEM1VEFtRUh3WFctQjlWRk9peTlFMDdPM1lsX1pQY3FDWTJ5aVFBek9hbEp0WkFKQS1MZ2dwZW03bFNHeGRjaUdmN3JVcE1xNDdMM3M?oc=5",
    "domain": "antaranews.com"
   },
+  "https://apni.id/berita/913/permintaan-nikel-dunia-meningkat-indonesia-didorong-perluas-hilirisasi-hingga-produk-akhir": {
+   "card_id": "45e79c4d7c6c",
+   "title_norm": "permintaan nikel dunia meningkat indonesia didorong perluas hilirisasi hingga produk akhir",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVlNoc2NRWTBsRzhNc09teGNGN2RJdl9HbUFOamxObkxjZkNoQ0pKQVBzN0w1c1NGdU4tZmU3dThHLWcxbDhzRUZTbjFSMHQ3NVh1UU5ZY0p5eG45NDNkVkRmQ1ZtcjZrRi1OVDFDcFNFemI1ODZibDJGWTR0a2ZnMkIteVh0V3ViOFZYRk93Tm12b0NKMmloeURrR01HXy1TZ0FqVEp1bDlRRVQzX3VpbTVKRnVCRHVt?oc=5",
+   "domain": "apni.id"
+  },
   "https://asiae.co.kr/en/article/2026091418170066435": {
    "card_id": "e2847886a06f",
    "title_norm": "president lee uzbekistan is korea s only special strategic partner in central asia expanding cooperation on critical minerals and ai",
@@ -70,6 +78,14 @@
    "title_norm": "kazakhstan races to top at world nomad games",
    "service": "kcmo",
    "week_of": "2026-09-06",
+   "gnews_url": null,
+   "domain": "astanatimes.com"
+  },
+  "https://astanatimes.com/2026/10/news-digest-foreign-media-on-kazakhstans-critical-minerals-middle-corridor-and-us-ties": {
+   "card_id": "46dcb995b93e",
+   "title_norm": "news digest foreign media on kazakhstan s critical minerals middle corridor and us ties",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
    "gnews_url": null,
    "domain": "astanatimes.com"
   },
@@ -177,12 +193,52 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcmZ0Ui01aHJQb2tEQXN5TFZGa2JhT0JzOHN5YWdaZ2sySWxlWTlNVjlvOGQwVlpYeGlLckNBTW8wMWZaVjRKYl9jcGVaMzZjUmtIYktEQ2RWN3o0WWRrNklneGNMNk9DUldIUzg0dnpKOWZZelZySU1DS25ENkM4cDBpUFBoVVMxU1RUNTFqbThIb1RVMkFkMFZIRzE1cm9YTFo3TjZpbWRxTEhyelJDbGhTMU9Gem0td3ZENDJVR05ZaDjSAcgBQVVfeXFMTVlXdTlxSUNfRUczbUppVEExSlY3R3dwYTMxMmI3R095T3VzT1Z0YWI0U1pjWDZpcjh6NERjOEN2ZjBJUDl2OU1yUUJqR3JnUUx0UDNaWGZUU2xXWGtUcHVsVTQwRkVYSktsOXhiS1F6bE5CZ2p5SnZEOFFhTlpmMW1lRlF5LWVJWGp4NWtyM2VxendQVTRSbTVqR3d2bm5nYjJJYWhlYU5sNDhSUzNhV2VmN0xVYlFvWTNRQVFBLTVSb3plQTdQR1o?oc=5",
    "domain": "cnbcindonesia.com"
   },
+  "https://cnbcindonesia.com/news/20261018213719-4-777274/pasar-nikel-bakal-melesat-hilirisasi-didorong-garap-produk-akhir": {
+   "card_id": "cee89e02b64b",
+   "title_norm": "pasar nikel bakal melesat hilirisasi didorong garap produk akhir",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQckktcXludHVBMzltTmI4emI5S0ZmMXlpd3ZGcXNJSTBPQ0hUUXJNVGFPYVBJa0tKQ1k5ZzlNR0d3Z2FsREtjRmpaZzlabzA3Z2R4S21HUGhFdUg5bHhWbmNiQmhQQXNLZF8zUGhPS2VNY3hnandVeDNlNlVpZk93WFNjMU1KS2c4NUVLalZMY1h4OEZNT1BKb2ZWOGxZdU5Ib3kyZHB2QmFrbE1salVLQWNFVU11UW1CeWJubGR4cU7SAcYBQVVfeXFMT0piSVpvaGRrMmpsblAteXZmbHBzMUF2RlNhRGUxYlJtUWhUZ05UM0diSVhfVExXUE1LX1FySUF1cmQ0eXZrNEttZ0tlVWkwdk1CSDRIb3JNeG5IRDBxTVFSNjBMQndZY0k3VXFYYlZnWklaM3JrTlRwV1BMYlV6Z0xkTmhCOXBsZ1RDUFlWb1UxS1NVdzhQakJSVGc0ZlRBYnJhTWNzbWdKR01nazRfbmNYNmZEUHg5eFF0TDhCSnJHZjNhZDBn?oc=5",
+   "domain": "cnbcindonesia.com"
+  },
+  "https://cnbcindonesia.com/news/20261021071938-4-778015/ekspor-hilirisasi-ri-diramal-tembus-us-50-m-aluminium-bisa-melesat": {
+   "card_id": "4ad83ebab206",
+   "title_norm": "ekspor hilirisasi ri diramal tembus us 50 m aluminium bisa melesat",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQUJydXlGR0xaTDBZRlJDeEt3MDZua0dIRGs0bWpVQjNzTTl5MjNzMUxhMVREblVwY3VqYTlTOXY2eXExbk1MZmxqTERXTnN3OHpEd3JMUXBGUXZ3YjRMUm5DNFFmZWluTXNWdEJtYTBGS1BwTnVpRXpoMnJCc0l6Mjh1alJiTkpRRFVjYzhHZGlLVkVIUkl4NFB6eThkZURBbkpGMmcxTDluNnVGZHZyZnZJbFpMYVMzUi0tbWdCZ1otWDjSAcgBQVVfeXFMUHdURGIwT0xHUzRqbGN3U2UtRUJQc3Z4VjRmVVJoTkVEcTRUVkc4bmJwR016T1lUU3hwX3c0N1JiR2VKZHBhODQ0SVItNzNlelFyWFVEOXV4ak1YSkI4a3ZKTmlhMEN5X0VjbkV5OE9RcWpnYXJGclhjRDRtNnU3cUUtQ19HR25lNEQwTXp4OGNVX3ZGVF83RVpDalFma0xHMWJUY005YzlsaXZTQ25FU3dSbHNERHE0cU5haVVfWVI0UVlIcDZ5RFk?oc=5",
+   "domain": "cnbcindonesia.com"
+  },
+  "https://cnbcindonesia.com/news/20261021075244-4-778029/gak-cuma-nikel-nilai-ekspor-hilirisasi-aluminium-melejit-rp129-t": {
+   "card_id": "a948fbf1bf60",
+   "title_norm": "gak cuma nikel nilai ekspor hilirisasi aluminium melejit rp129 t",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcjFNZ0VFaHhBcEpCdWUyaURLckQ0SHduWXN4ZlhsdnllU21zeDg2UnJYQlg2SW9HajlodV8wQkJ0eVI3eGJvMi1XOTQzcnlmUFRUZVJWVzMzTzltM1REbUkyRzhOOHhyOVJ3dkcxY2RaWHg3bS0tbFpVSFVLdVBJT0E3a1VLVzE4N3luMFBjQVBTLXZQWnFSVXF4WGtIUlNVZ3pwdEhaUy0zWkFzSDFsbnRlb1hQd3dCV3FOSEcybXHSAcYBQVVfeXFMTUpBQm5KYVY0eWtmM2ZXdFpRX1IyQ1FvajlBZ2Y5SWFTbk5ySDBCRXJQQzFLTFkwN3RERmlYLUxJMDlTYkQ4MDBZS2RIMVctaEVxaC0wd2hMM0dHNHVvRnBlNlh0eVM3V3dqU0tKRVZHLXJfS1lIeUIzcUxJMlh2Q1J4Z0hGNUVxSzBRWmpEQ1B3NnRram4xTUhBazRDZVZackVTODRHMWxWcjFGV29kMWJwa09IZk42cEluVDl6d1NDVXdJeXlB?oc=5",
+   "domain": "cnbcindonesia.com"
+  },
+  "https://cnbcindonesia.com/news/20261021081947-4-778043/lapor-ke-prabowo-nilai-ekspor-dari-hilirisasi-ini-melejit-45": {
+   "card_id": "1e5128c94be4",
+   "title_norm": "lapor ke prabowo nilai ekspor dari hilirisasi ini melejit 45",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdE9IaW1saHJ6Y0VDa3hWb09SOUdrbVd1aXJObEJjaG1tRkphaDBsVmpXbkY2YlFVMDM3R3A2ZDRTUWxIM1Y3dUVWc2piUXVxQWFCa1JoVzlqdjcyZGplUTQ0UDRhVEdYT1h3WU1KOEZOLTdQTHF2MTBwak00THBFeFp0anE0bGp1M3p2MlZFX2EySWhxWFV3TGtkckQ1UlE3LURYVktIUWJ3MlhzMF8teTJicEhsek5MMVdv0gHAAUFVX3lxTE1RaFBJMm5Jd2J1NS1yc19SWVdoZ0xFdjl2eU51b1YxMDYwb1A4ZXhiUHYzanFoc2d5R3dqd0luVy1nRXBvV3B3aE51M3JvMnRaWXNrb3Bhc3VqOVppWXM0eEwzRU9sYnBvZmtJOG51c1NJTkttelhzcVJfLWhldkZmbnBKMVhULWtrV1htdG9xX2ZnaEo3d1ZxY01Kd2VRRnFUc0c4ckJwLU1BemdNclBhY216d1N0UV9vZE5sUC1nUQ?oc=5",
+   "domain": "cnbcindonesia.com"
+  },
   "https://cnbcindonesia.com/opini/20260929174228-14-771909/melanjutkan-agenda-hilirisasi-dari-smelting-ke-manufaktur": {
    "card_id": "a4a682b4fcac",
    "title_norm": "melanjutkan agenda hilirisasi dari smelting ke manufaktur",
    "service": "kcmo",
    "week_of": "2026-10-04",
    "gnews_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUXJ1SkM0Wnh2RFdQR0QwVS1FOWpyNGVCUGtuZG9DZzZWUWk4VjZIVXRuYVE0ejMxby1KRlMzdXl5WGhPUlgtUnNqYjhfVWMySDJFQU02cTFUWURkemlQeXFFLWxEQ0pDam0xVW9OUnJrUng0bzhGZHl4MF9tM1ZuYUdQaDh5aTZ2al90R3Y3M1A4M1l4dDdJMEw1ZnMxUWtDd25wdHNVS2didDBpZVVzNE42d3dTcG00bHc?oc=5",
+   "domain": "cnbcindonesia.com"
+  },
+  "https://cnbcindonesia.com/opini/20261018225005-14-777279/bursa-mineral-dan-babak-baru-hilirisasi-indonesia": {
+   "card_id": "f36b68352ae4",
+   "title_norm": "bursa mineral dan babak baru hilirisasi indonesia",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRldBMnd2ZC1sTWdTemxrNVlyY0ZqVWs0WHUyUDJxcVQ0dERYXy1GNmlvcFdxRkJTUDBhelpvTUFPR0dVWlh2dlNqTmhNNkNBZjRZVDRINFdSdVF3X0VER2NOUHhVdThzdUZPN1ROMnkwUzBZUWtsVHI5TGltSWIxNmdjbUNkVUZNcFRHd3ppbi1rQmtnU2pfU2Y4UXNjTlRaS08yVGdkLV9vWk5NV2ow?oc=5",
    "domain": "cnbcindonesia.com"
   },
   "https://cnnindonesia.com/ekonomi/20261008101909-92-1412980/rosan-75-persen-investasi-hilirisasi-ada-di-luar-pulau-jawa": {
@@ -209,6 +265,22 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdThRMEdlcXp1b1JRVEl0emFISEt3UGQ0b2tueC1rdnlwTFNBU0tSX0JUazkzSGEwXzU0MTFTckk2bXozRHlGWFFrcy1zdnA1SFl3dFZyMFJ6Nm9IdGVfQ0hJZzdwQzI0cFp6LVNUaG9Ob1c1Wk9MYWxhRzEtRzg5QW5RZXF5RTRpZzg4aVBCa0xkUWNleFhrX1hZNFAzRzgtMDVuTUZjVE1IeERuN3pfU2YtSHFGV0dSOUphTk9UNGpiWnU1VmZfX0JvUjHSAdIBQVVfeXFMT1dpSUxPaXhubW5xSUtHb0JJRG5VZjViT0dYSTlVZHE0UDRjb1RXdkt1ckxuRkc1WE90MDFYTWMxTDlYT00tSzE0U1RrWlhLX29sZnNuV3RTdW1DRmdReU1xWm9OT3JVWXBab3ZPcjdNeGpZZFNFanZKXzBmU2NnYjUybW5DSnU1TkRucU53S2VMMG0zM2R3WHVzRm9qVXprbG03YXNxY2dyeFdZcUR2MVJnN1g1OEtkeWlwd0FSOHF1dVhxSEZsMGZocUdheFliSEVR?oc=5",
    "domain": "cnnindonesia.com"
   },
+  "https://cnnindonesia.com/ekonomi/20261021100435-532-1417834/den-prediksi-ekspor-hilirisasi-ri-tembus-rp899-t-tahun-ini": {
+   "card_id": "89fea82028b2",
+   "title_norm": "den prediksi ekspor hilirisasi ri tembus rp899 t tahun ini",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZTZYR0pfT2RLN2dtcTdhMGlIUHlibmhnUEhudVpxanA1WEtOUHNMcjM1V0w0OGM1Y29Kc0JIcS0tUXR5eWlXdnBlMEIxTlQ1d0xiaF9Zc2JwRGwtNHBHNDUzOFFoRkk4eDlzVzBnelJmSkpUWmtnN3BqdzBXNGlvelBtOUt5LUd0R2VDUVNmcWdrNE9seWNMRHBURDhDTGpTZjltQWZpMDd6ajNCbWFEeTZOTzg1X0JEYzZ5clIxb9IBxAFBVV95cUxOajh2cUZabTBNMFd0MTNSZ2lTMFJPZFVLSVZJNkM0RWNyMVhPMHlRbnBpN0NsRHRwY3Nta1VIaHJRSFV0OHZSZWxrUm1yYzh4bUpSNU9tSUJTT2NLOVRvaWVMUWlRSG8ya1h6MHlPNTdZUkh4Nl9IdlF4dmFLYTZkN1hmTWxxdkx4eDJYdm5iOEcwZkl5Tmh1RnlIZjNCNWJwaUROZUdiSnNrNFFUOVc0dXZSZDZyYXJrTDZSYjhEN2NqWkV4?oc=5",
+   "domain": "cnnindonesia.com"
+  },
+  "https://cnnindonesia.com/nasional/20261020212939-32-1417715/luhut-sebut-indonesia-segera-mulai-hilirisasi-kratom-dan-kemenyan": {
+   "card_id": "3f589941faff",
+   "title_norm": "luhut sebut indonesia segera mulai hilirisasi kratom dan kemenyan",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORUtfdi15MENZcENCNy04MDBwM0FoLTQwZzVMME5fakhQOERKeDlvVDhxcHV4d0xhcUx1bXJmaC1oYWZHYm9QVjVHZmFzV0ZCVjJfQ1NkVFpreGJaQkZEZTVnYkpsVHBkRmN3Zk9XVjQyMlpudkd1U3hPY09OWFFNY3pjSXd1VWdvTW5LeFJ6R2FpaDdubE5Vc19VS3ExYWhPVmJDWEFpdDBhMlJrMGR4VXdWQ3JhaTJzbzB5MDV5aDZnUXFTRlIzQdIBzgFBVV95cUxQcU5LOENYZ0VNRWhReEh5djJ5U3F3a252Z0tkbHE0ZTRDNVB4dzJNNmhwdVdUYlc5ZG1SbTF5Y0R1WEg0elRNNkJ2aXFtVDRxeGF1T3lxT0Z3a244VXJqcHozbDIzcHBYQUxuSnhnNU8tcExLYm01YzE5UVZmbEwzTGpGWFcwY1pLVExOVHpOZG1IT1pmYzdrQ01obmgxQUhvZkZ4WHFLSVVfaVBYSEEzTTJoSGpwMUpUUTZYQ3lMNDliUloxYUM0ejYwWmlnUQ?oc=5",
+   "domain": "cnnindonesia.com"
+  },
   "https://dailynews.co.tz/tanzania-lures-korean-investments-in-energy-infrastructure-logistics-critical-minerals-for-its-vision-2050-goals": {
    "card_id": "060777dce937",
    "title_norm": "tanzania lures korean investments in energy infrastructure logistics critical minerals for its vision 2050 goals",
@@ -224,6 +296,22 @@
    "week_of": "2026-09-20",
    "gnews_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZDhKb0R2VDM5UTNPZUlHZWlmVDl1ajVVZ21WZVhDRnZKN205OW9ibExxT1AycXdXaEtLeEVvOXIwdjNnSGl5dU1NaDFBUzJqeHYtREFRZlZjWHE4MnlzOXJGSVlUbDA0ZWl1YWtmcklPN3d1WG1lamg2LWlwdXhlNXBqeFlKbjRHaXZ0Y3NxdWFVT2JWbmRlOG55Wkk0Vk96QUN4UF9DZmZHZkxwbDhySmJCMmk?oc=5",
    "domain": "daryo.uz"
+  },
+  "https://demokratis.co.id/hilirisasi-mineral-kritis-indonesia": {
+   "card_id": "d5f38c852849",
+   "title_norm": "indonesia dorong hilirisasi mineral kritis untuk lipatgandakan nilai ekonomi",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBacU1idzFtOEVOMjhjY1dqWkJraDV4aGlmWGZ5eEFYLUxmTVc5d2JnejUta1h2d0ZQWW0wbW5QVHVxWWkyR3FqZWhqZFNhdEc5OGtWandjN0IxWlNndGtEVUlzZ0dfTFpDOXVHVA?oc=5",
+   "domain": "demokratis.co.id"
+  },
+  "https://demokratis.co.id/indonesia-percepat-hilirisasi-nikel": {
+   "card_id": "d4544d143405",
+   "title_norm": "indonesia percepat hilirisasi nikel hingga produk akhir",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xX2pVNTBZME14SFloRlE1dmhRZFZQMnJCYWpQZUlXTzRzX1VzRXBiamkzM3RhaGpBcFFkZDRKUE5hNTBkRHpEd0JtdEhEZHhVcW9VSE02TGZTLXNZQUtIZkJELUhNOXRyVWtfZA?oc=5",
+   "domain": "demokratis.co.id"
   },
   "https://dunia-energi.com/lompatan-besar-hilirisasi-ketika-nikel-berikan-dampak-nyata-dan-mengubah-peta-ekonomi-indonesia": {
    "card_id": "55b3d38ee80a",
@@ -465,6 +553,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV1luN25jOGx1Rzg4ZEtWM182aFBjUVNkUHBYR0JwcHNDdE0wVV9NTjBJX0pMVGQtdG9OQ0xKWmZsU3dxd3pYMGVYOGdoTTBBaVlkRXhHbzhZdlJ4LU1ScXRFaVhyV2lQT0JKSWlIVkpSOE1vdjc2Rm00UThicjJHZWFxRGVGdUJUc3RLM1RURThGVTdVVXJINE54emY3MTRpRnAxVGRkdUhrakprREk0?oc=5",
    "domain": "investortrust.id"
   },
+  "https://investortrust.id/business/119707/permintaan-nikel-global-diproyeksi-naik-21-39-indonesia-perkuat-hilirisasi": {
+   "card_id": "c9aa9655bd43",
+   "title_norm": "permintaan nikel global diproyeksi naik 21 39 indonesia perkuat hilirisasi",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNmxjb1REeHd4TWg4UHR2dWdJcDliSHRaREgwWEpjOWphMVh1VDlMTjh4b3Fka0hEeWpYenFhY3NCaG1INnprTEViRnNJRU5wVUwteHNwLWhmNWxtYmFaam9yYWdNR2R2V1ZqNG9oLTRybHdYNDFRc2VTdk1XVXhkYV93ZUh3UGowYVUwY3NGTnlMNDVLRTJUZ1BGVlBJRU1UZnpYLW9ZTm5YUzNpMnBqZDRhZTRKdw?oc=5",
+   "domain": "investortrust.id"
+  },
   "https://jpnn.com/news/ekonom-core-nilai-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia": {
    "card_id": "7f4625fadc69",
    "title_norm": "ekonom core nilai hilirisasi nikel mulai ubah struktur ekonomi indonesia",
@@ -529,6 +625,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOGNjd19aQk92enA4OWhtRUt1enZ6d3ZvWnBNenRmdGNicHRsTXZVOEZOMmE1RU41SnFpT25wc29UcFZPYjg3MXh6cmYxQXp5WEpQbUpsQVVZakU1Zmg2VWVmcnc1RmZuZDdjckdhNUplZms4aGhuX2xJSW5ISEVqYjJKX3NpajFNUTcycHV6RDVKd1JQeEpxa1dNRzlYUWFpemMtM0JlTzE4dkJQWE4wOGo0VnZqdTF4ZUpOck9lb0FyZ9IBxwFBVV95cUxPOWF5YWQxazlNNlFnUUtYalBBeFVCUjNVX19EYUNNeEx4S0trdHRYYTJINVFGMnhINGcwSGhibGtPRGdWN1ZOejV4WFNlcTZraHlfOS1NUEpUNV8tQ3R0SVZvU0RWVG40UEh1RUw5Szh1cDBfR0x2TjFFdlNGcDhYazRRa1huamU4bkZCYnZmOFF4UE9ERGROdF9rLTFoVWFzQzZTZVFZcGdtbUlqTGlEWlRmOTZtTVFlcUtqSmRrYlBTZC1qeVow?oc=5",
    "domain": "koreatimes.co.kr"
   },
+  "https://koridor.co.id/smelter-china-hilirisasi-nikel-indonesia": {
+   "card_id": "e163ca31104f",
+   "title_norm": "pemangkasan produksi smelter china jadi alarm hilirisasi nikel indonesia",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yaGNqS2l2SnV2RlhCeUFPSTI0Qy14R09EQ3dqMmJneldNYkhBM3RQZ0g3dUpUa29IZ210b2ctNDdLbktSa0NPWVB3Y0RucU5lajNTWkpkc0hXMkJCQzhlZmJXZjV4MWZxU3h1X05aZw?oc=5",
+   "domain": "koridor.co.id"
+  },
   "https://kt.kz/rus/ekonomika/kazatomprom_planiruet_krupnye_sdelki_po_prodazhe_urana_1377997663.html": {
    "card_id": "38fc2cc03972",
    "title_norm": "казатомпром планирует крупные сделки по продаже урана китаю и россии",
@@ -566,6 +670,22 @@
    "title_norm": "cost of russia s baikonur lease stays at 115 million for over 30 years",
    "service": "kcmo",
    "week_of": "2026-09-27",
+   "gnews_url": null,
+   "domain": "kz.kursiv.media"
+  },
+  "https://kz.kursiv.media/en/2026-10-22/engk-nknk-kazakhstan-and-south-korea-establish-rare-metals-center-in-almaty": {
+   "card_id": "a3daa7a3b59d",
+   "title_norm": "kazakhstan and south korea establish rare metals center in almaty",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "kz.kursiv.media"
+  },
+  "https://kz.kursiv.media/en/2026-10-22/engk-nknk-kazakhstan-seeks-to-unlock-the-value-of-mining-waste": {
+   "card_id": "ddcc33cad005",
+   "title_norm": "kazakhstan seeks to unlock the value of mining waste",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
    "gnews_url": null,
    "domain": "kz.kursiv.media"
   },
@@ -616,6 +736,30 @@
    "week_of": "2026-09-20",
    "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5HdG5ta25aUDNkTGxEYXpsQXVtazRZR3dWeS1Ma0t1MG56RFI1R09YWEJoUFcxcXlwVzN0OEprTm9fZ2g2X1B3dWJDWjlRTl9EUGFleWlWZ9IBV0FVX3lxTE5HdG5ta25aUDNkTGxEYXpsQXVtazRZR3dWeS1Ma0t1MG56RFI1R09YWEJoUFcxcXlwVzN0OEprTm9fZ2g2X1B3dWJDWjlRTl9EUGFleWlWZw?oc=5",
    "domain": "m.ajupress.com"
+  },
+  "https://madini.go.tz/news/ghana-and-tanzania-to-partner-in-developing-small-scale-minerals": {
+   "card_id": "46e41d8c12d6",
+   "title_norm": "ghana and tanzania to partner in developing small scale minerals",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "madini.go.tz"
+  },
+  "https://madini.go.tz/news/mavunde-africa-is-one-lets-work-together-to-turn-minerals-into-industries-jobs": {
+   "card_id": "11df3e6c3a69",
+   "title_norm": "mavunde africa is one let s work together to turn minerals into industries jobs",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "madini.go.tz"
+  },
+  "https://makassar.antaranews.com/berita/640241/indonesia-rintis-kolaborasi-pengolahan-logam-tanah-jarang-dengan-gabon": {
+   "card_id": "3f7e5770933f",
+   "title_norm": "indonesia rintis kolaborasi pengolahan logam tanah jarang dengan gabon",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM1ZhUmJsWGYxUkZYeXZVWXFlUEM0UFpJOGpxc2VmekV1MVZ1ZnJCYzh5eFpYaTN1WlJFUldUWWNtd0lHcXVaZWFkQWtrVWxQc2tVc3lGRlN5SlhNdGRxbDRvWG5qWGt2SmM5MUtpTm5KYjU3dll3QlM1b2UzNTViekdHRkROWDhlTFNmQmdoQ0dhODE5ck1oSjBtUGt4ZkhCQjhWb2FnVnI5T3pOb1RaNExsOUpnRTQ?oc=5",
+   "domain": "makassar.antaranews.com"
   },
   "https://minews.id/cuitan-mi/hilirisasi-nikel-jadikan-perdagangan-indonesia-lebih-strategis-dalam-industri-global": {
    "card_id": "eb1c63b34a59",
@@ -710,6 +854,14 @@
    "title_norm": "masan high tech to sell stake to elmet sign tungsten supply deal",
    "service": "kcmo",
    "week_of": "2026-09-27",
+   "gnews_url": null,
+   "domain": "mining.com"
+  },
+  "https://mining.com/web/nickel-industries-says-indonesia-cuts-coming-as-chinese-producers-weigh-steep-reductions": {
+   "card_id": "1534a9eed761",
+   "title_norm": "nickel industries says indonesia cuts coming as chinese producers weigh steep reductions",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
    "gnews_url": null,
    "domain": "mining.com"
   },
@@ -873,6 +1025,14 @@
    "gnews_url": null,
    "domain": "news.mongabay.com"
   },
+  "https://news.mongabay.com/2026/10/deadly-gold-rush-continues-as-latest-landslide-kills-four-in-sumatra": {
+   "card_id": "790258152038",
+   "title_norm": "deadly gold rush continues as latest landslide kills four in sumatra",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "news.mongabay.com"
+  },
   "https://news.nate.com/view/20260811n28085": {
    "card_id": "de512a25e3ee",
    "title_norm": "korea uzbekistan put ai minerals atop business agenda for c5 summit",
@@ -993,6 +1153,126 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNmhlazZ4TExuX1AxRmJQUnNrVjlIZW93elhROFJqV3duTnZfeGR1emRYT084Wjh2elhRckNpTk1FdXFxRjJzSmFPd0o4VUx4V1QzVDJRRU8yR0RDbEhiNlZhdmk5SXVTWld6WjlNV0oyeE12Szk3YURKaDdqYjU4RzZNR0NITFFJYUk1Z2tKZ1MxY1RiTUE?oc=5",
    "domain": "nikel.co.id"
   },
+  "https://nikel.co.id/2026/10/19/elisa-sugito-investasi-hilirisasi-nikel-harus-beri-manfaat-nyata-bagi-indonesia": {
+   "card_id": "4a75331e8a7f",
+   "title_norm": "elisa sugito investasi hilirisasi nikel harus beri manfaat nyata bagi indonesia",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdXc3RHZVU0VETW03X3FoRnl6MUhnaU1SQ3B3N3p2Z0Z4amd2R2JHbl91b0FoVWZLVHRjdjVqOURhWWc4T1BrdS1xd1BkM0FacWRZaHdiZWtpQ0ZsMFV4QjlQb00xTkdJN0lpa00tQ2NZYWVnMERZYnZrdWloYWd3QzdzZ0FGcmNweWNCcGZsaHhIQmVjSDFkTGJtQXFrVXp3YmlGcjZaQ3hwY1YzU3JFdg?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/19/hilirisasi-nikel-jadi-kunci-transformasi-ekonomi-indonesia": {
+   "card_id": "cbcfa5e0b592",
+   "title_norm": "hilirisasi nikel jadi kunci transformasi ekonomi indonesia",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR1NLNENndzF0dWo5aU9DVGE3d2RkMjlBdmxxelJnYXdybnNnTzlUdjh4SXN4Z0VTQ3ZUUGI0ZnozR3VZSElTUzRRTU9xSnlCQ0lyRkk2UGVjSUNTQzR0YzBLbjZIVzlSMEdrOHE5bGFnQlJONmdHTEJkWEFwemRnT2xCenF4bkhncUY0QkJ4Rzdud3hj?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/19/moratorium-smelter-nikel-harus-tetap-dukung-hilirisasi": {
+   "card_id": "73b4edb7c362",
+   "title_norm": "moratorium smelter nikel harus tetap dukung hilirisasi",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ1BsYlF2UnRJWjIxRjRkOGlHTmdRNzNNZzBOenFsVGY3WUR6WnpTcHNpSEFJZUpncTZLLW5TdzFDRGRvRW1KYWRiOWZsVkhwVUlQdWwxV3dvQlkzVmRudDVlV2NWOUdMdEtCZGE1c1d4dkwxMURSZUhwVFhBYjNjZ2dfb3g3Zm52TUFZcExxZw?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/20/hilirisasi-jadi-strategi-pemerintah-dorong-investasi-berkualitas": {
+   "card_id": "b283b3453ca2",
+   "title_norm": "hilirisasi jadi strategi pemerintah dorong investasi berkualitas",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNnN6clpuQ0pyNERJTnlVSTFKY3c5cXpEblgzM2dlQVRvX3JaaG1JZGFES1EybVI2VGhFRTZxQ0sxeHVKNjFyQ1ZYeTFnMU9CeXhCa0F2TG56QjNwSjFpZEVxbkNnYTA4dTlGUzZOVFE2SlM0S1lUZ3c1ZDA5NDBNZXVPYWRZbkJKWWpadktUQ3YxX1ZSNWFiVE03Vk4?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/21/ekspor-hilirisasi-nikel-aluminium-dan-baterai-diproyeksi-tembus-us50-miliar": {
+   "card_id": "a91b82bdaf5e",
+   "title_norm": "ekspor hilirisasi nikel aluminium dan baterai diproyeksi tembus us 50 miliar",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNFQ2MTRmN2NwNzFKQWhlQnZuM2hxb1MyQ29hZzFndkg2ZzRWMXk1SHFuRHpUU2RPajFIaThLYlBFZkpVcHp1a29NVU4zblR6QnJIWlNRSDE0cjhKXy1GMUFfVnRwUXB4Q0xEX3hUcHBaTW4zZVVwOEZ1SW1GY1MzaXh3Y3l2N3dmYUNnYmJLdXdrQzlCVmR0cEhrSmt0cGRTaWpQR19oZ2Zlb2c?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/21/hilirisasi-mineral-jadi-pilar-utama-strategi-ekonomi-indonesia": {
+   "card_id": "db552a9ad596",
+   "title_norm": "hilirisasi mineral jadi pilar utama strategi ekonomi indonesia",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQjBELUFNanBENjdaaVB6Z3RzLTJiUGxrcjdjTS1ySjB3LWVEZVpkdkJ0YklOWUM0djdid1h2Zl9UMF9SbHJOUjFNQmF4WndpbWVwanhZeU15UTctZFI2VS1nNFpHUkFDTXBjYU44T2xNXzhhRWRPVGtXZUxjMkZXVXZyQ2U0MG1aMUwtOFdHWWlEdkNUQkM2dmV3?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/21/hilirisasi-nikel-harus-memberi-dampak-ekonomi-masyarakat-lokal": {
+   "card_id": "c052e620983e",
+   "title_norm": "hilirisasi nikel harus memberi dampak ekonomi masyarakat lokal",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVXVfZ3pvSG0tWGIzMTlUcF9iUXk0SjdBbUFQSVR6NjV2dWZFZmRtaFUxQVpFTjdUX044ZGI1YVloOGdkbVhXbG9UZWRPcWVzbmFMNW5XZGQyRTJKN3h4SE5yenpXbFJxMHVmQUlLdjF0R2ZDTF9FVTQ3V0xGRzR2dFBrcmdKYXVqU25qT3dOY3Q0ZUduV0JRV2d3?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/22/hilirisasi-nikel-harus-menghasilkan-produk-akhir": {
+   "card_id": "ee298248be39",
+   "title_norm": "hilirisasi nikel harus menghasilkan produk akhir",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObTBYY3ZJTHNMaFU1b0s5TEtqeklZT0VpYmNLbFRUUWVPQkU4d1FENzcwVGpVTlpTLXN3UDdDbnFweFVYbkdnMEpoeXpEcEJ1bWhFTzg4OFRRN3NySmMxNEZtNGpVaDI1dmU5dC12bTZGaWtRNHhnSWxHTlBidUdESmRJZDBsakk?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/22/hilirisasi-tak-cukup-dengan-pembangunan-smelter-dan-investasi": {
+   "card_id": "57fc297cfb49",
+   "title_norm": "hilirisasi tak cukup dengan pembangunan smelter dan investasi",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOT1ZubmduWmhiU0JNTFdjWVlMWGpKTWtZOWI1dEFndnEyZ182Vlc1dnJwSk52NWp1RUxUWDZDckN5UllrOWRWanhoamR3VUhGRWdESzVpSDBBbFR2U3ZBOG90NmcyTFByYXh2ZVFodFBXT2Z1S2hoRFo1SWtrdVFjVi1RNVJjNDZYQ3o3aFNDZ1VOUlBRNlZRUg?oc=5",
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/apni-dorong-dana-ketahanan-cadangan-untuk-perkuat-eksplorasi-lanjutan": {
+   "card_id": "78bb32b94c47",
+   "title_norm": "apni dorong dana ketahanan cadangan untuk perkuat eksplorasi lanjutan",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/bidik-tambang-nikel-renault-trucks-luncurkan-truk-kapasitas-60-ton": {
+   "card_id": "9955b3da5b04",
+   "title_norm": "bidik tambang nikel renault trucks luncurkan truk kapasitas 60 ton",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/kualitas-bijih-belum-terserap-optimal-dengan-teknologi-smeter-nikel-indonesia-saat-ini": {
+   "card_id": "df0df93c3995",
+   "title_norm": "kualitas bijih belum terserap optimal dengan teknologi smeter nikel indonesia saat ini",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/nikel-untuk-energi-bersih-pengolahannya-harus-perhatikan-kelestarian-lingkungan": {
+   "card_id": "1d6378076ebe",
+   "title_norm": "nikel untuk energi bersih pengolahannya harus perhatikan kelestarian lingkungan",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/rencana-pengurangan-produksi-nikel-indonesia-harga-nikel-lme-naik-hinga-us700": {
+   "card_id": "5be87845abae",
+   "title_norm": "rencana pengurangan produksi nikel indonesia harga nikel lme naik hinga us 700",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
+  "https://nikel.co.id/2026/10/23/sulitnya-akses-jadi-kendala-pemadaman-kebakaran-di-area-proyek-igp-pomalaa": {
+   "card_id": "abd289946a58",
+   "title_norm": "sulitnya akses jadi kendala pemadaman kebakaran di area proyek igp pomalaa",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "nikel.co.id"
+  },
   "https://open.kg/en/news/in-the-world/122379-kazahstan-stremitsja-uglubit-jekonomicheskie-svjazi-s-juzhnoj-koreej-vyjdja-za-ramki-avtomobilnoj-promyshlennosti-i-ohvativ-vysokotehnologichnye-otrasli-i-kljuchevye-poleznye-iskopaemye-mid-.html": {
    "card_id": "fceab688387b",
    "title_norm": "kazakhstan aims to deepen economic ties with south korea expanding beyond the automotive industry to include high tech sectors and key minerals ministry of foreign affairs of the republic of kazakhstan news of kyrgyzstan bishkek and osh late",
@@ -1081,6 +1361,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRVM3NEFjUHE3bzgxd21GWG85cU1ZY2hka3RsWEZZZXFKT0IxT3lncU1PUTU2VGZWUGlGa2w2Tk9TRlR5clMxX2dLYlY2WTVtQl8zMEVTYXNncjVaU2R3MHVkbHhuSDRsTEJrZzF6SmxHX3JNamx1WXRmLXBQMGVxM2NmaXVnZnNyOVVfSmZlTFJlZ3ZPLVdCQmw5ajdOa19sWTdVT20wTFhGa3VqR2fSAa4BQVVfeXFMTWVZLUhqSlZ4VC1ZbzFxcWdodHBCc2VSWVN4MnptR3dwdXFuclV0VUhXZjlTSTk1WExCWkFLWU9NRElUWU85d3ZMY1lsdmtjajEza0ZoaE9nb0NqZFNFN0c0dUFGQThzN1REbXU3NWhxYXdQLU10QVYyU041MFZrbE9YWG9SZmRNNzl2aXJfWEFUZDlzYjJVb1NHT1haOU5ZUHhwb3E4ejJEQVRoRXBB?oc=5",
    "domain": "qazinform.com"
   },
+  "https://rareearthexchanges.com/news/kazakhstan-south-korea-rare-metals-center": {
+   "card_id": "a204d78f2594",
+   "title_norm": "kazakhstan south korea rare metals research center explained",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdMcWJVU29zRlQtbmlpQjljZDU1a3pCRUxvelBRcndlQWdYdWdOYlJXUmN2ZnRqTThQN1BDTkxPMlBEcUtOb1psRlJvcHl5MnVwaThQZldJS2ktbUFfX0hkaml4eWsxMjVGdk9SUnJSenZXTUxaM09ENFlfbXdTQkNDTTk?oc=5",
+   "domain": "rareearthexchanges.com"
+  },
   "https://rareearthexchanges.com/news/uzbekistan-south-korea-minerals-processing": {
    "card_id": "a34daabfa826",
    "title_norm": "uzbekistan and south korea expand c5 1 critical minerals strategy from ore toward processing",
@@ -1113,6 +1401,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb0ZFYlhEdG5ZSncxMGVINDVVM25vVmpVdWg0VVM1ZTNuQjM3ZDY5ZU81TFowM3NfMVk2bE1yOF9pTUVXdlV4Z1JORlMwbGQ2cFRBakhvSU1wdDFvNldpaWxQd2FSMnlwbFJ4eEtiMU1qVGVhMHJZVjJyRGhoTERPUzBkXy1xSnNWUVZNVXp6ZlpCTUZyV3pFWUJEd3daQng4UG14c1RKZ242N1lT?oc=5",
    "domain": "rmol.id"
   },
+  "https://rmol.id/read/2026/10/21/725717/hilirisasi-indonesia-kian-masif-menuju-target-ekspor-50-miliar-dolar": {
+   "card_id": "4853f5a1c0ca",
+   "title_norm": "hilirisasi indonesia kian masif menuju target ekspor 50 miliar dolar",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUjBFY19mNm04cnN4VkNnUGZNY3hKcm45MDZRblE0a3kwMHI3SjZFbGF2UEpocW9HY1U3dm9fNEM5amtTX0xjOGpMcVk3OTJkNkw2Rl92QnRNV3p0Nk5ndnJhMGpNbm55Vms2OVVVS19aOVVxeGlEYXVfMVN5NzJ3RHhOX3BVZ0FVTzBDN0RfREZuUmZ6MGIzMUdReXROMldSUHNrcTNwYlFmVms?oc=5",
+   "domain": "rmol.id"
+  },
   "https://rmolsumsel.id/hilirisasi-nikel-diperkuat-indonesia-bidik-rantai-pasok-global-baterai-ev": {
    "card_id": "aef6acb6e6a6",
    "title_norm": "hilirisasi nikel diperkuat indonesia bidik rantai pasok global baterai ev",
@@ -1136,6 +1432,38 @@
    "week_of": "2026-09-27",
    "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUUpFV3dpM0JNWFVxRWowdzJwR0dSM1VtUjRqaTNxN3dHTTh5b1U2cENtYzlienc4WUVITkhCdDhLMEVzVXBaejdicnhiYUZWbV9CM19UZGQ4azNtbXZXaFM3V3FwTGhnaE90M0VXZXZBV04zOFl3cWtsYWQ1YTVpNzVzWEQ3OWw0LTNJY203UXRPOTlyZm9jSHB3dUdYak0xQXVwdmE3bFBmdzROUFNwcHM2NlR5QQ?oc=5",
    "domain": "rri.co.id"
+  },
+  "https://rri.co.id/ekonomi/makro/2820446/permintaan-nikel-dunia-meningkat-indonesia-didorong-percepat-hilirisasi": {
+   "card_id": "7c3730a2d8f6",
+   "title_norm": "permintaan nikel dunia meningkat indonesia didorong percepat hilirisasi",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQzREckJRczl6dDYyelpVOThleUY4MmZDVkZndVlzR09NbzBzbFpBa2NZNE5meTZETndyUWtISmRRdTdLU19hUlBJUVcxTDdSWkt6SjBCNFJoLUhDVWV5WHNBTU9HTVlXVmlHUEY0N0xNY2p0a3gtLXRMUEJwMHZFbVctSjhvNWtPbE5EWDlFY1lQdm1FRGFZa0czWmVudkRxMkxFWXltWFdMaGhWMjJMQQ?oc=5",
+   "domain": "rri.co.id"
+  },
+  "https://rri.co.id/nasional/2828787/den-proyeksikan-ekspor-hilirisasi-indonesia-akan-tembus-rp9025-triliun": {
+   "card_id": "ae8600ab8f86",
+   "title_norm": "den proyeksikan ekspor hilirisasi indonesia akan tembus rp902 5 triliun",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3BNSXo3Uk01cjRWdFU3OS11TTJDRVhVMnlDNXUzS1UtTHF1MjF3SlBrTkxaRU95TGduZlBPUXpyYzRrTlFGQWxrRGtVUVotNzdRTEhCejhGNUpsMVI1VHlsT1l1WTJBNzcwd0RrXzZETVJ2OVc3SV84VUxPLUp0czh3MzZCNlZPRmFqd1lXanA0cHh5TUtmTVZWXzNMcFF6aV9lbEg0VHk?oc=5",
+   "domain": "rri.co.id"
+  },
+  "https://ruangenergi.com/15-penerima-penghargaan-energi-soebroto-2026-medco-ep-natuna-hingga-pertamina-hulu-mahakam-berjaya": {
+   "card_id": "45c29749f5ab",
+   "title_norm": "15 penerima penghargaan energi soebroto 2026 medco e p natuna hingga pertamina hulu mahakam berjaya",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "ruangenergi.com"
+  },
+  "https://ruangenergi.com/catatan-redaksi-energi-untuk-rakyat-jangan-biarkan-listrik-padam-bbm-menghilang": {
+   "card_id": "d58a6c0ade14",
+   "title_norm": "catatan redaksi energi untuk rakyat jangan biarkan listrik padam bbm menghilang",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "ruangenergi.com"
   },
   "https://rus.baq.kz/rossiya-usilivaet-vliyanie-na-mirovoy-rynok-urana-kakuyu-rol-igraet-kazahstan-320043291": {
    "card_id": "c839ff2305e5",
@@ -1240,6 +1568,46 @@
    "week_of": "2026-10-04",
    "gnews_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbTQ1MWpXSzJyVGhsZ1hKbWpCYzlHaUFqWEF6V0Q5aWxpMXJGU1RxLUdfb3lvX0RNc1BrV1NLRUNoOTUzal96ZUd5aUV3SE16dmEwVVVTMGEtMXg0Q1VlaVN4Z0hYRmZHTVl3YnNSWWtwckVjWkZIZ1RuV29FOHN6dFNuUE1qbXdHRTlYT19vdHlGNk5aOFRqZjFLWlA0b2x6VVJXa0lLZXUtbFNIb185Z3VDVQ?oc=5",
    "domain": "surabaya.inews.id"
+  },
+  "https://tambang.co.id/esg-harita-nickel-di-obi-pasca-irma-melampaui-kepatuhan": {
+   "card_id": "14728f5cffc5",
+   "title_norm": "menakar esg harita nickel di obi pasca irma",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "tambang.co.id"
+  },
+  "https://tambang.co.id/menyaksikan-hilirisasi-dari-dekat-kisah-smelter-nikel-dan-timah-perjuangan-ri-mengejar-nilai-tambah": {
+   "card_id": "f9ec99ac1231",
+   "title_norm": "menyaksikan hilirisasi dari dekat kisah smelter nikel dan timah perjuangan ri mengejar nilai tambah",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "tambang.co.id"
+  },
+  "https://tambang.co.id/renault-trucks-meluncurkan-k520-10x4-xtrem-batik-10x4-ini-keunggulannya": {
+   "card_id": "981eb1f203fa",
+   "title_norm": "renault trucks luncurkan k520 10x4 xtrem batik 10x4 ini keunggulannya",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "tambang.co.id"
+  },
+  "https://tambang.co.id/ri-targetkan-ekspor-nikel-tembus-usd45-miliar-pada-2026": {
+   "card_id": "b71e5c7f8c82",
+   "title_norm": "ri targetkan ekspor nikel tembus usd45 miliar pada 2026",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "tambang.co.id"
+  },
+  "https://tambang.co.id/temu-profesi-tahunan-perhapi-ke-xxxv-siap-digelar-di-ternate-maluku-utara": {
+   "card_id": "b9a239e96e35",
+   "title_norm": "temu profesi tahunan perhapi ke xxxv siap digelar di ternate maluku utara",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "tambang.co.id"
   },
   "https://tapchicongthuong.vn/bo-cong-thuong-quy-dinh-chuc-nang--nhiem-vu--quyen-han-va-co-cau-to-chuc-cua-cuc-dia-chat-va-khoang-san-viet-nam-550463.htm": {
    "card_id": "7eba3c0fb874",
@@ -1385,12 +1753,28 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc0R6ajJRZFpJQWFKVjcwdklUZFlrMmJNOXkzeXdWY19WTmx4bVNXWF9xOFFxZDVXVlZlYTZNZ05kRWZJWGN0UjlZWXJhSmJKNGtVTFBxLXpucWJhSjdxc1FteDBvNTJlSXh0VkRwNFU4REd3WGw0Z0drM2p6eFZYb1VDQ0VpWEpMNXBOQ1F2UzNUZTIyX2RpanJfZ2F0cUFob1NV?oc=5",
    "domain": "vietnam.vn"
   },
+  "https://vietnam.vn/en/bo-cong-thuong-cong-bo-19-thu-tuc-hanh-chinh-noi-bo-ve-khoang-san": {
+   "card_id": "bf58471dd88d",
+   "title_norm": "the ministry of industry and trade announces 19 internal administrative procedures related to minerals",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMFg4aEV0aVZRaC1aYy1SOGhNdHVpdlRpUER6SmNlaFo5dGw1c2ZSdXJuZm1aQ193Q2IzTmxOZUVScW50U1lraGJaeEJzRlNla1FfbTgwb1l3RGstSkpzQlBkVEdsUU1UeDE2YjZUZ1NmWnNBRWZBU04zT29XdEFORTB2Q0hmckotN2kwTDVlR2N5U2FkUkE?oc=5",
+   "domain": "vietnam.vn"
+  },
   "https://vietnam.vn/en/bo-cong-thuong-quy-dinh-chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-cuc-dia-chat-va-khoang-san-viet-nam": {
    "card_id": "836d1ba99ca4",
    "title_norm": "the ministry of industry and trade stipulates the functions tasks powers and organizational structure of the vietnam geological and mineral resources administration",
    "service": "kcmo",
    "week_of": "2026-09-20",
    "gnews_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdjV1UmtzaTd5Ym8wR0Eza2t5TmNDTVZUNGh6RDNQMUVVZlhnRjRYV3BiWFVlSWs4VndpdnBncTVCT0Z0YUlaUEJMZVlpdVpsb1lkYjBNNEtwUGZvaTJtSDZxMG5XaFUtTFh6VzR2ZHlUUnhITUNZakE0T01EVWFMYV90dGdfMjl5a21nRkVlNnBlYzhJTWZ1c0JHNnZ6Nm1KOWdHT0RaRnNiZjJUTEwwc3lzeVhpZlZTNExCUkRYVzd6VUlSeThRN0Z1MURjM2tYclE?oc=5",
+   "domain": "vietnam.vn"
+  },
+  "https://vietnam.vn/en/viet-lao-day-manh-hop-tac-chien-luoc-tai-khoi-dong-du-an-khai-thac-va-che-bien-muoi-mo-gan-500-trieu-usd-tai-khammouane": {
+   "card_id": "2c570f8274d9",
+   "title_norm": "vietnam and laos strengthen strategic cooperation restarting a nearly 500 million salt mining and processing project in khammouane",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdUJxVW5QbGpVMkdwLU4xWExSaVRKNlQwdk9LWktqQ1gxY1pBRTAwU1FVSC1YTTF1cms0cUlEYnlhUkZNRk90VGZKMGRpamtjZ2xNTmtGLUp2MG9HbllOODZ5VU5jNjYway1LeVdtY25LYlVMWUxUYzNDeGtWR0JncmMtdy1VMmdCYmVJeDZDNk1tblBFSFBTWURzbzh6NWJWWDNJVzRRZDBpSTFQUndsbE5GUzBqZFUtcnc4YW1tV1RKTjA1a2c4ZjhWVlNPM2FVSlI1Z0t0a3loZ0NLTXc?oc=5",
    "domain": "vietnam.vn"
   },
   "https://vietnam.vn/thuc-day-hop-tac-viet-nam-han-quoc-trong-nghien-cuu-khai-thac-va-che-bien-dat-hiem": {
@@ -1449,6 +1833,14 @@
    "gnews_url": null,
    "domain": "vietnamnet.vn"
   },
+  "https://vietnamnet.vn/khuong-thao-dan-gold-duoc-cong-nhan-thuong-hieu-quoc-gia-viet-nam-2026-2567771.html": {
+   "card_id": "b24d142497a0",
+   "title_norm": "khương thảo đan gold được công nhận thương hiệu quốc gia việt nam 2026",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": null,
+   "domain": "vietnamnet.vn"
+  },
   "https://vietnamnet.vn/tkv-duy-tri-da-san-xuat-doanh-thu-9-thang-uoc-dat-139-659-ty-dong-2561185.html": {
    "card_id": "80e7e417e312",
    "title_norm": "tkv duy trì đà sản xuất doanh thu 9 tháng ước đạt 139 659 tỷ đồng",
@@ -1473,6 +1865,14 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMzdOV3dwd1pPa0FCYnREblVhVUV2clBiaExJbXhQLTM1QlhCUExJZjUzMkEwNmRKVkNoa2JxdnhEWk1Vd0lJUmhrYnAwOTJaTUoyMkpzNzF6ZHVOTTVaelVpR2MwVkZJakd4Q0cybm5yVnJSZ0ZkbkVWTlR4QU9fbHByQVZnVG96TERnZ1FnSmNFWXhhZlVhdWtYONIBlgFBVV95cUxPRDcxWUVoRGxMOTFtOGdMVTFZNGV3SWRVaFJVNU1aOTJQM2ljY21ZOEFqM1M3ZDIwNjc2VVB6Ym1mRHoxNkVVYlhhVVp6V2tZREpiWHdCVHA1cFdUV0h1QWNodmhraTFrYWhoTU56SFhzMEUtR0RjZi1aOXlMUEFHS3F1QS1uX203SzdJOTNRSmRXNEd2WkE?oc=5",
    "domain": "voi.id"
   },
+  "https://voi.id/ekonomi/599321/tak-hanya-nikel-den-proyeksikan-ekspor-hilirisasi-indonesia-tembus-50-miliar-dolar-as": {
+   "card_id": "6c882572c7b5",
+   "title_norm": "tak hanya nikel den proyeksikan ekspor hilirisasi indonesia tembus 50 miliar dolar as",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2g1N01QZm81YlYwMzhqX0R2Q3p2eFM1NWFlN3dWems4VnY0bm1ReTVXX09xTFh3VHMwbWNCaUp0NDRNbUFWOE5aY256U0Q3MGJHYmFkYjdLN2lPbW50VGh1ekRXR2paa2hSOUZkMXgwWElqVlVOeExacjVoVXp2MVdPV18yZDlVWFNMOFZmZlRUTExVM2J0eTlpWjQ1cDBabTN0M3pwX1F0TTBDYjVLX3hlenNFQdIBsAFBVV95cUxQZjcyd2N1RXdfeXA3czRLdFBQY01PVnpsOXZrUXkwczBYS29xUTNleGpvNDFCSTFBRmdhQkVEWmFrUmdjNDdDTUpaNnd5WFRZYjFPN3Y2UV83TjVfWWh2WEFSdFY4SFFxWjMyVFFyUGxMQ2ZnLUpEenpvVDhpWktsUWNGUlIwc0xSMTVXV0lpbTJnTzFxVDJ6ZlB3SXI0dXJwUWZQMWxpeTU4TklwNDRMYw?oc=5",
+   "domain": "voi.id"
+  },
   "https://vov.vn/doanh-nghiep/doanh-nghiep-24h/che-bien-sau-va-tai-che-vonfram-hai-mat-xich-nang-gia-tri-tai-nguyen-viet-nam-post1325106.vov": {
    "card_id": "f3e6537bb1fd",
    "title_norm": "chế biến sâu và tái chế vonfram hai mắt xích nâng giá trị tài nguyên việt nam",
@@ -1480,6 +1880,14 @@
    "week_of": "2026-08-22",
    "gnews_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQanVHUU9ZRHFJZWlIU1dkVXRPRGFYVVI5X2hXMHJkOHdLMWR3ZC1WajBmNlJ2U0ZFQjZHeF90bW1DR2NzQmlxQ1JCMkxKeS1mOU5CblJ6aU9WQS0yZkt4NktuY0lPX1VDejVDaWZCdUdKeDBNUmQ1a052dlRCMWN1WHBNRndaQ2p1RkpNaTVxak9sREd0TVBCUVhFVV9QbHVQR05xWUNjRlFaaF9NWGtYSG5MdlpQdW5vNHM4b1BwbW4tc0FwaTE4al82X0V6MTlWSVJ1MA?oc=5",
    "domain": "vov.vn"
+  },
+  "https://wartaekonomi.co.id/read642306/hilirisasi-indonesia-kian-meluas-ekspor-diproyeksikan-capai-us50-miliar-pada-2026": {
+   "card_id": "f2e3974a2112",
+   "title_norm": "hilirisasi indonesia kian meluas ekspor diproyeksikan capai us 50 miliar pada 2026",
+   "service": "kcmo",
+   "week_of": "2026-10-25",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdVFMZFI5T2NLcUpVNkQ3MVBLSTBhRkNwNXhPQ1FvcUlEcHc1cTdMMEhYVERLbl8tQlBReFpSaS16TmxJQnFzYk1yRUJDTEdOR2dnaEhpMFREQk9YSS11N3BMNmRGV1lrSWkydnVabnZCQ2UyZHlOY1VoRTZmTU8xSTVxMG50Z3ZlaXNLRkFxbTRyVkNTNWxQY2oxME5rY0hBQTJjQTlkYXdjdUVOQjl5RzYzc2FSblM4Rkhn0gHAAUFVX3lxTE5TZEtqMmZxa2RXNXVRdUdKRm8wVlN4aDhsR1JpSmU4c2kwVVg4TlJ6bGlKTk5jejAyZkJtaURnMktjLUUySHdteVVwb2FZdUtzME9xNVdZUkxPYmJfdjVaNnIwQ0NUOUVQNm9YMV8wUjJHOVByMEV5VHZrNGFsWW9PVVo1WXllYzh2NFk4SmpvcHdkNGVBSlRTMG9IbGczekZuX1B5OWd5T1k4UFNtVnFBSG1uOHo4MTRaYi1pRjFDRw?oc=5",
+   "domain": "wartaekonomi.co.id"
   },
   "https://wncy.com/2026/09/15/south-korea-kazakhstan-sign-mou-on-atomic-energy-explore-mineral-trade": {
    "card_id": "53e9d43666d2",

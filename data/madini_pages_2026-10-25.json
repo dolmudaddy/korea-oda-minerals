@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-25T00:58:35.556773+00:00",
+  "source": "madini.go.tz HTML body collector",
+  "stats": {
+    "urls_found": 117,
+    "already_known": 0,
+    "fetched": 2,
+    "stale": 115,
+    "no_date": 0,
+    "qualified": 2
+  },
+  "total": 2,
+  "articles": [
+    {
+      "id": "04bc7cb558ab",
+      "title": "Ghana And Tanzania To Partner in Developing Small-Scale Minerals",
+      "url": "https://www.madini.go.tz/news/ghana-and-tanzania-to-partner-in-developing-small-scale-minerals",
+      "source": "Wizara ya Madini (광물부 본문)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "Accra, Ghana - Minister of Minerals, Hon. Anthony Mavund has called on Tanzania and Ghana to strengthen strategic cooperation in developing small-scale miners to fully participate in the mining economy and also in the management of mineral resources, emphasizing that the time has come for Africa to stop being a source of raw materials for foreign industries and instead use its mineral wealth to build industries within the country, increase employment and grow the economy of its citizens.\r\n\r\nHon. Mavunde said this on October 21, 2026, during a bilateral meeting between him and the Minister of Lands and Natural Resources of the Republic of Ghana, Hon. Emmanuel Armah-Kofi Buah, held in Accra, where the leaders discussed opportunities to strengthen cooperation in the management and development of the Mining Sector for the benefit of both countries.\r\n\r\nSpeaking at the meeting, Hon. Mavunde said it is high time that these two governments looked at small-scale miners with an eye to enabling them to continue to participate and contribute fully to economic development through the mining sector.\r\n\r\nMavunde stressed that for a long time, African countries have been operating in isolation in the mining sector, with resources such as gold, copper, graphite, lithium and strategic minerals being exported outside the continent without fully benefiting the economies of the countries that produce these minerals.\r\n\r\n“The era in which Africa acts as a warehouse of raw materials for other nations must end, and it must end now,” stressed Hon. Mavunde, explaining that the strength of Tanzania and Ghana should not end in mining, but in combining expertise, technology, research and the capacity of those countries to build production and value-added systems within Africa.\r\n\r\nHe said that the cooperation should be directed at key areas including adding value to minerals through smelting, refining, processing, adding value and producing industrial products, instead of relying on the export of raw minerals and that this step will help retain capital in the country, develop the capacity of local industries and create productive jobs for African youth.\r\n\r\nIn the area of geological research, Hon. Mavunde stressed the importance of Tanzania and Ghana exchanging expertise, technology and geological information to strengthen the countries' ability to identify existing resources, make sound policy decisions and negotiate investment agreements with greater confidence.\r\n\r\nHe explained that African countries should also strengthen the participation of indigenous people in the Mining Sector (Local Content) so that citizens do not remain only workers in mines, but can participate as business owners, investors, suppliers of goods and services and producers of mineral products.\r\n\r\nSpeaking about the experience of Ghana, Hon. Mavunde commended the steps taken by the country in empowering small-scale miners, explaining that Tanzania continues to learn from that experience and said that Tanz",
+      "published": "2026-10-22",
+      "score": 13,
+      "source_type": "html_page",
+      "priority_boost": 3
+    },
+    {
+      "id": "38e1c54a1165",
+      "title": "Mavunde: “Africa Is One, Let’s Work Together To Turn Minerals Into Industries, Jobs”*",
+      "url": "https://www.madini.go.tz/news/mavunde-africa-is-one-lets-work-together-to-turn-minerals-into-industries-jobs",
+      "source": "Wizara ya Madini (광물부 본문)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "Accra, Ghana-\r\nThe Minister of Minerals, Hon. Anthony Peter Mavunde, has called on African countries to stop working in isolation and instead join forces in the management and development of mineral resources to boost industries, jobs and the economy of the continent.\r\nHe said this on October 19 while speaking at a panel discussion of Ministers from Tanzania, Nigeria and Liberia with the theme “From Vision to Delivery: Making the African Mining Vision Work for Member States”, at the three-day Mining in Motion International Conference taking place from October 19 to 21, 2026 in Accra, Ghana.\r\nHon. Mavunde said the time has come for African countries to put aside their differences and work together to implement joint strategies for the development of the Mineral Sector.\r\nHe said Africa has more than 32 percent of the world's known significant mineral resources, but a large part of this wealth is still exported outside the continent without sufficient value added, and that this situation deprives African countries of opportunities to build industries, create jobs and increase income.\r\nExplaining the steps being taken by Tanzania, Hon. Mavunde said the legal reforms carried out in 2017 have strengthened the management of mineral resources and government participation, while measures to prevent the export of raw minerals are stimulating value addition in the country.\r\nHe explained that Tanzania is now under the leadership of President Hon. Dr. Samia Suluhu Hassan has more than eight gold refining factories and more than 16 factories for processing and refining of base metals and the Mining Sector contributes 10.3 percent of the GDP, with small-scale miners contributing about 40 percent of the sector's production as a result of the Government's sincere steps to strengthen the sector.\r\nIn strengthening regional cooperation, Hon. Mavunde mentioned Tanzania, Madagascar and Mozambique as having the opportunity to join forces in the development of mineral resources (graphite), processing and policy harmonization to build a value chain that benefits the people of those countries.\r\nHe stressed that the African Mining Vision should not remain in documents and discussions, but should be accompanied by practical implementation while urging member states to strengthen mechanisms for dialogue and joint decisions to accelerate the implementation of agreed strategies.\r\n\r\n“It is time for Africa to start working together. Africa is one, and we must work as one team,” emphasized Hon. Mavunde, explaining that cooperation is essential in ensuring that mineral resources stimulate industrial development and economic growth.\r\n\r\nMinister Mavunde called on African countries to turn mineral wealth into industrial opportunities, jobs, technology and more income, instead of continuing to sell raw minerals and buy value-added products from outside the continent.\r\n\r\nEarlier, officially opening the Conference, the President of the Republic of Ghana, His Excellency John Dramani Maha",
+      "published": "2026-10-21",
+      "score": 12,
+      "source_type": "html_page",
+      "priority_boost": 3
+    }
+  ]
+}

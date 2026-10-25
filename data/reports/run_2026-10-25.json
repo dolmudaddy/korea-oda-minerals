@@ -1,0 +1,259 @@
+{
+  "service": "kcmo",
+  "run_date": "2026-10-25",
+  "generated_at": "2026-10-25T00:58:25+00:00",
+  "elapsed_s": 80.0,
+  "counts": {
+    "fetched": 6436,
+    "qualified": 59,
+    "validation_errors": 0
+  },
+  "sources": {
+    "Lao News Agency (KPL) - English": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "Daily News Tanzania (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "HabariLeo - Madini (RSS)": {
+      "fetched": 10,
+      "qualified": 2,
+      "error": null
+    },
+    "Tambang.co.id (RSS)": {
+      "fetched": 15,
+      "qualified": 5,
+      "error": null
+    },
+    "Nikel.co.id (RSS)": {
+      "fetched": 10,
+      "qualified": 6,
+      "error": null
+    },
+    "Dunia Energi (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "Ruang Energi (RSS)": {
+      "fetched": 10,
+      "qualified": 2,
+      "error": null
+    },
+    "VietnamPlus - English (Vietnam)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "VnExpress English - Business (Vietnam)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "VnExpress - Kinh doanh (Vietnamese RSS)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "VietnamNet - Kinh doanh (RSS)": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "Kapital.kz - Business news (RSS)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "The Astana Times (RSS)": {
+      "fetched": 10,
+      "qualified": 1,
+      "error": null
+    },
+    "Mining.com - All news": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Uranium": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Copper": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Rare Earth": {
+      "fetched": 2,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Nickel": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Cobalt": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Tungsten": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Critical Minerals (category)": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "news.mn - Mongolia news (RSS)": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mongolian Mining Journal - English": {
+      "fetched": 14,
+      "qualified": 2,
+      "error": null
+    },
+    "Mongolia Weekly (English newsletter)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "AKIPress (Central Asia 5 countries)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "Kursiv Media - English (Kazakhstan)": {
+      "fetched": 30,
+      "qualified": 2,
+      "error": null
+    },
+    "The Astana Times (Kazakhstan)": {
+      "fetched": 10,
+      "qualified": 1,
+      "error": null
+    },
+    "Gazeta.uz - English (Uzbekistan)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "UZ Daily - English (Uzbekistan)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "World Nuclear News (uranium/nuclear)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "Capmad - Africa Mining (English)": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mongabay - Conservation News": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "Google News": {
+      "fetched": 5935,
+      "qualified": 33,
+      "error": null
+    }
+  },
+  "resolve": {
+    "direct": 23,
+    "decoder": 33
+  },
+  "ledger_excluded": {
+    "url": 6,
+    "title_similar": 1
+  },
+  "ledger_excluded_items": [
+    {
+      "reason": "url",
+      "title": "Serikali yasisitiza tahadhari migodini kukabili El Nino",
+      "url": "https://habarileo.co.tz/serikali-yasisitiza-tahadhari-migodini-kukabili-el-nino/?utm_source=rss&utm_medium=rss&utm_campaign=serikali-yasisitiza-tahadhari-migodini-kukabili-el-nino"
+    },
+    {
+      "reason": "url",
+      "title": "LS Cable & System, LS Eco Energy to Invest KRW 161.6 Billion in Korea-Vietnam Rare-Earth Magnet Supply Chain - 알파경제",
+      "url": "https://www.alphabiz.co.kr/news/articleView.html?idxno=190969"
+    },
+    {
+      "reason": "title_similar",
+      "title": "Ekonom nilai kebijakan hilirisasi nikel mulai ubah struktur ekonomi Indonesia - ANTARA News Sultra",
+      "url": "https://sultra.antaranews.com/berita/542832/ekonom-nilai-kebijakan-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia"
+    },
+    {
+      "reason": "url",
+      "title": "Ekonom nilai hilirisasi nikel mulai ubah struktur ekonomi Indonesia - ANTARA News",
+      "url": "https://www.antaranews.com/berita/5770766/ekonom-nilai-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia"
+    },
+    {
+      "reason": "url",
+      "title": "Maslahi ya taifa yawe kipaumbele mikataba ya madini",
+      "url": "https://habarileo.co.tz/maslahi-ya-taifa-yawe-kipaumbele-mikataba-ya-madini/?utm_source=rss&utm_medium=rss&utm_campaign=maslahi-ya-taifa-yawe-kipaumbele-mikataba-ya-madini"
+    },
+    {
+      "reason": "url",
+      "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056"
+    },
+    {
+      "reason": "url",
+      "title": "ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+      "url": "https://www.mongolianminingjournal.com/a/75130"
+    }
+  ],
+  "body_status": {
+    "full": 48,
+    "partial": 0,
+    "lead_only": 0,
+    "title_only": 8
+  },
+  "body_source": {
+    "trafilatura": 43,
+    "reader_proxy": 5,
+    "none": 8
+  },
+  "block_type": {
+    "bot_block": 13
+  },
+  "blocked_domains_top20": {
+    "cnbcindonesia.com": 5,
+    "demokratis.co.id": 2,
+    "cnnindonesia.com": 2,
+    "rri.co.id": 2,
+    "koridor.co.id": 1,
+    "rmol.id": 1
+  },
+  "strategy_use": {
+    "amp": 7,
+    "feed": 7,
+    "reader_proxy": 6
+  },
+  "reader_proxy": {
+    "tried": 6,
+    "used": 5
+  },
+  "summarize": {
+    "raw": 51,
+    "cards": 51,
+    "failed": 0
+  }
+}
