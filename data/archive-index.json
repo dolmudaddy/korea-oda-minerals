@@ -1,7 +1,27 @@
 {
-  "total_weeks": 30,
-  "latest_week": "2026-10-25",
+  "total_weeks": 31,
+  "latest_week": "2026-11-01",
   "weeks": [
+    {
+      "week_of": "2026-11-01",
+      "filename": "cards_2026-11-01.json",
+      "total_cards": 38,
+      "category_counts": {
+        "policy_regulation": 16,
+        "research_academic": 3,
+        "exploration_development": 4,
+        "supply_chain_trade": 14,
+        "oda_cooperation": 1
+      },
+      "top_tags": [
+        "니켈",
+        "ESDM",
+        "인도네시아",
+        "베트남",
+        "배터리"
+      ],
+      "generated_at": "2026-11-01T02:04:27.271069+00:00"
+    },
     {
       "week_of": "2026-10-25",
       "filename": "cards_2026-10-25.json",

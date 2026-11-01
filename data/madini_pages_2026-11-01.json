@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-11-01T02:01:02.839900+00:00",
+  "source": "madini.go.tz HTML body collector",
+  "stats": {
+    "urls_found": 117,
+    "already_known": 2,
+    "fetched": 0,
+    "stale": 115,
+    "no_date": 0,
+    "qualified": 0
+  },
+  "total": 0,
+  "articles": []
+}

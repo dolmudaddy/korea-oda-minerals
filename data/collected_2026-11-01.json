@@ -1,0 +1,2196 @@
+{
+  "schema_version": "card.v1",
+  "service": "kcmo",
+  "run_date": "2026-11-01",
+  "generated_at": "2026-11-01T02:00:55+00:00",
+  "mincore_version": "0.2.1",
+  "total": 47,
+  "cards": [
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "003d7dc1c5d1",
+      "title": "Dewan Energi Nasional Dorong Hilirisasi Nikel untuk Perkuat Ketahanan Energi Indonesia",
+      "title_norm": "dewan energi nasional dorong hilirisasi nikel untuk perkuat ketahanan energi indonesia",
+      "url": "https://nikel.co.id/2026/10/30/dewan-energi-nasional-dorong-hilirisasi-nikel-untuk-perkuat-ketahanan-energi-indonesia",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:05+00:00",
+      "score": 17,
+      "body": {
+        "status": "full",
+        "chars": 3518,
+        "sha256": "8c26e885cbd437bfc09bfdd3ee8b20cd27483ae13100c7787e5c9f9faa775f3d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Langkah tersebut dinilai penting untuk meningkatkan nilai tambah sumber daya mineral sekaligus memperkuat ketahanan energi nasional.",
+          "Indonesia memiliki posisi strategis sebagai salah satu negara dengan sumber daya dan industri nikel terbesar di dunia."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/dewan-energi-nasional-dorong-hilirisasi-nikel-untuk-perkuat-ketahanan-energi-indonesia/?utm_source=rss&utm_medium=rss&utm_campaign=dewan-energi-nasional-dorong-hilirisasi-nikel-untuk-perkuat-ketahanan-energi-indonesia",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "2161fd55"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "6c7d6de609c4",
+      "title": "ASPEBINDO: Hilirisasi dan Transisi Energi Harus Dibuktikan dengan Investasi dan Proyek Nyata",
+      "title_norm": "aspebindo hilirisasi dan transisi energi harus dibuktikan dengan investasi dan proyek nyata",
+      "url": "https://nikel.co.id/2026/10/30/aspebindo-hilirisasi-dan-transisi-energi-harus-dibuktikan-dengan-investasi-dan-proyek-nyata",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:06+00:00",
+      "score": 17,
+      "body": {
+        "status": "full",
+        "chars": 6197,
+        "sha256": "3bd91b88a385bcbe5ea146e622a25524c7481ea1aaa6295dff4818c3d30f27a8",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Ia menilai, salah satu tantangan dalam pengembangan industri energi dan hilirisasi adalah memastikan berbagai konsep serta inovasi yang telah dihasilkan tidak berhenti pada tahap perencanaan.",
+          "Salah satunya adalah penguatan hilirisasi dan peningkatan nilai tambah."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/aspebindo-hilirisasi-dan-transisi-energi-harus-dibuktikan-dengan-investasi-dan-proyek-nyata/?utm_source=rss&utm_medium=rss&utm_campaign=aspebindo-hilirisasi-dan-transisi-energi-harus-dibuktikan-dengan-investasi-dan-proyek-nyata",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "1fbaed6d"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "fe4ef8ac3ece",
+      "title": "BRIN Siapkan Riset Terintegrasi untuk Dukung Hilirisasi Industri Energi",
+      "title_norm": "brin siapkan riset terintegrasi untuk dukung hilirisasi industri energi",
+      "url": "https://nikel.co.id/2026/10/30/brin-siapkan-riset-terintegrasi-untuk-dukung-hilirisasi-industri-energi",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:07+00:00",
+      "score": 14,
+      "body": {
+        "status": "full",
+        "chars": 6698,
+        "sha256": "cc1fff8d1922c4518fcb117f17e8cfd484bc912be3dc27f8bd57169742a6e62d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA — Badan Riset dan Inovasi Nasional (BRIN) mendorong penguatan riset terintegrasi untuk mendukung pengembangan industri hilir dan mempercepat transisi energi di Indonesia.",
+          "Liputan Khusus Hilirisasi & Smelter Nikel →"
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/brin-siapkan-riset-terintegrasi-untuk-dukung-hilirisasi-industri-energi/?utm_source=rss&utm_medium=rss&utm_campaign=brin-siapkan-riset-terintegrasi-untuk-dukung-hilirisasi-industri-energi",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "f0f3d474"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "00587c3981cb",
+      "title": "Hilirisasi Nikel Perlu Diperkuat hingga Produk Akhir, Bukan Sekadar Produk Antara - Media Nikel Indonesia",
+      "title_norm": "hilirisasi nikel perlu diperkuat hingga produk akhir bukan sekadar produk antara",
+      "url": "https://nikel.co.id/2026/10/29/hilirisasi-nikel-perlu-diperkuat-hingga-produk-akhir-bukan-sekadar-produk-antara",
+      "gnews_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd25mWWRQMmhhSVVfejFPQUlYQUVuTHc4MWFmZXhHZkt6ZlNQbk5iUVN1SEpWOWktVmJPX3I0R2w5dG1YUU9nRHJlV1pTUUFQZEthaWl6aklKaXdfYUh3V081Y2V4dmxUQURtd1NlcWxwSjV3U1BvQkJpVW5qUzh6aE80bHBDdnlHY2s5dzlmNm5fb2NVdmNYRmlBMGFpSGxqNEtsNTVNaVYycm1heXBHWU5B?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:08+00:00",
+      "score": 14,
+      "body": {
+        "status": "full",
+        "chars": 4629,
+        "sha256": "5e498e9fd1ddf79fb0e683d70f47297cd59064aaecd3ae8ba2ca177c1d3c99b6",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "Ia menjelaskan, potensi produksi bijih nikel dalam rencana kerja dan anggaran biaya (RKAB) 2027 telah melampaui 500 juta ton dan potensi produksi batu bara disebut telah mencapai lebih dari 1,2 miliar ton.",
+          "Kemudian, batubara sudah di atas 1,2 miliar ton sampai saat ini."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/29/hilirisasi-nikel-perlu-diperkuat-hingga-produk-akhir-bukan-sekadar-produk-antara/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "7329e2452859"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "fd64e2ff0bfc",
+      "title": "Bukan Sekadar Tambang, MIND ID Bangun Mesin Baru Pertumbuhan Ekonomi Indonesia",
+      "title_norm": "bukan sekadar tambang mind id bangun mesin baru pertumbuhan ekonomi indonesia",
+      "url": "https://ruangenergi.com/bukan-sekadar-tambang-mind-id-bangun-mesin-baru-pertumbuhan-ekonomi-indonesia",
+      "gnews_url": null,
+      "source": {
+        "name": "Ruang Energi (RSS)",
+        "domain": "ruangenergi.com",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-31",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:09+00:00",
+      "score": 13,
+      "body": {
+        "status": "full",
+        "chars": 5236,
+        "sha256": "b1219cea601b9e60219ac85e9c38bc3e91aec853f3ac0f0ace58a59d448fdfe2",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-31",
+        "quotes": [
+          "Kontribusi investasi terhadap pertumbuhan ekonomi nasional telah meningkat hingga mendekati 38%-39%, jauh lebih tinggi dibandingkan kisaran 28%-32% pada periode sebelumnya.",
+          "Dalam satu dekade terakhir, total realisasi investasi yang masuk ke Indonesia bahkan mencapai sekitar Rp9.100 triliun."
+        ],
+        "final_url": "https://www.ruangenergi.com/bukan-sekadar-tambang-mind-id-bangun-mesin-baru-pertumbuhan-ekonomi-indonesia/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "4a3f905e"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "a204d78f2594",
+      "title": "Kazakhstan Opens $15 Million Rare Metals Research Center with South Korea to Advance Critical Mineral - Rare Earth Exchanges",
+      "title_norm": "kazakhstan opens 15 million rare metals research center with south korea to advance critical mineral",
+      "url": "https://rareearthexchanges.com/news/kazakhstan-south-korea-rare-metals-center",
+      "gnews_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdMcWJVU29zRlQtbmlpQjljZDU1a3pCRUxvelBRcndlQWdYdWdOYlJXUmN2ZnRqTThQN1BDTkxPMlBEcUtOb1psRlJvcHl5MnVwaThQZldJS2ktbUFfX0hkaml4eWsxMjVGdk9SUnJSenZXTUxaM09ENFlfbXdTQkNDTTk?oc=5",
+      "source": {
+        "name": "Google News (KZ:en)",
+        "domain": "rareearthexchanges.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-22",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:11+00:00",
+      "score": 13,
+      "body": {
+        "status": "full",
+        "chars": 801,
+        "sha256": "9cd694779134a5081bad8bfff1c76b14f247edacc02d7a5fe7066743f6e18991",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-22",
+        "quotes": [
+          "- Kazakhstan and South Korea launched a five-year, $15 million rare metals research center at Satbayev University in Almaty on October 21.",
+          "- Radioactive byproducts such as thorium and uranium could complicate processing, permitting, and cross-border shipments from Kazakh feedstocks."
+        ],
+        "final_url": "https://rareearthexchanges.com/news/kazakhstan-south-korea-rare-metals-center/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Kazakhstan critical minerals Korea",
+          "priority_boost": 0,
+          "legacy_id": "473a5815b0c1"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "e2b8c6b74f02",
+      "title": "LS Cable & System, LS Eco Energy to Invest KRW 161.6 Billion in Korea-Vietnam Rare-Earth Magnet Supply Chain - 알파경제",
+      "title_norm": "ls cable system ls eco energy to invest krw 161 6 billion in korea vietnam rare earth magnet supply chain",
+      "url": "https://alphabiz.co.kr/news/articleView.html?idxno=190969",
+      "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iYWpFWnptUGxZQ29kaThINGJ0Q3ZLZkYwVUFTbmJDQ0xtYVBoUWQtVlNUMVlselhFU0s3Ml9TV3BnNWluLXBVYlU5VHBxcEFaeXgwRVhlSVp4ZzF3VkdkR1VndHZSYmdwSG9COEN3?oc=5",
+      "source": {
+        "name": "Google News (KR:ko)",
+        "domain": "alphabiz.co.kr",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "ko"
+      },
+      "published": "2026-10-01",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:13+00:00",
+      "score": 13,
+      "body": {
+        "status": "full",
+        "chars": 1998,
+        "sha256": "d91e1b2ff42936d47bcb528f0dff4c0da440960c9e5c7627a762cd407e0435b1",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-01",
+        "quotes": [
+          "30, LS Cable & System will invest KRW 150 billion in Korea Motion Works, a newly established company specializing in the manufacturing and sale of rare-earth permanent magnets.",
+          "LS Eco Energy will invest KRW 11.6 billion and hold a 58% stake in the company following the transaction."
+        ],
+        "final_url": "https://www.alphabiz.co.kr/news/articleView.html?idxno=190969",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Korea Vietnam rare earth",
+          "priority_boost": 0,
+          "legacy_id": "3176e420d950"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "d4eebb0b45ab",
+      "title": "Hilirisasi Mineral Indonesia Bidik Nilai Tambah Lebih Besar, MIND ID Buka Peluang di Tengah Minat Investor Tiongkok - Hallo Indonesia - Hallo Indonesia",
+      "title_norm": "hilirisasi mineral indonesia bidik nilai tambah lebih besar mind id buka peluang di tengah minat investor tiongkok hallo indonesia",
+      "url": "https://indonesia.hallo.id/bisnis/115617827455/hilirisasi-mineral-indonesia-bidik-nilai-tambah-lebih-besar-mind-id-buka-peluang-di-tengah-minat-investor-tiongkok",
+      "gnews_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOWjEzb2xnbmFtNUdDbzFiVVphU2htbmFlUk9YTUEySXFHdmJlaERrNGhBS3c4bjJZMWxSdlZoMC00ZDlrbGVWVWo4QmdTRFBvSHI2MUdyc2h2S0JfTU5FMHRyQl9ad0UxQ3BtODc2TzZZTFdTLXVKc3V1bnBZeGJUTXYzS1otVURUTDZLZm5GaUJDNjR4eDUwYkh4RG14dnNLWWhNYUxUa1ZEMmFNUEV2bEdSNEdlQVdDNVEwbjVuWnBNbUctdjZHRFNMaERWaFI1R2c5ZEQ3ck11a2c0TWV6UlJ3SEpGb0RjZy1QSHpwRDlOanfSAfgBQVVfeXFMUE4tUTVTTER0NFVPdS1jTGkyeFNwNldCZkM3a0g1M1h3ZzlqMm16MVdkMjFFakcwSE16UHhVZVF3Wl8wSVM5RWE3Vmwwdl9qclZpaUZJZEF0RnVfVHJVR2ttb3Rrd0xrTXU5TE1PS3ozckJJc3ZMcEwtbHRCQmRmZEhzNmxsUmZqYzQ3VjhYMnZJa3RQMUQ0YlhCT0t5ZDdISGUzLTVwZGZDeEtUb24yRnFKRHo0VzMtU1g1aUVsNlQ1TUJKTjkyazlFSG1Zcm14TXpNTF9MNUw5eThrMlh6MHdUdU1TUXVWbll1bkRzOTQyWjA5QU5JTFo?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "indonesia.hallo.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-28",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:14+00:00",
+      "score": 12,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://indonesia.hallo.id/bisnis/115617827455/hilirisasi-mineral-indonesia-bidik-nilai-tambah-lebih-besar-mind-id-buka-peluang-di-tengah-minat-investor-tiongkok",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia mineral strategis",
+          "priority_boost": 0,
+          "legacy_id": "7957c0fb3f56"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "e0746e13e3d0",
+      "title": "Hilirisasi Nikel, Jalan Panjang PT Vale Indonesia Ubah \"Tembaga Setan\" Jadi Logam Bernilai Tambah - Kompas.com",
+      "title_norm": "hilirisasi nikel jalan panjang pt vale indonesia ubah tembaga setan jadi logam bernilai tambah",
+      "url": "https://money.kompas.com/read/2026/10/31/213740726/hilirisasi-nikel-jalan-panjang-pt-vale-indonesia-ubah-tembaga-setan-jadi-logam",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVnpoQ0RaR3hZYzNOaWhzN0diMHotQkFSZmljYW9SaTg3WTY2bHV5YnFhVzVsWGJnOEZLRF9SNmcxVjlOeFMtYjFZNnBueHVlTEktTnhIZmdhNTBtR1lfMWhKblgtRXhScmRmLTlsQ3JPT2ljMGNoMmlpb2FnY0FWcy0wSHB6UDZZTl8tazBWQWVScUlXek84cnZvalZ6MXktWHp3ckEzTEtHTzJHLWNmMXpNaDB3LVJ0MGJFRFhLLWpMajM0VjZaRQ?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "money.kompas.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-31",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:14+00:00",
+      "score": 12,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "parse_fail",
+        "http_status": 202,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://money.kompas.com/read/2026/10/31/213740726/hilirisasi-nikel-jalan-panjang-pt-vale-indonesia-ubah-tembaga-setan-jadi-logam",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "7d6649ad671a"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "d43fbd45bbf9",
+      "title": "Ekonom nilai kebijakan hilirisasi nikel mulai ubah struktur ekonomi Indonesia - ANTARA News Sultra",
+      "title_norm": "ekonom nilai kebijakan hilirisasi nikel mulai ubah struktur ekonomi indonesia",
+      "url": "https://sultra.antaranews.com/berita/542832/ekonom-nilai-kebijakan-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeEZvbkliTl9PSU9iR1FGYkZQMUtqNUFqX05OeGtyT2VEal8yMGFOakVoR0pmaWY5c1BOdDRhQno5cldCXzNOTFZKUE1BQldvMHo0bVQ2czBGSjlrYkJaQ1YzNkZ3cERWUGZpbXoycTNqMUFDSXJZSzJPblhDUU9IeEd0THZvVVhwcFdLek1kWXotbXFBd3pXS2VYbktYYUtXMzBrVFJrRWZJcFNWTzZEZS0yTVVwcjBkMnVLNHB3?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "sultra.antaranews.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-11",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:15+00:00",
+      "score": 12,
+      "body": {
+        "status": "full",
+        "chars": 4662,
+        "sha256": "c590037da70737c2d627176a54bc981c78f0c064dffc9e3ad37af2a451c0b519",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-01",
+        "quotes": [
+          "Pada semester I-2026, nilai ekspor nikel dan barang meningkat 69,3 persen menjadi 6,54 miliar dolar Amerika Serikat (AS) atau sekitar Rp117,05 triliun dibandingkan periode yang sama tahun sebelumnya.",
+          "Produksi bijih nikel per 1 September 2026 tercatat 173,79 juta ton."
+        ],
+        "final_url": "https://sultra.antaranews.com/berita/542832/ekonom-nilai-kebijakan-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "4a8d83bcc017"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "0b3ccf986adc",
+      "title": "MIND ID Beber Berkah Hilirisasi Bauksit dan Nikel ke Ekonomi RI - CNN Indonesia",
+      "title_norm": "mind id beber berkah hilirisasi bauksit dan nikel ke ekonomi ri",
+      "url": "https://cnnindonesia.com/ekonomi/20261030182511-625-1421602/mind-id-beber-berkah-hilirisasi-bauksit-dan-nikel-ke-ekonomi-ri",
+      "gnews_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYmdPTlZEM3dvR0thaDhjUHFlY2pDNVdhVlRyQUhQSnA5aW9qczhrNklHYU1MOUJWQ2VqMzVWeFZ6M1hlWnd0LWY0R05RdUtsNjZpTndDVzdSZy1BOE5naW15Y0Q1Z0VOX0lFSDBkcDUtVXRhNnhhN1g4LTUyZmhYa2lfNkozN2Jya2k0dlFEVmZvdXBIczVYc1RHWk5jUm5DVDQ1Tk5RcDFNbVRpamF3MkJHcVRXWnM5YklGaEd5X2dtQzJWM3fSAcsBQVVfeXFMTmZMRTJuSmpwZk1PNkoxeWdaVEpBVmdEQk5RUHY3RHI3U0lJby1DamN1VlBNdkhyX1gteWFKeE5WVld0RFR0OWhUeEdmTG5zZ0ZkZjVqQTF6bzA1VndpVnp5cE9heEhJWk5YQ3BocC1rdk9RWENzd2I3NUdmMThuUXpDMnpSdjNRV3Boa3kzYnJDZlpWVFExNzkwdzhEYk5faFRRWWh3ZUJ3WlpLUE1GXzRSOWQzNlpEdDZZOTRobzZ5ODYxN1JXQlZXVVE?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "cnnindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:16+00:00",
+      "score": 12,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://www.cnnindonesia.com/ekonomi/20261030182511-625-1421602/mind-id-beber-berkah-hilirisasi-bauksit-dan-nikel-ke-ekonomi-ri",
+        "strategies_tried": [
+          "amp",
+          "feed"
+        ]
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "5754b13ab263"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "4c4c40c27c5b",
+      "title": "PT Vale Indonesia Mengubah Nikel Menjadi Nilai Tambah di Tengah Tantangan Hilirisasi Berkelanjutan - gadget.qoo10.co.id",
+      "title_norm": "pt vale indonesia mengubah nikel menjadi nilai tambah di tengah tantangan hilirisasi berkelanjutan",
+      "url": "https://gadget.qoo10.co.id/bisnis/pt-vale-indonesia-hilirisasi-nikel",
+      "gnews_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBZVmNXbVVia0l5bGEyeWVDNkd1OUFKdF9ENklXNFF2WmZpbzlvcVlfbmM0V3F0TmFHZlhXemZlZDNoQjYzMUlteVlUdHJOUWEzUzUyZnFOYUk5d2ItV01DSHF6M1Z0STViZzFmcDM2bkJzQkpTdkJUeA?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "gadget.qoo10.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-31",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:16+00:00",
+      "score": 12,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://gadget.qoo10.co.id/bisnis/pt-vale-indonesia-hilirisasi-nikel/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "3d7a6a1c62e9"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "7a6d8272bdb3",
+      "title": "United Tractors Dukung Talenta Muda Indonesia di WorldSkills Competition Shanghai 2026",
+      "title_norm": "united tractors dukung talenta muda indonesia di worldskills competition shanghai 2026",
+      "url": "https://tambang.co.id/united-tractors-dukung-talenta-muda-indonesia-di-worldskills-competition-shanghai-2026",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-28",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:18+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 2558,
+        "sha256": "bcea651bf8c8c6d6df21291a98ea5c46e1d04cf361311bb791ed20d1084ede8e",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-28",
+        "quotes": [
+          "Jakarta, TAMBANG - PT United Tractors Tbk (UT), kembali mendukung pengembangan talenta muda Indonesia di bidang teknologi alat berat melalui ajang WorldSkills Competition (WSC) 2026 di Shanghai, Tiongkok."
+        ],
+        "final_url": "https://tambang.co.id/united-tractors-dukung-talenta-muda-indonesia-di-worldskills-competition-shanghai-2026/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "c6657e6c"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "1a7f43b8710d",
+      "title": "Aktifkan Emergency Management Team, NHM Perkuat Penanganan Karhutla",
+      "title_norm": "aktifkan emergency management team nhm perkuat penanganan karhutla",
+      "url": "https://tambang.co.id/aktifkan-emergency-management-team-nhm-perkuat-penanganan-karhutla",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-28",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:19+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 4648,
+        "sha256": "a373af066ffd1b8d918564380088939bbcbbb494ddeb819518f7201fab6fd686",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-28",
+        "quotes": [
+          "Kondisi ini turut menjadi perhatian bersama bagi pemerintah daerah, masyarakat dan khususnya PT Nusa Halmahera Minerals (NHM) di kawasan Tambang Emas Gosowong."
+        ],
+        "final_url": "https://tambang.co.id/aktifkan-emergency-management-team-nhm-perkuat-penanganan-karhutla/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "0ffc2ff9"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "2d7c49cdaa80",
+      "title": "Dari Penjualan Bijih Nikel dan Nikel Matte, PT Vale Bukukan Pendapatan USD 896 Juta",
+      "title_norm": "dari penjualan bijih nikel dan nikel matte pt vale bukukan pendapatan usd 896 juta",
+      "url": "https://nikel.co.id/2026/10/30/dari-penjualan-bijih-nikel-dan-nikel-matte-pt-vale-bukukan-pendapatan-usd-896-juta",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:20+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 4902,
+        "sha256": "a4203f25f090edc2a6c5b9e78820a9f4c7c89af290a07233d2e14ac7e8f5e3d8",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA – PT Vale Indonesia Tbk (INCO), sepanjang Januari hingga September 2026 membukukan pendapatan sebesar USD 896 juta.",
+          "Capaian tersebut meningkat 27% dibandingkan periode yang sama tahun sebelumnya sebesar USD 705 juta."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/dari-penjualan-bijih-nikel-dan-nikel-matte-pt-vale-bukukan-pendapatan-usd-896-juta/?utm_source=rss&utm_medium=rss&utm_campaign=dari-penjualan-bijih-nikel-dan-nikel-matte-pt-vale-bukukan-pendapatan-usd-896-juta",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "150a9a8d"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "1a323c00297d",
+      "title": "Казахстану потребуется до 300 тысяч тонн урана для работы будущих АЭС на 100 лет - Казинформ",
+      "title_norm": "казахстану потребуется до 300 тысяч тонн урана для работы будущих аэс на 100 лет",
+      "url": "https://inform.kz/amp/kazahstanu-potrebuetsya-do-300-tisyach-tonn-urana-dlya-budushih-aes-59b80b99",
+      "gnews_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS2R5a2pHYURMVmlXVUhnbGZSYm8yWm9mU2QtZDFyT0F5Z0VQX250dFMta3d6blZ0VFVoLUZyOE1UMWZYZWNsU2lsNERrdE0wbUJoR3hWT3NaMFZoa3FSem9BbjVmVXp4SnRmek05NFRRWm92XzBCclNBX0d2RXNjdDhtcVV5TFdTWm5xY0d2Q2lRUndGdGxlMkVKYWFkbi14YmxpZQ?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "inform.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:20+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 820,
+        "sha256": "7770bee098fe2380ac56363d27f94b41f33b98943b2a0be2b30bce3375d8b50c",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [],
+        "final_url": "https://www.inform.kz/amp/kazahstanu-potrebuetsya-do-300-tisyach-tonn-urana-dlya-budushih-aes-59b80b99",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "48a2e7e2b192"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "e7c51cc2a283",
+      "title": "PLN EPI Dorong Penguatan Ekosistem Biomassa untuk Mendukung Transisi Energi",
+      "title_norm": "pln epi dorong penguatan ekosistem biomassa untuk mendukung transisi energi",
+      "url": "https://ruangenergi.com/pln-epi-dorong-penguatan-ekosistem-biomassa-untuk-mendukung-transisi-energi",
+      "gnews_url": null,
+      "source": {
+        "name": "Ruang Energi (RSS)",
+        "domain": "ruangenergi.com",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:22+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 5879,
+        "sha256": "2eb5086d457f2ff165110e34b07abc617806afdd42f399491ec39b63bdd3b22e",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Berdasarkan pemetaan PLN EPI, potensi biomassa sekitar 83,4 juta ton per tahun berasal dari berbagai sumber, antara lain residu kelapa sawit, limbah kayu, sekam padi, residu pertanian, dan limbah agroindustri."
+        ],
+        "final_url": "https://www.ruangenergi.com/pln-epi-dorong-penguatan-ekosistem-biomassa-untuk-mendukung-transisi-energi/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "6dce9c6c"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "59be9f67aaae",
+      "title": "Tổng giám đốc khoáng sản TKV bị khởi tố; xăng và điện cùng giảm hôm nay",
+      "title_norm": "tổng giám đốc khoáng sản tkv bị khởi tố xăng và điện cùng giảm hôm nay",
+      "url": "https://vietnamnet.vn/tong-giam-doc-khoang-san-tkv-bi-khoi-to-xang-va-dien-cung-giam-hom-nay-2570365.html",
+      "gnews_url": null,
+      "source": {
+        "name": "VietnamNet - Kinh doanh (RSS)",
+        "domain": "vietnamnet.vn",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "vi"
+      },
+      "published": "2026-11-01",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:26+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 5235,
+        "sha256": "1070fd537ac7520354efb91b3b45c5f2db09dd4775d8eb78e52f6c5361fcf6bc",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-01",
+        "quotes": [
+          "CTCP Tập đoàn Hòa Phát (HPG) đạt doanh thu gần 62.700 tỷ đồng trong quý III, tăng 70% so với cùng kỳ; lợi nhuận sau thuế đạt 8.265 tỷ đồng, tăng hơn gấp đôi.",
+          "Lũy kế 9 tháng, doanh thu đạt hơn 171.500 tỷ đồng, tăng 54%, còn lợi nhuận sau thuế đạt hơn 23.700 tỷ đồng, tăng 104%."
+        ],
+        "final_url": "https://vietnamnet.vn/tong-giam-doc-khoang-san-tkv-bi-khoi-to-xang-va-dien-cung-giam-hom-nay-2570365.html",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "c46519f2"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "587fe5d1856a",
+      "title": "Maslahi ya taifa yawe kipaumbele mikataba ya madini",
+      "title_norm": "maslahi ya taifa yawe kipaumbele mikataba ya madini",
+      "url": "https://habarileo.co.tz/maslahi-ya-taifa-yawe-kipaumbele-mikataba-ya-madini",
+      "gnews_url": null,
+      "source": {
+        "name": "HabariLeo - Madini (RSS)",
+        "domain": "habarileo.co.tz",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "sw"
+      },
+      "published": "2026-10-06",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:28+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 4819,
+        "sha256": "b67f5fcc906ac6947a7402ae199560bd4a33fd45f63e89030446cbb96e86be04",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-06",
+        "quotes": [
+          "Vikwazo vya mauzo pia vilisababisha kuongezeka kwa akiba ya cobalt katika baadhi ya vipindi."
+        ],
+        "final_url": "https://habarileo.co.tz/maslahi-ya-taifa-yawe-kipaumbele-mikataba-ya-madini/?utm_source=rss&utm_medium=rss&utm_campaign=maslahi-ya-taifa-yawe-kipaumbele-mikataba-ya-madini",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Tanzania",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "944bca7d"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "be1c5c070d12",
+      "title": "Perseus Mining secures backup power for Nyanzaga gold project",
+      "title_norm": "perseus mining secures backup power for nyanzaga gold project",
+      "url": "https://mining.com/perseus-mining-secures-backup-power-for-nyanzaga-gold-project",
+      "gnews_url": null,
+      "source": {
+        "name": "Mining.com - All news",
+        "domain": "mining.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-10-30",
+      "published_from": "rss",
+      "collected_at": "2026-11-01T02:00:28+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 1484,
+        "sha256": "0470386fa1da1bfcbb33e18c0c9dc46f60a69da18426628facaf0e367b3f6bf5",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Perseus is looking to pour first gold at Nyanzaga in northwestern Tanzania in January 2027, a project that once fully operational will account for 28% of the company’s gold production until the end of the decade.",
+          "Perseus Mining secures backup power for Nyanzaga gold project"
+        ],
+        "final_url": "https://www.mining.com/perseus-mining-secures-backup-power-for-nyanzaga-gold-project/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Tanzania",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "30f5f3ff"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "003d7dc1c5d1",
+      "title": "Dewan Energi Nasional Dorong Hilirisasi Nikel untuk Perkuat Ketahanan Energi Indonesia - Media Nikel Indonesia",
+      "title_norm": "dewan energi nasional dorong hilirisasi nikel untuk perkuat ketahanan energi indonesia",
+      "url": "https://nikel.co.id/2026/10/30/dewan-energi-nasional-dorong-hilirisasi-nikel-untuk-perkuat-ketahanan-energi-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObDZZeENEODJlNWljLUxRdlJNN3BvX3J6MmxBczM5TXJfN2pNLXpnTnRvOG9YMXFRZC1sSEZHVFBGU3hraUpvQ1NmV01wNXJfVzRuUnpLbDE5YmxRdW8xMVFrR3hhenBOa1M3bzNxOTl6eHN1WDBKbWI3NlJSREpLTU5qTlZSMXppQkszY0tmdDVxeU83bkpkdmtvbXBBQ1ZlN1pMUzVCUlh5S3V4cVZhQmlUZmdULTFSZkE?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:29+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 3518,
+        "sha256": "8c26e885cbd437bfc09bfdd3ee8b20cd27483ae13100c7787e5c9f9faa775f3d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Langkah tersebut dinilai penting untuk meningkatkan nilai tambah sumber daya mineral sekaligus memperkuat ketahanan energi nasional.",
+          "Indonesia memiliki posisi strategis sebagai salah satu negara dengan sumber daya dan industri nikel terbesar di dunia."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/dewan-energi-nasional-dorong-hilirisasi-nikel-untuk-perkuat-ketahanan-energi-indonesia/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "ab38d4cc47d1"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "a97677053ebe",
+      "title": "Hilirisasi Nikel Sampai Baterai Jadi Game Changer Ekonomi RI - CNBC Indonesia",
+      "title_norm": "hilirisasi nikel sampai baterai jadi game changer ekonomi ri",
+      "url": "https://cnbcindonesia.com/news/20261029130349-4-780556/hilirisasi-nikel-sampai-baterai-jadi-game-changer-ekonomi-ri",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeGQ0cWFlYVQtRUtQUzltcUFDUTExa1ZzODl5SGxDUEltOXB6U1czb2FUVjlyb0xTZEJudFBBQzJlejdkR1dtQ2ZXNDJJcXBINlZ1YXdOVlpnakZyanNxRzd1a1VLUC1USV8waDgxZDRwbHRxQTJ4VlFrNkVXNVB4eWJtSzdPeHo0QXhXNU9RMk9kWXJoWVZNZ3k2eTVURGpmbkk0aU1wRnJwcXJfeTRJdXJXemRGLW8teTJ30gHAAUFVX3lxTE9HbHZWUWI1cFlvWmJpSm9wbjVud1dhX1RaeW5fRWNoWndaZzcxTzA5d2pyeFdMRFZ3cHhhQ0pjblB2RGI0N3AxNFZocWc5UVZNalRhTmkyaTZ4TGdfXy1mTUNuUzRsQUJjNl9lQ0lfM21ZUy12ME1fMWdWMTR2bTVVSUY1bGVFY0E1UTZGbkljWkx5VVVxOUQxUjlGWG5qbUF1cVlzd1o4SkpMbklCZGFIcUlzTVByLXZlME5WdHZ6Yg?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "cnbcindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:32+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 2659,
+        "sha256": "b94383315e7eb1babfbea6558d291389a36b961e40a81d2e4a32f538a5c43c68",
+        "source": "reader_proxy",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [
+          "\"Jenis baterai yang kita punya masih nikel base, kalau baterai lithium itu masih impor, sehingga harus ada pendorong agar Indonesia bisa memproduksi baterai lithium,\" ucapnya.",
+          "Hilirisasi Nikel Sampai Baterai Jadi Game Changer Ekonomi RI"
+        ],
+        "final_url": "https://www.cnbcindonesia.com/news/20261029130349-4-780556/hilirisasi-nikel-sampai-baterai-jadi-game-changer-ekonomi-ri",
+        "strategies_tried": [
+          "amp",
+          "feed",
+          "reader_proxy"
+        ]
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "0bb157ca5bbd"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "31255679e3ef",
+      "title": "Sinergi Hilirisasi Nikel Indonesia - SigapNews",
+      "title_norm": "sinergi hilirisasi nikel indonesia",
+      "url": "https://sumbar.sigapnews.co.id/umum/sn-131452/sinergi-hilirisasi-nikel-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmNHeTRTWk01aGppVmlKb0drc0Q5Y3hLdFJoVkNJMGhLU2tyVTJHV0lId0pPdDJyVzkwdGlvakNlbkJRM1dUSUJsMGc5SUNLNkR3aEpXS2hXcXdKRVZuZlFfZXB5cU1CX3dwMjI4b0l3U2dGYlg5R2ZGZ3ZUMVZrOGMyMnhrVUE?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "sumbar.sigapnews.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:33+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 1054,
+        "sha256": "1db83afbaeb923dbf7be7df8accf15d46b903e9a0017e8dd592def7c85a8f3ef",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Pengembangan tambang dan fasilitas HPAL Pomalaa diperkirakan menelan investasi sekitar US$4,5 miliar."
+        ],
+        "final_url": "https://sumbar.sigapnews.co.id/umum/sn-131452/sinergi-hilirisasi-nikel-indonesia",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "abacc10090b4"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "5426260b0cd7",
+      "title": "Krakatau Steel Mulai Merambah ke Hilirisasi Nikel - Media Nikel Indonesia",
+      "title_norm": "krakatau steel mulai merambah ke hilirisasi nikel",
+      "url": "https://nikel.co.id/2026/10/29/krakatau-steel-mulai-merambah-ke-hilirisasi-nikel",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLWk2WVoyOHNxVUN1SkVJSGZOc0hDSFRjempCbE5SNFZYVEh2aktYTjZVbEVVdVFhemQzZVZCd28xWnh1YlYxd0stRWRKLXFrWjJtVnhuRURkNU0zRG1vVm5XeFlLTllNU3ctbEh1M3dPZ2dIYVdJZUFxbENIUHdqSVF4aEY2cUlW?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:33+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 3704,
+        "sha256": "d5d039a47aea04f18e59fd0408b224af91e3c698a0238c47f0232e28a3725114",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "Dalam website resminya, dikutip Kamis (29/10/2026), KRAS merencanakan investasi pada proyek hilirisasi Ini, menurut Sidik, estimasinya sebesar US$350 juta, dengan proyeksi pendapatan tahunan lebih dari US$2 miliar.",
+          "Liputan Khusus Hilirisasi & Smelter Nikel →"
+        ],
+        "final_url": "https://nikel.co.id/2026/10/29/krakatau-steel-mulai-merambah-ke-hilirisasi-nikel/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "9030fef1455d"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "92ca633707a7",
+      "title": "Satgas Hilirisasi Percepat Investasi, Bantu Atasi Hambatan Proyek - Media Nikel Indonesia",
+      "title_norm": "satgas hilirisasi percepat investasi bantu atasi hambatan proyek",
+      "url": "https://nikel.co.id/2026/10/30/satgas-hilirisasi-percepat-investasi-bantu-atasi-hambatan-proyek",
+      "gnews_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa2ZKSHFlMGhJNGhKdHlOMFFUWm02dEpFZG9EQ2NEY1A4ajA2c0NJcnFvVVV0V21SVFB5NmFncmRJUlFkTnYzYXc4SFN5Z3l6UWM2OWpnQ3psMlg4d085bEFEMjJCLWVTMzJKS1NvbFJfa2ROS1cweFFLdS1kTDdaZ2N0bEZzLWVyRV92Uk1DLWdRWXJQamh5OVpvcXE?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:34+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 3489,
+        "sha256": "91dea37145208c211e0b03148cfaebeef8029192326dee43d556df3e8be18f45",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA – Satuan Tugas (Satgas) Hilirisasi memiliki dua tugas utama dalam mendorong percepatan program hilirisasi nasional.",
+          "Sekretaris Jenderal Kementerian Energi dan Sumber Daya Mineral (ESDM) Prof."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/satgas-hilirisasi-percepat-investasi-bantu-atasi-hambatan-proyek/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "3c981a19f5e6"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "fe4ef8ac3ece",
+      "title": "BRIN Siapkan Riset Terintegrasi untuk Dukung Hilirisasi Industri Energi - Media Nikel Indonesia",
+      "title_norm": "brin siapkan riset terintegrasi untuk dukung hilirisasi industri energi",
+      "url": "https://nikel.co.id/2026/10/30/brin-siapkan-riset-terintegrasi-untuk-dukung-hilirisasi-industri-energi",
+      "gnews_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQenNlNmtMU0hXTGs3QU54dVBjU051NVpDWWl1S09Gbjc5VXVXNzBzOFIwSXRsQUw2T1RzNkcxNWY2bHYtRE40VU5pWGp6RUhQcWs0cFZTbWd1RG13eEdVdjh3dENSM3lxSzR5MG5Fd1pQNV9lRzhIZGd3UWo1UHYwNnVyMDFGN1Z2VHo0ZW5zbWh0dmt6dkRmZjV0SEdkaVAtRE91R2lR?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:35+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 6698,
+        "sha256": "cc1fff8d1922c4518fcb117f17e8cfd484bc912be3dc27f8bd57169742a6e62d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA — Badan Riset dan Inovasi Nasional (BRIN) mendorong penguatan riset terintegrasi untuk mendukung pengembangan industri hilir dan mempercepat transisi energi di Indonesia.",
+          "Liputan Khusus Hilirisasi & Smelter Nikel →"
+        ],
+        "final_url": "https://nikel.co.id/2026/10/30/brin-siapkan-riset-terintegrasi-untuk-dukung-hilirisasi-industri-energi/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "a13e1cc8da19"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "b2c1bed2be44",
+      "title": "Tak Cukup Hilirisasi Tambang, RI Butuh Bangun Ekosistem Industrinya - CNBC Indonesia",
+      "title_norm": "tak cukup hilirisasi tambang ri butuh bangun ekosistem industrinya",
+      "url": "https://cnbcindonesia.com/news/20261029165141-4-780666/tak-cukup-hilirisasi-tambang-ri-butuh-bangun-ekosistem-industrinya",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNamdhazJfamNYa2NPbFZkVkVsQVBkbnFPUHQtdy1HQ2RGNzVYSDNvOVlJaXFRbnVqcTNIZXV4TGdCaGpQNktYd29PWVpJR05mV3ZDR2pwQnRtQkl4Q01tRzJ1QmE1Z3BKalIxLXB0NGlrS3gteVVwUEZ0X2NScWFCOTZfWXo4Rm12NFZZY0dQNHBxZFBEZUhEa09HX0pOM3ZZbmdSRVY3b3U0a1ljTFBhUENrcEJsWnU1NWxDV1RPN1dZMzjSAcgBQVVfeXFMUDdkdHV6VzdQZURlTDlmdmZmR01wWnZ5X2RhMHNheW5tYTZHTDYxOVVndHJzYkFDUDBFckNVd0hZcFU3RzFYTnZ1R1FSb0tadnMyRmhIUEVpOU4yQWVyUTdVZVhVQk9YdWpRZV9MTTZpd1BYekdlT0xHOTB1Wjh1QmQ5LXZiTDAwOTg0TkVNZUpTV1BrQlJqbVZROEVvYVQ5ZEdzbkdrRTNlaHZMTzVXTHotWGxZblpaQXFUcG9BWW5wcGhkS3NUeWw?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "cnbcindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:36+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 4129,
+        "sha256": "35b49469d020b4059fc4f49176a0d675495680d961785f3d875b53002d30f3ef",
+        "source": "reader_proxy",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [
+          "Ketua Umum Forum Industri Nikel Indonesia (FINI) Arif Perdana Kusumah sempat mengungkapkan sekitar 75-80% kebutuhan impor sulfur Indonesia pada 2025 berasal dari Timur Tengah.",
+          "Adapun dari total sekitar 5,3 juta ton impor, porsi terbesar disuplai oleh negara-negara di kawasan tersebut."
+        ],
+        "final_url": "https://www.cnbcindonesia.com/news/20261029165141-4-780666/tak-cukup-hilirisasi-tambang-ri-butuh-bangun-ekosistem-industrinya",
+        "strategies_tried": [
+          "amp",
+          "feed",
+          "reader_proxy"
+        ]
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "9ac775bda7da"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "790dba5fe9b3",
+      "title": "Indonesia Perkuat Industri Nikel Lewat Hilirisasi Berkelanjutan - شبكة تواصل الإخبارية",
+      "title_norm": "indonesia perkuat industri nikel lewat hilirisasi berkelanjutan",
+      "url": "https://twaslnews1.twaslnews.com/6913904",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfS3VEbnlVdFI3SXRpM3hhS2dFekdmbW5sb2hJbzYxVk1qX1pDM0VlNkw2ZmNod3dudzZCWmhNSGJZd0Z5Q2Nsa0FVQmVkSVpxNkZJ?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "twaslnews1.twaslnews.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-31",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:37+00:00",
+      "score": 9,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://twaslnews1.twaslnews.com/6913904/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "f4b87f7c6f8c"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "312821c69935",
+      "title": "Dari Bijih Nikel ke Baterai: Perubahan Arah Hilirisasi dan Energi Indonesia - patrolihukumindonesia.com",
+      "title_norm": "dari bijih nikel ke baterai perubahan arah hilirisasi dan energi indonesia",
+      "url": "https://patrolihukumindonesia.com/dari-bijih-nikel-ke-baterai-perubahan-arah-hilirisasi-dan-energi-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcmo4TzhNRWN5a1lkUmxkNlRJYS1SaUstVXJoOGhxdDlDRmhWYWt4VkxvVEU3Tnp3OXhUVE5SblBwZGN0d012VTNaQURwZmExdzBkbGdPWWJoTVdQUHd2RmczNllKUEFvYUZRQTIxMTBwb3RWd3ZwdzBDbkpRUWdZTWpTSGRqcF9kY01aTURTZDNQeElQdGZ4QmVFQkp0dHZvQ2VTY3ZReEZIMi1YdGc?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "patrolihukumindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:38+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 8889,
+        "sha256": "2edc67fde040fc8f85bffa226023e7c56a59715bd43f4afa9bfb7750631f312a",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Jakarta | Hilirisasi pertambangan Indonesia mengalami perubahan arah yang semakin nyata.",
+          "Jika sebelumnya pengolahan mineral kerap dipahami sebagai proses mengubah bahan mentah menjadi produk setengah jadi, perkembangannya kini mencakup tahapan yang lebih lanjut."
+        ],
+        "final_url": "https://patrolihukumindonesia.com/dari-bijih-nikel-ke-baterai-perubahan-arah-hilirisasi-dan-energi-indonesia/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "8e74b2e4cda5"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "ef55e275ae55",
+      "title": "Hilirisasi Tambang Dinilai Bisa Memperkuat Industrialisasi Indonesia - patrolihukumindonesia.com",
+      "title_norm": "hilirisasi tambang dinilai bisa memperkuat industrialisasi indonesia",
+      "url": "https://patrolihukumindonesia.com/hilirisasi-tambang-dinilai-bisa-memperkuat-industrialisasi-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYk5XeWhIdWYzR2ZVXzZLd3JlRmI3TjRjS3Q1dktQUExRR0QzOUJ1YjhnamZUNGFTRldVa2pCMkhLUC1iX0hTUWxjMU5qdUxtUzFYR242b2UzUWdRZHlCeklUQjVWdjlZU3ZqcktzNFcwR3dWSEZZU1l3bWR2VjNDOU5jQkFHTnJSejRhV2tYVVBFdlUxYWpIWFVQX045ZzJaWno2WllR?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "patrolihukumindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:39+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 8761,
+        "sha256": "24c662d626b94639a37592e235658fdf45bad1bf7458f065b242841a656b795a",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "Dalam perkiraan yang ia paparkan, penduduk usia produktif pada 2030 diperkirakan mencapai hampir 70 persen dari jumlah penduduk.",
+          "Bagi Indonesia, rentang 2021–2040 dan perkiraan hampir 70 persen penduduk usia produktif pada 2030 merupakan kesempatan yang perlu disertai dukungan industri."
+        ],
+        "final_url": "https://patrolihukumindonesia.com/hilirisasi-tambang-dinilai-bisa-memperkuat-industrialisasi-indonesia/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "331ba34c3a99"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "a4759c2f34d5",
+      "title": "Data Center Hingga Energy Storage Jadi Sasaran Hilirisasi - Media Indonesia",
+      "title_norm": "data center hingga energy storage jadi sasaran hilirisasi",
+      "url": "https://mediaindonesia.com/ekonomi/949702/data-center-hingga-energy-storage-jadi-sasaran-hilirisasi-",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTUdvZWQ4emRJdnhpMjh6NW8xeS1heVJldl8xNmZ0aDNERFQyZF9BaTRRQzd2ZTZwX3puSW95bnhlZGJ6dnlnaXJHRUdHS0ZIR1A4bGVHZVZVWFU1SXBpazhCS2diOTloel9oY0o4NEppTkFfVWw1dlktNVFhRDFyc0oxNUpCcjVJbGRvdWFMak9IWEtHQzV2TzgtaV9QOEhad2c?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "mediaindonesia.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-28",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:40+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 3062,
+        "sha256": "089f1b10cb92dc32b0ee2aad758852584024c7dfadce595fcf296940d610817b",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-28",
+        "quotes": [
+          "Adapun produksi nikel Indonesia terkonsentrasi di Maluku Utara, yakni sebesar 38%; Sulawesi Tenggara sebesar 36%; dan Sulawesi Tengah sebesar 21%.",
+          "“Indonesia menerapkan hilirisasi secara selektif, bukan hilirisasi tanpa pertimbangan ekonomi,” ujar Yan."
+        ],
+        "final_url": "https://mediaindonesia.com/ekonomi/949702/data-center-hingga-energy-storage-jadi-sasaran-hilirisasi-",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "33bcf6d333d4"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "d572a9ff3c23",
+      "title": "Indonesia Perkuat Industri Nikel Lewat Hilirisasi Berkelanjutan - SuaraGarut.ID",
+      "title_norm": "indonesia perkuat industri nikel lewat hilirisasi berkelanjutan",
+      "url": "https://suaragarut.id/industri-nikel-indonesia-hilirisasi",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sR044R1YyTDI3bW5ILTVRa2R2d1M0cE94TXVDX0UxUlVTelppX2RMWGpham53UUhtWXo2UVdHY0RxMjMtNW9aak0xWTNCemU0R1ltbC11YVAxdTEzSXZCNDdDRElVVjVp?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "suaragarut.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-31",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:41+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 15318,
+        "sha256": "ec7911c3e2f0483899a90525edb97854702fd39b5e160da6ca34c80170e92bfe",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-31",
+        "quotes": [
+          "Data Organisasi Kerja Sama dan Pembangunan Ekonomi (OECD) menunjukkan bahwa industri baja tahan karat menyerap sekitar 64 persen konsumsi nikel dunia pada 2024.",
+          "Industri baterai menyumbang sekitar 15 persen."
+        ],
+        "final_url": "https://suaragarut.id/industri-nikel-indonesia-hilirisasi",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "a5237f3f2053"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "fdb25fbf0248",
+      "title": "Hilirisasi Dongkrak Ekspor Nikel Indonesia hingga Rp472 Triliun - CentralBatam",
+      "title_norm": "hilirisasi dongkrak ekspor nikel indonesia hingga rp472 triliun",
+      "url": "https://centralbatam.co.id/hilirisasi-dongkrak-ekspor-nikel-indonesia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2WkpCSWZBRXhrZU9SQnpvSC1pd3VLVUI5V0N0RlZreUJtRWh2VnVPS090OWpkZFJILV9OZVZ5ckh2dWMxUDdJVHR1ZUdlb28yR1lDMWUxSnlVdV95d0ZILWc0NEZ2d2xXbFZDVkFIeUlwakFITnJ2Nw?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "centralbatam.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-28",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:41+00:00",
+      "score": 9,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://centralbatam.co.id/hilirisasi-dongkrak-ekspor-nikel-indonesia",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "c29991e233dd"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "781a5873e623",
+      "title": "Ekspor Nikel Indonesia Meningkat, Nilai Tambah Sel Baterai Capai 67,7 Kali Dibandingkan Bijih Nikel Mentah - Hallobisnis.com - Hallo Bisnis",
+      "title_norm": "ekspor nikel indonesia meningkat nilai tambah sel baterai capai 67 7 kali dibandingkan bijih nikel mentah hallobisnis com",
+      "url": "https://bisnis.hallo.id/bisnis/7317827860/ekspor-nikel-indonesia-meningkat-nilai-tambah-sel-baterai-capai-677-kali-dibandingkan-bijih-nikel-mentah",
+      "gnews_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOd3UwdnZuanZGWFJiVG9zUWtaeDI5RmdmLUlMMng0a2FvX2lZd3B5SkE1SVNwX25rY3dQVVZrQ2ItSXFETzk4bFJJOXd4MlhkdTF0ektwQy1KUkQxQUQ5VUdUVkdQOFFLYlcxajZLZzNWMFQzSnEtNllfU3dFS1U0ZjNmemZkd1JiSEZ4SnNHMTJqSVJ3di1pdjZkSEtaVEE1aFlKdTY5RlQ3YU9HR2ZSZGhOUWxXdG8wQk1NYXQwV2k3YTNmelEyZnNwczVQMlc1cmVqOWVSMFdyRXJMUWNJ0gHkAUFVX3lxTFB0MFRCSzRzNmo2UHE0bzBtbFFNZG5iVmFqRFJ5d2NZb2YzaHpwZC1OYmkxLVlOdWNiZk1ENnRXamx1U2o3RGhUSjRmdXpydy15cTBkbHJVRnFXS3lTTlNrOHF0OXN5RGxqQ0lxT0M4NUoxeUdZVjhRWl9IME5BVUczWmxmdHM4TS1CRklDMFBENURkcWl2Y0J3NXNOd2VFdEZjOTJpdEVIUFhuUllHQWEwZ1huZjcxaXhJOWYzeFdFX2RlNmNLekFOLVUxRVl6SXp4SGJ2dExySlFRUDQ3T1FBS2lKXw?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "bisnis.hallo.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:41+00:00",
+      "score": 9,
+      "body": {
+        "status": "title_only",
+        "chars": 0,
+        "sha256": null,
+        "source": "none",
+        "block_type": "bot_block",
+        "http_status": 403,
+        "extracted_date": null,
+        "quotes": [],
+        "final_url": "https://bisnis.hallo.id/bisnis/7317827860/ekspor-nikel-indonesia-meningkat-nilai-tambah-sel-baterai-capai-677-kali-dibandingkan-bijih-nikel-mentah",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "c643d3168dcd"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "3f7e5770933f",
+      "title": "Indonesia rintis kolaborasi pengolahan logam tanah jarang dengan Gabon - ANTARA News Makassar",
+      "title_norm": "indonesia rintis kolaborasi pengolahan logam tanah jarang dengan gabon",
+      "url": "https://makassar.antaranews.com/berita/640241/indonesia-rintis-kolaborasi-pengolahan-logam-tanah-jarang-dengan-gabon",
+      "gnews_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM1ZhUmJsWGYxUkZYeXZVWXFlUEM0UFpJOGpxc2VmekV1MVZ1ZnJCYzh5eFpYaTN1WlJFUldUWWNtd0lHcXVaZWFkQWtrVWxQc2tVc3lGRlN5SlhNdGRxbDRvWG5qWGt2SmM5MUtpTm5KYjU3dll3QlM1b2UzNTViekdHRkROWDhlTFNmQmdoQ0dhODE5ck1oSjBtUGt4ZkhCQjhWb2FnVnI5T3pOb1RaNExsOUpnRTQ?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "makassar.antaranews.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-14",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:42+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 2190,
+        "sha256": "81fe4bc616762ddd051b02424ba76296bb12d5a5ea0e6cb56ad1f950cc7c318e",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-01",
+        "quotes": [
+          "PT Pertamina Internasional Eksplorasi dan Produksi (PIEP) menguasai lebih dari 70 persen saham perusahaan eksplorasi migas asal Prancis, Maurel & Prom, yang memiliki aset di Angola, Gabon, hingga Tanzania."
+        ],
+        "final_url": "https://makassar.antaranews.com/berita/640241/indonesia-rintis-kolaborasi-pengolahan-logam-tanah-jarang-dengan-gabon",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia tambang tanah jarang",
+          "priority_boost": 0,
+          "legacy_id": "46733fef7bc5"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "548a6dc36155",
+      "title": "Кто покупает казахстанский уран и сколько на нем зарабатывает страна - Казинформ",
+      "title_norm": "кто покупает казахстанский уран и сколько на нем зарабатывает страна",
+      "url": "https://inform.kz/ru/kazahstan-ukreplyaet-pozitsii-na-rinke-urana-950e7032",
+      "gnews_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQc2ItV2oxb2FTTktGU0lKM1hZNlM4SjNVSjVFSWtVM2NWNVdoUlhvbHIwWVp6dFJkWjhLd092SmNyQnUyN0lfbktqTkJ1SVFUdnpJZlpmaVBha2IxM0tkNnFhNXozb2EzT0g3TWFrc3YwZnpMZkNTUEFyajRfV1UySmQ0cjY?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "inform.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-10-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:42+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 6333,
+        "sha256": "0f7a740516b6961c17c9ffd63fa1cc5b8b214219a8d0415e69b5db63d2b4f291",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-12",
+        "quotes": [
+          "тонн природного урана и его соединений на сумму $4,54 млрд.",
+          "Таким образом, в 2016–2024 годах Казахстан экспортировал природного урана примерно на $23,4 млрд."
+        ],
+        "final_url": "https://www.inform.kz/ru/kazahstan-ukreplyaet-pozitsii-na-rinke-urana-950e7032",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "af5d11700d27"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "d25ae90db5de",
+      "title": "Ставка на уран: «Казатомпром» будет активнее искать новые месторождения в Казахстане - National Business",
+      "title_norm": "ставка на уран казатомпром будет активнее искать новые месторождения в казахстане",
+      "url": "https://nationalbusiness.kz/news/stavka-na-uran-kazatomprom-budet-aktivnee-iskat-novie-mestorozhdeniya-v-kazahstane-4ab279",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWmpCYVNlREZiV0p5ZUMxWm14bUVFeXVsaV9VTWdsX2tnMHo2OUFlQXFQYVhiby10VmhoUHotMl9Ud2Yxa3Zya3lQaG9MRUxWZ2pWMllvNHNnbmoxeGtZdHJDQ2VxSVE1V0lRb3RUUTVGR25fSmZ6TjVSZlg1UmlIdFVXZ0tqbGtqaWk1TGQ0aUxYeE1iZ1pNLUlhWS1Hb09tQ2UwYVQ1ckxQNHI1SWd5YlJoVFBNOWdkXzFuY2o0Q1E?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "nationalbusiness.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-10-05",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:43+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 1298,
+        "sha256": "aea024a02f3c0398e9b9db23bdc1bcecb53a28fa896376c6648c2a2c3d7e278a",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-05",
+        "quotes": [],
+        "final_url": "https://nationalbusiness.kz/news/stavka-na-uran-kazatomprom-budet-aktivnee-iskat-novie-mestorozhdeniya-v-kazahstane-4ab279/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "1408d94f34d9"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "4a74577dc0e6",
+      "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "title_norm": "2026 05 14oyu tolgoi donates a scanning electron microscope sem to german mongolian institute for resources and technology",
+      "url": "https://mongolianminingjournal.com/a/75056",
+      "gnews_url": null,
+      "source": {
+        "name": "Mongolian Mining Journal - English",
+        "domain": "mongolianminingjournal.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-05-14",
+      "published_from": "meta",
+      "collected_at": "2026-11-01T02:00:45+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 1790,
+        "sha256": "18a641dbabf5548d4b625b3651728131021a203f6f1472ec1930c5541e210580",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-05-14",
+        "quotes": [
+          "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+          "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+        ],
+        "final_url": "https://www.mongolianminingjournal.com/a/75056",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Mongolia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "0f934580"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "ec1702997f10",
+      "title": "ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+      "title_norm": "orano holds opening ceremony for mongolia s zuuvch ovoo uranium project",
+      "url": "https://mongolianminingjournal.com/a/75130",
+      "gnews_url": null,
+      "source": {
+        "name": "Mongolian Mining Journal - English",
+        "domain": "mongolianminingjournal.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-06-16",
+      "published_from": "meta",
+      "collected_at": "2026-11-01T02:00:45+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 1778,
+        "sha256": "938db27abf757dccb7d5fde5d98dc8eb6f6509d69d7ce057647749683b00404d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-06-16",
+        "quotes": [
+          "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
+          "The company also plans to gradually increase this support, with annual contributions projected to reach approximately USD 1 million per year in the future."
+        ],
+        "final_url": "https://www.mongolianminingjournal.com/a/75130",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Mongolia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "3215cc8b"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "192d06a11f5b",
+      "title": "Menteri Rosan Bahas Pendalaman Hilirisasi Nikel dan Baja Tahan Karat dengan Tsingshan - Media Nikel Indonesia",
+      "title_norm": "menteri rosan bahas pendalaman hilirisasi nikel dan baja tahan karat dengan tsingshan",
+      "url": "https://nikel.co.id/2026/10/26/menteri-rosan-bahas-pendalaman-hilirisasi-nikel-dan-baja-tahan-karat-dengan-tsingshan",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVF9heDdXVElKRG5ETEtVWDU2eW1IbGNLTXlxeWJqVU43aDE3LW9OZTVKM0ZXQkduc2NLLUFRWG5yWGlUYWtER3VHdDhia0VQcEZjRkREcGY5WHZUVm5VbFd6S1otTWNhZ25fQnNhREFMemhzWG9kS2tRd2czM1hDamt5UTlNQnRzV0F0N1prS1VOcjBOc0N3SWt3UHFzZjdRTDZxZFJJdFFibm5nR2JlbWRoNTJEX1Zi?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-10-26",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:46+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 2639,
+        "sha256": "13d7ff80459ba4127fb16e5d7c036ddd7ada2d31634df06b51a32f467fad7fed",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-26",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA — Pemerintah Indonesia membahas peluang pendalaman hilirisasi nikel dan pengembangan industri baja tahan karat (stainless steel) bersama Tsingshan Holding Group.",
+          "Dengan demikian, Indonesia berpeluang memperkuat peran dalam industri nikel dan baja tahan karat global."
+        ],
+        "final_url": "https://nikel.co.id/2026/10/26/menteri-rosan-bahas-pendalaman-hilirisasi-nikel-dan-baja-tahan-karat-dengan-tsingshan/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "53f110c3659c"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "f4e547ccf499",
+      "title": "The Ministry of Agriculture and Environment violated numerous regulations in the management and licensing of mineral resources. - Vietnam.vn",
+      "title_norm": "the ministry of agriculture and environment violated numerous regulations in the management and licensing of mineral resources",
+      "url": "https://vietnam.vn/en/bo-nong-nghiep-va-moi-truong-vi-pham-nhieu-quy-dinh-trong-quan-ly-cap-phep-khoang-san",
+      "gnews_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObmlaN0tUVXkwRDFXMjVNZ1FHRVlFcjZzTjg4RmpCYVNzRzBjOTVKeEkzc2t5N0o0S1FZc1NvcUdMUGFPMGNkRHJnYWowOUVpc0U1T3ZqX2NIYnEyX0JENTBSOWV3cFFwWUd5ekJxaHRTV05qRzNYUzU0eWdsdmo5VUY2LWVZVHNnZUYxMUhIMGlOa0JGbG4tVXl0cXJIVldja083ZjFoRmM5ekYtTFBxeQ?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "vietnam.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:47+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 6301,
+        "sha256": "193251cc5e5036c2bd25f6939b83d3efa75579c30825f729aa01100bd35ab176",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "The Ministry of Agriculture and Environment violated numerous regulations in the management and licensing of mineral resources.",
+          "Specifically, the approval of bidding increments and deposit amounts for mineral exploitation rights auctions was not within the proper authority."
+        ],
+        "final_url": "https://www.vietnam.vn/en/bo-nong-nghiep-va-moi-truong-vi-pham-nhieu-quy-dinh-trong-quan-ly-cap-phep-khoang-san",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vietnam mineral exploration",
+          "priority_boost": 0,
+          "legacy_id": "015b388d2408"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "b91754dce52c",
+      "title": "A series of violations in mineral licensing at the Ministry of Agriculture and Environment: businesses with negative capital still get approved. - Vietnam.vn",
+      "title_norm": "a series of violations in mineral licensing at the ministry of agriculture and environment businesses with negative capital still get approved",
+      "url": "https://vietnam.vn/en/loat-vi-pham-cap-phep-khoang-san-tai-bo-nn-mt-doanh-nghiep-am-von-van-duoc-duyet",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTENkQ2NXUDJlVklPUndpZlVDM244djJyWWZCbEdoczV2b2QyX2tOY0VWUFpoVEYxb2JXbF9TQXZPTkJaSnFXTnVQSHhtYmpQX2xSeUozSUp6V2NHMzJPckhJYjFsYU9aS2ZYRGIxdTVfYmtRM294dHVpcnpUUGpxUUFwQktlcE5JN3Ffc1VNVW5lTzktVXNXU1VIQnBlZ1dNVUJmVVdSLUpLUQ?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "vietnam.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:48+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 4494,
+        "sha256": "bf593d6b716018fb54c6a5e2737eb02aa1bbd288675f33377eba5beca850aa2a",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "A series of violations in mineral licensing at the Ministry of Agriculture and Environment: businesses with negative capital still get approved.",
+          "Two licenses were issued with mining periods that did not comply with the adjusted investment policy decision, and the investment certificates had expired."
+        ],
+        "final_url": "https://www.vietnam.vn/en/loat-vi-pham-cap-phep-khoang-san-tai-bo-nn-mt-doanh-nghiep-am-von-van-duoc-duyet",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vietnam mineral exploration",
+          "priority_boost": 0,
+          "legacy_id": "df7fc06c5379"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "5f5a8905a1fe",
+      "title": "The Government Inspectorate has highlighted a series of violations by the Ministry of Agriculture and Environment in granting mineral licenses. - Vietnam.vn",
+      "title_norm": "the government inspectorate has highlighted a series of violations by the ministry of agriculture and environment in granting mineral licenses",
+      "url": "https://vietnam.vn/en/thanh-tra-chinh-phu-neu-loat-vi-pham-cua-bo-nn-mt-trong-cap-phep-khoang-san",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR2hFYlBleXJCcXpTVEU2VUhUNUVDcHVmNHlQMk5UWTZwYThZbUJYcWdhdE4takJxbzVzMFVEZU56SV83TEhCdTRWaVJVdm5XSl8wSk0taGYtZDNEcF9nZE5nNUVrQnI4Mmt2YjJIcW43bEx0WGp0eC1QdVZCQlh0WGk0bW96RzZlT2g1X051bHVNR3p2aGtkY1hVaFFadjZhWHY4?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "vietnam.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-28",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:49+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 5643,
+        "sha256": "7d6c083e3097c909c33c285f7a4359b3558fe588ba57909445f18e8a2b22b23c",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-28",
+        "quotes": [
+          "The Government Inspectorate has highlighted a series of violations by the Ministry of Agriculture and Environment in granting mineral licenses.",
+          "This department issued 3 mineral exploration licenses that were inconsistent with the approved mineral planning, violating the Mineral Law."
+        ],
+        "final_url": "https://www.vietnam.vn/en/thanh-tra-chinh-phu-neu-loat-vi-pham-cua-bo-nn-mt-trong-cap-phep-khoang-san",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vietnam mineral exploration",
+          "priority_boost": 0,
+          "legacy_id": "a129da3f8a1d"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "4c9387020c3f",
+      "title": "The Ministry of Industry and Trade announces 19 new internal administrative procedures related to geology and minerals. - Vietnam.vn",
+      "title_norm": "the ministry of industry and trade announces 19 new internal administrative procedures related to geology and minerals",
+      "url": "https://vietnam.vn/en/bo-cong-thuong-cong-bo-19-thu-tuc-hanh-chinh-noi-bo-moi-ve-dia-chat-khoang-san",
+      "gnews_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQWR1X3V1SzAwN3EyNmp4MVpmZW9mSWhvZTN3Zi04NFRMb0VzS29oME90LThJRnFKUmc2RTBZYno3MU9yY2lmQ1RZdU01bXBESnluUkdldlM5dnFvTFQwOGdTSk9ZMlUtOW1ZRFUzMXRhY1pLR243M2I3eXF3dXEtRDk2VW9fRTlHN1pRazM5RmtOOEpZeDdKcFFZVWR6N1J4WE9CS001VQ?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "vietnam.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:50+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 5033,
+        "sha256": "3e5cbc44aa2822401417f3af7ed54d189ccc2c91833dd478ac570923ee620fd8",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Deputy Minister of Industry and Trade Phan Thi Thang recently signed Decision No.",
+          "2784/QD-BCT dated October 23, 2026, on the announcement of newly issued internal administrative procedures in the field of geology and minerals under the management scope of the Ministry of Industry and Trade."
+        ],
+        "final_url": "https://www.vietnam.vn/en/bo-cong-thuong-cong-bo-19-thu-tuc-hanh-chinh-noi-bo-moi-ve-dia-chat-khoang-san",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vietnam mineral exploration",
+          "priority_boost": 0,
+          "legacy_id": "6f2626204400"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "1f1a9cd4aecd",
+      "title": "Vietnam's Vinacomin to keep coal output at 40Mt/y up to 2030, State media reports - Mining Weekly",
+      "title_norm": "vietnam s vinacomin to keep coal output at 40mt y up to 2030 state media reports",
+      "url": "https://miningweekly.com/article/vietnams-vinacomin-to-keep-coal-output-at-40-million-tons-a-year-up-to-2030-state-media-reports-2026-10-29",
+      "gnews_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONmZHeUIzeXhtZm5QQXNDSE03NEZXdjI5SWlfTnIxb3NtN3hvSGM3OWdlVVZ5bUd3VUhfZmJBQzZOZ25lQVU1Ynl0UFB1TG0td2VjS1NwaWl0aDZDSDRvdzF6Q25UVlgzbjg1UFpKa1Z3WjVyUmdoQmdNT2IwWHk1Nkc3bXFqV1k1QmNDVE9BOEhjaUZwRzFsZWZLV2JVMUY4RlNpNkxoWkxNMVVNNWl4Q3BqQkdKWGRXYjBhTkRDSFJNTEhYTVducVZZTTFwX2c1Q2ozYzRETDQtRzA?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "miningweekly.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:52+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 2794,
+        "sha256": "a11b82a956c105b8d9bf347fc8006cb64c7a71e4b228b76d49451abd362de5f3",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "Vietnam's Vinacomin to keep coal output at 40Mt/y up to 2030, State media reports",
+          "Vinacomin is among the companies in which the state will maintain 100% ownership until at least 2030."
+        ],
+        "final_url": "https://www.miningweekly.com/article/vietnams-vinacomin-to-keep-coal-output-at-40-million-tons-a-year-up-to-2030-state-media-reports-2026-10-29",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vinacomin coal mining",
+          "priority_boost": 0,
+          "legacy_id": "19baed296b8a"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "3bfdb8b49b07",
+      "title": "Vietnam’s state-owned Vinacomin to maintain coal output through 2030 - Mining.com.au",
+      "title_norm": "vietnam s state owned vinacomin to maintain coal output through 2030",
+      "url": "https://mining.com.au/vietnams-state-owned-vinacomin-to-maintain-coal-output-through-2030",
+      "gnews_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPS05JWWpKeGpwaTE5UFJjSGpCT3lGUFNPdkNqRVRhMlpIc2phUTJvMzR2RmVsRWVJMGpBX3BzU0hTMUtWbWItLWZJUUNiSTVqZjQxZkhweFZUWUdHU2JTanJiMXB2aUlGTTFhNF9rUG42TUdEZWl6VzJjZGRkYjE2SzItYXU1aDd5RkZsN0lNZTlnbXdy?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "mining.com.au",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-29",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:54+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 873,
+        "sha256": "2321716a2b98acba8d2ecca2cf51f13d014ca0958ceebe4306604e61c27b67ab",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-29",
+        "quotes": [
+          "Vietnam’s top miner Vinacomin plans to keep coal output at 40 million tonnes (Mt) per year through 2030 to meet domestic demand, mostly for power generation, state media reported on Thursday.",
+          "Vinacomin will also import 10–20Mt of coal a year to meet demand."
+        ],
+        "final_url": "https://mining.com.au/vietnams-state-owned-vinacomin-to-maintain-coal-output-through-2030/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vinacomin coal mining",
+          "priority_boost": 0,
+          "legacy_id": "620f3625cfaa"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "68efc5c389af",
+      "title": "Rio Tinto pauses major Mongolian mine after ‘seismic activity’ - Free Malaysia Today",
+      "title_norm": "rio tinto pauses major mongolian mine after seismic activity",
+      "url": "https://freemalaysiatoday.com/category/business/2026/10/30/rio-tinto-pauses-major-mongolian-mine-after-seismic-activity",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZWsyblVTUzAyNzZ6bnJING12VXI5My10X2RzaFpjcHNoZHhKUkN4MDFndmtyUFRZSlRTdXJzeEpmT0RQVXdIVXBpR0NQb0tMODhqR2xFMVpVVGplclRtWkNEbHlkUTM0b19FczRXNXNPdEh5RkV4TG1LZjF2M3hLVUFieXp5N1FhUFY0c0ZIRklGN2MwdnpEN2plTTdGMEY2NWxERUlXajJ4MTVGdldYTEJWbFZFRnRLNGgxZHVERUY?oc=5",
+      "source": {
+        "name": "Google News (MN:en)",
+        "domain": "freemalaysiatoday.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-30",
+      "published_from": "gnews",
+      "collected_at": "2026-11-01T02:00:55+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 868,
+        "sha256": "fcd0cbf7ecdacceca39f32a1cdc410b03a8f9e4c8254371ae4e23484f825b499",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-30",
+        "quotes": [
+          "Rio Tinto’s copper production increased 5% in the fourth quarter of 2025 thanks to the expansion of underground operations at Oyu Tolgoi, which is jointly owned by the company and the Mongolian government."
+        ],
+        "final_url": "https://www.freemalaysiatoday.com/category/business/2026/10/30/rio-tinto-pauses-major-mongolian-mine-after-seismic-activity",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Mongolia",
+          "source_type": "google_news",
+          "search_query": "Mongolia copper Oyu Tolgoi",
+          "priority_boost": 0,
+          "legacy_id": "901922f8df98"
+        }
+      }
+    }
+  ]
+}
