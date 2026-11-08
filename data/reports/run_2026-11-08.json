@@ -1,0 +1,236 @@
+{
+  "service": "kcmo",
+  "run_date": "2026-11-08",
+  "generated_at": "2026-11-08T02:09:02+00:00",
+  "elapsed_s": 40.0,
+  "counts": {
+    "fetched": 3578,
+    "qualified": 35,
+    "dedup_dropped": 1,
+    "validation_errors": 0
+  },
+  "sources": {
+    "Lao News Agency (KPL) - English": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "Daily News Tanzania (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "HabariLeo - Madini (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "Tambang.co.id (RSS)": {
+      "fetched": 15,
+      "qualified": 1,
+      "error": null
+    },
+    "Nikel.co.id (RSS)": {
+      "fetched": 10,
+      "qualified": 9,
+      "error": null
+    },
+    "Dunia Energi (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "Ruang Energi (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "VietnamPlus - English (Vietnam)": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "VnExpress English - Business (Vietnam)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "VnExpress - Kinh doanh (Vietnamese RSS)": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "VietnamNet - Kinh doanh (RSS)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "Kapital.kz - Business news (RSS)": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "The Astana Times (RSS)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - All news": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Uranium": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Copper": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Rare Earth": {
+      "fetched": 2,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Nickel": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Cobalt": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Tungsten": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mining.com - Critical Minerals (category)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "news.mn - Mongolia news (RSS)": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mongolian Mining Journal - English": {
+      "fetched": 15,
+      "qualified": 2,
+      "error": null
+    },
+    "Mongolia Weekly (English newsletter)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "AKIPress (Central Asia 5 countries)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "Kursiv Media - English (Kazakhstan)": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "The Astana Times (Kazakhstan)": {
+      "fetched": 10,
+      "qualified": 0,
+      "error": null
+    },
+    "Gazeta.uz - English (Uzbekistan)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "UZ Daily - English (Uzbekistan)": {
+      "fetched": 20,
+      "qualified": 0,
+      "error": null
+    },
+    "World Nuclear News (uranium/nuclear)": {
+      "fetched": 30,
+      "qualified": 0,
+      "error": null
+    },
+    "Capmad - Africa Mining (English)": {
+      "fetched": 0,
+      "qualified": 0,
+      "error": null
+    },
+    "Mongabay - Conservation News": {
+      "fetched": 30,
+      "qualified": 1,
+      "error": null
+    },
+    "Google News": {
+      "fetched": 3106,
+      "qualified": 19,
+      "error": null
+    }
+  },
+  "resolve": {
+    "direct": 16,
+    "decoder": 19
+  },
+  "ledger_excluded": {
+    "title_similar": 1,
+    "url": 3
+  },
+  "ledger_excluded_items": [
+    {
+      "reason": "title_similar",
+      "title": "Ekonom nilai kebijakan hilirisasi nikel mulai ubah struktur ekonomi Indonesia - ANTARA News Sultra",
+      "url": "https://sultra.antaranews.com/berita/542832/ekonom-nilai-kebijakan-hilirisasi-nikel-mulai-ubah-struktur-ekonomi-indonesia"
+    },
+    {
+      "reason": "url",
+      "title": "Кто покупает казахстанский уран и сколько на нем зарабатывает страна - Казинформ",
+      "url": "https://www.inform.kz/ru/kazahstan-ukreplyaet-pozitsii-na-rinke-urana-950e7032"
+    },
+    {
+      "reason": "url",
+      "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "url": "https://www.mongolianminingjournal.com/a/75056"
+    },
+    {
+      "reason": "url",
+      "title": "ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+      "url": "https://www.mongolianminingjournal.com/a/75130"
+    }
+  ],
+  "body_status": {
+    "full": 33,
+    "partial": 0,
+    "lead_only": 0,
+    "title_only": 2
+  },
+  "body_source": {
+    "trafilatura": 33,
+    "none": 2
+  },
+  "block_type": {
+    "bot_block": 2
+  },
+  "blocked_domains_top20": {
+    "rri.co.id": 1,
+    "tribunnews.com": 1
+  },
+  "strategy_use": {},
+  "reader_proxy": {
+    "tried": 0,
+    "used": 0
+  },
+  "summarize": {
+    "raw": 31,
+    "cards": 31,
+    "failed": 0
+  }
+}

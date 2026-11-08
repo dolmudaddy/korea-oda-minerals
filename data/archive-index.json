@@ -1,7 +1,25 @@
 {
-  "total_weeks": 31,
-  "latest_week": "2026-11-01",
+  "total_weeks": 32,
+  "latest_week": "2026-11-08",
   "weeks": [
+    {
+      "week_of": "2026-11-08",
+      "filename": "cards_2026-11-08.json",
+      "total_cards": 31,
+      "category_counts": {
+        "oda_cooperation": 2,
+        "policy_regulation": 20,
+        "supply_chain_trade": 9
+      },
+      "top_tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "인도네시아 ESDM",
+        "핵심광물"
+      ],
+      "generated_at": "2026-11-08T02:11:59.850042+00:00"
+    },
     {
       "week_of": "2026-11-01",
       "filename": "cards_2026-11-01.json",
