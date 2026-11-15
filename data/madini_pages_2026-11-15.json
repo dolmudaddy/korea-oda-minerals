@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-11-15T02:29:50.308348+00:00",
+  "source": "madini.go.tz HTML body collector",
+  "stats": {
+    "urls_found": 117,
+    "already_known": 2,
+    "fetched": 3,
+    "stale": 112,
+    "no_date": 0,
+    "qualified": 3
+  },
+  "total": 3,
+  "articles": [
+    {
+      "id": "995751ecba4a",
+      "title": "Minister Mavunde impressed by Tanzanians’ investment in mineral value addition",
+      "url": "https://www.madini.go.tz/news/minister-mavunde-impressed-by-tanzanians-investment-in-mineral-value-addition",
+      "source": "Wizara ya Madini (광물부 본문)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "Mpanda, Katavi - \r\nThe Minister for Minerals, Hon. Anthony Mavunde (MP), has called on small-scale miners to seize opportunities in establishing mineral value-addition factories as a means of increasing their income and contributing to the growth of the national economy.\r\nHe made the call today, November 12, 2026, in Mpanda, Katavi Region, during a visit to inspect the progress of construction of a gold and copper mineral value-addition factory owned by Just Gold Solution Company, located in Mtisi area, within Nsimbo District Council.\r\n“Our President, Her Excellency Dr. Samia Suluhu Hassan, has placed great emphasis on the agenda of adding value to our minerals. This is why she prohibited the export of raw minerals, requiring them to undergo value addition locally before being exported.\r\n“An enabling environment is already in place. Therefore, I urge all small-scale miners to seize this opportunity to increase their income. This is not an opportunity reserved for large-scale miners or foreign investors alone. Small-scale miners can also benefit by thinking beyond their current earnings and exploring new opportunities to grow our economy through increased revenue, employment and technology,” emphasized Hon. Mavunde.\r\nFurthermore, Hon. Mavunde urged small-scale miners and local investors not to limit themselves to establishing mineral value-addition factories but also to explore international markets to secure reliable markets for their finished products. This, he noted, would encourage increased production of raw materials and industrial products.\r\n“We can all see that without laws and regulations restricting the export of raw minerals, we would not be enjoying the benefits we are witnessing today. Therefore, let us join hands in congratulating these young entrepreneurs from Just Gold Solution Company for their bold initiative in establishing this factory here in Mpanda,” stated Minister Mavunde.\r\nThe Minister further noted that the Government will continue to revoke exploration licences that are not being developed to allow for reviews, with suitable areas subsequently allocated to women’s and youth groups engaged in small-scale mining through the implementation of the Mining for a Brighter Tomorrow Project.\r\nFor his part, the Director of Just Gold Solution Company, Mr. Hussein Adam Kishimba, revealed that the construction of the factory, which has reached 85 per cent completion, will cost a total of TZS 2.5 billion upon completion. The facility is expected to process 70 tonnes of rocks or 100 tonnes of tailings per day, producing gold and copper minerals.\r\nMeanwhile, the Acting Katavi Regional Commissioner, who is also the Mpanda District Commissioner, Hon. Jamila Kimaro, thanked the Government, through the Ministry of Minerals, for its continued efforts in overseeing and strengthening the mining sector. She also urged the Ministry to continue revoking inactive licences to enable more citizens to access mining areas.",
+      "published": "2026-11-12",
+      "score": 18,
+      "source_type": "html_page",
+      "priority_boost": 3
+    },
+    {
+      "id": "a8e1e4e21d59",
+      "title": "Exploration of Tanzanite-Bearing Geological Structures Officially Begins in Mirerani on Monday, November 9, 2026.",
+      "url": "https://www.madini.go.tz/news/exploration-of-tanzanite-bearing-geological-structures-officially-begins-in-mirerani-on-monday-november-9-2026",
+      "source": "Wizara ya Madini (광물부 본문)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "Mirerani, Tanzania-\r\nA detailed survey of Tanzanite has officially begun in Mirerani, as part of the implementation of the instructions given by the Minister of Minerals, Hon. Anthony Mavunde, during his visit in August to increase the production of the mineral using accurate geological information and expanding areas with mining opportunities.\r\n\r\nLaunching the study on Monday, Mavunde said the Government has begun work in an area of ​​636 square kilometers, covering areas inside and outside the Mirerani controlled area, with the aim of identifying the continuity of geological structures associated with Tanzanite-bearing veins.\r\nThe Geology and Minerals Survey of Tanzania (GST) will begin with magnetic, electrical and electromagnetic surveys to identify areas with the best indicators, before the National Minerals Corporation (STAMICO) enters with surveying equipment to confirm the actual condition of rocks and minerals underground.\r\nMavunde said the move is a continuation of the instructions he gave after his visit to Mirerani, where he met with small-scale miners, mineral traders, brokers and other stakeholders and commissioned experts to carry out scientific work that will help increase Tanzanite production.\r\n“A scientific matter is answered by science,” said Mavunde, emphasizing that the Government aims to ensure that small-scale miners have access to more accurate geological information that will enable them to direct their capital, equipment and energy to areas with good mineral prospects.\r\nHe said that as mining activities continue to reach greater depths, the importance of having detailed information about geological structures increases, a step that can help miners make more effective investment decisions.\r\nIn the initial stage, GST has conducted an analysis of existing geological information, previous studies as well as new information and identified areas with structures that require more in-depth investigation.\r\nGST Director, Engineer Ally Samaje, said the study is being carried out following the instructions of Minister Mavunde and the analysis of geological information that indicated areas that require further investigation. He said GST will use various geophysical methods to accurately identify rock formations with Tanzanite indicators before surveying, a step that will help the Government and miners obtain more accurate scientific information about areas with potential mineral resources.\r\nSome of the formations have been seen outside the Mirerani wall and have geological characteristics similar to areas associated with mineral flows being worked within the mining area.\r\n\r\nHowever, the Government has stressed that the presence of Tanzanite in these areas will be confirmed after the research and surveying stages are completed.\r\nMavunde has directed STAMICO to deploy its large surveying rigs to Mirerani and continue working as priority areas are identified by GST.\r\nHe said that if the survey confirms the existence of new mineral resou",
+      "published": "2026-11-09",
+      "score": 12,
+      "source_type": "html_page",
+      "priority_boost": 3
+    },
+    {
+      "id": "93dc4f60df0f",
+      "title": "DRC Pleased with Sustainable Initiatives to Develop Small-Scale Miners in Tanzania",
+      "url": "https://www.madini.go.tz/news/drc-pleased-with-sustainable-initiatives-to-develop-small-scale-miners-in-tanzania",
+      "source": "Wizara ya Madini (광물부 본문)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 5,
+      "summary_raw": "Dodoma, Tanzania- \r\nA delegation from the Federation of Small-Scale Miners of the Democratic Republic of Congo (FESOCOMIC) has expressed satisfaction and keen interest in the various sustainable initiatives being implemented by the Government of Tanzania—through the Ministry of Minerals—to develop and uplift small-scale miners in the country.\r\nThis was stated yesterday, November 3, 2026, by the Chairperson of FESOCOMIC, Alex Murusi, while discussing a visit by a 17-member delegation from the DRC. The group traveled to Tanzania to learn how to develop the small-scale mining sector, guided by experts from the Ministry of Minerals and its affiliated institutions.\r\nDuring the meeting, Murusi explained that FESOCOMIC has long observed the Tanzanian government’s efforts to formalize the small-scale mining sector. Key initiatives—such as the management of markets, the curbing of mineral smuggling, the provision of loans and grants to miners, and the establishment of programs to expand detailed mineral exploration for small-scale miners—were the factors that prompted them to visit the country to learn. Murusi explained that Tanzania has become an exemplary model in Africa for economically and technologically empowering small-scale miners.\r\nThe delegation commended the strategies implemented by the Ministry of Minerals—through its affiliated institutions, including the Mining Commission, the State Mining Corporation (STAMICO), and the Geological Survey of Tanzania (GST)—to establish sustainable initiatives. These include geological surveys, training, the issuance of small-scale mining licenses, and the provision of 15 drilling rigs for youth and women under the special MBT program.\r\nEarlier, while discussing the sector's development in the country, Terence Ngole, Assistant Commissioner for Minerals in charge of Local Content, noted that the mining sector—specifically through small-scale mining—has achieved significant, historic milestones.\r\nNgole stated that the contribution of small-scale miners to government revenue from the mining sector is growing rapidly, currently reaching 40 percent. Regarding the sector's overall economic impact, he explained that mining now contributes 10.3 percent to the Gross Domestic Product (GDP).\r\nAmong other activities, the delegation will have the opportunity to visit various mining projects, mineral processing centers, and value-addition (beneficiation) facilities across the entire mineral value chain, allowing them to observe these systems in operation.",
+      "published": "2026-11-03",
+      "score": 11,
+      "source_type": "html_page",
+      "priority_boost": 3
+    }
+  ]
+}

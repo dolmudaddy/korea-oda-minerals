@@ -1,0 +1,1267 @@
+{
+  "schema_version": "card.v1",
+  "service": "kcmo",
+  "run_date": "2026-11-15",
+  "generated_at": "2026-11-15T02:29:39+00:00",
+  "mincore_version": "0.2.1",
+  "total": 27,
+  "cards": [
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "f8a4bf0e8402",
+      "title": "APNI Soroti Kontrak Bijih Nikel di Bawah HPM, Penambang Terbebani PNBP",
+      "title_norm": "apni soroti kontrak bijih nikel di bawah hpm penambang terbebani pnbp",
+      "url": "https://nikel.co.id/2026/11/13/apni-soroti-kontrak-bijih-nikel-di-bawah-hpm-penambang-terbebani-pnbp",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:15+00:00",
+      "score": 16,
+      "body": {
+        "status": "full",
+        "chars": 4563,
+        "sha256": "9e150c123485fef5a3e5bd2ce5ece8116326819daf86b8415d554287fb02c877",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Ia mengungkapkan bahwa persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) produksi bijih nikel tahun ini telah mencapai sekitar 360 juta ton.",
+          "Sementara itu, total pasokan selama periode tersebut, termasuk produksi domestik dan impor dari berbagai negara, mencapai 186,93 juta ton."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/13/apni-soroti-kontrak-bijih-nikel-di-bawah-hpm-penambang-terbebani-pnbp/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "96ae58d7"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "d96706767f86",
+      "title": "Oman Offers to Supply Crude Oil, Petroleum Products, and LPG to Indonesia",
+      "title_norm": "oman offers to supply crude oil petroleum products and lpg to indonesia",
+      "url": "https://dunia-energi.com/oman-offers-to-supply-crude-oil-petroleum-products-and-lpg-to-indonesia",
+      "gnews_url": null,
+      "source": {
+        "name": "Dunia Energi (RSS)",
+        "domain": "dunia-energi.com",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-15",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:16+00:00",
+      "score": 15,
+      "body": {
+        "status": "partial",
+        "chars": 300,
+        "sha256": "957c5341e0cfed34310c04254306eb2fd5741e0f36ee51479b06007792e13995",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-15",
+        "quotes": [],
+        "final_url": "https://www.dunia-energi.com/oman-offers-to-supply-crude-oil-petroleum-products-and-lpg-to-indonesia/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "17b56d29"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "8949532d0483",
+      "title": "BRIN Dorong Peningkatan Tata Kelola Lingkungan pada Hilirisasi Mineral Kritis",
+      "title_norm": "brin dorong peningkatan tata kelola lingkungan pada hilirisasi mineral kritis",
+      "url": "https://tambang.co.id/brin-dorong-peningkatan-tata-kelola-lingkungan-pada-hilirisasi-mineral-kritis",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:18+00:00",
+      "score": 14,
+      "body": {
+        "status": "full",
+        "chars": 3599,
+        "sha256": "59ce193415160633f05f005aa6c4d0ba3399a25ffdba3542c0a5e32eeddfadcb",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Indonesia memiliki cadangan hingga 62 juta ton.",
+          "Sementara dari sisi produksi di tahun 2025, Indonesia memproduksi bijih nikel mencapai sebesar 2,6 juta ton."
+        ],
+        "final_url": "https://tambang.co.id/brin-dorong-peningkatan-tata-kelola-lingkungan-pada-hilirisasi-mineral-kritis/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "e295298b"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "27e37fa35731",
+      "title": "Di Forum B20 USA 2026, Anindya Bakrie Paparkan Strategi Perdagangan dan Peran Hilirisasi Nikel",
+      "title_norm": "di forum b20 usa 2026 anindya bakrie paparkan strategi perdagangan dan peran hilirisasi nikel",
+      "url": "https://nikel.co.id/2026/11/13/di-forum-b20-usa-2026-anindya-bakrie-paparkan-strategi-perdagangan-dan-peran-hilirisasi-nikel",
+      "gnews_url": null,
+      "source": {
+        "name": "Nikel.co.id (RSS)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:18+00:00",
+      "score": 14,
+      "body": {
+        "status": "full",
+        "chars": 4410,
+        "sha256": "75d79b2725e7cbfab28cea9dcd5a7faf733b7e0c804980c0af6a55d4c1117b89",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Anindya atau yang sering disapa Anin, mengatakan Indonesia memiliki potensi ekonomi besar dengan jumlah penduduk mencapai 285 juta jiwa dan usia median sekitar 30 tahun.",
+          "“Setiap tahun, kita perlu menciptakan setidaknya 4 hingga 5 juta lapangan kerja."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/13/di-forum-b20-usa-2026-anindya-bakrie-paparkan-strategi-perdagangan-dan-peran-hilirisasi-nikel/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "7f05dae8"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "ad35f9bfa651",
+      "title": "Kazakhstan Opens $15 Million Rare Metals Research Center with South Korea - The Times Of Central Asia",
+      "title_norm": "kazakhstan opens 15 million rare metals research center with south korea",
+      "url": "https://timesca.com/kazakhstan-south-korea-rare-metals-research-center",
+      "gnews_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85QWNFcU16T2l1N1FKb3ZQZXhCS1ZkUWczVXVCaG1SLTdqU2gxWXRxQzBGMUZ0ZW1HRGtCc1g4d09Tek9KVVp1cFk3M2hjU05lVm84XzVhWExjUmJmZi0xMWZSRVlCQ2FqdTFTdU5vV3RpVG5pNHEySURwYw?oc=5",
+      "source": {
+        "name": "Google News (KZ:en)",
+        "domain": "timesca.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-22",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:19+00:00",
+      "score": 13,
+      "body": {
+        "status": "full",
+        "chars": 2455,
+        "sha256": "1ab5f7b57fef7801ca6bb5287f269d462ab41974e158a3fb31496304dad43088",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-22",
+        "quotes": [
+          "The center, which opened on October 21, is supported by a five-year funding program worth approximately $15 million.",
+          "Kazakhstan has substantial mineral resources, but extracting metals and producing finished materials require different technologies."
+        ],
+        "final_url": "https://timesca.com/kazakhstan-south-korea-rare-metals-research-center/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Kazakhstan critical minerals Korea",
+          "priority_boost": 0,
+          "legacy_id": "81716c8a9fe2"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "a204d78f2594",
+      "title": "Kazakhstan Opens $15 Million Rare Metals Research Center with South Korea to Advance Critical Mineral - Rare Earth Exchanges",
+      "title_norm": "kazakhstan opens 15 million rare metals research center with south korea to advance critical mineral",
+      "url": "https://rareearthexchanges.com/news/kazakhstan-south-korea-rare-metals-center",
+      "gnews_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSzdMcWJVU29zRlQtbmlpQjljZDU1a3pCRUxvelBRcndlQWdYdWdOYlJXUmN2ZnRqTThQN1BDTkxPMlBEcUtOb1psRlJvcHl5MnVwaThQZldJS2ktbUFfX0hkaml4eWsxMjVGdk9SUnJSenZXTUxaM09ENFlfbXdTQkNDTTk?oc=5",
+      "source": {
+        "name": "Google News (KZ:en)",
+        "domain": "rareearthexchanges.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-10-22",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:19+00:00",
+      "score": 13,
+      "body": {
+        "status": "full",
+        "chars": 801,
+        "sha256": "9cd694779134a5081bad8bfff1c76b14f247edacc02d7a5fe7066743f6e18991",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-10-22",
+        "quotes": [
+          "- Kazakhstan and South Korea launched a five-year, $15 million rare metals research center at Satbayev University in Almaty on October 21.",
+          "- Radioactive byproducts such as thorium and uranium could complicate processing, permitting, and cross-border shipments from Kazakh feedstocks."
+        ],
+        "final_url": "https://rareearthexchanges.com/news/kazakhstan-south-korea-rare-metals-center/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Kazakhstan critical minerals Korea",
+          "priority_boost": 0,
+          "legacy_id": "473a5815b0c1"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "e15ba2b46ef1",
+      "title": "Haji Isam Bidik 38,7% Saham Weda Bay Nickel Milik Eramet",
+      "title_norm": "haji isam bidik 38 7 saham weda bay nickel milik eramet",
+      "url": "https://tambang.co.id/haji-isam-bidik-38-7-saham-weda-bay-nickel-milik-eramet",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:20+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 3724,
+        "sha256": "ac204f2685a0e80bf3b3978fbba445e713b701859b58fa795e2fcfc84b36dc80",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Dikutip dari Bloomberg.com, Pemilik Jhonlin Group tersebut disebut sedang mempertimbangkan akuisisi sebagian atau seluruh saham Eramet sebesar 38,7% di salah satu tambang nikel terbesar di dunia.",
+          "Sementara itu, Antam menguasai 10% saham secara langsung."
+        ],
+        "final_url": "https://tambang.co.id/haji-isam-bidik-38-7-saham-weda-bay-nickel-milik-eramet/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "8dd9dba2"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "7c5661516ec9",
+      "title": "PT Tri Swardana Utama Perkenalkan SEM 220, Excavator 20 Ton",
+      "title_norm": "pt tri swardana utama perkenalkan sem 220 excavator 20 ton",
+      "url": "https://tambang.co.id/pt-tri-swardana-utama-perkenalkan-sem-220-excavator-20-ton",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:20+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 5404,
+        "sha256": "785692183c9a8212791e066ff1d16b8f9ffeed4bffd7d4d6af577e4796913ab0",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "SEM 220 tidak lain excavator kelas 20 ton yang dirancang untuk menjawab kebutuhan pelanggan akan alat berat yang tangguh, efisien, dan mudah dirawat.",
+          "Jakarta,TAMBANG,- Satu lagi produk excavator yang dihadirkan PT Tri Swardana Utama (TSU) bagi pelanggan alat berat Indonesia."
+        ],
+        "final_url": "https://tambang.co.id/pt-tri-swardana-utama-perkenalkan-sem-220-excavator-20-ton/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "d3c8d8da"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "7d42b5beb71d",
+      "title": "Bộ Công Thương thúc đẩy hợp tác Việt Nam-Nhật Bản trong lĩnh vực khoáng sản và ôtô - Vietnam+ (VietnamPlus)",
+      "title_norm": "bộ công thương thúc đẩy hợp tác việt nam nhật bản trong lĩnh vực khoáng sản và ôtô",
+      "url": "https://vietnamplus.vn/bo-cong-thuong-thuc-day-hop-tac-viet-nam-nhat-ban-trong-linh-vuc-khoang-san-va-oto-post1147728.vnp",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMGljN1pCZ0MxaUNBY1hRZ2xlY19JQlM2bk5vcXZVLTN3WEFxY2g5T1dPbS1ZQUFSMXJrS1dQM2NveVRtbE5sVThVVXdSRXM3d1h6anItTUd2aGFqcS1VNG9JUXlfaDROaUN0aFFPMUJtNlZJZ09nb1FaTE5aTHVmdHpXck1TWVdETVlVaWotRUxEM2wtSmNDQ1ZHb0VDRXZ1QjhkUWVVZHgwM1BRZFB1bjYxaUJnNnh5ZU5lcnN6RElJQnc?oc=5",
+      "source": {
+        "name": "Google News (VN:vi)",
+        "domain": "vietnamplus.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "vi"
+      },
+      "published": "2026-11-11",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:22+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 6473,
+        "sha256": "c75ac729abb7da4485e0be8424eca17119e3f8c4fe47c77f4899d02535daaf07",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-11",
+        "quotes": [],
+        "final_url": "https://www.vietnamplus.vn/bo-cong-thuong-thuc-day-hop-tac-viet-nam-nhat-ban-trong-linh-vuc-khoang-san-va-oto-post1147728.vnp",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Việt Nam khoáng sản chiến lược",
+          "priority_boost": 0,
+          "legacy_id": "e14d0f45fa66"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "0f11f91e149f",
+      "title": "От добычи урана к собственным АЭС: как Казахстан намерен развивать атомную отрасль - Казинформ",
+      "title_norm": "от добычи урана к собственным аэс как казахстан намерен развивать атомную отрасль",
+      "url": "https://inform.kz/ru/otdobichi-urana-ksobstvennim-aes-kakkazahstan-nameren-razvivat-atomnuyu-otrasl-919679b7",
+      "gnews_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc21oVmYtXzBmTXVmT2JTLUFQQXhmVHN0djA5T3JRTDdKUU9VZzl6aVJqdE0wUmxGMFhTcmM3YkFnRHRfMkRXc053VDRaNEZjblhNQ082MGNybnpBM0NZYjIxR3dseVF4bkVsU1BaVEhzNHdLc0lyOUlnTllJb1dhck5IUDNHczlxNy1ocUJPUU03S0dNRmVadnNxMWo4R3J1YzVlbXNzaHJCd1J4M3NyRGNB0gGzAUFVX3lxTE43NmlxejhMbWVubk4tU3lJUFJIY2Q1VEZfc0Y3TlBNenFKSS1CQzlwZ3hzZnBnMWg3QXBmcEhGeVdtN2x6aG9GdXZSdEJLWkFfLVdxVVNRa0h0S2o0M2FFZFFxTUhBM2xveERjcFI4RkhJN1RtazVHQmp0VjNkSUw4eEdIVnVXRjV5R0dnT3lEZWRNWDFEckd6NnBsanBpYTVDOVcwRDExTnBMeGVJWmtGS0pz?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "inform.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-11-14",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:23+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 3395,
+        "sha256": "8e0fc1f4997a19e54567e2469fd2e668762f50ff865a13f36223a3c61a75545c",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-15",
+        "quotes": [
+          "Глава Агентства отметил, что Казахстан занимает второе место в мире по запасам урана и обеспечивает около 40% его мировой добычи."
+        ],
+        "final_url": "https://www.inform.kz/ru/otdobichi-urana-ksobstvennim-aes-kakkazahstan-nameren-razvivat-atomnuyu-otrasl-919679b7",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "f78b8d675c02"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "3ed76efd9944",
+      "title": "В Казахстане создадут стратегический резерв урана для обеспечения собственных АЭС - Kazakhstan Today",
+      "title_norm": "в казахстане создадут стратегический резерв урана для обеспечения собственных аэс",
+      "url": "https://kt.kz/rus/state/v_kazahstane_sozdadut_strategicheskiy_rezerv_urana_dlya_1378004148.html",
+      "gnews_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS2dyMU9OdUV1RTE3VkR4eFkwRDVfb3NPMDRZS1dUMEtPc0c0bWJvTmc1azNlQ0FhcE56Z2dEQ2RXUzVMX1Bxd1JoYk9LM3FEQ2VvSU5vejZVcG1HNHN2SUkwUWJIQl9wY3NyQ08tS19TYmVQWE1KQ3Vwa1E1SzZ6dE96RmVtd1lUTGFnWGRkdXVqbGppekVoSmxNbHZueTBp?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "kt.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-11-13",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:24+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 1394,
+        "sha256": "9821d42c56773c961374548ffd98de9892e85c6103640a51865aa8af2014e151",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Об этом сообщил председатель Агентства РК по атомной энергии Алмасадам Саткалиев на мероприятии в рамках конференции \"Мировые атомные дни\" в Анталье."
+        ],
+        "final_url": "https://www.kt.kz/rus/state/v_kazahstane_sozdadut_strategicheskiy_rezerv_urana_dlya_1378004148.html",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "966087bde78e"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "7d79d85aaf01",
+      "title": "Казахстан создаст стратегический запас урана для будущих АЭС на 100 лет - Казинформ",
+      "title_norm": "казахстан создаст стратегический запас урана для будущих аэс на 100 лет",
+      "url": "https://inform.kz/ru/kazahstan-sozdast-strategicheskiy-zapas-urana-dlya-budushih-aes-na-100-let-47ae7f62",
+      "gnews_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdFM5M09Vd2dxcGRoekdHUENjU08wT0VURHFRdTk2X3hCVjF4cFJGWTJ6N0JWNXNpV3lpUFJ1MWQ2N3dud0g2aDE1eXZIcWNDaVUxNHdJUU5tU2FEcVZGVDF0ajRpVG9sM3QxQTlJajVLT2xDTXJ2LXJwT2stMHVWdFZzTFFTdk5DNDBtbTFIMU9LOGdfVmlKWGVZZHp4bHEyM19qQW9LbVFmTy1Y0gGuAUFVX3lxTE9ENmdDbEZvbm1wTm5wSWZBWjI2VjA4eWwyTXRaME5LdDJRSXo0MVl6VW5DR3dPb2lVTExiek9CcEczcmxXMURtM2pMY09nMmIxWEM5LW5ZY2ZuaHg2RnpsaHI3MW9jcUtJdXJaZVBvOExjNm9fNEYwdFFiaWVwakNZS2pDZldCZFYtdUVOUFV1dlVBaVpMckg4OTUzVzVJeTFzbWVpbW1pcXVkZWRXdw?oc=5",
+      "source": {
+        "name": "Google News (KZ:kk)",
+        "domain": "inform.kz",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "kk"
+      },
+      "published": "2026-11-13",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:24+00:00",
+      "score": 11,
+      "body": {
+        "status": "full",
+        "chars": 3351,
+        "sha256": "f4817f4b50acef060d0f8f4ed3eabdce7c84efa636f49fdf489da26f2822a97a",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [],
+        "final_url": "https://www.inform.kz/ru/kazahstan-sozdast-strategicheskiy-zapas-urana-dlya-budushih-aes-na-100-let-47ae7f62",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Kazakhstan",
+          "source_type": "google_news",
+          "search_query": "Қазақстан уран",
+          "priority_boost": 0,
+          "legacy_id": "1897248329c6"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "22161d4b4671",
+      "title": "Di 2027 Sektor Kelistrikan Butuh 174 Juta Ton, PLN EPI Bersama PLN Group Siapkan Coal Switching di 16 PLTU",
+      "title_norm": "di 2027 sektor kelistrikan butuh 174 juta ton pln epi bersama pln group siapkan coal switching di 16 pltu",
+      "url": "https://tambang.co.id/di-2027-sektor-kelistrikan-butuh-174-juta-ton-pln-epi-bersama-pln-group-siapkan-coal-switching-di-16-pltu",
+      "gnews_url": null,
+      "source": {
+        "name": "Tambang.co.id (RSS)",
+        "domain": "tambang.co.id",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-09",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:24+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 5857,
+        "sha256": "42a2702bcb84f158ab7f7a4286b165f335ee8c819e7585e5c0e0d34d3e6e1420",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-09",
+        "quotes": [
+          "Jakarta,TAMBANG,-Kebutuhan batubara untuk ketenagalistrikan di tahun 2027 mencapai 174 juta ton.",
+          "Sementara itu, cadangan batu bara kategori MRC tercatat sebesar 4,54 miliar ton atau 14,2 persen dan HRC sebesar 3,36 miliar ton atau 10,5 persen."
+        ],
+        "final_url": "https://tambang.co.id/di-2027-sektor-kelistrikan-butuh-174-juta-ton-pln-epi-bersama-pln-group-siapkan-coal-switching-di-16-pltu/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "ea71fefe"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "cf8266dc3364",
+      "title": "Puluhan Tahun Diteliti, Logam Tanah Jarang Indonesia Baru Sampai Tahap Ini",
+      "title_norm": "puluhan tahun diteliti logam tanah jarang indonesia baru sampai tahap ini",
+      "url": "https://dunia-energi.com/puluhan-tahun-diteliti-logam-tanah-jarang-indonesia-baru-sampai-tahap-ini",
+      "gnews_url": null,
+      "source": {
+        "name": "Dunia Energi (RSS)",
+        "domain": "dunia-energi.com",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-14",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:26+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 3132,
+        "sha256": "db41f2832a4b1da1850d94c6ab83ce0855306d46731a43a02d6f9737f1e947a3",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-14",
+        "quotes": [
+          "Dengan kapasitas desain sekitar 250 kg per kolom, fasilitas ini akan jadi tempat menguji cara melindikan mineral untuk mengambil unsur berharganya.",
+          "Itupun kemurniannya masih di kisaran 96-98 persen."
+        ],
+        "final_url": "https://www.dunia-energi.com/puluhan-tahun-diteliti-logam-tanah-jarang-indonesia-baru-sampai-tahap-ini/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "3b19fa58"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "b7f43c81ed12",
+      "title": "Pemimpin Penggerak Transformasi Jadi Senjata Bukit Asam Jaga Daya Saing",
+      "title_norm": "pemimpin penggerak transformasi jadi senjata bukit asam jaga daya saing",
+      "url": "https://dunia-energi.com/pemimpin-penggerak-transformasi-jadi-senjata-bukit-asam-jaga-daya-saing",
+      "gnews_url": null,
+      "source": {
+        "name": "Dunia Energi (RSS)",
+        "domain": "dunia-energi.com",
+        "tier": null,
+        "tier_weight": 3,
+        "language": "id"
+      },
+      "published": "2026-11-14",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:27+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 3274,
+        "sha256": "c2421b8c77dbdf78845b126603f5816ccc3c00e29204e3eb6642f8e77a8ab541",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-14",
+        "quotes": [
+          "“Penting untuk memahami tujuan transformasi, membangun keberanian untuk memulai, serta melibatkan seluruh tim melalui komunikasi dan sikap terbuka,” kata Febriany."
+        ],
+        "final_url": "https://www.dunia-energi.com/pemimpin-penggerak-transformasi-jadi-senjata-bukit-asam-jaga-daya-saing/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "2bb77638"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "75e145d8aabb",
+      "title": "Indonesian tycoon said to weigh bid for Eramet’s nickel mine",
+      "title_norm": "indonesian tycoon said to weigh bid for eramet s nickel mine",
+      "url": "https://mining.com/web/indonesian-tycoon-said-to-weigh-bid-for-eramets-nickel-mine",
+      "gnews_url": null,
+      "source": {
+        "name": "Mining.com - Critical Minerals (category)",
+        "domain": "mining.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-11-11",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:28+00:00",
+      "score": 10,
+      "body": {
+        "status": "full",
+        "chars": 2916,
+        "sha256": "b7caa40120005646250c98611b68e56970b886dc439b15a10b5f0a92cbe4b092",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-11",
+        "quotes": [
+          "The billionaire known as Haji Isam may seek to buy part or all of Eramet’s 38.7% stake in PT Weda Bay Nickel, the people said, asking not to be identified because the deliberations are private.",
+          "Eramet shares climbed as much as 9.8% in Paris Wednesday, the biggest intraday gain since June 12."
+        ],
+        "final_url": "https://www.mining.com/web/indonesian-tycoon-said-to-weigh-bid-for-eramets-nickel-mine/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "1fcf1bac"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "2fd8e5c1f789",
+      "title": "Sojitz signs agreement to acquire 5% of Vietnam tungsten supplier Masan High-Tech Materials",
+      "title_norm": "sojitz signs agreement to acquire 5 of vietnam tungsten supplier masan high tech materials",
+      "url": "https://mining.com/web/sojitz-signs-agreement-to-acquire-5-of-vietnam-tungsten-supplier-masan-high-tech-materials",
+      "gnews_url": null,
+      "source": {
+        "name": "Mining.com - Critical Minerals (category)",
+        "domain": "mining.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-11-09",
+      "published_from": "rss",
+      "collected_at": "2026-11-15T02:29:28+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 1602,
+        "sha256": "db8563c127091c25d7c4acb0290e6db665d9f0c6fab77b9924ef96be71f112e8",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-09",
+        "quotes": [
+          "Sojitz signs agreement to acquire 5% of Vietnam tungsten supplier Masan High-Tech Materials",
+          "Japan’s Sojitz Corp (TYO: 2768) has signed a memorandum of understanding to acquire a 5% stake in Vietnamese tungsten producer Masan High-Tech Materials, the Vietnamese conglomerate said on Monday."
+        ],
+        "final_url": "https://www.mining.com/web/sojitz-signs-agreement-to-acquire-5-of-vietnam-tungsten-supplier-masan-high-tech-materials/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "83c307d0"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "27e37fa35731",
+      "title": "Di Forum B20 USA 2026, Anindya Bakrie Paparkan Strategi Perdagangan dan Peran Hilirisasi Nikel - Media Nikel Indonesia",
+      "title_norm": "di forum b20 usa 2026 anindya bakrie paparkan strategi perdagangan dan peran hilirisasi nikel",
+      "url": "https://nikel.co.id/2026/11/13/di-forum-b20-usa-2026-anindya-bakrie-paparkan-strategi-perdagangan-dan-peran-hilirisasi-nikel",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNM1g4d1R6eENDc09SVkI0VXVkU3N4TVFZU0thUnN6Smg0LW5yTnJCZWtQRFVWazFnUHNuTXdBX3hQd1lfMUxLVm12bmhFd1k2Z0I2OWxza1c4aWlCT3RwRTVsX0pXM0VfUlljNWZ6dGp1Z0NxVDV5cUNvQ090SGUwaF9JQTk3YWphbVhsYjdXM2M5VkpLRzJPbEc0Q0JVWDZ2MF8xQWl1b3J3b0NXNVVsMU9mLUQ4X2tSc3g5SmVQVG5BVlE?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-11-13",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:29+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 4410,
+        "sha256": "75d79b2725e7cbfab28cea9dcd5a7faf733b7e0c804980c0af6a55d4c1117b89",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-13",
+        "quotes": [
+          "Anindya atau yang sering disapa Anin, mengatakan Indonesia memiliki potensi ekonomi besar dengan jumlah penduduk mencapai 285 juta jiwa dan usia median sekitar 30 tahun.",
+          "“Setiap tahun, kita perlu menciptakan setidaknya 4 hingga 5 juta lapangan kerja."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/13/di-forum-b20-usa-2026-anindya-bakrie-paparkan-strategi-perdagangan-dan-peran-hilirisasi-nikel/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "448830468a68"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "f95ce3a86b8a",
+      "title": "Kemenperin Dorong Larangan Ekspor Bahan Mentah untuk Perkuat Hilirisasi Mineral - Media Nikel Indonesia",
+      "title_norm": "kemenperin dorong larangan ekspor bahan mentah untuk perkuat hilirisasi mineral",
+      "url": "https://nikel.co.id/2026/11/11/kemenperin-dorong-larangan-ekspor-bahan-mentah-untuk-perkuat-hilirisasi-mineral",
+      "gnews_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTHdPekhPM09PRWt0VDhXdmZoVHo0V0pnUkhReUFfV0VGZzU0QzV4VEViRGRNZlBMMDk0WHlFYnBNWGN6Qjc2dnBXQmw0Xzh0SXFPX3RBa3pmZVFrR3FybEdUZ1ZJMDdMa2RJQ2VWN1l6SG9RMFBnUFhKOVNfQmZmOFZiV1A0Q1E3WWQ4TF9TSlhQX2o5T2pWd1lDNGNvaEk5R3A1eEFrM19QNnhLQ21VNg?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-11-11",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:30+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 4643,
+        "sha256": "493746089723adf1b2edcfc85ccae93a538bd5088717ca2629fa643bf3e41e11",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-11",
+        "quotes": [
+          "Kebijakan tersebut dinilai penting untuk memperbesar nilai tambah industri nasional sekaligus mendukung pencapaian target pertumbuhan ekonomi Indonesia sebesar 8% pada 2029.",
+          "Arnes menyebut pendapatan per kapita Indonesia saat ini masih sekitar US$5.000 per tahun."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/11/kemenperin-dorong-larangan-ekspor-bahan-mentah-untuk-perkuat-hilirisasi-mineral/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "1ebe07596710"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "391ffd33e259",
+      "title": "Rhenald Kasali: Industrialisasi Jadi Tahap Lanjutan Pengembangan Hilirisasi Mineral - Media Nikel Indonesia",
+      "title_norm": "rhenald kasali industrialisasi jadi tahap lanjutan pengembangan hilirisasi mineral",
+      "url": "https://nikel.co.id/2026/11/12/rhenald-kasali-industrialisasi-jadi-tahap-lanjutan-pengembangan-hilirisasi-mineral",
+      "gnews_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYWI2MXB0UG16MDdSakttVVZ3MHlTbkpVazlnSGltMnhVZVBXVUg1dHZCWnVIMXU0elBoQmc0d2pycVpYUDlBVFlnbmlRT08yY3lKeVl1dUlDdWkyQWJoUFBtaWUta2RxSk1HdkZ0RUZIcnFsSUVxRnR3M0hmVnZUc2g0UVhhdlJWc3RiUG9kUHBuMWpvSWlRaFdWZU1SVjJaUW5nTy1hMkV5M1M3R0s4dnVzY3k?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-11-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:31+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 4727,
+        "sha256": "49498c19a979610fafdd00f6d1c3db970244090f6be03e3b14ad397620c3dd71",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-12",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA — Hilirisasi sektor pertambangan mineral Indonesia perlu diarahkan lebih jauh menuju industrialisasi yang mampu menciptakan nilai tambah bagi perekonomian nasional.",
+          "Tapi cara pandang baru, kita harus mendorong hilirisasi."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/12/rhenald-kasali-industrialisasi-jadi-tahap-lanjutan-pengembangan-hilirisasi-mineral/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "b99575d9c658"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "744929af29c7",
+      "title": "Industri Pengolahan Maluku Utara Tumbuh 62,64%, Hilirisasi Perkuat Ekonomi Wilayah Timur - Media Nikel Indonesia",
+      "title_norm": "industri pengolahan maluku utara tumbuh 62 64 hilirisasi perkuat ekonomi wilayah timur",
+      "url": "https://nikel.co.id/2026/11/12/industri-pengolahan-maluku-utara-tumbuh-6264-hilirisasi-perkuat-ekonomi-wilayah-timur",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWjNmeGZOcU04SE4yMzVIcVRENXo2eDhYT2Jsc0hQVEtQRk5NanR4MXE1cW4wemROcFIxYXJ4OW9kZUJrUjBJVE9lZXpQbXpycEd3MVRzTnNLbFJLNXp4NFhIelVRa0Zicm0wRmVyYjkzSE1VQkp1WUdEN2N6Yi0wckZSUmptUS1IWlMyWlF6TkkwOEhCV2xVWFNNSmdPQlRIZmZuNXZwZnBsTVJiRU16c1h3eUxBNjZB?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "nikel.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-11-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:32+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 6157,
+        "sha256": "e38adcc8d061446b5b7fb8c58c20c97c17427186c3550f676501611d01e1bae0",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-12",
+        "quotes": [
+          "NIKEL.CO.ID, JAKARTA — Industri pengolahan di wilayah Indonesia bagian Timur menunjukkan perkembangan yang signifikan, terutama di Maluku Utara yang mencatat pertumbuhan sebesar 62,64% sepanjang 2025.",
+          "Kontribusinya terhadap industri manufaktur nasional juga meningkat dari 1,62% menjadi 2,69%."
+        ],
+        "final_url": "https://nikel.co.id/2026/11/12/industri-pengolahan-maluku-utara-tumbuh-6264-hilirisasi-perkuat-ekonomi-wilayah-timur/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "741496c83d04"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "b227a4bc001a",
+      "title": "Huabao Indonesia Kembangkan Hilirisasi Nikel dan Kelapa di Morowali, Bidik Konsep Green Industry - harian fajar",
+      "title_norm": "huabao indonesia kembangkan hilirisasi nikel dan kelapa di morowali bidik konsep green industry",
+      "url": "https://harian.fajar.co.id/2026/11/12/ihip-kembangkan-hilirisasi-nikel-dan-kelapa-di-morowali-bidik-konsep-green-industry",
+      "gnews_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNDM1d1ZBR2h6U0dULTZjRFNEdk9qY1ZOdU5mUENrTFdsSHd4d21HWjZlalhYZ0MtYVZFMmxFaEQtZTB6dXN6NXVJV0E1VWJIMjRCS2RESi1xWV95NE5UbjNuWGFObDFON0FiM3ZzQm5aSURMVENFczJxWjZMZ04tdFBIWjFNbWNhUWN3RUw5X1VMNWh1eWxUZmZ4X3RFQnZqUDY0SjU1R0JCTmJYSDJkNnprbUtzZGVoeklkaDhmcw?oc=5",
+      "source": {
+        "name": "Google News (ID:id)",
+        "domain": "harian.fajar.co.id",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "id"
+      },
+      "published": "2026-11-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:33+00:00",
+      "score": 9,
+      "body": {
+        "status": "full",
+        "chars": 1624,
+        "sha256": "ecfc08377a4fe9042529a9e49844c7813b1b2d704ed803e496b5865c6eb57cb0",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-12",
+        "quotes": [
+          "HARIAN.FAJAR.CO.ID, MAKASSAR – Huabao Indonesia terus mengembangkan kawasan industri di Morowali, Sulawesi Tengah, dengan menggarap dua sektor hilirisasi potensial, yakni nikel dan kelapa.",
+          "“Dalam kawasan kami ada dua industri hilirisasi."
+        ],
+        "final_url": "https://harian.fajar.co.id/2026/11/12/ihip-kembangkan-hilirisasi-nikel-dan-kelapa-di-morowali-bidik-konsep-green-industry/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Indonesia",
+          "source_type": "google_news",
+          "search_query": "Indonesia hilirisasi nikel",
+          "priority_boost": 0,
+          "legacy_id": "9f4c763da31b"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "4a74577dc0e6",
+      "title": "2026-05-14OYU TOLGOI DONATES A SCANNING ELECTRON MICROSCOPE (SEM) TO GERMAN-MONGOLIAN INSTITUTE FOR RESOURCES AND TECHNOLOGY",
+      "title_norm": "2026 05 14oyu tolgoi donates a scanning electron microscope sem to german mongolian institute for resources and technology",
+      "url": "https://mongolianminingjournal.com/a/75056",
+      "gnews_url": null,
+      "source": {
+        "name": "Mongolian Mining Journal - English",
+        "domain": "mongolianminingjournal.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-05-14",
+      "published_from": "meta",
+      "collected_at": "2026-11-15T02:29:35+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 1790,
+        "sha256": "18a641dbabf5548d4b625b3651728131021a203f6f1472ec1930c5541e210580",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-05-14",
+        "quotes": [
+          "The advanced equipment, designed for high-precision mineral analysis, was provided through an investment of MNT 276 million.",
+          "This laboratory will be of great importance not only to Oyu Tolgoi, but also to other companies operating in Mongolia’s mining sector.”"
+        ],
+        "final_url": "https://www.mongolianminingjournal.com/a/75056",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Mongolia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "0f934580"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "ec1702997f10",
+      "title": "ORANO HOLDS OPENING CEREMONY FOR MONGOLIA’S ZUUVCH-OVOO URANIUM PROJECT",
+      "title_norm": "orano holds opening ceremony for mongolia s zuuvch ovoo uranium project",
+      "url": "https://mongolianminingjournal.com/a/75130",
+      "gnews_url": null,
+      "source": {
+        "name": "Mongolian Mining Journal - English",
+        "domain": "mongolianminingjournal.com",
+        "tier": null,
+        "tier_weight": 5,
+        "language": "en"
+      },
+      "published": "2026-06-16",
+      "published_from": "meta",
+      "collected_at": "2026-11-15T02:29:35+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 1778,
+        "sha256": "938db27abf757dccb7d5fde5d98dc8eb6f6509d69d7ce057647749683b00404d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-06-16",
+        "quotes": [
+          "Under the agreement, an initial investment of MNT 1 billion will be allocated to local development projects.",
+          "The company also plans to gradually increase this support, with annual contributions projected to reach approximately USD 1 million per year in the future."
+        ],
+        "final_url": "https://www.mongolianminingjournal.com/a/75130",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Mongolia",
+          "source_type": "tier_source",
+          "search_query": null,
+          "priority_boost": 0,
+          "legacy_id": "3215cc8b"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "fc8635d69e7e",
+      "title": "The Ministry of Industry and Trade promotes Vietnam-Japan cooperation in the fields of minerals and automobiles. - Vietnam.vn",
+      "title_norm": "the ministry of industry and trade promotes vietnam japan cooperation in the fields of minerals and automobiles",
+      "url": "https://vietnam.vn/en/bo-cong-thuong-thuc-day-hop-tac-viet-nam-nhat-ban-trong-linh-vuc-khoang-san-va-oto",
+      "gnews_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRHBJQWoxRk8yN0pDaTZLOXR6blFlbXRiQzdOR242aEIyUnBTajRtRU5OOWI3MldlS0xLY1FxcnJlYXFycU8wTGNxczJqa25tWlFEOFFMdi1RcWlKZF94WVNpNV9SRXJrRlduTVhtNkhVVDRlak1tclJtVENqREQ4bHBVQ2hQUUJlUlNTUnQ3WkFRV05FdUtzU3hhWmo3dnNXd1gzd2pHeEN5Ny1n?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "vietnam.vn",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-11-11",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:37+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 7440,
+        "sha256": "6b32bad5bd32affe451473e991007ec21fa59a344c88e45f2ce690a3f0dfd0d6",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-11",
+        "quotes": [
+          "The Ministry of Industry and Trade promotes Vietnam-Japan cooperation in the fields of minerals and automobiles.",
+          "Cooperation in the development of the mineral industry"
+        ],
+        "final_url": "https://www.vietnam.vn/en/bo-cong-thuong-thuc-day-hop-tac-viet-nam-nhat-ban-trong-linh-vuc-khoang-san-va-oto",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vietnam mining investment",
+          "priority_boost": 0,
+          "legacy_id": "407ad6d49b87"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "23e2ff6cc124",
+      "title": "Vietnam’s bauxite ambitions: Vinacomin proposes $208m Lam Dong mining project - AL Circle",
+      "title_norm": "vietnam s bauxite ambitions vinacomin proposes 208m lam dong mining project",
+      "url": "https://alcircle.com/news/vietnams-bauxite-ambitions-vinacomin-proposes-208m-lam-dong-mining-project-121935",
+      "gnews_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWU9uQnNnb2dscXJvVEt4SHNoNjhoTDBkLXFtRHp3NlhaWUI4UFlkbnc5aEcxbGYzckZQZXlaRzRHNHNETVBkc21fZzQxTlBJbF9lbFJzc2pGclhyQ19VZGFkNHJ6cGc3Vzl3QVlPLThOQ3QzSHFkU3V6ZURGa2VHel9JT0NiMW0tVnl1enRkUFdlT1E1aXotVHlKYzFZbzMzemgybS1Bdm1HTWtJYkpGZw?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "alcircle.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-11-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:38+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 3592,
+        "sha256": "84f3c46926aa15a8f4a8b1312de974fd80513fa44bc7f0fa77f8140b1f52ddcb",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-12",
+        "quotes": [
+          "Vietnam’s bauxite ambitions: Vinacomin proposes $208m Lam Dong mining project",
+          "Vietnam National Coal and Mineral Industries Group (Vinacomin) has proposed an integrated bauxite mining and processing project worth VND 5.2 trillion (USD 208 million) in Lam Dong province, Vietnam."
+        ],
+        "final_url": "https://www.alcircle.com/news/vietnams-bauxite-ambitions-vinacomin-proposes-208m-lam-dong-mining-project-121935",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vinacomin coal mining",
+          "priority_boost": 0,
+          "legacy_id": "a33e9c1c32a2"
+        }
+      }
+    },
+    {
+      "schema_version": "card.v1",
+      "service": "kcmo",
+      "card_id": "9bb7253ebe5f",
+      "title": "Vinacomin Seeks Approval for US$208M Bauxite Mine in Vietnam - Discovery Alert",
+      "title_norm": "vinacomin seeks approval for us 208m bauxite mine in vietnam",
+      "url": "https://discoveryalert.com/news/bauxite-mining-vietnam-vinacomin-lam-dong-november-2026",
+      "gnews_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYkNMSm45dWZDa1YwUkZaOHNoS3U1OWt3QzBGR3RLTzI3RHV4MDNSSENOZlRuSHhLZTZIVDBLaEV2cHY0bmxYc0hJR3plWlRMbEFkMFBUcmZ4aklQdG9mMGUtbzBTbUNWYjc3Tjl3Ym85Q2NTN1lDT1hPRnBJeEs1VjhxdjhHQXFNUE5HcmNmSVFydw?oc=5",
+      "source": {
+        "name": "Google News (VN:en)",
+        "domain": "discoveryalert.com",
+        "tier": null,
+        "tier_weight": 1,
+        "language": "en"
+      },
+      "published": "2026-11-12",
+      "published_from": "gnews",
+      "collected_at": "2026-11-15T02:29:39+00:00",
+      "score": 8,
+      "body": {
+        "status": "full",
+        "chars": 11079,
+        "sha256": "6b51129fe18bebb8a0c25f2bca38f6bcc9f60d3346a5499063eca282760db75d",
+        "source": "trafilatura",
+        "block_type": null,
+        "http_status": 200,
+        "extracted_date": "2026-11-12",
+        "quotes": [
+          "Vinacomin Seeks Approval for US$208M Bauxite Mine in Vietnam",
+          "- Vinacomin (TKV) has proposed a 3 Mt/yr bauxite mining and beneficiation project in Lam Dong worth VND5.205 trillion (about US$208 million), with a 30-year operating life and a 2029 operation target."
+        ],
+        "final_url": "https://discoveryalert.com/news/bauxite-mining-vietnam-vinacomin-lam-dong-november-2026/",
+        "strategies_tried": []
+      },
+      "summary_input_max_chars": 4000,
+      "summary": null,
+      "provenance": null,
+      "ext": {
+        "kcmo": {
+          "country": "Vietnam",
+          "source_type": "google_news",
+          "search_query": "Vinacomin coal mining",
+          "priority_boost": 0,
+          "legacy_id": "e37c57391b25"
+        }
+      }
+    }
+  ]
+}

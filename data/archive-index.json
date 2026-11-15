@@ -1,7 +1,26 @@
 {
-  "total_weeks": 32,
-  "latest_week": "2026-11-08",
+  "total_weeks": 33,
+  "latest_week": "2026-11-15",
   "weeks": [
+    {
+      "week_of": "2026-11-15",
+      "filename": "cards_2026-11-15.json",
+      "total_cards": 27,
+      "category_counts": {
+        "policy_regulation": 9,
+        "oda_cooperation": 3,
+        "supply_chain_trade": 8,
+        "exploration_development": 7
+      },
+      "top_tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "베트남",
+        "탄자니아"
+      ],
+      "generated_at": "2026-11-15T02:32:21.968312+00:00"
+    },
     {
       "week_of": "2026-11-08",
       "filename": "cards_2026-11-08.json",
