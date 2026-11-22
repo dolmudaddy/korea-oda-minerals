@@ -1,7 +1,26 @@
 {
-  "total_weeks": 33,
-  "latest_week": "2026-11-15",
+  "total_weeks": 34,
+  "latest_week": "2026-11-22",
   "weeks": [
+    {
+      "week_of": "2026-11-22",
+      "filename": "cards_2026-11-22.json",
+      "total_cards": 28,
+      "category_counts": {
+        "exploration_development": 6,
+        "policy_regulation": 15,
+        "supply_chain_trade": 6,
+        "research_academic": 1
+      },
+      "top_tags": [
+        "인도네시아",
+        "ESDM",
+        "니켈",
+        "광업정책",
+        "주석"
+      ],
+      "generated_at": "2026-11-22T02:58:14.844642+00:00"
+    },
     {
       "week_of": "2026-11-15",
       "filename": "cards_2026-11-15.json",

@@ -1,0 +1,897 @@
+{
+  "generated_at": "2026-11-22T02:55:36.454455+00:00",
+  "stats": {
+    "sources_tried": 32,
+    "items_fetched": 462,
+    "items_qualified": 34,
+    "google_news_queries": 129,
+    "google_news_items": 3452,
+    "per_source": {
+      "Lao News Agency (KPL) - English": {
+        "fetched": 20,
+        "qualified": 0
+      },
+      "Daily News Tanzania (RSS)": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "HabariLeo - Madini (RSS)": {
+        "fetched": 10,
+        "qualified": 1
+      },
+      "Tambang.co.id (RSS)": {
+        "fetched": 15,
+        "qualified": 6
+      },
+      "Nikel.co.id (RSS)": {
+        "fetched": 10,
+        "qualified": 4
+      },
+      "Dunia Energi (RSS)": {
+        "fetched": 10,
+        "qualified": 0
+      },
+      "Ruang Energi (RSS)": {
+        "fetched": 10,
+        "qualified": 1
+      },
+      "VietnamPlus - English (Vietnam)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "VnExpress English - Business (Vietnam)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "VnExpress - Kinh doanh (Vietnamese RSS)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "VietnamNet - Kinh doanh (RSS)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "Kapital.kz - Business news (RSS)": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "The Astana Times (RSS)": {
+        "fetched": 10,
+        "qualified": 0
+      },
+      "Mining.com - All news": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "Mining.com - Uranium": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mining.com - Copper": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mining.com - Rare Earth": {
+        "fetched": 2,
+        "qualified": 0
+      },
+      "Mining.com - Nickel": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mining.com - Cobalt": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mining.com - Tungsten": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mining.com - Critical Minerals (category)": {
+        "fetched": 30,
+        "qualified": 3
+      },
+      "news.mn - Mongolia news (RSS)": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mongolian Mining Journal - English": {
+        "fetched": 15,
+        "qualified": 3
+      },
+      "Mongolia Weekly (English newsletter)": {
+        "fetched": 20,
+        "qualified": 0
+      },
+      "AKIPress (Central Asia 5 countries)": {
+        "fetched": 20,
+        "qualified": 0
+      },
+      "Kursiv Media - English (Kazakhstan)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "The Astana Times (Kazakhstan)": {
+        "fetched": 10,
+        "qualified": 0
+      },
+      "Gazeta.uz - English (Uzbekistan)": {
+        "fetched": 20,
+        "qualified": 0
+      },
+      "UZ Daily - English (Uzbekistan)": {
+        "fetched": 20,
+        "qualified": 0
+      },
+      "World Nuclear News (uranium/nuclear)": {
+        "fetched": 30,
+        "qualified": 0
+      },
+      "Capmad - Africa Mining (English)": {
+        "fetched": 0,
+        "qualified": 0
+      },
+      "Mongabay - Conservation News": {
+        "fetched": 30,
+        "qualified": 2
+      }
+    },
+    "ledger_excluded": 6
+  },
+  "total": 28,
+  "articles": [
+    {
+      "id": "b0343f57",
+      "title": "Mradi wa dhahabu Nyanzaga kuanza kazi Januari 2027",
+      "url": "https://habarileo.co.tz/mradi-wa-dhahabu-nyanzaga-kuanza-kazi-januari-2027/?utm_source=rss&utm_medium=rss&utm_campaign=mradi-wa-dhahabu-nyanzaga-kuanza-kazi-januari-2027",
+      "source": "HabariLeo - Madini (RSS)",
+      "source_language": "sw",
+      "country": "Tanzania",
+      "tier_weight": 3,
+      "summary_raw": "MWANZA:MRADI wa Dhahabu wa Nyanzaga uliopo Wilaya ya Sengerema, Mkoa wa Mwanza, unatarajia kumimina dhahabu ya kwanza Januari 2027 baada ya kukamilisha miaka 17 ya utafiti na ujenzi. Mradi huo unaoendeshwa na Sotta Mining Corporation Limited, ubia kati ya kampuni ya Perseus Mining inayomiliki asilimia 80 na Serikali ya Tanzania yenye asilimia 20, umeshiriki katika &#8230;",
+      "published": "Sat, 21 Nov 2026 13:28:37 +0000",
+      "score": 19,
+      "card_id": "c2a3de13807c",
+      "resolved_url": "https://habarileo.co.tz/mradi-wa-dhahabu-nyanzaga-kuanza-kazi-januari-2027",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 2198,
+      "body_sha256": "89427044d9f1d8026da993afe3a501575340568650f9195299d2ec9e7fa7aea1",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-21",
+      "quotes": [
+        "Mwaka 2024, Perseus Mining ilinunua mradi huo na kufanya uamuzi wa mwisho wa uwekezaji Aprili 2025.",
+        "Nyanzaga unatarajiwa kuwa mgodi wa nne wa Perseus Mining barani Afrika na kuzalisha wastani wa zaidi ya wakia 200,000 za dhahabu kwa mwaka kuanzia mwaka wa fedha 2028 hadi 2035."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "f7bb5a93",
+      "title": "Membidik Industri Silikon, Hilirisasi Silika Perlu Lebih dari Sekadar Tambang",
+      "url": "https://tambang.co.id/membidik-industri-silikon-hilirisasi-silika-perlu-lebih-dari-sekadar-tambang/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p><strong>JAKARTA, TAMBANG</strong> &#x2013; Silika menjadi salah satu komoditas yang mendapat perhatian dalam pembicaraan mengenai masa depan industri Indonesia. Potensinya perlu diikuti pengembangan teknologi pengolahan, kesiapan bahan baku, dan keterhubungan dengan industri pengguna agar menghasilkan nilai tambah yang lebih besar di dalam negeri.</p><p>Pemikiran itu mengemuka dalam peluncuran buku &#x201c;<strong>Hidup</strong></p>",
+      "published": "Wed, 18 Nov 2026 01:29:41 GMT",
+      "score": 16,
+      "card_id": "32d6c7af8db9",
+      "resolved_url": "https://tambang.co.id/membidik-industri-silikon-hilirisasi-silika-perlu-lebih-dari-sekadar-tambang",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 3126,
+      "body_sha256": "72d35f5bbf8b0f3951857a083bd8213a9396d0ab80db969a3b375c12f25bd4c2",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "Pemikiran itu mengemuka dalam peluncuran buku “Hidup dengan Silika: Dari Potensi hingga Industri Silikon” karya Dr.",
+        "Buku tersebut diluncurkan bersamaan dengan “Hilirisasi Warisan untuk Negeri”, yang mendokumentasikan perjalanan kebijakan peningkatan nilai tambah mineral Indonesia."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "e3ea698c",
+      "title": "PACK Bantah Rencana Akuisisi Saham Eramet di PT Weda Bay Nickel",
+      "url": "https://nikel.co.id/2026/11/20/pack-bantah-rencana-akuisisi-saham-eramet-di-pt-weda-bay-nickel/",
+      "source": "Nikel.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "NIKEL.CO.ID, JAKARTA – PT Abadi Nusantara Hijau Investama Tbk (PACK) membantah keterlibatan dalam rencana pengambilalihan saham PT Weda Bay Nickel (WBN) milik perusahaan tambang asal Prancis, Eramet. Bantahan tersebut disampaikan melalui keterbukaan informasi kepada Bursa Efek Indonesia (BEI) sebagai tanggapan atas permintaan penjelasan terkait pemberitaan mengenai transaksi tersebut. Corporate Secretary PACK, Calvin Setiawan, menjelaskan bahwa [&#8230;]",
+      "published": "Fri, 20 Nov 2026 04:29:44 +0000",
+      "score": 16,
+      "card_id": "d572a62ba67d",
+      "resolved_url": "https://nikel.co.id/2026/11/20/pack-bantah-rencana-akuisisi-saham-eramet-di-pt-weda-bay-nickel",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 3346,
+      "body_sha256": "fa8d49ece399112f3f747fb7edaa044b1018c8e74ff0e1163290580f2fa751a0",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "Ia berencana mengakuisisi sebagian atau seluruh 38,7% saham di PT Weda Bay Nickel (WBN).",
+        "“Tidak menunjukkan bahwa perseroan terlibat dalam rencana tersebut,” kata Calvin."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "783dc4ec",
+      "title": "Soal Target 70 Persen Hasil Tambang untuk Negara, IMA Minta Kontribusi Industri Dilihat Utuh",
+      "url": "https://tambang.co.id/soal-target-70-persen-hasil-tambang-untuk-negara-ima-minta-kontribusi-industri-dilihat-utuh/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p><strong>Jakarta, TAMBANG</strong> &#x2014; Indonesia Mining Association (IMA), merespon arahan Presiden Prabowo Subianto mengenai hasil tambang sebesar 70 persen dinikmati oleh negara.</p><p>Direktur Eksekutif IMA, Sari Esayanti menjelaskan bahwa IMA memahami arahan Presiden agar pengelolaan sumber daya pertambangan memberikan manfaat sebesar-besarnya bagi negara dan masyarakat.</p><p>&#x201c;Dalam menerjemahkan target 70</p>",
+      "published": "Fri, 20 Nov 2026 06:29:13 GMT",
+      "score": 14,
+      "card_id": "6dd71c4dd036",
+      "resolved_url": "https://tambang.co.id/soal-target-70-persen-hasil-tambang-untuk-negara-ima-minta-kontribusi-industri-dilihat-utuh",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 4045,
+      "body_sha256": "0ec7e52858d5672e34362ed1ded8ba079c5797919260b6fda7fafc3c5b1ce9df",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "Jakarta, TAMBANG — Indonesia Mining Association (IMA), merespon arahan Presiden Prabowo Subianto mengenai hasil tambang sebesar 70 persen dinikmati oleh negara.",
+        "Pemerintah menargetkan minimal 70 persen keuntungan dari seluruh izin usaha pertambangan (IUP) dapat dinikmati negara."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "4a7af0d7",
+      "title": "70% Hasil Tambang Wajib Dinikmati Negara, Apakah Mungkin?",
+      "url": "https://tambang.co.id/70-hasil-tambang-wajib-dinikmati-negara-apakah-mungkin/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p><strong>Jakarta, TAMBANG</strong> &#x2013; Presiden Prabowo Subianto menginstruksikan agar sedikitnya 70 persen hasil pengelolaan pertambangan di Indonesia dinikmati negara. Arahan tersebut memunculkan pertanyaan di kalangan pelaku industri mineral dan batu bara (minerba), terutama mengenai mekanisme pembagian keuntungan, kepastian investasi, hingga keberlanjutan usaha pertambangan. Lantas, seberapa realistis target tersebut diterapkan?</p><p>Instruksi itu</p>",
+      "published": "Wed, 18 Nov 2026 04:51:59 GMT",
+      "score": 14,
+      "card_id": "5139e7e45278",
+      "resolved_url": "https://tambang.co.id/70-hasil-tambang-wajib-dinikmati-negara-apakah-mungkin",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 6592,
+      "body_sha256": "ab55d4cfb3a782a0cfdd0cf1b1774d3307eaf98f35f5d4fe697ccd1370e0f5a8",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "Jakarta, TAMBANG – Presiden Prabowo Subianto menginstruksikan agar sedikitnya 70 persen hasil pengelolaan pertambangan di Indonesia dinikmati negara.",
+        "Namun, persoalan utama terletak pada definisi angka 70 persen yang dimaksud."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "813e4db0",
+      "title": "APNI Dukung Target 70% Hasil Tambang untuk Negara, Minta Skema Penghitungan Diperjelas",
+      "url": "https://nikel.co.id/2026/11/20/apni-dukung-target-70-hasil-tambang-untuk-negara-minta-skema-penghitungan-diperjelas/",
+      "source": "Nikel.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "NIKEL.CO.ID, JAKARTA — Asosiasi Penambang Nikel Indonesia (APNI) mendukung arahan Presiden Prabowo Subianto agar minimal 70% hasil tambang dinikmati negara. Tetapi, APNI meminta pemerintah menetapkan cara hitung yang jelas sebelum kebijakan diterapkan. Cara hitung itu perlu memasukkan royalti, pajak, dan PNBP yang sudah dibayar penambang setiap tahun. Pada Pembukaan Tanwir dan Milad ke-114 Muhammadiyah di [&#8230;]",
+      "published": "Fri, 20 Nov 2026 07:59:56 +0000",
+      "score": 14,
+      "card_id": "c45a32fe563b",
+      "resolved_url": "https://nikel.co.id/2026/11/20/apni-dukung-target-70-hasil-tambang-untuk-negara-minta-skema-penghitungan-diperjelas",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 7137,
+      "body_sha256": "7e248069f4d42d12b4b47332db70d71507ba06f888b27f852bc428de0d7e0299",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "NIKEL.CO.ID, JAKARTA — Asosiasi Penambang Nikel Indonesia (APNI) mendukung arahan Presiden Prabowo Subianto agar minimal 70% hasil tambang dinikmati negara.",
+        "Sementara itu, sepanjang umur tambang, bagian pemerintah mencapai 58,6% dari nilai kini arus kas proyek sebelum royalti dan pajak."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "23744528",
+      "title": "Raden Sukhyar Luncurkan Dua Buku, Rekam Perjuangan Hilirisasi dan Masa Depan Silika",
+      "url": "https://tambang.co.id/raden-sukhyar-luncurkan-dua-buku-rekam-perjuangan-hilirisasi-dan-masa-depan-silika/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p><strong>JAKARTA, TAMBANG</strong> &#x2013; Perjalanan hilirisasi mineral Indonesia tidak lahir dalam semalam. Di balik pembangunan industri pengolahan dan pemurnian, terdapat perdebatan kebijakan, tarik-menarik kepentingan, serta perjuangan panjang untuk meningkatkan manfaat sumber daya alam bagi negeri. Jejak itulah yang diangkat Dr. Raden Sukhyar melalui peluncuran dua buku di Jakarta, Selasa (17/</p>",
+      "published": "Tue, 17 Nov 2026 14:11:09 GMT",
+      "score": 13,
+      "card_id": "cea42417cafe",
+      "resolved_url": "https://tambang.co.id/raden-sukhyar-luncurkan-dua-buku-rekam-perjuangan-hilirisasi-dan-masa-depan-silika",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 4309,
+      "body_sha256": "bd24674678356c5f31e4cd05154a2d933b0659a6dd041ac46d73093b46066513",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "Dua karya tersebut berjudul “Hilirisasi Warisan untuk Negeri” dan “Hidup dengan Silika: Dari Potensi hingga Industri Silikon”.",
+        "“Orang itu selalu lupa, tetapi kalau buku itu akan selalu diingat,” ujar Sukhyar."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "66942d480534",
+      "title": "Tak Perlu Bangun Smelter Baru, Cukup Tingkatkan Hilirisasi Nikel untuk Hasilkan Produk Bernilai Tambah Lebih Tinggi - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON0FJUUhSVjYwVVVWY21HZlpqRDZCZlRTNVp2REQyc0F4WHVUd3hldUtrcVYzdjVaeEFCY28xb2NXSHZOSlYxVVVQeXlqVjluLWJYWU9pd2REdGdSWkdUUVN0Ung5dDl0RVdYR0FCNnpMN2hkZndLT1lSLVRGUXd6MkE0el93aHNDMWhWR29zOXNMNmtJZXJPZmZoaHBmRUtoWU1MZmxDZ09HcWVOWnJzb2JLNDZqNzBKby16TjJMeFlTVjN2aDFqWkVua1Ixa2V6eDY1WXloS21scXZwR2dN?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxON0FJUUhSVjYwVVVWY21HZlpqRDZCZlRTNVp2REQyc0F4WHVUd3hldUtrcVYzdjVaeEFCY28xb2NXSHZOSlYxVVVQeXlqVjluLWJYWU9pd2REdGdSWkdUUVN0Ung5dDl0RVdYR0FCNnpMN2hkZndLT1lSLVRGUXd6MkE0el93aHNDMWhWR29zOXNMNmtJZXJPZmZoaHBmRUtoWU1MZmxDZ09HcWVOWnJzb2JLNDZqNzBKby16TjJMeFlTVjN2aDFqWkVua1Ixa2V6eDY1WXloS21scXZwR2dN?oc=5\" target=\"_blank\">Tak Perlu Bangun Smelter Baru, Cukup Tingkatkan Hilirisasi Nikel untuk Hasilkan Produk Bernilai Tambah Lebih Tinggi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
+      "published": "2026-11-18",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 12,
+      "card_id": "957eb44837e6",
+      "resolved_url": "https://nikel.co.id/2026/11/18/tak-perlu-bangun-smelter-baru-cukup-tingkatkan-hilirisasi-nikel-untuk-hasilkan-produk-bernilai-tambah-lebih-tinggi",
+      "gnews_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON0FJUUhSVjYwVVVWY21HZlpqRDZCZlRTNVp2REQyc0F4WHVUd3hldUtrcVYzdjVaeEFCY28xb2NXSHZOSlYxVVVQeXlqVjluLWJYWU9pd2REdGdSWkdUUVN0Ung5dDl0RVdYR0FCNnpMN2hkZndLT1lSLVRGUXd6MkE0el93aHNDMWhWR29zOXNMNmtJZXJPZmZoaHBmRUtoWU1MZmxDZ09HcWVOWnJzb2JLNDZqNzBKby16TjJMeFlTVjN2aDFqWkVua1Ixa2V6eDY1WXloS21scXZwR2dN?oc=5",
+      "body_status": "full",
+      "body_chars": 4935,
+      "body_sha256": "cbc9e43a3034e8a57fdf89a77bc51939854d7d3785b11c8ef6a8d8a4a48906bc",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "Tanpa kebijakan kewajiban pengolahan dan pemurnian mineral di dalam negeri, nilai ekspor nikel Indonesia diperkirakan hanya mencapai sekitar US$5 miliar.",
+        "Tetapi, melalui kebijakan hilirisasi, nilai ekspor tersebut dapat meningkat hingga US$35 miliar."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "f00827b1",
+      "title": "Dari Markasnya di Tiongkok, LiuGong Sambut Tamu Indonesia dengan “Wilujeng Sumping”",
+      "url": "https://tambang.co.id/dari-markasnya-di-tiongkok-liugong-sambut-tamu-indonesia-dengan-wilujeng-sumping/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p><strong>Liuzhou, TAMBANG &#x2013;</strong> Dua kata yang akrab di tanah Sunda muncul di sebuah acara alat berat di Liuzhou, Tiongkok. &#x201c;Wilujeng Sumping&#x201d;, demikian bunyi sapaan yang tertulis di acara LiuGong tersebut. Jurnalis Majalah TAMBANG, Rian Wahyudin, mengabadikan momen itu saat meliput kegiatan LiuGong dalam kunjungannya pada 8&#x2013;12</p>",
+      "published": "Fri, 20 Nov 2026 09:35:57 GMT",
+      "score": 11,
+      "card_id": "99cef8a58c5b",
+      "resolved_url": "https://tambang.co.id/dari-markasnya-di-tiongkok-liugong-sambut-tamu-indonesia-dengan-wilujeng-sumping",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 1426,
+      "body_sha256": "51cb26f4413c17f37db21cb71556dd5c0595b8cf313cf2ad5323cdbcb13812a0",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "“Wilujeng Sumping”, demikian bunyi sapaan yang tertulis di acara LiuGong tersebut.",
+        "Dalam bahasa Sunda, wilujeng sumping berarti “selamat datang”."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "144bd397",
+      "title": "Vale Targetkan Produksi Nikel Bahodopi 66.000 Ton pada Q1 2027",
+      "url": "https://nikel.co.id/2026/11/20/vale-targetkan-produksi-nikel-bahodopi-66-000-ton-pada-q1-2027/",
+      "source": "Nikel.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "NIKEL.CO.ID, JAKARTA – PT Vale Indonesia Tbk menargetkan penyelesaian mekanis (mechanical completion) proyek pengolahan nikel Bahodopi pada kuartal I 2027. Fasilitas tersebut dirancang memiliki kapasitas produksi sebesar 66.000 ton. Pengembangan proyek Bahodopi merupakan bagian dari strategi perusahaan untuk meningkatkan kapasitas pengolahan nikel sekaligus memperkuat kontribusi Indonesia dalam rantai pasok baterai kendaraan listrik (electric vehicle/EV). Presiden [&#8230;]",
+      "published": "Fri, 20 Nov 2026 08:10:09 +0000",
+      "score": 11,
+      "card_id": "2e0afe475d1b",
+      "resolved_url": "https://nikel.co.id/2026/11/20/vale-targetkan-produksi-nikel-bahodopi-66-000-ton-pada-q1-2027",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 3815,
+      "body_sha256": "e0b44c1ec1df896feeb0134c37952c84ef50c57b63d704ad57729fc14b27ddb1",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "Fasilitas tersebut dirancang memiliki kapasitas produksi sebesar 66.000 ton.",
+        "- Vale Targetkan Produksi Nikel Bahodopi 66.000 Ton pada Q1 2027 sedang Anda baca"
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "80bba6bb",
+      "title": "Pemangkasan Kuota dan Rencana Porsi Negara Picu Ketidakpastian Pasokan Nikel Indonesia",
+      "url": "https://nikel.co.id/2026/11/20/pemangkasan-kuota-dan-rencana-porsi-negara-picu-ketidakpastian-pasokan-nikel-indonesia/",
+      "source": "Nikel.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "NIKEL.CO.ID, JAKARTA– Harga nikel di pasar global menguat di tengah meningkatnya ketidakpastian pasokan dari Indonesia. Rencana pemerintah memangkas kuota produksi bijih nikel pada 2027 serta wacana peningkatan porsi manfaat pertambangan bagi negara menjadi faktor yang memengaruhi sentimen pasar. Dilansir dari &#160;Crux Investor, harga nikel kontrak tiga bulan di London Metal Exchange (LME) naik 3,8% menjadi [&#8230;]",
+      "published": "Fri, 20 Nov 2026 07:19:57 +0000",
+      "score": 11,
+      "card_id": "430aae864430",
+      "resolved_url": "https://nikel.co.id/2026/11/20/pemangkasan-kuota-dan-rencana-porsi-negara-picu-ketidakpastian-pasokan-nikel-indonesia",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 9713,
+      "body_sha256": "1d24cb1bc2f1adc34bed9d45a54a70f76f5642358e630a22202e6051495bd499",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "Dilansir dari Crux Investor, harga nikel kontrak tiga bulan di London Metal Exchange (LME) naik 3,8% menjadi US$16.462 per ton pada 17 November 2026.",
+        "Tri juga mengungkapkan bahwa kuota produksi bijih nikel dalam revisi RKAB 2026 berada pada kisaran 290 juta hingga 300 juta ton."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "5aff08de91f7",
+      "title": "Investasi ESDM Tembus US$16,47 Miliar, Indonesia Bidik Posisi Strategis dalam Rantai Pasok Industri Teknologi Dunia - Industry.co.id",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZndKZkZYdzFZSkdyYXdhN01wajcxdzZkZ0dlb2JMSVJ5bzdZN3hhaXNiTGpiQThQQmdIcmlqeFZMaU44c1NwaTNqTk5ZZDMtb3FVWlVOR0pLeEtrczZfQWUyN3IxTXdLekFoem5RcjFla01hdHotRTRLSmFWNnAxRVhiTkQ4TUV1ZHFReGJtR0JIbTFpQ0RSTDA5bnJBQ0hnZlo3b0R3SnRNUGduc1BGelhiUjVmVXdtTzVmTF9Pam92R19YWlJNUGVxMDlBZ2VZYWkyTXVXd2FXU1pYUkZvM2JDSnJQdw?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZndKZkZYdzFZSkdyYXdhN01wajcxdzZkZ0dlb2JMSVJ5bzdZN3hhaXNiTGpiQThQQmdIcmlqeFZMaU44c1NwaTNqTk5ZZDMtb3FVWlVOR0pLeEtrczZfQWUyN3IxTXdLekFoem5RcjFla01hdHotRTRLSmFWNnAxRVhiTkQ4TUV1ZHFReGJtR0JIbTFpQ0RSTDA5bnJBQ0hnZlo3b0R3SnRNUGduc1BGelhiUjVmVXdtTzVmTF9Pam92R19YWlJNUGVxMDlBZ2VZYWkyTXVXd2FXU1pYUkZvM2JDSnJQdw?oc=5\" target=\"_blank\">Investasi ESDM Tembus US$16,47 Miliar, Indonesia Bidik Posisi Strategis dalam Rantai Pasok Industri Teknologi Dunia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Industry.co.id</font>",
+      "published": "2026-11-19",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia mineral strategis",
+      "country": "Indonesia",
+      "score": 11,
+      "card_id": "4cc5bd1d0409",
+      "resolved_url": "https://industry.co.id/read/159487/investasi-esdm-tembus-us1647-miliar-indonesia-bidik-posisi-strategis-dalam-rantai-pasok-industri-teknologi-dunia",
+      "gnews_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZndKZkZYdzFZSkdyYXdhN01wajcxdzZkZ0dlb2JMSVJ5bzdZN3hhaXNiTGpiQThQQmdIcmlqeFZMaU44c1NwaTNqTk5ZZDMtb3FVWlVOR0pLeEtrczZfQWUyN3IxTXdLekFoem5RcjFla01hdHotRTRLSmFWNnAxRVhiTkQ4TUV1ZHFReGJtR0JIbTFpQ0RSTDA5bnJBQ0hnZlo3b0R3SnRNUGduc1BGelhiUjVmVXdtTzVmTF9Pam92R19YWlJNUGVxMDlBZ2VZYWkyTXVXd2FXU1pYUkZvM2JDSnJQdw?oc=5",
+      "body_status": "full",
+      "body_chars": 6843,
+      "body_sha256": "441e8f34dc1b74db0fa0aac7f9777e8a4850d72f7fcd4f2e905536f6b11dfd29",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-19",
+      "quotes": [
+        "Realisasi investasi sektor ESDM pada semester I 2026 mencapai US$16,47 miliar, meningkat sekitar 18,4% dibandingkan periode yang sama tahun sebelumnya.",
+        "Kapasitas terpasang pembangkit EBT Indonesia mencapai 16.442 megawatt pada Agustus 2026, setara sekitar 15% dari total kapasitas pembangkit nasional."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "cbac83de",
+      "title": "TPT Ke-35 Di Ternate Resmi Dibuka, PERHAPI  Dorong Tambang Berkelanjutan Untuk Kesejahteraan Masyarakat",
+      "url": "https://tambang.co.id/tpt-ke-35-di-ternate-resmi-dibuka-perhapi-dorong-tambang-berkelanjutan-untuk-kesejahteraan-masyarakat/",
+      "source": "Tambang.co.id (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p>Ternate,TAMBANG,- Perhimpunan Ahli Pertambangan Indonesia (PERHAPI) menggelar Temu Profesi Tahunan (TPT) ke-35. Gubernur Maluku Utara, Sherly Tjoanda turut hadir menyampaikan sambutan sekaligus membuka secara resmi ajang tahunan dari Organisasi para professional pertambangan ini. &#xa0;Sebelumnya sudah ada rangkaian kegiatan Pra-TPT seperti jalan santai, pertemuan para KTT Tambang</p>",
+      "published": "Tue, 17 Nov 2026 09:00:03 GMT",
+      "score": 10,
+      "card_id": "61f6540156c1",
+      "resolved_url": "https://tambang.co.id/tpt-ke-35-di-ternate-resmi-dibuka-perhapi-dorong-tambang-berkelanjutan-untuk-kesejahteraan-masyarakat",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 7493,
+      "body_sha256": "5dbb8923d82c4118748f796ef3b6db00d190071d27c4d27fa52251764f70c306",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "“Kami tentunya berharap agar hal ini segera menjadi perhatian pemerintah pusat untuk mempertimbangkan percepatan transfer DBH ini ke pemerintah daerah,\"tandas Widhy.",
+        "Ternate,TAMBANG,- Perhimpunan Ahli Pertambangan Indonesia (PERHAPI) menggelar Temu Profesi Tahunan (TPT) ke-35."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "3d7cea17",
+      "title": "MIND ID Targetkan Pangkas Dua Juta Ton Emisi Gas Rumah Kaca",
+      "url": "https://www.ruangenergi.com/mind-id-targetkan-pangkas-dua-juta-ton-emisi-gas-rumah-kaca/",
+      "source": "Ruang Energi (RSS)",
+      "source_language": "id",
+      "country": "Indonesia",
+      "tier_weight": 3,
+      "summary_raw": "<p>Jakarta, ruangenergi.com-Holding Industri Pertambangan Indonesia MIND ID menargetkan penurunan emisi gas rumah kaca (GRK) sebesar 15,5 persen atau setara dua juta ton CO2 (CO2e) pada 2030. &#8220;Kami berkomitmen mendukung target Indonesia dalam mencapai second NDC tahun 2030 serta aspirasi net zero emissions Indonesia,&#8221; kata Division Head of Sustainability MIND ID Binahidra Logiardi dalam keterangannya di [&#8230;]</p>\n<p>The post <a href=\"https://www.ruangenergi.com/mind-id-targetkan-pangkas-dua-juta-ton-emisi-gas-rumah-kaca/\">MIND ID Targetkan Pangkas Dua Juta Ton Emisi Gas Rumah Kaca</a> appeared first on <a href=\"https://www.ruangenergi.com\">Berita energi &amp; Minerba Hari Ini - RuangEnergi.com</a>.</p>",
+      "published": "Sat, 21 Nov 2026 09:27:44 +0000",
+      "score": 10,
+      "card_id": "15aa01e479ea",
+      "resolved_url": "https://ruangenergi.com/mind-id-targetkan-pangkas-dua-juta-ton-emisi-gas-rumah-kaca",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 4223,
+      "body_sha256": "bf7a52b146cf369828ff3d6e0ee3e39b610c3917237ff0ec0325882c10a0de93",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-21",
+      "quotes": [
+        "Jakarta, ruangenergi.com-Holding Industri Pertambangan Indonesia MIND ID menargetkan penurunan emisi gas rumah kaca (GRK) sebesar 15,5 persen atau setara dua juta ton CO2 (CO2e) pada 2030."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "b8ce07f7",
+      "title": "Freeport Indonesia offers Manyar copper to China at $158/ton premium for 2027",
+      "url": "https://www.mining.com/web/freeport-indonesia-offers-manyar-copper-to-china-at-158-t-premium-for-2027/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "This is the first time copper cathode from the 480,000-ton-per-year capacity smelter has been marketed on an annual basis.",
+      "published": "Wed, 18 Nov 2026 15:19:16 +0000",
+      "score": 10,
+      "card_id": "03b03d8eb82b",
+      "resolved_url": "https://mining.com/web/freeport-indonesia-offers-manyar-copper-to-china-at-158-t-premium-for-2027",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 1709,
+      "body_sha256": "7aa67c68e87ce12695fb84358302463dd3605dcc327dd458f0b382a72dbcf023",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "The $158 figure, paid on top of benchmark London Metal Exchange copper prices for physical metal, applies to all Asian export markets, one of the sources said.",
+        "The closely watched Yangshan premium, a gauge of China’s appetite for spot copper imports, rose to a record $350 a ton on Tuesday."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "cefc894c",
+      "title": "Indonesian miners scramble for clarity as Prabowo seeks greater state share",
+      "url": "https://www.mining.com/web/indonesian-miners-scramble-for-clarity-as-prabowo-seeks-greater-state-share/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "The country's mining sector is already struggling with tighter production quotas and rising costs.",
+      "published": "Wed, 18 Nov 2026 15:12:57 +0000",
+      "score": 10,
+      "card_id": "04348761591b",
+      "resolved_url": "https://mining.com/web/indonesian-miners-scramble-for-clarity-as-prabowo-seeks-greater-state-share",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 4711,
+      "body_sha256": "359eaad09a6868ea30167f820c2c97045233741cded84d8e2ca9cc100c375cac",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "“The mere uncertainty surrounding definitions is enough to delay new investment decisions,” said Fauzan Luthfi Djamal, mining analyst with brokerage Mirae Asset Sekuritas Indonesia.",
+        "“Yet the technical regulations are never prepared beforehand … we’re seeing this happen again.”"
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "e54ff7230e25",
+      "title": "Горнодобывающая отрасль Казахстана может получить новые инвестиции из Швеции - Казинформ",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZ9IBtgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZw?oc=5",
+      "source": "Google News (KZ:ru)",
+      "source_language": "ru",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZ9IBtgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZw?oc=5\" target=\"_blank\">Горнодобывающая отрасль Казахстана может получить новые инвестиции из Швеции</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Казинформ</font>",
+      "published": "2026-11-20",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Казахстан горнодобывающая промышленность",
+      "country": "Kazakhstan",
+      "score": 10,
+      "card_id": "d77143bbc8de",
+      "resolved_url": "https://inform.kz/amp/gornodobivayushaya-otrasl-kazahstana-mozhet-poluchit-novie-investitsii-iz-shvets-aa53e57b",
+      "gnews_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZ9IBtgFBVV95cUxOaWU2VzREcFRFYzJweHY1QU5PaTFoN2tuLTVvNzRRa1RhRlJmZFlPM0IzajNmSTRoT1BqNlNLVlNfb2w5a2MtQ0FpcndtQl9KY0FUcDQwSFlCT2JLT3IyQnNNSDg1ZE9WVEROSlpYZEdpY3ctV3M3dkQ0T2ExNVpGSFR4U0w5bi1sYm1lTjY5MVVYRmhoaDJ6Y1Q3dDJYanhIZW9fTlUyYVVPSG1DdXEzOFJCVFFxZw?oc=5",
+      "body_status": "full",
+      "body_chars": 961,
+      "body_sha256": "d5dd26c97a746a46840f131dfe0032576f6a76c0fc256ed9598124b039a399b8",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "В числе участников от бизнеса – «Тау-Кен Самұрық», Kazakh Nickel и «Таза метал технолоджис» с казахстанской стороны, Epiroc, Volvo Construction Equipment и Scania – со шведской."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "7f8535e9",
+      "title": "Kazakhstan lent more than $1 billion to emerging mining tycoon",
+      "url": "https://www.mining.com/web/kazakhstan-lent-more-than-1-billion-to-emerging-mining-tycoon/",
+      "source": "Mining.com - Critical Minerals (category)",
+      "source_language": "en",
+      "country": "Kazakhstan",
+      "tier_weight": 5,
+      "summary_raw": "Nurlan Artykbayev emerged as a mining tycoon last year after agreeing to purchase copper miner Kazakhmys.",
+      "published": "Tue, 17 Nov 2026 23:48:09 +0000",
+      "score": 9,
+      "card_id": "da5acf8edf19",
+      "resolved_url": "https://mining.com/web/kazakhstan-lent-more-than-1-billion-to-emerging-mining-tycoon",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 2087,
+      "body_sha256": "21b571de565b291d8e3292c3dab425cfcf169daee5da3a9e2bf46cbc23b45fff",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "He also runs Qazaq Kalium, which has been developing the Satimola potassium mine for the past few years and plans to invest $2.4 billion by 2035.",
+        "That includes tapping about $15 billion from an oil fund to invest in infrastructure development and construction through 2029."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "80731a7e",
+      "title": "Last Javan rhino habitat caught between mining plans and relocation debate",
+      "url": "https://news.mongabay.com/2026/11/last-javan-rhino-habitat-caught-between-mining-plans-and-relocation-debate/",
+      "source": "Mongabay - Conservation News",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "JAKARTA — Indonesian lawmakers and environmental groups are urging the government to revoke a mining map covering part of the waters around Ujung Kulon National Park, home to the world’s last surviving Javan rhinos. The calls were in response to a proposal by Hashim Djojohadikusumo, a mining and energy tycoon and the brother of President [&#8230;]",
+      "published": "20 Nov 2026 12:30:07 +0000",
+      "score": 9,
+      "card_id": "052f0016de32",
+      "resolved_url": "https://news.mongabay.com/2026/11/last-javan-rhino-habitat-caught-between-mining-plans-and-relocation-debate",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 9702,
+      "body_sha256": "d4646845604efbf543d33104648a1685f28bfc51ad1453763bf2a91b6903ce71",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "In November 2025, the rhino was moved to the JRSCA, about 20 km (12 mi) from where he was captured.",
+        "He also questioned the suitability of Alas Purwo, about 1,400 km (870 mi) away, saying he had seen no study demonstrating that the area could support the species."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "b142d115",
+      "title": "Nickel linked to deforestation in Indonesia traded on London Metal Exchange, says report",
+      "url": "https://news.mongabay.com/short-article/2026/11/nickel-linked-to-deforestation-in-indonesia-traded-on-london-metal-exchange-says-report/",
+      "source": "Mongabay - Conservation News",
+      "source_language": "en",
+      "country": "Indonesia",
+      "tier_weight": 5,
+      "summary_raw": "Two companies approved for trading nickel on the London Metal Exchange (LME) could be linked to supply chains that have cleared primary rainforest in Indonesia, according to a report published by the NGO Environmental Investigation Agency (EIA). The NGO investigated two LME-approved Indonesian refiners – PT CNGR Ding Xing and PT Eternal Nickel Industry (ENI) [&#8230;]",
+      "published": "20 Nov 2026 10:51:23 +0000",
+      "score": 9,
+      "card_id": "df32dcba08b1",
+      "resolved_url": "https://news.mongabay.com/short-article/2026/11/nickel-linked-to-deforestation-in-indonesia-traded-on-london-metal-exchange-says-report",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 3247,
+      "body_sha256": "e8f47db30196130beff43e0eab315204391429f2e0287a4ee077184814ffaeda",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-20",
+      "quotes": [
+        "“Deforestation caused by mining is a growing problem and it seems to be a blind spot for the LME and for the mining and metals sector in general.”",
+        "“There’s a lack of transparency about where LME-listed metal producers source the minerals that go into their products,” Robertson said."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "ca756f1f4209",
+      "title": "MIND ID Sulap 6,8 Juta Ton Sisa Produksi Mineral Jadi Nilai Tambah - CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUVN6Rndyb1dUVmZaV3puZVgxMzJPWnFWakN3Vkcxc09TbmV4V1pUc29hRW9VOGhmY2E4OFdidm1uMTF2aml0SkQ5alpiVERXY3A0YjdwVjhxYlJDaUE5bnFkQUxkWHdoWmJSR2oyRXpTQUR3eFBieFZIWmZxZXY3Wk9HWTNqZFRzZnkxTUxMTGU5OHAzWjBqSjljR2FtS3BIOUVJd01HbDhxbnpOSUU4bEo1THlxdF9QS2lEaTVJVlFrQdIBxwFBVV95cUxQQllqcTZLZUhxMzRCbmo3VEY4bmhVRnA3LWRPbldBRVNsaHdxUlJLc3lKNWdzX2VnWXpnUW5XQkRCeHZWNjREVHlLYlVPN2JrX3BiREFoS25wdnZzTm9OMmQxRHpYRTZZNl9mTjJqUjdnMmZJbGdYeElvWGpCNm5QODY0N1ZrU3pwaHBtd1ZEbXBSZlpreXZ1VXlvQmVJTXNhWGlBUUZlQmZpMW5jcnRZdExsbkh3azZhd2tzR1NHY3lfejV3VGtN?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUVN6Rndyb1dUVmZaV3puZVgxMzJPWnFWakN3Vkcxc09TbmV4V1pUc29hRW9VOGhmY2E4OFdidm1uMTF2aml0SkQ5alpiVERXY3A0YjdwVjhxYlJDaUE5bnFkQUxkWHdoWmJSR2oyRXpTQUR3eFBieFZIWmZxZXY3Wk9HWTNqZFRzZnkxTUxMTGU5OHAzWjBqSjljR2FtS3BIOUVJd01HbDhxbnpOSUU4bEo1THlxdF9QS2lEaTVJVlFrQdIBxwFBVV95cUxQQllqcTZLZUhxMzRCbmo3VEY4bmhVRnA3LWRPbldBRVNsaHdxUlJLc3lKNWdzX2VnWXpnUW5XQkRCeHZWNjREVHlLYlVPN2JrX3BiREFoS25wdnZzTm9OMmQxRHpYRTZZNl9mTjJqUjdnMmZJbGdYeElvWGpCNm5QODY0N1ZrU3pwaHBtd1ZEbXBSZlpreXZ1VXlvQmVJTXNhWGlBUUZlQmZpMW5jcnRZdExsbkh3azZhd2tzR1NHY3lfejV3VGtN?oc=5\" target=\"_blank\">MIND ID Sulap 6,8 Juta Ton Sisa Produksi Mineral Jadi Nilai Tambah</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Indonesia</font>",
+      "published": "2026-11-18",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia mineral strategis",
+      "country": "Indonesia",
+      "score": 9,
+      "card_id": "42cbdebfb481",
+      "resolved_url": "https://cnbcindonesia.com/news/20261118122539-4-786266/mind-id-sulap-68-juta-ton-sisa-produksi-mineral-jadi-nilai-tambah",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUVN6Rndyb1dUVmZaV3puZVgxMzJPWnFWakN3Vkcxc09TbmV4V1pUc29hRW9VOGhmY2E4OFdidm1uMTF2aml0SkQ5alpiVERXY3A0YjdwVjhxYlJDaUE5bnFkQUxkWHdoWmJSR2oyRXpTQUR3eFBieFZIWmZxZXY3Wk9HWTNqZFRzZnkxTUxMTGU5OHAzWjBqSjljR2FtS3BIOUVJd01HbDhxbnpOSUU4bEo1THlxdF9QS2lEaTVJVlFrQdIBxwFBVV95cUxQQllqcTZLZUhxMzRCbmo3VEY4bmhVRnA3LWRPbldBRVNsaHdxUlJLc3lKNWdzX2VnWXpnUW5XQkRCeHZWNjREVHlLYlVPN2JrX3BiREFoS25wdnZzTm9OMmQxRHpYRTZZNl9mTjJqUjdnMmZJbGdYeElvWGpCNm5QODY0N1ZrU3pwaHBtd1ZEbXBSZlpreXZ1VXlvQmVJTXNhWGlBUUZlQmZpMW5jcnRZdExsbkh3azZhd2tzR1NHY3lfejV3VGtN?oc=5",
+      "body_status": "full",
+      "body_chars": 3738,
+      "body_sha256": "ae56e143ed3f8f058c3203d9bccf6b097b98d0a0ed91525ff6853c68c737b403",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-18",
+      "quotes": [
+        "MIND ID Sulap 6,8 Juta Ton Sisa Produksi Mineral Jadi Nilai Tambah",
+        "Pada komoditas yang sama, PT Aneka Tambang Tbk (ANTAM) melalui Unit Bisnis Pertambangan Nikel Kolaka turut mengolah sekitar 5.000 ton slag nikel per tahun menjadi batako dan paving block melalui program Pomalaa Beton."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "1be187eeb543",
+      "title": "VIDEO: Hilirisasi dan Pertanian Jadi Motor Penggerak Ekonomi Daerah - CNN Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU3FGQ0dCWVd3TzJfcXNtR19yUDdUcnlGc1RLNlRlaEE2MlpqaU54aHpiNldmYml4ejVneGZhbnFHQk1UX1NnaGRrcjRsNndTbEYtQTBpZkpaQzg3YjBKRjlZZnBkQXNDSkNpVk5jamw4VVdnd2ZtSVF4a1hSZmdMbGVON282UmxQUEtvcWRmR0pIeFNXLVZ2dkR3TG1tZ2xlYURBS1p5OGpVYjFpMnM4OVV6VUhaVHhfQ3pFbGFFY3RCckU?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU3FGQ0dCWVd3TzJfcXNtR19yUDdUcnlGc1RLNlRlaEE2MlpqaU54aHpiNldmYml4ejVneGZhbnFHQk1UX1NnaGRrcjRsNndTbEYtQTBpZkpaQzg3YjBKRjlZZnBkQXNDSkNpVk5jamw4VVdnd2ZtSVF4a1hSZmdMbGVON282UmxQUEtvcWRmR0pIeFNXLVZ2dkR3TG1tZ2xlYURBS1p5OGpVYjFpMnM4OVV6VUhaVHhfQ3pFbGFFY3RCckU?oc=5\" target=\"_blank\">VIDEO: Hilirisasi dan Pertanian Jadi Motor Penggerak Ekonomi Daerah</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN Indonesia</font>",
+      "published": "2026-11-21",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9,
+      "card_id": "00108e73ae13",
+      "resolved_url": "https://cnnindonesia.com/tv/20261121152121-400-1429844/video-hilirisasi-dan-pertanian-jadi-motor-penggerak-ekonomi-daerah",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU3FGQ0dCWVd3TzJfcXNtR19yUDdUcnlGc1RLNlRlaEE2MlpqaU54aHpiNldmYml4ejVneGZhbnFHQk1UX1NnaGRrcjRsNndTbEYtQTBpZkpaQzg3YjBKRjlZZnBkQXNDSkNpVk5jamw4VVdnd2ZtSVF4a1hSZmdMbGVON282UmxQUEtvcWRmR0pIeFNXLVZ2dkR3TG1tZ2xlYURBS1p5OGpVYjFpMnM4OVV6VUhaVHhfQ3pFbGFFY3RCckU?oc=5",
+      "body_status": "partial",
+      "body_chars": 471,
+      "body_sha256": "a055ecc5809b5d536d0f810c74de4feb761f8b28f85c3bcf81e6582c3015b02c",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-21",
+      "quotes": [
+        "Pertumbuhan ekonomi Indonesia tercatat 5,47 persen, belum sepenuhnya merata di seluruh daerah.",
+        "VIDEO: Hilirisasi dan Pertanian Jadi Motor Penggerak Ekonomi Daerah"
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "5e862b7ad341",
+      "title": "Pakar Ungkap Sisi Gelap Hilirisasi Nikel Indonesia, Dominasi China Jadi Sorotan - Suarasulsel.id",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV0tBbzBLSzNuZTVBM0ZoQVczM2VxZTdoTnhzM1RFM1NrcUxrRW1JZGJFWktzVzZRd2FWT3Y3RlNITkdBSWlCbUw3QUlHa1RqZHZ6UHFjWW1vanBDVlBVejV2WWVrbGxpSzRXa2NMcm5ZTHBWdFQ5Sm9ETjI2Uk5kWmlyb09QRHpxcUlzRC1VNGdUbDZGdWdMQ05TV0huX3VETHMtOUtSUzNLNE0xNmNOZENZWHFVYzhTRkJmX0Y3Zk5NQ29X0gHKAUFVX3lxTE0taG9PcDMwTXBLZkhjZHlxT0xZTW9hNk5KXzdMdzYxOWJ5VUViSHI0VXAyYlhUWTMxeDBtQmpXMnFMSGpab1ZjanE5azBfelM5UGFobGZ6UjJ4NTFlOFRDSkF5bnluRHJRQ3hZdC1GdE5XXzZRbjNZNE9hMVZsOTBveU83SFBCWWdMNkFYZWc1T1lienUxQ0lYRDRrZFZPTHhrRU1wWC1ubk5neGxxTFlkcjdkM3JTSkNlN2ZCcl9JTjBaVGVSS3QyUGc?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQV0tBbzBLSzNuZTVBM0ZoQVczM2VxZTdoTnhzM1RFM1NrcUxrRW1JZGJFWktzVzZRd2FWT3Y3RlNITkdBSWlCbUw3QUlHa1RqZHZ6UHFjWW1vanBDVlBVejV2WWVrbGxpSzRXa2NMcm5ZTHBWdFQ5Sm9ETjI2Uk5kWmlyb09QRHpxcUlzRC1VNGdUbDZGdWdMQ05TV0huX3VETHMtOUtSUzNLNE0xNmNOZENZWHFVYzhTRkJmX0Y3Zk5NQ29X0gHKAUFVX3lxTE0taG9PcDMwTXBLZkhjZHlxT0xZTW9hNk5KXzdMdzYxOWJ5VUViSHI0VXAyYlhUWTMxeDBtQmpXMnFMSGpab1ZjanE5azBfelM5UGFobGZ6UjJ4NTFlOFRDSkF5bnluRHJRQ3hZdC1GdE5XXzZRbjNZNE9hMVZsOTBveU83SFBCWWdMNkFYZWc1T1lienUxQ0lYRDRrZFZPTHhrRU1wWC1ubk5neGxxTFlkcjdkM3JTSkNlN2ZCcl9JTjBaVGVSS3QyUGc?oc=5\" target=\"_blank\">Pakar Ungkap Sisi Gelap Hilirisasi Nikel Indonesia, Dominasi China Jadi Sorotan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Suarasulsel.id</font>",
+      "published": "2026-11-21",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9,
+      "card_id": "752a078e6086",
+      "resolved_url": "https://sulsel.suara.com/read/2026/11/21/120334/pakar-ungkap-sisi-gelap-hilirisasi-nikel-indonesia-dominasi-china-jadi-sorotan",
+      "gnews_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV0tBbzBLSzNuZTVBM0ZoQVczM2VxZTdoTnhzM1RFM1NrcUxrRW1JZGJFWktzVzZRd2FWT3Y3RlNITkdBSWlCbUw3QUlHa1RqZHZ6UHFjWW1vanBDVlBVejV2WWVrbGxpSzRXa2NMcm5ZTHBWdFQ5Sm9ETjI2Uk5kWmlyb09QRHpxcUlzRC1VNGdUbDZGdWdMQ05TV0huX3VETHMtOUtSUzNLNE0xNmNOZENZWHFVYzhTRkJmX0Y3Zk5NQ29X0gHKAUFVX3lxTE0taG9PcDMwTXBLZkhjZHlxT0xZTW9hNk5KXzdMdzYxOWJ5VUViSHI0VXAyYlhUWTMxeDBtQmpXMnFMSGpab1ZjanE5azBfelM5UGFobGZ6UjJ4NTFlOFRDSkF5bnluRHJRQ3hZdC1GdE5XXzZRbjNZNE9hMVZsOTBveU83SFBCWWdMNkFYZWc1T1lienUxQ0lYRDRrZFZPTHhrRU1wWC1ubk5neGxxTFlkcjdkM3JTSkNlN2ZCcl9JTjBaVGVSS3QyUGc?oc=5",
+      "body_status": "full",
+      "body_chars": 3223,
+      "body_sha256": "74ed056113093db7a8276fc52447243317dc8930c0552839ff1ed7d7c0f7acd1",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-21",
+      "quotes": [
+        "- Universitas Hasanuddin menggelar kuliah tamu internasional membahas hilirisasi nikel dan industri hijau pada Rabu, 18 November 2026.",
+        "- Pakar internasional menilai dominasi China dalam pengolahan mineral kritis menjadi tantangan besar bagi hilirisasi nikel Indonesia."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "6b8be9ea1472",
+      "title": "Vale Indonesia Percepat Hilirisasi Nikel di Pomalaa dan Bahodopi - ChatNews.id",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRDBidVdnMmZpeWRpYXZpQWxNNWs5b3ppZ05TNlh1c3lleEtCRmZYUVNNU0w0cHkzQkRyeTBKb1kxU3o1TmE2anRKNlZGeFZ2dnNVai0tQUtFaVpFVm9UZFl4dlZ3bHZPQ3ZVWC1VNzQ3bUw5bTdtdXlDTE92SEpqRVZ5LUowc05SdG1WZQ?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQRDBidVdnMmZpeWRpYXZpQWxNNWs5b3ppZ05TNlh1c3lleEtCRmZYUVNNU0w0cHkzQkRyeTBKb1kxU3o1TmE2anRKNlZGeFZ2dnNVai0tQUtFaVpFVm9UZFl4dlZ3bHZPQ3ZVWC1VNzQ3bUw5bTdtdXlDTE92SEpqRVZ5LUowc05SdG1WZQ?oc=5\" target=\"_blank\">Vale Indonesia Percepat Hilirisasi Nikel di Pomalaa dan Bahodopi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ChatNews.id</font>",
+      "published": "2026-11-21",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 9,
+      "card_id": "81998361eede",
+      "resolved_url": "https://chatnews.id/vale-indonesia-percepat-hilirisasi-nikel-di-pomalaa-dan-bahodopi",
+      "gnews_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRDBidVdnMmZpeWRpYXZpQWxNNWs5b3ppZ05TNlh1c3lleEtCRmZYUVNNU0w0cHkzQkRyeTBKb1kxU3o1TmE2anRKNlZGeFZ2dnNVai0tQUtFaVpFVm9UZFl4dlZ3bHZPQ3ZVWC1VNzQ3bUw5bTdtdXlDTE92SEpqRVZ5LUowc05SdG1WZQ?oc=5",
+      "body_status": "title_only",
+      "body_chars": 0,
+      "body_sha256": null,
+      "body_source": "none",
+      "block_type": "bot_block",
+      "extracted_date": null,
+      "quotes": [],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "39b738a4",
+      "title": "A MONGOLIAN CRITICAL MINERALS RESEARCH AND INNOVATION (R&I) HUB IS NEEDED",
+      "url": "https://www.mongolianminingjournal.com/a/75502",
+      "source": "Mongolian Mining Journal - English",
+      "source_language": "en",
+      "country": "Mongolia",
+      "tier_weight": 5,
+      "summary_raw": "A MONGOLIAN CRITICAL MINERALS RESEARCH AND INNOVATION (R&I) HUB IS NEEDED",
+      "published": null,
+      "score": 8,
+      "card_id": "b4f843d91363",
+      "resolved_url": "https://mongolianminingjournal.com/a/75502",
+      "gnews_url": null,
+      "body_status": "full",
+      "body_chars": 6324,
+      "body_sha256": "d717e2a024d69a1381bcf5dece5a6bbf24466b96b585ec0b83388d02d9a528a8",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "The international roundtable conference and cooperation workshop titled \"Critical Minerals: Opportunities and Challenges\" was held on 14-15 October 2026.",
+        "A panel discussion also explored the development of strategic value chains based on critical mineral resources."
+      ],
+      "resolve_method": "direct"
+    },
+    {
+      "id": "42d0d97863f7",
+      "title": "Deklarasi Mineral Kritis ASEAN & Tantangan bagi Strategi Hilirisasi RI - CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSldpeGZGTFpPNTlJVnYxMzc3RFBlVFl0TnQ5OFdnWFB0dW9QTGFidFktWVBrZTYxMGR6X0NGcWtvMGFrS3pYQnZfRU9Ec0pjZmFMRGdxQUtITTl4M0RtUGxjdFAxVjNvQ1dIRmgxU1BnbEVPaXpFWk5FMXY4TDNDMlU3eUZKT0g1NTJBRTk2UTF0cUdEVjdldU1jV3VuamJOdXRLMnQyRVA1bzNtWk1qb2xYMVI5bGd5dlZQVmJkS0VUTFhsdTFrcA?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSldpeGZGTFpPNTlJVnYxMzc3RFBlVFl0TnQ5OFdnWFB0dW9QTGFidFktWVBrZTYxMGR6X0NGcWtvMGFrS3pYQnZfRU9Ec0pjZmFMRGdxQUtITTl4M0RtUGxjdFAxVjNvQ1dIRmgxU1BnbEVPaXpFWk5FMXY4TDNDMlU3eUZKT0g1NTJBRTk2UTF0cUdEVjdldU1jV3VuamJOdXRLMnQyRVA1bzNtWk1qb2xYMVI5bGd5dlZQVmJkS0VUTFhsdTFrcA?oc=5\" target=\"_blank\">Deklarasi Mineral Kritis ASEAN & Tantangan bagi Strategi Hilirisasi RI</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Indonesia</font>",
+      "published": "2026-11-17",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia mineral strategis",
+      "country": "Indonesia",
+      "score": 8,
+      "card_id": "15f713eb984d",
+      "resolved_url": "https://cnbcindonesia.com/opini/20261117130630-14-785925/deklarasi-mineral-kritis-asean-tantangan-bagi-strategi-hilirisasi-ri",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSldpeGZGTFpPNTlJVnYxMzc3RFBlVFl0TnQ5OFdnWFB0dW9QTGFidFktWVBrZTYxMGR6X0NGcWtvMGFrS3pYQnZfRU9Ec0pjZmFMRGdxQUtITTl4M0RtUGxjdFAxVjNvQ1dIRmgxU1BnbEVPaXpFWk5FMXY4TDNDMlU3eUZKT0g1NTJBRTk2UTF0cUdEVjdldU1jV3VuamJOdXRLMnQyRVA1bzNtWk1qb2xYMVI5bGd5dlZQVmJkS0VUTFhsdTFrcA?oc=5",
+      "body_status": "full",
+      "body_chars": 9754,
+      "body_sha256": "2ce2573b31ec43cd3168153b17756ca9f4748e6dbffa5aab1c124d42c6f60539",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "Menurut International Energy Agency (IEA), Asia Tenggara menguasai sekitar 51 persen cadangan nikel global, 20 persen cadangan bauksit dan 17 persen cadangan timah.",
+        "Pada 2024, Indonesia menyumbang sekitar 63 persen produksi tambang nikel dunia dan lebih dari 40 persen produksi nikel olahan global."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "bee173984614",
+      "title": "Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL - CNBC Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaGNHOUJsU2F2cXdQSWQ5clRiWDJzc1VaMmN1WlU4NzFCWEg5TExUMWpuSEY5ZGt1aTVGcE40aXI0b0FSNmhzNWFOc1VDeEhHZTdDTnRENklDX0lseXl4Y2NOSEExX3o4dm5IUVZaZ3QzNlcxX2g1Ukh5SDRlVFA4YVkxMkx0TmRUMGNTOFIwY1hyd2ZuOXRqRmo2Vm0waTF0WWpVSG5Gc0hDeS1GUUdXZHJaTlJCeFFjSnRBUkZJUHlIVE5o?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPaGNHOUJsU2F2cXdQSWQ5clRiWDJzc1VaMmN1WlU4NzFCWEg5TExUMWpuSEY5ZGt1aTVGcE40aXI0b0FSNmhzNWFOc1VDeEhHZTdDTnRENklDX0lseXl4Y2NOSEExX3o4dm5IUVZaZ3QzNlcxX2g1Ukh5SDRlVFA4YVkxMkx0TmRUMGNTOFIwY1hyd2ZuOXRqRmo2Vm0waTF0WWpVSG5Gc0hDeS1GUUdXZHJaTlJCeFFjSnRBUkZJUHlIVE5o?oc=5\" target=\"_blank\">Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC Indonesia</font>",
+      "published": "2026-11-16",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 8,
+      "card_id": "462674471598",
+      "resolved_url": "https://cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal",
+      "gnews_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaGNHOUJsU2F2cXdQSWQ5clRiWDJzc1VaMmN1WlU4NzFCWEg5TExUMWpuSEY5ZGt1aTVGcE40aXI0b0FSNmhzNWFOc1VDeEhHZTdDTnRENklDX0lseXl4Y2NOSEExX3o4dm5IUVZaZ3QzNlcxX2g1Ukh5SDRlVFA4YVkxMkx0TmRUMGNTOFIwY1hyd2ZuOXRqRmo2Vm0waTF0WWpVSG5Gc0hDeS1GUUdXZHJaTlJCeFFjSnRBUkZJUHlIVE5o?oc=5",
+      "body_status": "full",
+      "body_chars": 1727,
+      "body_sha256": "dc1fe3dddab9f9ed13e0c88d1d7ae160b63798c87ab98e0ede6e2ef42ed0b2aa",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-16",
+      "quotes": [
+        "Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL",
+        "Dalam upaya mendorong pertumbuhan bisnis nikel di tengah volatilitas Harga komoditas, Vale Indonesia terus mendorong diversifikasi produk untuk menekan risiko di pasar tertentu."
+      ],
+      "resolve_method": "decoder"
+    },
+    {
+      "id": "2ec791c1ef94",
+      "title": "Raden Sukhyar: Hilirisasi Mineral Tak Cukup Berhenti pada Pengolahan dan Pemurnian - Media Nikel Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0FQdTdMMExLWklISXBKM0RtSWZSbHlpRGZjOFVjTDN5STA3eWdkNmVURWMydDNLYXhzbDRmV1pMODdIUEZwU2R4cnZfX1huWWtxSDZYOUs5RWd6Z1NnbC1CY0NnU2hpNWI3ZFBLZ2ZEVDNIS0dXOHA0Q3ZLeUJmdFpOUkpnVEtncGJoX2ltWFprbmsxcERvTXMzUWxGenp3TU54ZmdLT0NjQ3l0R3l6U08xdw?oc=5",
+      "source": "Google News (ID:id)",
+      "source_language": "id",
+      "summary_raw": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0FQdTdMMExLWklISXBKM0RtSWZSbHlpRGZjOFVjTDN5STA3eWdkNmVURWMydDNLYXhzbDRmV1pMODdIUEZwU2R4cnZfX1huWWtxSDZYOUs5RWd6Z1NnbC1CY0NnU2hpNWI3ZFBLZ2ZEVDNIS0dXOHA0Q3ZLeUJmdFpOUkpnVEtncGJoX2ltWFprbmsxcERvTXMzUWxGenp3TU54ZmdLT0NjQ3l0R3l6U08xdw?oc=5\" target=\"_blank\">Raden Sukhyar: Hilirisasi Mineral Tak Cukup Berhenti pada Pengolahan dan Pemurnian</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Media Nikel Indonesia</font>",
+      "published": "2026-11-17",
+      "tier_weight": 1,
+      "priority_boost": 0,
+      "source_type": "google_news",
+      "search_query": "Indonesia hilirisasi nikel",
+      "country": "Indonesia",
+      "score": 8,
+      "card_id": "d7a0bc85e4f4",
+      "resolved_url": "https://nikel.co.id/2026/11/17/raden-sukhyar-hilirisasi-mineral-tak-cukup-berhenti-pada-pengolahan-dan-pemurnian",
+      "gnews_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0FQdTdMMExLWklISXBKM0RtSWZSbHlpRGZjOFVjTDN5STA3eWdkNmVURWMydDNLYXhzbDRmV1pMODdIUEZwU2R4cnZfX1huWWtxSDZYOUs5RWd6Z1NnbC1CY0NnU2hpNWI3ZFBLZ2ZEVDNIS0dXOHA0Q3ZLeUJmdFpOUkpnVEtncGJoX2ltWFprbmsxcERvTXMzUWxGenp3TU54ZmdLT0NjQ3l0R3l6U08xdw?oc=5",
+      "body_status": "full",
+      "body_chars": 4578,
+      "body_sha256": "a87b1bf56b0072a8f567ba026e50b4587e809f124f37e8b94cacf66a3134fccb",
+      "body_source": "trafilatura",
+      "block_type": null,
+      "extracted_date": "2026-11-17",
+      "quotes": [
+        "- Vale Targetkan Produksi Nikel Bahodopi 66.000 Ton pada Q1 2027",
+        "Raden Sukhyar saat menjelaskan pesan utama buku “Hilirisasi Warisan untuk Negeri”."
+      ],
+      "resolve_method": "decoder"
+    }
+  ]
+}
